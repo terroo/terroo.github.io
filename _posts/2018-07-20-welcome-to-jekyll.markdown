@@ -2,7 +2,13 @@
 layout: post
 title:  "Welcome to My Blog!"
 date:   2018-07-20 03:34:26 -0300
-categories: terroo gentoo update helloworld
+image: '/assets/img/terroo-logo.png'
+description: 'Welcome all to my personal blog: Marcos Oliveira!'
+main-class: 'terroo'
+tags:
+- gentoo
+- terroo
+- helloworld
 ---
 
 # Welcome all to my personal blog: Marcos Oliveira!

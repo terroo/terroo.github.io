@@ -13,4 +13,4 @@ I also have a [usuário](https://wiki.gentoo.org/wiki/User:Marcos.oliveira) on t
 
 I hope you like this blog!
 
-![Terroo GNU/Linux Blog's Marcos Oliveira about Gentoo and All](/assets/img/terroo-logo.png)
+![/assets/img/terroo-logo.png](/assets/img/terroo-logo.png "/assets/img/terroo-logo.png")

@@ -77,3 +77,4 @@ options snd cards_limit=2
 
 ## Restart the system and enjoy the sound!
 
+via: [Marcos Oliveira Medium](https://medium.com/marcos-oliveira/how-to-troubleshoot-audio-sound-in-gentoo-3efd5bd8d628)
