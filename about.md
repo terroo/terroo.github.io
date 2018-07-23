@@ -11,6 +11,6 @@ The blog has a very suggestive url subdomain name: [Terroo](https://terroo.githu
 
 I also have a [user](https://wiki.gentoo.org/wiki/User:Marcos.oliveira) on the [Gentoo](https://gentoo.org/) [Wiki](https://wiki.gentoo.org/wiki/Main_Page), to contribute documentation and translation.
 
-I hope you like this blog!
+## I hope you like this blog!
 
 ![/assets/img/terroo-logo.png](/assets/img/terroo-logo.png "/assets/img/terroo-logo.png") 
