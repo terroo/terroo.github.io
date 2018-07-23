@@ -21,4 +21,4 @@ gsettings set org.gnome.settings-daemon.plugins.xsettings overrides '@a{sv} {"Gt
 
 ## Ready, enjoy the preferences!
 
-via: [Marcos Oliveira Medium](https://medium.com/@marcosoliveira_17900/display-the-gedit-preferences-menu-4570b0b3369)
+via: [Marcos Oliveira Medium](https://medium.com/@marcosoliveira_17900/display-the-gedit-preferences-menu-4570b0b3369) and [StackExchange](https://askubuntu.com/questions/375049/where-are-gedits-preferences/671398)
