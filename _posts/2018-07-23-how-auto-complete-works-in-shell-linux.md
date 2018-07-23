@@ -70,10 +70,14 @@ emerge --searchdesc bash-completion
 
 Useful links
 
-https://www.gnu.org/software/bash/manual/html_node/Programmable-Completion.html
-http://tldp.org/LDP/abs/html/tabexpansion.html
-https://wiki.gentoo.org/wiki/Bash
-https://wiki.gentoo.org/wiki/Bash/Installing_completion_files
-https://wiki.archlinux.org/index.php/Bash
-https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
-https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion
+{% highlight md %}
+<https://www.gnu.org/software/bash/manual/html_node/Programmable-Completion.html>
+<http://tldp.org/LDP/abs/html/tabexpansion.html>
+<https://wiki.gentoo.org/wiki/Bash>
+<https://wiki.gentoo.org/wiki/Bash/Installing_completion_files>
+<https://wiki.archlinux.org/index.php/Bash>
+<https://github.com/git/git/blob/master/contrib/completion/git-completion.bash>
+<https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion>
+{% endhighlight %}
+
+via: [Marcos Oliveira Medium](https://medium.com/marcos-oliveira/how-auto-complete-works-in-shell-linux-fe3c37b47361)
