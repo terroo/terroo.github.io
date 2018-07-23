@@ -87,10 +87,10 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 mysql>
 {% endhighlight %}
 
-Se quiser que o usuário normal consiga logar como root, rode o comando abaixo:
+If you want the normal user to log in as __root__, run the command below:
 
 {% highlight bash %}
-
+mysql_secure_installation
 {% endhighlight %}
 
 ## Okay, solved, enjoy MySQL !!!
