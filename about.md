@@ -14,3 +14,5 @@ I also have a [user](https://wiki.gentoo.org/wiki/User:Marcos.oliveira) on the [
 I hope you like this blog!
 
 ![/assets/img/terroo-logo.png](/assets/img/terroo-logo.png "/assets/img/terroo-logo.png")
+
+:)
