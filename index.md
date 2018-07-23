@@ -5,4 +5,4 @@
 layout: home
 ---
 
-<link rel="icon" href="assets/terroo-icon.png" type="image/png">
+<link rel="icon" href="assets/img/terroo-icon.png" type="image/png">

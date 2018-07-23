@@ -4,15 +4,13 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+This blog will support Gentoo n00bs and pro users, that is, it will have basic and advanced tips. For you that have some difficulty configuring the [Gentoo](https://gentoo.org/) system, espero que seja útil. I hope it is useful. 
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+The blog has a very suggestive url subdomain name: [Terroo](https://terroo.github.io) that is the junction of [Terminal Root](http://terminalroot.com.br/) (my professional site, founded in 2011) with [Gentoo](https://gentoo.org/) , thus giving a conjuncture that maybe, later, it will be a project to build a [Linux](https://github.com/torvalds/linux). 
 
 
-[jekyll-organization]: https://github.com/jekyll
+I also have a [usuário](https://wiki.gentoo.org/wiki/User:Marcos.oliveira) on the [Gentoo](https://gentoo.org/) [Wiki](https://wiki.gentoo.org/wiki/Main_Page), to contribute documentation and translation.
+
+I hope you like this blog!
+
+![Terroo GNU/Linux Blog's Marcos Oliveira about Gentoo and All](/assets/img/terroo-logo.png)
