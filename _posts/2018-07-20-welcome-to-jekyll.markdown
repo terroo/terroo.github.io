@@ -31,6 +31,5 @@ Above a basic example of an [ebuild](https://wiki.gentoo.org/wiki/Basic_guide_to
 
 > __Note__: Note that here in [GitHub](https://github.com) you can also download as [tar.gz](http://www.gnu.org/software/tar/) and not only in [zip](https://support.pkware.com/display/PKZIP/APPNOTE) as there is the alternative in the projects? A detail that will also serve as an example of things you will see here. Below is a brief list of useful links.
 
-[gentoo]: https://gentoo.org/
-[wikipedia]: https://en.wikipedia.org/wiki/Gentoo_Linux
-[terroo]:   https://terroo.github.io
+<https://wiki.gentoo.org>
+<https://en.wikipedia.org/wiki/Gentoo_Linux>
