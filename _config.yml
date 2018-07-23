@@ -17,12 +17,7 @@ title: Marcos Oliveira
 email: binbash@linuxmail.org
 description: >- # this means to ignore newlines until "baseurl:"
   This blog will support Gentoo n00bs and pro users, that is, it will have
-  basic and advanced tips. For you that have some difficulty configuring 
-  the Gentoo system, espero que seja útil. I hope it is useful. The blog 
-  has a very suggestive url subdomain name Terroo that is the junction 
-  of Terminal Root (my professional site, founded in 2011) with Gentoo , 
-  thus giving a conjuncture that maybe, later, it will be a project to 
-  build a Linux.
+  basic and advanced tips.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: TerminalRootTV
