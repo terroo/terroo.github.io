@@ -4,3 +4,5 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
+
+<link rel="icon" href="assets/terroo-icon.png" type="image/png">
