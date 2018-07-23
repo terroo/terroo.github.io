@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Gentoo - Can't connect to local MySQL server through socket - SOLVED"
+title: "Gentoo - Can't connect to local MySQL server through socket"
 date: 2018-07-23 00:56:34
 image: '/img/tips/gentoo-mysql.gif'
 description: 'How to solved this is problem.'
