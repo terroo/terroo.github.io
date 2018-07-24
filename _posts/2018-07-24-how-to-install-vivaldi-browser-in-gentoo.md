@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Install Vivaldi Browser in Gentoo"
+title: "How to Install Vivaldi Browser on Gentoo"
 date: 2018-07-24 17:50:08
 image: '/assets/img/portage/vivaldi.gif'
 description: 'Vivaldi is a freeware, cross-platform web browser developed by Vivaldi Technologies, a company founded by Opera Software co-founder.'
