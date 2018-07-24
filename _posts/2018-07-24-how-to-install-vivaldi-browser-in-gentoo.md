@@ -39,4 +39,4 @@ emerge -a www-client/vivaldi
 
 ## Wait for compilation!
 
-![/assets/img/portage/vivaldi.gif](/assets/img/portage/vivaldi.gif "/assets/img/portage/vivaldi.gif")
+![/assets/img/portage/vivaldi.gif](/assets/img/portage/vivaldi-800x450.gif "/assets/img/portage/vivaldi.gif")
