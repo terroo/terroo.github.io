@@ -1,5 +1,7 @@
 
 	<div id="share-bar">
+	
+	<h1>Share</h1>
 		
 	<br>
 
@@ -8,21 +10,46 @@
 					<a  href="https://www.facebook.com/sharer/sharer.php?u=https://terroo.github.io{{ page.url }}"
 							onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
 							title="Share on Facebook" >
-							<h1><i class="fab fa-facebook-square"></i></h1>
+							<h1><i class="fab fa-facebook-square"></i> 
 					</a> 
 
 					<a  href="https://twitter.com/intent/tweet?text={{ page.title }}&url=https://terroo.github.io{{ page.url }}"
 							onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
 							title="Share on Twitter" >
-							<h1><i class="fab fa-twitter-square"></i></h1>
+							<i class="fab fa-twitter-square"></i> 
 					</a> 
 
 					<script src="https://apis.google.com/js/platform.js" async defer></script>
 					<a  href="https://plus.google.com/share?url=https://terroo.github.io{{ page.url }}"
 							onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
 							title="Share on Google+" >
-							<h1><i class="fab fa-google-plus-square"></i></h1>
+							<i class="fab fa-google-plus-square"></i></h1>
 					</a>
+					
+					<br><hr>
+					
+					<!-- Posicione esta tag no cabeçalho ou imediatamente antes da tag de fechamento do corpo. -->
+					<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+					<!-- Posicione esta tag onde você quer que o botão compartilhar apareça. -->
+					<div class="g-plus" data-action="share" data-height="24"></div>
+					
+					<!-- FacePoop -->
+					<div id="fb-root"></div>
+					<script>(function(d, s, id) {
+						var js, fjs = d.getElementsByTagName(s)[0];
+						if (d.getElementById(id)) return;
+						js = d.createElement(s); js.id = id;
+						js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
+						fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));</script>
+					
+					<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+					
+					<!-- TwiTrash>
+
+					
+						
 		
 	    </div>
 
