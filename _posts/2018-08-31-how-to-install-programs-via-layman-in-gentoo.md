@@ -13,6 +13,7 @@ tags:
 <!-- 
 <img src="/assets/img/portage/layman.jpg" alt="layman">
 -->
+{% page.image %}
 
 First you need to install, logically, the [layman](https://wiki.gentoo.org/wiki/Layman)
 
