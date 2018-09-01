@@ -10,6 +10,10 @@ tags:
 - layman
 ---
 
+<!-- 
+<img src="/assets/img/portage/layman.jpg" alt="layman">
+-->
+
 First you need to install, logically, the [layman](https://wiki.gentoo.org/wiki/Layman)
 
 {% highlight bash  %}
