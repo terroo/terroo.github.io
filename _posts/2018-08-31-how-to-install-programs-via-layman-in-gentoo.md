@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Install Programs via Layman in Gentoo"
+title: "How to Install Programs via Layman on Gentoo"
 date: 2018-08-31 21:54:25
 image: '/assets/img/portage/layman.jpg'
 description: 'Layman is a ebuild repository management tool. It offers a single command-line interface to repository management for end users.'
