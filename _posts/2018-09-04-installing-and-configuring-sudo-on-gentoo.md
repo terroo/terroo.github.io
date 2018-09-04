@@ -37,14 +37,16 @@ sed -i "/^root ALL=(ALL) ALL$/a ${my_user} ALL=(ALL) ALL" /etc/sudoers
 The first time you use sudo this message will appear:
 
 {% highlight txt %}
-We assume that you have received the administrator's usual instructions
-local system. Basically, it boils down to these three things:
-
-    # 1) Respect the privacy of others.
-    # 2) Think before typing.
-    # 3) With great powers come great responsibilities.
-
-Password:
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+ 
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+ 
+Password: ## (Enter the user password, not root!)
 {% endhighlight %}
 
 Now just use sudo with the password of the user you chose!
+
+More information: https://wiki.gentoo.org/wiki/Sudo
