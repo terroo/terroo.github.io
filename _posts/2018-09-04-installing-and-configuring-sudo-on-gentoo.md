@@ -31,7 +31,7 @@ export my_user="[NAME_YOUR_USER]"
 Then, run the command below
 
 {% highlight bash %}
-sed -i "/ ^ root ALL = (ALL) ALL $ / a $ {my_user} ALL = (ALL) ALL" /etc/sudoers
+sed -i "/^root ALL=(ALL) ALL$/a ${my_user} ALL=(ALL) ALL" /etc/sudoers
 {% endhighlight %}
 
 The first time you use sudo this message will appear:
