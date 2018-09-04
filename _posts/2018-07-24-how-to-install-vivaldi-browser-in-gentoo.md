@@ -11,7 +11,7 @@ tags:
 - portage
 ---
 
-![How to Install Vivaldi Browser on Gentoo](/assets/img/portage/vivaldi.gif "How to Install Vivaldi Browser on Gentoo")
+![How to Install Vivaldi Browser on Gentoo](/assets/img/portage/vivaldi-800x450.gif "How to Install Vivaldi Browser on Gentoo")
 
 [Vivaldi](https://vivaldi.com/) is a freeware, cross-platform web browser developed by Vivaldi Technologies, a company founded by Opera Software co-founder and former CEO Jon Stephenson von Tetzchner and Tatsuki Tomita. The browser was officially launched on April 12, 2016.The browser is aimed at staunch technologists, heavy Internet users, and previous Opera web browser users disgruntled by Opera's transition from the Presto layout engine to the Blink layout engine, which removed many popular features.Vivaldi aims to revive the old, popular features of Opera 12.The browser has gained popularity since the launch of its first technical preview.The browser has 1 million users as of January 2017.
 
