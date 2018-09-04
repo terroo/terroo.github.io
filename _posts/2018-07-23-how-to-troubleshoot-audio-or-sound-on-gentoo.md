@@ -10,6 +10,8 @@ tags:
 - sound
 ---
 
+![How to Troubleshoot Audio or Sound on Gentoo](/assets/img/media/alsamixer.gif "How to Troubleshoot Audio or Sound on Gentoo")
+
 ## Linux controls the computer’s audio with a system that identifies the architecture and plays the audio behind the device’s drive.
 
 The current component that the Linux kernel uses to perform this function is **ALSA which stands for Advanced Linux Sound Architecture**.

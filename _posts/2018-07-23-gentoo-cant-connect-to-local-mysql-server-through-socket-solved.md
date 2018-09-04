@@ -2,12 +2,14 @@
 layout: post
 title: "Gentoo - Can't connect to local MySQL server through socket"
 date: 2018-07-23 00:56:34
-image: '/img/tips/gentoo-mysql.gif'
+image: '/assets/img/tips/gentoo-mysql.gif'
 description: 'How to solved this is problem.'
 main-class: 'gentoo'
 tags:
 - mysql
 ---
+
+![Gentoo - Can't connect to local MySQL server through socket](/assets/img/tips/gentoo-mysql.gif "Gentoo - Can't connect to local MySQL server through socket")
 
 When you get the error:
 
