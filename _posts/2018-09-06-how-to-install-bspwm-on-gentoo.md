@@ -15,7 +15,7 @@ tags:
 
 [bspwm](https://github.com/baskerville/bspwm) is a lightweight, tiling, minimalist window manager that is written in C and represents its windows as leaves on a binary tree.
 
-First of all you need to enable the flag examples in the `make.com` file for the variable `USE="examples"`. You can do this or you can use the [Gentoolkit](https://wiki.gentoo.org/wiki/Gentoolkit) `euse` command as follows
+First of all you need to enable the flag examples in the `make.conf` file for the variable `USE="examples"`. You can do this or you can use the [Gentoolkit](https://wiki.gentoo.org/wiki/Gentoolkit) `euse` command as follows
 
 If you do not have Gentoolkit installed, install it with the following command
 
