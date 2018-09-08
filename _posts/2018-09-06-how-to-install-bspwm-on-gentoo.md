@@ -35,7 +35,7 @@ Okay, all right! Now finally we will install bspwm and along with it the sxhkd p
 emerge -a bspwm sxhkd
 {% endhighlight  %}
 
-After compiling, you will need to create the **bspwm** and **sxhkd** directories within the `~/config` directory of your home directory and copy the examples (bspwmrc and sxhkdrc) files you have in the `/usr/share/doc/` directory, so
+After compiling, you will need to create the **bspwm** and **sxhkd** directories within the `~/.config` directory of your home directory and copy the examples (bspwmrc and sxhkdrc) files you have in the `/usr/share/doc/` directory, so
 
 > Note that the version here is **0.9.5**, check the corresponding version for your case
 
