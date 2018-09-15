@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to install rofi in Gentoo and create shortcut for it on bspwm"
+title: "How to install rofi on Gentoo and create shortcut for it on bspwm"
 date: 2018-09-14 20:47:36
 image: '/assets/img/tips/rofi1.png'
 description: 'A window switcher, Application launcher and dmenu replacement.'
