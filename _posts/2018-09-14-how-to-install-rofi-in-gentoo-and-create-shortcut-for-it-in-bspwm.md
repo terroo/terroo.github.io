@@ -34,6 +34,16 @@ super + d
 	rofi -show run
 {% endhighlight %}
 
+For you to customize rofi theme, run the commands below in order
+
+{% highlight bash %}
+mkdir ~/.config/rofi
+rofi -dump-config > ~/.config/rofi/config.rasi
+wget https://raw.githubusercontent.com/ricwtk/rofi-themes/master/input-emph-topbar.rasi -O 
+~/.config/rofi/input-emph-topbar.rasi
+sed -i '/configuration {/a theme:  "input-emph-topbar";' ~/.config/rofi/config.rasi
+{% endhighlight %}
+
 Okay, now whenever you type `super + d` open Rofi.
 
 ![Rofi](/assets/img/tips/rofi2.png "Rofi")
