@@ -30,18 +30,19 @@ After that you need to include the configuration file that we created for layman
 echo 'source /var/lib/layman/make.conf' >> /etc/portage/make.conf
 {% endhighlight  %}
 
+Synchronize data
+
+{% highlight bash  %}
+layman -S
+emerge --sync
+{% endhighlight  %}
+
 Now add a layman repository, [click here to see the full list of repositories available](https://overlays.gentoo.org/).
 
 For this example I'm going to add the [raiagent](https://github.com/leycec/raiagent) repository
 
 {% highlight bash  %}
 layman -a raiagent # [y/n] y
-{% endhighlight  %}
-
-Synchronize data
-
-{% highlight bash  %}
-layman -S
 {% endhighlight  %}
 
 After doing all the above procedure, suppose I want to install the [Powerline](https://github.com/powerline/powerline) that is in the raiagent repository that I added, so, just I install it
