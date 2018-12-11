@@ -13,6 +13,7 @@ tags:
 
 When you forgot the mysql root password and can not log in to change the password.
 > Use sudo or root
+
 + You must first stop the mysql server
 {% highlight bash  %}
 systemctl stop mysqld.service # systemd
