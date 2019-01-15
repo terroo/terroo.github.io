@@ -170,3 +170,5 @@ If you want to uninstall, use emerge: `emerge -C hello-world` and if you also wa
 You do not need to remove the `Manifest` file unless you want to.
 
 Learn more: <https://wiki.gentoo.org/wiki/Basic_guide_to_write_Gentoo_Ebuilds>
+
+[Portuguese version](https://gitlab.com/terminalroot/gentoo/blob/master/tutoriais/como-criar-um-ebuild-no-gentoo.md)
