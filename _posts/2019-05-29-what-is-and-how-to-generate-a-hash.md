@@ -32,11 +32,3 @@ There are types of hashes (or hash functions), they can be: md5, sha256, whirpoo
 {% include youtube-legends-tutorial.html %}
 
 <iframe width="1246" height="701" src="https://www.youtube.com/embed/Rwyf04a1tAc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-## Useful links:
-
-+ <https://en.wikipedia.org/wiki/Cryptographic_hash_function>
-+ <https://www.gnu.org/software/coreutils/>
-+ <https://www.schneier.com/essays/archives/2004/08/cryptanalysis_of_md5.html>
-+ <https://help.ubuntu.com/community/HowToSHA256SUM>
-+ <https://docs.fedoraproject.org/pt-PT/Fedora/18/html/Burning_ISO_images_to_disc/sect-Burning_ISO_images_to_disc-Validating_the_Files-Validating_at_the_Windows_Command_Prompt.html>
