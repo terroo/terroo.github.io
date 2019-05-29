@@ -30,6 +30,8 @@ There are types of hashes (or hash functions), they can be: md5, sha256, whirpoo
 
 ## Watch The Video
 
-> The video has English subtitles native to the video itself and with the correct translation. To enable, use the settings in the footer of the video itself, according to the images shown here below:
+> The video has English subtitles native to the video itself and with the correct translation. To enable, use the settings in the footer of the video itself, according to the images shown here below.
+> 
+> CLICK ON IMAGES TO VIEW INTO LARGER RESOLUTION.
 
 {% include youtube-legends-tutorial.html %}
