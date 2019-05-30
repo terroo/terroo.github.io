@@ -29,11 +29,6 @@ Lets install the sets!
 Location of sets? (cd0 disk http or 'done') [cd0] disk
 {% endhighlight %}
 
-## Watch The Video
-{% include youtube-legends-tutorial.html %}
-
-<iframe width="920" height="400" src="https://www.youtube.com/embed/EWWD56ZPVoQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## Useful commands and links
 
 + `sudo VBoxManage internalcommands createrawvmdk -rawdisk /dev/sdb -filename USB-Boot-Disk.vmdk`
@@ -51,3 +46,9 @@ Location of sets? (cd0 disk http or 'done') [cd0] disk
 + <http://openbsd.org/>
 + <https://ftp.openbsd.org/pub/OpenBSD/songs/song30.mp3>
 + <https://www.openbsd.org/images/poster33.jpg>
+
+## Watch The Video
+{% include youtube-legends-tutorial.html %}
+
+<iframe width="920" height="400" src="https://www.youtube.com/embed/EWWD56ZPVoQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
