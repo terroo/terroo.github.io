@@ -87,4 +87,4 @@ If you want to see the layout after the changes, press the letter `p` and to exi
 
 {% include youtube-legends-tutorial.html %}
 
-<iframe width = "1246" height = "701" src = "https://www.youtube.com/embed/3OVsq9quYNQ" frameborder = "0" allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in -picture "allowfullscreen> </ iframe>
+<iframe width="1246" height="701" src="https://www.youtube.com/embed/3OVsq9quYNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in -picture" allowfullscreen></iframe>
