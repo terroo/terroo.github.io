@@ -53,7 +53,7 @@ Configuring pkg...
 {% endhighlight %}
 
 
-After that, you will need to restart your MySQL server (example for systemd, if you have OpenRC use the `rc-update` command)
+After that, you will need to restart your MySQL server (example for systemd, if you have OpenRC use the `rc-service` command)
 
 {% highlight bash %}
 systemctl restart mysqld.service

@@ -15,7 +15,7 @@ When you forgot the mysql root password and can not log in to change the passwor
 + You must first stop the mysql server
 {% highlight bash  %}
 systemctl stop mysqld.service # systemd
-rc-update stop mysqld.service # openrc
+rc-service mysql stop # openrc
 {% endhighlight  %}
 
 + Then you need to start the server in safe mode
