@@ -9,8 +9,6 @@ tags:
 - mysql
 ---
 
-!["How to reset the MySQL root user password when it can not log in"](/assets/img/mysql/mysql-root.png "How to reset the MySQL root user password when it can not log in")
-
 When you forgot the mysql root password and can not log in to change the password.
 > Use sudo or root
 

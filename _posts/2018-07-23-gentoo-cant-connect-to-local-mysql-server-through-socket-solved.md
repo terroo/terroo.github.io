@@ -9,8 +9,6 @@ tags:
 - mysql
 ---
 
-![Gentoo - Can't connect to local MySQL server through socket](/assets/img/tips/gentoo-mysql.gif "Gentoo - Can't connect to local MySQL server through socket")
-
 When you get the error:
 
 {% highlight bash %}

@@ -12,8 +12,6 @@ tags:
 - gentoo
 ---
 
-![Lightworks on Gentoo](/assets/img/lightworks/lightworks-3.jpg "Lightworks on Gentoo")
-
 [Lightworks](https://www.lwks.com/) is software for editing and mastering digital video in various formats, including resolutions. The program is currently available for Windows, Linux and Mac OS. The development of an open source version was announced in May 2010. No source code for the program has been released yet.
 
 In this tutorial we will see the steps to install in **Gentoo**, since it is not in the official **Portage** repository.

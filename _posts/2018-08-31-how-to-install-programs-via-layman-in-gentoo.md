@@ -10,8 +10,6 @@ tags:
 - layman
 ---
 
-![How to Install Programs via Layman on Gentoo](/assets/img/portage/layman.jpg "How to Install Programs via Layman on Gentoo")
-
 First you need to install, logically, the [layman](https://wiki.gentoo.org/wiki/Layman)
 
 {% highlight bash  %}

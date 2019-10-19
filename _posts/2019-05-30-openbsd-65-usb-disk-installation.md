@@ -9,8 +9,6 @@ tags:
 - openbsd
 ---
 
-![OpenBSD - USB Disk Installation](/assets/img/openbsd/openbsd-usb.jpg)
-
 The installation of [OpenBSD](https://openbsd.org/) is very simple when you use the default methods, but some people get in the way when they install via USB disk (pendrive). In this video/article we will show you how to do it.
 
 After booting the pendrive the installation process is the same, differing only in some parts during the installation.

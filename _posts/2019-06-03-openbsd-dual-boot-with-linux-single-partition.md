@@ -11,8 +11,6 @@ tags:
 - dualboot
 ---
 
-![OpenBSD Dual Boot with Linux](/assets/img/openbsd/openbsd-linux.jpg)
-
 ## 1º - It is interesting to create the partitions previously.
 
 > That is, already have a partition already created and formatted perferencia in a file system that identifies the partition, however, you can be able to distinguish it through the CHS.

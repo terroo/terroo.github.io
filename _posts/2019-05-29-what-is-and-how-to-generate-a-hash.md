@@ -11,10 +11,6 @@ tags:
 - cryptographic
 ---
 
-![What is and how to generate a HASH ?](/assets/img/video/hash.jpg)
-
-***
-
 A **cryptographic** scatter function or cryptographic hash function is a hash function considered almost impossible *to reverse*, that is, to recreate the input value using only the scatter value. These unidirectional hash functions have been called "*the workers of modern cryptography*".
 
 The input data is usually called message, and the message scatter value summarized or *simply summary*.

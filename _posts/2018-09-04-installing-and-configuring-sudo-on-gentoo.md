@@ -10,8 +10,6 @@ tags:
 - gentoo
 ---
 
-![Installing and Configuring sudo on Gentoo](/assets/img/tips/sudo-gentoo-min.jpg "Installing and Configuring sudo on Gentoo")
-
 Installing and Configuring sudo on Gentoo
 
 It is not always good to use root constantly, for this sudo exists. To install it simply run the command below, `-a` is optional which is the same as `--ask`, Portage asks you if you want to continue and also shows the package(s) that will be compiled.

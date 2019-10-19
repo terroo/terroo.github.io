@@ -9,8 +9,6 @@ tags:
 - gedit
 ---
 
-![Display the Gedit preferences menu](/assets/img/tips/gedit.gif "Display the Gedit preferences menu")
-
 When you install the Gedit plugins `emerge --ask app-editors/gedit-plugins` (example on Gentoo) and want to enable it but do not find the preferences menu, you do not know what to do, but the truth is that if you run the command below with the normal user, the preferences menu appears .
 
 Just run:

@@ -10,8 +10,6 @@ tags:
 - gentoo
 ---
 
-![How to Enable Webcam Drive and Install Cheese on Gentoo](/assets/img/webcam/cheese-gentoo.jpg "How to Enable Webcam Drive and Install Cheese on Gentoo")
-
 How to Enable Webcam Drive and Install Cheese on Gentoo
 
 Make sure the device is actually on your computer. If yes, enter root and open the [Kernel](https://wiki.gentoo.org/wiki/Kernel/Configuration) menu

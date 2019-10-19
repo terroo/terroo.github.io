@@ -10,8 +10,6 @@ tags:
 - ebuild
 ---
 
-![How to Create an ebuild on Gentoo](/assets/img/gentoo/diagram.png "How to Create an ebuild on Gentoo")
-
 An [ebuild](https://wiki.gentoo.org/wiki/Ebuild) file  is a text file, used by Gentoo package managers, that identifies a specific software package, and how the Gentoo package manager should deal with it. It uses a bash syntax style and is standardized through the [EAPI](https://wiki.gentoo.org/wiki/EAPI) version .
 
 ## Introduction

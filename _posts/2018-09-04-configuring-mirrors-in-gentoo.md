@@ -10,8 +10,6 @@ tags:
 - gentoo
 ---
 
-![Configuring Mirrors on Gentoo](/assets/img/tips/IMG0-mirrors.gif "Configuring Mirrors on Gentoo")
-
 Configuring Mirrors on Gentoo
 
 Sometimes when we install something via [Portage](https://wiki.gentoo.org/wiki/Portage#emerge), and we realize that the data download is very slow, this slowness may be directly related to the fact that the repository closest to our location (repository of the country where we live) is not defined. So we can solve this problem by selecting a repository for our system.

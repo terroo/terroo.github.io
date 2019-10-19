@@ -8,8 +8,6 @@ featured-img: ../bash/auto-complete-shell-bash.gif
 tags:
 ---
 
-![How Auto Complete Works in Shell Linux](/assets/img/bash/auto-complete-shell-bash.gif "How Auto Complete Works in Shell Linux")
-
 By default, after installing Gentoo Linux, or another distribution, the auto complete in the Shell (in this case we will talk about BASH, however, we will give tips for the other shells) is not installed. Usually you find him on the way:
 
 {% highlight bash %}
