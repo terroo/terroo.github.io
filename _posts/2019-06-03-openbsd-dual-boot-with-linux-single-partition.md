@@ -27,6 +27,19 @@ Do not press [ENTER] because the system will erase the hard disk and use the ** 
 
 > Before you notice in the description of the partitions that it shows the partitions that are already created, you can identify which partition you want to use analyzing data like: `size`; `start` and others.
 
+<!-- RETANGULO LARGO -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Informat -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="2327980059"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>  
+
 ## 4 Now select the partition you want (see the partition number, noting the first column).
 
 Let's suppose we're going to install OpenBSD that has the largest partition size, so the command would be: `e 0`
@@ -57,6 +70,18 @@ Now, just press the letter `w` (write) and if you want to see how changes were m
 
 To do this press `c` (Custom Layout), if you just press [ENTER] without typing the letter` c`, it will accept the pattern defined in brackets that is `[a]` (Auto layout).
 
+<!-- RETANGULO LARGO 2 -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+style="display:block; text-align:center;"
+data-ad-layout="in-article"
+data-ad-format="fluid"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## 8º - Now press `p` to show how the division * is really up.
 
 Remembering that the letter ** c ** represents the HD and not a partition, and if there is already another letter, probably the letter ** i **, that is the size available to partition.
@@ -68,6 +93,16 @@ So let's create the *root* partition, just type the `a` (add) and OpenBSD will a
 The **FS TYPE** should be *4.2BSD* even if it is enclosed in brackets, just press [ENTER]. And **mount point** must be root **/**, if your keyboard is unconfigured, the slash (**/**) is usually **;** (semicolon, without the Shift =) ).
 
 Okay, we set the root partition.
+
+<!-- QUADRADO -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+style="display:inline-block;width:336px;height:280px"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 9º - Next step is to create the SWAP partition:
 
@@ -86,3 +121,14 @@ If you want to see the layout after the changes, press the letter `p` and to exi
 {% include youtube-legends-tutorial.html %}
 
 <iframe width="1246" height="701" src="https://www.youtube.com/embed/3OVsq9quYNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in -picture" allowfullscreen></iframe>
+
+<!-- MINI ANÚNCIO -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Games Root -->
+<ins class="adsbygoogle"
+style="display:inline-block;width:336px;height:50px"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
