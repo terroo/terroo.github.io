@@ -14,7 +14,6 @@ social:
     - https://twitter.com/TerminalRootTV
     - https://www.facebook.com/TerminalRootTV
     - https://www.linkedin.com/in/TerminalRootTV
-    - https://plus.google.com/+TerminalRootTV
     - https://github.com/terroo
     - https://keybase.io/TerminalRootTV
 
@@ -24,12 +23,11 @@ disqus:
 # Build settings
 markdown: kramdown
 highlighter: rouge # or pygments or null
-theme: jekyll-sleek
+theme: minima
 exclude:
   - README.md
   - node_modules
   - package.json
-  - package-lock.json
   - Gemfile
   - Gemfile.lock
   - vendor
