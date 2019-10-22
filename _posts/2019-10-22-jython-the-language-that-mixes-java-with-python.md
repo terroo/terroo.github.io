@@ -96,10 +96,10 @@ data-ad-slot="8549252987"></ins>
 ![Jython Wizard](/assets/img/jython/jython10.png)
 
 
-After ** finish ** we will now edit your `vim ~/.bashrc` and add the following line:
-> In this case my version and directory name is ** 2.5.2 **, check yours.
+After **finish** we will now edit your `vim ~/.bashrc` and add the following line:
+> In this case my version and directory name is **2.5.2**, check yours.
 {% highlight bash %}
-PATH = "$ {PATH}: $ {HOME} /jython2.5.2/bin/"
+PATH="${PATH}:${HOME}/jython2.5.2/bin/"
 {% endhighlight %}
 
 Then run the `source ~/.bashrc` command or close and open the terminal so that the` jython` command can be found.
