@@ -139,8 +139,8 @@ Note that in this case I added 8 + 8 and the result was as expected. 😁️
 
 # Explaining the code
 + `import javax.swing as libswing` - Imports the Java library.
-+ `pnumero = libswing.JOptionPane.showInputDialog (" Enter an Integer: ")` - Shows the first dialog box and stores the value in the pnumero variable.
-+ `snumero = libswing.JOptionPane.showInputDialog (" Enter an Integer: ")` - Displays the second dialog and stores the value in the snumero variable.
++ `pnumero = libswing.JOptionPane.showInputDialog ("Enter an Integer: ")` - Shows the first dialog box and stores the value in the pnumero variable.
++ `snumero = libswing.JOptionPane.showInputDialog ("Enter an Integer: ")` - Displays the second dialog and stores the value in the snumero variable.
 + `sum = int (number) + int (number)` - Converts the number and number values ​​to integers and adds both by storing the result in the sum variable.
 + `libswing.JOptionPane.showMessageDialog (None," The sum is% d "% sum)` - Shows the result of the sum on the screen, isn't it?
 
