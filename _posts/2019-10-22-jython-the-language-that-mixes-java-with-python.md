@@ -51,21 +51,21 @@ First you will need to have it installed on your system:
 + and [IcedTea](https://icedtea.classpath.org) - An integration software.
 
 Use your distribution's package manager to install them, for example, as I installed here on [Gentoo](https://terminalroot.com.br/2017/05/how-install-o-gentoo.html):
-{% highlight bash%}
+{% highlight bash %}
 sudo USE = "- cups -alsa" emerge -a dev-java/openjdk-bin dev-java/openjdk-jre-bin
-{% endhighlight%}
+{% endhighlight %}
 > In this case I rejected the modules: *cups* and *alsa* and icedtea was installed automatically as it is a dependency.
 
 + **2**. - Installing [Jython](https://www.jython.org/)
 
 Now download Jython at: <https://sourceforge.net/projects/jython/>. After downloading extract the package:
 > Create and enter a directory first so that files are not scattered
-{% highlight bash%}
+{% highlight bash %}
 mkdir environment && cd environment/
 mv ../jython* .
 jar xj jython.jar
 java -jar jython_installer-*.jar
-{% endhighlight%}
+{% endhighlight %}
 
 After this last command, it will open a ** wizard ** for you to follow, follow the images below:
 
@@ -98,9 +98,9 @@ data-ad-slot="8549252987"></ins>
 
 After ** finish ** we will now edit your `vim ~/.bashrc` and add the following line:
 > In this case my version and directory name is ** 2.5.2 **, check yours.
-{% highlight bash%}
+{% highlight bash %}
 PATH = "$ {PATH}: $ {HOME} /jython2.5.2/bin/"
-{% endhighlight%}
+{% endhighlight %}
 
 Then run the `source ~/.bashrc` command or close and open the terminal so that the` jython` command can be found.
 
@@ -117,18 +117,18 @@ data-ad-slot="5351066970"></ins>
 ## Creating Your First Application
 > A mini application that adds two numbers.
 Create a file named `vim sum.py`
-{% highlight bash%}
+{% highlight python %}
 import javax.swing as libswing
 pnumero = libswing.JOptionPane.showInputDialog ("Enter an Integer:")
 snumero = libswing.JOptionPane.showInputDialog ("Enter an Integer:")
 sum = int (number) + int (number)
 libswing.JOptionPane.showMessageDialog (None, "The sum is% d"% sum)
-{% endhighlight%}
+{% endhighlight %}
 
 Save and run as follows:
-{% highlight bash%}
+{% highlight bash %}
 jython sum.py
-{% endhighlight%}
+{% endhighlight %}
 
 > No [Shell](https://terminalroot.com.br/shell) will show the outputs of the program, but it does not mean that it is a * problem *, but it is sending the * outputs * correctly.
 
