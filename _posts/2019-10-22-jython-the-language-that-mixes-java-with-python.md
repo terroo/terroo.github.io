@@ -52,7 +52,7 @@ First you will need to have it installed on your system:
 
 Use your distribution's package manager to install them, for example, as I installed here on [Gentoo](https://terminalroot.com.br/2017/05/how-install-o-gentoo.html):
 {% highlight bash %}
-sudo USE = "- cups -alsa" emerge -a dev-java/openjdk-bin dev-java/openjdk-jre-bin
+sudo USE="-cups -alsa" emerge -a dev-java/openjdk-bin dev-java/openjdk-jre-bin
 {% endhighlight %}
 > In this case I rejected the modules: *cups* and *alsa* and icedtea was installed automatically as it is a dependency.
 
