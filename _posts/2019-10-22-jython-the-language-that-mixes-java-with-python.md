@@ -130,7 +130,7 @@ Save and run as follows:
 jython sum.py
 {% endhighlight %}
 
-> No [Shell](https://terminalroot.com.br/shell) will show the outputs of the program, but it does not mean that it is a * problem *, but it is sending the * outputs * correctly.
+> No [Shell](https://terminalroot.com.br/shell) will show the outputs of the program, but it does not mean that it is a *problem*, but it is sending the *outputs* correctly.
 
 ![Jython Wizard](/assets/img/jython/jython11.png)
 ![Jython Wizard](/assets/img/jython/jython12.png)
