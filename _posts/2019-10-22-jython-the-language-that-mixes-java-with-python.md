@@ -102,7 +102,7 @@ After **finish** we will now edit your `vim ~/.bashrc` and add the following lin
 PATH="${PATH}:${HOME}/jython2.5.2/bin/"
 {% endhighlight %}
 
-Then run the `source ~/.bashrc` command or close and open the terminal so that the` jython` command can be found.
+Then run the `source ~/.bashrc` command or close and open the terminal so that the `jython` command can be found.
 
 <!-- QUADRADO -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
