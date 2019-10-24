@@ -66,7 +66,7 @@ bff hello-world.bf
 
 The result will be as expected! 😀
 
-[![brainfuck terminal output](//assets/img/esolangs/brainfuck.png)](//assets/img/esolangs/brainfuck.png)
+[![brainfuck terminal output](/assets/img/esolangs/brainfuck.png)](/assets/img/esolangs/brainfuck.png)
 
 For more information, see their website: <http://aminet.net/package.php?package=dev/lang/brainfuck-2.lha>
 
@@ -90,7 +90,7 @@ The use of the dirty word "bitch" in "BITCHWISE" is to convey anger in a sudden 
 
 ### Writing a "Hello World!" in Bitch
 
-Bitch's proposal is a bit different, it uses the [Java] compiler (https://openjdk.java.net) together with an interpreter. So to create and generate **Hello World!** create a **.bitch** file:
+Bitch's proposal is a bit different, it uses the [Java](https://openjdk.java.net) compiler together with an interpreter. So to create and generate **Hello World!** create a **.bitch** file:
 {% highlight bash%}
 vim hello-world.bitch
 {% endhighlight%}
@@ -121,7 +121,7 @@ data-ad-slot="5351066970"></ins>
 See image below:
 > Of course you will need JDK and Git.
 
-[![bitch terminal output](//assets/img/esolangs/bitch.png)](//assets/img/esolangs/bitch.png)
+[![bitch terminal output](/assets/img/esolangs/bitch.png)](/assets/img/esolangs/bitch.png)
 
 If you want to test online use [tio.sh](https://tio.run/#bitch), and remember to add the `-c` parameter, like this:
 + **Command-line options** → **✚ add** → **-c**. Then just click on **play ▶ ️** at the top.
