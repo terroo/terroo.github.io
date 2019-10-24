@@ -2,9 +2,9 @@
 layout: post
 title: "Know the Programming Languages: BRAINFUCK and BITCH"
 date: 2019-10-24 15:19:58
-image: '/assets/img/dev/brainfuck-e-bitch.jpg'
+image: '/assets/img/esolangs/brainfuck-e-bitch.jpg'
 description: 'Better known as ESOTERIC languages. 😱'
-featured-img: ../dev/brainfuck-e-bitch.jpg
+featured-img: ../esolangs/brainfuck-e-bitch.jpg
 tags:
 - brainfuck
 - bitch
@@ -12,7 +12,7 @@ tags:
 - development
 ---
 
-[![BRAINFUCK and BITCH](/assets/img/dev/brainfuck-e-bitch.jpg)](/assets/img/esolangs/brainfuck-e-bitch.jpg)
+[![BRAINFUCK and BITCH](/assets/img/esolangs/brainfuck-e-bitch.jpg)](/assets/img/esolangs/brainfuck-e-bitch.jpg)
 
 This day I was surfing the internet and looking for compiler test content and I found some rather *different* things, among them, I found some very strange programming languages.
 
