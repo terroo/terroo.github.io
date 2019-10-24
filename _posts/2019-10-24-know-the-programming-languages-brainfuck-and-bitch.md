@@ -57,7 +57,7 @@ Now we need to have an interpreter to generate the output. I recommend you insta
 emerge bff
 {% endhighlight%}
 
-> There are others such as: [beef](https://github.com/andreabolognani/beef), for example. If I'm not mistaken, this is available for [Debian](https://www.debian.org/), [Ubuntu]https://ubuntu.com/), [Linux Mint](https://linuxmint.com/) and among other distros, to install would be: `sudo apt install beef`.
+> There are others such as: [beef](https://github.com/andreabolognani/beef), for example. If I'm not mistaken, this is available for [Debian](https://www.debian.org/), [Ubuntu](https://ubuntu.com/), [Linux Mint](https://linuxmint.com/) and among other distros, to install would be: `sudo apt install beef`.
 
 After installing use the interpreter command to run using bff:
 {% highlight bash%}
