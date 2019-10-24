@@ -12,7 +12,7 @@ tags:
 - development
 ---
 
-[![BRAINFUCK and BITCH](/assets/img/esolangs/brainfuck-e-bitch.jpg)](/ assets/img/esolangs/brainfuck-e-bitch.jpg)
+[![BRAINFUCK and BITCH](/assets/img/dev/brainfuck-e-bitch.jpg)](/ assets/img/esolangs/brainfuck-e-bitch.jpg)
 
 This day I was surfing the internet and looking for compiler test content and I found some rather *different* things, among them, I found some very strange programming languages.
 
