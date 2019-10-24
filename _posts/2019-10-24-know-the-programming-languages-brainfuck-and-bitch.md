@@ -121,7 +121,7 @@ data-ad-slot="5351066970"></ins>
 See image below:
 > Of course you will need JDK and Git.
 
-[![bitch terminal output](/assets/img/esolangs/bitch.png)](/ assets/img/esolangs/bitch.png)
+[![bitch terminal output](//assets/img/esolangs/bitch.png)](//assets/img/esolangs/bitch.png)
 
 If you want to test online use [tio.sh](https://tio.run/#bitch), and remember to add the `-c` parameter, like this:
 + **Command-line options** → **✚ add** → **-c**. Then just click on **play ▶ ️** at the top.
