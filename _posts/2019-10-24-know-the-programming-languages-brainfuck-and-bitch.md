@@ -12,7 +12,7 @@ tags:
 - development
 ---
 
-[![BRAINFUCK and BITCH](/assets/img/dev/brainfuck-e-bitch.jpg)](/ assets/img/esolangs/brainfuck-e-bitch.jpg)
+[![BRAINFUCK and BITCH](/assets/img/dev/brainfuck-e-bitch.jpg)](/assets/img/esolangs/brainfuck-e-bitch.jpg)
 
 This day I was surfing the internet and looking for compiler test content and I found some rather *different* things, among them, I found some very strange programming languages.
 
@@ -65,7 +65,8 @@ bff hello-world.bf
 {% endhighlight%}
 
 The result will be as expected! 😀
-[![brainfuck terminal output](/assets/img/esolangs/brainfuck.png)](/assets/img/esolangs/brainfuck.png)
+
+[![brainfuck terminal output](//assets/img/esolangs/brainfuck.png)](//assets/img/esolangs/brainfuck.png)
 
 For more information, see their website: <http://aminet.net/package.php?package=dev/lang/brainfuck-2.lha>
 
