@@ -3,7 +3,7 @@ layout: post
 title: "Know the Programming Languages: BRAINFUCK and BITCH"
 date: 2019-10-24 15:19:58
 image: '/assets/img/dev/brainfuck-e-bitch.jpg'
-description:
+description: 'Better known as ESOTERIC languages. 😱'
 featured-img: ../dev/brainfuck-e-bitch.jpg
 tags:
 - brainfuck
