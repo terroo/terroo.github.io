@@ -15,7 +15,7 @@ tags:
 
 > Active since the 1970s, language still persists and few can outperform. But how does it compare to the competition?
 
-![Why is the C programming language still on the rise?](/assets/dev/programer-c.jpg)
+![Why is the C programming language still on the rise?](/assets/img/dev/programer-c.jpg)
 
 > No technology stays alive for 50 years unless it does its job very well. The **C** programming language has been active since 1972, and still reigns as one of the fundamental elements of the software world. In some cases, a particular technology survives because people simply cannot replace it. In the last few decades, dozens of other languages ​​have emerged - some explicitly designed to challenge C, others standing out as a byproduct of its popularity.
 
