@@ -107,7 +107,7 @@ sed 's/$/word/' file.txt
 7 - Prints only lines that START with the string ‘http’
 
 {% highlight bash %}
-sed -n '/^ http/p' file.txt
+sed -n '/^http/p' file.txt
 {% endhighlight %}
 
 8 - Deletes only lines that START with the string ‘http’
@@ -116,7 +116,7 @@ sed -n '/^ http/p' file.txt
 sed -n '/^http/d' file.txt
 {% endhighlight %}
 
-9 - Exchange ALL occurrences of the word “landmarks”, “eric”, “camila” with the word “penguin”
+9 - Exchange ALL occurrences of the word “marcos”, “eric”, “camila” with the word “penguin”
 
 {% highlight bash %}
 sed 's/marcos\|eric\|camila/penguin/g' file.txt
@@ -140,7 +140,6 @@ data-ad-slot="5351066970"></ins>
 sed's/Marcos.*Eric/they/' file.txt
 {% endhighlight %}
 
-Customize Your Training Package
 11 - Delete blank line and change file
 
 {% highlight bash %}
@@ -226,7 +225,7 @@ sed '3,6s/BEAUTY/YES/' file.txt
 21 - Deletes what is between the word “spoke” and “second” (delimiters)
 
 {% highlight bash %}
-sed '/second/{/falou/{s/second.* failedou ;;;; \ n/;} 'file.txt
+sed '/second/{/spoke/{s/second.*spoke//;t};:a;/spoke/!{N;s/\n//;ta;};s/second.*spoke/\n/;}' file.txt
 {% endhighlight %}
 
 <!-- RETANGULO LARGO 2 -->
@@ -241,13 +240,12 @@ data-ad-slot="8549252987"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-22 - Removes HTML commands (all between <and>)
+22 - Removes HTML commands
 
 {% highlight bash %}
-sed 's/<[^>] *>//g' file.txt
+sed 's/<[^>]*>//g' file.txt
 {% endhighlight %}
 
-Udemy Regular Expression Course
 23 - Deletes the 1st character of the sentence.
 
 {% highlight bash %}
@@ -292,7 +290,7 @@ data-ad-slot="5351066970"></ins>
 sed 's/.\{4,\}//' file.txt
 {% endhighlight %}
 
-27 - Deletes 2 to 4 characters (as long as you have)
+27 - Deletes 2 to 4 characters
 
 {% highlight bash %}
 sed 's/.\{2,4\}//' file.txt
