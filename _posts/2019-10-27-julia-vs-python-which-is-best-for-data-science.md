@@ -12,6 +12,7 @@ tags:
 ---
 
 ![Julia vs. Python: Which is best for data science?](/assets/img/dev/julia-vs-python.jpg)
+
 > Both programming languages hold advantageous features for those seeking a career as a data scientist.
 
 Among Python's many functions, data analysis seems to have become the most significant. The ecosystem is loaded with tools that make the work of computer science and data analysis fast and efficient.
