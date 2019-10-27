@@ -381,7 +381,7 @@ history -c
 {% endhighlight %}
 
 38 - Command Line Interpreters
-> **$** - Shell of an ordinary user;
+> **$** - Shell of an normal user;
 > 
 > **#** - Superuser shell root (administrator)
 
