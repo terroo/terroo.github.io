@@ -2,7 +2,7 @@
 layout: post
 title: "45 Examples of Variables and Arrays in Shell Script"
 date: 2019-10-26 22:08:03
-image: '/assets/img/'
+image: '/assets/img/bash/bashlogo.jpg'
 description:
 featured-img: ../bash/bashlogo.jpg
 tags:
