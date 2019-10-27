@@ -8,7 +8,7 @@ featured-img: ../bash/bashlogo.jpg
 tags:
 ---
 
-![45 Examples of Variables and Arrays in Shell Script](/assets/bash/bashlogo.jpg)
+![45 Examples of Variables and Arrays in Shell Script](/assets/img/bash/bashlogo.jpg)
 
 1 - Create a variable, **${var}** is the same as $ var, but not ambiguous.
 {% highlight bash %}
