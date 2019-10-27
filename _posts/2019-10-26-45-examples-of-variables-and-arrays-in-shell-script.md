@@ -23,7 +23,7 @@ echo ${#var}
 31
 {% endhighlight %}
 
-3 - Execute the contents of $ var (same as 'eval \$$var')
+3 - Execute the contents of $var (same as 'eval \$$var')
 {% highlight bash %}
 echo ${!var}
 {% endhighlight %}
