@@ -200,7 +200,7 @@ Is there this variable
 27 - Formatters of the date Command
 
 | Format | Description |
-|---|---|---|
+|---|---|
 | `%a` | Abbreviated Weekday Name (Sun..Sab) |
 | `%A` | Name of the day of the week (Sunday..Saturday) |
 | `%b` | Abbreviated Month Name (Jan. Dec) |
