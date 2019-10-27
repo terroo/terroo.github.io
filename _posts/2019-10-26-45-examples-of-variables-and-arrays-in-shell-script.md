@@ -10,7 +10,7 @@ tags:
 
 ![45 Examples of Variables and Arrays in Shell Script](/assets/img/bash/bashlogo.jpg)
 
-1 - Create a variable, **${var}** is the same as $ var, but not ambiguous.
+1 - Create a variable, **${var}** is the same as **$var**, but not ambiguous.
 {% highlight bash %}
 var="http://www.terminalroot.com.br/"
 echo $var
