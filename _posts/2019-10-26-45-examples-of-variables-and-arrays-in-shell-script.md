@@ -179,8 +179,8 @@ data-ad-slot="5351066970"></ins>
 
 21 - Tests an expression, returning 0 or 1 (alias of command 'test')
 {% highlight bash %}
-[[ $var ]] && echo 'It's bigger'
-It's bigger
+[[ $var ]] && echo 'Its bigger'
+Its bigger
 {% endhighlight %}
 
 22 - Tests an expression, returning 0 or 1 (can use **&&** and **||** )
