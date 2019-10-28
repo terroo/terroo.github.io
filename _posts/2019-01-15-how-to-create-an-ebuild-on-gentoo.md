@@ -22,6 +22,19 @@ When you set up Gentoo, you probably remember that you had to download and decom
 
 > If you decide to create an ebuild inside `/usr/portage`, eg `/usr/portage/hello-world.ebuild`, running `emerge --sync` will automatically delete it, there are rules for it is accepted in the [Portage](https://wiki.gentoo.org/wiki/Portage) directory tree.
 
+<!-- RETANGULO LARGO -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Informat -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="2327980059"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ### Creating a Basic ebuild
 
 > You must have **sudo** or **root** privileges.
@@ -35,6 +48,18 @@ mkdir -p /usr/local/portage/app-misc/hello-world
 > Notice that we need to create in **/usr/local/** and not in ~/usr/portage/~
 
 Then use `cd $_` to enter the created directory, variable **$_** saves the last argument executed.
+
+<!-- RETANGULO LARGO 2 -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+style="display:block; text-align:center;"
+data-ad-layout="in-article"
+data-ad-format="fluid"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. In the previously created directory we will create opening a file with [Vim](https://wiki.gentoo.org/wiki/Vim) if you have the plugin <https://github.com/gentoo/gentoo-syntax> installed the file will have the ebuild syntax colorized.
 
@@ -83,6 +108,16 @@ BDEPEND=""
 > Remember that this is a basic example, there are other variables that can be consulted at: <https://devmanual.gentoo.org/ebuild-writing/variables/>. For more information about schema, see the file: 
 `/usr/portage/skel.ebuild`.
 
+<!-- QUADRADO -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+style="display:inline-block;width:336px;height:280px"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 Our ebuild got its final version as follows:
 
 ```ebuild
@@ -115,6 +150,16 @@ hello_world(){
 hello_world
 ```
 
+<!-- QUADRADO -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+style="display:inline-block;width:336px;height:280px"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 Create a directory named: `hello-world-1.0`, and add the shell script inside it. Then just compress and upload to a web address:
 `tar zcvf hello-world-1.0.tar.gz hello-world-1.0 /`
 
@@ -133,6 +178,18 @@ src_install () {
     dobin hello-world
 }
 ```
+
+<!-- RETANGULO LARGO 2 -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+style="display:block; text-align:center;"
+data-ad-layout="in-article"
+data-ad-format="fluid"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 The final content of our ebuild was:
 
