@@ -41,7 +41,7 @@ find /home/ -iname file.txt
 ## 3 - Search Directories
 {% highlight bash %}
 find / -type -d -name Photos file.txt
-/home/user/Fotos
+/home/user/Photos
 {% endhighlight %}
 
 ## 4 - Wildcard Search
