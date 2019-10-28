@@ -139,7 +139,7 @@ data-ad-slot="8549252987"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-## 11 - Search and remove with __- exec__
+## 11 - Search and remove with `-exec`
 
 {% highlight bash %}
 find . -type f -name EmptyFile.txt -exec rm -f {} \;
