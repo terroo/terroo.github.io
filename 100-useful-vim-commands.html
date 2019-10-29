@@ -1,0 +1,140 @@
+<p>When you open Vim for the first time, you’re in the command mode. The command mode lets you navigate the screen, delete and copy text among many others. The insert mode on the other hand, as implied, lets users insert text into Vim’s console. You can use the ESC key to switch back to the command mode after finishing typing.</p>
+<p>Vim commands</p>
+<ul>
+<li><p><code>i</code> → Pressing i in the console gets you to the insert mode. Now you can start typing your texts inside Vim. The text you type will appear in front of the cursor key.</p></li>
+<li><p><code>a</code> → It’s among another commonly used Vim commands you can use to insert text. The texts will be appended right after the cursor.</p></li>
+<li><p><code>I</code> → Want to place your texts at the beginning of the current line? The l command lets you insert text right at your desired location.</p></li>
+<li><p><code>A</code> → This is one of my favorite Vim commands to append text at the end of my current line. It also falls under those Vim commands used for inserting text.</p></li>
+<li><p><code>o</code> → Pressing the lowercase o creates a new line just after the current line you’re in.</p></li>
+<li><p><code>O</code> → The uppercase variant creates the new line before the current line.</p></li>
+<li><p><code>gf</code> → You can use this handy little command to open your files under the cursor.</p></li>
+<li><p><code>gi</code> → One of my most favorite Vim commands, gi restarts the insert mode in the last insert point you used.</p></li>
+<li><p><code>wq</code> → Typing in long strings of text doesn’t matter if you can’t save them for future usage. Enter the wq command in the command mode to save your file and exit Vim.</p></li>
+<li><p><code>q!</code> → Often you’ll find yourself in a position where you’re not satisfied with the texts you have typed and would like to close the editor without saving your contents. Entering q! in the command mode lets you do exactly so. Vim Commands for Moving Around The Console</p></li>
+</ul>
+<p>One of the foremost reason behind Vim’s ultra-fast user experience is its fast movement features. Vim features and supports numerous convenient Vim commands to make your life in front of the terminal blazing fast. Below are some of the most useful Vim commands for faster navigation.</p>
+<p>vim-movement-commands</p>
+<ul>
+<li><p><code>h</code> → Use the h command to navigate to the left side of your Vim console. This is analogous to the left arrow of your keyboard.</p></li>
+<li><p><code>l</code> → The l commands help you navigate to the right and is a substitute for the right arrow key.</p></li>
+<li><p><code>k</code> → Use the lowercase k command to move upwards. Similar to the arrow up key.</p></li>
+<li><p><code>j</code> → The j command takes you to downward and is a substitute for the down arrow key.</p></li>
+</ul>
+<p>The h j k l keys help you move across the screen much faster than the standard arrow keys. Prefix them with a number to get the most out of these Vim commands. So, for going down ten lines, instead of holding the key for a prolonged period of time, just type 10j. Mastering these passive Vim commands for navigation will enhance your productivity much faster.</p>
+<ul>
+<li><p><code>H</code> → This command takes the cursor at the topmost region of your screen.</p></li>
+<li><p><code>M</code> → It will put the cursor in the middle of your Vim screen.</p></li>
+<li><p><code>L</code> → The capital L puts the cursor at the end of the screen.</p></li>
+</ul>
+<p>The H M L Vim commands come in handy whenever you want to get to an approximate portion of your console screen.</p>
+<ul>
+<li><p><code>0</code> or <code>[HOME]</code> → Entering either 0 or the [HOME] button will take you to the start of the line.</p></li>
+<li><p><code>^</code> → This is among the most commonly used Vim commands to get to the first non-blank character in a line.</p></li>
+<li><p><code>$</code> → This command will take the cursor at the end of the current line.</p></li>
+<li><p><code>b</code> → The lowercase b command lets you move back by tokens.</p></li>
+<li><p><code>w</code> → This command helps you move forward by tokens.</p></li>
+<li><p><code>B</code> → The uppercase variant of b lets you move back by words.</p></li>
+<li><p><code>W</code> → This command will let you move forward by words.</p></li>
+</ul>
+<p>A token is any sequence of digits, letters, or underscores; whereas a word is any non-blank sequence that is separated by whitespace.</p>
+<ul>
+<li><p><code>ctrl+u</code> → This Vim command is basically a Page Up command. However, it moves the screen by half and holds onto the current cursor position.</p></li>
+<li><p><code>ctrl+d</code> → The Page Down variant of the above command. Functions in the same way.</p></li>
+<li><p><code>G</code> → Prefix the G command with a number to jump directly to a specific line number. Suppose, if you have line numbering enabled and are writing a shell script, you can go to the 10th line by merely typing 10G.</p></li>
+<li><p><code>#</code> → Given, # is the number of a specific line, entering this command will take you to that line directly. It’s one of the most used Vim commands to jump from line to line.</p></li>
+<li><p><code>“</code> → This command (two back ticks) takes you wherever you just were.</p></li>
+<li><p><code>)</code> → You can go-to at the start of the following sentence with this command.</p></li>
+<li><p><code>(</code> → Go-to at the beginning of the earlier sentence.</p></li>
+<li><p><code>}</code> → Used for going to the beginning of the next text block.</p></li>
+<li><p><code>{</code> → Takes cursor at the beginning of the previous text block. Vim Commands for Editing Texts</p></li>
+</ul>
+<p>Vim combines a significant number of powerful yet flexible editing features that lets users edit their documents seamlessly while paving the path to a versatile workflow. The power of Vim comes from the fact that you can combine many of such Vim commands together to solve your custom needs. This section of the guide covers some elementary Vim commands used in everyday text editing. Continue reading to find out more useful Vim commands for editing.</p>
+<p>favorite vim commands</p>
+<ul>
+<li><p><code>yy</code> → The yy command lets you copy an entire line. It’s something you’ll often employ during your time with Vim.</p></li>
+<li><p><code>yw</code> → This is one of the most widely used Vim commands for copying a word across the editor.</p></li>
+<li><p><code>y$</code> → One of my all-time favorite Vim commands, it gives users the ability to copy texts from the current position of the cursor to the end of a line.</p></li>
+<li><p><code>v</code> → The v command can be used to highlight a single character at a time in combination with the movement keys (arrows/ h j k l).</p></li>
+<li><p><code>V</code> → Almost the same as the above one, but instead of a word, this command will highlight an entire line.</p></li>
+<li><p><code>p</code> → You can paste the contents of your clipboard to the unnamed register with this handy little command.</p></li>
+<li><p><code>d</code> → This is among the most used Vim commands for deleting highlighted texts.</p></li>
+<li><p><code>dd</code> → Want to delete an entire line with a single Vim command? The dd command is specially created for this purpose.</p></li>
+<li><p><code>dw</code> → You can delete a single word pretty quickly with the dw command.</p></li>
+<li><p><code>D</code> → One of the most powerful Vim commands ever, the D command deletes everything from the current cursor location to the end of the line.</p></li>
+<li><p><code>d0</code> → This command is used for deleting everything from your cursor’s current position to the beginning of the line.</p></li>
+<li><p><code>dgg</code> → You can use this command to delete everything from your cursor’s current position to the beginning of the file.</p></li>
+<li><p><code>dG</code> → This command will wipe out everything from your cursor’s current position to the end of the file.</p></li>
+<li><p><code>x</code> → Use the x command whenever you need to delete a single character.</p></li>
+<li><p><code>u</code> → The u command is among the most widely used Vim commands for many to undo the last operation. Combining with a postfix allows users to undo multiple actions. So, u# undo’s the last # number of actions.</p></li>
+<li><p><code>ctrl+r</code> → Use the above command to redo the last undo operation.</p></li>
+<li><p><code>.</code> → The dot (.) command is one of those useful Vim commands that decreases your workload significantly by repeating the last action whenever you need such functionality.</p></li>
+<li><p><code>cc</code> → You can use the cc command to change line(s) by clearing and entering the insert mode at the same time. The cursor is placed at the current level of indentation. Useful Vim Commands for Replacing Texts</p></li>
+</ul>
+<p>Apart from the generic command and insert modes, Vim has another mode called the visual mode. You can highlight and change a particular portion of your text document in this mode. But where’s the fun in that, huh? Using a select set of Vim commands can achieve you the same result, just a bit faster. Below are some of my favorite Vim commands for changing texts on the fly.</p>
+<ul>
+<li><p><code>r</code> → The r command is a pretty handy tool when it comes to changing a single character. Follow it with [char], and it will change the current character under the cursor with [char].</p></li>
+<li><p><code>R</code> → The capital R opens the insert mode, but instead of inserting texts, you can replace them with this command.</p></li>
+<li><p><code>~</code> → The tilda(~) command is pretty useful when you need to change the case of a character in your document. Follow it with a number to flip that many characters.</p></li>
+<li><p><code>t[char]</code> → Enter t[char] to select up to but not including the next [char] on a particular line.</p></li>
+<li><p><code>f[char]</code> → Press f[char] to select up to and including the next [char] on a line.</p></li>
+<li><p><code>i[char]</code> → Want to select everything in between a set of parentheses or some other unique character? Type i[char] to select everything that sits between two consecutive [char].</p></li>
+<li><p><code>a[char]</code> → This command is identical to the previous one but includes the [char] at both ends of text. Most Used Vim Commands for Searching Through A Document</p></li>
+</ul>
+<p>The searching functionality is of greater importance to any versatile Linux text editor. Vim offers exceptionally powerful commands for searching through a document. It’s one of the most powerful areas of this innovative text editor. Glance over the below Vim commands to search through your document effectively.</p>
+<p>Vim Code Editor</p>
+<ul>
+<li><p><code>/</code> → The slash command is the single most used command for searching through huge text files in Vim. Just type / and follow it with the texts you want Vim to search for you and look out at the bottom corner of the console.</p></li>
+<li><p><code>/\c</code> → The ption, when piped to the search (/) command, lets users search for texts in a case sensitive manner. Wise utilization of this command can save hours of hard work.</p></li>
+<li><p><code>?[pattern]</code> → This is among the most useful Vim commands for searching previous texts for a given [pattern].</p></li>
+<li><p><code>n</code> → The n command searches in the direction of your last search. Use this command if you know in which direction your search item is.</p></li>
+<li><p><code>N</code> → Almost identical to the above command, but searches in the opposite direction of your last search.</p></li>
+<li><p><code>:%s/[pattern]/[replacement]/g</code> → The above command utilizes regular expression for searching every occurrence of [pattern] and replaces it with [replacement] without asking for confirmation.</p></li>
+<li><p><code>:%s/[pattern]/[replacement]/gc</code> → Same as the previous command but asks for confirmation before replacing each instance of [pattern] with [replacement].</p></li>
+<li><p><code>:s/[pattern]/[replacement]/g</code> → Instead of replacing every single instance of [pattern] on your file, this Vim command will replace only those [pattern] that are in the current line with [replacement].</p></li>
+<li><p><code>:bufdo /[pattern]</code> → This is among those powerful Vim commands that let users search for [pattern] in every currently opened buffer. It will enhance your productivity and decrease search time significantly.</p></li>
+<li><p><code>:g/string/d</code> → This is among those useful Vim commands that will come in handy whenever you want to delete every line that contains string from your document. Linux Command Cheat Sheet for Working With Multiple Files in Vim</p></li>
+</ul>
+<p>Editing in the terminal is fun and alright. But, where’s the edge of terminal editors if you can’t edit multiple files with them. Luckily, as an iconic text editor, Vim lets you work with multiple documents in a pretty neat way. The ability to split the screen when working with multiple files at the same time is something Vim has been offering even before the concept of the split screen became mainstream. Now, you should slowly start to realize why this legendary editor is hailed in such high regards.</p>
+<p>vim editor</p>
+<ul>
+<li><p><code>:sp [filename]</code> → Use this command to create a new file and split the console screen horizontally in order to show the two different buffers.</p></li>
+<li><p><code>:vsp [filename]</code> → The functionality of this Vim command is, in essence, identical to the above command, but instead of splitting the console horizontally it splits the screen vertically.</p></li>
+<li><p><code>:bn</code> → This Vim command will switch your editor to the next buffer. It’s among those few fundamental Vim commands without which you won’t be able to work with multiple documents in Vim.</p></li>
+<li><p><code>:bp</code> → Identical to the earlier command, but switches to the previous buffer instead of going next.</p></li>
+<li><p><code>:bd</code> → Use this Vim command when closing a specific buffer. Make sure to save your data using appropriate Vim commands.</p></li>
+<li><p><code>:ls</code> → This is one of the handy Vim commands that will present users with a list of all open buffers.</p></li>
+<li><p><code>ctrl+ws</code> → If you want to split your Vim windows horizontally, then this is the command you’re looking for.</p></li>
+<li><p><code>ctrl+wv</code> → Instead of splitting the windows horizontally, this Vim command will split it vertically.</p></li>
+<li><p><code>ctrl+ww</code> → Utilize this command to switch between multiple windows directly from the command mode.</p></li>
+<li><p><code>ctrl+wq</code> → You can use this handy Vim command to quit a particular window.</p></li>
+<li><p><code>ctrl+wh</code> → This command will move the location of your cursor to the left window.</p></li>
+<li><p><code>ctrl+wl</code> → Same as the previous command, but instead of moving the cursor left, this command will point to the right window.</p></li>
+<li><p><code>ctrl+wj</code> → Use this command whenever you want to move a window beneath your existing one.</p></li>
+<li><p><code>ctrl+wk</code> → Same as above, but takes the cursor to the window above the current one. Useful Vim Commands When Working With Multiple Tabs</p></li>
+</ul>
+<p>Vim offers a variety of Vim commands to open and navigate a plethora of tabs right from the terminal. You can use these useful Vim commands whenever you are working with multiple files simultaneously. We encourage new Vim users to glance over such commands as they will often come in handy after you’ve mastered the basic Vim commands and start to do heavyweight staffs with it.</p>
+<p>vim commands in action</p>
+<ul>
+<li><p><code>:tabnew</code> → You can use the :tabnew command to create a new tab and work with some other document while not leaving the current file.</p></li>
+<li><p><code>gt</code> → The gt command will show you the next tab opened by you.</p></li>
+<li><p><code>:tabfirst</code> → The above command will show you the first tab you’ve got opened in a particular session.</p></li>
+<li><p><code>:tablast</code> → Same as the previous command, but instead of showing the first tab it will show the last tab.</p></li>
+<li><p><code>tabm n(position)</code> → This powerful Vim command will come in handy whenever you feel the need to re-arrange your existing tabs.</p></li>
+<li><p><code>tabdo %s/foo/bar/g</code> → You can utilize the above command whenever you want to execute a command in every opened tab at the same time.</p></li>
+<li><p><code>:tab ball</code> → This Vim command is one of my favorite Vim commands, and it puts each open files in tabs.</p></li>
+<li><p><code>:new abc.txt</code> → This is among those Vim commands that lets you open a new file named abc.txt in a new window without exiting the current document. Miscellaneous Vim Commands</p></li>
+</ul>
+<p>As Vim offers plenty of Vim commands, we are unable to cover every single one of them categorically. That’s why in this section we’ll overview some useful Vim commands that are used by veteran users for a wide array of purpose.</p>
+<p>other Vim Commands</p>
+<ul>
+<li><p><code>:w</code> → Pressing this Vim command in the command mode saves your current document but do not exist the existing session.</p></li>
+<li><p><code>:q</code> → This command will exit the current session without saving your changes. Note that you will see the E37 error if you have unsaved changes in your document. In such scenarios, you need to override this command and use q! instead.</p></li>
+<li><p><code>:help [command]</code> → The help command performs a search operation on the command you’ve typed and shows relevant information on them right in the console.</p></li>
+<li><p><code>:e [file]</code> → This command will open a file named [file] and create a new one if it doesn’t exist in your filesystem already.</p></li>
+<li><p><code>:w [filename]</code> → Use this command to save your existing document directly into a new file named [filename].</p></li>
+<li><p><code>:stop</code> → Writing this command in the command mode will suspend your current Vim session. You can also do this by pressing ctrl+z at the same time.</p></li>
+<li><p><code>:browse e</code> → Use this command whenever you want to invoke the graphical file explorer from your Vim console.</p></li>
+<li><p><code>:%!fmt</code> → Writing this command will align each line of your current file.</p></li>
+<li><p><code>!}fmt</code> → Use this whenever you need to align all lines at the present position of your cursor.</p></li>
+<li><p><code>:set autoindent</code> → This is one of the most used Vim commands you will use during your time with Vim. It sets autoindent for your current session. Ending Thoughts</p></li>
+</ul>
