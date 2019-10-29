@@ -194,6 +194,8 @@ data-ad-slot="5351066970"></ins>
 | **`!}fmt`** | Use it whenever you need to align all lines at the current position of your cursor. |
 | **`:set autoindent`** | This is one of the most commonly used Vim commands that you will use during your time in Vim. It sets autoindent for your current session. Final thoughts |
 
+
+
 Meet our [Vim Moderno and Vimscript Course at Udemy](https://www.udemy.com/course/curso-de-vim-moderno-e-vimscript/). Although the classes are in the Portuguese language, Udemy offers automatic translation if you are interested. Link:
 
 ## <https://www.udemy.com/course/curso-de-vim-moderno-e-vimscript/>
