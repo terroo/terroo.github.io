@@ -144,6 +144,7 @@ data-ad-slot="5351066970"></ins>
 | **`:bufdo /[pattern]`** | This is one of Vim's powerful commands that allows users to search for [pattern] in all currently opened buffers. This will increase your productivity and significantly shorten your search time. |
 | **`:g/string/d`** | This is one of the useful Vim commands that will be useful whenever you want to delete all lines containing string from your document. Linux Command Tips Sheet for Working with Multiple Files in Vim |
 
+
 <!-- QUADRADO -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
