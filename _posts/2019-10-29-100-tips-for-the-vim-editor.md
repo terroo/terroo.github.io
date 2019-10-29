@@ -89,7 +89,6 @@ data-ad-slot="8549252987"></ins>
 | **`yw`** | This is one of the most widely used Vim commands for copying a word in the editor. |
 | **`y$`** | One of my all-time favorite Vim commands offers users the ability to copy text from the current cursor position to the end of a line. |
 | **`v`** | The v command can be used to highlight a single character at a time in combination with the arrow keys (arrows / hjkl). |
-|→ Almost the same as the previous one, but instead of a word, this command will highlight an entire line.|→ You can paste the contents of your clipboard into the unnamed registry with this handy little command. |
 | **`d`** | This is one of the most commonly used Vim commands to delete highlighted texts. |
 | **`dd`** | Do you want to delete an entire line with a single command from Vim? The dd command is created especially for this purpose. |
 | **`dw`** | You can delete a single word quickly with the dw command. |
