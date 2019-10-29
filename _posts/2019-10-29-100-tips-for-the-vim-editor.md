@@ -160,7 +160,7 @@ data-ad-slot="5351066970"></ins>
 ## Screen Manipulation and Editing
 
 | Keys | Description |
-|--- |--- |
+|---|---|
 | **`:sp [filename]`** | Use this command to create a new file and split the console screen horizontally to show the two different buffers. |
 | **`:vsp [filename]`** | The functionality of this Vim command is essentially identical to the above command, but instead of splitting the console horizontally, it splits the screen vertically. |
 | **`:bn`** | This Vim command will change its editor to the next buffer. It is among the few fundamental Vim commands without which you will not be able to work with multiple documents in Vim. |
