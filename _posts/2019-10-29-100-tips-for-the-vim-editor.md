@@ -159,41 +159,38 @@ data-ad-slot="5351066970"></ins>
 
 ## Screen Manipulation and Editing
 
-
-| Keys | Description |
-| --- | --- |
-| **`:sp [filename]`** | Use this command to create a new file and split the console screen horizontally to show the two different buffers. |
-| **`:vsp [filename]`** | The functionality of this Vim command is essentially identical to the above command, but instead of splitting the console horizontally, it splits the screen vertically. |
-| **`:bn`** | This Vim command will change its editor to the next buffer. It is among the few fundamental Vim commands without which you will not be able to work with multiple documents in Vim. |
-| **`:bp`** | Identical to the previous command, but switches to the previous buffer instead of advancing. |
-| **`:bd`** | Use this Vim command when closing a specific buffer. Save your data using the appropriate Vim commands. |
-| **`:ls`** | This is one of the useful Vim commands that will present users with a list of all open buffers. |
-| **`ctrl+ws`** | If you want to split Vim windows horizontally, this is the command you are looking for. |
-| **`ctrl+wv`** | Instead of splitting windows horizontally, this Vim command will split it vertically. |
-| **`ctrl+ww`** | Use this command to switch between multiple windows directly from command mode. |
-| **`ctrl+wq`** | You can use this useful Vim command to exit a specific window. |
-| **`ctrl+wh`** | This command moves your cursor location to the left window. |
-| **`ctrl+wl`** | Same as the previous command, but instead of moving the cursor to the left, this command will point to the right window. |
-| **`ctrl+wj`** | Use this command whenever you want to move a window below the existing window. |
-| **`ctrl+wk`** | Same as above, but takes the cursor to the window above the current one. Vim's useful commands when working with multiple tabs |
-| **`:tabnew`** | You can use the: tabnew command to create a new tab and work with another document without leaving the current file. |
-| **`gt`** | The gt command will show you the next tab you open. |
-| **`:tabfirst`** | The above command shows the first tab you opened in a specific session. |
-| **`:tablast`** | Same as the previous command, but instead of showing the first tab, it will display the last tab. |
-| **`tabm n(position)`** | This powerful Vim command will be useful whenever you feel the need to rearrange your existing tabs. |
-| **`tabdo %s/foo/bar/g`** | You can use the above command whenever you want to execute a command on all open tabs at the same time. |
-| **`:tab ball`** | This Vim command is one of my favorite Vim commands and puts each open file in one [CODE]:tab ball`**  . |
-| **`:new abc.txt`** | This is one of Vim's commands that allows you to open a new file called abc.txt in a new window without leaving the current document. |
-| **`:w`** | Pressing this command Vim in command mode saves the current document, but there is no existing session. |
-| **`:q`** | This command exits the current session without saving your changes. Note that you will see error E37 if you have unsaved changes to your document. In such scenarios, you need to override this command and use q! instead. |
-| **`:help [command]`** | The help command performs a search operation on the command you entered and displays relevant information about them directly in the console. |
-| **`:e [file]`** | This command will open a file named [file] and create a new one if it no longer exists in your file system. |
-| **`:w [filename]`** | Use this command to save the existing document directly to a new file named [filename]. |
-| **`:stop`** | Writing this command in command mode will suspend your current Vim session. You can also do this by pressing ctrl + z at the same time. |
-| **`:browse e`** | Use this command whenever you want to call the graphics file explorer from your Vim console. |
-| **`:%!fmt`** | Writing this command will align each line of your current file. |
-| **`!}fmt`** | Use it whenever you need to align all lines at the current position of your cursor. |
-| **`:set autoindent`** | This is one of the most commonly used Vim commands that you will use during your time in Vim. It sets autoindent for your current session. Final thoughts |
++  **`:sp [filename]`** → Use this command to create a new file and split the console screen horizontally to show the two different buffers.
++  **`:vsp [filename]`** → The functionality of this Vim command is essentially identical to the above command, but instead of splitting the console horizontally, it splits the screen vertically.
++  **`:bn`** → This Vim command will change its editor to the next buffer. It is among the few fundamental Vim commands without which you will not be able to work with multiple documents in Vim.
++  **`:bp`** → Identical to the previous command, but switches to the previous buffer instead of advancing.
++  **`:bd`** → Use this Vim command when closing a specific buffer. Save your data using the appropriate Vim commands.
++  **`:ls`** → This is one of the useful Vim commands that will present users with a list of all open buffers.
++  **`ctrl+ws`** → If you want to split Vim windows horizontally, this is the command you are looking for.
++  **`ctrl+wv`** → Instead of splitting windows horizontally, this Vim command will split it vertically.
++  **`ctrl+ww`** → Use this command to switch between multiple windows directly from command mode.
++  **`ctrl+wq`** → You can use this useful Vim command to exit a specific window.
++  **`ctrl+wh`** → This command moves your cursor location to the left window.
++  **`ctrl+wl`** → Same as the previous command, but instead of moving the cursor to the left, this command will point to the right window.
++  **`ctrl+wj`** → Use this command whenever you want to move a window below the existing window.
++  **`ctrl+wk`** → Same as above, but takes the cursor to the window above the current one. Vim's useful commands when working with multiple tabs
++  **`:tabnew`** → You can use the: tabnew command to create a new tab and work with another document without leaving the current file.
++  **`gt`** → The gt command will show you the next tab you open.
++  **`:tabfirst`** → The above command shows the first tab you opened in a specific session.
++  **`:tablast`** → Same as the previous command, but instead of showing the first tab, it will display the last tab.
++  **`tabm n(position)`** → This powerful Vim command will be useful whenever you feel the need to rearrange your existing tabs.
++  **`tabdo %s/foo/bar/g`** → You can use the above command whenever you want to execute a command on all open tabs at the same time.
++  **`:tab ball`** → This Vim command is one of my favorite Vim commands and puts each open file in one [CODE]:tab ball`**  .
++  **`:new abc.txt`** → This is one of Vim's commands that allows you to open a new file called abc.txt in a new window without leaving the current document.
++  **`:w`** → Pressing this command Vim in command mode saves the current document, but there is no existing session.
++  **`:q`** → This command exits the current session without saving your changes. Note that you will see error E37 if you have unsaved changes to your document. In such scenarios, you need to override this command and use q! instead.
++  **`:help [command]`** → The help command performs a search operation on the command you entered and displays relevant information about them directly in the console.
++  **`:e [file]`** → This command will open a file named [file] and create a new one if it no longer exists in your file system.
++  **`:w [filename]`** → Use this command to save the existing document directly to a new file named [filename].
++  **`:stop`** → Writing this command in command mode will suspend your current Vim session. You can also do this by pressing ctrl + z at the same time.
++  **`:browse e`** → Use this command whenever you want to call the graphics file explorer from your Vim console.
++  **`:%!fmt`** → Writing this command will align each line of your current file.
++  **`!}fmt`** → Use it whenever you need to align all lines at the current position of your cursor.
++  **`:set autoindent`** → This is one of the most commonly used Vim commands that you will use during your time in Vim. It sets autoindent for your current session. Final thoughts
 
 ***
 
