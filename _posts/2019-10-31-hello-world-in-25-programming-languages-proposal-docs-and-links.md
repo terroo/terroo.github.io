@@ -84,7 +84,7 @@ len     equ $ - msg
 
 > _Must have compiler and linker: [ld](https://www.gnu.org/software/binutils/) ._
 
-Rotate: `nasm -f elf64 -o hello-world.o hello-world.asm && ld hello-world.o -o hello-world && ./hello-world`  
+Run: `nasm -f elf64 -o hello-world.o hello-world.asm && ld hello-world.o -o hello-world && ./hello-world`  
 Example: [http://asm.sourceforge.net/intro/hello.html](http://asm.sourceforge.net/intro/hello.html)
 
 <!-- RETANGULO LARGO -->
@@ -122,7 +122,7 @@ int main() {
 
 > _You must have a compiler installed, eg [gcc](https://gcc.gnu.org/) ._
 
-Rotate: `gcc hello-world.c -o hello-world.o && ./hello-world.o`  
+Run: `gcc hello-world.c -o hello-world.o && ./hello-world.o`  
 
 > Example: [https://terminalroot.com.br/2011/10/ola-mundo.html](https://terminalroot.com.br/2011/10/ola-mundo.html)
 
@@ -239,7 +239,7 @@ BEGIN {print "Hello, World!"}
 
 > _There are several variants of Awk: [Learn more here](https://terminalroot.com.br/2014/12/tutorial-basico-de-awk.html) ._
 
-Rotate: `awk -f hello-world.awk`  
+Run: `awk -f hello-world.awk`  
 
 > Example: [https://www.gnu.org/software/gawk/manual/gawk.html#BEGIN_002fEND](https://www.gnu.org/software/gawk/manual/gawk.html)
 
@@ -273,7 +273,7 @@ Vim's scripting language, known as Vimscript, is a typical dynamic imperative la
 
 > _Must have [vim](https://www.vim.org/) installed._
 
-Rotate: `vim -u hello-world.vim +qall`  
+Run: `vim -u hello-world.vim +qall`  
 
 > Vim and VimScript Course: [https://terminalroot.com.br/vim](https://terminalroot.com.br/vim)
 
@@ -328,7 +328,7 @@ print "Hello, World!"
 
 > _Must have Lua installed._
 
-Rotate: `lua hello-world.lua` or `chmod +x hello-world.lua && ./hello-world.lua`  
+Run: `lua hello-world.lua` or `chmod +x hello-world.lua && ./hello-world.lua`  
 
 > Example: [https://terminalroot.com.br/2016/11/blog-linux-lua.html](https://terminalroot.com.br/2016/11/blog-linux-lua.html)
 
@@ -505,7 +505,7 @@ fn main() {
 
 > _Must have compiler: [rustc](https://doc.rust-lang.org/rustc/index.html) ._
 
-Rotate: `rustc hello-world.rs && ./hello-world`  
+Run: `rustc hello-world.rs && ./hello-world`  
 
 > Example: [https://doc.rust-lang.org/stable/rust-by-example/hello.html](https://doc.rust-lang.org/stable/rust-by-example/hello.html)
 
@@ -563,7 +563,7 @@ main() {
 
 > _Need [dependencies](https://dart.dev/tutorials/server/get-started) ._
 
-Rotate: `dart hello-world.dart`  
+Run: `dart hello-world.dart`  
 
 > Example: [https://dart.dev/#try-dart](https://dart.dev/)
 
@@ -627,7 +627,7 @@ OlaMundo()
 
 > _Must have [R](https://cran.r-project.org/mirrors.html) installed._
 
-Rotate: `Rscript hello-world.r`  
+Run: `Rscript hello-world.r`  
 
 > Example: [https://cran.r-project.org/doc/manuals/r-release/R-intro.html](https://cran.r-project.org/doc/manuals/r-release/R-intro.html)
 
@@ -650,7 +650,7 @@ println("Hello, World!")
 
 > _To use the compiled form you need the [JIT](https://www.gnu.org/software/lightning/) compiler._
 
-Rotate: `julia hello-world.jl`  
+Run: `julia hello-world.jl`  
 
 > Example: [https://docs.julialang.org/en/v1/manual/getting-started/](https://docs.julialang.org/en/v1/manual/getting-started/)
 
@@ -673,7 +673,7 @@ puts "Hello, World!"
 
 > _You need to have Ruby installed._
 
-Rotate: `ruby hello-world.rb`  
+Run: `ruby hello-world.rb`  
 
 > Example: [https://www.ruby-lang.org/en/documentation/](https://www.ruby-lang.org/pt/documentation/)
 
@@ -707,7 +707,7 @@ IO.puts "Hello world from Elixir"
 
 > _You must have Elixir installed._
 
-Rotate: `elixir hello-world.exs`  
+Run: `elixir hello-world.exs`  
 
 > Example: [https://elixir-lang.org/getting-started/introduction.html](https://elixir-lang.org/getting-started/introduction.html)
 
@@ -733,7 +733,7 @@ class Sample : Object {
 
 > _You must have Vala installed._
 
-Rotate: `valac hello-world.vala -o hello-world`](https://wiki.gnome.org/Projects/Vala/ValaForCSharpProgrammers) 
+Run: `valac hello-world.vala -o hello-world`](https://wiki.gnome.org/Projects/Vala/ValaForCSharpProgrammers) 
 
 > [Example:](https://wiki.gnome.org/Projects/Vala/ValaForCSharpProgrammers) [https://www.vala-project.org/doc/vala/Overview.html#Getting_started](https://www.vala-project.org/doc/vala/Overview.html)
 
@@ -797,7 +797,7 @@ Message.Info("Hello, World!")
 
 > _Must have Gambas, eg `sudo apt install gambas3` [https://www.youtube.com/watch?v=xezNqM2zrbY](https://www.youtube.com/watch%3Fv%3DxezNqM2zrbY) ._
 
-Rotate: `gambas hello-world.gambas`  
+Run: `gambas hello-world.gambas`  
 
 > Example: [https://terminalroot.com.br/2016/10/gambas-o-visual-basic-open-source-para.html](https://terminalroot.com.br/2016/10/gambas-o-visual-basic-open-source-para.html)
 
