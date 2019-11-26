@@ -4,7 +4,7 @@ title: "Examples of functions: fread(), fwrite(), remove() and others in C"
 date: 2019-11-26 16:46:37
 image: '/assets/img/dev/c.jpg'
 description:
-featured-img: ''../dev/c.jpg''
+featured-img: '../dev/c.jpg'
 tags:
 - c
 - language-c
