@@ -3,7 +3,7 @@ layout: post
 title: "Install Veonim - A text editor based on Vim and NeoVim"
 date: 2019-11-28 12:45:48
 image: '/assets/img/tips/veonim.png'
-description:
+description: 'Veonim is a simple modal IDE built with Neovim and VSCode extensions.'
 featured-img: ..tips/veonim.png
 tags:
 - veonim
