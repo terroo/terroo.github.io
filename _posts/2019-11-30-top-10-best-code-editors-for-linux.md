@@ -32,7 +32,7 @@ data-ad-slot="5351066970"></ins>
 
 ***
 
-## 1. [![Vim](/assets/img/editors/vim-logo.png)](/assets/img/editors/vim-logo.png)
+## 1. [![Vim](/assets/img/editors/vim-logo.png)](/assets/img/editors/vim-logo.png) Vim
 ![Vim](/assets/img/editors/vim-min.png)
 
 <!-- MINI ANÚNCIO -->
@@ -62,7 +62,7 @@ sudo pacman -S vim # Arch, Manjaro,...
 
 ***
 
-## 2. [![Emacs](/assets/img/editors/emacs-logo.png)](/assets/img/editors/emacs-logo.png)
+## 2. [![Emacs](/assets/img/editors/emacs-logo.png)](/assets/img/editors/emacs-logo.png) Emacs
 ![Emacs](/assets/img/editors/emacs-min.png)
 
 Emacs is the second most used code editor in the world by programmers. It is the editor that has the most functionalities in the world, hence the reason that many call it the operating system, almost anything is possible with the same.
@@ -95,7 +95,7 @@ sudo pacman -S emacs # Arch, Manjaro,...
 
 ***
 
-## 3. [![Atom](/assets/img/editors/atom-logo.png)](/assets/img/editors/atom-logo.png)
+## 3. [![Atom](/assets/img/editors/atom-logo.png)](/assets/img/editors/atom-logo.png) Atom
 
 <!-- RETANGULO LARGO -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -148,7 +148,7 @@ data-ad-slot="5351066970"></ins>
 
 ***
 
-## 4. [![Anjuta](/assets/img/editors/anjuta-logo.png)](/assets/img/editors/anjuta-logo.png)
+## 4. [![Anjuta](/assets/img/editors/anjuta-logo.png)](/assets/img/editors/anjuta-logo.png) Anjuta
 ![Anjuta](/assets/img/editors/anjuta-min.png)
 
 Anjuta is a more robust editor, but it is very restricted to specific languages, more suitable for C, C++, Java, Python, Vala and Javascript development. I use it a lot for C++ development.
@@ -165,7 +165,7 @@ sudo pacman -S anjuta # Arch, Manjaro,...
 
 ***
 
-## 5. [![Code::Blocks](/assets/img/editors/codeblocks-logo.png)](/assets/img/editors/codeblocks-logo.png)
+## 5. [![Code::Blocks](/assets/img/editors/codeblocks-logo.png)](/assets/img/editors/codeblocks-logo.png) Code::Blocks
 ![Code::Blocks](/assets/img/editors/codeblocks-min.png)
 
 Code::Blocks is a specific editor for the C and C++ languages. Like Anjuta, use for C++ development it is also complex and robust, yet easier to use than Anjuta.
@@ -193,7 +193,7 @@ sudo pacman -S codeblocks # Arch, Manjaro,...
 
 ***
 
-## 6. [![VS Code](/assets/img/editors/code-logo.png)](/assets/img/editors/code-logo.png)
+## 6. [![VS Code](/assets/img/editors/code-logo.png)](/assets/img/editors/code-logo.png) VS Code
 ![VS Code](/assets/img/editors/code-min.png)
 
 This is the code editor of Microsoft, since released has gained many supporters in the world. I particularly like it too, although I use very little. Actually the version I have installed is VS Codium which is a third party version.
@@ -223,7 +223,7 @@ sudo emerge -a visual-studio-code
 
 ***
 
-## 7. [![NeoVim](/assets/img/editors/neovim-logo.png)](/assets/img/editors/neovim-logo.png)
+## 7. [![NeoVim](/assets/img/editors/neovim-logo.png)](/assets/img/editors/neovim-logo.png) Neovim
 ![NeoVim](/assets/img/editors/neovim-min.png)
 
 Neovim is an improved Vim fork, especially in the organization of plugins. In our Vim course there is also a lot of Neovim content.
@@ -252,7 +252,7 @@ data-ad-slot="8549252987"></ins>
 
 ***
 
-## 8. [![Gedit](/assets/img/editors/gedit-logo.png)](/assets/img/editors/gedit-logo.png)
+## 8. [![Gedit](/assets/img/editors/gedit-logo.png)](/assets/img/editors/gedit-logo.png) Gedit
 ![Gedit](/assets/img/editors/gedit-min.png)
 
 Gedit is the GNOME editor most distributions that come with GNOME preinstalled already have Gedit, but if you don't have it just install it with your distro's package manager. I really like Gedit, because it was one of the first editors I used in my life and I have some nice plugins, besides being possible to customize them: themes, snippets,…
@@ -261,7 +261,7 @@ Official Website: <https://wiki.gnome.org/Apps/Gedit>
 
 ***
 
-## 9. [![Spacemacs](/assets/img/editors/spacemacs-logo.png)](/assets/img/editors/spacemacs-logo.png)
+## 9. [![Spacemacs](/assets/img/editors/spacemacs-logo.png)](/assets/img/editors/spacemacs-logo.png) Spacemacs
 
 <!-- MINI ANÚNCIO -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -283,7 +283,7 @@ Official Website: <https://www.spacemacs.org/>
 
 ***
 
-## 10. [![Veonim](/assets/img/editors/veonim-logo.png)](/assets/img/editors/veonim-logo.png)
+## 10. [![Veonim](/assets/img/editors/veonim-logo.png)](/assets/img/editors/veonim-logo.png) Veonim
 ![Veonim](/assets/img/editors/veonim-min.png)
 
 Veonim is a Vim and Neovim based editor and just like Atom was developed with ElectronJS, there is a very cool article about it here on the blog that can be found at the link: Meet and [Install Veonim - A Vim and NeoVim based editor](https://en.terminalroot.com.br/install-veonim-a-text-editor-based-on-vim-and-neovim/)
