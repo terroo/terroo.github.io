@@ -11,6 +11,8 @@ tags:
 - themes
 ---
 
+![The 8 Best Icon Themes for Your Linux](/assets/img/linux/icons-linux.jpg)
+
 I made this list based on my experiences with icon themes, some of them have already been laid out in some [Terminal Root Channel](https://www.youtube.com/TerminalRootTV) videos, but others have been combed and tested to be part of here.
 
 Installation is standard on any Linux, ie just download the package, extract and move to the icon directory in your user's root folder: `~/.icons/`, if there is no such directory, create: `mkdir ~/.icons` . Whether to enable will depend on each Interface/Desktop Environment and window managers.
