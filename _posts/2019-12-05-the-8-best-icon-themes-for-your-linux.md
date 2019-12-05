@@ -244,5 +244,6 @@ tar zxvf Cupertino.tar.gz
 mv Cupertino/ ~/.icons/
 {% endhighlight %}
 
+---
 
 Thanks!
