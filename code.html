@@ -1,0 +1,178 @@
+<h2 id="comandos-de-controle-e-acesso">Comandos de Controle e Acesso</h2>
+<ul>
+<li><code>exit</code> ➜ Terminar a sessão, ou seja, a <code>shell</code> (mais ajuda digitando <code>man sh</code> ou <code>man csh</code>)</li>
+<li><code>logout</code> ➜ Deslogar, ou seja, terminar a sessão actual, mas apenas na <code>C shell</code> e na <code>bash shell</code></li>
+<li><code>passwd</code> ➜ Mudar a <code>password</code> do nosso usuário</li>
+<li><code>rlogin</code> ➜ Logar de forma segura noutro sistema <code>Unix/Linux</code></li>
+<li><code>ssh</code> ➜ Sessão segura, vem de <code>secure shell</code>, e permite-nos logar num servidor através do protocolo <code>ssh</code></li>
+<li><code>slogin</code> ➜ Versão segura do <code>rlogin</code></li>
+<li><code>yppasswd</code> ➜ Mudar a <code>password</code> do nosso usuário nas páginas amarelas (<code>yellow pages</code>)</li>
+</ul>
+<h2 id="comandos-de-comunicações">Comandos de Comunicações</h2>
+<ul>
+<li><code>mail</code> ➜ Enviar e receber emails</li>
+<li><code>mesg</code> ➜ Permitir ou negar mensagens de terminal e pedidos de conversação (<code>talk requests</code>)</li>
+<li><code>pine</code> ➜ Outra forma de enviar e receber emails, uma ferramenta rápida e prática</li>
+<li><code>talk</code> ➜ Falar com outros usuários que estejam logados no momento</li>
+<li><code>write</code> ➜ Escrever para outros usuários que estejam logados no momento</li>
+</ul>
+<h2 id="comandos-de-ajuda-e-documentação">Comandos de Ajuda e Documentação</h2>
+<ul>
+<li><code>apropos</code> ➜ Localiza comandos por pesquisa de palavra-chave</li>
+<li><code>find</code> ➜ Localizar arquivos, como por exemplo: <code>find . -name *.txt -print</code>, para pesquisa de arquivos de texto por entre os arquivos da diretoria actual</li>
+<li><code>info</code> ➜ Lança o explorador de informações</li>
+<li><code>man</code> ➜ Manual muito completo, pesquisa informação acerca de todos os comandos que necessitemos de saber, como por exemplo <code>man find</code></li>
+<li><code>whatis</code> ➜ Descreve o que um determinado comando é</li>
+<li><code>whereis</code> ➜ Localizar a página de ajuda (<code>man page</code>), código fonte, ou arquivos binários, de um determinado programa</li>
+</ul>
+<h2 id="comandos-de-edição-de-texto">Comandos de Edição de Texto</h2>
+<ul>
+<li><code>emacs</code> ➜ Editor de texto <code>screen-oriented</code></li>
+<li><code>pico</code> ➜ Editor de texto <code>screen-oriented</code>, também chamado de <code>nano</code></li>
+<li><code>sed</code> ➜ Editor de texto <code>stream-oriented</code></li>
+<li><code>vi</code> ➜ Editor de texto <code>full-screen</code></li>
+<li><code>vim</code> ➜ Editor de texto <code>full-screen</code> melhorado (<code>vi improved</code>)</li>
+</ul>
+<h2 id="comandos-de-gestão-de-arquivos-e-diretórios">Comandos de Gestão de Arquivos e Diretórios</h2>
+<ul>
+<li><code>cd</code> ➜ Mudar de diretoria actual, como por exemplo <code>cd diretoria</code>, <code>cd ..</code>, <code>cd /</code></li>
+<li><code>chmod</code> ➜ Mudar a protecção de um arquivo ou diretoria, como por exemplo <code>chmod 777</code>, parecido com o <code>attrib</code> do <code>MS-DOS</code></li>
+<li><code>chown</code> ➜ Mudar o dono ou grupo de um arquivo ou diretoria, vem de <code>change owner</code></li>
+<li><code>chgrp</code> ➜ Mudar o grupo de um arquivo ou diretoria</li>
+<li><code>cmp</code> ➜ Compara dois arquivos</li>
+<li><code>comm</code> ➜ Selecciona ou rejeita linhas comuns a dois arquivos seleccionados</li>
+<li><code>cp</code> ➜ Copia arquivos, como o <code>copy</code> do <code>MS-DOS</code></li>
+<li><code>crypt</code> ➜ Encripta ou Desencripta arquivos (apenas <code>CCWF</code>)</li>
+<li><code>diff</code> ➜ Compara o conteúdo de dois arquivos <code>ASCII</code></li>
+<li><code>file</code> ➜ Determina o tipo de arquivo</li>
+<li><code>grep</code> ➜ Procura um arquivo por um padrão, sendo um filtro muito útil e usado, por exemplo um <code>cat a.txt | grep ola</code> irá mostrar-nos apenas as linhas do arquivo a.txt que contenham a palavra “ola”</li>
+<li><code>gzip</code> ➜ Comprime ou expande arquivos</li>
+<li><code>ln</code> ➜ Cria um <code>link</code> a um arquivo</li>
+<li><code>ls</code> ➜ Lista o conteúdo de uma diretoria, semelhante ao comando <code>dir</code> no <code>MS-DOS</code></li>
+<li><code>lsof</code> ➜ Lista os arquivos abertos, vem de <code>list open files</code></li>
+<li><code>mkdir</code> ➜ Cria uma diretoria, vem de <code>make diretory”</code></li>
+<li><code>mv</code> ➜ Move ou renomeia arquivos ou diretorias</li>
+<li><code>pwd</code> ➜ Mostra-nos o caminho por inteiro da diretoria em que nos encontramos em dado momento, ou seja a <code>pathname</code></li>
+<li><code>quota</code> ➜ Mostra-nos o uso do disco e os limites</li>
+<li><code>rm</code> ➜ Apaga arquivos, vem de <code>remove</code>, e é semelhante ao comando <code>del</code> no <code>MS-DOS</code>, é preciso ter cuidado com o comando <code>rm</code>* pois apaga tudo sem confirmação por defeito</li>
+<li><code>rmdir</code> ➜ Apaga diretorias, vem de <code>remove diretory</code></li>
+<li><code>stat</code> ➜ Mostra o estado de um arquivo, útil para saber por exemplo a hora e data do último acesso ao mesmo</li>
+<li><code>sync</code> ➜ Faz um <code>flush</code> aos <code>buffers</code> do sistema de arquivos, sincroniza os dados no disco com a memória, ou seja escreve todos os dados presentes nos <code>buffers</code> da memória para o disco</li>
+<li><code>sort</code> ➜ Ordena, une ou compara texto, podendo ser usado para extrair informações dos arquivos de texto ou mesmo para ordenar dados de outros comandos como por exemplo listar arquivos ordenados pelo nome</li>
+<li><code>tar</code> ➜ Cria ou extrai arquivos, muito usado como programa de backup ou compressão de arquivos</li>
+<li><code>tee</code> ➜ Copia o <code>input</code> para um <code>standard output</code> e outros arquivos</li>
+<li><code>tr</code> ➜ Traduz caracteres</li>
+<li><code>umask</code> ➜ Muda as protecções de arquivos por defeito</li>
+<li><code>uncompress</code> ➜ Restaura um arquivo comprimido</li>
+<li><code>uniq</code> ➜ Reporta ou apaga linhas repetidas num arquivo</li>
+<li><code>wc</code> ➜ Conta linhas, palavras e mesmo caracteres num arquivo</li>
+</ul>
+<h2 id="exibição-ou-impressão-de-arquivos">Exibição ou Impressão de Arquivos</h2>
+<ul>
+<li><code>cat</code> ➜ Mostra o conteúdo de um arquivo, como o comando <code>type</code> do <code>MD-DOS</code>, e é muito usado também para concatenar arquivos, como por exemplo fazendo <code>cat a.txt b.txt &amp;gt; c.txt” para juntar o arquivo a.txt e b.txt num único de nome c.txt</code></li>
+<li><code>fold</code> ➜ Encurta, ou seja, faz um <code>fold</code> das linhas longas para caberem no dispositivo de <code>output</code></li>
+<li><code>head</code> ➜ Mostra as primeiras linhas de um arquivo, como por exemplo com <code>head -10 a.txt</code>, ou usado como filtro para mostrar apenas os primeiros <code>x</code> resultados de outro comando</li>
+<li><code>lpq</code> ➜ Examina a <code>spooling queue</code> da impressora</li>
+<li><code>lpr</code> ➜ Imprime um arquivo</li>
+<li><code>lprm</code> ➜ Remove <code>jobs</code> da <code>spooling queue</code> da impressora</li>
+<li><code>more</code> ➜ Mostra o conteúdo de um arquivo, mas apenas um ecrã de cada vez, ou mesmo <code>output</code> de outros comandos, como por exemplo <code>ls | more</code></li>
+<li><code>less</code> ➜ Funciona como o <code>more</code>, mas com menos <code>features</code>, menos características e potenciais usos</li>
+<li><code>page</code> ➜ Funciona de forma parecida com o comando <code>more</code>, mas exibe os ecrãs de forma invertida ao comando <code>more</code></li>
+<li><code>pr</code> ➜ Pagina um arquivo para posterior impressão</li>
+<li><code>tail</code> ➜ Funciona de forma inversa ao comando <code>head</code>, mostra-nos as últimas linhas de um arquivo ou mesmo do <code>output</code> de outro comando, quando usado como filtro</li>
+<li><code>zcat</code> ➜ Mostra-nos um arquivo comprimido</li>
+<li><code>xv</code> ➜ Serve para exibir, imprimir ou mesmo manipular imagens</li>
+<li><code>gv</code> ➜ Exibe arquivos <code>ps</code> e <code>pdf</code></li>
+<li><code>xpdf</code> ➜ Exibe arquivos <code>pdf</code>, usa o <code>gv</code></li>
+</ul>
+<h2 id="comandos-de-transferência-de-arquivos">Comandos de Transferência de Arquivos</h2>
+<ul>
+<li><code>ftp</code> ➜ Vem de <code>file transfer protocol</code>, e permite-nos, usando o protocolo de transferência de arquivos <code>ftp</code>, transferir arquivos entre vários <code>hosts</code> de uma rede, como fazer upload a um servidor de <code>ftp</code> para enviar ou puxar arquivos</li>
+<li><code>rsync</code> ➜ Sincroniza de forma rápida e flexível dados entre dois computadores</li>
+<li><code>scp</code> ➜ Versão segura do <code>rcp</code></li>
+</ul>
+<h2 id="comandos-de-notícias-ou-rede">Comandos de Notícias ou Rede</h2>
+<ul>
+<li><code>netstat</code> ➜ Mostra o estado da rede</li>
+<li><code>rsh</code> ➜ Roda um <code>shell</code> em outros sistemas <code>UNIX</code></li>
+<li><code>ssh</code> ➜ Versão segura do <code>rsh</code></li>
+<li><code>nmap_port-scan</code> ➜ para visualizarmos portas abertas num dado <code>host</code></li>
+<li><code>ifconfig</code> ➜ Visualizar os <code>ips</code> da nossa máquina, entre outras funções relacionadas com <code>ips</code></li>
+<li><code>ping</code> ➜ Pingar um determinado <code>host</code>, ou seja, enviar pacotes <code>icmp</code> para um determinado <code>host</code> e medir tempos de resposta, entre outras coisas</li>
+</ul>
+<h2 id="comandos-de-controle-de-processos">Comandos de Controle de Processos</h2>
+<ul>
+<li><code>kill</code> ➜ Mata um processo, como por exemplo <code>kill -kill 100</code> ou <code>kill -9 100</code> ou <code>kill -9 %1</code></li>
+<li><code>bg</code> ➜ Coloca um processo suspenso em <code>background</code></li>
+<li><code>fg</code> ➜ Ao contrário do comando <code>bg</code>, o <code>fg</code> traz de volta um processo ao <code>foreground</code></li>
+<li><code>jobs</code> ➜ Permite-nos visualizar <code>jobs</code> em execução, quando rodamos uma aplicação em <code>background</code>, poderemos ver esse <code>job</code> com este comando, e termina-lo com um comando <code>kill -9 %1</code>, se for o <code>job</code> número 1, por exemplo</li>
+<li><code>top</code> ➜ Lista os processos que mais <code>cpu</code> usam, útil para verificar que processos estão a provocar um uso excessivo de memória, e quanta percentagem de <code>cpu</code> cada um usa em dado momento</li>
+<li><code>^y</code> ➜ Suspende o processo no próximo pedido de <code>input</code></li>
+<li><code>^z</code> ➜ Suspende o processo actual</li>
+</ul>
+<h2 id="comandos-de-informação-de-estado">Comandos de Informação de Estado</h2>
+<ul>
+<li><code>clock</code> ➜ Define a hora do processador</li>
+<li><code>date</code> ➜ Exibe a data e hora</li>
+<li><code>df</code> ➜ Exibe um resumo do espaço livre em disco</li>
+<li><code>du</code> ➜ Exibe um resumo do uso do espaço em disco</li>
+<li><code>env</code> ➜ Exibe as variáveis de ambiente</li>
+<li><code>finger</code> ➜ Pesquisa informações de usuários</li>
+<li><code>history</code> ➜ Lista os últimos comandos usados, muito útil para lembrar também de que comandos foram usados para fazer determinada ação no passado ou o que foi feito em dada altura</li>
+<li><code>last</code> ➜ Indica o último <code>login</code> de usuários</li>
+<li><code>lpq</code> ➜ Examina a <code>spool queue</code></li>
+<li><code>manpath</code> ➜ Mostra a <code>path</code> de procura para as páginas do comando <code>man</code></li>
+<li><code>printenv</code> ➜ Imprime as variáveis de ambiente</li>
+<li><code>ps</code> ➜ Lista a lista de processos em execução, útil para saber o <code>pid</code> de um processo para o mandar abaixo com o comando <code>kill</code>, entre outras coisas</li>
+<li><code>pwd</code> ➜ Mostra-nos o caminho por inteiro da diretoria em que nos encontramos em dado momento, ou seja a <code>pathname</code></li>
+<li><code>set</code> ➜ Define variáveis da sessão, ou seja, da <code>shell</code>, na <code>C shell</code>, na <code>bash</code> ou na <code>ksh</code></li>
+<li><code>spend</code> ➜ Lista os custos <code>ACITS UNIX</code> até à data</li>
+<li><code>time</code> ➜ Mede o tempo de execução de programas</li>
+<li><code>uptime</code> ➜ Diz-nos há quanto tempo o sistema está funcional, quando foi ligado e o seu <code>uptime</code></li>
+<li><code>w</code> ➜ Mostra-nos quem está no sistema ou que comando cada <code>job</code> está a executar</li>
+<li><code>who</code> ➜ Mostra-nos quem está logado no sistema</li>
+<li><code>whois</code> ➜ Serviço de diretório de domínios da Internet, permite-nos saber informações sobre determinados domínios na Internet, quando um domínio foi registado, quando expira, etc</li>
+<li><code>whoami</code> ➜ Diz-nos quem é o dono da <code>shell</code></li>
+</ul>
+<h2 id="comandos-de-processamento-de-texto">Comandos de Processamento de Texto</h2>
+<ul>
+<li><code>abiword</code> ➜ Processador de Texto <code>Open Source</code></li>
+<li><code>addbib</code> ➜ Cria ou modifica bases de dados bibliográficas</li>
+<li><code>col</code> ➜ Reverte o filtro a <code>line feeds</code></li>
+<li><code>diction</code> ➜ Identifica sentenças com palavras</li>
+<li><code>diffmk</code> ➜ Marca diferenças entre arquivos</li>
+<li><code>dvips</code> ➜ Converte arquivos <code>TeX DVI</code> em arquivos <code>PostScript</code></li>
+<li><code>explain</code> ➜ Explica frases encontradas pelo programa <code>diction</code></li>
+<li><code>grap</code> ➜ Preprocessador <code>pic</code> para desenhar gráficos, usado em tarefas elementares de análises de dados</li>
+<li><code>hyphen</code> ➜ Encontra palavras com hífenes</li>
+<li><code>ispell</code> ➜ Verifica a ortografia de forma interactiva</li>
+<li><code>latex</code> ➜ Formata texto em <code>LaTeX</code>, que é baseado no <code>TeX</code></li>
+<li><code>pdfelatex</code> ➜ Para documentos <code>LaTeX</code> em formato <code>pdf</code></li>
+<li><code>latex2html</code> ➜ Converter <code>LaTeX</code> para <code>html</code></li>
+<li><code>lookbib</code> ➜ Encontra referências bibliográficas</li>
+<li><code>macref</code> ➜ Cria uma referência cruzada listando arquivos de macros <code>nroff/troff</code></li>
+<li><code>ndx</code> ➜ Cria uma página de indexação para um documento</li>
+<li><code>neqn</code> ➜ Formata matemáticas com <code>nroff</code></li>
+<li><code>nroff</code> ➜ Formata texto para exibição simples</li>
+<li><code>pic</code> ➜ Produz simples imagens para <code>troff input</code></li>
+<li><code>psdit</code> ➜ Filtra um <code>output</code> <code>troff</code> para a <code>Apple LaserWriter</code></li>
+<li><code>ptx</code> ➜ Cria uma indexação permutada mas não em <code>CCWF</code></li>
+<li><code>refer</code> ➜ Insere referências de bases de dados bibliográficas</li>
+<li><code>roffbib</code> ➜ Faz o <code>run off</code> de uma base de dados bibliográfica</li>
+<li><code>sortbib</code> ➜ Ordena uma base de dados bibliográfica</li>
+<li><code>spell</code> ➜ Encontra erros de ortografia</li>
+<li><code>style</code> ➜ Analisa as características superficiais de um documento</li>
+<li><code>tbl</code> ➜ Formata tabelas para <code>nroff/troff</code></li>
+<li><code>tex</code> ➜ Formata texto</li>
+<li><code>tpic</code> ➜ Converte arquivos <code>pic source</code> em comandos <code>TeX</code></li>
+<li><code>wget</code> ➜ Permite-nos fazer o download completo de páginas web, com todos os arquivos, de forma fácil e não interactiva, sem exigir por isso presença do usuário, respeitando também o arquivo <code>robots.txt</code></li>
+</ul>
+<h2 id="web">Web</h2>
+<ul>
+<li><code>html2ps</code> ➜ Conversor de <code>html</code> para <code>ps</code></li>
+<li><code>latex2html</code> ➜ Conversor de <code>LaTeX</code> para <code>html</code></li>
+<li><code>lynx</code> ➜ Navegador <code>web</code> baseado em modo de texto, ou seja, é um <code>web browser</code> que nos permite abrir todo o tipo de páginas visualizando apenas os textos e <code>links</code>, não vendo assim as imagens, e sendo por isso bastante rápido, mas requere prática para ser manuseado</li>
+<li><code>netscape</code> ➜ Navegador <code>web</code> da <code>Netscape</code></li>
+<li><code>sitecopy</code> ➜ Aplicação que nos permite manter facil e remotamente <code>web sites</code></li>
+<li><code>weblint</code> ➜ Verificador de sintaxes e de estilos <code>html</code></li>
+</ul>
