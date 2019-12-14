@@ -53,7 +53,7 @@ git clone https://github.com/terroo/fonts
 
 You can still clone already renaming and/or with the same name in a new path of your computer, example:
 
-1. Clone with a new name: **nova-fonts**:
+1. Clone with a new name: **new-fonts**:
 
 <!-- QUADRADO -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -66,7 +66,7 @@ data-ad-slot="5351066970"></ins>
 </script>
 
 {% highlight bash%}
-git clone https://github.com/terroo/fonts nova-fonts
+git clone https://github.com/terroo/fonts new-fonts
 {% endhighlight%}
 
 2. Clone with a new name within the *Downloads* directory:
@@ -111,7 +111,7 @@ marcos@gentoo ~ $
 
 And it's quite inconvenient for you to clone the entire repository (which by the way is quite large) which will take a long time just to use files from a specific repository directory.
 
-Until Git ** 2.18 ** this was not possible, but as of **2.19** it is already possible, so check your Git version before proceeding, use the `git --version` command to know the version. If it is equal to or greater than **2.19** you can clone only a specific directory.
+Until Git **2.18** this was not possible, but as of **2.19** it is already possible, so check your Git version before proceeding, use the `git --version` command to know the version. If it is equal to or greater than **2.19** you can clone only a specific directory.
 
 To clone this directory (*files*, inside the repository) we will use the following commands, explanation in the comments (**#**):
 
