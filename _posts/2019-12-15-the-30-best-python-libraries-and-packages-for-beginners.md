@@ -15,7 +15,7 @@ tags:
 
 ![Top 30 Python Libraries and Packages for Beginners](/assets/img/python/opencv-python-library.jpg)
 
-Python libraries and packages are a set of useful modules and functions that minimize the use of code in our daily lives. There are over ** 137,000 libraries ** and ** 198,826 packages ** for Python, ready to make developer programming easier. These libraries and packages are intended for a variety of modern solutions.
+Python libraries and packages are a set of useful modules and functions that minimize the use of code in our daily lives. There are over **137,000 libraries** and **198,826 packages** for Python, ready to make developer programming easier. These libraries and packages are intended for a variety of modern solutions.
 
 <!-- QUADRADO -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
