@@ -74,19 +74,19 @@ Autotools consists of the [GNU Autoconf](https://www.gnu.org/software/autoconf/)
 ## Part 1: Setting Up the Test Files
 
 + **1** → Create the directories for the tests:
-```sh
+{% highlight bash %}
 mkdir testes && cd testes
 mkdir doc examples man scripts src
-```
+{% endhighlight %}
 
 + **2** → Create the test files
-```sh
+{% highlight bash %}
 touch doc/README.md examples/my-example-teste.dat man/teste.1 scripts/script-teste.sh src/teste.c
-```
+{% endhighlight %}
 
 + **3** → Popular the files
 
-```sh
+{% highlight bash %}
 # Content for doc/
 echo "Docs for teste" >> doc/README.md
 
@@ -109,10 +109,10 @@ int main(){
 	printf("Only one test for Autotools\\n");
 	return 0;
 }' > src/teste.c
-```
+{% endhighlight %}
 
 + **4** → Final result of the archives:
-```sh
+{% highlight bash %}
 testes/
 ├── doc
 │   └── README.md
@@ -125,13 +125,13 @@ testes/
 └── src
     └── teste.c
 5 directories, 5 files
-```
+{% endhighlight %}
 
 + **5** → Optional: directory hash:
-```sh
+{% highlight bash %}
 ls ../testes/ | md5sum
 ac0bacadc6861ab22a44af572b255ff1  -
-```
+{% endhighlight %}
 
 <!-- RETANGULO LARGO 2 -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -150,14 +150,14 @@ data-ad-slot="8549252987"></ins>
 ## Part 2: Using GNU Autotools Tools
 
 + **1** → Generate the `configure.ac` file, run:
-```sh
+{% highlight bash %}
 autoscan
-```
+{% endhighlight %}
 
 
 > The files `autoscan-2.69.log` and `configure.scan` were created.Where the content of *autoscan-2.69.log* is empty and the content of *configure.ac* is:
 
-```sh
+{% highlight bash %}
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
@@ -178,23 +178,23 @@ AC_PROG_CC
 # Checks for library functions.
 
 AC_OUTPUT
-```
+{% endhighlight %}
 
 + **2** → Rename the `configure.scan` file to `configure.ac` :
-```sh
+{% highlight bash %}
 mv configure.scan configure.ac
-```
+{% endhighlight %}
 
 + **3** → Change the line of the `configure.ac` file that has the information: **AC_INIT (FULL-PACKAGE-NAME, VERSION, BUG-REPORT-ADDRESS)** to your project names, eg **AC_INIT (test, 1.0, teste@terminalroot.com .br)** .If you wish, use [Sed](https://en.terminalroot.com.br/30-examples-of-the-sed-command-with-regex/) for this, like this:
-```sh
+{% highlight bash %}
 sed -i 's/FULL-PACKAGE-NAME\],/teste],/g' configure.ac
 sed -i 's/VERSION\],/1.0],/g' configure.ac
 sed -i 's/BUG-REPORT-ADDRESS\]/teste@terminalroot.com.br]/g' configure.ac
-```
+{% endhighlight %}
 > Or use a preferred text editor, for example: Vim .
 In the end my file looked like this:
 
-```sh
+{% highlight bash %}
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
@@ -215,18 +215,18 @@ AC_PROG_CC
 # Checks for library functions.
 
 AC_OUTPUT
-```
+{% endhighlight %}
 
 + **4** → Generating an initial `configure` script:
-```sh
+{% highlight bash %}
 autoconf
-```
+{% endhighlight %}
 > 1 new directory and 1 new file were created: `autom4te.cache/` and `configure` .Their contents are extensive, `configure` for example has **3549 lines** .
 
 + Creating the `Makefile.am` File:
-```sh
+{% highlight bash %}
 vim Makefile.am
-```
+{% endhighlight %}
 
 <!-- RETANGULO LARGO -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -242,19 +242,19 @@ data-full-width-responsive="true"></ins>
 </script>
 
 And insert this content in:
-```sh
+{% highlight bash %}
 AUTOMAKE_OPTIONS = foreign
 SUBDIRS = src doc examples man scripts
-```
+{% endhighlight %}
 
 + **6** → Creating the `Makefile.am` file only this time inside the `src/` directory:
-```sh
+{% highlight bash %}
 vim src/Makefile.am
-```
+{% endhighlight %}
 
 
 And insert this content in:
-```sh
+{% highlight bash %}
 # what flags you want to pass to the C compiler & linker
 CFLAGS = --pedantic -Wall -std=c99 -O2
 # LDFLAGS =
@@ -262,34 +262,34 @@ CFLAGS = --pedantic -Wall -std=c99 -O2
 # the previous manual Makefile
 bin_PROGRAMS = teste
 teste_SOURCES = teste.c
-```
+{% endhighlight %}
 
 + **7** → Creating the `Makefile.am` file only this time inside the `man/` directory:
-```sh
+{% highlight bash %}
 vim man/Makefile.am
-```
+{% endhighlight %}
 
 
 And insert this content in:
-```sh
+{% highlight bash %}
 man_MANS = teste.1
-```
+{% endhighlight %}
 
 + **8** → Creating the `Makefile.am` file only this time inside the `scripts/` directory:
-```sh
+{% highlight bash %}
 vim scripts/Makefile.am
-```
+{% endhighlight %}
 
 
 And insert this content in:
-```sh
+{% highlight bash %}
 bin_SCRIPTS = script-teste.sh
-```
+{% endhighlight %}
 
 + **9** → Creating the `Makefile.am` file only this time inside the `doc/` directory:
-```sh
+{% highlight bash %}
 vim doc/Makefile.am
-```
+{% endhighlight %}
 
 <!-- QUADRADO -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -302,21 +302,21 @@ data-ad-slot="5351066970"></ins>
 </script>
 
 And insert this content in:
-```sh
+{% highlight bash %}
 docdir = $(datadir)/doc/@PACKAGE@
 doc_DATA = README.md
-```
+{% endhighlight %}
 
 + **10** → Creating one more `Makefile.am` file only this time inside the `examples/` directory:
-```sh
+{% highlight bash %}
 vim examples/Makefile.am
-```
+{% endhighlight %}
 
 And insert this content in:
-```sh
+{% highlight bash %}
 exampledir = $(datarootdir)/doc/@PACKAGE@
 example_DATA = my-example-teste.dat
-```
+{% endhighlight %}
 
 + **11** → Integrating the `autoconf` part with the automake.
 > Open the `vim configure.ac` file
@@ -324,27 +324,27 @@ example_DATA = my-example-teste.dat
 And insert the content **AM_INIT_AUTOMAKE(teste, 1.0)** , right after **AC_INIT([teste], [1.0], [teste@terminalroot.com.br])** :
 > If you want it to be easier, just use this command below ( Sed ):
 
-```sh
+{% highlight bash %}
 sed -i '/AC_INIT/{p;s/.*/AM_INIT_AUTOMAKE(teste, 1.0)/;}' configure.ac
-```
+{% endhighlight %}
 
 + **12** →  Let autoconf generate a configure script whose output will be Makefiles for all directories mentioned:
 > Changing the line that contains: **AC_OUTPUT** with Sed (if you want to use a text editor and do it manually):
 
-```sh
+{% highlight bash %}
 sed -i 's@AC_OUTPUT@AC_OUTPUT(Makefile src/Makefile doc/Makefile examples/Makefile man/Makefile scripts/Makefile)@' configure.ac
-```
+{% endhighlight %}
 
 + **13** → Making the tools produce the `configure` script and Makefile templates:
-```sh
+{% highlight bash %}
 aclocal
-```
+{% endhighlight %}
 > `aclocal.m4` file was generated in the project root directory named: `aclocal.m4`
 
 + **14** → Producing `Makefile.in` with the argument `--add-missing` :
-```sh
+{% highlight bash %}
 automake --add-missing
-```
+{% endhighlight %}
 
 <!-- MINI ANÚNCIO -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -358,7 +358,7 @@ data-ad-slot="5351066970"></ins>
 </script>
 
 The output will look something similar or the same (if you used the files in this tutorial) to:
-```sh
+{% highlight bash %}
 configure.ac:6: warning: AM_INIT_AUTOMAKE: two- and three-arguments forms are deprecated.  For more info, see:
 configure.ac:6: https://www.gnu.org/software/automake/manual/automake.html#Modernize-AM_005fINIT_005fAUTOMAKE-invocation
 configure.ac:11: installing './compile'
@@ -370,30 +370,30 @@ src/Makefile.am:2: warning: 'CFLAGS' is a user variable, you should not override
 src/Makefile.am:2: use 'AM_CFLAGS' instead
 src/Makefile.am:3: warning: 'LDFLAGS' is a user variable, you should not override it;
 src/Makefile.am:3: use 'AM_LDFLAGS' instead
-```
+{% endhighlight %}
 
 
 Note the line: **configure.ac:8: error: required file 'config.h.in' not found** , if this also appears to you, run:
-```sh
+{% highlight bash %}
 autoreconf -fi
-```
+{% endhighlight %}
 
 + And finally we generate the final `configure` script:
-```sh
+{% highlight bash %}
 autoconf
-```
+{% endhighlight %}
 
 
 If you want to make sure everything is fine, run `./configure` , `make` and test program execution: `cd src/ &amp;&amp; ./teste` , the output will be: **Just a test for Autotools** .And if you want to install on the system, run:
 > Since you have `sudo` installed and are part of the group, otherwise `make install` only work with `root` .
 
-```sh
+{% highlight bash %}
 ./configure
 make
 sudo make install
-```
+{% endhighlight %}
 A instalação vai criar alguns diretório e fazer as seguintes cópias dos arquivos para os caminhos:
-```sh
+{% highlight bash %}
 /bin/mkdir -p '/usr/local/bin'
 /usr/bin/install -c teste '/usr/local/bin'
 
@@ -408,7 +408,7 @@ A instalação vai criar alguns diretório e fazer as seguintes cópias dos arqu
 
 /bin/mkdir -p '/usr/local/bin'
 /usr/bin/install -c script-teste.sh '/usr/local/bin'
-```
+{% endhighlight %}
 
 <!-- MINI ANÚNCIO -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -428,11 +428,11 @@ data-ad-slot="5351066970"></ins>
 + If you want to see the examples, run: `cat /usr/local/share/doc/teste/my-example-teste.dat` .
 
 To uninstall you will need to be in the `testes/` directory and run the command:
-```sh
+{% highlight bash %}
 sudo make uninstall
-```
+{% endhighlight %}
 Absolutely EVERYTHING will be uninstalled, the output will be similar/equal:
-```sh
+{% highlight bash %}
 marcos@gentoo ~/testes $ sudo make uninstall
 Senha:
 Making uninstall in src
@@ -459,16 +459,16 @@ make[1]: Entering directory '/home/marcos/testes'
 make[1]: Nothing to be done for 'uninstall-am'.
 make[1]: Leaving directory '/home/marcos/testes'
 marcos@gentoo ~/testes $
-```
+{% endhighlight %}
 
 ## Part 3: Preparing Files or Generating Everything via Shell Script
 
 If you want to see everything we've done here, use pre-made files or run a simple Bash script:
 
-```sh
+{% highlight bash %}
 git clone https://github.com/terroo/gnu-autotools
 cd gnu-autotools/
-```
+{% endhighlight %}
 
 And use the pre-created environment files: `gnu-autotools/testes/` or simply run the script that creates the files from scratch: `./gnu-autotools.sh`
 
@@ -514,7 +514,7 @@ data-ad-slot="5351066970"></ins>
 + The **AUTOMAKE_OPTIONS = foreign** sets the mode `automake` will take.The "foreign" mode means non-GNU, and is commonly used;
 + The second line shows the list of sub directories where the files to be worked are located.The first has things to compile, while the rest just needs to be installed, but we don't care about this file.We will now prepare the `Makefile.am` file for each of these directories.`automake` will pass one of them home to produce the corresponding `Makefile.in` file.These `*.in` files will be used by `autoconf` scripts to produce the final `Makefile` files.+ Usually in the `src/Makefile.am` file we define all files that will be created and compiled.In general, uppercase suffixes like "_PROGRAMS" are called **primary** and partially tell you what to do in your argument;prefixes, in lower case letters (do not have a predefined name) tell the directory where it will be installed.To inform several files, it is used more or less like this:
 
-```sh
+{% highlight bash %}
 # what flags you want to pass to the C compiler & linker
 CFLAGS = --pedantic -Wall -std=c99 -O2
 LDFLAGS =
@@ -526,17 +526,17 @@ targetbinary2_SOURCES = targetbinary2.c
 .
 .
 targetbinaryN_SOURCES = targetbinaryN.c
-```
+{% endhighlight %}
 
 + Files in `scripts/` usually have the Shell Script that will call the executable, as well as parameter autocomplete (compgen) templates. We use a sample content, but the same would be true (example of the Firefox script):
 
-```sh
+{% highlight bash %}
 #!/bin/sh
 unset LD_PRELOAD
 LD_LIBRARY_PATH="/usr/lib64/apulse:/opt/firefox/" \
 GTK_PATH=/usr/lib64/gtk-3.0/ \
 exec /opt/firefox/firefox "$@"
-```
+{% endhighlight %}
 
 + That is, it will call the executable that was compiled and installed in `/opt` in its proper directory;
 + The `aclocal` command creates the tools that generate each script generates the `aclocal.m4` file that contains **macros** for `automake` things;
