@@ -73,18 +73,18 @@ Autotools consists of the [GNU Autoconf](https://www.gnu.org/software/autoconf/)
 
 ## Part 1: Setting Up the Test Files
 
-+ 1. Create the directories for the tests:
++ **1** → Create the directories for the tests:
 ```sh
 mkdir testes && cd testes
 mkdir doc examples man scripts src
 ```
 
-+ 2. Create the test files
++ **2** → Create the test files
 ```sh
 touch doc/README.md examples/my-example-teste.dat man/teste.1 scripts/script-teste.sh src/teste.c
 ```
 
-+ 3. Popular the files
++ **3** → Popular the files
 
 ```sh
 # Content for doc/
@@ -111,7 +111,7 @@ int main(){
 }' > src/teste.c
 ```
 
-+ 4. Final result of the archives:
++ **4** → Final result of the archives:
 ```sh
 testes/
 ├── doc
@@ -127,7 +127,7 @@ testes/
 5 directories, 5 files
 ```
 
-+ 5. Optional: directory hash:
++ **5** → Optional: directory hash:
 ```sh
 ls ../testes/ | md5sum
 ac0bacadc6861ab22a44af572b255ff1  -
@@ -149,7 +149,7 @@ data-ad-slot="8549252987"></ins>
 
 ## Part 2: Using GNU Autotools Tools
 
-+ 1. Generate the `configure.ac` file, run:
++ **1** → Generate the `configure.ac` file, run:
 ```sh
 autoscan
 ```
@@ -180,12 +180,12 @@ AC_PROG_CC
 AC_OUTPUT
 ```
 
-+ 2. Rename the `configure.scan` file to `configure.ac` :
++ **2** → Rename the `configure.scan` file to `configure.ac` :
 ```sh
 mv configure.scan configure.ac
 ```
 
-+ 3. Change the line of the `configure.ac` file that has the information: **AC_INIT (FULL-PACKAGE-NAME, VERSION, BUG-REPORT-ADDRESS)** to your project names, eg **AC_INIT (test, 1.0, teste@terminalroot.com .br)** .If you wish, use [Sed](https://en.terminalroot.com.br/30-examples-of-the-sed-command-with-regex/) for this, like this:
++ **3** → Change the line of the `configure.ac` file that has the information: **AC_INIT (FULL-PACKAGE-NAME, VERSION, BUG-REPORT-ADDRESS)** to your project names, eg **AC_INIT (test, 1.0, teste@terminalroot.com .br)** .If you wish, use [Sed](https://en.terminalroot.com.br/30-examples-of-the-sed-command-with-regex/) for this, like this:
 ```sh
 sed -i 's/FULL-PACKAGE-NAME\],/teste],/g' configure.ac
 sed -i 's/VERSION\],/1.0],/g' configure.ac
@@ -217,7 +217,7 @@ AC_PROG_CC
 AC_OUTPUT
 ```
 
-+ 4. Generating an initial `configure` script:
++ **4** → Generating an initial `configure` script:
 ```sh
 autoconf
 ```
@@ -247,7 +247,7 @@ AUTOMAKE_OPTIONS = foreign
 SUBDIRS = src doc examples man scripts
 ```
 
-+ 6. Creating the `Makefile.am` file only this time inside the `src/` directory:
++ **6** → Creating the `Makefile.am` file only this time inside the `src/` directory:
 ```sh
 vim src/Makefile.am
 ```
@@ -264,7 +264,7 @@ bin_PROGRAMS = teste
 teste_SOURCES = teste.c
 ```
 
-+ 7. Creating the `Makefile.am` file only this time inside the `man/` directory:
++ **7** → Creating the `Makefile.am` file only this time inside the `man/` directory:
 ```sh
 vim man/Makefile.am
 ```
@@ -275,7 +275,7 @@ And insert this content in:
 man_MANS = teste.1
 ```
 
-+ 8. Creating the `Makefile.am` file only this time inside the `scripts/` directory:
++ **8** → Creating the `Makefile.am` file only this time inside the `scripts/` directory:
 ```sh
 vim scripts/Makefile.am
 ```
@@ -286,7 +286,7 @@ And insert this content in:
 bin_SCRIPTS = script-teste.sh
 ```
 
-+ 9. Creating the `Makefile.am` file only this time inside the `doc/` directory:
++ **9** → Creating the `Makefile.am` file only this time inside the `doc/` directory:
 ```sh
 vim doc/Makefile.am
 ```
@@ -307,7 +307,7 @@ docdir = $(datadir)/doc/@PACKAGE@
 doc_DATA = README.md
 ```
 
-+ 10. Creating one more `Makefile.am` file only this time inside the `examples/` directory:
++ **10** → Creating one more `Makefile.am` file only this time inside the `examples/` directory:
 ```sh
 vim examples/Makefile.am
 ```
@@ -318,7 +318,7 @@ exampledir = $(datarootdir)/doc/@PACKAGE@
 example_DATA = my-example-teste.dat
 ```
 
-+ 11. Integrating the `autoconf` part with the automake.
++ **11** → Integrating the `autoconf` part with the automake.
 > Open the `vim configure.ac` file
 
 And insert the content **AM_INIT_AUTOMAKE(teste, 1.0)** , right after **AC_INIT([teste], [1.0], [teste@terminalroot.com.br])** :
@@ -328,20 +328,20 @@ And insert the content **AM_INIT_AUTOMAKE(teste, 1.0)** , right after **AC_INIT(
 sed -i '/AC_INIT/{p;s/.*/AM_INIT_AUTOMAKE(teste, 1.0)/;}' configure.ac
 ```
 
-+ 12.  Let autoconf generate a configure script whose output will be Makefiles for all directories mentioned:
++ **12** →  Let autoconf generate a configure script whose output will be Makefiles for all directories mentioned:
 > Changing the line that contains: **AC_OUTPUT** with Sed (if you want to use a text editor and do it manually):
 
 ```sh
 sed -i 's@AC_OUTPUT@AC_OUTPUT(Makefile src/Makefile doc/Makefile examples/Makefile man/Makefile scripts/Makefile)@' configure.ac
 ```
 
-+ 13. Making the tools produce the `configure` script and Makefile templates:
++ **13** → Making the tools produce the `configure` script and Makefile templates:
 ```sh
 aclocal
 ```
 > `aclocal.m4` file was generated in the project root directory named: `aclocal.m4`
 
-+ 14. Producing `Makefile.in` with the argument `--add-missing` :
++ **14** → Producing `Makefile.in` with the argument `--add-missing` :
 ```sh
 automake --add-missing
 ```
