@@ -121,6 +121,8 @@ clang++ main.cpp -o binary
 clang++ main.cpp other.cpp -o binary
 {% endhighlight %}
 
+---
+
 ## GCC Concept:
 The GNU Compiler Collection (commonly called GCC) is a set of programming language compilers produced by the GNU project to build a free Unix-like operating system. It is part of the GNU and FSF operating system and is one of the essential tools for keeping software free as it allows you to compile source code into executable binaries for the most common computer platforms. It is distributed by the Free Software Foundation (FSF) under the terms of the GNU GPL, available for UNIX and Linux operating systems and certain derived operating systems such as Mac OS X.
 
@@ -130,6 +132,8 @@ The GCC was written primarily in C.
 LLVM (formerly Low Level Virtual Machine) is a compiler infrastructure designed to optimize the compilation, binding and execution times of programs written in various programming languages. Originally implemented for C and C++, its architecture allowed it to expand to other languages ​​later, including Objective-C, Fortran, Ada, Haskell, Java bytecode, Python, Ruby, ActionScript, GLSL, Julia, Kotlin, and more.
 
 LLVM was written in C++.
+
+---
 
 ## GCC History:
 The GCC compiler was written by Richard Stallman in 1987 to serve as the compiler for the GNU Project. In 1997, a group of developers unhappy with the slow pace and closed nature of the official development of the GCC compiler, formed the EGCS project, which merged several experimental forks into a single GCC forked project. The development of EGCS, proving sufficiently more vital than the GCC, was finally "blessed" as the official version of the GCC in April 1999. The GCC project is now maintained by a diverse group of programmers from around the world and even to date it has been adapted to more types of processors and operating systems than any other compiler.
@@ -150,11 +154,15 @@ data-full-width-responsive="true"></ins>
 ## LLVM History:
 The LLVM project began in 2000 at the University of Illinois at Urbana - Champaign under the direction of Vikram Adve and Chris Lattner. In 2005 Apple Inc. hired Lattner and formed a team to work on the LLVM system for various uses in development systems. from Apple.
 
+---
+
 ## Languages ​​Supported by GCC:
 Ada (GCC for Ada or GNAT), C, C++ (GCC for C++ or G++), Fortran (GCC for Fortran or GFortran), Java (GCC for Java or GCJ), Objective-C, and Pascal.
 
 ## Languages ​​Supported by LLVM:
 Ada, C, C++, D, Delphi, Fortran, Haskell, Julia, Objective-C, Rust, and Swift using various front ends, some derived from GNU Compiler Collection (GCC) versions 4.0.1 and 4.2.
+
+---
 
 ## Who uses GCC:
 [NASA](https://www.nccs.nasa.gov/nccs-users/instructional/using-discover/compilation-software/compilers), Intel, Massachusetts Institute of Technology (MIT), AMD, Linux, IBM, Dell , Red Hat, GNOME, KDE and [among others] (https://gcc.gnu.org/wiki/CompileFarm#History_and_Sponsors). The number of Universities, Institutions, Companies they use is [very large](https://gcc.gnu.org/wiki/cauldron2016) and there is no place that can bring them all together.
@@ -178,6 +186,8 @@ Alpha, ARM, AVR, Blackfin, Epiphany (GCC 4.8), H8 / 300, HC12, IA-32 (x86), IA-6
 
 ## Architectures Supported by LLVM:
 X86, X86-64, PowerPC, PowerPC-64, ARM, Thumb, SPARC, Alpha, CellSPU, MIPS, MSP430, SystemZ, WebAssembly, and XCore.
+
+---
 
 ## Performance Tests by a Compiler Expert
 These tests and analyzes were done by [Mike Kinghan] (https://stackoverflow.com/users/1362568/mike-kinghan) a [Oxford] Software Engineer ().
@@ -206,6 +216,8 @@ Mike Kinghan's Words
 > 
 > The default optimization level for my version is ** - O2 **. I also successfully tested builds on ** - O3 **. I tested each setting three times in a row and averaged the three results with the following results. The number in a data cell is the average number of microseconds consumed by the ** coan ** executable to process each of the ** ~ 70K ** input files (read, parse, and write diagnostics).
 
+---
+
 ## Conclusion
 I know you can't get very far with this comparison. There are several things that are far from our understanding because it is too technical.
 
@@ -216,6 +228,8 @@ I was thinking about changing the `make.conf` variables from my [Gentoo](https:/
 I hope you enjoyed this review. In short, the choices are up to you, which are most often made for reasons *extra software* 😂️ !!!
 
 Hugs!
+
+---
 
 ## References
 + <http://gcc.gnu.org/wiki/CompileFarm>
