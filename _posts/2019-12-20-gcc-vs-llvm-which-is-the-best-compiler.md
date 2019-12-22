@@ -165,7 +165,7 @@ Ada, C, C++, D, Delphi, Fortran, Haskell, Julia, Objective-C, Rust, and Swift us
 ---
 
 ## Who uses GCC:
-[NASA](https://www.nccs.nasa.gov/nccs-users/instructional/using-discover/compilation-software/compilers), Intel, Massachusetts Institute of Technology (MIT), AMD, Linux, IBM, Dell , Red Hat, GNOME, KDE and [among others] (https://gcc.gnu.org/wiki/CompileFarm#History_and_Sponsors). The number of Universities, Institutions, Companies they use is [very large](https://gcc.gnu.org/wiki/cauldron2016) and there is no place that can bring them all together.
+[NASA](https://www.nccs.nasa.gov/nccs-users/instructional/using-discover/compilation-software/compilers), Intel, Massachusetts Institute of Technology (MIT), AMD, Linux, IBM, Dell , Red Hat, GNOME, KDE and [among others](https://gcc.gnu.org/wiki/CompileFarm#History_and_Sponsors). The number of Universities, Institutions, Companies they use is [very large](https://gcc.gnu.org/wiki/cauldron2016) and there is no place that can bring them all together.
 
 <!-- MINI ANÚNCIO -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -192,7 +192,7 @@ X86, X86-64, PowerPC, PowerPC-64, ARM, Thumb, SPARC, Alpha, CellSPU, MIPS, MSP43
 ## Performance Tests by a Compiler Expert
 These tests and analyzes were done by [Mike Kinghan](https://stackoverflow.com/users/1362568/mike-kinghan) a Oxford Software Engineer.
 
-The tests were performed on different architectures and also on different amounts of processor cores. With versions **GCC 4.7.2** and **Clang 3.2**. It can be noted that Clang (LLVM) outperforms larger cores and GCC for smaller and/or hybrid amounts.
+The tests were performed on different architectures and also on different amounts of processor cores. With versions **GCC 4.7.2** and **Clang 3.2**. It can be noted that Clang(LLVM) outperforms larger cores and GCC for smaller and/or hybrid amounts.
 
 > Numbers are represented in microseconds, eg **0.000231 secs**.
 
