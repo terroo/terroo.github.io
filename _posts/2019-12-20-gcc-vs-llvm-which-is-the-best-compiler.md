@@ -190,11 +190,11 @@ X86, X86-64, PowerPC, PowerPC-64, ARM, Thumb, SPARC, Alpha, CellSPU, MIPS, MSP43
 ---
 
 ## Performance Tests by a Compiler Expert
-These tests and analyzes were done by [Mike Kinghan] (https://stackoverflow.com/users/1362568/mike-kinghan) a [Oxford] Software Engineer ().
+These tests and analyzes were done by [Mike Kinghan](https://stackoverflow.com/users/1362568/mike-kinghan) a Oxford Software Engineer.
 
-The tests were performed on different architectures and also on different amounts of processor cores. With versions ** GCC 4.7.2 ** and ** Clang 3.2 **. It can be noted that Clang (LLVM) outperforms larger cores and GCC for smaller and / or hybrid amounts.
+The tests were performed on different architectures and also on different amounts of processor cores. With versions **GCC 4.7.2** and **Clang 3.2**. It can be noted that Clang (LLVM) outperforms larger cores and GCC for smaller and/or hybrid amounts.
 
-> Numbers are represented in microseconds, eg ** 0.000231 secs **.
+> Numbers are represented in microseconds, eg **0.000231 secs**.
 
 <!-- QUADRADO -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -212,9 +212,9 @@ data-ad-slot="5351066970"></ins>
 | Clang-3.2 | 234 | 186 | 1.25 |
 
 Mike Kinghan's Words
-> I compared test equipment performance between ** GCC 4.7.2 ** and ** Clang 3.2 **, all the same except the preprocessors. In ** Clang 3.2 **, no preprocessor differentiation was needed anymore between the code ranges that GCC would compile and the Clang alternatives. I created in the same C++ library (GCC) in each case and performed all comparisons consecutively in the same terminal session.
+> I compared test equipment performance between **GCC 4.7.2** and **Clang 3.2**, all the same except the preprocessors. In **Clang 3.2**, no preprocessor differentiation was needed anymore between the code ranges that GCC would compile and the Clang alternatives. I created in the same C++ library (GCC) in each case and performed all comparisons consecutively in the same terminal session.
 > 
-> The default optimization level for my version is ** - O2 **. I also successfully tested builds on ** - O3 **. I tested each setting three times in a row and averaged the three results with the following results. The number in a data cell is the average number of microseconds consumed by the ** coan ** executable to process each of the ** ~ 70K ** input files (read, parse, and write diagnostics).
+> The default optimization level for my version is **-O2**. I also successfully tested builds on **- O3**. I tested each setting three times in a row and averaged the three results with the following results. The number in a data cell is the average number of microseconds consumed by the **coan** executable to process each of the **~70K** input files (read, parse, and write diagnostics).
 
 ---
 
