@@ -3,7 +3,7 @@ layout: post
 title: "How to Create a Makefile"
 date: 2019-12-22 10:51:15
 image: '/assets/img/gnu/makefile.jpg'
-description:
+description: '📁 From scratch and quickly.'
 featured-img: ../gnu/makefile.jpg
 tags:
 - makefile
