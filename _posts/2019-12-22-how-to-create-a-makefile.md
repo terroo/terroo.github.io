@@ -19,6 +19,16 @@ In the article we created: [GNU Autotools Definitive Tutorial for Beginners](htt
 
 However, if you think the whole procedure is not necessary for your project (which may be simpler), you can directly create a [Makefile](https://www.gnu.org/software/make/manual/html_node /Simple-Makefile.html) *on the nail* quickly and you will get the same result.
 
+<!-- QUADRADO -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+style="display:inline-block;width:336px;height:280px"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ---
 
 ## Introduction
@@ -40,6 +50,17 @@ You can use a text editor to write your Makefile, however, you need to be aware 
 + **programname:** note that this line is the variable **OBJS**, because if we only use the `make` command, the file will already understand;
 + **install:** this line you enter the command to copy to a system directory that is part of the **$PATH** variable, using the `install` command;
 + **clean:** and finally we remove the binary files that were built to form the linker.
+
+<!-- MINI ANÚNCIO -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Games Root -->
+<ins class="adsbygoogle"
+style="display:inline-block;width:730px;height:95px"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 {% highlight bash %}
 TARGET=programname
@@ -70,6 +91,18 @@ So in addition to the basic variables we saw in the basic example, the ending wo
 
 > Note that this time *OBJS* tells the binaries, and if you only use the `make` command, it will not work, because the minimum **TARGET** for building the program is the` all` parameter. The code files are inside a directory: `src/`
 
+<!-- RETANGULO LARGO 2 -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+style="display:block; text-align:center;"
+data-ad-layout="in-article"
+data-ad-format="fluid"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 {% highlight bash %}
 TARGET=hello-world
 CC=g++
@@ -95,6 +128,19 @@ clean:
 {% endhighlight %}
 
 ---
+
+<!-- RETANGULO LARGO -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Informat -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="2327980059"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Summing up
 I create and use Makefiles daily, even created a command in [Shell](https://terminalroot.com.br/shell), do also, which generates one for me passing only the files as a parameter. The truth is that there are no secrets, just respect these basic rules. You can even decide on variable names and remember to use TAB below the **TARGETS** where the commands will be.
