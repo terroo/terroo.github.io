@@ -195,7 +195,7 @@ Among other things, you can start commands, open websites using the abbreviation
 
 ---
 
-### 9. [Dmenu](https://alternativeto.net/software/dmenu/)
+### 9. [Dmenu](https://tools.suckless.org/dmenu/)
 
 <!-- LISTA MIN -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -213,7 +213,7 @@ The dmenu is a dynamic menu for X, originally designed for dwm. It manages a lar
 
 #### Find various Dmenu content here on the Blog: <http://abre.ai/dmenu>
 
-> <https://alternativeto.net/software/dmenu/>
+> <https://tools.suckless.org/dmenu/>
 
 ---
 
