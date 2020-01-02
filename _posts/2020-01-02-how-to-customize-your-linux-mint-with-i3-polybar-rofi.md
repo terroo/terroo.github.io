@@ -91,12 +91,12 @@ data-ad-slot="8549252987"></ins>
 ### 5. Final
 Then enter your sudo password and wait for the script to finish executing that everything will be done automatically!
 
+More screenshot:
+
+![Ubuntu aptporn](/assets/img/wm/ubuntu.jpg)
+
 Any questions left? Then watch the video:
 
 {% include youtube-legends-tutorial.html %}
 
 <iframe width="920" height="400" src="https://www.youtube.com/embed/EBn5coWv1_g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-More screenshot:
-
-![Ubuntu aptporn](/assets/img/wm/ubuntu.jpg)
