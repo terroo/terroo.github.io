@@ -88,7 +88,7 @@ data-ad-slot="8549252987"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-###. Final
+### 5. Final
 Then enter your sudo password and wait for the script to finish executing that everything will be done automatically!
 
 Any questions left? Then watch the video:
