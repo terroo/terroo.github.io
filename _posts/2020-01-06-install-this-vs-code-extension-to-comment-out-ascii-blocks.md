@@ -12,6 +12,8 @@ tags:
 - editor
 ---
 
+![Install this VS Code extension to comment out ASCII blocks](/assets/img/dev/asciidecorator.jpg "Install this VS Code extension to comment out ASCII blocks")
+
 Let's show a solution for VS Code, but there are also versions for other publishers, such as Atom, for example. I am referring to ASCII Decorator.
 
 <!-- LISTA MIN -->
