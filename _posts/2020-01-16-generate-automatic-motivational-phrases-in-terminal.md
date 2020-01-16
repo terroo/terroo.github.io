@@ -3,7 +3,7 @@ layout: post
 title: "Generate Automatic Motivational Phrases in Terminal"
 date: '2020-01-16 16:16:49'
 image: '/assets/img/linux/linus-torvalds-phrase.jpg'
-description: 'Was it Linux coaching? Not so much, there's the offensive mode too!'
+description: 'Was it Linux coaching? Not so much, there the offensive mode too!'
 featured-img: '../linux/linus-torvalds-phrase.jpg'
 tags:
 - fortune
