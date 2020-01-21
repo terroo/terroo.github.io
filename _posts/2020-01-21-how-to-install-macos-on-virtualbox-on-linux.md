@@ -4,7 +4,7 @@ title: "How to Install macOS on VirtualBox on Linux"
 date: 2020-01-21 17:11:07
 image: '/assets/img/tips/macos-virtualbox-no-linux.jpg'
 description:
-featured-img: ../img/tips/macos-virtualbox-no-linux.jpg
+featured-img: ../tips/macos-virtualbox-no-linux.jpg
 tags:
 - macos
 - linux
