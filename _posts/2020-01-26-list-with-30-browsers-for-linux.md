@@ -17,7 +17,7 @@ img, h2, h3 {text-align:center;margin:auto;}
 hr {margin-top: 25px; margin-bottom: 25px;}
 </style>
 
-![List with 30 browsers for Linux](/assets/img/browser/browsers-linux.png)
+![List with 30 browsers for Linux](/assets/img/browser/browsers-linux.jpg)
 
 
 I created a list with the maximum number I found of browsers available for GNU/Linux. Below are the NAMES, DESCRIPTION and DOWNLOAD LINK. I hope it is useful!
