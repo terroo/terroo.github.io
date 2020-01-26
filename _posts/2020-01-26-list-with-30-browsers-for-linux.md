@@ -12,6 +12,11 @@ tags:
 - web
 ---
 
+<style>
+img, h2, h3 {text-align:center;}
+hr {margin-top: 15px; margin-bottom: 15px;}
+</style>
+
 ![List with 30 browsers for Linux](/assets/img/browser/browsers-linux.png)
 
 
