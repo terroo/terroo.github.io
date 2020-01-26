@@ -13,7 +13,7 @@ tags:
 ---
 
 <style>
-img, h2, h3 {text-align:center;margin:auto;}
+h3 {text-align:center;}
 hr {margin-top: 25px; margin-bottom: 25px;}
 </style>
 
@@ -34,8 +34,8 @@ data-ad-slot="5351066970"></ins>
 
 ***
 
-![List with 30 browsers for Linux](/assets/img/browser/firefox.png)
-## Firefox
+## ![List with 30 browsers for Linux](/assets/img/browser/firefox.png) Firefox
+
 Mozilla Firefox is a free, cross-platform browser developed by the Mozilla Foundation (in Portuguese: Mozilla Foundation) with the help of hundreds of contributors. The foundation's intention is to develop a lightweight, secure, intuitive and highly extensible browser.
 ### [Download Firefox](https://www.mozilla.org/pt-BR/firefox/new/)
 
