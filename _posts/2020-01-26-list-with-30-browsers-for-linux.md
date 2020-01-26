@@ -13,7 +13,7 @@ tags:
 ---
 
 <style>
-img, h2, h3 {text-align:center;}
+img, h2, h3 {text-align:center;margin:auto;}
 hr {margin-top: 15px; margin-bottom: 15px;}
 </style>
 
