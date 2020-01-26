@@ -14,7 +14,7 @@ tags:
 
 <style>
 img, h2, h3 {text-align:center;margin:auto;}
-hr {margin-top: 15px; margin-bottom: 15px;}
+hr {margin-top: 25px; margin-bottom: 25px;}
 </style>
 
 ![List with 30 browsers for Linux](/assets/img/browser/browsers-linux.png)
