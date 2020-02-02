@@ -1,9 +1,9 @@
-    ---
+---
 layout: post
 title: "Ubuntu Christian: An Ubuntu Linux for Christians"
 date: 2020-02-02 11:17:03
 image: '/assets/img/distros/ubuntuchristian.jpg'
-description:
+description: 'Ubuntu Christian Edition (CE) is a free, open source system aimed at Christians.'
 featured-img: ../distros/ubuntuchristian.jpg
 tags:
 - distros
