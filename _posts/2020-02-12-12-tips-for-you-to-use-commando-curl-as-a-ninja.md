@@ -192,7 +192,7 @@ curl -I en.terminalroot.com.br
 # Tip 11. Specify a User Agent
 {% highlight bash %}
 curl https://gnu.terminalroot.com.br/ip.php
-# Exemplo Windows 10 Edge:
+# Example Windows 10 Edge:
 curl http://localhost --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134"
 {% endhighlight %}
 
