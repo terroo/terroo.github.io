@@ -246,4 +246,4 @@ See all the tips worked in the video below. Remembering that the tutorial is in 
 
 {% include youtube-legends-tutorial.html %}
 
-<iframe width="920" height="400" src="https://www.youtube.com/embed/EWWD56ZPVoQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="920" height="400" src="https://www.youtube.com/embed/HxezVt5IEHQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
