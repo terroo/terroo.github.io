@@ -12,6 +12,8 @@ tags:
 - unix
 ---
 
+![12 TIPS for you to use COMMANDO curl as a NINJA](/assets/img/commands/curl.jpg)
+
 # Introduction
 
 [curl](https://curl.haxx.se/) is a command/library(libcurl) available on most Unix-based systems. It is used as an abbreviation for “Client URL”. It is used for several purposes such as: navigation, data insertion via the web, download, data transfer and among others. It supports several protocols.
