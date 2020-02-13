@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "12 TIPS for you to use COMMANDO curl as a NINJA"
+title: "12 TIPS for you to use COMMAND curl as a NINJA"
 date: 2020-02-12 16:21:31
 image: '/assets/img/commands/curl.jpg'
 description: 'curl is a command/library(libcurl) available on most Unix-based systems.'
@@ -12,7 +12,7 @@ tags:
 - unix
 ---
 
-![12 TIPS for you to use COMMANDO curl as a NINJA](/assets/img/commands/curl.jpg)
+![12 TIPS for you to use COMMAND curl as a NINJA](/assets/img/commands/curl.jpg)
 
 # Introduction
 
