@@ -24,6 +24,16 @@ Versions
 
 > Containers that produce Kernel Panic will induce Kernel Panic in the host's operating system.
 
+<!-- QUADRADO -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+style="display:inline-block;width:336px;height:280px"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ---
 
 # Installation
@@ -35,6 +45,17 @@ To install we will use the snap. Just remembering that the snap is available for
 - `sudo docker run hello-world` - Running your first container
 
 The output will be something like:
+
+<!-- MINI ANÚNCIO -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Games Root -->
+<ins class="adsbygoogle"
+style="display:inline-block;width:730px;height:95px"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 {% highlight bash %}
 sudo docker run hello-world
@@ -69,6 +90,18 @@ For more examples and ideas, visit:
 
 ---
 
+<!-- RETANGULO LARGO 2 -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+style="display:block; text-align:center;"
+data-ad-layout="in-article"
+data-ad-format="fluid"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 # Running Docker without sudo
 
 +  1. Check which groups are available on your system, run the command: `cat /etc/group | cut -d: -f1` (to display groups beside: `cat /etc/group | cut -d: -f1 | tr '\ n' '' && echo`), if among the groups listed is docker, then that group exists, if you want to run a command that tells you whether or not the group exists, network the command: `[[ $(grep 'docker' /etc/group) ]] && echo 'There is the docker group' || echo 'There is no docker group'`
@@ -80,6 +113,19 @@ For more examples and ideas, visit:
 > If you want to remove the user from the group, run: `sudo gpasswd -d $ USER docker`
 
 +  4. Now you need to restart your computer for the changes to take effect. And after restarting the test without the `sudo docker run hello-world`, if it runs it is all right.
+
+<!-- RETANGULO LARGO -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Informat -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="2327980059"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Running a container
 > For this example we will use a Shell Script application: [ZZ functions](https://funcoeszz.net/)
@@ -105,12 +151,33 @@ Digest: sha256:23a5e20ceeb907e39652c4b130d5a6a8d77bc25a4aeba003a66871ada88d07dc
 Status: Downloaded newer image for funcoeszz/zz:latest
 {% endhighlight %}
 
+<!-- QUADRADO -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+style="display:inline-block;width:336px;height:280px"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 List the images that are already on your machine:
 {% highlight bash %}
 docker images
 {% endhighlight %}
 
 Now just run the container and inform which function you want to use, along with its parameters, example: `docker run --rm funcoeszz/zz maiusculas is working`
+
+<!-- MINI ANÚNCIO -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Games Root -->
+<ins class="adsbygoogle"
+style="display:inline-block;width:730px;height:95px"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Output:
 {% highlight bash %}
@@ -127,6 +194,18 @@ Commands for information: `docker info` and others, see: `docker --help` or `doc
 # Stopping and removing images and containers
 
 The docker run command takes the Docker image as a model and produces a container from it.
+
+<!-- RETANGULO LARGO 2 -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+style="display:block; text-align:center;"
+data-ad-layout="in-article"
+data-ad-format="fluid"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Listing images and containers: `docker images` or `docker image ls`
 - Stopping containers: `docker stop $(docker ps -a -q)`
@@ -158,8 +237,33 @@ while true; do
 done
 {% endhighlight %}
 
+<!-- RETANGULO LARGO -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Informat -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="2327980059"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 + Execution permission: `chmod +x myshell.sh`
 + Build the App image: `docker build --tag=myshell`.
+
+<!-- MINI ANÚNCIO -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Games Root -->
+<ins class="adsbygoogle"
+style="display:inline-block;width:730px;height:95px"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 + Confirm the image: `docker image ls`
 + Running the container: `docker run myshell`
 > Container ID: `docker container ls`
@@ -171,6 +275,16 @@ done
 + Log in: <https://hub.docker.com/login>
 + At the root URL, create a repository: <https://hub.docker.com/>
 > [Create Repository +], style to create a repository on GitHub: name, description, public..create
+
+<!-- QUADRADO -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+style="display:inline-block;width:336px;height:280px"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 + Logging in via the command line: `docker login`, enter your username [ENTER] and then your password [ENTER]
 + Creating an Image Tag: `docker tag myshell terminalroot/myshell:v1` or without tag: `docker tag myshell terminalroot/myshell`
@@ -184,6 +298,18 @@ If you want to test it, just remove all the images and containers and then pull 
 + List the images: `docker images`
 + Removing all images: `docker rmi IMAGE_ID [nImage_ID ...]`
 + See the groups and remove the docker group:
+
+<!-- MINI ANÚNCIO -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Games Root -->
+<ins class="adsbygoogle"
+style="display:inline-block;width:730px;height:95px"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 {% highlight bash %}
 groups $USER
 sudo groupdel docker
@@ -198,6 +324,17 @@ snap list
 sudo snap refresh
 {% endhighlight %}
 More information: [snap](https://tutorials.ubuntu.com/tutorial/basic-snap-usage).
+
+<!-- MINI ANÚNCIO -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Games Root -->
+<ins class="adsbygoogle"
+style="display:inline-block;width:730px;height:95px"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Bonus Tip
 See all the tips worked in the video below. Remembering that the tutorial is in Portuguese, but you can use the subtitles
