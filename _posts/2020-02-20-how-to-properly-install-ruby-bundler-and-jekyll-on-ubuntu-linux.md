@@ -69,21 +69,21 @@ data-ad-slot="8549252987"></ins>
 
 > Applications that are not installed, APT will inform you that it does not exist, as well as, directories that do not exist `rm` will warn you that it does not exist, so do not panic :O
 
-```sh
+{% highlight bash %}
 sudo apt remove ruby bundler jekyll --purge
 rm -rf ~/.gem ~/.ruby ~/.rvm
 sudo apt clean && sudo apt autoremove && sudo apt autoclean
-```
+{% endhighlight %}
 
 After that it is also interesting to make sure that your system is updated with `apt update && apt upgrade`.
 
 >Extra tip: You can create a single command to update your system whenever you need to:
 
-```sh
+{% highlight bash %}
 echo 'alias myupdate="sudo apt update && sudo apt uograde -y && sudo apt autoremove && sudo apt autoclean && sudo apt clean"' >> ~/.bashrc
 source ~/.bashrc
 myupdate
-```
+{% endhighlight %}
 
 <!-- RETANGULO LARGO -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -101,16 +101,16 @@ data-full-width-responsive="true"></ins>
 2. Now let's import the gpg key.
 > Always remember to get the key from the official address (<https://rvm.io/rvm/install>), as newer versions may have the key modified.
 
-```sh
+{% highlight bash %}
 gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-```
+{% endhighlight %}
 
 3. And then, let's install RVM together with Ruby
 > Install RVM stable with ruby:, according to the code lines procedure.
 
-```sh
+{% highlight bash %}
 curl -sSL https://get.rvm.io | bash -s stable --ruby
-```
+{% endhighlight %}
 
 <!-- QUADRADO -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -125,10 +125,10 @@ data-ad-slot="5351066970"></ins>
 During installation it will run the command: `sudo apt --quiet --yes update`, so you will need to enter your `sudo` password. Now it is necessary to wait, as this part can take a while (it will install dependencies and compile Ruby).
 
 4. Now, add RVM to `$PATH` for your user, adding the line: `source $HOME/.rvm/scripts/rvm` to your `~/.bashrc` and reread it, if you want just use the two commands below:
-```sh
+{% highlight bash %}
 echo 'source $HOME/.rvm/scripts/rvm' >> ~/.bashrc
 source ~/.bashrc
-```
+{% endhighlight %}
 
 After that, check if everything is right, consulting the version of RVM: `rvm --version`. To see the version of existing Ruby packages, run: `rvm list known` and to see the RubyGems version, run: `gem --version`.
 
@@ -150,17 +150,17 @@ If everything returned correctly, then we are on the right track. Now we go to t
 Well, from now on everything will be easier. Now let's visit the Jekyll website: <https://jekyllrb.com/> and on the home page it already shows the procedure to install Jekyll:
 > Note, if we didn't do the above procedure with RVM, in this part you would need to use the sudo gem, and that would give you even more headaches when installing Jekyll via gem, so **DO NOT use** `sudo`.
 
-```sh
+{% highlight bash %}
 gem install bundler jekyll
-```
+{% endhighlight %}
 
 Now let's create a basic website and enter the directory of our website:
 
-```sh
+{% highlight bash %}
 jekyll new my-website
 # Wait for him to create all the files on the website
 cd my-website
-```
+{% endhighlight %}
 
 <!-- RETANGULO LARGO 2 -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -175,9 +175,9 @@ data-ad-slot="8549252987"></ins>
 </script>
 
 Now let's see our website working in the browser, to do this run the command:
-```sh
+{% highlight bash %}
 bundle exec jekyll serve
-```
+{% endhighlight %}
 
 To see your website working, just go to the address: <http://localhost:4000>. It will have the basic theme of Jekyll and a simple post of **Welcome to Jekyll!**
 
