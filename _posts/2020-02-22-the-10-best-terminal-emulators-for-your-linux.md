@@ -11,7 +11,7 @@ tags:
 - console
 ---
 
-![The 10 Best Terminal Emulators for Your Linux](terminal/10-best-terminal-emulators-for-your-linux.jpg)
+![The 10 Best Terminal Emulators for Your Linux](/assets/img/terminal/10-best-terminal-emulators-for-your-linux.jpg)
 
 Usually when you install a distribution, graphical interface or even a WM, by default it already comes with a terminal emulator included for you to use, but it is not always the one you want.
 
