@@ -2,10 +2,13 @@
 layout: post
 title: "How to Compile your programs with CMake"
 date: 2020-03-16 09:28:36
-image: '/assets/img/'
-description:
-featured-img: ../dir/img
+image: '/assets/img/cpp/cmake.png'
+description: 'Multiplatform system for performing automated generation.'
+featured-img: ../cpp/cmake.png
 tags:
+- cmake
+- cpp
+- clanguage
 ---
 
 ![How to Compile your programs with CMake](/assets/img/cpp/cmake.png)
