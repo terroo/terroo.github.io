@@ -27,6 +27,7 @@ Support for `.config` in the Kernel, also known as [IKCONFIG](https://wiki.gento
 
 This allows them to inspect the kernel configuration while it is running, without having to worry about whether they changed or cleared the source directory after compilation.
 > Enabling in the kernel:
+
 {% highlight bash %}
 su
 cd /usr/src/linux
@@ -103,7 +104,7 @@ I just don't recommend using this parameter in the previous tip variable, as the
 
 
 # 6. Know how to use FLAGS correctly
-Use the `/etc/portage/package.use/zz-autounmask` file. Do not set ** flags ** directly using the variable [USE](https://wiki.gentoo.org/wiki/USE_flag) in the terminal, eg ~~`sudo USE="network mpd" emerge polybar`~~ , this creates a problem when you update the software, it will recompile without **network** and **mpd** support, without saying that in most cases it is not interesting to add **flags** universally to the **USE** variable in `/etc/portage/make.conf`, only when they are global cases, that is, when any software depends on it, for example: `USE="gnome -kde"`(if your system has GNOME installed and does not has KDE), but this example was very reasonable, because your ** profile ** (see `eselect profile list`) that you defined when installing your Gentoo and chose (`set`) for GNOME, therefore all **flags** for this are already defined for Portage, see with `emerge info | grep ^ USE`.
+Use the `/etc/portage/package.use/zz-autounmask` file. Do not set **flags** directly using the variable [USE](https://wiki.gentoo.org/wiki/USE_flag) in the terminal, eg ~~`sudo USE="network mpd" emerge polybar`~~ , this creates a problem when you update the software, it will recompile without **network** and **mpd** support, without saying that in most cases it is not interesting to add **flags** universally to the **USE** variable in `/etc/portage/make.conf`, only when they are global cases, that is, when any software depends on it, for example: `USE="gnome -kde"`(if your system has GNOME installed and does not has KDE), but this example was very reasonable, because your ** profile ** (see `eselect profile list`) that you defined when installing your Gentoo and chose (`set`) for GNOME, therefore all **flags** for this are already defined for Portage, see with `emerge info | grep ^ USE`.
 
 So the most correct way is to insert the **flag** only for the software you want in the `/etc/portage/package.use/zz-autounmask` file, remember to add with the software version, example: `echo '>=x11-misc/polybar-3.4.2-r1 network mpd' | sudo tee -a /etc/portage/package.use/zz-autounmask` the `>=` option at the beginning of the line says that Portage should include this ** flag ** for any version equal to or greater than the one informed and separated by spaces inform the **flags**.
 
