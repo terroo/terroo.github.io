@@ -71,12 +71,12 @@ data-ad-slot="8549252987"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-```sh
+{% highlight bash %}
 emerge i3 # Gentoo, Funtoo,...
 sudo apt install i3wm # Debian, Ubuntu, Linux Mint,...
 sudo pacman -S i3wm # Arch Linux, Manjaro,...
 sudo yum install i3wm # Red Hat, CentOS, Fedora(dnf)
-```
+{% endhighlight %}
 
 > In some managers it may be with the name i3 only, use `search` to confirm.
 
@@ -91,18 +91,18 @@ In most distributions there is a package called build-essential that installs se
 After all the necessary steps above, now let's get down to business and build, in the literal sense of the word! :)
 
 ### 1 - Clone the repository:
-```sh
+{% highlight bash %}
 git clone https://github.com/terroo/i3-radius
-```
+{% endhighlight %}
 
 Before proceeding, make sure the path where your i3wm is installed: `which i3`, you could choose the installation path, but to make it easier, I renamed your i3, example: `sudo mv "$(which i3)" "$(which i3)_original"`.
 
 In other words, if i3 was on the way: `/usr/bin/i3`, now it has been renamed to `/usr/bin/i3_original`, this in addition to being easily reversed, avoids some conflicts.
 
 ### 2 - Enter the directory and run build.sh
-```sh
+{% highlight bash %}
 cd i3-radius && sh build.sh
-```
+{% endhighlight %}
 At the end, it will ask for your sudo password to run the install.
 
 <!-- RETANGULO LARGO -->
@@ -121,7 +121,7 @@ data-full-width-responsive="true"></ins>
 # Settings
 
 Now for your i3wm to have spaces and round borders, you need to add these lines to your `vim ~/.config/i3/config`
-```sh
+{% highlight bash %}
 ##### i3-gaps ##############
 for_window [class=".*"] border pixel 2 #*
 gaps inner 10
@@ -132,7 +132,7 @@ gaps outer 1
 smart_borders on
 smart_borders no_gaps
 border_radius 2
-```
+{% endhighlight %}
 
 The line for `border_radius 2` defines the curvature of the border, it will be very light, but if you want it to be really rounded, increase the value, example: `border_radius 3`. Use **2**, as it looks more elegant. 😁️ .
 
