@@ -18,7 +18,9 @@ People ask me for different content about [Gentoo](https://www.gentoo.org/) and 
 
 So I'm going to post a series of tips from both here on a list of topics like this, although there is no such information in the title of this post, this is the **FIRST PART** of this series. I believe that to start these initial tips are essential, let's go to the list!
 
+
 ---
+
 
 # 1. Enable **IKCONFIG** in [Kernel](https://www.kernel.org/)
 Support for `.config` in the Kernel, also known as [IKCONFIG](https://wiki.gentoo.org/wiki/Kernel/IKCONFIG_Support), allows users to build a copy of the configuration with which the kernel was built inside the kernel itself.
@@ -54,7 +56,9 @@ data-ad-slot="5351066970"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
+
 ---
+
 
 # 2. Define a **ACCEPT_KEYWORDS** in your `/etc/portage/make.conf`
 If your system is **amd64**, for example, some software requires you to explain this, because the package has code for other architectures, and you will not be able to install it if this variable is not defined, [learn more here]( https://wiki.gentoo.org/wiki/ACCEPT_KEYWORDS/). Example: `ACCEPT_KEYWORDS="~amd64"`, or just run:
@@ -67,6 +71,7 @@ echo 'ACCEPT_KEYWORDS="~amd64"' | sudo tee -a /etc/portage/make.conf
 # 3. Know when to use an [Overlay](https://overlays.gentoo.org/)
 If you need to compile software that is not in the [Portage](https://wiki.gentoo.org/wiki/Portage) tree, and want more ease of installation, use an Overlay, see here how to install [Layman](https://en.terminalroot.com.br/how-to-install-programs-via-layman-in-gentoo/).
 
+
 ---
 
 
@@ -74,7 +79,9 @@ If you need to compile software that is not in the [Portage](https://wiki.gentoo
 If you use any `emerge` parameters frequently, it is interesting to add them to the **EMERGE_DEFAULT_OPTS** variable in your `/etc/portage/make.conf`. For example, I use `-a` a lot and my processor only has 2 cores, so I always compile with `--jobs 2` so as not to overload my notebook.
 > The `--verbose` option is also very interesting!
 
+
 ---
+
 
 # 5. Gain more performance in the builds
 Make frequent use of the `--quiet` option or just `-q`, the * compiler outputs * not only make the prompt look ugly, they make the compilation take longer, really! I did the test with small and large software and the times approached the gain of **15%** on average.
@@ -91,7 +98,9 @@ data-ad-slot="5351066970"></ins>
 
 I just don't recommend using this parameter in the previous tip variable, as the outputs of `--search` will be suppressed and with less details, [learn more](https://wiki.gentoo.org/wiki/EMERGE_DEFAULT_OPTS).
 
+
 ---
+
 
 # 6. Know how to use FLAGS correctly
 Use the `/etc/portage/package.use/zz-autounmask` file. Do not set ** flags ** directly using the variable [USE](https://wiki.gentoo.org/wiki/USE_flag) in the terminal, eg ~~`sudo USE="network mpd" emerge polybar`~~ , this creates a problem when you update the software, it will recompile without **network** and **mpd** support, without saying that in most cases it is not interesting to add **flags** universally to the **USE** variable in `/etc/portage/make.conf`, only when they are global cases, that is, when any software depends on it, for example: `USE="gnome -kde"`(if your system has GNOME installed and does not has KDE), but this example was very reasonable, because your ** profile ** (see `eselect profile list`) that you defined when installing your Gentoo and chose (`set`) for GNOME, therefore all **flags** for this are already defined for Portage, see with `emerge info | grep ^ USE`.
@@ -117,19 +126,25 @@ data-ad-slot="8549252987"></ins>
 
 There are several options for the `equery` command (which packages depend on a flag; which packages use a certain flag; ...), run `equery --help` for more details and test each one to better understand each option.
 
+
 ---
+
 
 # 8. Pay attention to licenses!
 Also use the variable __ACCEPT_LICENSE="*"__ in your `make.conf`, in which case it accepts all types of licenses and avoids problems during application installation.
 
+
 ---
+
 
 # 9. Language packs
 Also set the language of your system directly in your `make.conf` using the **L10N** variable, example: **L10N="pt-BR"** in this case if you install software with the language in **Brazilian portuguese**.
 
 To find out which code/name to use for your country [see here](https://en.wikipedia.org/wiki/Language_localisation), if your system is **English United States** this information is not necessary and do not forget to update with the `--changed-use` option, eg `emerge --update --changed-use @world`. Do not use the **LINGUAS** variable it [has been discontinued](https://www.gentoo.org/support/news-items/2016-06-23-l10n-use_expand.html), [see](https://wiki.gentoo.org/wiki/Localization/Guide) as well.
 
+
 ---
+
 
 # 10. Get faster!
 Make package downloads faster by defining a `mirror` for it using the **GENTOO_MIRRORS** variable in your `make.conf`, example for the UFPR Brazil mirror: `GENTOO_MIRRORS="https://gentoo.c3sl.ufpr.br/ http://gentoo.c3sl.ufpr.br/ rsync://gentoo.c3sl.ufpr.br/gentoo/"`, see the list of mirros [here](https://www. gentoo.org/downloads/mirrors/).
@@ -149,7 +164,9 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
+
 ---
+
 
 I hope this first part of this series is useful, if you are interested in knowing how my `make.conf` is doing, here it is:
 {% highlight bash %}
