@@ -14,7 +14,7 @@ tags:
 
 ![10 Fundamental Tips for Your Gentoo Linux](/assets/img/gentoo/larry-gentoo.jpg)
 
-People ask me for different content about [Gentoo](https://www.gentoo.org/) and [Portage](https://wiki.gentoo.org/wiki/Portage), but these worlds are very gigaaaaaaaa!!! 😀️.
+People ask me for different content about [Gentoo](https://www.gentoo.org/) and [Portage](https://wiki.gentoo.org/wiki/Portage), but these worlds are very biiiiiiigggg!!! 😀️.
 
 So I'm going to post a series of tips from both here on a list of topics like this, although there is no such information in the title of this post, this is the **FIRST PART** of this series. I believe that to start these initial tips are essential, let's go to the list!
 
