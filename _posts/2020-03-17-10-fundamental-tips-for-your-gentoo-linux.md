@@ -85,7 +85,7 @@ If you use any `emerge` parameters frequently, it is interesting to add them to 
 
 
 # 5. Gain more performance in the builds
-Make frequent use of the `--quiet` option or just `-q`, the * compiler outputs * not only make the prompt look ugly, they make the compilation take longer, really! I did the test with small and large software and the times approached the gain of **15%** on average.
+Make frequent use of the `--quiet` option or just `-q`, the *compiler outputs* not only make the prompt look ugly, they make the compilation take longer, really! I did the test with small and large software and the times approached the gain of **15%** on average.
 
 <!-- LISTA MIN -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -111,7 +111,7 @@ So the most correct way is to insert the **flag** only for the software you want
 ---
 
 # 7. Explore [Gentoolkit](https://wiki.gentoo.org/wiki/Gentoolkit)
-- Before compiling/installing any package, use the command `equery uses [category/package-name]` (always inform with the category to avoid ambiguous package names), you must have [Gentoolkit](https://wiki.gentoo.org/wiki/Gentoolkit) installed (`emerge gentoolkit`) eg: `equery uses x11-misc/polybar`, and see which flags are already enabled for installation and/or also updating and which ones you would like to include in your `package.use/zz-autounmask`.
+Before compiling/installing any package, use the command `equery uses [category/package-name]` (always inform with the category to avoid ambiguous package names), you must have [Gentoolkit](https://wiki.gentoo.org/wiki/Gentoolkit) installed (`emerge gentoolkit`) eg: `equery uses x11-misc/polybar`, and see which flags are already enabled for installation and/or also updating and which ones you would like to include in your `package.use/zz-autounmask`.
 
 <!-- RETANGULO LARGO 2 -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
