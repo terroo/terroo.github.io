@@ -19,6 +19,7 @@ emerge -a layman
 Then create a configuration file `make.conf` for layman
 
 {% highlight bash  %}
+mkdir -p /var/lib/layman/
 touch /var/lib/layman/make.conf
 {% endhighlight  %}
 
@@ -35,7 +36,7 @@ layman -S
 emerge --sync
 {% endhighlight  %}
 
-Now add a layman repository, [click here to see the full list of repositories available](https://overlays.gentoo.org/).
+Now add a layman repository, [click here to see the full list of repositories available](https://overlays.gentoo.org/) or run `sudo layman -L` to see the full list of repositories available locally.
 
 For this example I'm going to add the [raiagent](https://github.com/leycec/raiagent) repository
 
@@ -55,5 +56,17 @@ Sometimes when you try to install some application, Portage asks that after the 
 etc-update --automode -5
 emerge -a app-misc/powerline
 {% endhighlight  %}
+
+If you want to remove a layman, run the command: `sudo layman -d [name-]`, example:
+{% highlight bash %}
+sudo layman -d raiagent
+{% endhighlight %}
+
+
+If there is a repository that exists but is not on the list, get the [xml](https://raw.githubusercontent.com/SonicFrog/overlay/master/sonicfrog.xml) from the [maintainer](https://github.com/SonicFrog/overlay/blob/master/sonicfrog.xml) and add it manually, [example](https://forums.gentoo.org/viewtopic-t-898416-start-0.html):
+{% highlight bash %}
+layman -a bgo-overlay -o http://gpo.zugaina.org/lst/gpo-repositories.xml -f
+{% endhighlight %}
+> `-f` is optional.
 
 Any questions, use the comments!
