@@ -8,7 +8,6 @@ featured-img: ../cpp/ninja-build.jpg
 tags:
 - ninja
 - meson
-- compilers
 - cpp
 ---
 
