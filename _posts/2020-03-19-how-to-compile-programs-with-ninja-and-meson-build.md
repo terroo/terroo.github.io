@@ -248,7 +248,7 @@ int main(){
 {% endhighlight %}
 
 In the same directory as your code file/project you should create a file named **meson.build**: `vim meson.build`
-{% endhighlight %}meson
+{% highlight cmake %}
 project('tutorial', 'cpp')
 executable('demo', 'main.cpp')
 {% endhighlight %}
