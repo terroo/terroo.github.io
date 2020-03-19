@@ -97,6 +97,7 @@ There are several options such as cleaning the temporary file(s) and among other
 ## Compiling in [C++](https://terminalroot.com.br/cpp), multiple files:
 For this example we will use [Dec2Bin](https://github.com/terroo/utilscpp/tree/master/dec2bin), a mini program that converts decimal to binary in [C++](https://github.com/terroo/utilscpp). In this example we use the command [g++](https://en.terminalroot.com.br/gnu-autotools-ultimate-tutorial-for-beginners/) to compile multiple files. There are **3 files**, of which **1** is just a `.hpp` library:
 > `vim main.cpp`
+
 {% highlight cpp %}
 #include <iostream>
 #include <string>
@@ -108,7 +109,9 @@ int main( int argc , char** argv ) {
   return 0;
 }
 {% endhighlight %}
+
 > `vim dectobin.hpp`
+
 {% highlight cpp %}
 #ifndef DEC_TO_BIN_H
 #define DEC_TO_BIN_H
@@ -140,6 +143,7 @@ data-ad-slot="5351066970"></ins>
 </script>
 
 > `vim dectobin.cpp`
+
 {% highlight cpp %}
 #include <iostream>
 #include <string>
