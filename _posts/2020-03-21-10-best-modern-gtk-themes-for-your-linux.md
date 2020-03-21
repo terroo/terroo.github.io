@@ -44,7 +44,7 @@ data-ad-slot="5351066970"></ins>
 ### 4. Open GNOME Tweaks and choose the theme
 Hit `Alt + F2` and type: `gnome-tweaks`, or run this command in **terminal**
 ### 5. Choose the theme that appears:
-> Choose the line **Applications**, if you have not yet changed * Adwaita (default) *, click and change to the name of the theme you want, see image below:
+> Choose the line **Applications**, if you have not yet changed *Adwaita (default)*, click and change to the name of the theme you want, see image below:
 
 ![GNOME Tweaks](/assets/img/themes/gnome-tweaks.jpg)
 ### Alternatively you can change the theme via the command line using [gsettings](https://developer.gnome.org/GSettings/) with the command:
@@ -71,7 +71,7 @@ data-ad-slot="5351066970"></ins>
 
 ---
 
-## 10. [Phantom](https://www.opencode.net/ju1464/Fantasma/tree/master/GTK-Gnome/Fantasma)
+## 10. [Fantasma](https://www.opencode.net/ju1464/Fantasma/tree/master/GTK-Gnome/Fantasma)
 ![Ghost](/assets/img/themes/fantasma.jpg)
 
 <!-- RETANGULO LARGO 2 -->
@@ -86,7 +86,7 @@ data-ad-slot="8549252987"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-<a href="https://www.opencode.net/ju1464/Fantasma/tree/master/GTK-Gnome/Fantasma" class="btn btn-danger btn-lg btn-block"> Download the Ghost Theme </a>
+<a href="https://www.opencode.net/ju1464/Fantasma/tree/master/GTK-Gnome/Fantasma" class="btn btn-danger btn-lg btn-block"> Download the Fantasma Theme </a>
 
 ---
 
