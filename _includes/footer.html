@@ -21,9 +21,9 @@
   </div>
 </footer>
 <script async src="{{ "/assets/js/bundle.js" | relative_url }}"></script>
-<script type="text/javascript">
+<script>
 $(document).ready(function(){
-    $("a[href^='http']:not([href^='https://en.terminalroot.com.br'])").attr("target","_blank");
+	$("a[href^='http']:not([href^='https://en.terminalroot.com.br'])").attr("target","_blank");
 	$("a[href^='http']:not([href^='https://en.terminalroot.com.br'])").attr("rel","noopener noreferrer");
-});
+})(jQuery);
 </script>
