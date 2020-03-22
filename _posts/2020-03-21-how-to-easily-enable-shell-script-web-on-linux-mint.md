@@ -11,7 +11,7 @@ tags:
 - linuxmint
 ---
 
-![How to Easily Enable Shell Script Web on Linux Mint - Apache Server](/assets/img/shellpro/shellscript-web.jpg)
+![How to Easily Enable Shell Script Web on Linux Mint - Apache Server](/assets/img/shell/shell.jpg)
 
 One of the facilities for you to use [Shell Script](https://en.terminalroot.com.br/shell) for your web applications is that the implementation of several functionalities (Database Access, libraries, and mainly, availability of all commands UNIX) is very easy!
 
