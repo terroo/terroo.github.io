@@ -18,7 +18,7 @@ A simple utility, but it helps a lot for those who need to constantly make code 
 
 > `vim mycode.sh`
 
-```sh
+{% highlight bash %}
 #!/usr/bin/env bash
 # Code example to shared snippets
 # Author: Marcos <terminalroot.com.br>
@@ -34,7 +34,7 @@ do
     echo -en "\r\e[33;1mThis is \e[36mMy Code\e[34m at \e[37m$(date +%d/%m/%Y-%H:%M:%S)\e[m"
 done
 done
-```
+{% endhighlight %}
 
 ![mycode.sh](/assets/img/code/code.png)
 
@@ -52,10 +52,10 @@ data-ad-slot="5351066970"></ins>
 
 # 01. [ix.io](http://ix.io/)
 Your code is shared via the command line, for example:
-```sh
+{% highlight bash %}
 # Sharing a file and getting the link
 cat mycode.sh | curl -F 'f:1=<-' ix.io
-```
+{% endhighlight %}
 The output will inform you of the link you can use to share. If you want more ease, create a Shell function for this or use their client available on the same page, in addition to other options, such as saving codes and links when running the command.
 
 ![ix.io](/assets/img/code/ix.png)
@@ -76,9 +76,9 @@ data-ad-slot="5351066970"></ins>
 
 # 02. [sprunge.us](http://sprunge.us/)
 In the same way as the previous one, but even simpler, example of use:
-```sh
+{% highlight bash %}
 cat mycode.sh | curl -F 'sprunge=<-' http://sprunge.us
-```
+{% endhighlight %}
 
 ![ix.io](/assets/img/code/ix.png)
 
@@ -91,9 +91,9 @@ Generated code link: <http://sprunge.us/M3zF8m>
 It works online, you need to enter (type/paste) your code and click **Save 💾 `Ctrl + s`**. If you want to share your code, just click **Just Text 📋️** or hit `Ctrl + shift + r`.
 
 You can still use their client via the command line, installing it via [gem](https://en.terminalroot.com.br/how-to-properly-install-ruby-bundler-and-jekyll-on-ubuntu-linux/):
-```sh
+{% highlight bash %}
 gem install haste
-```
+{% endhighlight %}
 
 <!-- RETANGULO LARGO 2 -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -108,9 +108,9 @@ data-ad-slot="8549252987"></ins>
 </script>
 
 And using as follows:
-```sh
+{% highlight bash %}
 cat mycode.sh | haste
-```
+{% endhighlight %}
 
 Generated code link: <https://hastebin.com/morovoxegu.bash>
 
@@ -126,10 +126,10 @@ There are even customers for him: [Lepton](https://hackjutsu.com/Lepton/) and al
 You can shorten it via the command line in a personalized way, example:
 > Edit **YOUR_LONG_URL** and **LETTERS_CUSTOMIZED** for specific names if you want.
 
-```sh
+{% highlight bash %}
 curl https://git.io/ -i -F "url=YOUR_LONG_URL" -F "code=LETTERS_CUSTOMIZED"
 # curl https://git.io/ -i -F "url=https://gist.github.com/terroo/5bafbcb1cc6f4ab922b70fa165e39468" -F "code=mycode.sh"
-```
+{% endhighlight %}
 
 Generated code link: git.io/mycode.sh
 
@@ -180,9 +180,9 @@ data-ad-slot="5351066970"></ins>
 
 # 07. [Termbin](http://termbin.com/)
 This is a show of the ball, it runs via the command `nc` (needs to have [netcat](http://nc110.sourceforge.net/) installed) and the insertion is very simple, example:
-```sh
+{% highlight bash %}
 cat mycode.sh | nc termbin.com 9999
-```
+{% endhighlight %}
 
 ---
 
@@ -214,9 +214,9 @@ Generated code link: <https://paste.ubuntu.com/p/bwqY6XHpqm/>
 This is complete, it is not just a code snippet, but a file sharing, url and everything you want within the limit of 512MB.
 
 It is an alternative to [transfer.sh](https://transfer.sh/). Example of use:
-```sh
+{% highlight bash %}
 curl -F'file=@mycode.sh 'http://0x0.st
-```
+{% endhighlight %}
 
 ---
 
