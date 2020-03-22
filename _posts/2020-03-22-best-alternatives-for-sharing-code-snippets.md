@@ -80,7 +80,7 @@ In the same way as the previous one, but even simpler, example of use:
 cat mycode.sh | curl -F 'sprunge=<-' http://sprunge.us
 {% endhighlight %}
 
-![ix.io](/assets/img/code/ix.png)
+![ix.io](/assets/img/code/sprunge.png)
 
 Generated code link: <http://sprunge.us/M3zF8m>
 
