@@ -12,7 +12,6 @@ tags:
 - kernel
 ---
 
-# How to install Docker on Gentoo
 [![How to install Docker on Gentoo](/assets/img/docker/docker-gentoo.jpg)](/assets/img/docker/docker-gentoo.jpg)
 
 We already have a tutorial for [Docker](https://docker.com/) for beginners that can be consulted [here](https://en.terminalroot.com.br/definitive-docker-tutorial-for-beginners-ubuntu/). But in this article we’ll show you the steps on [Gentoo](https://gentoo.org/).
