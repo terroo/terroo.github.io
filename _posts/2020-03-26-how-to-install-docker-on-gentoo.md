@@ -150,11 +150,11 @@ sh check-config.sh
 The output will look like this:
 [![Chech config Docker Kernel modules](/assets/img/docker/check-config-output.jpg)](/assets/img/docker/check-config-output.jpg)
 
-If there are * not enabled * modules (`missing`), check first if your Kernel version has this module name, example for the module ** grep [CONFIG_EXT3_FS_XATTR](https://cateee.net/lkddb/web-lkddb/EXT3_FS_XATTR.html):
+If there are *not enabled* modules (`missing`), check first if your Kernel version has this module name, example for the module *[CONFIG_EXT3_FS_XATTR](https://cateee.net/lkddb/web-lkddb/EXT3_FS_XATTR.html):
 {% highlight bash %}
 grep 'CONFIG_EXT3_FS_XATTR' /usr/src/linux/.config
 {% endhighlight %}
-If you do not return the output it is because you do not have it, but if you return, copy the name of the module and search on any screen of the Kernel menu, pressing the bar (`/`) will open a box for you to enter the name you want to search, just paste the name you had copied and then press ** Enter **, example:
+If you do not return the output it is because you do not have it, but if you return, copy the name of the module and search on any screen of the Kernel menu, pressing the bar (`/`) will open a box for you to enter the name you want to search, just paste the name you had copied and then press **Enter**, example:
 
 <!-- RETANGULO LARGO 2 -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -168,9 +168,11 @@ data-ad-slot="8549252987"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-- Researched the module: **CONFIG_NETFILTER_XT_MATCH_IPVS**
+
+Researched the module: **CONFIG_NETFILTER_XT_MATCH_IPVS**
 [![search module kerne](/assets/img/docker/search-module-kernel.jpg)](/assets/img/docker/search-module-kernel.jpg)
-- Result with complete path and all data:
+
+Result with complete path and all data:
 {% highlight bash %}
 Symbol: NETFILTER_XT_MATCH_IPVS [=m]
 Type  : tristate
@@ -186,8 +188,8 @@ Prompt: "ipvs" match support
 {% endhighlight %}
 [![result module](/assets/img/docker/result-module.jpg)](/assets/img/docker/result-module.jpg)
 
-The line **Prompt** indicates the name that it is in the menu and in ** Location ** the complete path to find it.
-> In this case, it is enabled as a module: **[=m]**, but if it is as ** is not set ** it will be necessary to enable it.
+The line **Prompt** indicates the name that it is in the menu and in **Location** the complete path to find it.
+> In this case, it is enabled as a module: **[=m]**, but if it is as **is not set** it will be necessary to enable it.
 
 <!-- RETANGULO LARGO -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -240,6 +242,7 @@ docker info
 {% endhighlight %}
 
 # Watch a video about Docker
+
 <iframe width = "920" height = "400" src = "https://www.youtube.com/embed/bsGkIKP1OZ4" frameborder = "0" allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in -picture "allowfullscreen> </iframe>
 
 # Useful links:
