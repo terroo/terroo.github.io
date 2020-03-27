@@ -241,12 +241,15 @@ Restart your system so that some modules are read at startup and your user's gro
 docker info
 {% endhighlight %}
 
-# Watch a video about Docker
-
-<iframe width = "920" height = "400" src = "https://www.youtube.com/embed/bsGkIKP1OZ4" frameborder = "0" allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in -picture "allowfullscreen> </iframe>
-
 # Useful links:
 + <https://wiki.gentoo.org/wiki/Docker>
 + <https://cateee.net/lkddb/>
 + <https://github.com/coreos/docker/blob/master/contrib/check-config.sh>
 + <https://en.terminalroot.com.br/best-alternatives-for-sharing-code-snippets/>
+
+# Watch a video about Docker
+
+
+<iframe width = "920" height = "400" src = "https://www.youtube.com/embed/bsGkIKP1OZ4" frameborder = "0" allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in -picture "allowfullscreen> </iframe>
+
+
