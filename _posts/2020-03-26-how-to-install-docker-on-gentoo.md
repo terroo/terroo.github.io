@@ -247,9 +247,5 @@ docker info
 + <https://github.com/coreos/docker/blob/master/contrib/check-config.sh>
 + <https://en.terminalroot.com.br/best-alternatives-for-sharing-code-snippets/>
 
-# Watch a video about Docker
-
-
-<iframe width = "920" height = "400" src = "https://www.youtube.com/embed/bsGkIKP1OZ4" frameborder = "0" allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in -picture "allowfullscreen> </iframe>
-
+# [Watch a video about Docker](https://youtu.be/bsGkIKP1OZ4)
 
