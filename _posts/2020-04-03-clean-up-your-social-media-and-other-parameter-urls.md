@@ -90,7 +90,7 @@ Although the list is very long, the Facebook tracking parameter is not included.
 + Go to the top right corner of Firefox and click on the icon with three parallel stripes and then go to Extensions and select, or simply press **Ctrl + Shift + A**;
 + After opening a new window, click on the option with three dots ●●● where the Neat URL is located, and then on Preferences;
 + Neat URL preferences will open and in the Blocked Parameteres field, you will see all parameters that are already being blocked by default. You can resize the field and use the scroll bar;
-+ Scroll to the end of this field, and at the end of the last parameter, insert a comma **→**, and then the acronym: fbclid, then just click **Save Preferences** at the bottom of this page and that's it, now the links that come out of Facebook too will be automatically cleared of additional parameters.
++ Scroll to the end of this field, and at the end of the last parameter, insert a comma **→**, and then the acronym: **fbclid**, then just click **Save Preferences** at the bottom of this page and that's it, now the links that come out of Facebook too will be automatically cleared of additional parameters.
 
 ![Save Preferences](https://terminalroot.com.br/assets/img/firefox/save-preferences.png)
 
