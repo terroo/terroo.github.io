@@ -4,7 +4,7 @@ title: "Clean up your Social Media and Other Parameter URLs"
 date: 2020-04-03 19:37:50
 image: '/assets/img/tips/clean-url.jpg'
 description: 'Avoid wasting time, space, visual pollution and especially, tracking.'
-featured-img: ../img/tips/clean-url.jpg
+featured-img: ../tips/clean-url.jpg
 tags:
 - firefox
 - tips
