@@ -19,9 +19,9 @@ And when you save this link to your favorites, it is saved with these parameters
 That is, loss of time, loss of space, visual pollution and especially an increase in the tracking of what you've been reading.
 
 Example WITHOUT a url cleaner:
-```sh
+{% highlight bash %}
 https://en.terminalroot.com.br/link-name-url.html?fbclid=IwAR0BkWQyL1JDAm1dl2ECnMHrtb8L32pMIT-nJYZkXp1S8W7wCr-U9ctIIms
-```
+{% endhighlight %}
 
 <!-- QUADRADO -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -34,9 +34,9 @@ data-ad-slot="5351066970"></ins>
 </script>
 
 After clearing the URL:
-```sh
+{% highlight bash %}
 https://en.terminalroot.com.br/link-name-url.html
-```
+{% endhighlight %}
 
 For this there are several add-ons/programs that are installable in different browsers and that can remove these links automatically when you click. In this example I will quote, and that's what I use at the moment, the [Neat URL](https://addons.mozilla.org/en-US/firefox/addon/neat-url/).
 
@@ -70,7 +70,7 @@ data-ad-slot="8549252987"></ins>
 </script>
 
 From now on, all URLs that have the parameters, see the list below, will be removed and that includes: Google Analytics, Amazon, LinkedIn and many others:
-```sh
+{% highlight bash %}
 utm_source, utm_medium, utm_term, utm_content, utm_campaign, utm_reader, utm_place, utm_userid, 
 utm_cid, utm_name, utm_pubreferrer, utm_swu, utm_viz_id, ga_source, ga_medium, ga_term, ga_content, 
 ga_campaign, ga_place, yclid, _openstat, fb_action_ids, fb_action_types, fb_ref, fb_source, 
@@ -81,7 +81,7 @@ pq@bing.com, feature@youtube.com, gclid@youtube.com, kw@youtube.com, $/ref@amazo
 hmb_campaign, hmb_source, hmb_medium, spReportId, spJobID, spUserID, spMailingID, utm_mailing, 
 utm_brand, CNDID, mbid, trk, trkCampaign, sc_campaign, sc_channel, sc_content, sc_medium, 
 sc_outcome, sc_geo, sc_country
-```
+{% endhighlight %}
 
 # Configuring the Neat URL in Firefox
 
