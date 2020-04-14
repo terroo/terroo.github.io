@@ -26,7 +26,7 @@ data-ad-slot="5351066970"></ins>
 </script>
 
 # 01. Find out if your user is in a group
-```sh
+{% highlight bash %}
 # 1° way
 groups $USER
 
@@ -36,28 +36,28 @@ grep $USER /etc/group | cut -d: -f1 | tr '\n' ' ';echo
 
 # 3° way
 id $USER | sed "s/)[^(]*(/ /g;s/.*(\|//;s/.$//;s/$USER $USER //"
-```
+{% endhighlight %}
 
 # 02. Insert user in a group
-```sh
+{% highlight bash %}
 # 1º way
 sudo usermod -G grupo -a usuario
 
 # 2° way
 gpasswd -a usuario grupo
-```
+{% endhighlight %}
 
 # 03. Check if your user can use sudo
-```sh
+{% highlight bash %}
 # Enter the Root password
 [[ $(su -c "grep $USER /etc/sudoers") ]] && echo Yes || echo No
-```
+{% endhighlight %}
 
 # 04. Getting information about a file
 This command displays creation data, modification date. change and other information.
-```sh
+{% highlight bash %}
 stat filename
-```
+{% endhighlight %}
 
 # 05. Working with permissions
 + If we were to give zero permission to everyone, we could use chmod or chown: `chmod 0 file.txt`
