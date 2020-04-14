@@ -82,6 +82,8 @@ We soon realized that `0` is `-` .
 
 Tip with image for each number the corresponding output for the octet:
 
+![Permissions](/assets/img/linux/permissions.jpg)
+
 
 ## Search Links:
 + <https://en.wikipedia.org/wiki/Chmod>, very interesting for technical and detailed analysis.
