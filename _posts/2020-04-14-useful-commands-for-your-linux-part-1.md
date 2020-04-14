@@ -41,10 +41,10 @@ id $USER | sed "s/)[^(]*(/ /g;s/.*(\|//;s/.$//;s/$USER $USER //"
 # 02. Insert user in a group
 {% highlight bash %}
 # 1º way
-sudo usermod -G grupo -a usuario
+sudo usermod -G grupo -a [user]
 
 # 2° way
-gpasswd -a usuario grupo
+gpasswd -a [user] [group]
 {% endhighlight %}
 
 # 03. Check if your user can use sudo
