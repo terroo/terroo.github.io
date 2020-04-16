@@ -34,23 +34,23 @@ data-ad-slot="5351066970"></ins>
 # Installation
 
 In Gentoo and similar, use the portage that shc is already available on the tree:
-```sh
+{% highlight bash %}
 emerge dev-util/shc
-```
+{% endhighlight %}
 
 For other distributions, for example derived from APT, first install the necessary dependencies:
-```sh
+{% highlight bash %}
 sudo apt-get install libc6-dev # Debian, Ubuntu, Mint, ...
 sudo yum install glibc-devel # RHEL, CentOS, Fedora, ...
-```
+{% endhighlight %}
 
 Then download the package, decompress and compile the code:
-```sh
+{% highlight bash %}
 wget https://github.com/neurobin/shc/archive/release.zip
 cd shc-*
 make
 sudo make install
-```
+{% endhighlight %}
 
 <!-- LISTA MIN -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -64,7 +64,7 @@ data-ad-slot="5351066970"></ins>
 
 # Use
 Create a test file to see how it works: `vim script.sh`:
-```sh
+{% highlight bash %}
 #!/bin/bash
 
 echo -e "The first 3 characters of each location file / directory are:\n"
@@ -72,30 +72,30 @@ for i in *; do
 	echo "$i" | cut -c 1-3 | tr '\n' '\ '
 done
 echo
-```
+{% endhighlight %}
 
 Then use shc to transform it into binary:
-```sh
+{% highlight bash %}
 shc -f script.sh -o binary
-```
+{% endhighlight %}
 
 And just run the program: `./binary`
 
 If you try to see the contents of the binary file, you will see everything encoded, example: `cat binary`
-```sh
+{% highlight bash %}
 ...
 @x@�@�@�@�@�@�@�@�@�@�H�H��/H��t��H���5�/�%�/@�%�
 �@����%�/h
           �0����%�/h
 �����%r/h�����%j/h������%b/h
 ...
-```
+{% endhighlight %}
 
 Para mais informações e opções via linha de comando, utilize a ajuda e o manual:
-```sh
+{% highlight bash %}
 shc --help
 man shc
-```
+{% endhighlight %}
 
 Official page [shc](https://neurobin.org/projects/softwares/unix/shc/): <https://neurobin.org/projects/softwares/unix/shc/>
 
