@@ -3,8 +3,8 @@ layout: post
 title: "Discover Free Software that is the Best Alternative to ZOOM"
 date: 2020-04-16 11:31:39
 image: '/assets/img/apps/jami.jpg'
-description: 'It's not just Open Source, it's Free Software!'
-featured-img: '../apps/jami.jpg'
+description: 'Its not just Open Source, its Free Software!'
+featured-img: ../apps/jami.jpg
 tags:
 - apps
 - gnu
