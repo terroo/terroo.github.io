@@ -68,7 +68,7 @@ On Linux, they made a point of making installation easier and making packages av
 
 ![Jami Linux](/assets/img/apps/jami-linux.png)
 
-> Download link
+> [Download link](https://jami.net/download-jami-linux/)
 
 If your distro isn't on the list, don't worry, find it on the [list of contributions](https://jami.net/download-jami-linux/): Arch Linux and more. Including Gentoo, the distro I use, there is a ready-made [overlay](https://github.com/stefan-langenmaier/ring-overlay) that can be installed with Layman:
 
@@ -78,4 +78,4 @@ layman -f -a ring-overlay
 
 Or adding directly to your `repos.conf`, see details on the [link](https://github.com/stefan-langenmaier/ring-overlay).
 
-# Access Jami: <https://jami.net/>
+# Access Jami → <https://jami.net/>
