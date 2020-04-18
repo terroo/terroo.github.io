@@ -107,7 +107,7 @@ I'm a passionate user of Gentoo, that's right, the fact that it takes a while to
 
 It doesn't matter how big a distribution is; part of the pleasure of being a Linux user is the freedom to be undecided about which distro you run. At first glance, everyone is basically the same, in final lines. But you want the one you identify with. In an article topic I cannot describe the differences of the distro I chose, but surely one of the main reasons is directly linked to my other passion: [C++](https://terminalroot.com.br/cpp).
 
-I have a partition here on my HD that is only for other distros, generally I only install things that are better to examine and use without being in a [Docker or Machine Virtual.
+I have a partition here on my HD that is only for other distros, generally I only install things that are better to examine and use without being in a [Docker](https://en.terminalroot.com.br/definitive-docker-tutorial-for-beginners-ubuntu/) or Machine Virtual.
 
 If I ever left Gentoo I would definitely switch to OpenBSD.
 > OpenBSD, not a Linux distribution
