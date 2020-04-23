@@ -35,7 +35,7 @@ data-ad-slot="5351066970"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-What happens is that the `/boot/grub/x86_64-efi` directory has not been removed, but the files have!
+What happens is that the `/boot/grub/x86_64-efi` directory has not been removed, but the files have! 😱
 ![How sad](/assets/img/tips/cat-sad.jpg)
 
 If you create a test there on your system with directories in your `/home/$USER/` just for that, you will realize that this is really what will happen!
