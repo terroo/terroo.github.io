@@ -3,7 +3,7 @@ layout: post
 title: "190 Color Themes for Your Terminal"
 date: 2020-04-26 21:50:38
 image: '/assets/img/terminal/gogh.png'
-description:
+description: 'Themes like: Gruvbox, Dracula, Nord and many others.'
 featured-img: ../terminal/gogh.png
 tags:
 - terminal
@@ -84,6 +84,7 @@ data-ad-slot="8549252987"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
 
 Visit the [Gogh](http://mayccoll.github.io/Gogh/) website for more details:
 # <http://mayccoll.github.io/Gogh/>
