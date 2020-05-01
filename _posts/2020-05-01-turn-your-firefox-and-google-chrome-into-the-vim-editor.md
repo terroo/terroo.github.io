@@ -11,6 +11,8 @@ tags:
 - vim
 ---
 
+![Turn your Firefox and Google Chrome into the Vim editor](/assets/img/web/vimium.jpg)
+
 Vimium is a Google Chrome extension which provides keyboard shortcuts for navigation and control in the spirit of the Vim editor. Watch this video to get a feel for how it works:
 
 # Features
