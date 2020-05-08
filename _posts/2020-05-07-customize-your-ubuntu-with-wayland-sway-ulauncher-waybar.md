@@ -13,7 +13,7 @@ tags:
 
 ![Customize your Ubuntu with Wayland + Sway + Ulauncher + Waybar](/assets/img/wm/ubuntu-sway.jpg)
 
-[Sway](https://swaywm.org/) is a side-by-side window manager and composer for [Wayland](), inspired by i3 and written in [C](https://terminalroot.com.br/ #language tags).
+[Sway](https://swaywm.org/) is a side-by-side window manager and composer for [Wayland](https://en.wikipedia.org/wiki/Wayland_(display_server_protocol)), inspired by i3 and written in [C](https://en.terminalroot.com.br/examples-of-functions-fread-fwrite-remove-and-others-in-c/).
 
 <!-- QUADRADO -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -25,7 +25,7 @@ data-ad-slot="5351066970"></ins>
 (adsbygoogle=window.adsbygoogle || []).push({});
 </script>
 
-[Waybar](https://github.com/Alexays/Waybar) Highly customizable Wayland bar for composers based on Sway and Wlroots. [See another alternative here](https://terminalroot.com.br/2019/07/conheca-o-yabar-uma-alternativa-para-sua-barra-de-status.html).
+[Waybar](https://github.com/Alexays/Waybar) Highly customizable Wayland bar for composers based on Sway and Wlroots. [See another alternative here](https://en.terminalroot.com.br/how-to-customize-your-linux-mint-with-i3-polybar-rofi/).
 
 <!-- LISTA MIN -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -37,7 +37,7 @@ data-ad-slot="5351066970"></ins>
 (adsbygoogle=window.adsbygoogle || []).push({});
 </script>
 
-[Ulauncher](https://ulauncher.io/) is an application launcher for Linux. [See other alternatives here](https://terminalroot.com.br/2020/01/os-12-melhores-launchers-para-linux.html).
+[Ulauncher](https://ulauncher.io/) is an application launcher for Linux. [See other alternatives here](https://en.terminalroot.com.br/12-best-launchers-for-linux/).
 
 # Commands to install all
 {% highlight bash %}
