@@ -63,5 +63,5 @@ data-ad-slot="8549252987"></ins>
 
 <hr>
 
-<iframe width="1234" height="694" src="https://www.youtube.com/embed/nY_o7k8aQVI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in -picture "allowfullscreen></iframe>
+<iframe width="815" height="490" src="https://www.youtube.com/embed/nY_o7k8aQVI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
