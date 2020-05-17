@@ -11,6 +11,8 @@ tags:
 - gentoo
 ---
 
+![Many people ask me why I dont use Debian anymore.](/assets/img/distros/change-debian-to-gentoo.jpg)
+
 Well, guys! I never made a post here, where the content was just the video. But, in this case, I made a point of doing a well-done translation into English, so that it is very easy to watch the video and read the subtitles in a simple way.
 
 Watch the video. If possible, leave your comment stating whether the translation was good, or what should be improved.
