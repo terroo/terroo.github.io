@@ -3,7 +3,7 @@ layout: post
 title: "Why I gave up on Debian"
 date: 2020-05-16 22:13:40
 image: '/assets/img/distros/change-debian-to-gentoo.jpg'
-description: 'Many people ask me why I don't use Debian anymore.'
+description: 'Many people ask me why I dont use Debian anymore.'
 featured-img: ../distros/change-debian-to-gentoo.jpg
 tags:
 - debian
