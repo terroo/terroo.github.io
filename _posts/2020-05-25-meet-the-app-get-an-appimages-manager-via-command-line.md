@@ -2,16 +2,16 @@
 layout: post
 title: "Meet the app-get - An AppImages Manager via Command Line"
 date: 2020-05-25 19:51:20
-image: '/assets/img/apps/app-get'
+image: '/assets/img/apps/app-get.jpg'
 description: 'Manage your AppImages in a practical way and through the terminal.'
-featured-img: ../apps/app-get
+featured-img: ../apps/app-get.jpg
 tags:
 - app-get
 - terminal
 - linux
 ---
 
-![Meet the app-get - An AppImages Manager via Command Line](/assets/img/apps/app-get)
+![Meet the app-get - An AppImages Manager via Command Line](/assets/img/apps/app-get.jpg)
 > AppImages manager via command line
 
 ## Installation
