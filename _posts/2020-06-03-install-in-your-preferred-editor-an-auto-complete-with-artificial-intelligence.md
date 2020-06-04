@@ -17,6 +17,16 @@ It was a while ago that I was browsing [Youtube](https://www.youtube.com/Termina
 
 When using it on a day-to-day basis, I realized that it was really *powerful*, even the parts that I was going to type, before starting it already suggested to me, both creating code and creating an article for the blog, this auto-complete is **TabNine**.
 
+<!-- QUADRADO -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+style="display:inline-block;width:336px;height:280px"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 # Introduction
 [Tabnine](https://www.tabnine.com/) is a code auto-complete that uses [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning) to help you write code faster. TabNine uses the language documentation to infer the name of this function, return type and arguments and if you are writing text, it uses forms commonly used by texts and by yourself to help you with the most accurate alternatives.
 
@@ -28,6 +38,17 @@ TabNine is available for:
 + [Emacs](https://www.gnu.org/software/emacs/);
 + [Atom](https://en.terminalroot.com.br/top-10-best-code-editors-for-linux/);
 + and [Jupyter Notebook](https://jupyter.org/);
+
+<!-- MINI ANÚNCIO -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Games Root -->
+<ins class="adsbygoogle"
+style="display:inline-block;width:730px;height:95px"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 You can use it FREE for 14 days with the [Trial Version](https://www.tabnine.com/trial/). However, after 14 days it will continue to function normally, the difference being that additional functions, which I didn't particularly notice, will not be available. These differences can be seen [here](https://www.tabnine.com/pricing).
 
@@ -42,6 +63,18 @@ Plugin 'zxqfl/tabnine-vim'
 {% highlight viml %}
 :PluginInstall
 {% endhighlight %}
+
+<!-- RETANGULO LARGO 2 -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+style="display:block; text-align:center;"
+data-ad-layout="in-article"
+data-ad-format="fluid"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Or you can also install it in the *vanilla* way:
 + Clone with [Git](https://en.terminalroot.com.br/how-to-clone-only-a-subdirectory-with-git-or-svn/):
@@ -64,3 +97,18 @@ See TabNine in action below:
 I really intend to get the paid version, as I thought that the auto-complete of my **Vim** was even faster and much more complete. Remembering that this article is not a paid post, I daily reject proposals for paid posts when I don't believe in the product. But TabNine, besides being a quality product, remember that you can use it normally even after the trial period.
 
 Thanks and share this post on your social networks!
+
+<!-- RETANGULO LARGO -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Informat -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-2838251107855362"
+data-ad-slot="2327980059"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
