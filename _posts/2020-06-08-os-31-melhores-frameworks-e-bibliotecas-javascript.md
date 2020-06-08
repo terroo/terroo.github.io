@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Os 31 Melhores Frameworks e Bibliotecas JavaScript"
+title: "The 31 Best JavaScript Frameworks and Libraries"
 date: 2020-06-08 13:57:48
 image: '/assets/img/js/libs-js.jpg'
 description: 'Write less, do more!'
@@ -11,7 +11,7 @@ tags:
 - programming
 ---
 
-![Os 31 Melhores Frameworks e Bibliotecas JavaScript](/assets/img/js/libs-js.jpg)
+![The 31 Best JavaScript Frameworks and Libraries](/assets/img/js/libs-js.jpg)
 
 
 [JavaScript](https://en.wikipedia.org/wiki/JavaScript) really is an amazing language, even those who don't like it need to learn because the web is [HTML](https://en.wikipedia.org/wiki/HTML), [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) and [JavaScript](https://en.wikipedia.org/wiki/JavaScript), that is, it does part of the basics of everything.
