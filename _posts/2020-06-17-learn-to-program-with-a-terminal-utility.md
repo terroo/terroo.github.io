@@ -11,6 +11,8 @@ tags:
 - commands
 ---
 
+![Learn to Program with a Terminal Utility](/assets/img/terminal/cheat-sh.png)
+
 [Cheat.sh](http://cheat.sh/) is a command line utility based on a concise documentation repository dedicated to learning programming languages ​​from scratch. You have access to Cheat Sheet for 58 programming languages, covering all popular languages ​​and more.
 
 <!-- QUADRADO -->
