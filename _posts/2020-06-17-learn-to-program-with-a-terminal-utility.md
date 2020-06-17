@@ -77,7 +77,7 @@ source ~/.bashrc
 Continuing with our example of programming languages ​​[Lua](http://www.lua.org/). You can enter a [subshell](https://www.tldp.org/LDP/abs/html/subshells.html) directly from the prompt, example, starting the shell inside the language directory:
 {% highlight bash %}
 cht.sh --shell
-cd moon
+cd lua
 {% endhighlight %}
 
 The output will be similar to this image:
