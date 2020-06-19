@@ -79,7 +79,7 @@ usage: wallset [options]
 **** Use 3-digit images, example: 011
 {% endhighlight %}
 
-01. The first necessary command is to add images, example:
+### 01. The first necessary command is to add images, example:
 {% highlight bash %}
 wallset --add image.jpg
 {% endhighlight %}
@@ -104,7 +104,7 @@ If it is in a directory with several images you can also add it like this:
 wallset -a $(ls *.jpg *.png)
 {% endhighlight %}
 
-02. Setting a Wallpaper
+### 02. Setting a Wallpaper
 Wallpapers are saved and numbered
 {% highlight bash %}
 wallset --use 001
@@ -114,12 +114,12 @@ wallset --use 001
 wallset -S -a imagem.png
 {% endhighlight %}
 
-03. Obtaining information on the number of wallpapers that have been added to [wallset](https://github.com/terroo/wallset)
+### 03. Obtaining information on the number of wallpapers that have been added to [wallset](https://github.com/terroo/wallset)
 {% highlight bash %}
 wallset --count
 {% endhighlight %}
 
-04. Opening the current image, being able to browse through all using the *[next →]* feature of your image manager:
+### 04. Opening the current image, being able to browse through all using the *[next →]* feature of your image manager:
 {% highlight bash %}
 wallset --display
 {% endhighlight %}
@@ -136,12 +136,12 @@ data-ad-slot="8549252987"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-05. Getting the current image number:
+### 05. Getting the current image number:
 {% highlight bash %}
 wallset --show
 {% endhighlight %}
 
-06. Removing the last image added: `wallset --remove`
+### 06. Removing the last image added: `wallset --remove`
 
 It is also possible to make a * loop * of the added images so that the wallpaper is changed according to the pre-set time. To do this, use the `--time` PARAMETER and then enter the time in seconds.
 > Assuming you want the wallpapers to be changed every 1 hour, run:
