@@ -159,7 +159,7 @@ wallset --quit
 # Adding video as wallpaper
 One of the most interesting features of [wallset](https://github.com/terroo/wallset) is that you can add videos as a wallpaper. To do this, simply run the command:
 {% highlight bash %}
-wallset --video seu-video.mp4
+wallset --video your-video.mp4
 {% endhighlight %}
 > Or the full video path: `wallset -V path/to/video.mp4`
 
