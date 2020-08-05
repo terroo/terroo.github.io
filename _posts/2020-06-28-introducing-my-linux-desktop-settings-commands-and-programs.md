@@ -3,7 +3,7 @@ layout: post
 title: "Introducing my Linux Desktop - Settings, Commands and Programs"
 date: 2020-06-28 14:26:12
 image: '/assets/img/video/my-linux-world-min.jpg'
-description: 'Welcome to my universe'
+description: 'Welcome to my world!'
 featured-img: ../video/my-linux-world-min.jpg
 tags:
 - linux
