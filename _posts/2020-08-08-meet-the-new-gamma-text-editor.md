@@ -3,7 +3,7 @@ layout: post
 title: "Meet the new Gamma text editor"
 date: 2020-08-08 14:00:54
 image: '/assets/img/editores/gamma.jpg'
-description:
+description: 'He intends to be the default GNOME editor.'
 featured-img: ../editores/gamma.jpg
 tags:
 - editor
