@@ -2,15 +2,15 @@
 layout: post
 title: "Meet the new Gamma text editor"
 date: 2020-08-08 14:00:54
-image: '/assets/img/editores/gamma.jpg'
+image: '/assets/img/editors/gamma.jpg'
 description: 'He intends to be the default GNOME editor.'
-featured-img: ../editores/gamma.jpg
+featured-img: ../editors/gamma.jpg
 tags:
 - editor
 - linux
 ---
 
-![Meet the new Gamma text editor](/assets/img/editores/gamma.jpg)
+![Meet the new Gamma text editor](/assets/img/editors/gamma.jpg)
 
 [Gamma (Γ)](https://gitlab.com/hamadmarri/gamma-text-editor) is a lightweight text editor. It is intended to be an alternative to Gedit or Notepad++. Although the current implementation is tested on Linux with a GNOME desktop environment, it can also run on Linux, Windows and Mac if the dependencies are installed (see the Dependencies section below).
 
