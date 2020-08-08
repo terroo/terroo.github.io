@@ -68,12 +68,12 @@ data-ad-slot="8549252987"></ins>
 
 # Installation
 
-```sh
+{% highlight bash %}
 git clone https://gitlab.com/hamadmarri/gamma-text-editor
 cd gamma-text-editor 
 chmod +x setup.sh
 ./setup.sh
-```
+{% endhighlight %}
 
 # Use and configuration
 
