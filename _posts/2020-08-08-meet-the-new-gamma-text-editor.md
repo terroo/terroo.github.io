@@ -9,7 +9,7 @@ tags:
 - editor
 - linux
 ---
-
+ 
 ![Meet the new Gamma text editor](/assets/img/editors/gamma.jpg)
 
 [Gamma (Γ)](https://gitlab.com/hamadmarri/gamma-text-editor) is a lightweight text editor. It is intended to be an alternative to Gedit or Notepad++. Although the current implementation is tested on Linux with a GNOME desktop environment, it can also run on Linux, Windows and Mac if the dependencies are installed (see the Dependencies section below).
