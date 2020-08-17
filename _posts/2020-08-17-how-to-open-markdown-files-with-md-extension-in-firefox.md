@@ -53,13 +53,13 @@ data-ad-slot="5351066970"></ins>
 </script>
 
 Let's create the file:
-```sh
+{% highlight bash %}
 vim ~/.mime.types
-```
+{% endhighlight %}
 And inside it we will insert the following content:
-```sh
+{% highlight bash %}
 text/plain     md txt
-```
+{% endhighlight %}
 
 As a result we inform you what types of files we want Firefox to open directly in the browser, if you want more files feel free to inform. I know that txt already opens by default, but there will be no problem re-formatting.
 
