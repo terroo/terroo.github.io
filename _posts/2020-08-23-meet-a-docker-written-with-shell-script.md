@@ -144,7 +144,7 @@ $ cat /sys/fs/cgroup/memory/ps_42188/memory.limit_in_bytes
 {% endhighlight %}
 
 # Functionalities
-##Currently implemented
+## Currently implemented
 + docker build †
 + docker pull
 + docker images
@@ -157,7 +157,7 @@ $ cat /sys/fs/cgroup/memory/ps_42188/memory.limit_in_bytes
 + Networking
 + Support/CGroups Quota
 
-##Not implemented
+## Not implemented
 + Data Volume Containers
 + Date Volumes
 + Port Forwarding
