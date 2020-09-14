@@ -48,7 +48,7 @@ sudo pacman -S nload # Arch, Manjaro, ...
 sudo dnf install nload # Red Hat, CentOS, Fedora, ...
 {% endhighlight %}
 
-![nload](/assets/img/rede/nload.png)
+![nload](/assets/img/network/nload.png)
 
 Example of use:
 {% highlight bash %}
@@ -126,7 +126,7 @@ sudo pacman -S nethogs # Arch, Manjaro, ...
 sudo dnf install nethogs # Red Hat, CentOS, Fedora, ...
 {% endhighlight %}
 
-![nethogs](/assets/img/rede/nethogs.png)
+![nethogs](/assets/img/network/nethogs.png)
 
 Example of use:
 {% highlight bash %}
@@ -158,7 +158,7 @@ sudo pacman -S bmon # Arch, Manjaro, ...
 sudo dnf install bmon # Red Hat, CentOS, Fedora, ...
 {% endhighlight %}
 
-![bmon](/assets/img/rede/bmon.png)
+![bmon](/assets/img/network/bmon.png)
 
 Example of use:
 {% highlight bash %}
@@ -178,7 +178,7 @@ sudo pacman -S slurm # Arch, Manjaro, ...
 sudo dnf install slurm # Red Hat, CentOS, Fedora, ...
 {% endhighlight %}
 
-![slurm](/assets/img/rede/slurm.png)
+![slurm](/assets/img/network/slurm.png)
 
 Example of use:
 {% highlight bash %}
@@ -213,7 +213,7 @@ sudo pacman -S tcptrack # Arch, Manjaro, ...
 sudo dnf install tcptrack # Red Hat, CentOS, Fedora, ...
 {% endhighlight %}
 
-![tcptrack](/assets/img/rede/tcptrack.png)
+![tcptrack](/assets/img/network/tcptrack.png)
 
 Example of use:
 {% highlight bash %}
@@ -308,7 +308,7 @@ sudo pacman -S cbm # Arch, Manjaro, ...
 sudo dnf install cbm # Red Hat, CentOS, Fedora, ...
 {% endhighlight %}
 
-![cbm](/assets/img/rede/cbm.png)
+![cbm](/assets/img/network/cbm.png)
 
 Example of use:
 {% highlight bash %}
@@ -328,7 +328,7 @@ sudo pacman -S speedometer # Arch, Manjaro, ...
 sudo dnf install speedometer # Red Hat, CentOS, Fedora, ...
 {% endhighlight %}
 
-![speedometer](/assets/img/rede/speedometer.png)
+![speedometer](/assets/img/network/speedometer.png)
 
 Example of use:
 {% highlight bash %}
@@ -370,7 +370,7 @@ sudo pacman -S netwatch # Arch, Manjaro, ...
 sudo dnf install netwatch # Red Hat, CentOS, Fedora, ...
 {% endhighlight %}
 
-![netwatch](/assets/img/rede/netwatch.png)
+![netwatch](/assets/img/network/netwatch.png)
 
 Example of use:
 {% highlight bash %}
@@ -400,7 +400,7 @@ sudo pacman -S trafshow # Arch, Manjaro, ...
 sudo dnf install trafshow # Red Hat, CentOS, Fedora, ...
 {% endhighlight %}
 
-![trafshow](/assets/img/rede/trafshow.png)
+![trafshow](/assets/img/network/trafshow.png)
 
 Example of use:
 {% highlight bash %}
@@ -420,7 +420,7 @@ sudo pacman -S netload # Arch, Manjaro, ...
 sudo dnf install netload # Red Hat, CentOS, Fedora, ...
 {% endhighlight %}
 
-![netload](/assets/img/rede/netload.png)
+![netload](/assets/img/network/netload.png)
 
 Example of use:
 {% highlight bash %}
