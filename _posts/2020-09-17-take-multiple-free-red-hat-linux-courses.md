@@ -4,7 +4,7 @@ title: "Take Multiple FREE Red Hat Linux Courses"
 date: 2020-09-17 13:48:10
 image: '/assets/img/redhat/red-hat-free-courses.jpg'
 description: 'Linux, OpenStack, Docker, Kubernets, Ansible and Cloud Computing concepts.'
-featured-img: ../redhat/red-hat-Cursos-linux.jpg
+featured-img: ../redhat/red-hat-free-courses.jpg
 tags:
 - redhat
 - courses
@@ -39,7 +39,7 @@ The Red Hat Enterprise Linux Technical Overview (RH024) is a series of free and 
 
 |---|---|
 | Duration: | 30 days |
-| Cost: | 0 BRL |
+| Cost: | 0 USD |
 
 <a href="https://www.redhat.com/en/services/training/rh024-red-hat-linux-technical-overview?intcmp=701f2000000ZzIeAAK" target="_blank" class="btn btn-danger btn-lg"> Apply </a>
 
@@ -53,7 +53,7 @@ The Virtualization and Infrastructure Migration Technical Overview (RH018) will 
 
 |---|---|
 | Duration: | 30 days |
-| Cost: | 0 BRL |
+| Cost: | 0 USD |
 
 <a href="https://www.redhat.com/en/services/training/rh018-virtualization-and-infrastructure-migration-technical-overview?intcmp=701f2000000RXKDAA4" target="_blank" class="btn btn-danger btn-lg"> Apply </a>
 
@@ -79,7 +79,7 @@ This course will provide a basic introduction to Linux® skills using Red Hat® 
 
 |---|---|
 | Duration: | 9 weeks |
-| Cost: | 0 BRL |
+| Cost: | 0 USD |
 
 <a href="https://www.edx.org/course/fundamentals-of-red-hat-enterprise-linux" target="_blank" class="btn btn-danger btn-lg"> Apply </a>
 
@@ -93,7 +93,7 @@ This course will provide a basic introduction to Linux® skills using Red Hat® 
 
 |---|---|
 | Duration: | 30 days |
-| Cost: | 0 BRL |
+| Cost: | 0 USD |
 
 <a href="https://www.redhat.com/en/services/training/cl010-red-hat-openstack-technical-overview?intcmp=701f2000000ZzIUAA0" target="_blank" class="btn btn-danger btn-lg"> Apply </a>
 
@@ -119,7 +119,7 @@ Ansible Essentials: Simplicity in Automation Technical Overview (DO007) is a ser
 
 |---|---|
 | Duration: | 30 days |
-| Cost: | 0 BRL |
+| Cost: | 0 USD |
 
 <a href="https://www.redhat.com/en/services/training/do007-ansible-essentials-simplicity-automation-technical-overview?intcmp=701f2000000RW6yAAG" target="_blank" class="btn btn-danger btn-lg"> Apply </a>
 
@@ -133,7 +133,7 @@ The Deploying Containerized Applications Technical Overview (DO080) course conta
 
 |---|---|
 | Duration: | 30 days |
-| Cost: | 0 BRL |
+| Cost: | 0 USD |
 
 <a href="https://www.redhat.com/en/services/training/do080-deploying-containerized-applications-technical-overview?intcmp=701f2000000RW78AAG" target="_blank" class="btn btn-danger btn-lg"> Apply </a>
 
@@ -147,7 +147,7 @@ The Deploying Containerized Applications Technical Overview (DO080) course conta
 
 |---|---|
 | Duration: | 30 days |
-| Cost: | 0 BRL |
+| Cost: | 0 USD |
 
 <a href="https://www.redhat.com/en/services/training/do092-developing-cloud-native-applications-microservices-architectures?intcmp=701f2000000RW7DAAW" target="_blank" class="btn btn-danger btn-lg"> Apply </a>
 
