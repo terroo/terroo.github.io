@@ -4,7 +4,7 @@ title: "hackerpro: All in One Pentesing tool for Linux and Android"
 date: 2020-09-18 15:52:29
 image: '/assets/img/hacker/hackerpro.png)'
 description: '/assets/img/hacker/hackerpro.png)'
-featured-img: ../hacker/hackerpro.png)
+featured-img: ../hacker/hackerpro.png
 tags:
 - hacker
 - tools
