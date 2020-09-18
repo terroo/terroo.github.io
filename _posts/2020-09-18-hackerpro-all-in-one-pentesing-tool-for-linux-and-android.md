@@ -144,18 +144,18 @@ data-ad-slot="8549252987"></ins>
 # Installation
 ## On Linux
 Open the terminal and type:
-```sh
+{% highlight bash %}
 git clone https://github.com/technicaldada/hackerpro.git
 sudo cd hackerpro && sudo python2 hackerpro.py
-```
+{% endhighlight %}
 
 ## On Android
 You must first have [Termux](https://play.google.com/store/apps/details?id=com.termux). Open the terminal and type:
-```sh
+{% highlight bash %}
 apt update && apt upgrade && apt install git && apt install python2
 git clone https://github.com/technicaldada/hackerpro.git
 cd hackerpro && python2 hackerpro.py
-```
+{% endhighlight %}
 
 For more information access the [GitHub](https://terminalroot.com.br/git/) of the project [here](https://github.com/technicaldada/hackerpro)
 
