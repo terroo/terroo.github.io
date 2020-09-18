@@ -13,7 +13,7 @@ tags:
 # hackerpro: All in One Pentesing tool for Linux and Android
 Pentesting tools that all hackers need.
 
-![hackerpro: All in One Pentesing tool for Linux and Android] (/assets/img/hacker/hackerpro.png)
+![hackerpro: All in One Pentesing tool for Linux and Android](/assets/img/hacker/hackerpro.png)
 
 Transform your Linux environment into a hacker machine.
 
