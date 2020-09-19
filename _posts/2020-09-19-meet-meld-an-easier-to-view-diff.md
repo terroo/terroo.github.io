@@ -105,7 +105,7 @@ There are some program options, for example if we go to: **File** → **Format a
 ![Meld](/assets/img/commands/meld-sh.png)
 
 One more example:
-![Meld mais exemplo](/assets/img/commands/assets/img/comandos/meld.jpg)
+![One more example](/assets/img/commands/meld.jpg)
 
 <!-- RETANGULO LARGO 2 -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
