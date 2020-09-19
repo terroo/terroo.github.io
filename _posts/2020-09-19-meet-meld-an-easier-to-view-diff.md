@@ -36,10 +36,10 @@ data-ad-slot="5351066970"></ins>
 # Usage
 Basically it is the same concept as `diff` but the command is `meld`, example:
 {% highlight bash %}
-meld arquivo1.txt arquivo2.txt
+meld file1.txt file2.txt
 {% endhighlight %}
 
-For a more detailed example, I created 2 files [Shell Script] (https://terminalroot.com.br/shell/):
+For a more detailed example, I created 2 files Shell Script:
 + `cat bye.sh`
 {% highlight bash %}
 #!/usr/bin/env bash
