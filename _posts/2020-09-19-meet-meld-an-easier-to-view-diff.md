@@ -34,7 +34,7 @@ data-ad-slot="5351066970"></ins>
 </script>
 
 # Usage
-Basically it is the same concept as `diff` but the command is` meld`, example:
+Basically it is the same concept as `diff` but the command is `meld`, example:
 {% highlight bash %}
 meld arquivo1.txt arquivo2.txt
 {% endhighlight %}
