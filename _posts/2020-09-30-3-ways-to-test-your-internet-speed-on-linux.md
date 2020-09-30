@@ -4,7 +4,7 @@ title: "3 Ways to Test Your Internet Speed on Linux"
 date: 2020-09-30 08:21:23
 image: '/assets/img/commands/internet-test.jpg'
 description: 'Every day we doubt our ISP if it is really delivering the bandwidth we hire.'
-featured-img: ../img/commands/internet-test.jpg
+featured-img: ../commands/internet-test.jpg
 tags:
 - commands
 - internet
