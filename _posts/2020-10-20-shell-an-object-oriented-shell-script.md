@@ -19,9 +19,9 @@ tags:
 # Installation
 Clone the repository recursively:
 
-```sh
+{% highlight bash %}
 git clone --recurse-submodules -j8 https://github.com/alexst07/shell-plus-plus
-```
+{% endhighlight %}
 
 <!-- QUADRADO -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -37,30 +37,30 @@ After cloned, we realized that it uses [CMake](https://en.terminalroot.com.br/ho
 
 Some distros offer the package with essential tools for building binaries, if you use [Debian](https://en.terminalroot.com.br/meet-devuan-gnu-linux-a-debian-without-systemd/), [Ubuntu](https://en.terminalroot.com.br/customize-your-ubuntu-with-wayland-sway-ulauncher-waybar/), [Mint](https://en.terminalroot.com.br/how-to-customize-your-linux-mint-with-i3-polybar-rofi/) and simlares, just install the package: build-essentials. If you use [Gentoo](https://en.terminalroot.com.br/how-to-create-an-ebuild-on-gentoo/), you don't need to install anything.
 
-```sh
+{% highlight bash %}
 # you can change the compiler with this command:
 export CXX=$(which clang++)
 
 mkdir build && cd build
 cmake ..
 make
-```
+{% endhighlight %}
 
 After building the binary, it can be found at: `./shell/shpp`. You can run one:
-```sh
+{% highlight bash %}
 sudo make install
-```
+{% endhighlight %}
 
 > Remembering that you can also execute the binary directly.
 
 Basic usage example:
 ## Hello, World!
-```sh
+{% highlight bash %}
 cat << EOF > hello.sh
 print("Hello, Shell++")
 EOF
 shpp hello.sh
-```
+{% endhighlight %}
 
 <!-- LISTA MIN -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
