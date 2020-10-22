@@ -4,7 +4,7 @@ title: "Revealing the Secrets of Hollywood Hackers"
 date: 2020-10-22 15:20:40
 image: '/assets/img/hacker/no-more-secrets.jpg'
 description: 'Who has never seen those movie hackers decrypting data with a single [enter]?'
-featured-img: ../hackers/no-more-secrets.jpg
+featured-img: ../hacker/no-more-secrets.jpg
 tags:
 - movies
 - hackers
