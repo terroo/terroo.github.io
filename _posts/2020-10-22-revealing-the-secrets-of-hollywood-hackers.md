@@ -29,7 +29,7 @@ data-ad-slot="5351066970"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-Sem mais segredos! 😎
+No more secrets! 😎
 
 # No More Secrets
 
