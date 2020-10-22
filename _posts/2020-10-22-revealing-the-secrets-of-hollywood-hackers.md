@@ -94,12 +94,11 @@ sudo make uninstall
 cd ..
 rm -rf ./no-more-secrets
 {% endhighlight %}
+
 There, it's the first step to becoming a hacker… Hollywood! 😛
 
 # No More Secrets Official Page
 ## <https://github.com/bartobri/no-more-secrets>
-
-
 
 <!-- RETANGULO LARGO -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
