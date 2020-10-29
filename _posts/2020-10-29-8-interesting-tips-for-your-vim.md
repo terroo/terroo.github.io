@@ -52,7 +52,7 @@ Do you like the ease of the `mouse=a` set, but also hate it 😡 when you select
 
 Use this function in your `~/.vimrc` or in your `~/.config/nvim/init.vim` and change the mode only by pressing `F4`
 
-```sh
+{% highlight viml %}
 function! StatusMouse()
         if &mouse == 'a' 
          set mouse=i
@@ -61,16 +61,17 @@ function! StatusMouse()
         endif
 endfunction
 nnoremap <silent> <F4> <ESC>:call StatusMouse()<CR>
-```
+{% endhighlight %}
+
 Simple and practical! 😃
 
 ---
 
 # 5. TAB BUFFER no NERDTree
 Let's go again with another tip for NERDTree. Upset about the way NERDTree opens the file when you click directly on it? Force it to load the buffered file with this code:
-```sh
+{% highlight bash %}
 nnoremap <C-q> :bp<cr>:bd #<cr>
-```
+{% endhighlight %}
 For more information see the NERDTree documentation: `:h NERDTree`
 
 <!-- LISTA MIN -->
@@ -89,16 +90,16 @@ data-ad-slot="5351066970"></ins>
 There are several options for automatically inserting emoji into Vim, but many of them also stress the amount of emojis.
 
 So, to get around this problem I created [Vim Simple Emoji](https://github.com/terroo/vim-simple-emoji). To install it use your favorite plugin manager, example:
-```sh
+{% highlight bash %}
 Plugin 'terroo/vim-simple-emoji'
-```
+{% endhighlight %}
 
 And then run the command: `:PluginInstall`.
 
 And to use, insert the emoji name between two points and press the [space] button and the emoji will be displayed at the cursor position. Example:
-```sh
+{% highlight bash %}
 :smile:<space>
-```
+{% endhighlight %}
 
 This will result in: 😃
 
@@ -111,9 +112,10 @@ Want to know the name of all the available emojis? Run: `:ShowEmoji`. Some names
 # 7. Define the colors of your Vim your way
 Want some cool colors for the background and front for your Vim? Define yourself! For the back alter the hex of the `guibg` value and for the front `guifg`, example:
 
-```sh
+{% highlight bash %}
 highlight Normal guifg=#e0e0e0 guibg=#353945 gui=NONE ctermfg=250 ctermbg=235 cterm=NONE
-```
+{% endhighlight %}
+
 If you want a dark or light background, use also: `set bg=dark` or `set bg=light`
 
 Do you also want to highlight the current line? Easy, use: `set cursorline`. 😎
