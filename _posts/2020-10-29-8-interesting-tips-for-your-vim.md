@@ -147,7 +147,7 @@ There are some videos that I created about Vim. However, they are in Brazilian P
 # [The 7 Best Plugins for your Vim](https://www.youtube.com/watch?v=PmKJT6SlN-Q&list=PLUJBQEDDLNcnl-1CebtDi6tlt9TtsrkgP&index=5)
 # [10 TIPS for You to Use VIM as a NINJA](https://www.youtube.com/watch?v=nFWQJiLvjnk&list=PLUJBQEDDLNcnl-1CebtDi6tlt9TtsrkgP&index=3)
 # [10 Interesting Lines for your .vimrc - VIM](https://www.youtube.com/watch?v=XXGk3n1uzPg&list=PLUJBQEDDLNcnl-1CebtDi6tlt9TtsrkgP&index=4)
-# [Como Deixar seu VIM Assim! Spacevim: Instalação e Configuração](https://youtu.be/nfPubmjO5xw?list=PLUJBQEDDLNcnl-1CebtDi6tlt9TtsrkgP)
+# [How to Make Your VIM So! Spacevim: Installation and Configuration](https://youtu.be/nfPubmjO5xw?list=PLUJBQEDDLNcnl-1CebtDi6tlt9TtsrkgP)
 
 <iframe width="1100" height="490" src="https://www.youtube.com/embed/nfPubmjO5xw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
