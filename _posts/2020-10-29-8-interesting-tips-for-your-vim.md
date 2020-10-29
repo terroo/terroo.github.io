@@ -135,6 +135,10 @@ data-ad-slot="8549252987"></ins>
 # 8. Your coolest vim-airline!
 And to finish today's tips, nothing like inserting a cool [unicode](https://pt.wikipedia.org/wiki/Unicode) in your [vim-airline](https://github.com/vim-airline/vim-airline), add the symbol: ◉  the section bar:
 
+{% highlight viml %}
+let g:airline_section_z = '◉ ␤ % %l/%c'
+{% endhighlight %}
+
 ![Vim airline](/assets/img/vim/bar-vim-airline.png)
 
 ---
