@@ -69,7 +69,7 @@ Simple and practical! 😃
 
 # 5. TAB BUFFER no NERDTree
 Let's go again with another tip for NERDTree. Upset about the way NERDTree opens the file when you click directly on it? Force it to load the buffered file with this code:
-{% highlight bash %}
+{% highlight viml %}
 nnoremap <C-q> :bp<cr>:bd #<cr>
 {% endhighlight %}
 For more information see the NERDTree documentation: `:h NERDTree`
@@ -97,7 +97,7 @@ Plugin 'terroo/vim-simple-emoji'
 And then run the command: `:PluginInstall`.
 
 And to use, insert the emoji name between two points and press the [space] button and the emoji will be displayed at the cursor position. Example:
-{% highlight bash %}
+{% highlight viml %}
 :smile:<space>
 {% endhighlight %}
 
@@ -112,7 +112,7 @@ Want to know the name of all the available emojis? Run: `:ShowEmoji`. Some names
 # 7. Define the colors of your Vim your way
 Want some cool colors for the background and front for your Vim? Define yourself! For the back alter the hex of the `guibg` value and for the front `guifg`, example:
 
-{% highlight bash %}
+{% highlight viml %}
 highlight Normal guifg=#e0e0e0 guibg=#353945 gui=NONE ctermfg=250 ctermbg=235 cterm=NONE
 {% endhighlight %}
 
