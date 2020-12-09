@@ -49,7 +49,7 @@ Conky Colors is a beautiful Conky theme with a modern user interface. You can se
 
 ![Conky Colors](/assets/img/conky/conky-colors.jpg)
 
-<a href="https://www.gnome-look.org/p/1115403" class="btn btn-success btn-lg" target="_blank" rel="noopener noreferrer"> Get Conky Colors </ a>
+<a href="https://www.gnome-look.org/p/1115403" class="btn btn-success btn-lg" target="_blank" rel="noopener noreferrer"> Get Conky Colors </a>
 
 ---
 
