@@ -34,6 +34,8 @@ _skell(){
     echo "tags:"
     echo "---"
     echo
+    echo "![${1}](/assets/img/)"
+    echo
     echo '
 <!-- QUADRADO -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
