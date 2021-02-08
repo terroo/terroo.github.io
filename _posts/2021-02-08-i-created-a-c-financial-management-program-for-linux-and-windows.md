@@ -4,7 +4,7 @@ title: "I created a C++ Financial Management Program for Linux and Windows"
 date: 2021-02-08 14:39:33
 image: '/assets/img/cpp/terminal-finances.jpg'
 description: 'Suitable for those who want to control their personal accounts in an easy and simple way. Available for Linux and Windows.'
-featured-img: ../dir/img/cpp/terminal-finances.jpg
+featured-img: ../cpp/terminal-finances.jpg
 tags:
 - cpp
 - qt
@@ -35,7 +35,7 @@ chmod +x Terminal_Finances-x86_64.AppImage
 ./Terminal_Finances-x86_64.AppImage
 {% endhighlight%}
 
-Alternatively still on [Linux](https://terminalroot.com.br/tags#linux) you can use [app-get](https://terminalroot.com.br/2020/05/conheca-o-app-get-an-appimages-manager-via-command-line.html), install it as follows:
+Alternatively still on [Linux](https://terminalroot.com.br/tags#linux) you can use [app-get](https://github.com/terroo/app-get), install it as follows:
 {% highlight bash %}
 app-get terminal-finances
 {% endhighlight%}
