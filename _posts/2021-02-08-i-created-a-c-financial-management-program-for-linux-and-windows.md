@@ -27,7 +27,7 @@ data-ad-slot="5351066970"></ins>
 # Installation
 If you want to use Terminal Finances without compiling, choose one of the options below to download:
 
-### In [Linux](https://terminalroot.com.br/tags#linux) for any [distribution](https://terminalroot.com.br/tags#distros) through an [AppImage](https : //appimage.org/)
+### In [Linux](https://terminalroot.com.br/tags#linux) for any [distribution](https://terminalroot.com.br/tags#distros) through an [AppImage](https://appimage.org/)
 To do this, just download it through [this link](https://github.com/terroo/terminal-finances/releases/download/v1.0.0/Terminal_Finances-x86_64.AppImage), give execution permission and run, example:
 {% highlight bash %}
 wget https://github.com/terroo/terminal-finances/releases/download/v1.0.0/Terminal_Finances-x86_64.AppImage
@@ -35,7 +35,7 @@ chmod +x Terminal_Finances-x86_64.AppImage
 ./Terminal_Finances-x86_64.AppImage
 {% endhighlight%}
 
-Alternatively still on [Linux](https://terminalroot.com.br/tags#linux) you can use [app-get](https://terminalroot.com.br/2020/05/conheca-o-app -get-an-appimages-manager-via-command-line.html), install it as follows:
+Alternatively still on [Linux](https://terminalroot.com.br/tags#linux) you can use [app-get](https://terminalroot.com.br/2020/05/conheca-o-app-get-an-appimages-manager-via-command-line.html), install it as follows:
 {% highlight bash %}
 app-get terminal-finances
 {% endhighlight%}
