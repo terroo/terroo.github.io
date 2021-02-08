@@ -91,7 +91,7 @@ Terminal Finances is very intuitive, it is summarized in 4 basic screens and som
 ![Terminal Finances](/assets/img/cpp/terminal-finances-01.jpg)
 
 - To insert credit or debit, as well as edit or delete entries, click on the tab:
-** Insert Credit and/or Debit, Edit and Delete Entries**
+**Insert Credit and/or Debit, Edit and Delete Entries**
 
 ![Insert Credit and/or Debit, Edit and Delete Entries - Terminal Finances](/assets/img/cpp/terminal-finances-02.jpg)
 
