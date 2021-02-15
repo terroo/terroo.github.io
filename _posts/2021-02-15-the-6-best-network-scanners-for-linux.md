@@ -186,5 +186,5 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-This article was originally created by [Arun Kumar](https://www.fosslinux.com/author/d_kumar) for [FOSSLINUX](https://www.fosslinux.com/41798/the-6-best-network -scanners-for-linux.htm) in English and and modified by [Marcos Oliveira](https://en.terminalroot.com.br).
+This article was originally created by [Arun Kumar](https://www.fosslinux.com/author/d_kumar) for [FOSSLINUX](https://www.fosslinux.com/41798/the-6-best-network -scanners-for-linux.htm) and modified by [Marcos Oliveira](https://en.terminalroot.com.br).
    
