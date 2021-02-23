@@ -123,7 +123,7 @@ mv redox_0.6.0_harddrive.bin harddrive.bin
 {% endhighlight %}
 All set, now let's run Redox OS!
 
-# Testando o Redox OS
+# Testing the Redox OS
 If you want to watch a video featuring all the resources provided in this article, watch the video below:
 > The video is in Brazilian Portuguese, but you can use subtitles and translate into your language.
 
