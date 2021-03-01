@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Drogon C ++, The Fastest Web Framework in the World"
+title: "Drogon C++, The Fastest Web Framework in the World"
 date: 2021-03-01 19:10:04
 image: '/assets/img/cpp/drogon-cpp.jpe'
 description: 'It was first placed in tests with 105 frameworks, among them: Rails, Django, NestJS, Laravel and others.'
