@@ -3,7 +3,7 @@ layout: post
 title: "Learn to Create a Graphical Application with C++ and GTKmm"
 date: 2021-03-09 10:46:36
 image: '/assets/img/cpp/gtkmm-cpp.jpg'
-description:
+description: 'In this video we are going to create an application for Firefox.'
 featured-img: ../cpp/gtkmm-cpp.jpg
 tags:
 - cpp
