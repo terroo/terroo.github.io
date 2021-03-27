@@ -3,7 +3,7 @@ layout: post
 title: "List of some famous software written in C++"
 date: 2021-03-27 10:06:32
 image: '/assets/img/cpp/cpp.jpg'
-description: 'C was B's successor. Simula was the successor to ALGOL 60. And C++ was the successor to both.'
+description: 'C was B successor. Simula was the successor to ALGOL 60. And C++ was the successor to both.'
 featured-img: ../cpp/cpp.jpg
 tags:
 - cpp
