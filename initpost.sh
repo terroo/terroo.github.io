@@ -87,10 +87,14 @@ data-full-width-responsive="true"></ins>
 _initpost(){
 
     _PADRAO=$(date +%Y-%m-%d)
-    _URL=$(echo $1 | sed 's/+/-/g' | tr A-Z a-z | tr -d '!@#$%&*()_<>}{~?^/:“”\"' | tr ' ' '-' | sed 's/--//g' |
+    _URL=$(echo $1 | sed 's/++/pp/g;s/\//-/g' | sed 's/+/-/g' | tr A-Z a-z | tr -d '!@#$%&*()_<>}{~?^/:“”\"' | tr ' ' '-' | sed 's/--//g' |
           sed 'y/áÁàÀãÃâÂéÉêÊíÍóÓõÕôÔúÚüÜçÇ/aAaAaAaAeEeEiIoOoOoOuUuUcC/' | tr -d ',.;:' | sed 's/-$//g')
-    _skell "$1" > "_posts/$_PADRAO-$_URL.md"
-    echo -e "\e[36;1m➜ File created successfully!\n\e[37;1m_posts/$_PADRAO-$_URL.md\e[m"
+    if [[ ! -f "_posts/${_PADRAO}-${_URL}.md" ]] ; then
+      _skell "$1" > "_posts/$_PADRAO-$_URL.md"    
+      echo -e "\e[36;1m➜ File created successfully!\n\e[37;1m_posts/$_PADRAO-$_URL.md\e[m"
+    else
+      echo -e "\e[31;1m✖ Error: File Name Already Exists.\e[m"
+    fi
 
 }
 
