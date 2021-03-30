@@ -7,7 +7,7 @@ description: 'And the fastest was ...'
 featured-img: ../dev/langs.jpg
 tags:
 - cpp
-- linguagemc
+- c
 - python
 - java
 - php
