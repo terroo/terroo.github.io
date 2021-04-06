@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "cpp::daily #Episode002 - std::bind e std::placeholders, 10 examples!"
+title: "cpp::daily #Episode002 - std::bind and std::placeholders, 10 examples!"
 date: 2021-04-06 10:00:59
 image: '/assets/img/cppdaily/cpp-daily-episode1.jpg'
 description: 'std::bind and std::placeholders, 10 examples!'
