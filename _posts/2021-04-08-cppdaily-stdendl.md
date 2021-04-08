@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "cpp::daily `std::endl`"
+title: "cpp::daily Stop using std::endl"
 date: 2021-04-08 11:57:49
 image: '/assets/img/cppdaily/cpp-daily-episode4.jpg'
 description: 'Episode 004: Getting a little more performance!'
