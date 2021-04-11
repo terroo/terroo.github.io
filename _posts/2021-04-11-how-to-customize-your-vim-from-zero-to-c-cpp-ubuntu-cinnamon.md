@@ -13,7 +13,7 @@ tags:
 
 ![How to Customize Your VIM From Zero to C/C++ (Ubuntu Cinnamon)](/assets/img/vim/vim-c-cpp-en.jpg)
 
-In these videos we install plugins for:
+In these article we install plugins for:
 
 + Autocomplete for [C](https://en.terminalroot.com.br/why-is-the-c-programming-language-still-on-the-rise/)/[C++](https://en.terminalroot.com.br/drogon-cpp-the-fastest-web-framework-in-the-world/)
 + [Color Themes](https://en.terminalroot.com.br/install-colorscheme-terroo-colors-on-your-vim/)
