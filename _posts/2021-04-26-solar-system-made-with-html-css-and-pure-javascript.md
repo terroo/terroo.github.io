@@ -14,7 +14,7 @@ tags:
 
 ![Solar system made with HTML, CSS and pure Javascript](/assets/img/web/solarsystem.jpg)
 
-Hail, boy! The other day I saw a cool tutorial on Youtube and saved it to my favorites to check it out later. And other day I finished my daily tasks a little earlier and decided to watch and play the video content.
+Hail, guys! The other day I saw a cool tutorial on Youtube and saved it to my favorites to check it out later. And other day I finished my daily tasks a little earlier and decided to watch and play the video content.
 
 It is the Solar System made with **HTML**, **CSS** and pure **Javascript**!
 
