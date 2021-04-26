@@ -59,7 +59,7 @@ data-ad-slot="5351066970"></ins>
 ---
 
 # `index.html`
-```sh
+{% highlight html %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,7 +94,7 @@ data-ad-slot="5351066970"></ins>
 </body>
   <script src="script.js"></script>
 </html>
-```
+{% endhighlight %}
 
 <!-- RETANGULO LARGO 2 -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -111,7 +111,7 @@ data-ad-slot="8549252987"></ins>
 ---
 
 # `main.css`
-```sh
+{% highlight css %}
 body {
   background: black;
   margin: 0;
@@ -208,7 +208,7 @@ body {
   height: 4vmin;
   width: 4vmin;
 }
-```
+{% endhighlight %}
 
 <!-- RETANGULO LARGO -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -226,7 +226,7 @@ data-full-width-responsive="true"></ins>
 ---
 
 # `script.js`
-```sh
+{% highlight javascript %}
 const planets = document.querySelectorAll('.planet')
 const p_radii = [22,33,50,70,112,138,165,190]
 let p_radians = new Array(8).fill(0)
@@ -267,7 +267,7 @@ function earthX(){
 function earthY(){
   return Number( planets[2].style.top.split('vmin')[0] )
 }
-```
+{% endhighlight %}
 
 ---
 
