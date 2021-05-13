@@ -82,7 +82,7 @@ data-ad-slot="8549252987"></ins>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Janelas com Javascript</title>
+  <title>Window with Javascript</title>
   <script src="https://rawcdn.githack.com/nextapps-de/winbox/0.1.8/dist/winbox.bundle.js"></script>
 <style> #content { display:none; padding: 10px; }</style>
 </head>
@@ -113,8 +113,8 @@ data-ad-slot="8549252987"></ins>
 </html>
 {% endhighlight %}
 
-Winbox.js website: https://nextapps-de.github.io/winbox/
+Winbox.js website: <https://nextapps-de.github.io/winbox/>
 
-GitHub: https://github.com/nextapps-de/winbox 
+GitHub: <https://github.com/nextapps-de/winbox> 
 
 
