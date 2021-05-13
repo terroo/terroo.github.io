@@ -33,12 +33,12 @@ WinBox is a modern HTML5 window manager for the web. Light and excellent perform
 There are numerous ways to use it, such as:
 
 Via npm:
-{% hightlight bash %}
+{% highlight bash %}
 npm install winbox
 {% endhighlight %}
 
 Importing the module via CDN:
-{% hightlight bash %}
+{% highlight bash %}
 <script type="module">
   import WinBox from "https://unpkg.com/winbox@0.1.8/src/js/winbox.js";
 </script>
@@ -77,7 +77,7 @@ data-ad-slot="8549252987"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-{% hightlight html %}
+{% highlight html %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
