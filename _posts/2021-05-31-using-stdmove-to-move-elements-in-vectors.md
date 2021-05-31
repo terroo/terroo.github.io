@@ -36,6 +36,11 @@ And we have the vectors (`v1`, `v2` and `v3`) with the following coordinates:
 std::vector<terroo::Coordinates> v1 = { {0,0}, {0,1}, {0,2} }, v2, v3;
 
 for (size_t i = 0; i < v1.size(); ++i) {
+ v2.push_back({1, v1[i].y});
+ v3.push_back({2, v1[i].y});
+}
+
+for (size_t i = 0; i < v1.size(); ++i) {
  std::cout << v1[i].x << ',' << v1[i].y << ' '; 
 }
 std::cout << '\n';
