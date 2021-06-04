@@ -6,6 +6,7 @@ _img
 Gemfile.lock
 /.idea/
 npm-debug.log
+.jekyll-cache
 
 
 # OS Generated files #
