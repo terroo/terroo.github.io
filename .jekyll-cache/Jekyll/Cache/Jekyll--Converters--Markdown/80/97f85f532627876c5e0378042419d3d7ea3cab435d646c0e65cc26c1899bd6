@@ -1,0 +1,257 @@
+I"Å5<p><img src="/assets/img/wm/15-2bwm.jpg" alt="The 25 Best Tiling Window Manager for your Linux" /></p>
+
+<p>Tiled window manager is a window manager with an organization of the screen in frames that do not overlap, as opposed to the most popular approach of stacking based on coordinates of overlapping objects that tries to fully emulate the desktop metaphor.</p>
+
+<p>They consume much less system resources when compared to Graphical Interfaces, such as: KDE, GNOME, XFCE and others.</p>
+
+<p>In this article we go to the top 25 and 2 more bonus tips at the end!</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h1 id="01-bspwm">01. <a href="https://github.com/baskerville/bspwm">bspwm</a></h1>
+<p>bspwm represents windows as the leaves of a complete binary tree. It responds only to X events and messages it receives in a dedicated socket.</p>
+
+<p><code class="highlighter-rouge">bspc</code> is a program that writes messages to the bspwm socket. bspwm does not handle any keyboard or pointer input: a third party program (for example, <code class="highlighter-rouge">sxhkd</code>) is required to translate keyboard and pointer events into bspc invocations.</p>
+
+<p><img src="/assets/img/wm/01-bspwm.jpg" alt="bspwm" /></p>
+
+<hr />
+
+<h1 id="02-i3wm">02. <a href="https://i3wm.org/">i3wm</a></h1>
+<p>I3wm was written entirely from scratch. The target platforms are the GNU/Linux and BSD operating systems. It is Free and Open Source Software (FOSS) under the BSD license. The i3 is mainly aimed at advanced users and developers. It was based on the window manager: wmii.</p>
+
+<p><img src="/assets/img/wm/02-i3wm.jpg" alt="i3wm" /></p>
+
+<hr />
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="03-dwm">03. <a href="https://dwm.suckless.org/">dwm</a></h1>
+<p>Dwm manages windows in tiled, monocle and floating layouts. All layouts can be applied dynamically, optimizing the environment for the application in use and the task performed.</p>
+
+<p><img src="/assets/img/wm/03-dwm.jpg" alt="dwm" /></p>
+
+<hr />
+
+<h1 id="04-openbox">04. <a href="http://openbox.org/">Openbox</a></h1>
+<p>Openbox is the latest generation highly configurable with extensive support for standards. The visual style is known for its minimalist appearance. Openbox uses the visual box style, while providing a greater number of options for theme developers than previous * box implementations. The theme documentation describes the full range of options found in Openbox themes.</p>
+
+<p><img src="/assets/img/wm/04-openbox.jpg" alt="Openbox" /></p>
+
+<hr />
+
+<h1 id="05-awesomewm">05. <a href="https://awesomewm.org/">AwesomeWM</a></h1>
+<p>It is very fast, extensible and licensed under the GNU GPLv2 license. It is mainly aimed at advanced users, developers and anyone who deals with everyday computing tasks and who wants to have a refined control of their graphic environment.</p>
+
+<p><img src="/assets/img/wm/05-awesomewm.jpg" alt="AwesomeWM" /></p>
+
+<hr />
+
+<h1 id="06-herbstluftwm">06. <a href="https://herbstluftwm.org/">HerbstluftWM</a></h1>
+<ul>
+  <li>the layout is based on dividing frames into subframes that can be divided again or filled with windows (similar to i3 or musca)</li>
+  <li>tags (or workspaces or virtual desktops) that can be added / removed at run time. Each tag contains its own layout</li>
+  <li>The tags are independent of the monitor (similar to xmonad)</li>
+</ul>
+
+<p><img src="/assets/img/wm/06-herbstluftwm.jpg" alt="HerbstluftWM" /></p>
+
+<hr />
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="07-xmonad">07. <a href="https://xmonad.org/">xmonad</a></h1>
+<p>It is written and configured in Haskell. In a normal WM, you spend half your time lining up and looking for windows. Xmonad makes work easier by automating this.</p>
+
+<p><img src="/assets/img/wm/07-xmonad.jpg" alt="xmonad" /></p>
+
+<hr />
+
+<h1 id="08-sway">08. <a href="https://swaywm.org/">Sway</a></h1>
+<p>Sway is a Wayland composer and a replacement for the X3 i3 window manager. It works with your existing i3 configuration and supports most i3 features, plus a few extras.</p>
+
+<p><img src="/assets/img/wm/08-sway.jpg" alt="Sway" /></p>
+
+<hr />
+
+<h1 id="09-qtile">09. <a href="http://www.qtile.org/">Qtile</a></h1>
+<p>Qtile is written in Python. It is simple, small and extensible. It‚Äôs easy to write your own built-in layouts, widgets and commands.</p>
+
+<p><img src="/assets/img/wm/09-qtile.jpg" alt="Qtile" /></p>
+
+<hr />
+
+<h1 id="10-jwm">10. <a href="https://joewing.net/projects/jwm/">JWM</a></h1>
+<p>It is written in C and uses only Xlib, at a minimum. Because of its small size, JWM is a good window manager for older computers and less powerful systems, such as the Raspberry Pi, although it is perfectly capable of running on modern systems. JWM is included in small Linux distributions, such as Small Puppy Linux and Damn Small Linux, and is available as a separate package in many other distributions.</p>
+
+<p><img src="/assets/img/wm/10-jwm.jpg" alt="JWM" /></p>
+
+<hr />
+
+<h1 id="11-ratpoison">11. <a href="http://ratpoison.nongnu.org/">Ratpoison</a></h1>
+<p>Ratpoison is a simple window manager, without large library dependencies, without sophisticated graphics, without window decorations and without a mouse dependency. The screen can be divided into non-overlapping frames. All windows are kept maximized within their frames to make the most of your precious screen space. All interaction with the window manager is done using keys.</p>
+
+<p><img src="/assets/img/wm/11-ratpoison.jpg" alt="Ratpoison" /></p>
+
+<hr />
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="12-pekwm">12. <a href="https://www.pekwm.org/">PekWM</a></h1>
+<p>It used to be based on the aewm++ window manager, but it has evolved enough to not look like aewm++ anymore. It has a very expanded feature set, including window grouping (similar to ion, pwm or fluxbox), autoproperties, xinerama, keygrabber and more.</p>
+
+<p><img src="/assets/img/wm/12-pekwm.jpg" alt="PekWM" /></p>
+
+<hr />
+
+<h1 id="13-wtfwm">13. <a href="https://github.com/Kintaro/wtftw">wtfwm</a></h1>
+<p>It is written in Rust.</p>
+
+<p><img src="/assets/img/wm/13-wtftw.jpg" alt="wtfwm" /></p>
+
+<hr />
+
+<h1 id="14-exwm">14. <a href="https://github.com/ch11ng/exwm">EXWM</a></h1>
+<p>EXWM (Emacs X Window Manager) is a fully featured X window manager for Emacs built on top of XELB.</p>
+
+<p><img src="/assets/img/wm/14-exwm.jpg" alt="EXWM" /></p>
+
+<hr />
+
+<h1 id="15-2bwm">15. <a href="https://github.com/venam/2bwm">2bwm</a></h1>
+<p>A fast floating WM, with the particularity of having 2 edges, written on the XCB library and derived from the mcwm written by Michael Cardell. In 2bWM everything is accessible from the keyboard, but a pointing device can be used to move, resize and zoom in/out.</p>
+
+<p><img src="/assets/img/wm/15-2bwm.jpg" alt="2bwm" /></p>
+
+<hr />
+
+<h1 id="16-fluxbox">16. <a href="http://www.fluxbox.org/">Fluxbox</a></h1>
+<p>Based on the Blackbox code 0.61.1. It is very light in features and easy to handle, but still full of features to make a desktop experience easy and extremely fast. It is built in C++ and licensed under the MIT license.</p>
+
+<p><img src="/assets/img/wm/16-fluxbox.jpg" alt="Fluxbox" /></p>
+
+<hr />
+
+<h1 id="17-bluetile">17. <a href="http://bluetile.org/">Bluetile</a></h1>
+<p>Designed to integrate with the GNOME desktop environment. It provides a traditional stacking layout mode as well as tile layouts, where windows are arranged to use the entire screen without overlap.</p>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p><img src="/assets/img/wm/17-bluetile.jpg" alt="Bluetile" /></p>
+
+<hr />
+
+<h1 id="18-icewm">18. <a href="https://ice-wm.org/">IceWM</a></h1>
+<p>The goal of IceWM is speed, simplicity and not to disturb the user.</p>
+
+<p><img src="/assets/img/wm/18-icewm.jpg" alt="IceWM" /></p>
+
+<hr />
+
+<h1 id="19-wmii">19. <a href="https://code.google.com/archive/p/wmii/">wmii</a></h1>
+<p>It is programmable, has a 9p file system interface and supports the management of classic and tiled windows (similar to acme). Your goal is to keep a small and clean code base (read hackerable and beautiful).</p>
+
+<p><img src="/assets/img/wm/19-wmii.jpg" alt="wmii" /></p>
+
+<hr />
+
+<h1 id="20-spectrwm">20. <a href="https://github.com/conformal/spectrwm">Spectrwm</a></h1>
+<p>He tries to stay out of the way so that valuable screen space can be used for much more important things. It has logical standards and does not require you to learn a language to make any settings. It was written by hackers for hackers and strives to be small, compact and fast.</p>
+
+<p><img src="/assets/img/wm/20-spectrwm.jpg" alt="Spectrwm" /></p>
+
+<hr />
+
+<h1 id="21-flwm">21. <a href="http://flwm.sourceforge.net/">flwm</a></h1>
+<p>Fast Light Window Manager is a small stackable FLTK-based window manager written in C++ and available for redistribution under the terms of the GNU General Public License.</p>
+
+<p><img src="/assets/img/wm/21-flwm.jpg" alt="flwm" /></p>
+
+<hr />
+
+<h1 id="22-way-cooler">22. <a href="http://way-cooler.org/">Way cooler</a></h1>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Way Cooler is a window manager from Wayland, written in Rust, configurable using Lua and extensible with D-Bus.</p>
+
+<p><img src="/assets/img/wm/22-waycooler.jpg" alt="Way cooler" /></p>
+
+<hr />
+
+<h1 id="23-wmderland">23. <a href="https://github.com/aesophor/Wmderland">WMderland</a></h1>
+<p>Strongly inspired by i3wm. Wmderland aims to simplify the main functionalities of i3wm and to group the essential resources needed for a modern, but minimal mosaic window manager. Written in C++ using Xlib.</p>
+
+<p><img src="/assets/img/wm/23-wmderland.jpg" alt="WMderland" /></p>
+
+<hr />
+
+<h1 id="24-paperwm">24. <a href="https://github.com/paperwm/PaperWM">PaperWM</a></h1>
+<p>PaperWM is an experimental Gnome Shell extension that provides scrollable window tiles and workspaces per monitor. It is inspired by paper notebooks and mosaic window managers. Supports Gnome Shell 3.28 and 3.30 on X11 and wayland.</p>
+
+<p><img src="/assets/img/wm/24-paperwm.jpg" alt="PaperWM" /></p>
+
+<hr />
+
+<h1 id="25-xlambda">25. <a href="https://github.com/kori/Xlambda">Xlambda</a></h1>
+<p>A window manager for X that is extensible with Guile Scheme.</p>
+
+<p><img src="/assets/img/wm/25-xlambda.jpg" alt="Xlambda" /></p>
+
+<h1 id="bonus">Bonus</h1>
+<p>If you use Windows, there is <a href="https://archive.codeplex.com/?p=windawesome"> Windawesome </a>
+If you use macOS, there is <a href="https://github.com/kylef/chunkwm"> chunkwm </a> and others.</p>
+
+<h3 id="if-you-are-interested-in-watching-videos-about-some-of-the-aforementioned-wms-i-recommend-these-videos-below-remembering-that-they-are-in-portuguese-but-the-commands-are-universal">If you are interested in watching videos about some of the aforementioned WMs, I recommend these videos below. Remembering that they are in Portuguese, but the commands are universal.</h3>
+<ul>
+  <li><a href="https://www.youtube.com/embed/o62vOYSnPVk">https://www.youtube.com/embed/o62vOYSnPVk</a></li>
+  <li><a href="https://www.youtube.com/embed/-geUXpuOJBU">https://www.youtube.com/embed/-geUXpuOJBU</a></li>
+  <li><a href="https://www.youtube.com/embed/uJCgh3nIL84">https://www.youtube.com/embed/uJCgh3nIL84</a></li>
+  <li><a href="https://www.youtube.com/embed/wzh_dKh3eps">https://www.youtube.com/embed/wzh_dKh3eps</a></li>
+  <li><a href="https://www.youtube.com/embed/rxN9jNXiy-c">https://www.youtube.com/embed/rxN9jNXiy-c</a></li>
+  <li><a href="https://www.youtube.com/embed/RLN20em8JvQ">https://www.youtube.com/embed/RLN20em8JvQ</a></li>
+  <li><a href="https://www.youtube.com/embed/cI5rPUnNi1I">https://www.youtube.com/embed/cI5rPUnNi1I</a></li>
+  <li><a href="https://www.youtube.com/embed/nY_o7k8aQVI">https://www.youtube.com/embed/nY_o7k8aQVI</a></li>
+</ul>
+
+<h1 id="thanks-for-reading">Thanks for reading!</h1>
+:ET

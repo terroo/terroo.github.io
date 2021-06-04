@@ -1,0 +1,105 @@
+I"�<p><img src="/assets/img/media/tizonia.jpg" alt="Listen to music in the cloud right from your Linux Terminal" /></p>
+
+<p>Tizonia is a powerful cloud music player for the Linux terminal, with support for Spotify (Premium), Google Play Music (free and paid), SoundCloud, YouTube, TuneIn and iHeart radios, Plex servers and Chromecast devices. The world’s first implementation of OpenMAX IL 1.2. Tizonia is free software written in C/C++.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="installation">Installation</h1>
+
+<p>Tizonia is available in the repository of most Linux distros as well as Ubuntu, Debian, Linux Mint, Arch Linux and others, and it is also possible to install via snap and Docker</p>
+
+<p>If your system is Debian or Ubuntu, just run this command using the curl command:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">curl <span class="nt">-kL</span> https://goo.gl/Vu8qGR | bash</code></pre></figure>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="using-via-docker">Using via Docker</h1>
+<blockquote>
+  <p>This step assumes that you already have Docker installed, if you don’t, watch this video: <a href="https://en.terminalroot.com.br/definitive-docker-tutorial-for-beginners-ubuntu/">Definitive Docker Tutorial for BEGINNERS</a></p>
+</blockquote>
+
+<p>Tizonia connects as a client directly to the PulseAudio host server and uses its configuration / devices to output the sound. This is possible by mapping the UNIX socket used by PulseAudio on the host in the container and configuring its use.</p>
+
+<p>Save this script to a file named <a href="https://github.com/tizonia/docker-tizonia">docker-tizonia</a></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/bin/bash</span>
+<span class="nv">USER_ID</span><span class="o">=</span><span class="si">$(</span><span class="nb">id</span> <span class="nt">-u</span><span class="si">)</span><span class="p">;</span>
+<span class="nv">GROUP_ID</span><span class="o">=</span><span class="si">$(</span><span class="nb">id</span> <span class="nt">-g</span><span class="si">)</span><span class="p">;</span>
+<span class="k">if </span><span class="nb">uname</span> <span class="nt">-s</span> | <span class="nb">grep</span> <span class="nt">-iq</span> <span class="s2">"Darwin"</span> <span class="p">;</span> <span class="k">then
+  </span><span class="nv">pulse_server</span><span class="o">=</span>docker.for.mac.localhost
+  <span class="nv">runtime_dir</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">"</span>
+<span class="k">else
+  </span><span class="nv">pulse_server</span><span class="o">=</span>unix:<span class="s2">"</span><span class="k">${</span><span class="nv">XDG_RUNTIME_DIR</span><span class="k">}</span><span class="s2">/pulse/native"</span>
+  <span class="nv">runtime_dir</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">XDG_RUNTIME_DIR</span><span class="k">}</span><span class="s2">/pulse"</span>
+<span class="k">fi
+</span>docker run <span class="nt">-it</span> <span class="nt">--rm</span> <span class="se">\</span>
+    <span class="nt">-e</span> <span class="nv">PULSE_SERVER</span><span class="o">=</span><span class="s2">"</span><span class="nv">$pulse_server</span><span class="s2">"</span> <span class="se">\</span>
+    <span class="nt">--volume</span><span class="o">=</span><span class="s2">"</span><span class="nv">$runtime_dir</span><span class="s2">"</span>:<span class="s2">"</span><span class="nv">$runtime_dir</span><span class="s2">"</span> <span class="se">\</span>
+    <span class="nt">--volume</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span><span class="s2">/.config/tizonia"</span>:/home/tizonia/.config/tizonia <span class="se">\</span>
+    <span class="nt">--volume</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span><span class="s2">/.config/pulse/cookie"</span>:/home/tizonia/.config/pulse/cookie <span class="se">\</span>
+    <span class="nt">--volume</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span><span class="s2">/.cache"</span>:/home/tizonia/.cache <span class="se">\</span>
+    <span class="nt">--name</span> tizonia <span class="se">\</span>
+    tizonia/docker-tizonia <span class="s2">"</span><span class="nv">$@</span><span class="s2">"</span><span class="p">;</span></code></pre></figure>
+
+<p>Give permission and install:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">chmod</span> +x docker-tizonia
+<span class="nb">sudo install </span>docker-tizonia /usr/local/bin</code></pre></figure>
+
+<p>Example of use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">docker-tizonia <span class="nt">--youtube-audio-mix-search</span> <span class="s2">"Queen Official"</span></code></pre></figure>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<blockquote>
+  <p>There will be a file in <code class="highlighter-rouge">$HOME/.config/tizonia</code>, if not, create it and give write permissions to it: <code class="highlighter-rouge">chmod a+wrx $HOME/.config/tizonia</code></p>
+</blockquote>
+
+<h1 id="overview">Overview</h1>
+<ul>
+  <li>Google Play Music</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">tizonia <span class="nt">--help</span> googlemusic</code></pre></figure>
+
+<ul>
+  <li>Youtube</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">tizonia <span class="nt">--help</span> youtube</code></pre></figure>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>If you like the command line and enjoy listening to music online, you will probably fall in love with Tizonia’s simplicity and cleanliness. With the ability to stream music and play local content, this open source software is one of my favorites, although the gapless feature currently does not work with Spotify.</p>
+
+<p>One of the many advantages of command line software is that they are generally more economical with system resources. When playing audio stored locally, Tizonia consumes only 18 MB of RAM. Spotify streaming consumed 34 MB of RAM, while streaming with the official GUI client weighed 612 MB!
+Tizonia links</p>
+
+<ul>
+  <li>Official address: <a href="https://tizonia.org/">tizonia.org</a></li>
+  <li>Support: <a href="https://docs.tizonia.org/">Documentation</a>, <a href="https://github.com/tizonia/tizonia-openmax-il">GitHub</a>, <a href="https://gitter.im/tizonia/Lobby">Gitter</a></li>
+  <li>Developer: Juan A. Rubio</li>
+  <li>License: GNU Lesser General Public License v3.0</li>
+</ul>
+
+:ET

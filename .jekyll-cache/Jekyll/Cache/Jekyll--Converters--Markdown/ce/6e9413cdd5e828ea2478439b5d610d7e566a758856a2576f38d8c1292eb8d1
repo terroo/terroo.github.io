@@ -1,0 +1,89 @@
+I"+<p><img src="/assets/img/hacker/no-more-secrets.jpg" alt="Revealing the Secrets of Hollywood Hackers" /></p>
+
+<p>Who has never seen those movie hackers decrypting data with a single [enter]? It would be nice if it was that easy, but the effect is cool! 😃</p>
+
+<p>Now let’s see how they do those crude decryptions, as in the excerpt from <a href="https://www.youtube.com/watch?v=F5bAa6gFvLs&amp;t=35">this movie</a>:</p>
+
+<iframe width="1100" height="490" src="https://www.youtube.com/embed/F5bAa6gFvLs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>No more secrets! 😎</p>
+
+<h1 id="no-more-secrets">No More Secrets</h1>
+
+<p>This project is a command line tool called <code class="highlighter-rouge">nms</code> that recreates the famous data decryption effect seen on the screen in the 1992 hacker movie, Sneakers.</p>
+
+<p>Channel any ASCII or UTF-8 text to <code class="highlighter-rouge">nms</code> and apply the Hollywood effect, initially showing the encrypted data and then starting a decryption sequence to reveal the original plain text characters.</p>
+
+<h1 id="installation">Installation</h1>
+
+<p>Someone has endeavored to create software that makes the same effect via the command line. To install just run the commands below in order:</p>
+
+<blockquote>
+  <p>You will need <a href="https://en.terminalroot.com.br/how-to-clone-only-a-subdirectory-with-git-or-svn/">git</a>, <a href="https://en.terminalroot.com.br/how-to-create-a-makefile/">make</a> and <a href="https://en.terminalroot.com.br/gcc-vs-llvm-which-is-the-best-compiler/">gcc</a> installed.</p>
+</blockquote>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/bartobri/no-more-secrets.git
+<span class="nb">cd</span> ./no-more-secrets
+make nms
+make sneakers             <span class="c">## Optional</span>
+<span class="nb">sudo </span>make <span class="nb">install</span></code></pre></figure>
+
+<h1 id="use">Use</h1>
+
+<p>To use it, just run any command that displays output and throw the <code class="highlighter-rouge">stdout</code> to the <code class="highlighter-rouge">nms</code> command (eg: <code class="highlighter-rouge">man ls | head -n 30 | nms</code>) and after the “encrypted” data is displayed, just press [enter] to “decrypt”. See the image below:</p>
+
+<p><img src="url" alt="alt" /></p>
+
+<p><img src="/assets/img/hacker/no-more-secrets.gif" alt="No More Secrets" /></p>
+
+<p>Alternatively you also have the <code class="highlighter-rouge">sneakers</code> command that displays exactly the content of the <a href="https://www.youtube.com/watch?v=F5bAa6gFvLs&amp;t=35">Sneakers</a> movie:</p>
+
+<p><img src="/assets/img/hacker/sneakers.gif" alt="Sneakers" /></p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>If you want to <code class="highlighter-rouge">uninstall</code> just enter the repository you cloned, run the command: <code class="highlighter-rouge">sudo make uninstall</code> and remove the repository from your computer:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/bartobri/no-more-secrets.git
+<span class="nb">cd</span> ./no-more-secrets
+<span class="nb">sudo </span>make uninstall
+<span class="nb">cd</span> ..
+<span class="nb">rm</span> <span class="nt">-rf</span> ./no-more-secrets</code></pre></figure>
+
+<p>There, it’s the first step to becoming a hacker… Hollywood! 😛</p>
+
+<h1 id="no-more-secrets-official-page">No More Secrets Official Page</h1>
+<h2 id="httpsgithubcombartobrino-more-secrets"><a href="https://github.com/bartobri/no-more-secrets">https://github.com/bartobri/no-more-secrets</a></h2>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+:ET

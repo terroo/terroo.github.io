@@ -1,0 +1,34 @@
+I"s<p><a href="https://www.lwks.com/">Lightworks</a> is software for editing and mastering digital video in various formats, including resolutions. The program is currently available for Windows, Linux and Mac OS. The development of an open source version was announced in May 2010. No source code for the program has been released yet.</p>
+
+<p>In this tutorial we will see the steps to install in <strong>Gentoo</strong>, since it is not in the official <strong>Portage</strong> repository.</p>
+
+<p>First you need to log in as root or use sudo to clone the repository with Git.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/terroo/lightworks.git /usr/portage/media-video/lightworks</code></pre></figure>
+
+<p>Then we will enter the cloned repository and we will run the command to run ebuild.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /usr/portage/media-video/lightworks
+ebuild lightworks-14.5-r11.ebuild manifest clean merge</code></pre></figure>
+
+<p>And then we ran the command with emerge to install Lightworks:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerge lightworks</code></pre></figure>
+
+<p>As this is an unofficial ebuild, it will probably ask you to update your <code class="highlighter-rouge">/etc</code>, then run the command below and then install again</p>
+
+<blockquote>
+  <p>In this case I’ll use the <code class="highlighter-rouge">-a</code> parameter for Portage to ask us if you want to continue</p>
+</blockquote>
+
+<p><img src="/assets/img/lightworks/lightworks-1.jpg" alt="Lightworks on Gentoo" title="Lightworks on Gentoo" /></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">etc-update <span class="nt">--automode</span> <span class="nt">-5</span>
+emerge <span class="nt">-a</span> lightworks</code></pre></figure>
+
+<p><img src="/assets/img/lightworks/lightworks-2.jpg" alt="Lightworks on Gentoo" title="Lightworks on Gentoo" /></p>
+
+<p>See too: <a href="https://bugs.gentoo.org/468204">https://bugs.gentoo.org/468204</a></p>
+
+<p>Enjoy!</p>
+:ET

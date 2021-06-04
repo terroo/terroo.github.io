@@ -1,0 +1,165 @@
+I"*-<p><img src="/assets/img/shell/explainshell.png" alt="6 Very Interesting Tips for Your Linux Shell" /></p>
+
+<p>Automating tasks with Shell Script is one of the most useful things a user or programmer should do.</p>
+
+<p>It’s amazing how much time we spend daily doing things that a “robot” can do for us.</p>
+
+<p>And having the environment as we wish is a small step for you, but a big step for your time savings.</p>
+
+<p>We will now know 6 very interesting tips for the Shell that you can use not only on Linux, as the title says, but for any other system.</p>
+
+<hr />
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="01-color-cat-command-output">01. Color <code class="highlighter-rouge">cat</code> command output</h1>
+<p><strong>ccat</strong> is the colorizing <strong>cat</strong>. It works similar to cat but displays content with syntax highlighting. Supported Languages: JavaScript, Java, Ruby, Python, Go, C, JSON and among others.</p>
+<h3 id="installation">Installation</h3>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wget https://github.com/jingweno/ccat/releases/download/v1.1.0/linux-amd64-1.1.0.tar.gz
+<span class="nb">tar </span>xfz linux-amd64-1.1.0.tar.gz
+<span class="nb">cp </span>linux-amd64-1.1.0/ccat /usr/local/bin/
+<span class="nb">echo</span> <span class="s2">"alias cat='/usr/local/bin/ccat'"</span> <span class="o">&gt;&gt;</span> ~/.bashrc
+<span class="nb">source</span> ~/.bashrc
+ccat <span class="nt">--html</span> /etc/fstab <span class="o">&gt;</span> ccat.html</code></pre></figure>
+
+<p>Another very interesting alternative is also the <code class="highlighter-rouge">bat</code> command, which can be found at this link: <a href="https://github.com/sharkdp/bat">https://github.com/sharkdp/bat</a>
+See an example of output from the bat command:</p>
+
+<p><img src="/assets/img/shell/bat.png" alt="Bat" /></p>
+
+<hr />
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="02-customizing-shell-history">02. Customizing Shell <code class="highlighter-rouge">history</code></h1>
+<ul>
+  <li>By default, the history command displays only the command order number and the command used. To also display the date of the command’s execution, you can change its behavior only with this line:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s1">'export HISTTIMEFORMAT="%d/%m/%y %T "'</span> <span class="o">&gt;&gt;</span> ~/.bashrc</code></pre></figure>
+
+<ul>
+  <li>To execute a command from <code class="highlighter-rouge">history</code>, just use an ‘exclamation sign’ <code class="highlighter-rouge">!</code> and the command number, example: <code class="highlighter-rouge">!480</code>, the shell will execute the corresponding number command.
+    <blockquote>
+      <p>Assuming you forgot sudo by running a command that needs it:</p>
+    </blockquote>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>apt <span class="nb">install </span>mysql-client
+Permission denied
+<span class="nv">$ </span><span class="nb">sudo</span> <span class="o">!!</span></code></pre></figure>
+
+<ul>
+  <li>Cleaning all <code class="highlighter-rouge">history</code>:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cat</span> /dev/null <span class="o">&gt;</span> ~/.bashrc
+<span class="nb">history</span> <span class="nt">-c</span></code></pre></figure>
+
+<p>For more informations, use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">help history
+</span>man 3 strftime
+man <span class="nb">history</span></code></pre></figure>
+
+<hr />
+
+<h1 id="03-customizing-the-appearance-of-your-command-prompt-ps1-variable">03. Customizing the appearance of your command prompt (<code class="highlighter-rouge">PS1</code> variable)</h1>
+<p>The first thing you see when you open the terminal is the command prompt, to better understand it, we can say that it is a “bar indicator” of your position in the Shell. Its appearance depends directly on the PS1 variable, which can be configured in the files: <code class="highlighter-rouge">~/.bashrc</code>, <code class="highlighter-rouge">.profile</code> or any file that is part of the recursive tree.</p>
+
+<p>You can customize with the colors you want and the information(metacharacters) you want, for example:</p>
+<ul>
+  <li><code class="highlighter-rouge">\u</code> - You enter the username of the shell;</li>
+  <li><code class="highlighter-rouge">\h</code> - You enter the host name;</li>
+  <li><code class="highlighter-rouge">\w</code> - The full path</li>
+  <li><code class="highlighter-rouge">\W</code> - Current directory</li>
+</ul>
+
+<p>For example, run this in your terminal, if you like it add it to your <code class="highlighter-rouge">~/.bashrc</code></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">export </span><span class="nv">PS1</span><span class="o">=</span><span class="s2">"</span><span class="se">\e</span><span class="s2">[32;1m</span><span class="se">\u</span><span class="s2"> </span><span class="se">\e</span><span class="s2">[33;1m→ </span><span class="se">\e</span><span class="s2">[36;1m</span><span class="se">\h</span><span class="s2"> </span><span class="se">\e</span><span class="s2">[37;0m</span><span class="se">\w\n</span><span class="s2"> </span><span class="se">\e</span><span class="s2">[35;1m⚡</span><span class="se">\e</span><span class="s2">[m"</span></code></pre></figure>
+
+<hr />
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="04-coloring-the-man-and-making-the-reading-more-friendly">04. Coloring the <code class="highlighter-rouge">man</code> and making the reading more friendly</h1>
+<p>The system manual is one of the parts most accessed by Shell, and many people do not like to use it very much, as they find it too technical saying that they cannot understand it well. Copy the command below and paste it at the end of your <code class="highlighter-rouge">~/.bashrc</code> and then open the manual and see the difference</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">export </span><span class="nv">LESS_TERMCAP_mb</span><span class="o">=</span><span class="s1">$'</span><span class="se">\e</span><span class="s1">[1;32m'</span>
+<span class="nb">export </span><span class="nv">LESS_TERMCAP_md</span><span class="o">=</span><span class="s1">$'</span><span class="se">\e</span><span class="s1">[1;32m'</span>
+<span class="nb">export </span><span class="nv">LESS_TERMCAP_me</span><span class="o">=</span><span class="s1">$'</span><span class="se">\e</span><span class="s1">[0m'</span>
+<span class="nb">export </span><span class="nv">LESS_TERMCAP_se</span><span class="o">=</span><span class="s1">$'</span><span class="se">\e</span><span class="s1">[0m'</span>
+<span class="nb">export </span><span class="nv">LESS_TERMCAP_so</span><span class="o">=</span><span class="s1">$'</span><span class="se">\e</span><span class="s1">[01;33m'</span>
+<span class="nb">export </span><span class="nv">LESS_TERMCAP_ue</span><span class="o">=</span><span class="s1">$'</span><span class="se">\e</span><span class="s1">[0m'</span>
+<span class="nb">export </span><span class="nv">LESS_TERMCAP_us</span><span class="o">=</span><span class="s1">$'</span><span class="se">\e</span><span class="s1">[1;4;31m'</span></code></pre></figure>
+
+<hr />
+
+<h1 id="05-look-for-bugs-in-your-shell-code-with-shellcheck">05. Look for bugs in your Shell Code with <code class="highlighter-rouge">shellcheck</code></h1>
+<p>Sometimes when we write our scripts/programs we encounter relevant syntax flaws, but they are still flaws.</p>
+
+<p>For example, using the local declaration directly and already assigning a value to the variable will be identified as an error by ShellSheck. Therefore, you can obtain the fault number that <a href="http://www.shellcheck.net/">ShellSheck</a> will report and disable, as it is a workable fault:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/usr/bin/env bash</span>
+<span class="c"># shellcheck disable=2155</span>
+<span class="k">function </span>eko<span class="o">(){</span>
+  <span class="nb">local </span><span class="nv">_param</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">1</span><span class="k">}</span><span class="s2">"</span>
+  <span class="nb">printf</span> <span class="s2">"%s</span><span class="se">\n</span><span class="s2">"</span> <span class="s2">"</span><span class="k">${</span><span class="nv">_param</span><span class="k">}</span><span class="s2">"</span>
+  <span class="k">return</span>
+<span class="o">}</span>
+
+eko <span class="s2">"Test information"</span></code></pre></figure>
+
+<p>The correct syntax without ShellSheck would be to declare the location first and then assign value to the variable <code class="highlighter-rouge">_param</code>:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/usr/bin/env bash</span>
+
+<span class="k">function </span>eko<span class="o">(){</span>
+  <span class="nb">local </span>_param
+  <span class="nv">_param</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">1</span><span class="k">}</span><span class="s2">"</span>
+  <span class="nb">printf</span> <span class="s2">"%s</span><span class="se">\n</span><span class="s2">"</span> <span class="s2">"</span><span class="k">${</span><span class="nv">_param</span><span class="k">}</span><span class="s2">"</span>
+  <span class="k">return</span>
+<span class="o">}</span>
+
+eko <span class="s2">"Test information"</span></code></pre></figure>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h1 id="06-get-explanations-of-shell-commands">06. Get Explanations of Shell Commands</h1>
+<p>Do you want to know what such a command does? Then copy the LINE of the command and paste it into the search field on the website <a href="https://explainshell.com/">https://explainshell.com/</a> and get details about that command (s).</p>
+
+<hr />
+
+<p>Thanks for reading!</p>
+
+:ET

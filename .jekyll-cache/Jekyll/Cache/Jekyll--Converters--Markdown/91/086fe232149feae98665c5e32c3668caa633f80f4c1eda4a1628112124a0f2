@@ -1,0 +1,14 @@
+I"<<p>When you install the Gedit plugins <code class="highlighter-rouge">emerge --ask app-editors/gedit-plugins</code> (example on Gentoo) and want to enable it but do not find the preferences menu, you do not know what to do, but the truth is that if you run the command below with the normal user, the preferences menu appears .</p>
+
+<p>Just run:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">gsettings <span class="nb">set </span>org.gnome.settings-daemon.plugins.xsettings overrides <span class="s1">'@a{sv} {"Gtk/ShellShowsAppMenu": &lt;int32 0&gt;}'</span></code></pre></figure>
+
+<blockquote>
+  <p><strong>Warning</strong>: If you have gedit open, close and open it again and the preferences menu will appear.</p>
+</blockquote>
+
+<h2 id="ready-enjoy-the-preferences">Ready, enjoy the preferences!</h2>
+
+<p>via: <a href="https://medium.com/@marcosoliveira_17900/display-the-gedit-preferences-menu-4570b0b3369">Marcos Oliveira Medium</a> and <a href="https://askubuntu.com/questions/375049/where-are-gedits-preferences/671398">StackExchange</a></p>
+:ET

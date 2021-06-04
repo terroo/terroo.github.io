@@ -1,0 +1,84 @@
+I"B<p><img src="/assets/img/rust/aesthetic.png" alt="Get information from your Git repository via the command line." /></p>
+
+<p>Onefetch is a command line information tool that displays information about your Git repository directly on your terminal.</p>
+
+<p>Onefetch provides the user with code statistics and design information with features such as license detection. Onefetch will show you:</p>
+
+<ul>
+  <li>The programming language, as well as the project members;</li>
+  <li>LOC (lines of code);</li>
+  <li>Disk size;</li>
+  <li>Contributors</li>
+  <li>Version;</li>
+  <li>etc.</li>
+</ul>
+
+<p>You can further configure Onefetch to display exactly what you want. Through the use of parameters via the command line.</p>
+
+<p>Onefetch supports more than 50 different programming languages.</p>
+
+<hr />
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="installation">Installation</h1>
+<p>Onefetch is written in <a href="https://www.rust-lang.org/">Rust</a>. But several operating systems already have in their repositories, they are:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">brew update <span class="o">&amp;&amp;</span> brew <span class="nb">install </span>onefetch <span class="c"># macOS</span>
+<span class="nb">sudo </span>nix-env <span class="nt">-i</span> onefetch <span class="c"># NixOS</span>
+<span class="nb">sudo </span>zypper <span class="nb">install </span>onefetch <span class="c"># OpenSUSE</span></code></pre></figure>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>For any Linux distro just install Rust via your package package manager and add the <a href="https://github.com/o2sh/onefetch/releases">precompiled binary</a> to your <code class="highlighter-rouge">$PATH</code> variable, example for <code class="highlighter-rouge">/usr/local/bin</code> with the most current version according to the date of publication of this article :</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wget https://github.com/o2sh/onefetch/releases/download/v2.4.0/onefetch-linux.tar.gz
+<span class="nb">tar </span>zxvf onefetch-linux.tar.gz
+<span class="nb">cd </span>onefetch-linux/
+<span class="nb">sudo mv </span>onefetch /usr/local/bin/</code></pre></figure>
+
+<p>Para Windows há um executável também disponível em <a href="https://github.com/o2sh/onefetch/releases">releases</a> e para outros sistemas, você pode construir o binário a partir do código fonte.</p>
+
+<h1 id="use">Use</h1>
+<p>Once installed, just enter a git repository and run the <code class="highlighter-rouge">onefetch</code> command, example for the <a href="https://github.com/terroo/wallset">Wallset</a> repository</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone  https://github.com/terroo/wallset
+<span class="nb">cd </span>wallset
+onefetch</code></pre></figure>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p><img src="/assets/img/rust/wallset-onefetch.png" alt="Wallset onefetch" /></p>
+
+<p>The repo information is displayed next to the ASCII logo for the dominant language. You can also configure Onefetch to use an image (png, jpeg …) in the supported terminals with the <code class="highlighter-rouge">-i</code> parameter and indicating the image address, example:</p>
+<blockquote>
+  <p>Remembering that only <a href="https://en.terminalroot.com.br/the-10-best-terminal-emulators-for-your-linux/">terminal emulators</a>: <code class="highlighter-rouge">xterm</code>, <code class="highlighter-rouge">mlterm</code> and <code class="highlighter-rouge">kitty</code> are supported</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">onefetch <span class="nt">-i</span> path/to/image.jpg</code></pre></figure>
+
+<p><img src="/assets/img/rust/onefetch.png" alt="Image Onefetch" /></p>
+
+<p>For more information, consult the <a href="https://github.com/o2sh/onefetch/">project repository</a>.</p>
+
+<h1 id="thanks-for-reading">Thanks for reading!</h1>
+
+:ET

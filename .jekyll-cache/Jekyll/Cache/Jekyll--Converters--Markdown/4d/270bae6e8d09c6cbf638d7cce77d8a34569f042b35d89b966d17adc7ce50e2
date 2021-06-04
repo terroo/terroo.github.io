@@ -1,0 +1,215 @@
+I"P;<p><img src="/assets/img/git/git-clone-min.jpg" alt="How to Clone Only a Subdirectory with Git or SVN" /></p>
+
+<p>In this tip I will show something that seems simple (in Git), but it is very complicated! =) Because I actually created a <a href="https://terminalroot.com.br/shell">Shell Script</a> that you can run as a command in your <code class="highlighter-rouge">$PATH</code>.</p>
+
+<p>I will also provide one more solution, but not from <a href="https://terminalroot.com.br/git">Git</a> but from <a href="https://subversion.apache.org/">SVN</a>, which to be honest , I would not even need a Shell function, but to make it even easier I will also show.</p>
+
+<p>To understand this article you must have basic knowledge of <a href="https://git-scm.com/">Git</a> and <a href="https://github.com/">GitHub</a> or any other Git repository.</p>
+
+<p>For that I recommend you to know our specific Git and GitHub beginner page: <a href="https://terminalroot.com.br/git">https://terminalroot.com.br/git</a>. There you’ll find text and video tips, including a [Git and GitHub for Beginners] mini course (https://www.youtube.com/watch?v=CsyumQN6ZdA&amp;list=PLUJBQEDDLNclXAjLaiPWakoO9VosPDzC1).</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>In short, cloning a <em>repository</em> means: copying all its files to your computer.</p>
+
+<p><a href="https://git-scm.com/docs/git-clone">git clone</a> is a Git command line utility that is used to direct an existing repository and create a clone or copy of the destination repository. It is very simple to clone Git repositories: <a href="https://github.com/terroo/">GitHub</a>, <a href="https://gitlab.com/terminalroot/">GitLab</a>, <a href="https://bitbucket.org/terminalroot/">BitBucket</a> and others.</p>
+
+<p>The command summarizes in:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone <span class="o">[</span>repository]</code></pre></figure>
+
+<p>For example, I have a repository that is <a href="https://github.com/terroo/fonts">https://github.com/terroo/fonts</a>, assuming you want to clone this repository, the command would be:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/terroo/fonts</code></pre></figure>
+
+<p>You can still clone already renaming and/or with the same name in a new path of your computer, example:</p>
+
+<ol>
+  <li>Clone with a new name: <strong>new-fonts</strong>:</li>
+</ol>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/terroo/fonts new-fonts</code></pre></figure>
+
+<ol>
+  <li>Clone with a new name within the <em>Downloads</em> directory:</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/terroo/fonts Downloas/new sources</code></pre></figure>
+
+<p>Or even clone with the same name in another path:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/terroo/fonts Downloads/fonts</code></pre></figure>
+
+<blockquote>
+  <p><em>Note</em>: If you enter a new path, you must enter a <em>name</em>, either the same name or a new one. If you do so, without entering a name, it will report an error: <code class="highlighter-rouge">fatal: destination path 'Downloads' already exists and is not an empty directory.</code>.</p>
+</blockquote>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>In addition there are several parameters you can use, here we will see a few, but you can get the full documentation on the official Git website more specifically at the URL: <a href="https://git-scm.com/docs/git-clone">https://git-scm.com/docs/git-clone</a>.</p>
+
+<h2 id="cloning-a-subdirectory">Cloning a Subdirectory</h2>
+
+<p>This repository that I used as an example was totally poorly designed, there you will not only find <em>fonts</em>, but also: Wallpapers, WM configuration files and other things. And because of that, sometimes I want to copy only one * sub directory * into it.</p>
+
+<p>For example, in this <a href="https://github.com/terroo/fonts">repository</a> there is a folder/directory named <em>files</em> and let’s suppose I want to copy/clone only this directory/sub-directory if I do this: <del><code class="highlighter-rouge">git clone https://github.com/terroo/fonts/files</code></del> will not work, Git will not allow it, clone will fail:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">marcos@gentoo ~ <span class="nv">$ </span>git clone https://github.com/terroo/fonts/files
+Cloning into <span class="s1">'files'</span> ...
+remote: Not Found
+fatal: repository <span class="s1">'https://github.com/terroo/fonts/files/'</span> not found
+marcos@gentoo ~ <span class="err">$</span></code></pre></figure>
+
+<p>And it’s quite inconvenient for you to clone the entire repository (which by the way is quite large) which will take a long time just to use files from a specific repository directory.</p>
+
+<p>Until Git <strong>2.18</strong> this was not possible, but as of <strong>2.19</strong> it is already possible, so check your Git version before proceeding, use the <code class="highlighter-rouge">git --version</code> command to know the version. If it is equal to or greater than <strong>2.19</strong> you can clone only a specific directory.</p>
+
+<p>To clone this directory (<em>files</em>, inside the repository) we will use the following commands, explanation in the comments (<strong>#</strong>):</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Create a directory, so Git doesn't get messy, and enter it</span>
+<span class="nb">mkdir </span>my-dir <span class="o">&amp;&amp;</span> <span class="nb">cd </span>my-dir
+
+<span class="c"># Start a Git repository</span>
+git init
+
+<span class="c"># Track repository, do not enter subdirectory</span>
+git remote add <span class="nt">-f</span> origin https://github.com/terroo/fonts/
+
+<span class="c"># Enable the tree check feature</span>
+git config core.sparseCheckout <span class="nb">true</span>
+
+<span class="c"># Create a file in the path: .git/info/sparse-checkout</span>
+<span class="c"># That is inside the hidden .git directory that was created</span>
+<span class="c"># by running the command: git init</span>
+<span class="c"># And inside it enter the name of the sub directory you only want to clone</span>
+<span class="nb">echo</span> <span class="s1">'files'</span> <span class="o">&gt;&gt;</span> .git/info/sparse-checkout
+
+<span class="c">## Download with pull, not clone</span>
+git pull origin master</code></pre></figure>
+
+<p>For each command, if you do not understand well, I recommend you look over the manual, for example: <code class="highlighter-rouge">man git remote</code>.</p>
+
+<p>If you find a lot of process running all these commands, you can use a shell script, as I said to get automatic and run only one command, see the script by clicking the link below:</p>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h3 id="-gitdirsh"><a href="https://gist.github.com/TerminalRootTV/9e6edc6cae411e57eceb1a83831b558b">📁 git.dir.sh</a></h3>
+
+<p>If you want to make a command to use in any directory you are in, save it with the name: <code class="highlighter-rouge">git-dir</code> (or the name you want) and move it where you want, for example:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo mv </span>git-dir/usr/local/bin/git-dir
+<span class="c"># Or if you are a UNIX bugger:</span>
+<span class="c"># sudo install -D -v git-dir -t /usr/local/bin/git-dir</span></code></pre></figure>
+
+<p>And to use just run <code class="highlighter-rouge">git-dir</code> anywhere you are that it will already show <em>help</em> displaying the options.</p>
+
+<h2 id="alternative---using-svn">Alternative - Using SVN</h2>
+
+<p>Note that when we use Git for this, this <em>clone</em>, despite being from a subdirectory, will still be very slow. For this there is a much faster solution using SVN which is an alternative to the [Apache Software Foundation] Git (https://en.wikipedia.org/wiki/Apache_Software_Foundation).</p>
+
+<p>The difference between SVN and Git, in my opinion, is summarized in these two images below, that is, there is no better or worse, there is one that meets your specific needs for each case.</p>
+
+<p><img src="/assets/img/git/01-git.svg" alt="Git" />
+<img src="/assets/img/git/02-svn.svg" alt="SVN" /></p>
+
+<p>Apache Subversion (also known as SVN) is a version control system designed specifically to be a modern replacement for CVS, which is considered to have some limitations. Subversion uses Berkeley BD database.</p>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>First of all, you need to have it installed on your system. To do this use your distro’s package manager:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>emerge subversion <span class="c"># Gentoo, Funtoo and Portage baseds</span>
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>subversion <span class="c"># Debian, Ubuntu, Linux Mint APT baseds</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> subversion <span class="c"># Arch Linux, Manjaro and PacMan baseds</span>
+<span class="nb">sudo </span>yum <span class="nb">install </span>subversion <span class="c"># Red Hat, CentOS and YUM baseds</span>
+<span class="nb">sudo </span>dnf <span class="nb">install </span>subversion <span class="c"># Fedora</span></code></pre></figure>
+
+<p>And to clone just use the <code class="highlighter-rouge">export</code> parameter with <em>fake-dir</em>:<code class="highlighter-rouge"> trunk</code> between the repository and the subdirectory, example:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">svn <span class="nb">export</span> <span class="o">[</span>repository]/trunk/[subdirectory]</code></pre></figure>
+
+<p>Example for our case:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">svn <span class="nb">export </span>https://github.com/terroo/fonts/trunk/files</code></pre></figure>
+
+<p>If you want it to be your command, simply create a command or add this function to your <code class="highlighter-rouge">~/.bashrc</code>:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git-svn<span class="o">(){</span>
+  <span class="k">if</span> <span class="o">[[</span> <span class="o">!</span> <span class="nt">-z</span> <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span> <span class="o">&amp;&amp;</span> <span class="o">!</span> <span class="nt">-z</span> <span class="s2">"</span><span class="nv">$2</span><span class="s2">"</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then
+          </span><span class="nb">echo</span> <span class="s2">"Starting clone/copy ..."</span>
+          <span class="nv">repo</span><span class="o">=</span><span class="si">$(</span><span class="nb">echo</span> <span class="nv">$1</span> | <span class="nb">sed</span> <span class="s1">'s/\/$\|.git$//'</span><span class="si">)</span>
+          svn <span class="nb">export</span> <span class="s2">"</span><span class="nv">$repo</span><span class="s2">/trunk/</span><span class="nv">$2</span><span class="s2">"</span>
+  <span class="k">else
+          </span><span class="nb">echo</span> <span class="s2">"Use: git-svn &lt;repository&gt; &lt;subdirectory&gt;"</span>
+  <span class="k">fi</span>  
+<span class="o">}</span></code></pre></figure>
+
+<blockquote>
+  <p>In this case I treated the end of the repository name if the user copies with * .git * or with <em>/</em> at the end of the URL name.</p>
+</blockquote>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>And to use, just run: <code class="highlighter-rouge">git-svn [repository] [subdirectory]</code></p>
+
+<p>Much simpler, right?</p>
+
+<p>It is your choice which mode to use. Leave your tips/questions in the comments for us to interact in the solution or discussion on related issues!</p>
+
+<p>Hugs!</p>
+
+<h2 id="useful-links">Useful links:</h2>
+
+<ul>
+  <li><a href="https://git-scm.com/docs/git-clone">https://git-scm.com/docs/git-clone</a></li>
+  <li><a href="https://subversion.apache.org/">https://subversion.apache.org/</a></li>
+  <li><a href="https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository/52269934">https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository/52269934</a></li>
+  <li><a href="https://www.youtube.com/watch?v=CsyumQN6ZdA&amp;list=PLUJBQEDDLNclXAjLaiPWakoO9VosPDzC1">https://www.youtube.com/watch?v=CsyumQN6ZdA&amp;list=PLUJBQEDDLNclXAjLaiPWakoO9VosPDzC1</a></li>
+  <li><a href="https://terminalroot.com.br/git">https://terminalroot.com.br/git</a></li>
+  <li><a href="https://terminalroot.com.br/shell">https://terminalroot.com.br/shell</a></li>
+  <li><a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone">https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone</a></li>
+</ul>
+:ET

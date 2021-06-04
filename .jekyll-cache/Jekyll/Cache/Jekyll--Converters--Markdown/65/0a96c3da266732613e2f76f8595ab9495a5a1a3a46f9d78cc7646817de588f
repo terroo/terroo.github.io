@@ -1,0 +1,185 @@
+I"ã+<p><img src="/assets/img/commands/find.jpg" alt="20 find COMMAND Examples" /></p>
+
+<blockquote>
+  <p>find - search for files in a directory hierarchy.</p>
+</blockquote>
+
+<h2 id="1---simple-search">1 - Simple Search</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find <span class="nb">.</span> <span class="nt">-name</span> file.txt
+./file.txt</code></pre></figure>
+
+<ul>
+  <li><code class="highlighter-rouge">find</code> command</li>
+  <li><code class="highlighter-rouge">.</code> means it will search all the directory you are in and sub directories.</li>
+  <li><code class="highlighter-rouge">-name</code> will look for that name exactly, if a character is different or upper or lower case, it will ignore it.</li>
+  <li><code class="highlighter-rouge">file.txt</code> filename</li>
+</ul>
+
+<h2 id="2---search-ignoring-case-sensitive">2 - Search ignoring case sensitive</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find /home/ <span class="nt">-iname</span> file.txt
+./file.txt
+./File.txt</code></pre></figure>
+
+<ul>
+  <li>/home/ will only search this directory recursively (sub directories)</li>
+  <li>upper or lower case name</li>
+</ul>
+
+<h2 id="3---search-directories">3 - Search Directories</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find / <span class="nt">-type</span> <span class="nt">-d</span> <span class="nt">-name</span> Photos file.txt
+/home/user/Photos</code></pre></figure>
+
+<h2 id="4---wildcard-search">4 - Wildcard Search</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find /home/ <span class="nt">-name</span> <span class="k">*</span>ile<span class="k">*</span>
+./home/file.txt
+./home/File.txt
+./home/My_Files-NEWS.txt
+./home/file.sh</code></pre></figure>
+
+<ul>
+  <li>finds all files that have the word <strong>file</strong> at the beginning, middle or end</li>
+</ul>
+
+<h2 id="5---search-by-file-type">5 - Search by File Type</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find / <span class="nt">-type</span> <span class="nt">-f</span> <span class="nt">-name</span> Photos <span class="k">*</span>.odt
+./file.odt
+./terminalroot.odt</code></pre></figure>
+
+<ul>
+  <li><code class="highlighter-rouge">-f</code> only files with extension <code class="highlighter-rouge">odt</code>, in that case, even without <code class="highlighter-rouge">-f</code> would also find</li>
+</ul>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="6---search-by-permission-and-find-all-files-that-have-permission-777">6 - Search by permission and find all files that have permission <code class="highlighter-rouge">777</code></h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find <span class="nb">.</span> <span class="nt">-type</span> f <span class="nt">-perm</span> 0777 <span class="nt">-print</span></code></pre></figure>
+
+<h2 id="7---search-other-than-permission-finds-all-files-that-do-not-have-permission-777">7 - Search other than permission finds all files that do not have permission <code class="highlighter-rouge">777</code></h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find / <span class="nt">-type</span> f <span class="o">!</span> <span class="nt">-perm</span> 777</code></pre></figure>
+
+<h2 id="8---search-for-files-in-empty-directories-without-telling-if-it-is---type-d-or---type-f-it-searches-both">8 - Search for files in empty directories without telling if it is <code class="highlighter-rouge">- type d</code> or <code class="highlighter-rouge">- type f</code> it searches both</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find MyDir/ <span class="nt">-empty</span>
+MyDir/EmptyDir
+MyDir/EmptyFile.txt</code></pre></figure>
+
+<ul>
+  <li><code class="highlighter-rouge">-type d</code> search only directories</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find MyDir/ <span class="nt">-type</span> d <span class="nt">-empty</span>
+MyDir/EmptyDir</code></pre></figure>
+
+<ul>
+  <li><code class="highlighter-rouge">-type f</code> looks for files only</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find MyDir/ <span class="nt">-type</span> f <span class="nt">-empty</span>
+MyDir/EmptyFile.txt</code></pre></figure>
+
+<h2 id="9---search-for-hidden-folders">9 - Search for hidden folders</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find /tmp <span class="nt">-type</span> f <span class="nt">-name</span> <span class="s2">".*"</span></code></pre></figure>
+
+<h2 id="10---search-by-size-will-find-all-files-larger-than-10-mb">10 - Search by size will find all files larger than 10 MB</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find <span class="nb">.</span> <span class="nt">-type</span> f <span class="nt">-size</span> +10M</code></pre></figure>
+
+<p>You will find all files smaller than <strong>10MB</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find. <span class="nt">-type</span> f <span class="nt">-size</span> <span class="nt">-10M</span></code></pre></figure>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="11---search-and-remove-with--exec">11 - Search and remove with <code class="highlighter-rouge">-exec</code></h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find <span class="nb">.</span> <span class="nt">-type</span> f <span class="nt">-name</span> EmptyFile.txt <span class="nt">-exec</span> <span class="nb">rm</span> <span class="nt">-f</span> <span class="o">{}</span> <span class="se">\;</span></code></pre></figure>
+
+<p>Or with xargs</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find <span class="nb">.</span> <span class="nt">-type</span> f <span class="nt">-name</span> EmptyFile.txt | xargs <span class="nb">rm</span> <span class="nt">-f</span></code></pre></figure>
+
+<h2 id="12---search-by-name-within-file">12 - Search by Name Within File</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find My_Files/ <span class="nt">-name</span> <span class="s2">"*.*"</span> <span class="nt">-exec</span> <span class="nb">grep</span> <span class="nt">-Hin</span> <span class="s2">"Anomalies"</span> <span class="o">{}</span> <span class="se">\;</span>
+My_Files/file.txt:1:Anomalies</code></pre></figure>
+
+<h2 id="13---searches-for-accessed-atime-files-in-the-last-24-hours-for-more-than-3-days-use-3">13 - Searches for ACCESSED (<code class="highlighter-rouge">atime</code>) files in the last 24 hours (for more than 3 days, use +3)</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find <span class="nb">.</span> <span class="nt">-type</span> f <span class="nt">-atime</span> <span class="nt">-1</span> <span class="nt">-exec</span> <span class="nb">ls</span> <span class="nt">-l</span> <span class="o">{}</span> <span class="se">\;</span></code></pre></figure>
+
+<h2 id="14---searches-for-accessed-amin-files-in-last-5-minutes">14 - Searches for ACCESSED (<code class="highlighter-rouge">amin</code>) files in last 5 minutes</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find <span class="nb">.</span> <span class="nt">-type</span> f <span class="nt">-amin</span> <span class="nt">-5</span></code></pre></figure>
+
+<h2 id="15---searches-for-created-ctime-files-in-the-last-12-hours">15 - Searches for CREATED (<code class="highlighter-rouge">ctime</code>) files in the last 12 hours</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find <span class="nb">.</span> <span class="nt">-type</span> f <span class="nt">-ctime</span> <span class="nt">-0</span>.5 <span class="nt">-exec</span> <span class="nb">ls</span> <span class="nt">-l</span> <span class="o">{}</span> <span class="se">\;</span></code></pre></figure>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="16---searches-for-modified-mtime-files-in-the-last-6-hours">16 - Searches for MODIFIED (<code class="highlighter-rouge">mtime</code>) files in the last 6 hours</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find <span class="nb">.</span> <span class="nt">-type</span> f <span class="nt">-mtime</span> <span class="nt">-0</span>.25</code></pre></figure>
+
+<h2 id="17---search-for-sticky-bit-files-with-551-permission">17 - Search for Sticky Bit Files with <code class="highlighter-rouge">551</code> Permission</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find / <span class="nt">-perm</span> 1551</code></pre></figure>
+
+<h2 id="18---search-for-suid-files">18 - Search for SUID Files</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find / <span class="nt">-perm</span> /u<span class="o">=</span>s</code></pre></figure>
+
+<h2 id="19---search-for-sgid-files">19 - Search for SGID Files</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find / <span class="nt">-perm</span> /g+s</code></pre></figure>
+
+<h2 id="20---search-for-executable-files">20 - Search for executable files</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find / <span class="nt">-perm</span> /a<span class="o">=</span>x</code></pre></figure>
+
+<p>or read only</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">find / <span class="nt">-perm</span> /u<span class="o">=</span>r</code></pre></figure>
+
+<p>There are more possibilities, you can see them all in the command manual:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">man find
+find <span class="nt">--help</span></code></pre></figure>
+
+<p>Thanks for reading!</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+:ET

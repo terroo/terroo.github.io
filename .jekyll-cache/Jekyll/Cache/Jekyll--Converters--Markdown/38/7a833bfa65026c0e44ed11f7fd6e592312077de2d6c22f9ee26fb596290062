@@ -1,0 +1,461 @@
+I"Of<p><a href="/assets/img/distros/linux-hacker-min.jpg"><img src="/assets/img/distros/linux-hacker-min.jpg" alt="The 22 Best Linux Distros for Hackers" /></a></p>
+
+<p>Do you want to learn about computer and network security or find vulnerabilities in your network or are you looking for the best operating systems for ethical and pentesting hackers, or like to know which hackers’ favorite operating system is? - So stop! Here is the list of the most widely used infamous ethical hacker operating systems, or we can say digital forensic tools.</p>
+
+<hr />
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="01-kali-linux">01. <a href="https://www.kali.org/">Kali Linux</a></h2>
+<p><a href="https://www.kali.org/">Kali Linux</a>, maintained and funded by Offensive Security Ltd., is one of the most popular and favorite ethical hacking operating systems used by hackers and security professionals. Kali is a Debian-derived Linux distribution designed for fReal or digital forensic hacking and intrusion testing. It was developed by Mati Aharoni and Devon Kearns, from Offensive Security, through the rewriting of BackTrack, their previous forensic Linux distribution, based on Ubuntu.</p>
+
+<p><img src="/assets/img/distros/linux-hacker-min.jpg" alt="Kali Linux" title="Kali Linux" /></p>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>In addition to desktop support, Kali Linux also has a dedicated project for compatibility and portability for specific Android devices, called Kali Linux NetHunter. When it comes to security tools, this ethical hacking operating system is equipped with more than 600 preinstalled tools and is updated frequently and offered for different platforms, such as ARM and VMware. Kali Linux is now based on a continuous release model.</p>
+
+<p><a href="https://www.kali.org/downloads/">
+<button type="button" class="btn btn-danger"> Kali Linux download </button>
+</a></p>
+
+<hr />
+
+<h2 id="02-pentoo-linux">02. <a href="https://www.pentoo.ch/">Pentoo Linux</a></h2>
+<p>Pentoo is a Live CD and Live USB designed for intrusion testing and security assessment. Based on Gentoo Linux, Pentoo ships as an installable 32- and 64-bit LiveCD. Pentoo is also available as an overlay for an existing Gentoo installation.</p>
+
+<p>The Pentoo kernel includes grsecurity and PAX protection and extra fixes - with binaries compiled from a reinforced tool chain with the latest versions of some tools available.</p>
+
+<p><img src="/assets/img/hacker/pentoo.jpg" alt="Pentoo Linux" title="Pentoo Linux" /></p>
+
+<p><a href="https://www.pentoo.ch/download/">
+<button type="button" class="btn btn-danger"> Pentoo Linux download </button>
+</a></p>
+
+<h3 id="watch-the-video-on-how-to-install-pentoo">Watch the video on how to install Pentoo</h3>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>&lt;iframe width=”920” height=”400” src=”https://www.youtube.com/embed/e4uJ7VfWBdg” frameborder=”0” allow=”accelerometer;autoplay;encrypted-media;gyroscope;picture-in -picture “allowfullscreen&gt; &lt;/iframe&gt;</p>
+
+<hr />
+
+<h2 id="03-backbox">03. <a href="https://www.backbox.org/">BackBox</a></h2>
+<p>BackBox is a Linux distribution for pentesting on Ubuntu. It provides targeted intrusion testing and security assessment, providing a toolkit for analyzing network and computer systems, as well as a complete set of other tools needed for ethical hackers and security testing.</p>
+
+<p><img src="/assets/img/hacker/backbox.jpg" alt="BackBox" title="BackBox" /></p>
+
+<p>It includes some of the most used Linux security and analysis tools to help security experts, from stress testing to sniffing, including vulnerability assessment, computer forensic analysis and exploitation.</p>
+
+<p><a href="https://www.backbox.org/download/">
+<button type="button" class="btn btn-danger"> BackBox download </button>
+</a></p>
+
+<hr />
+
+<h2 id="04-parrot-security-os">04. <a href="https://parrotlinux.org/">Parrot Security OS</a></h2>
+
+<p>Parrot Security OS (or ParrotSec) is a GNU/LINUX distribution based on Debian. This Linux distribution for hackers is designed to perform intrusion testing, vulnerability assessment and mitigation, computer forensic analysis and anonymous browsing. It was developed by the Frozenbox team.</p>
+
+<p><img src="/assets/img/hacker/parrot.jpg" alt="Parrot Security OS" title="Parrot Security OS" /></p>
+
+<p>Parrot is a cloud-friendly Linux distribution and, unlike other ethical hacker operating systems, Parrot OS is a lightweight Linux distribution - runs on machines with 265Mb of minimum RAM and is suitable for 32-bit (i386) and 64-bit (amd64), with a special edition, works on old 32-bit machines (486).</p>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p><a href="https://parrotlinux.org/download-security.php">
+<button type="button" class="btn btn-danger"> Parrot download </button>
+</a></p>
+
+<hr />
+
+<h2 id="05-live-hacking-os">05. <a href="http://www.livehacking.com/">Live Hacking OS</a></h2>
+<p>Live Hacking OS is a Linux distribution full of tools and utilities for ethical hackers, intrusion tests and countermeasures verification. Includes the built-in graphical GNOME user interface. A second variation is available that has only the command line and requires much less hardware requirements.</p>
+
+<p><img src="/assets/img/hacker/live-hacking-os.jpg" alt="Live Hacking OS" title="Live Hacking OS" /></p>
+
+<p><a href="http://www.livehacking.com/live-hacking-cd/download-live-hacking/">
+<button type="button" class="btn btn-danger"> Live Hacking OS download </button>
+</a></p>
+
+<hr />
+
+<h2 id="06-deft-linux">06. <a href="http://www.deftlinux.net/">DEFT Linux</a></h2>
+<p>DEFT stands for Digital Evidence and Forensic Toolkit and is an open source Linux distribution created around DART (Digital Advanced Response Toolkit) software and based on the Ubuntu operating system. It was developed from the start to offer some of the best open source computer forensics and incident response tools that can be used by individuals, IT auditors, investigators, the military and police.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p><img src="/assets/img/hacker/deft.jpg" alt="DEFT Linux" title="DEFT Linux" /></p>
+
+<p><a href="http://www.deftlinux.net/">
+<button type="button" class="btn btn-danger"> DEFT Linux download </button>
+</a></p>
+
+<hr />
+
+<h2 id="07-samurai-web-testing-framework">07. <a href="http://www.samurai-wtf.org/">Samurai Web Testing Framework</a></h2>
+<p>The Samurai Web Testing Framework is an active Linux environment that has been preconfigured to function as a web pentesting environment. The CD contains the best free and open source tools that focus on testing and attacking websites. In developing this environment, we base our selection of tools on the tools we use in our security practice. We have included the tools used in the four stages of web pentesting.</p>
+
+<p><img src="/assets/img/hacker/samurai-web-testing-framework.jpg" alt="Samurai Web Testing Framework" title="Samurai Web Testing Framework" /></p>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p><a href="http://www.samurai-wtf.org/">
+<button type="button" class="btn btn-danger"> Samurai Web Testing Framework download </button>
+</a></p>
+
+<hr />
+
+<h2 id="08-network-security-toolkit">08. <a href="http://www.networksecuritytoolkit.org/">Network Security Toolkit</a></h2>
+<p>The Network Security Toolkit (NST) is a Linux-based Live CD that provides a set of open source computer security and networking tools to perform routine security and network monitoring and diagnostic tasks. Distribution can be used as a network security analysis, validation and monitoring tool on servers hosting virtual machines. Most of the tools published in Insecure.org’s “Top 125 security tools” article are available in the toolkit.</p>
+
+<p><img src="/assets/img/hacker/Network-Security-Toolkit.jpg" alt="Network Security Toolkit" title="Network Security Toolkit" /></p>
+
+<p><a href="http://www.networksecuritytoolkit.org/nst/index.html">
+<button type="button" class="btn btn-danger"> Network Security Toolkit download </button>
+</a></p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h2 id="09-bugtraq-ii">09. <a href="http://bugtraq-team.com/">Bugtraq-II</a></h2>
+<p>Bugtraq-II is a GNU/Linux distribution focused on digital forensics, intrusion testing, malware labs and GSM forensics. Bugtraq-II is available in 11 languages, with over 500 ethical security hacker tools installed and configured. Depending on the desktop environment, features vary. The minimum requirements are based on XFCE and KDE;this ethical hacking system needs a 1 GHz x86 processor and 512 MB of system memory and 15 GB of disk space for installation.</p>
+
+<p><img src="/assets/img/hacker/bugtraq.jpg" alt="Bugtraq-II" title="Bugtraq-II" /></p>
+
+<p><a href="http://bugtraq-team.com/">
+<button type="button" class="btn btn-danger"> Bugtraq-II download </button>
+</a></p>
+
+<hr />
+
+<h2 id="10-nodezero">10. <a href="https://sourceforge.net/projects/nodezero/">NodeZero</a></h2>
+<p>NodeZero is an open source ethical hacker operating system based on the Linux kernel derived from Ubuntu and designed for use in intrusion test operations.</p>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>In addition to allowing the active system to boot, the boot menu contains several advanced options, such as the ability to run a diagnostic test of the system memory, boot from a local drive, start the installer directly and boot the system . secure graphics mode, text mode or debug mode.</p>
+
+<p><img src="/assets/img/hacker/nodezero.jpg" alt="NodeZero" title="NodeZero" /></p>
+
+<p>With NodeZero, you’ll have instant access to more than 300 intrusion testing tools, as well as a set of basic services needed in operations.</p>
+
+<p><a href="https://sourceforge.net/projects/nodezero/">
+<button type="button" class="btn btn-danger"> NodeZero download </button>
+</a></p>
+
+<hr />
+
+<h2 id="11-blackbuntu">11. <a href="http://www.pen-tests.com/">BlackBuntu</a></h2>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>BlackBuntu is a penetration test distribution with the GNOME Desktop Environment, which was specially designed to train students and information security professionals. It is currently being built using Ubuntu 10.10 and works on the BackTrack reference.</p>
+
+<p><img src="/assets/img/hacker/blackbuntu.jpg" alt="BlackBuntu" title="BlackBuntu" /></p>
+
+<p><a href="http://www.pen-tests.com/blackbuntu-download.html">
+<button type="button" class="btn btn-danger"> BlackBuntu download </button>
+</a></p>
+
+<hr />
+
+<h2 id="12-cyborg-hawk-linux">12. <a href="https://sourceforge.net/projects/cyborghawk1/">Cyborg Hawk Linux</a></h2>
+<p>CYBORG HAWK LINUX is an Ubuntu-based hacker operating system created by the team at Ztrela Knowledge Solutions Pvt. Ltd. The Cyborg Hawk intrusion test distribution can be used for network security and assessment and also for digital forensic analysis.</p>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>It also has several tools suitable for mobile and wireless security testing. It has more than 700 tools, while other hacking distros have more than 300 and also dedicated tools and menus for malware analysis and mobile security.</p>
+
+<p><img src="/assets/img/hacker/Cyborg-Hawk-Linux.jpg" alt="Cyborg Hawk Linux" title="Cyborg Hawk Linux" /></p>
+
+<p><a href="https://sourceforge.net/projects/cyborghawk1/files/latest/download">
+<button type="button" class="btn btn-danger"> Cyborg Hawk Linux download </button>
+</a></p>
+
+<hr />
+
+<h2 id="13-knoppix-std">13. <a href="https://s-t-d.org/">Knoppix STD</a></h2>
+<p>STD is a Linux-based security tool used by hackers. In fact, it is a collection of hundreds, if not thousands, of open source security tools.</p>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>It is a Linux Live distribution and its sole purpose in life is to make as many security tools available to you, with the most accurate interface as possible. STD should be used by both novice and professional security professionals, but it is not ideal for Linux beginners.</p>
+
+<p><img src="/assets/img/hacker/Cyborg-Hawk-Linux.jpg" alt="Knoppix STD" title="Knoppix STD" /></p>
+
+<p><a href="https://s-t-d.org/">
+<button type="button" class="btn btn-danger"> Knoppix STD download </button>
+</a></p>
+
+<hr />
+
+<h2 id="14-weakerthan">14. <a href="http://www.weaknetlabs.com/">Weakerthan</a></h2>
+<p>Weakerthan is another hacker distribution created out of Debian Squeeze. For the desktop environment, it uses Fluxbox. This ethical hacking operating system is ideal for WiFi hackers, as it contains many wireless tools. It has a very well maintained website and a dedicated community.</p>
+
+<p><img src="/assets/img/hacker/weakerthan.jpg" alt="Weakerthan" title="Weakerthan" /></p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p><a href="http://www.weaknetlabs.com/">
+<button type="button" class="btn btn-danger"> Weakerthan download </button>
+</a></p>
+
+<hr />
+
+<h2 id="15-blackarch-linux">15. <a href="https://blackarch.org/">BlackArch Linux</a></h2>
+<p>BlackArch Linux - a Linux-based ethical hacker operating system for intrusion testers and security researchers. The new version also has a total of 1400 intrusion testing tools, with the old ones updated and added, making it a mandatory download for hackers and security researchers.</p>
+
+<p><img src="/assets/img/hacker/Favorite-Operating-Systems-Of-Hackers-BlackArch-Linux.jpg" alt="BlackArch Linux" title="BlackArch Linux" /></p>
+
+<p><a href="https://blackarch.org/">
+<button type="button" class="btn btn-danger"> BlackArch Linux download </button>
+</a></p>
+
+<hr />
+
+<h2 id="16-matriux-linux">16. <a href="http://www.matriux.com/">Matriux Linux</a></h2>
+<p>Matriux Linux - a Debian-based security distribution designed for intrusion testing and hacking. Although it is more suitable for hackers, it can also be used by any Linux user as a desktop system for everyday computing.</p>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Matriux has more than 300 open source tools for intrusion testing and hacking. Because it is new, many security researchers say it is a better alternative to Kali Linux.</p>
+
+<p><img src="/assets/img/hacker/matriux.jpg" alt="Matriux Linux" title="Matriux Linux" /></p>
+
+<p><a href="http://www.matriux.com/">
+<button type="button" class="btn btn-danger"> Matriux Linux download </button>
+</a></p>
+
+<hr />
+
+<h2 id="17-dracos-linux">17. <a href="https://www.dracos-linux.org/">Dracos Linux</a></h2>
+<p>Dracos Linux - another hacker favorite operating system that emerged from Indonesia, built from Linux. Dracos was developed to be a fast, strong and powerful operating system, used to perform security tests (intrusion tests).</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>With hundreds of tools, including information gathering, forensic analysis, malware, access maintenance and reverse engineering, Dracos Linux is one of the best options for the hacker operating system.</p>
+
+<p><img src="/assets/img/hacker/Dracos-Linux-ethical-hacking-operating-system.jpg" alt="Dracos Linux" title="Dracos Linux" /></p>
+
+<p><a href="https://www.dracos-linux.org/">
+<button type="button" class="btn btn-danger"> Dracos Linux download </button>
+</a></p>
+
+<hr />
+
+<h2 id="18-fedora-security-lab">18. <a href="https://labs.fedoraproject.org/en/security/">Fedora Security Lab</a></h2>
+<p>Fedora Security Lab comes with the clean and fast Xfce desktop environment and an essential set of tools like - Wireshark, Sqlninja, Yersinia, Medusa, etc. - to follow a proper test path for security and pentesting. The Fedora Security Lab is maintained by a community of security testers and developers.</p>
+
+<p><img src="/assets/img/hacker/Fedora-Security-Lab-ethical-hacking-os.jpg" alt="Fedora Security Lab" title="Fedora Security Lab" /></p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p><a href="https://labs.fedoraproject.org/en/security/">
+<button type="button" class="btn btn-danger"> Fedora Security Lab download </button>
+</a></p>
+
+<hr />
+
+<h2 id="19-caine">19. <a href="https://www.caine-live.net/">Caine</a></h2>
+<p>Caine - Computer Aided Research Environment - is a GNU/Linux live distribution based on Ubuntu created for ethical hackers and experts in digital forensics. It provides a complete forensic environment with a friendly graphical interface.</p>
+
+<p><img src="/assets/img/hacker/Caine-ethical-hacking-os.jpg" alt="Caine" title="Caine" /></p>
+
+<p><a href="https://www.caine-live.net/">
+<button type="button" class="btn btn-danger"> Caine download </button>
+</a></p>
+
+<hr />
+
+<h2 id="20-archstrike">20. <a href="https://archstrike.org/">ArchStrike</a></h2>
+<p>ArchStrike is one of the perfect operating systems for Arch Linux-based ethical hackers for security experts. ArchStrike provides a live desktop environment based on the Openbox window manager, along with an extra repository of 32 and 64-bit build security software.</p>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p><img src="/assets/img/hacker/ArchStrike-Linux-ethical-hacking-os.jpg" alt="ArchStrike" title="ArchStrike" /></p>
+
+<p><a href="https://archstrike.org/">
+<button type="button" class="btn btn-danger"> ArchStrike download </button>
+</a></p>
+
+<hr />
+
+<h2 id="21-urix-os">21. <a href="http://urix.us/">URIX OS</a></h2>
+<p>URIX OS is an ethical hacker distribution, focused on security, based on openSUSE. In URIX OS, security is enhanced by removing servers and closing entry doors. The distribution also provides several intrusion tools for testing purposes.</p>
+
+<p><img src="/assets/img/hacker/URIX-OS-ethical-hacking-os.jpg" alt="URIX OS" title="URIX OS" /></p>
+
+<p><a href="http://urix.us/">
+<button type="button" class="btn btn-danger"> URIX OS download </button>
+</a></p>
+
+<hr />
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="22-gnacktrack">22. <a href="https://sourceforge.net/projects/archiveos/files/g/gnacktrack/">GnackTrack</a></h2>
+<p>GnackTrack - a Linux distribution based on Ubuntu for intrusion testing for GNOME fans.</p>
+
+<p>GnackTrack mainly contains a collection of utilities for pentesting, which have been organized into some categories in the GnackTrack menu entry in the main menu.</p>
+
+<p><img src="/assets/img/hacker/gnacktrack-small.png" alt="GnackTrack" title="GnackTrack" /></p>
+
+<p>Standard applications include Chromium, Firefox, Opera, Gedit text editor, FileZilla FTP client, network scanners, Wireshark and Zenmap, in addition to the XChat IRC client.</p>
+
+<p><a href="https://sourceforge.net/projects/archiveos/files/g/gnacktrack/GnackTrackR6.iso/download">
+<button type="button" class="btn btn-danger"> GnackTrack download </button>
+</a></p>
+
+<hr />
+
+<h3 id="watch-some-videos-we-created-about-pentesting">Watch some videos we created about Pentesting</h3>
+<h4 id="how-to-access-windows-from-linux-with-metasploit">How to Access Windows from Linux with Metasploit</h4>
+<h3 id="note-this-video-is-in-portuguese">NOTE: THIS VIDEO IS IN PORTUGUESE</h3>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>&lt;iframe width=”920” height=”400” src=”https://www.youtube.com/embed/VcbC0yJsWic” frameborder=”0” allow=”accelerometer;autoplay;encrypted-media;gyroscope;picture-in -picture “allowfullscreen&gt;&lt;/iframe&gt;</p>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h4 id="scanning-networks-with-nmap">Scanning Networks with NMAP</h4>
+
+<p>&lt;iframe width=”920” height=”400” src=”https://www.youtube.com/embed/LFjMu993uAA” frameborder=”0” allow=”accelerometer;autoplay;encrypted-media;gyroscope;picture-in -picture “allowfullscreen&gt;&lt;/iframe&gt;</p>
+
+<hr />
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>This article was based on a post from <a href="https://techlog360.com/top-ethical-hacking-operating-systems/">techlog360</a> with modifications.</p>
+:ET

@@ -1,0 +1,36 @@
+I"¢	<p><img src="/assets/img/cpp/fox-gpg-submodule.jpg" alt="How to Export Firefox Passwords in GPG with C++" /></p>
+
+<p>In this video we export the password data and URLs saved in Firefox with <a href="https://en.terminalroot.com.br/i-created-a-c-financial-management-program-for-linux-and-windows/">C++</a> in <a href="https://en.terminalroot.com.br/18-ways-to-generate-and-store-strong-passwords/">GPG</a> format with encryption and add it as a library with <code class="highlighter-rouge">git submodule</code>.</p>
+
+<p>This video is a continuation of the video: <a href="https://en.terminalroot.com.br/learn-to-create-a-graphical-application-with-c-and-gtkmm/">Learn to Create a Graphical Application with C++ and GTKmm</a>.</p>
+
+<p>We uploaded the files to <a href="https://en.terminalroot.com.br/top-5-best-git-clients-for-linux-mac-and-windows/">GitHub</a> and if you want to test it just do the following:</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/terroo/pass-firefox
+<span class="nb">cd </span>pass-firefox
+git submodule update <span class="nt">--init</span>
+make
+./app-pass-firefox</code></pre></figure>
+
+<h1 id="watch-the-video">Watch the video</h1>
+<p>Below is a video that shows how to create a graphical application that will serve to export and import passwords from Firefox and save in GPG format. The video is in Brazilian Portuguese, enable subtitles to your language. <strong>The translations offers by Youtube Artificial Intelligence</strong>.</p>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<iframe width="900" height="380" src="https://www.youtube.com/embed/bdExgjQUi9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+:ET

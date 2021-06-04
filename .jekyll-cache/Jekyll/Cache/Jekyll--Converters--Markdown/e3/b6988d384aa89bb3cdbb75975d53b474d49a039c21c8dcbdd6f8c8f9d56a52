@@ -1,0 +1,179 @@
+I"�*<p><img src="/assets/img/network/computer-network-scanner.jpe" alt="The 6 Best Network Scanners for Linux" /></p>
+
+<p>Computer networks facilitate the sharing of information and resources between several interconnected nodes (network points). It is considered the backbone of telecommunications in the field of technology.</p>
+
+<p>The other crucial term in networking is computer network security. It refers to the set of rules and configurations adopted to prevent and monitor the improper use of the network, data modification (integrity) and denial of access and resources to the network.</p>
+
+<p>Having understood these two terms, we can now examine network scanning. Network scanning is mainly about security on computer networks. It is a procedure used to identify nodes in a network, services offered by different devices, identify network security systems in place, operating systems, protect networks from attacks and check the overall health of the network.</p>
+
+<p>In this post, we handpicked the six best network scanners for Linux systems. When choosing a network scanning tool, a network administrator must understand the scanning features of a specific utility and the functional areas it covers.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h1 id="1-nessus">1. Nessus</h1>
+<p><img src="/assets/img/network/Nessus-Dashboard.png" alt="Nessus" /></p>
+
+<p>At the top of our list is Nessus. It is a popular tool used by network administrators to check for problems on a network. Initially, Nessus was distributed as a freeware utility. This changed quickly over time; it is currently available as a commercial utility. However, there is still a free Nessus package that comes with limited resources and capabilities.</p>
+
+<p>Nessus comes in 3 packages, each with different features. They include Nessus Home, Nessus Professional and Nessus Manager or Nessus Cloud. Nessus was designed to make the entire network and scanning process simple and straightforward.</p>
+
+<p>Main features</p>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<ul>
+  <li>Support for a wide range of systems, including cloud, OT (Operating Technology) devices and traditional IT assets</li>
+  <li>It is available with 70,000 plug-ins that offer various vulnerability scanning services on a network.</li>
+  <li>It supports network inventory with the advanced features available, for example, automated scans, multiple network scans and asset discovery.</li>
+  <li>Provides accurate visibility over a network</li>
+  <li>Support for IPv4 and Ipv6 network scans.</li>
+  <li>It supports automated scheduling of scans and analyzes.</li>
+  <li>Generate customized reports and notifications</li>
+</ul>
+
+<p><a href="https://www.tenable.com/downloads/nessus" class="btn btn-success btn-lg" target="_blank" rel="noopener noreferrer"> DOWNLOAD Nessus </a></p>
+
+<hr />
+
+<h1 id="2-nikto">2. Nikto</h1>
+<p><img src="/assets/img/network/nikto-1.jpg" alt="Nikto" /></p>
+
+<p>Nikto is an open source web server scanner distributed under the General Public License (GPL). Nikto analyzes and performs rapid tests on web servers for up to 7000 potentially malicious applications and files. It also checks for outdated server versions and checks for server configuration objects, such as HTTP options, index files, etc.</p>
+
+<p>Main features</p>
+
+<ul>
+  <li>It provides HTTP proxy support.</li>
+  <li>Nikto supports the generation of reports in several file formats, including XML, HTML, NBE or CSV.</li>
+  <li>Supports scanning multiple servers and ports via input file, which can include Nmap output.</li>
+  <li>Increases security by authenticating hosts with Basic and NTLM.</li>
+  <li>Allows users to adjust scans and include/exclude various vulnerability checks.</li>
+  <li>Nikto provides a platform for customizing reports.</li>
+</ul>
+
+<p><a href="https://cirt.net/Nikto2" class="btn btn-success btn-lg" target="_blank" rel="noopener noreferrer"> DOWNLOAD Nikto </a></p>
+
+<hr />
+
+<h1 id="3-openvas">3. OpenVAS</h1>
+<p><img src="/assets/img/network/OpenVAS.jpg" alt="OpenVAS" /></p>
+
+<p>OpenVAS is a free and open source network security scanning utility distributed under the General Public License (GPL). Considered a vulnerability assessment tool, OpenVAS scans a network for connected servers, firewalls, while listening for any configuration errors in services running on those devices.</p>
+
+<p>It has an exclusive feature that allows the evaluation of solutions and reveals false negatives and false positives. For any false positives, OpenVAS provides a report on why a specific vulnerability has been flagged.</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>The tool supports three types of scans. They include Full Scan, Web Server Scan and WordPress Scan.</p>
+
+<p>A full scan tests the network and all connected devices, such as servers and web applications, for vulnerabilities. A web server scan is used to test networks for any web servers and web application vulnerabilities. The WordPress scan, as the name suggests, scans a system for vulnerabilities in WordPress and the web server.</p>
+
+<p>Main features</p>
+
+<ul>
+  <li>OpenVAS is an excellent solution management vulnerability scanning utility.</li>
+  <li>Provision of reports for risk assessment and mitigation.</li>
+  <li>Support for smart custom scans.</li>
+</ul>
+
+<p><a href="https://www.openvas.org/" class="btn btn-success btn-lg" target="_blank" rel="noopener noreferrer"> DOWNLOAD OpenVAS </a></p>
+
+<hr />
+
+<h1 id="4-angry-ip-scanner">4. Angry IP scanner</h1>
+<p><img src="/assets/img/network/Angry-IP-Scanner.png" alt="Angry IP scanner" /></p>
+
+<p>Angry IP scanner is a free, open source network scanning tool used to scan IP addresses and ports. Each scan provides information about nodes on the network, such as host names, MAC addresses, NetBIOS information, frequently used IP ranges, presence of web servers, etc.</p>
+
+<p>To speed up the network scanning process, Angry IP Scanner implements a multithreaded approach with each thread scanning a different range of IP addresses. You can save the results in several file formats, such as CSV, TXT and XML.</p>
+
+<p>Main features</p>
+
+<ul>
+  <li>It supports scanning of ports and fast IP addresses.</li>
+  <li>Implements multithreaded scanning.</li>
+  <li>Support for various file formats - CSV, TXT and XML.</li>
+</ul>
+
+<p><a href="https://angryip.org/download/#linux" class="btn btn-success btn-lg" target="_blank" rel="noopener noreferrer"> DOWNLOAD Angry IP scanner </a></p>
+
+<hr />
+
+<h1 id="5-nmap">5. <a href="https://nmap.org/">Nmap</a></h1>
+
+<iframe width="910" height="390" src="https://www.youtube.com/embed/LFjMu993uAA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p><a href="https://nmap.org/">Nmap</a> (Network Mapper) is a security scanner, originally written by Gordon Lyon (also known by his pseudonym Fyodor Vaskovich), used to discover hosts and services on a computer network , thus building a “map” of the network.</p>
+
+<p>We have detailed content about <code class="highlighter-rouge">nmap</code> that can be consulted in this link: <a href="https://terminalroot.com.br/2018/07/escaneado-redes-com-nmap.html">Scanning Networks with NMAP</a></p>
+
+<hr />
+
+<h1 id="6-qualys-freescan">6. Qualys FreeScan</h1>
+<p><img src="/assets/img/network/Qualys.jpg" alt="Qualys" /></p>
+
+<p>Qualys Freescan is a free, open source network scanning utility that helps companies optimize their security and compliance solutions. It scans the network for URLs, IP addresses and local servers for vulnerabilities.</p>
+
+<p>It performs three main checks on a network;</p>
+
+<ul>
+  <li>Vulnerability checks: tests a network for malware attacks and SSL issues.</li>
+  <li>OWASP: Checks web application for security issues.</li>
+  <li>SCAP checks: (Security Content Automation Protocol) checks the computer’s settings in relation to security content, ie SCAP.</li>
+</ul>
+
+<p>Main features</p>
+
+<ul>
+  <li>Qualys performs detailed network vulnerability checks.</li>
+  <li>Support for auditing web applications.</li>
+  <li>Qualys responds to threats in real time.</li>
+  <li>Supports up to 10 free scans.</li>
+</ul>
+
+<p><a href="https://freescan.qualys.com/freescan-front/" class="btn btn-success btn-lg" target="_blank" rel="noopener noreferrer"> DOWNLOAD Qualys FreeScan </a></p>
+
+<hr />
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>Each network has its weaknesses in terms of bugs, loopholes and even incorrect settings. All of this can lead an attacker to exploit the vulnerabilities. Network monitoring is therefore a critical activity that every network administrator must perform from time to time to avoid intrusion. Network scanning tools make this task much more comfortable and straightforward.</p>
+
+<p>As an administrator, you will need to make a difficult decision about which tool is best for your network. I suggest you go for a utility that provides advanced exploit detections, comprehensive port scanning and web vulnerability assessments.</p>
+
+<p>In this article, we saw some of the best Linux network scanning tools and, fortunately, most of them are freeware. Go through each one and choose the most suitable for your network.</p>
+
+<hr />
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>This article was originally created by <a href="https://www.fosslinux.com/author/d_kumar">Arun Kumar</a> for <a href="https://www.fosslinux.com/41798/the-6-best-network -scanners-for-linux.htm">FOSSLINUX</a> and modified by <a href="https://en.terminalroot.com.br">Marcos Oliveira</a>.</p>
+
+:ET

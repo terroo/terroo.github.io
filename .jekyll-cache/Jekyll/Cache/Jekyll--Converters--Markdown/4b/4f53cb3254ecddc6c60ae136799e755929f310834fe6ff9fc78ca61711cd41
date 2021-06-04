@@ -1,0 +1,100 @@
+I"\$<blockquote>
+  <p>Active since the 1970s, language still persists and few can outperform. But how does it compare to the competition?</p>
+</blockquote>
+
+<p><img src="/assets/img/dev/programer-c.jpg" alt="Why is the C programming language still on the rise?" /></p>
+
+<blockquote>
+  <p>No technology stays alive for 50 years unless it does its job very well. The <strong>C</strong> programming language has been active since 1972, and still reigns as one of the fundamental elements of the software world. In some cases, a particular technology survives because people simply cannot replace it. In the last few decades, dozens of other languages ​​have emerged - some explicitly designed to challenge C, others standing out as a byproduct of its popularity.</p>
+</blockquote>
+
+<p>It is not difficult to say that <strong>C</strong> needs to be replaced. Programming language research and software development practices suggest that there are much better ways to work. However, <strong>C</strong> persists equally, with decades of research and development behind it. In the end, few languages ​​can outperform. Still, it’s worth seeing how the <strong>C</strong> compares to the competition.</p>
+
+<h2 id="c-vs-c">C vs. C++</h2>
+
+<p>Of course, <strong>C</strong> is compared to <strong>C++</strong> , the language that - as its name implies - was created as an extension of C. The differences between <strong>C++</strong>  and <strong>C</strong> can be characterized as extensive or excessive depending on who is talking about it. .</p>
+
+<p>Although still similar to <strong>C</strong> in its syntax and approach, <strong>C++</strong>  provides many genuinely useful features that are not available natively in C: namespaces, templates, exceptions, automatic memory management, and so on. Projects that require high level performance - databases, machine learning systems - are often written in <strong>C++</strong>  using these features to get the most out of system performance.</p>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<blockquote>
+  <p>In addition, <strong>C++</strong>  continues to expand much more intensely than C. The next <strong>C++</strong> 20 brings even more features, including modules, a synchronization library, and concepts that make it easier to use. The most recent revision of the <strong>C</strong> standard added little news and focused only on maintaining backward compatibility.</p>
+</blockquote>
+
+<p>The problem is that all the advantages of <strong>C++</strong>  can also work as disadvantages. The more <strong>C++</strong>  features you use, the more complexity you get and the harder it gets to tame the results. Developers who limit themselves to a subset of <strong>C++</strong>  can avoid many of their worst pitfalls and excesses. The Linux kernel development team, for example, avoids <strong>C++</strong> .</p>
+
+<p>Choosing <strong>C</strong> over <strong>C++</strong>  is one way to avoid having to deal with <strong>C++</strong>  overeating by enforcing minimalism. Of course, <strong>C++</strong>  has a rich set of high level features for good reason. But if minimalism is better suited for current and future projects, then <strong>C</strong> makes more sense.</p>
+
+<h2 id="c-vs-java">C vs. Java</h2>
+
+<p>After decades, <strong>Java</strong>  remains one of the highlights in enterprise software development. Many of the most important projects were written in <strong>Java</strong>  - including the vast majority of Apache Software Foundation projects.</p>
+
+<p><strong>Java</strong>  syntax borrows a lot from <strong>C</strong> and <strong>C++</strong> . Unlike C, however, <strong>Java</strong>  does not compile native code by default. Instead, the <strong>Java</strong>  Runtime Environment, JVM, just-in-time (JIT) compiles <strong>Java</strong>  code for execution in the target environment. Under the right circumstances, <strong>Java</strong>  JITted code may approach or even exceed C’s performance.</p>
+
+<p>The “write once, run anywhere” philosophy behind <strong>Java</strong>  also allows programs to work with little tweaking. On the other hand, although <strong>C</strong> was developed for many architectures, any <strong>C</strong> program may still need customization to run correctly.</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<blockquote>
+  <p>This combination of portability and strong performance, coupled with a huge ecosystem of libraries and software frameworks, makes <strong>Java</strong>  an ideal language for building enterprise applications.</p>
+</blockquote>
+
+<p>However, <strong>Java</strong>  falls short of <strong>C</strong> in an area it never intended to compete: working directly with hardware. <strong>Java</strong>  is compiled in bytecode, which is intermediate code that the JVM interpreter converts to code. In addition, while <strong>Java</strong> ‘s automatic memory management is a blessing in most circumstances, <strong>C</strong> is best suited for programs that should make optimal use of limited memory resources.</p>
+
+<p>There are also some areas where <strong>Java</strong>  can approach <strong>C</strong> in terms of speed. JVM’s JIT engine optimizes runtime based on program behavior, allowing for many classes of enhancements not possible with C.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="c-vs-python">C vs. Python</h2>
+
+<p>Nowadays, whenever the conversation is about software development, <strong>Python</strong>  always seems to be in the conversation. After all, <strong>Python</strong>  is “the second best language for everything” and unquestionably one of the most versatile with thousands of third party libraries available.</p>
+
+<p>What <strong>Python</strong>  emphasizes, and where it differs most from C, is in favor of development speed over execution speed. A program that can take an hour to build in another language - such as <strong>C</strong> - can be written in <strong>Python</strong>  in minutes. On the other hand, this program may take a few seconds to run in C, but a minute to run in <strong>Python</strong> . But for many works on modern hardware, <strong>Python</strong>  is fast enough, and this was critical to its acceptance.</p>
+
+<blockquote>
+  <p>Another big difference is memory management. <strong>Python</strong>  programs are fully managed at runtime so developers don’t have to worry about the details of memory allocation and release. But here again, developer ease costs runtime performance. Writing <strong>C</strong> programs requires attention to memory management, but the resulting programs are often the gold standard for machine speed.</p>
+</blockquote>
+
+<p>Behind the scenes, though, <strong>Python</strong>  and <strong>C</strong> share a deep connection: the reference <strong>Python</strong>  runtime is written in C. This allows <strong>Python</strong>  programs to group libraries written in <strong>C</strong> and <strong>C++</strong> . Significant chunks of the <strong>Python</strong>  ecosystem of third-party libraries, such as for machine learning, have <strong>C</strong> code at their core.</p>
+
+<p>If development speed matters more than execution speed, and if most performance parts of the program can be isolated into standalone components, pure <strong>Python</strong>  or a mix of <strong>Python</strong>  and <strong>C</strong> libraries may be a better choice than using it. <strong>C</strong> alone. Otherwise, <strong>C</strong> still prevails.</p>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:50px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Via: <a href="https://terminalroot.com.br/2019/10/por-que-a-linguagem-de-programacao-c-ainda-esta-em-alta.html">Terminal Root PT-BR</a></p>
+:ET

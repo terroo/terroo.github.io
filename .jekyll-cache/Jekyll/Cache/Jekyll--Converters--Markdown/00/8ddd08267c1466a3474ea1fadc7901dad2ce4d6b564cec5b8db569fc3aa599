@@ -1,0 +1,610 @@
+I"r\<p><img src="/assets/img/server/docker-basic-en.jpg" alt="Definitive Docker Tutorial for BEGINNERS (Ubuntu)" /></p>
+
+<h1 id="introduction">Introduction</h1>
+
+<p>Docker is a container virtualization environment that can establish development or runtime environments without modifying the base operating system environment. It has the ability to deploy container instances that provide virtualization using the host kernel, which makes it faster and lighter than full hardware virtualization.
+Versions</p>
+
+<ul>
+  <li><strong>Docker.io</strong> - Older versions of Docker were called docker-engine or docker.io. The docker-io package was the name used in Debian / Ubuntu. That reference no longer exists.</li>
+  <li><strong>Docker CE</strong> - It is the free version of Docker that stands for Docker Community Edition.</li>
+  <li><strong>Docker EE</strong> - It is the paid version of Docker and has more features. It means Docker Entreprise Edition.</li>
+</ul>
+
+<blockquote>
+  <p>Containers that produce Kernel Panic will induce Kernel Panic in the host’s operating system.</p>
+</blockquote>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h1 id="installation">Installation</h1>
+
+<p>To install we will use the snap. Just remembering that the snap is available for several distributions, such as: Arch, Gentoo, Linux Mint and others. The cool thing about it is that we will avoid problems with Docker versions.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">sudo snap install docker</code> - Installs Docker</li>
+  <li><code class="highlighter-rouge">ps -A | grep docker</code> - Check if the daemon is already running</li>
+  <li><code class="highlighter-rouge">sudo docker run hello-world</code> - Running your first container</li>
+</ul>
+
+<p>The output will be something like:</p>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>docker run hello-world
+
+Unable to find image <span class="s1">'hello-world:latest'</span> locally
+latest: Pulling from library/hello-world
+1b930d010525: Pull <span class="nb">complete
+</span>Digest: sha256:41a65640635299bab090f783209c1e3a3f11934cf7756b09cb2f1e02147c6ed8
+Status: Downloaded newer image <span class="k">for </span>hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the <span class="s2">"hello-world"</span> image from the Docker Hub.
+    <span class="o">(</span>amd64<span class="o">)</span>
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ <span class="nv">$ </span>docker run <span class="nt">-it</span> ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/</code></pre></figure>
+
+<hr />
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="running-docker-without-sudo">Running Docker without sudo</h1>
+
+<ul>
+  <li>
+    <ol>
+      <li>Check which groups are available on your system, run the command: <code class="highlighter-rouge">cat /etc/group | cut -d: -f1</code> (to display groups beside: <code class="highlighter-rouge">cat /etc/group | cut -d: -f1 | tr '\ n' '' &amp;&amp; echo</code>), if among the groups listed is docker, then that group exists, if you want to run a command that tells you whether or not the group exists, network the command: <code class="highlighter-rouge">[[ $(grep 'docker' /etc/group) ]] &amp;&amp; echo 'There is the docker group' || echo 'There is no docker group'</code></li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>Use this step only if the docker group does not exist. Then create the group with the command: <code class="highlighter-rouge">sudo groupadd docker</code>.</li>
+    </ol>
+  </li>
+  <li>
+    <ol>
+      <li>Now add your user to the docker group with the command: <code class="highlighter-rouge">sudo usermod -aG docker $USER</code> (or <code class="highlighter-rouge">sudo gpasswd -a $USER docker</code>) and make sure you are now in the group with the <code class="highlighter-rouge">groups $USER </code>command.</li>
+    </ol>
+  </li>
+</ul>
+
+<blockquote>
+  <p>If you want to remove the user from the group, run: <code class="highlighter-rouge">sudo gpasswd -d $ USER docker</code></p>
+</blockquote>
+
+<ul>
+  <li>
+    <ol>
+      <li>Now you need to restart your computer for the changes to take effect. And after restarting the test without the <code class="highlighter-rouge">sudo docker run hello-world</code>, if it runs it is all right.</li>
+    </ol>
+  </li>
+</ul>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="running-a-container">Running a container</h1>
+<blockquote>
+  <p>For this example we will use a Shell Script application: <a href="https://funcoeszz.net/">ZZ functions</a></p>
+</blockquote>
+
+<p>First, download the container image to your machine:</p>
+<blockquote>
+  <p>If you aren’t part of the docker group as mentioned above, use <code class="highlighter-rouge">sudo</code> for all the following steps.</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">docker pull funcoeszz/zz</code></pre></figure>
+
+<p>The output will be something like:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">docker pull funcoeszz/zz
+Using default tag: latest
+latest: Pulling from funcoeszz/zz
+386a066cd84a: Pull <span class="nb">complete
+</span>4e1412bf2f54: Pull <span class="nb">complete
+</span>9e64dc8a144a: Pull <span class="nb">complete
+</span>4efdf586deec: Pull <span class="nb">complete
+</span>856d94476b10: Pull <span class="nb">complete
+</span>Digest: sha256:23a5e20ceeb907e39652c4b130d5a6a8d77bc25a4aeba003a66871ada88d07dc
+Status: Downloaded newer image <span class="k">for </span>funcoeszz/zz:latest</code></pre></figure>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>List the images that are already on your machine:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">docker images</code></pre></figure>
+
+<p>Now just run the container and inform which function you want to use, along with its parameters, example: <code class="highlighter-rouge">docker run --rm funcoeszz/zz maiusculas is working</code></p>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Output:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># --rm is optional</span>
+<span class="c"># docker run --rm funcoeszz/zz maiusculas is working</span>
+docker run funcoeszz/zz maiusculas is working
+IS WORKING</code></pre></figure>
+
+<p>Search for a container: <code class="highlighter-rouge">docker search nginx</code></p>
+
+<p>Commands for information: <code class="highlighter-rouge">docker info</code> and others, see: <code class="highlighter-rouge">docker --help</code> or <code class="highlighter-rouge">docker</code> only</p>
+
+<h1 id="stopping-and-removing-images-and-containers">Stopping and removing images and containers</h1>
+
+<p>The docker run command takes the Docker image as a model and produces a container from it.</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<ul>
+  <li>Listing images and containers: <code class="highlighter-rouge">docker images</code> or <code class="highlighter-rouge">docker image ls</code></li>
+  <li>Stopping containers: <code class="highlighter-rouge">docker stop $(docker ps -a -q)</code></li>
+  <li>Removing all containers: <code class="highlighter-rouge">docker rm $(docker ps -a -q)</code></li>
+  <li>Removing all images: <code class="highlighter-rouge">docker rmi $(docker images -a -q)</code> or <code class="highlighter-rouge">docker rmi ID_IMAGE</code></li>
+</ul>
+
+<h1 id="creating-a-container">Creating a container</h1>
+<ul>
+  <li>Create a directory and enter it: <code class="highlighter-rouge">mkdir myshell &amp;&amp; cd myshell</code></li>
+  <li>Create a file named: <em>Dockerfile</em>: <code class="highlighter-rouge">vim Dockerfile</code></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">FROM ubuntu:19.04
+ENV <span class="nv">PATH</span><span class="o">=</span>/app:<span class="nv">$PATH</span>
+COPY myshell.sh /app/
+WORKDIR /app
+ENTRYPOINT <span class="o">[</span><span class="s2">"./myshell.sh"</span><span class="o">]</span></code></pre></figure>
+
+<p>Create shell script file: <code class="highlighter-rouge">vim myshell.sh</code></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/bin/bash</span>
+<span class="nb">echo</span> <span class="s2">"Testing this app ... [OK]"</span></code></pre></figure>
+
+<p>Or this case for example server, to play for background</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/bin/bash</span>
+<span class="k">while </span><span class="nb">true</span><span class="p">;</span> <span class="k">do
+    </span><span class="nb">echo</span> <span class="nt">-en</span> <span class="s2">"Running my script, time is it: </span><span class="si">$(</span><span class="nb">date</span> +%H:%M:%S<span class="si">)</span><span class="se">\r\r</span><span class="s2">"</span>
+<span class="k">done</span></code></pre></figure>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<ul>
+  <li>Execution permission: <code class="highlighter-rouge">chmod +x myshell.sh</code></li>
+  <li>Build the App image: <code class="highlighter-rouge">docker build --tag=myshell</code>.</li>
+</ul>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<ul>
+  <li>Confirm the image: <code class="highlighter-rouge">docker image ls</code></li>
+  <li>Running the container: <code class="highlighter-rouge">docker run myshell</code>
+    <blockquote>
+      <p>Container ID: <code class="highlighter-rouge">docker container ls</code></p>
+    </blockquote>
+  </li>
+</ul>
+
+<h1 id="uploading-an-imagecontainer">Uploading an image/container</h1>
+
+<ul>
+  <li>Create an account at: <a href="https://hub.docker.com/signup">https://hub.docker.com/signup</a></li>
+  <li>Confirm your email</li>
+  <li>Log in: <a href="https://hub.docker.com/login">https://hub.docker.com/login</a></li>
+  <li>At the root URL, create a repository: <a href="https://hub.docker.com/">https://hub.docker.com/</a>
+    <blockquote>
+      <p>[Create Repository +], style to create a repository on GitHub: name, description, public..create</p>
+    </blockquote>
+  </li>
+</ul>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<ul>
+  <li>Logging in via the command line: <code class="highlighter-rouge">docker login</code>, enter your username [ENTER] and then your password [ENTER]</li>
+  <li>Creating an Image Tag: <code class="highlighter-rouge">docker tag myshell terminalroot/myshell:v1</code> or without tag: <code class="highlighter-rouge">docker tag myshell terminalroot/myshell</code></li>
+  <li>Publishing: <code class="highlighter-rouge">docker push terminalroot/myshell: v1</code> or if you did not enter a tag: <code class="highlighter-rouge">docker push terminalroot/myshell</code></li>
+</ul>
+
+<p>If you want to test it, just remove all the images and containers and then pull it out at the beginning and see if it’s really working.</p>
+
+<h1 id="removing-docker">Removing Docker</h1>
+<ul>
+  <li>Stop all processes: <code class="highlighter-rouge">docker stop $(docker ps -a -q)</code></li>
+  <li>Removing processes: <code class="highlighter-rouge">docker rm $(docker ps -a -q)</code></li>
+  <li>List the images: <code class="highlighter-rouge">docker images</code></li>
+  <li>Removing all images: <code class="highlighter-rouge">docker rmi IMAGE_ID [nImage_ID ...]</code></li>
+  <li>See the groups and remove the docker group:</li>
+</ul>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">groups</span> <span class="nv">$USER</span>
+<span class="nb">sudo </span>groupdel docker
+<span class="nb">groups</span> <span class="nv">$USER</span></code></pre></figure>
+
+<p>Listing the snaps and removing the snap:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">snap list
+<span class="nb">sudo </span>snap remove docker<span class="sb">`</span>
+snap list
+<span class="nb">sudo </span>snap refresh</code></pre></figure>
+
+<p>More information: <a href="https://tutorials.ubuntu.com/tutorial/basic-snap-usage">snap</a>.</p>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="bonus-tip">Bonus Tip</h1>
+<p>See all the tips worked in the video below. Remembering that the tutorial is in Portuguese, but you can use the subtitles</p>
+
+<style>
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 2px;
+  text-align:center;
+  margin:auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin:auto;
+}
+
+.column {
+  float: left;
+  width: 20%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+
+<body>
+
+
+<blockquote>
+	<p>The video has English subtitles native to the video itself and with the correct translation. To enable, use the settings in the footer of the video itself, according to the images shown here below.</p>
+	<p>CLICK ON IMAGES TO VIEW INTO LARGER RESOLUTION.</p>
+	<footer>Swap images by clicking &raquo;</footer>
+</blockquote>
+
+<div class="text-center">
+<h2>Tutorial for subtitles in Youtube</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="/assets/img/youtube-legends-tutorial/1.jpg" style="width:70%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" />
+  </div>
+  <div class="column">
+    <img src="/assets/img/youtube-legends-tutorial/2.jpg" style="width:70%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" />
+  </div>
+  <div class="column">
+    <img src="/assets/img/youtube-legends-tutorial/3.jpg" style="width:70%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" />
+  </div>
+  <div class="column">
+    <img src="/assets/img/youtube-legends-tutorial/A.jpg" style="width:70%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" />
+  </div>
+  <div class="column">
+    <img src="/assets/img/youtube-legends-tutorial/B.jpg" style="width:70%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" />
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+      <img src="/assets/img/youtube-legends-tutorial/1.jpg" style="width:100%" />
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+      <img src="/assets/img/youtube-legends-tutorial/2.jpg" style="width:100%" />
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 5</div>
+      <img src="/assets/img/youtube-legends-tutorial/3.jpg" style="width:100%" />
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+      <img src="/assets/img/youtube-legends-tutorial/A.jpg" style="width:100%" />
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="/assets/img/youtube-legends-tutorial/B.jpg" style="width:100%" />
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="/assets/img/youtube-legends-tutorial/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Click in settings" title="Click in settings" />
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/img/youtube-legends-tutorial/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Click in Subtitles" title="Click in Subtitles" />
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/img/youtube-legends-tutorial/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Click in English" title="Click in English" />
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/img/youtube-legends-tutorial/A.jpg" style="width:100%" onclick="currentSlide(4)" alt="Click in Auto-translate" title="Click in Auto-translate" />
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/img/youtube-legends-tutorial/B.jpg" style="width:100%" onclick="currentSlide(5)" alt="Choose your Language" title="Choose your Language" />
+    </div>
+  </div>
+</div>
+</div><!-- text-center -->
+
+<br /><hr />
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+<iframe width="920" height="400" src="https://www.youtube.com/embed/bsGkIKP1OZ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</body>
+:ET

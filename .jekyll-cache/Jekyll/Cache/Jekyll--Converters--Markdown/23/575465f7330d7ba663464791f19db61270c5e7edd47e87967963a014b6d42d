@@ -1,0 +1,346 @@
+I")'<p><img src="/assets/img/wm/linuxmint-polybar-shellscript-1360.jpg" alt="How to Customize Your Linux Mint with i3 + Polybar + Rofi" /></p>
+
+<p>It also works on Ubuntu and Debian.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h3 id="1-installing-the-dependencies">1. Installing the dependencies</h3>
+<p>First you need to install i3, i3-wm and i3status:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt <span class="nb">install </span>i3 i3-wm i3status</code></pre></figure>
+
+<h3 id="2-login-to-i3">2. Login to i3</h3>
+<p>After the installation is complete, log out and log into i3 and press ENTER and then ENTER again to accept the default i3 settings if you wish.</p>
+
+<p>Then open the <strong>Super + ENTER</strong> terminal and run the following commands:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wget terminalroot.com.br/sh/aptporn
+<span class="nb">chmod</span> +x aptporn</code></pre></figure>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h3 id="3-using-the-help">3. Using the help</h3>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">./aptporn
+
+usage: aptporn <span class="o">[</span>flags]
+
+  Options:
+
+    <span class="nt">--install</span>          No update system
+    <span class="nt">--install-all</span>      Update all system
+    <span class="nt">--dep</span>              Only <span class="nb">install </span>dependencies
+    <span class="nt">--version</span>,-v       Show version
+    <span class="nt">--help</span>,-h          Show this is message
+
+<span class="k">*</span> Marcos Oliveira - &lt;terminalroot.com.br&gt; - APTPORN 0.1</code></pre></figure>
+
+<h3 id="4-installation">4. Installation</h3>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">./aptporn <span class="nt">--install</span></code></pre></figure>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h3 id="5-final">5. Final</h3>
+<p>Then enter your sudo password and wait for the script to finish executing that everything will be done automatically!</p>
+
+<p>More screenshot:</p>
+
+<p><img src="/assets/img/wm/ubuntu.jpg" alt="Ubuntu aptporn" /></p>
+
+<p>Any questions left? Then watch the video:</p>
+
+<style>
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 2px;
+  text-align:center;
+  margin:auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin:auto;
+}
+
+.column {
+  float: left;
+  width: 20%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+
+<body>
+
+
+<blockquote>
+	<p>The video has English subtitles native to the video itself and with the correct translation. To enable, use the settings in the footer of the video itself, according to the images shown here below.</p>
+	<p>CLICK ON IMAGES TO VIEW INTO LARGER RESOLUTION.</p>
+	<footer>Swap images by clicking &raquo;</footer>
+</blockquote>
+
+<div class="text-center">
+<h2>Tutorial for subtitles in Youtube</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="/assets/img/youtube-legends-tutorial/1.jpg" style="width:70%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" />
+  </div>
+  <div class="column">
+    <img src="/assets/img/youtube-legends-tutorial/2.jpg" style="width:70%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" />
+  </div>
+  <div class="column">
+    <img src="/assets/img/youtube-legends-tutorial/3.jpg" style="width:70%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" />
+  </div>
+  <div class="column">
+    <img src="/assets/img/youtube-legends-tutorial/A.jpg" style="width:70%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" />
+  </div>
+  <div class="column">
+    <img src="/assets/img/youtube-legends-tutorial/B.jpg" style="width:70%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" />
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+      <img src="/assets/img/youtube-legends-tutorial/1.jpg" style="width:100%" />
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+      <img src="/assets/img/youtube-legends-tutorial/2.jpg" style="width:100%" />
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 5</div>
+      <img src="/assets/img/youtube-legends-tutorial/3.jpg" style="width:100%" />
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+      <img src="/assets/img/youtube-legends-tutorial/A.jpg" style="width:100%" />
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="/assets/img/youtube-legends-tutorial/B.jpg" style="width:100%" />
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="/assets/img/youtube-legends-tutorial/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Click in settings" title="Click in settings" />
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/img/youtube-legends-tutorial/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Click in Subtitles" title="Click in Subtitles" />
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/img/youtube-legends-tutorial/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Click in English" title="Click in English" />
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/img/youtube-legends-tutorial/A.jpg" style="width:100%" onclick="currentSlide(4)" alt="Click in Auto-translate" title="Click in Auto-translate" />
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/img/youtube-legends-tutorial/B.jpg" style="width:100%" onclick="currentSlide(5)" alt="Choose your Language" title="Choose your Language" />
+    </div>
+  </div>
+</div>
+</div><!-- text-center -->
+
+<br /><hr />
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+<iframe width="920" height="400" src="https://www.youtube.com/embed/EBn5coWv1_g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</body>
+:ET

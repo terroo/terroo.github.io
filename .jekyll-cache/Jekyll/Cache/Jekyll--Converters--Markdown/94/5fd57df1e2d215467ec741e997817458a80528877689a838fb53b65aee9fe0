@@ -1,0 +1,164 @@
+I"¥<p><img src="/assets/img/hacker/hackerpro.png" alt="hackerpro: All in One Pentesing tool for Linux and Android" /></p>
+
+<p>Transform your Linux environment into a hacker machine.</p>
+
+<p>There are several tools for Pentesing in one! Are they:</p>
+
+<h2 id="menu">Menu:</h2>
+
+<ul>
+  <li>Information Gathering</li>
+  <li>Password Attacks</li>
+  <li>Wireless Testing</li>
+  <li>Exploitation Tools</li>
+  <li>Sniffing &amp; Spoofing</li>
+  <li>Web Hacking</li>
+  <li>Private Web Hacking</li>
+  <li>Post Exploitation</li>
+  <li>Install The HACKERPRO</li>
+</ul>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h3 id="gathering-information">Gathering information:</h3>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=LFjMu993uAA">Nmap</a></li>
+  <li>Setoolkit</li>
+  <li>Port Scanning</li>
+  <li>Host To IP</li>
+  <li>wordpress user</li>
+  <li>CMS scanner</li>
+  <li>XSStrike</li>
+  <li>Dork - Google Dorks Passive Vulnerability Auditor</li>
+  <li>Scan A serverâ€™s Users</li>
+  <li>Crips</li>
+</ul>
+
+<h3 id="password-attacks">Password attacks:</h3>
+
+<ul>
+  <li>Cupp</li>
+  <li>Ncrack</li>
+</ul>
+
+<h3 id="wireless-tests">Wireless Tests:</h3>
+
+<ul>
+  <li>retrieve</li>
+  <li>pixiewps</li>
+  <li>Fluxion</li>
+</ul>
+
+<h3 id="exploration-tools">Exploration tools:</h3>
+
+<ul>
+  <li>ATSCAN</li>
+  <li>sqlmap</li>
+  <li>Shellnoob</li>
+  <li>commix</li>
+  <li>FTP Auto Bypass</li>
+  <li>jboss-autopwn</li>
+</ul>
+
+<h3 id="sniffing--spoofing">Sniffing &amp; Spoofing:</h3>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<ul>
+  <li>Setoolkit</li>
+  <li>SSLtrip</li>
+  <li>pyPISHER</li>
+  <li>SMTP Mailer</li>
+</ul>
+
+<h3 id="web-hacking">Web Hacking:</h3>
+
+<ul>
+  <li>Drupal Hacking</li>
+  <li>Inurlbr</li>
+  <li>Wordpress &amp; Joomla Scanner</li>
+  <li>Gravity Form Scanner</li>
+  <li>File Upload Checker</li>
+  <li>Wordpress Exploit Scanner</li>
+  <li>Wordpress Plugins Scanner</li>
+  <li>Shell and Directory Finder</li>
+  <li>Joomla! 1.5 - 3.4.5 remote code execution</li>
+  <li>Vbulletin 5.X remote code execution</li>
+  <li>BruteX - Automatically brute force all services running on a target</li>
+  <li>Arachni - Web Application Security Scanner Framework</li>
+</ul>
+
+<h3 id="private-web-hacking">Private Web Hacking:</h3>
+
+<ul>
+  <li>Get all websites</li>
+  <li>Get joomla websites</li>
+  <li>Get wordpress websites</li>
+  <li>Control Panel Finder</li>
+  <li>Zip Files Finder</li>
+  <li>Upload File Finder</li>
+  <li>Get server users</li>
+  <li>SQli Scanner</li>
+  <li>Ports Scan (range of ports)</li>
+  <li>ports Scan (common ports)</li>
+  <li>Get server Info</li>
+  <li>Bypass Cloudflare</li>
+</ul>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h3 id="post-exploitation">Post Exploitation:</h3>
+
+<ul>
+  <li>Shell Checker</li>
+  <li>POET</li>
+  <li>Weeman</li>
+</ul>
+
+<hr />
+
+<h1 id="installation">Installation</h1>
+<h2 id="on-linux">On Linux</h2>
+<p>Open the terminal and type:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/technicaldada/hackerpro.git
+<span class="nb">sudo cd </span>hackerpro <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>python2 hackerpro.py</code></pre></figure>
+
+<h2 id="on-android">On Android</h2>
+<p>You must first have <a href="https://play.google.com/store/apps/details?id=com.termux">Termux</a>. Open the terminal and type:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">apt update <span class="o">&amp;&amp;</span> apt upgrade <span class="o">&amp;&amp;</span> apt <span class="nb">install </span>git <span class="o">&amp;&amp;</span> apt <span class="nb">install </span>python2
+git clone https://github.com/technicaldada/hackerpro.git
+<span class="nb">cd </span>hackerpro <span class="o">&amp;&amp;</span> python2 hackerpro.py</code></pre></figure>
+
+<p>For more information access the <a href="https://terminalroot.com.br/git/">GitHub</a> of the project <a href="https://github.com/technicaldada/hackerpro">here</a></p>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+:ET

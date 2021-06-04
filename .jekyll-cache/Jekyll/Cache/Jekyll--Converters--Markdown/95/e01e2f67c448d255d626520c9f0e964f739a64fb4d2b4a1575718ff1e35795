@@ -1,0 +1,66 @@
+I"�<p><img src="/assets/img/editors/gamma.jpg" alt="Meet the new Gamma text editor" /></p>
+
+<p><a href="https://gitlab.com/hamadmarri/gamma-text-editor">Gamma (Γ)</a> is a lightweight text editor. It is intended to be an alternative to Gedit or Notepad++. Although the current implementation is tested on Linux with a GNOME desktop environment, it can also run on Linux, Windows and Mac if the dependencies are installed (see the Dependencies section below).</p>
+
+<p>Gamma uses GTK3 (cross-platform GUI toolkit) and PyGObject which is a Python package that provides links to GObject-based libraries, such as GTK, GStreamer, WebKitGTK, GLib, GIO and more.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="why-a-new-text-editor">Why a new text editor?</h1>
+
+<ul>
+  <li>Lightweight, no hunger for CPU/RAM</li>
+  <li>No learning curve (easy/familiar shortcuts, easy use of plugins/extensions)</li>
+  <li>Fully customizable from A to Z (even the user interface layout)</li>
+  <li>New UX approach for text editors</li>
+  <li>Easy plugin system</li>
+  <li>Made using Python for python contributors</li>
+</ul>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="dependencies">Dependencies</h1>
+
+<ul>
+  <li>GTK+ 3</li>
+  <li>GtkSourceview 4 (works for 3.0 but currently need to manually change the version in python files)</li>
+  <li>Python 3</li>
+  <li>gobject-introspection</li>
+</ul>
+
+<p>If you are using Linux with a GNOME desktop, you probably already have these dependencies installed. I’m not sure if the libraries are installed for other desktops, like KDE, XFCE or MATE. But if you have libgtk-3-0 and python3 installed, then Gamma will probably work.</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="installation">Installation</h1>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://gitlab.com/hamadmarri/gamma-text-editor
+<span class="nb">cd </span>gamma-text-editor 
+<span class="nb">chmod</span> +x setup.sh
+./setup.sh</code></pre></figure>
+
+<h1 id="use-and-configuration">Use and configuration</h1>
+
+<p>Gamma is a very intuitive text editor, but if you want more information, I suggest you consult the official documentation on their Gitlab at: <a href="https://gitlab.com/hamadmarri/gamma-text-editor">https://gitlab.com/hamadmarri/gamma-text-editor</a></p>
+
+<h1 id="thanks-for-reading">Thanks for reading!</h1>
+
+:ET

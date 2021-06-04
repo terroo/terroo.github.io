@@ -1,0 +1,85 @@
+I"�<p><img src="/assets/img/distros/ubuntusantanic.jpg" alt="Meet the Ubuntu Satanic" /></p>
+
+<p><a href="http://ubuntusatanic.org/">Ubuntu Satanic Edition (SE)</a> is a Linux distribution based on Ubuntu.</p>
+
+<p>The Devil alwas did have the best tunes…</p>
+
+<p>Ubuntu Satanic Edition is a community developed, Linux-based operating system combining the best software and the heaviest music on one CD. Many applications are included, plus thousands more available to download and install at the click of a button. And it’s all completely free.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>The dark theme plunges your desktop into depths of Hell, while the ray-traced screensaver keeps your PC looking evil even when you’re not using it.</p>
+
+<p>The CD also contains a 30 minute EP of the best creative-commons licensed heavy metal music from the likes of StabWounD, Auvernia, Frontside, Skaut, Taste of Hell, Scape.Goat and Holy Pain.</p>
+
+<p>SE can either be run from the CD or installed to your computer using the graphical installer. On a typical computer the installation should take you less than 25 minutes. It is built on top of Ubuntu 8.04, so check out the Ubuntu site for a full list of features.
+Download</p>
+
+<p>Ubuntu Satanic Edition can be downloaded using BitTorrent:</p>
+
+<ul>
+  <li>Ubuntu Satanic Edition 666.4 i386 – 32-bit (works on all PCs)</li>
+  <li>Ubuntu Satanic Edition 666.4 amd64 – 64-bit (better performance on 64-bit machines)</li>
+</ul>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>MD5 sums available here [what’s this?]</p>
+
+<p>If you already have Ubuntu installed, you can simply add the packages by following these instructions.
+Using the Live CD</p>
+
+<p>You can run Ubuntu Satanic Edition straight off the Live CD. Please note that due to the slow speed of CDs it may take a while to boot up. Please be patient, it’s worth it! Once booted, you should have access to a fully functional PC including Firefox 3 for surfing the web. There will be an icon on the desktop entitled “Music for the Damned”. Double clicking on this will display the tracks from the EP. Move the mouse over them or double-click to play.</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="more-metal">More Metal</h1>
+
+<p>The CD contains the Rhythmbox music player and Jamendo plugin. This gives access to thousands of Creative Commons licensed music tracks which can be searched and played as if they were in your own collection. Simply run Applications-&gt;Sound &amp; Video-&gt;Rhythmbox Music Player. Click Jamendo in the Stores section on the left, enter a search term such as “metal” and start rocking! Let us know your favourite tracks and they may get included on the next Live CD.</p>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="installing-from-the-cd">Installing from the CD</h1>
+
+<p>Once the Live CD has booted, there will be an icon on the desktop entitled “Install”. Click this to run the graphical installer. You can either overwrite what is on your disk or install alongside your current operating system.</p>
+
+<p>Some applications have been removed from the standard Ubuntu CD to make space for our theme and music. This includes the OpenOffice productivity suite comprising of a word processor, spreadsheet and presentation software. It also includes the Evolution email client, the F-spot photo management application, the Tomboy desktop note taking the program and some games. You can easily grab this software from the Internet once SE is installed by running the following commands:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>openoffice.org
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>evolution
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>gnome-games
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>f-spot
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>tomboy</code></pre></figure>
+
+<h1 id="installing-within-windows">Installing Within Windows</h1>
+
+<p>As well as installing on its partition, it is possible to install Ubuntu SE into a file within Windows. This allows Windows users to try it with the least impact on their system. Simply insert the CD and click “Install Within Windows” on the CD menu.</p>
+
+<h1 id="download-ubuntu-se"><a href="https://ubuntusatanic.org/">DOWNLOAD UBUNTU SE</a></h1>
+:ET

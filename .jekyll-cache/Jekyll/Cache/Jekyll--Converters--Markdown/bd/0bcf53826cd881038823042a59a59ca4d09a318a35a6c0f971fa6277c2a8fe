@@ -1,0 +1,935 @@
+I"b�<p><img src="/assets/img/python/opencv-python-library.jpg" alt="Top 30 Python Libraries and Packages for Beginners" /></p>
+
+<p>Python libraries and packages are a set of useful modules and functions that minimize the use of code in our daily lives. There are over <strong>137,000 libraries</strong> and <strong>198,826 packages</strong> for Python, ready to make developer programming easier. These libraries and packages are intended for a variety of modern solutions.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h2 id="01-pillow">01. <a href="https://pypi.org/project/Pillow/">Pillow</a></h2>
+
+<p><a href="https://pypi.org/project/Pillow/">Pillow</a>, actually a fork of the PIL - Python Image Library. At first Pillow was based primarily on the PIL code structure. Later, however, it turned into something friendlier and better. Experts say Pillow is actually a modern version of PIL.</p>
+
+<p><img src="/assets/img/python/pillow.jpg" alt="Pillow" /></p>
+
+<h3 id="resources">Resources</h3>
+
+<ul>
+  <li>Using Pillow, you can not only open and save images, but also influence the environment of the images.</li>
+  <li>Pillow supports many file types such as PDF, WebP, PCX, PNG, JPEG, GIF, PSD, WebP, PCX, GIF, IM, EPS, ICO, BMP and many others.</li>
+  <li>With Pillow, you can easily create thumbnails of images. Thumbnails carry most of the valuable aspects of your image.</li>
+  <li>Pillow supports a collection of image filters - FIND_EDGES, DETAIL, FLAT, BLUR, CONTOUR, SHARPEN, SMOOTH_MORE, and more.</li>
+  <li>Pillow offers great community support.</li>
+</ul>
+
+<p><a href="https://pypi.org/project/Pillow/">
+    <button type="button" class="btn btn-primary btn-xs"> Get Pillow </button>
+</a></p>
+
+<hr />
+
+<h2 id="02-matplotlib">02. <a href="https://matplotlib.org/downloads.html">Matplotlib</a></h2>
+
+<p><a href="https://matplotlib.org/downloads.html">Matplotlib</a> is a Python library that uses Python Script to write graphs and two-dimensional plots. Often mathematical or scientific applications require more than single axes in a representation. This library helps us create several at the same time. However, you can use Matplotlib to manipulate different characteristics of images.</p>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p><img src="/assets/img/python/matplotlib.jpg" alt="Matplotlib" /></p>
+
+<h3 id="resources-1">Resources</h3>
+
+<ul>
+  <li><a href="https://matplotlib.org/downloads.html">Matplotlib</a> can create really good quality numbers for publication. Numbers created with Matplotlib are available in print formats on different interactive platforms.</li>
+  <li>You can use MatPlotlib with different toolkits such as Python scripts, IPython Shells, Jupyter Notebook and many other graphical user interfaces.</li>
+  <li>Several third party libraries can be integrated with Matplotlib applications. Like <a href="https://seaborn.github.io/">seaborn</a>, <a href="http://ggplot.yhathq.com/">ggplot</a> and other projection and mapping toolkits such as <a href="http: //matplotlib.org/basemap">basemap</a>.</li>
+  <li>An active developer community is dedicated to helping you with any of your questions with Matplotlib. Your contribution to Matplotlib is highly commendable.</li>
+  <li>The good thing is that you can <a href="https://github.com/matplotlib/matplotlib/issues">track bugs</a>, new patches and feature requests on the Github * issues * tracker page. It is an official page for presenting different Matplotlib related questions.</li>
+</ul>
+
+<p><a href="https://matplotlib.org/downloads.html">
+    <button type="button" class="btn btn-primary btn-xs"> Get MatPlotlib </button>
+</a></p>
+
+<hr />
+
+<h2 id="03-numpy">03. <a href="https://pypi.org/project/numpy/">Numpy</a></h2>
+
+<p><a href="https://pypi.org/project/numpy/">Numpy</a> is a popular Python array processing package. It provides good support for different multidimensional array objects. Numpy is not only limited to providing arrays, but also provides a variety of tools for managing these arrays. It is fast, efficient and very good for managing arrays and arrays.</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p><img src="/assets/img/python/numpy.png" alt="Numpy" /></p>
+
+<h3 id="resources-2">Resources</h3>
+
+<p>Numpy’s arrays offer modern mathematical implementations on large amounts of data. Numpy makes running these projects much easier and hassle free.</p>
+<ul>
+  <li>Numpy provides masked arrays along with general array objects. It also comes with features like logical form manipulation, Fourier formula, general linear algebra and more.</li>
+  <li>As you reshape any * N-dimensional * matrix, Numpy creates new arrays for this and deletes the old ones.</li>
+  <li>This Python package provides useful tools for integration. You can easily integrate Numpy with programming languages ​​like C, C ++ and Fortran.</li>
+  <li>Numpy provides these features comparable to MATLAB. Both allow users to speed up operations.</li>
+</ul>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p><a href="https://pypi.org/project/numpy/">
+    <button type="button" class="btn btn-primary btn-xs"> Get Numpy </button>
+</a></p>
+
+<hr />
+
+<h2 id="04-opencv-python">04. <a href="https://pypi.org/project/opencv-python/">OpenCV Python</a></h2>
+
+<p>OpenCV, also known as ** Open Source Computer Vision **, is a package for image processing. It monitors general functions focused on the instant view of the computer. Although OpenCV does not have adequate documentation, according to many developers, it is one of the hardest libraries to learn. However, it provides many built-in functions through which you learn computer vision easily.</p>
+
+<p><img src="/assets/img/python/opencv-python-library.jpg" alt="OpenCV" /></p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h3 id="resources-3">Resources</h3>
+
+<ul>
+  <li>OpenCV is an ideal image processing package that lets you read and write images at the same time.</li>
+  <li>Computer Vision allows you to reconstruct, stop, and understand a 3D environment from its 2D environment.</li>
+  <li>This package allows you to diagnose special objects in any video or image. Objects such as faces, eyes, trees, etc.</li>
+  <li>You can also save and capture any moment of a video and also analyze its different properties like motion, background etc.</li>
+  <li>OpenCV is compatible with many operating systems such as Windows, macOS, <a href="https://www.youtube.com/watch?v=NhoErMsS_Hc">OpenBSD</a> and many others.</li>
+</ul>
+
+<p><a href="https://pypi.org/project/opencv-python/">
+    <button type="button" class="btn btn-primary btn-xs"> Get OpenCV </button>
+</a></p>
+
+<hr />
+
+<h2 id="05-requests">05. <a href="https://pypi.org/project/requests/">Requests</a></h2>
+
+<p>Requests is a rich HTTP library under the Apache 2.0 license, Requests is focused on making HTTP requests more responsive and easy to use. This Python library is a real boon for beginners as it allows the use of the most common HTTP methods. You can easily customize, inspect, authorize, and configure HTTP requests using this library.</p>
+
+<p><img src="/assets/img/python/requests.jpg" alt="Requests" /></p>
+
+<h3 id="resources-4">Resources</h3>
+
+<ul>
+  <li>Uses basic Python dictionaries in requests, you can add parameters, headers, multipart files as well as form data.</li>
+  <li>It’s an easy-to-use library with many features that allow you to address custom headers, SSL certificate checks, and scan parameters for URLs.</li>
+</ul>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<ul>
+  <li>With requests, you can easily upload multiple files at a time. It allows you to work in a faster and more efficient environment.</li>
+  <li>Requests feature automatic unzipping that enables you to quickly restore and recover compressed data in its authentic form.</li>
+  <li>Enjoy the benefits of HTTP proxy support with Requests. It allows users a faster and simpler route to their files and pages.</li>
+  <li>Requests also feature cookies, Unicode response, Basic/Digest authentication, thread security, connection pooling, and more.</li>
+</ul>
+
+<p><a href="https://pypi.org/project/requests/">
+    <button type="button" class="btn btn-primary btn-xs"> Get Requests </button>
+</a></p>
+
+<hr />
+
+<h2 id="06-keras">06. <a href="https://pypi.org/project/Keras/">Keras</a></h2>
+
+<p>People who want to learn deep neural networks, Keras may be a good choice for them. Keras is a deep open source neural network library. It is written in Python. Keras provides an effective inspection policy on detailed networks. Developers working with Keras are impressed by its modular and easy-to-use structure.</p>
+
+<p><img src="/assets/img/python/keras.jpg" alt="Keras" /></p>
+
+<h3 id="resources-5">Resources</h3>
+
+<ul>
+  <li>Keras is a powerful Python library. It can also run on Microsoft Cognitive Toolkit, PaidML, TensorFlow and other platforms.</li>
+  <li>This Python library features a variety of implementations of neural network building blocks - functions, layers, optimizers, objectives, and more.</li>
+</ul>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<ul>
+  <li>Keras also has many useful tools that allow you to work with different images and texts with ease.</li>
+  <li>It not only supports neural networks, but also provides a totally supportive environment for convolutional and re-current neural networks.</li>
+  <li>Using Keras, you can create deep models for smartphones - Android and iOS or also for <a href="https://en.wikipedia.org/wiki/Java_Virtual_Machine">Java Virtual Machine</a>.</li>
+</ul>
+
+<p><a href="https://pypi.org/project/Keras/">
+    <button type="button" class="btn btn-primary btn-xs"> Get Keras </button>
+</a></p>
+
+<hr />
+
+<h2 id="07-tensorflow">07. <a href="https://github.com/tensorflow/tensorflow">TensorFlow</a></h2>
+
+<p>TensorFlow is a free open source Machine Learning library. It is very easy to learn and has a collection of useful tools. However, it is not limited to machine learning alone; You can also use it for data flow and differentiable programs. You can easily work with TensorFlow by installing Colab Notebooks in any browser.</p>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p><img src="/assets/img/python/tensorflow.jpg" alt="TensorFlow" /></p>
+
+<h2 id="resources-6">Resources</h2>
+
+<ul>
+  <li>TensorFlow uses high performance automatic APIs like Keras. It offers an immediate iteration of machine learning models.</li>
+  <li>This library has agile execution, allowing you to create, manipulate Machine Learning models and make debugging easier.</li>
+  <li>With TensorFlow, you can easily move your ML models in the clouds on any device and location in any browser.</li>
+  <li>TensorFlow comes with an easy to learn architecture. You can easily develop your concept in code and make your publications even easier.</li>
+  <li>It has a solution for all your common Machine Learning problems. You can easily implement it and do your best.</li>
+</ul>
+
+<p><a href="https://github.com/tensorflow/tensorflow">
+    <button type="button" class="btn btn-primary btn-xs"> Get TensorFlow </button>
+</a></p>
+
+<hr />
+
+<h2 id="08-theano">08. <a href="https://github.com/Theano/Theano">Theano</a></h2>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Theano is a Python library and compiler for viable computer programs - also known as an optimization compiler. It can analyze, describe, optimize and influence different mathematical statements at the same time. Because Theano makes the best use of multidimensional arrays, you hardly have to worry about the perfection of your projects.</p>
+
+<p><img src="/assets/img/python/theano.jpg" alt="Theano" /></p>
+
+<h3 id="resources-7">Resources</h3>
+
+<ul>
+  <li>Theano can work very well with GPUs. You can also perform symbolic differentiation other than one/many entries.</li>
+  <li>It has an interface very similar to Numpy’s. This is why numpy.ndarrays is also available internally in Theano.</li>
+  <li>Theano lets you avoid dirty errors when working with expressions. You can work perfectly on expressions without wasting time.</li>
+  <li>This library makes 140x computing faster. Computing data-intensive applications is easier with Theano.</li>
+  <li>It also offers many useful tools that can detect and analyze bugs and serious problems.</li>
+</ul>
+
+<p><a href="https://github.com/Theano/Theano">
+    <button type="button" class="btn btn-primary btn-xs"> Get Theano </button>
+</a></p>
+
+<hr />
+
+<h2 id="09-natural-language-toolkit-nltk">09. <a href="https://pypi.org/project/nltk/">Natural Language Toolkit (NLTK)</a></h2>
+
+<p>The NLTK a.k.a Natural Language Toolkit is one of the most popular NLP Python libraries. It is a set of language processing libraries and other programs that cumulatively provide a numeric and symbolic English-only language processing solution. It is written in Python. With NLTK, natural language processing with Python has become more standard and ideal.</p>
+
+<p><img src="/assets/img/python/NLTK.jpg" alt="NLTK" /></p>
+
+<h2 id="resources-8">Resources</h2>
+
+<ul>
+  <li>NLTK word processing libraries allow classification, marking, tokenization, stemming, analysis and semantic reasoning.</li>
+  <li>The NLTK contains a graphic illustration of data science. It also comes with a manual to guide the principles of NLTK language processing.</li>
+  <li>It is open source and contains over fifty <a href="https://www.nltk.org/book/ch02.html">corpora and lexical resources</a> such as Open Multilingual Wordnet, Question Sorting, SentiWordNet, SEMCOR, Stopwords Corpus and a lot more.</li>
+</ul>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<ul>
+  <li>NLTK also introduces frame types, frame chain analysis, presents different paths, and also enters again.</li>
+  <li>This toolkit comes with a dynamic discussion forum where you can discuss and address issues related to the NLTK language.</li>
+</ul>
+
+<p><a href="https://pypi.org/project/nltk/">
+    <button type="button" class="btn btn-primary btn-xs"> Get NLTK </button>
+</a></p>
+
+<hr />
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="10-fire">10. <a href="https://github.com/google/python-fire">Fire</a></h2>
+
+<p>Fire is an open source Python library. It can automatically generate command line interfaces (CLIs). Even to do that, you only need a few lines of code. Fire is a powerful library that can derive CLIs from literally any python object. It is also used by Google to create a command line and different experiment management tools.</p>
+
+<p><img src="/assets/img/python/fire.jpg" alt="Fire" /></p>
+
+<h3 id="resources-9">Resources</h3>
+
+<ul>
+  <li>The Python objects that Fire can work with are - modules, objects, classes, lists, dictos, etc.</li>
+  <li>Fire-generated CLIs are adaptable to any changes you make to your code. They will be updated automatically as soon as you change the code.</li>
+  <li>CLIs come in full format with automated help pages, tab completion and within a very interactive system.</li>
+  <li>It is a very simple library. It can write and send commands to an instance when someone calls Fire ().</li>
+  <li>The fire comes with a linear output. After using fire, you will not need any documents either.</li>
+</ul>
+
+<p><a href="https://github.com/google/python-fire">
+    <button type="button" class="btn btn-primary btn-xs"> Get Fire </button>
+</a></p>
+
+<hr />
+
+<h2 id="11-arrow">11. <a href="https://pypi.org/project/arrow/">Arrow</a></h2>
+
+<p>Arrow is a practical python library. It is a friendly library that basically works with dates and times. Arrow comes with a smart API. This API supports many general schemes. It is an interesting library. Beginners with basic coding skills may be fine with Arrow.</p>
+
+<p><img src="/assets/img/python/Arrow-Python-Libraries.jpg" alt="Arrow" /></p>
+
+<h3 id="resources-10">Resources</h3>
+
+<ul>
+  <li>Arrow can generate, influence, remove and convert dates and times. It performs quick date and time updates, filling in gaps and many other things.</li>
+  <li>It supports different versions of python. Versions include Python 2.7, 3.5, 3.6, 3.7 and 3.8.</li>
+  <li>You can easily create a variety of general input scenarios with Arrow. The arrow provides the simplest creation method.</li>
+  <li>Arrow can eliminate and resolve strings within a natural process. It is a time-sensitive library and set to UTC by default.</li>
+  <li>You can easily convert the time zone. Offers <a href="https://www.unixtimestamp.com/">timestamp</a> as a general property. You can also extend this library to your own arrow derived types.</li>
+  <li>The arrow can create time intervals, ceiling, range and floor for deadlines. These timeframes can vary from microseconds to years.</li>
+</ul>
+
+<p><a href="https://pypi.org/project/arrow/">
+    <button type="button" class="btn btn-primary btn-xs"> Get Arrow </button>
+</a></p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h2 id="12-flashtext">12. <a href="https://pypi.org/project/flashtext/">FlashText</a></h2>
+
+<p>FlashText is another Python library that offers easy word search and replacement for documents. All FlashText needs are a set of words and sequences. It then identifies some words as keywords and replaces them from Text Data. It is a very effective library. People who are struggling with word substitution can choose with confidence.</p>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p><img src="/assets/img/python/flashtext.png" alt="FlashText" /></p>
+
+<h3 id="resources-11">Resources</h3>
+
+<ul>
+  <li>FlashText reserves keywords such as <a href="https://en.wikipedia.org/wiki/Trie">Trie Data Structure</a>. It is a very efficient and dynamic form of data structure.</li>
+  <li>FlashText is a quick library. In addition to speed, it also provides a variety of rope handling.</li>
+  <li>For keyword substitution, creates an updated string. And when performing a search, it will return the keyword list for the string.</li>
+  <li>FlashText is ideal for large requests. When the number of keywords exceeds 500, try giving it a try.</li>
+  <li>However, FlashText does not support searching for part of words or special characters like <code class="highlighter-rouge">*,), -, #</code> and others.</li>
+</ul>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p><a href="https://pypi.org/project/flashtext/">
+    <button type="button" class="btn btn-primary btn-xs"> Get FlashText </button>
+</a></p>
+
+<hr />
+
+<h2 id="13-scipy">13. <a href="https://pypi.org/project/scipy/">Scipy</a></h2>
+
+<p>Scipy is an open source Python library used for scientific and technical computing. It is a free Python library. And very suitable for machine learning. However, calculus is not the only task that makes scipy special. It is also very popular for image manipulation.</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p><img src="/assets/img/python/NumPyOptimizationSmall.png" alt="Scipy" /></p>
+
+<h3 id="resources-12">Resources</h3>
+
+<ul>
+  <li>Scipy contains different modules. These modules are also suitable for optimization, integration, linear algebra and statistics.</li>
+  <li>Makes the best use of Numpy arrays for general data structures. In fact, Numpy is an integrated part of Scipy.</li>
+  <li>Scipy can manipulate 1-d polynomials in two ways. If you can use numpy’s poly1d class or you can use coefficient arrays to do the job.</li>
+  <li>High-level scipy contains not only numpy but also <a href="https://docs.scipy.org/doc/numpy/reference/routines.emath.html#module-numpy.lib .scimath">numpy.lib.scimath</a>. But it is better to use them from your direct source.</li>
+  <li>A Scipy support community is always there to answer your regular questions and resolve any issues if awakened.</li>
+</ul>
+
+<p><a href="https://pypi.org/project/scipy/">
+    <button type="button" class="btn btn-primary btn-xs"> Get Scipy </button>
+</a></p>
+
+<hr />
+
+<h2 id="14-sqlalchemy">14. <a href="https://pypi.org/project/SQLAlchemy/">SQLAlchemy</a></h2>
+
+<p>Next in the list is a Python Database Abstraction Library. SQLAlchemy comes with impressive support for a wide range of databases and possible layouts.</p>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>It provides a professional level of consistent standards designed for efficiency. It is easy to understand; for beginners too. And featured with a really adjustable system.</p>
+
+<p><img src="/assets/img/python/SQLAlchemy-1920x1282.jpg" alt="SQLAlchemy" /></p>
+
+<h3 id="resources-13">Resources</h3>
+
+<ul>
+  <li>SQLAlchemy is presented with a complete core. It comes with SQL-based abstraction toolkits.</li>
+  <li>Another component of SQLAlchemy - ORM manages insert/update/delete functionality in a row to deliver it in a batch.</li>
+  <li>SQLAlchemy facilitates communication between the Python language and databases. It also speeds communication.</li>
+  <li>It supports almost all modern platforms including - Python 2.5 and higher, Jython and Pypy as well.</li>
+  <li>With SQLAlchemy, you can map classes in different ways. You can also develop database schemas and object models from scratch.</li>
+</ul>
+
+<p><a href="https://pypi.org/project/SQLAlchemy/">
+    <button type="button" class="btn btn-primary btn-xs"> Get SQLAlchemy </button>
+</a></p>
+
+<hr />
+
+<h2 id="15-wxpython">15. <a href="https://pypi.org/project/wxPython/">wxPython</a></h2>
+
+<p>WxPython is a python GUI toolkit. It is a powerful enclosure for many computer software that can be deployed on a variety of digital platforms. Many professionals have found wxPython very effective as an alternative to <a href="https://wiki.python.org/moin/TkInter">Tkinter</a>. It is applied as a Python extension module.</p>
+
+<p><img src="/assets/img/python/wxpython.png" alt="wxPython" /></p>
+
+<h3 id="resources-14">Resources</h3>
+
+<ul>
+  <li>Manage and customize your layouts easily with wxPython. It uses nested HBOX and VBOX, which are really easy to implement.</li>
+  <li>It supports all popular operating systems such as Windows, Mac and Linux, as well. It is a good choice for multiplatform Python.</li>
+  <li>However, in wxPython, you may need to make some changes to the GUI code. Changes are based on the platform you are using.
+Unlike other Python wrappers, wxPython comes with a simple installation process. It is very easy to install on Windows and Linux.</li>
+  <li>WxPython comes with many features. It is a front end library for wxWidgets that offers a sophisticated design layout for developers.</li>
+</ul>
+
+<p><a href="https://pypi.org/project/wxPython/">
+    <button type="button" class="btn btn-primary btn-xs"> Get wxPython </button>
+</a></p>
+
+<hr />
+
+<h2 id="16-cirq">16. <a href="https://github.com/quantumlib/Cirq">Cirq</a></h2>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Cirq is a Python library usually for noisy mid-range quantum circuits (NISQ). Cirq works hard and focuses on revealing detailed hardware components. However, it is currently in the alpha stage. Developers are working on the latest changes. Once the new version is released, they will break your code.</p>
+
+<p><img src="/assets/img/python/cirq.jpg" alt="Cirq" /></p>
+
+<h3 id="resources-15">Resources</h3>
+
+<ul>
+  <li>Cirq allows you to write, modify and manipulate quantum circuits. It then runs them on different computers and simulators that can perform quantum computing.</li>
+  <li>The details exposed by Cirq are essential to determine the possibility of running a circuit.</li>
+  <li>Cirq is designed to support many quantum-based cloud and hardware processors.</li>
+  <li>With this library you will have a clean and tidy control of quantum circuits. You can also use native ports to analyze gate behavior and more.</li>
+  <li>The library optimizes data structures for writing and assembling quantum circuits. That way you can use most NISQ circuits.</li>
+</ul>
+
+<p><a href="https://github.com/quantumlib/Cirq">
+    <button type="button" class="btn btn-primary btn-xs"> Get Cirq </button>
+</a></p>
+
+<hr />
+
+<h2 id="17-pytorch">17. <a href="https://github.com/pytorch/pytorch">PyTorch</a></h2>
+
+<p>PyTorch is an open source Python machine learning library. It is based on the Torch library and was initially developed by A.I’s facebook research group. The great thing about PyTorch is that it can be used for multivariate applications such as computer vision and natural language processing (PNL).</p>
+
+<p><img src="/assets/img/python/pytorch.jpg" alt="PyTorch" /></p>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h3 id="resources-16">Resources</h3>
+
+<p>PyTorch uses TorchScript, which offers a fast and flexible mode. You can evaluate different functions and operations instantly.
+While in graphical mode, PyTorch provides absolute transition, fast optimizations, and offers a C ++ runtime environment.</p>
+<ul>
+  <li>PyTorch has good asynchronous support. execution for cumulative operations. This way you can increase the performance of your project.</li>
+  <li>This library also allows P2P (peer-to-peer) communication, which can be achieved by Python and C ++.</li>
+  <li>PyTorch can also be used with other popular libraries. You can easily integrate it with libraries/packages like Cython and Numba.</li>
+  <li>With PyTorch, you can get direct access to [ONNX] compatible platforms, viewers and runtimes (https://onnx.ai/).</li>
+</ul>
+
+<p><a href="https://github.com/pytorch/pytorch">
+    <button type="button" class="btn btn-primary btn-xs"> Get PyTorch </button>
+</a></p>
+
+<hr />
+
+<h2 id="18-luminoth">18. <a href="https://pypi.org/project/luminoth/">Luminoth</a></h2>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Luminoth is a toolkit built in Python - dedicated to computer vision. It is an alpha quality release and the latest version was released in November 2018. It currently supports continuous detection of an object, but in the near future, it can do more. To use Luminoth, you need to install TensorFlow in advance.</p>
+
+<p><img src="/assets/img/python/luminoth.jpg" alt="Luminoth" /></p>
+
+<h3 id="resources-17">Resources</h3>
+
+<ul>
+  <li>Luminoth is very easy to use. Once you install it, you can install it on the server you own and combine it with any of your products.</li>
+  <li>You can customize it by following your requirements to not only detect objects, but also to classify models.</li>
+  <li>It is built with <a href="https://www.tensorflow.org/">TensorFlow</a> and <a href="https://pypi.org/project/dm-sonnet/">Sonnet</a>. It also offers a built-in <a href="https://en.wikipedia.org/wiki/Google_Cloud_Platform">Google Cloud Platform</a> where you can easily train your models.</li>
+  <li>Luminoth gives you an easy understanding of your summary. The image preview is also a cup of tea with the internal user interface or using a CLI.</li>
+  <li>With Luminoth, you can use tensorboard integration and track your regular progress. You can also evaluate results with a variety of data splits.</li>
+</ul>
+
+<p><a href="https://pypi.org/project/luminoth/">
+    <button type="button" class="btn btn-primary btn-xs"> Get Luminoth </button>
+</a></p>
+
+<hr />
+
+<h2 id="19-delorean">19. <a href="https://pypi.org/project/Delorean/">Delorean</a></h2>
+
+<p>Delorean is a Python library for enhancing DateTime. With Delorean, as the name suggests, you can easily organize time for your python projects. All you need is an authentic DateTime object (which must be Python based) to work. Also, it can work very well with other Python DateTime libraries as well.</p>
+
+<p><img src="/assets/img/python/Delorean.png" alt="Delorean" /></p>
+
+<h3 id="resources-18">Resources</h3>
+
+<ul>
+  <li>Delorean allows you to change DateTime from one zone to another. You can also generate and manipulate your own DateTime with Delorean.</li>
+  <li>With Delorean, you can also use NL (Natural Language) progress to manipulate your DateTime and time as well.</li>
+  <li>The installation process is quite easy. All you need is a pip. However, it relies heavily on <a href="http://pytz.sourceforge.net/">pytz</a> and <a href="https://pypi.org/project/python-dateutil/1.4/">python-dateutil</a>, which pip will serve you.</li>
+  <li>This library can use strings to correct a time zone. Using strings makes it even easier to use.</li>
+  <li>Delorean makes it easy to go back and forth. The next_day () method makes the process quite comfortable for you.</li>
+</ul>
+
+<p><a href="https://pypi.org/project/Delorean/">
+    <button type="button" class="btn btn-primary btn-xs">Get Delorean</button>
+</a></p>
+
+<hr />
+
+<h2 id="20-beautifulsoup">20. <a href="https://pypi.org/project/beautifulsoup4/">BeautifulSoup</a></h2>
+
+<p>BeautifulSoup is a great python library. It is used for analysis. It can also parse different broken HTML and XML documents. It offers an easy way to scrape the web by extracting direct data from HTML. Many professionals are really happy with their amazing performance. It can save a lot of time in your day.</p>
+
+<p><img src="/assets/img/python/beauitfulsoup-python-libraries.jpg" alt="BeautifulSoup" /></p>
+
+<h3 id="resources-19">Resources</h3>
+
+<ul>
+  <li>BeautifulSoup can easily parse HTML and XML data. However, to do this, it needs a package and an external parser.</li>
+  <li>It can be easily taught and learned. The analysis can be done well with the simple html.parser command.</li>
+  <li>BeautifulSoup4 comes with good support for Python 2 and 3. However, BeautiSoup3 only works with Python 2.</li>
+  <li>In addition, it provides users with proper package documentation, which helps us learn things quickly.</li>
+  <li>When working with BeautifulSoup, if you need support, there is a large community to help you in one instance.</li>
+</ul>
+
+<p><a href="https://pypi.org/project/beautifulsoup4/">
+    <button type="button" class="btn btn-primary btn-xs"> Get BeautifulSoup </button>
+</a></p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h2 id="21-bokeh">21. <a href="https://pypi.org/project/bokeh/">Bokeh</a></h2>
+
+<p>Bokeh is a data visualization library for python. Allows interactive viewing of data. It is a special package and works quite differently from other data visualization libraries. This is because Bokeh uses HTML and JavaScript to deliver its graphics, making it a reliable platform for contributing to web-based dashboards and applications.</p>
+
+<p><img src="/assets/img/python/Bokeh-Python-Libraries.jpg" alt="Bokeh" /></p>
+
+<h3 id="resources-20">Resources</h3>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<ul>
+  <li>With Bokeh, you can easily create composite statistical scenarios using direct commands.</li>
+  <li>You can easily render your project output on different media such as html, server and notebook.</li>
+  <li>Bokeh is a very compatible library that can easily work with different visualization and Django applications.</li>
+  <li>You can have custom visualizations using Bokeh. It allows you to implement interactive layouts and other styling features for data visualization.</li>
+  <li>Bokeh is highly flexible and can convert your written view to other libraries such as matplotlib, ggplot and others.</li>
+</ul>
+
+<p><a href="https://pypi.org/project/bokeh/">
+    <button type="button" class="btn btn-primary btn-xs"> Get the Bokeh </button>
+</a></p>
+
+<hr />
+
+<h2 id="22-poetry">22. <a href="https://poetry.eustace.io/">Poetry</a></h2>
+
+<p>Poetry is an easy tool for Python. It allows you to manage python packages and dependencies. While your project relies on multiple libraries, Poetry lets you easily handle them.</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>It is compatible with different versions of Python. And the developers are focused on making it work equally on Windows, OsX and Linux as well.</p>
+
+<p><img src="/assets/img/python/Poetry-Python-Tool.jpg" alt="Poetry" /></p>
+
+<h3 id="resources-21">Resources</h3>
+
+<ul>
+  <li>Poetry offers you to handle your projects systematically. It comes with all the necessary tools your projects might need.</li>
+  <li>It is a simple tool. With Poetry, you can package and develop your projects with just a single line command.</li>
+  <li>Projects you create with Poetry can be easily published to PyPi. In addition, your projects may also be published in personal repositories.</li>
+  <li>If there are comprehensive dependencies in your projects, Poetry can easily resolve them with the exhaustive dependency resolver.</li>
+  <li>Poetry always remains isolated from the user’s system. To do this, whether it uses <code class="highlighter-rouge">virtualenv</code> or creates an individual configuration.</li>
+  <li>You can easily track your projects with Poetry. It allows you to have a deep view of your project dependencies.</li>
+</ul>
+
+<p><a href="https://poetry.eustace.io/">
+    <button type="button" class="btn btn-primary btn-xs"> Get Poetry </button>
+</a></p>
+
+<hr />
+
+<h2 id="23-gensim">23. <a href="https://pypi.org/project/gensim/">Gensim</a></h2>
+
+<p>Gensim is another Python natural library processing library. This library, however, has a moderate level of functionality. But whatever you do, you do good. It is an intelligent library for unorganized topic modeling and document similarity analysis. It uses advanced statistical ML to solve any problem. To perform some NLP tasks, try Gensim.</p>
+
+<p><img src="/assets/img/python/gensim-python-libraries-1.jpg" alt="Gensim" /></p>
+
+<h3 id="resources-22">Resources</h3>
+
+<ul>
+  <li>Gensim comes with a simple interface. It is very easy even for beginners to connect Gensim to their own data stream.</li>
+  <li>This library is highly extensible. You can easily expand Gensim with any other <a href="https://en.wikipedia.org/wiki/Vector_space_model">vector space algorithm</a>.</li>
+  <li>This NLP library can perform <a href="https://en.wikipedia.org/wiki/Latent_semantic_analysis">Latent Semantic Analysis (LSA)</a> and <a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">Latent Dirichlet Allocation (LDA)</a> across multiple devices.</li>
+  <li>It is a powerful, effective and highly scalable library. In addition, some of the features, such as Gensim’s -LDA implementation, are unique.</li>
+  <li>Gensim comes with exclusive documentation and various Jupyter Notebook tutorials. You can find them <a href="https://github.com/RaRe-Technologies/gensim/#documentation">here</a>.</li>
+</ul>
+
+<p><a href="https://pypi.org/project/gensim/">
+    <button type="button" class="btn btn-primary btn-xs"> Get Gensim </button>
+</a></p>
+
+<hr />
+
+<h2 id="24-pandas">24. <a href="https://pypi.org/project/pandas/">Pandas</a></h2>
+
+<p>Pandas is a Python software package. You must learn data science and write exclusively for the Python language. It is a fast, demonstrative and adjustable platform that offers intuitive data structures. You can easily manipulate any kind of data, such as structured or time series data with this amazing package.</p>
+
+<p><img src="/assets/img/python/Pandas-Python-Packages.jpg" alt="Pandas" /></p>
+
+<h3 id="resources-23">Resources</h3>
+
+<ul>
+  <li>Pandas provides us with many series and data frames. It allows you to easily organize, explore, represent and manipulate data.</li>
+  <li>The smart alignment and indexing featured in Pandas offers perfect data organization and labeling.</li>
+  <li>Pandas has some special features that allow you to handle missing data or values ​​to an appropriate extent.</li>
+  <li>This package offers code so clean that even people with no or no basic programming knowledge can easily work with it.</li>
+  <li>It provides a collection of built-in tools that allow you to read and write data across different web services, data structures, and databases.</li>
+  <li>Pandas can support JSON, Excel, CSV, HDF5 and many other formats. In fact, you can merge different databases at the same time with Pandas.</li>
+</ul>
+
+<p><a href="https://pypi.org/project/pandas/">
+    <button type="button" class="btn btn-primary btn-xs"> Get Pandas </button>
+</a></p>
+
+<hr />
+
+<h2 id="25-pytil">25. <a href="https://pypi.org/project/pytil/">Pytil</a></h2>
+
+<p>Pytil, formerly known - Chicken Turtle Util is a utility library for Python. It is a useful Python package that comes with a wide range of scope for development. Pytil is always customer focused and provides great customer support. The Pytil community is goal-oriented and always focuses on contributing to society with Python innovations.</p>
+
+<p><img src="/assets/img/python/pytil.png" alt="Pytil" /></p>
+
+<h3 id="resources-24">Resources</h3>
+
+<ul>
+  <li>Pytil also provides an easy solution for data mining or KDD (Knowledge Discovery In Data) simulation and modeling.</li>
+  <li>This utility library comes with an easy automation solution for your business organizations. Boost your work performance with Pytil.</li>
+  <li>Pytil offers professional guidance for quality image and video processing. Contours, face detection, filter are all available here.</li>
+  <li>In Pytil, you get reliable support from the tool itself. This is because - all features of this tool are well tested and documented.</li>
+  <li>Pytil also plays the role of an educational platform as well. It not only provides variables and other functionality. But also inspire society to use them.</li>
+</ul>
+
+<p><a href="https://pypi.org/project/pytil/">
+    <button type="button" class="btn btn-primary btn-xs"> Get Pytil </button>
+</a></p>
+
+<hr />
+
+<h2 id="26-scikit-learn">26. Scikit Learn</h2>
+
+<p>Scikit learn is a simple and useful Python machine learning library. It is written in Python, Cython, C and C ++. However, most of it is written in the Python programming language. It is a free machine learning library. It is a flexible Python package that can work in complete harmony with other python libraries and packages, such as Numpy and Scipy.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h3 id="resources-25">Resources</h3>
+
+<ul>
+  <li>Scikit Learn comes with a clean and tidy API. It also provides very useful documentation for beginners.</li>
+  <li>It comes with different algorithms - sorting, grouping and regression. It also supports random forests, medium averages, gradient increase, DBSCAN and others.</li>
+  <li>This package offers easy adaptability. Once you become familiar with the general functionality of Scikit Learn, switching to other platforms will be no problem.</li>
+  <li>Scikit Learn offers easy methods for data representation. If you want to present data as a table or matrix, this is all possible with Scikit Learn.</li>
+  <li>Allows you to explore through handwritten digits. You can not only load but also view digit data.</li>
+</ul>
+
+<p><img src="/assets/img/python/scikit_learn.jpg" alt="Scikit Learn" /></p>
+
+<p><a href="https://github.com/scikit-learn/scikit-learn">
+    <button type="button" class="btn btn-primary btn-xs"> Get Scikit Learn </button>
+</a></p>
+
+<hr />
+
+<h2 id="27-networkx">27. <a href="https://pypi.org/project/networkx/">NetworkX</a></h2>
+
+<p>NetworkX is another python package. It offers many solutions for studying and diagnosing graphs of all levels. It also helps develop and influence the architecture, movement and functionality of high quality networks. It is a free Python package released under the new BSD license.</p>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p><img src="/assets/img/python/python_networkx.jpg" alt="NetworkX" /></p>
+
+<h3 id="resources-26">Resources</h3>
+
+<ul>
+  <li>NetworkX offers powerful data structures for single graphics, digits, multi-graphics and various ideal graphic patterns.</li>
+  <li>You can easily create perfect graphics and simulated networks with NetworkX using the generators included in the NetworkX package.</li>
+  <li>With NetworkX, your network and graphics nodes can be totally anything. For example, your nodes may be XML data, text, and many other things.</li>
+  <li>In NetworkX, you can also enjoy the benefits of arbitrary data, such as a timestamp. Because here, the edges keep this data arbitrary.</li>
+  <li>Developers are aware of performance and coverage. NetworkX is well tested with 90% code coverage.</li>
+</ul>
+
+<p><a href="https://pypi.org/project/networkx/">
+    <button type="button" class="btn btn-primary btn-xs"> Get NetworkX </button>
+</a></p>
+
+<hr />
+
+<h2 id="28-pygame">28. <a href="https://www.pygame.org/download.shtml">PyGame</a></h2>
+
+<p>PyGame is a wrapper module for Python. It is a set of functions and Python classes dedicated to the creation of video games, mainly. However, you can also write other multimedia applications with PyGame. These apps and games are highly consistent. PyGame has been a community-driven project since 2000 and for beginners it’s really easy to learn.</p>
+
+<p><img src="/assets/img/python/Pygame-Python-Packages.jpg" alt="PyGame" /></p>
+
+<h3 id="resources-27">Resources</h3>
+
+<ul>
+  <li>PyGame consists of computer graphics and sound libraries. These elements are designed to work in conjunction with the Python language.</li>
+  <li>It is characterized by <a href="https://en.wikipedia.org/wiki/Simple_DirectMedia_Layer">SDL (Simple DirectMedia Layer)</a>, which allows you to create real-time graphics games while avoiding bad engines.</li>
+  <li>Games and applications built on PyGame are compatible with all SDL supported operating systems. They can also run on androids and tablets as well.
+PyGame also supports pixel camera manipulation, <a href="https://en.wikipedia.org/wiki/MIDI">MIDI</a>, collision detection, modern FreeType font, camera, drawing, etc.</li>
+  <li>There is an entire community called <a href="https://pyweek.org/">PyWeek</a>, where you can find several PyGame tutorials.</li>
+</ul>
+
+<p><a href="https://www.pygame.org/download.shtml">
+    <button type="button" class="btn btn-primary btn-xs"> Get PyGame </button>
+</a></p>
+
+<hr />
+
+<h2 id="29-textblob">29. <a href="https://pypi.org/project/textblob/">TextBlob</a></h2>
+
+<p>TextBlob is one of the most simplified Python NLP libraries - for processing textual data. It is available in Python 2.0 and Python 3.0. We mention the word “simplified” because this natural language processing Python library comes with a very simple API, which performs tasks of different NLP-related tasks with complete efficiency. Beginners will enjoy this simple API for the first time, just like the pros.</p>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p><img src="/assets/img/python/TextBlob.jpg" alt="TextBlob" /></p>
+
+<h3 id="resources-28">Resources</h3>
+
+<ul>
+  <li>TextBlob offers very direct tokenization. Tokenization is the process of dividing a large paragraph into many words or phrases.</li>
+  <li>With TextBlob, it is easier than ever to convert words to their original form as they were in the dictionary. The process is called lemmatization.</li>
+  <li>This library easily offers speech part marking (PoS). However, this feature is also noticeable in other NLP libraries.</li>
+  <li>With TextBlob, using simple pluralize or singularize procedures, you can make your text simple or plural.</li>
+  <li>In addition, you can easily extract different noun phrases into TextBlob using a simple <code class="highlighter-rouge">noun_phrase</code> attribute.</li>
+  <li>TextBlob also offers word/phrase counts, upper and lower case conversion, spell checking, translation, N-gram detection, and more.</li>
+</ul>
+
+<p><a href="https://pypi.org/project/textblob/">
+    <button type="button" class="btn btn-primary btn-xs"> Get TextBlob </button>
+</a></p>
+
+<hr />
+
+<h2 id="30-mahotas">30. <a href="https://pypi.org/project/mahotas/">Mahotas</a></h2>
+
+<p>Mahotas is another Python image processing library. It is also known as a computer vision library. Mahotas offers quite traditional functionality for image processing. It is a very fast library. And it comes with well-organized code. In fact, Mahotas offers the least dependencies for any other third party platform.</p>
+
+<p><img src="/assets/img/python/Finding-Wally-With-Mahotas.jpg" alt="Mahotas" /></p>
+
+<h3 id="resources-29">Resources</h3>
+
+<ul>
+  <li>Mahotas can perform complex tasks with simpler forms of code. For example, he does a great job on <a href="https://en.wikipedia.org/wiki/Where%27s_Wally%3F">Finding Wally</a> with a small amount of code.</li>
+  <li>This library offers intelligent computer vision capabilities such as computation, point detection, local binary patterns, and more.</li>
+  <li>Mahotas interface is written in Python. This is why it offers fast and dynamic development of your projects.</li>
+</ul>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<ul>
+  <li>However, the algorithms are offered in C ++. It offers more speed and therefore easier implementation of your command.</li>
+  <li>This Python library is designed keeping flex in mind. It is easily compatible with many other scientific software environments.</li>
+</ul>
+
+<p><a href="https://pypi.org/project/mahotas/">
+    <button type="button" class="btn btn-primary btn-xs"> Get Mahotas </button>
+</a></p>
+
+<hr />
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Python packages and libraries play a vital role in a developer’s career. Whether for data science, machine learning or any other aspect of the programming world, these packages and libraries are here to help you. However, in addition to our combined list of Python packages and libraries, there are also many other libraries and packages. You can find many of them in PyPI. We hope our article was helpful to you. Tell others too and share this article with your community.</p>
+
+<hr />
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>This article was originally written by <a href="https://www.ubuntupit.com/">UbuntuPit</a> with modifications and improvements by <a href="https://en.terminalroot.com.br">Terminal Root</a> where the original link can be purchased <a href="https://www.ubuntupit.com/best-python-libraries-and-packages-for-beginners/">here</a>.</p>
+
+:ET

@@ -1,0 +1,204 @@
+I"�/<p><img src="/assets/img/code/instacode.png" alt="10 Best Alternatives for Sharing Code Snippets" /></p>
+
+<p>A simple utility, but it helps a lot for those who need to constantly make code snippets available, me for example! 😀️. I separated some for you, let’s go to the list!</p>
+<blockquote>
+  <p>For some of our usage examples we will use the following file:</p>
+</blockquote>
+
+<blockquote>
+  <p><code class="highlighter-rouge">vim mycode.sh</code></p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/usr/bin/env bash</span>
+<span class="c"># Code example to shared snippets</span>
+<span class="c"># Author: Marcos &lt;terminalroot.com.br&gt;</span>
+send_msg<span class="o">(){</span>
+    tput cnorm
+    <span class="nb">echo</span> <span class="nt">-e</span> <span class="s2">"</span><span class="se">\n\e</span><span class="s2">[31;1mBye!</span><span class="se">\e</span><span class="s2">[m"</span>
+    <span class="nb">exit </span>127
+<span class="o">}</span>
+<span class="nb">trap </span>send_msg SIGINT
+tput civis
+<span class="k">while </span><span class="nb">true</span><span class="p">;</span>
+<span class="k">do
+    </span><span class="nb">echo</span> <span class="nt">-en</span> <span class="s2">"</span><span class="se">\r\e</span><span class="s2">[33;1mThis is </span><span class="se">\e</span><span class="s2">[36mMy Code</span><span class="se">\e</span><span class="s2">[34m at </span><span class="se">\e</span><span class="s2">[37m</span><span class="si">$(</span><span class="nb">date</span> +%d/%m/%Y-%H:%M:%S<span class="si">)</span><span class="se">\e</span><span class="s2">[m"</span>
+<span class="k">done
+done</span></code></pre></figure>
+
+<p><img src="/assets/img/code/code.png" alt="mycode.sh" /></p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h1 id="01-ixio">01. <a href="http://ix.io/">ix.io</a></h1>
+<p>Your code is shared via the command line, for example:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Sharing a file and getting the link</span>
+<span class="nb">cat </span>mycode.sh | curl <span class="nt">-F</span> <span class="s1">'f:1=&lt;-'</span> ix.io</code></pre></figure>
+
+<p>The output will inform you of the link you can use to share. If you want more ease, create a Shell function for this or use their client available on the same page, in addition to other options, such as saving codes and links when running the command.</p>
+
+<p><img src="/assets/img/code/ix.png" alt="ix.io" /></p>
+
+<p>Generated code link: <a href="http://ix.io/2eZc">http://ix.io/2eZc</a></p>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h1 id="02-sprungeus">02. <a href="http://sprunge.us/">sprunge.us</a></h1>
+<p>In the same way as the previous one, but even simpler, example of use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cat </span>mycode.sh | curl <span class="nt">-F</span> <span class="s1">'sprunge=&lt;-'</span> http://sprunge.us</code></pre></figure>
+
+<p><img src="/assets/img/code/sprunge.png" alt="ix.io" /></p>
+
+<p>Generated code link: <a href="http://sprunge.us/M3zF8m">http://sprunge.us/M3zF8m</a></p>
+
+<hr />
+
+<h1 id="03-hastebin">03. <a href="https://hastebin.com/">Hastebin</a></h1>
+<p><img src="/assets/img/code/hastebin.jpg" alt="Hastebin" />
+It works online, you need to enter (type/paste) your code and click <strong>Save 💾 <code class="highlighter-rouge">Ctrl + s</code></strong>. If you want to share your code, just click <strong>Just Text 📋️</strong> or hit <code class="highlighter-rouge">Ctrl + shift + r</code>.</p>
+
+<p>You can still use their client via the command line, installing it via <a href="https://en.terminalroot.com.br/how-to-properly-install-ruby-bundler-and-jekyll-on-ubuntu-linux/">gem</a>:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">gem <span class="nb">install </span>haste</code></pre></figure>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>And using as follows:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cat </span>mycode.sh | haste</code></pre></figure>
+
+<p>Generated code link: <a href="https://hastebin.com/morovoxegu.bash">https://hastebin.com/morovoxegu.bash</a></p>
+
+<blockquote>
+  <p>There is the possibility for you to use your own server, see more details <a href="https://github.com/seejohnrun/haste-client">here</a>.</p>
+</blockquote>
+
+<hr />
+
+<h1 id="04-gist-github">04. <a href="https://gist.github.com/">Gist GitHub</a></h1>
+<p>This is the option and one of the best known, as it has the <a href="https://github.com/terroo">GitHub</a> brand/advertising . You can share anonymously too or if you are logged in, it is recorded for your user.</p>
+
+<p>There are even customers for him: <a href="https://hackjutsu.com/Lepton/">Lepton</a> and also: <a href="https://www.gistoapp.com/">Gisto</a>. Another unrelated service is a url shortener: <a href="https://git.io/">git.io</a>, it only shortens website URLs/addresses related to GitHub, but it works if you want to shorten your snippets and even same long GitHub URL.</p>
+
+<p>You can shorten it via the command line in a personalized way, example:</p>
+<blockquote>
+  <p>Edit <strong>YOUR_LONG_URL</strong> and <strong>LETTERS_CUSTOMIZED</strong> for specific names if you want.</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">curl https://git.io/ <span class="nt">-i</span> <span class="nt">-F</span> <span class="s2">"url=YOUR_LONG_URL"</span> <span class="nt">-F</span> <span class="s2">"code=LETTERS_CUSTOMIZED"</span>
+<span class="c"># curl https://git.io/ -i -F "url=https://gist.github.com/terroo/5bafbcb1cc6f4ab922b70fa165e39468" -F "code=mycode.sh"</span></code></pre></figure>
+
+<p>Generated code link: git.io/mycode.sh</p>
+
+<p><img src="/assets/img/code/gist.png" alt="Gist" /></p>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h1 id="05-gitlab-snippets">05. <a href="https://docs.gitlab.com/ee/user/snippets.html">GitLab Snippets</a></h1>
+<p><img src="/assets/img/code/gitlab_snippet.png" alt="GitLab Snippets" />
+Similar to Gist, however, there is no possibility to create anonymous snippets, you must be logged into your <a href="https://gitlab.com/terminalroot">GitLab</a> account. A very beautiful interface!</p>
+
+<p>The codes that the programmers made available to the public can be consulted <a href="https://gitlab.com/explore/snippets">here</a>.</p>
+
+<p>To create you need to be logged in and go to the <a href="https://gitlab.com/snippets/new">+</a> button or the <a href="https://gitlab.com/snippets/new">New Snippet</a> button.
+<img src="/assets/img/code/snippet-gitlab.png" alt="New Snippet GitLab" /></p>
+
+<p><a href="https://gitlab.com/snippets/1955776">https://gitlab.com/snippets/1955776</a></p>
+
+<hr />
+
+<h1 id="06-pastesh">06. <a href="https://paste.sh/">paste.sh</a></h1>
+<p>It also works online and it encrypts your URL, just access the address and type/paste your code and it automatically saves and makes <code class="highlighter-rouge">raw</code> available in the bottom right corner of the screen: <a href="https://paste.sh/">https://paste.sh/</a>.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h1 id="07-termbin">07. <a href="http://termbin.com/">Termbin</a></h1>
+<p>This is a show of the ball, it runs via the command <code class="highlighter-rouge">nc</code> (needs to have <a href="http://nc110.sourceforge.net/">netcat</a> installed) and the insertion is very simple, example:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cat </span>mycode.sh | nc termbin.com 9999</code></pre></figure>
+
+<hr />
+
+<h1 id="08-instacode">08. <a href="http://instaco.de/">InstaCode</a></h1>
+<p>This is loko, sharing is via image and you can create Wallpaper and edit your image: rotate, blur, colorschemes and among other options! Worth the click.
+<img src="/assets/img/code/instacode.png" alt="InstaCode" /></p>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Generated code link: <a href="http://instaco.de/119823">http://instaco.de/119823</a></p>
+
+<h1 id="09-ubuntu-pastebin">09. <a href="https://paste.ubuntu.com/">Ubuntu PasteBin</a></h1>
+<p>It goes without saying that it is from <a href="https://en.terminalroot.com.br/generate-automatic-motivational-phrases-in-terminal/">distribution</a> <a href="https://en.terminalroot.com.br/the-fuck-the-command-that-corrects-incorrectly-typed-commands/">Linux</a> <a href="https://en.terminalroot.com.br/ubuntu-christian-an-ubuntu-linux-for-christians/">Ubuntu</a> with a clean and professional interface:
+<img src="/assets/img/code/ubuntu-snippet-1.jpg" alt="Ubuntu PasteBin paste" />
+<img src="/assets/img/code/ubuntu-snippet-2.jpg" alt="Ubuntu PasteBin code" /></p>
+
+<p>Generated code link: <a href="https://paste.ubuntu.com/p/bwqY6XHpqm/">https://paste.ubuntu.com/p/bwqY6XHpqm/</a></p>
+
+<h1 id="10-0x0st">10. <a href="http://0x0.st/">0x0.st</a></h1>
+<p><img src="/assets/img/code/0x0.jpg" alt="0x0.st" />
+This is complete, it is not just a code snippet, but a file sharing, url and everything you want within the limit of 512MB.</p>
+
+<p>It is an alternative to <a href="https://transfer.sh/">transfer.sh</a>. Example of use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">curl <span class="nt">-F</span><span class="s1">'file=@mycode.sh '</span>http://0x0.st</code></pre></figure>
+
+<hr />
+
+<p>There is no shortage of options, feel free to choose in this alternative world! 😀️ One that I would definitely not recommend would be <del>PasteBin.com</del>, this one generates <a href="https://terminalroot.com.br/2014/09/resolvendo-bad-interpreter-no-bash. html">‘bad interpreter’</a> in your code, if you download and use it on Linux.</p>
+
+<h1 id="thanks-for-reading">Thanks for reading!</h1>
+
+<h3 id="useful-links">Useful links:</h3>
+<ul>
+  <li><a href="https://alternativeto.net/software/github-gist/">https://alternativeto.net/software/github-gist/</a></li>
+  <li><a href="https://www.saashub.com/github-gist-alternatives">https://www.saashub.com/github-gist-alternatives</a></li>
+  <li><a href="https://www.slant.co/topics/7247/~code-snippets-manager">https://www.slant.co/topics/7247/~code-snippets-manager</a></li>
+</ul>
+
+:ET

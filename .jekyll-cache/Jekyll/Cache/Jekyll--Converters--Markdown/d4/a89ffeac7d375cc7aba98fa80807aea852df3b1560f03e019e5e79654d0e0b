@@ -1,0 +1,129 @@
+I"b&<p><img src="/assets/img/wm/i3-radius.jpg" alt="How to Install i3-gaps with Rounded Corners" /></p>
+
+<p><a href="https://github.com/i3/i3">i3wm</a> is very well written software. It consumes very few computer resources and has no instability.</p>
+
+<p>It combines minimalism, elegance and functionality in a responsible way. His official address on <a href="https://github.com/i3/i3">GitHub</a> is <a href="https://github.com/i3/i3">https://github.com/i3/i3</a> and official page <a href="https://i3wm.org/">https://i3wm.org/</a>. It was written in <a href="https://en.terminalroot.com.br/examples-of-functions-fread-fwrite-remove-and-others-in-c/">Language C</a> by Michael Stapelberg and a list of contributors, as it is an <a href="https://opensource.org/">Open Source</a> project.</p>
+
+<p>Then the <a href="https://github.com/Airblader">Airblader</a> user forked the project and modified and added some files to generate the possibility of i3wm having gaps / spaces between windows, similar to <a href="https://github.com/baskerville/bspwm">bspwm</a> and called this modification <a href="https://github.com/Airblader/i3">i3-gaps</a>.</p>
+
+<p>Finally, another GitHub user, <a href="https://github.com/resloved">Ben Friesn</a>, a.k.a <strong>resloved</strong>, forked the i3-gaps and added features that make the edges of the i3-gaps round.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>In none of the situations, there was no addition of a pull request, that is, the forks changes were not accepted in the fork projects.</p>
+
+<p>There was even an acceptance by Airblader of the changes requested by the resloved, but it was temporary and soon after the accepted pulls were removed. You can see it here in this issue: <a href="https://github.com/resloved/i3/pull/3">https://github.com/resloved/i3/pull/3</a>.</p>
+
+<p>But in this world of acceptance, change, warnings,… and blah blah blah! A lot has been and can be lost, even facilities that I noticed have been removed.</p>
+
+<p>Attentive to all these changes, alterations and removals. I saw the possibility that some things might not be found anymore. Thinking about it I forged the resloved modifications and recovered a commit that I had seen that was removed that had a very nice pre-built build and from that fork of mine we are going to install the i3-gaps with rounded edges that I lovingly 😍️ rename  of <a href="https://github.com/terroo/i3-radius">i3-radius</a>.</p>
+
+<p>In short, my fork has nothing different from the resloved, until the date of this publication, I only recovered the <a href="https://github.com/terroo/i3-radius/blob/shape/build.sh">build.sh</a> which makes it easier for users who still don’t know so much about the subject.</p>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="introduction">Introduction</h1>
+
+<p>To start, it is highly recommended that you already have i3wm installed, as it will make it easier to resolve dependencies at Runtime. It is available in most (or all) or repositories of the package managers of Linux distributions.</p>
+
+<blockquote>
+  <p>Remembering that these changes, as they are, do not work in BSD.</p>
+</blockquote>
+
+<p>But if you haven’t installed it yet, install:</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerge i3 <span class="c"># Gentoo, Funtoo,...</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>i3wm <span class="c"># Debian, Ubuntu, Linux Mint,...</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> i3wm <span class="c"># Arch Linux, Manjaro,...</span>
+<span class="nb">sudo </span>yum <span class="nb">install </span>i3wm <span class="c"># Red Hat, CentOS, Fedora(dnf)</span></code></pre></figure>
+
+<blockquote>
+  <p>In some managers it may be with the name i3 only, use <code class="highlighter-rouge">search</code> to confirm.</p>
+</blockquote>
+
+<p>After that, you need the Compilation Time dependencies, if you have <a href="https://gentoo.org/">Gentoo</a> or <a href="https://funtoo.org/">Funtoo</a>, skip this part, as they are specialized systems in software construction and you already have all the tools installed.</p>
+
+<p>But if your distro uses binary packages and you have never compiled anything on it, you will probably need to install these dependencies, in short they would be <a href="https://en.terminalroot.com.br/how-to-compile-your-programs-with-cmake/">CMake</a>, <a href="https://en.terminalroot.com.br/gnu-autotools-ultimate-tutorial-for-beginners/">Autotools</a> and <a href="https://en.terminalroot.com.br/gcc-vs-llvm-which-is-the-best-compiler/">GNU GCC</a>.</p>
+
+<p>In most distributions there is a package called build-essential that installs several tools at once, but to confirm, check the build-time dependencies at this link: <a href="https://build.i3wm.org/docs/hacking-howto.html">https://build.i3wm.org/docs/hacking-howto.html</a></p>
+
+<h1 id="installation">Installation</h1>
+
+<p>After all the necessary steps above, now let’s get down to business and build, in the literal sense of the word! :)</p>
+
+<h3 id="1---clone-the-repository">1 - Clone the repository:</h3>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/terroo/i3-radius</code></pre></figure>
+
+<p>Before proceeding, make sure the path where your i3wm is installed: <code class="highlighter-rouge">which i3</code>, you could choose the installation path, but to make it easier, I renamed your i3, example: <code class="highlighter-rouge">sudo mv "$(which i3)" "$(which i3)_original"</code>.</p>
+
+<p>In other words, if i3 was on the way: <code class="highlighter-rouge">/usr/bin/i3</code>, now it has been renamed to <code class="highlighter-rouge">/usr/bin/i3_original</code>, this in addition to being easily reversed, avoids some conflicts.</p>
+
+<h3 id="2---enter-the-directory-and-run-buildsh">2 - Enter the directory and run build.sh</h3>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>i3-radius <span class="o">&amp;&amp;</span> sh build.sh</code></pre></figure>
+
+<p>At the end, it will ask for your sudo password to run the install.</p>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="settings">Settings</h1>
+
+<p>Now for your i3wm to have spaces and round borders, you need to add these lines to your <code class="highlighter-rouge">vim ~/.config/i3/config</code></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">##### i3-gaps ##############</span>
+for_window <span class="o">[</span><span class="nv">class</span><span class="o">=</span><span class="s2">".*"</span><span class="o">]</span> border pixel 2 <span class="c">#*</span>
+gaps inner 10
+gaps outer 1
+<span class="c">#gaps horizontal 2</span>
+
+<span class="c">################# i3-radius #######################</span>
+smart_borders on
+smart_borders no_gaps
+border_radius 2</code></pre></figure>
+
+<p>The line for <code class="highlighter-rouge">border_radius 2</code> defines the curvature of the border, it will be very light, but if you want it to be really rounded, increase the value, example: <code class="highlighter-rouge">border_radius 3</code>. Use <strong>2</strong>, as it looks more elegant. 😁️ .</p>
+
+<h1 id="useful-links">Useful links</h1>
+
+<ul>
+  <li><a href="https://en.terminalroot.com.br/how-to-customize-your-linux-mint-with-i3-polybar-rofi/">https://en.terminalroot.com.br/how-to-customize-your-linux-mint-with-i3-polybar-rofi/</a></li>
+  <li><a href="https://github.com/i3/i3">https://github.com/i3/i3</a></li>
+  <li><a href="https://github.com/Airblader">https://github.com/Airblader</a></li>
+  <li><a href="https://github.com/resloved">https://github.com/resloved</a></li>
+  <li><a href="https://github.com/resloved/i3/pull/3">https://github.com/resloved/i3/pull/3</a></li>
+  <li><a href="https://github.com/terroo/i3-radius">https://github.com/terroo/i3-radius</a></li>
+  <li><a href="https://github.com/terroo/i3-radius/blob/shape/build.sh">https://github.com/terroo/i3-radius/blob/shape/build.sh</a></li>
+  <li><a href="https://cmake.org">https://cmake.org</a></li>
+  <li><a href="https://build.i3wm.org/docs/hacking-howto.html">https://build.i3wm.org/docs/hacking-howto.html</a></li>
+  <li><a href="https://github.com/terroo/i3-radius">https://github.com/terroo/i3-radius</a></li>
+  <li>&lt;Font image: https://www.reddit.com/r/unixporn/comments/8i8ik6/i3gaps_hacky_i3_rounded_titlebar/&gt;</li>
+</ul>
+:ET

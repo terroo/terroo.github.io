@@ -1,0 +1,124 @@
+I"f<p><img src="/assets/img/apps/app-get.jpg" alt="Meet the app-get - An AppImages Manager via Command Line" /></p>
+<blockquote>
+  <p>AppImages manager via command line</p>
+</blockquote>
+
+<h2 id="installation">Installation</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/terroo/app-get up-app-get
+<span class="nb">cd </span>up-app-get
+./INSTALL <span class="o">&amp;&amp;</span> <span class="nb">source</span> ~/.bashrc
+<span class="nb">cd</span> .. <span class="o">&amp;&amp;</span> <span class="nb">rm</span> <span class="nt">-rf</span> up-app-get/</code></pre></figure>
+
+<h2 id="using">Using</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">usage: app-get <span class="o">[</span>options] <span class="o">[</span>package]
+
+  Options:
+    <span class="nt">---list</span>            Lists all available packages
+    <span class="nt">--nocolor</span>          Disable colors
+    <span class="nt">--update</span>           Checks and updates this program
+    <span class="nt">--info</span> <span class="o">[</span>package]   Describes data <span class="k">for </span>an available package
+    <span class="nt">--remove</span> <span class="o">[</span>package] Removes the informed package
+    <span class="nt">-h</span>,--help          Show this content
+    <span class="nt">-v</span>,--version       Show version
+
+  Example, <span class="nb">install </span>qbittorrent: <span class="nv">$ </span>app-get qbittorrent</code></pre></figure>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="contributing">Contributing</h2>
+<p>If you want to add a new package to the project, follow these steps:</p>
+<ol>
+  <li>Fork the project</li>
+  <li>Clone your fork</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/[YOUR_USER]/app-get up-app-get</code></pre></figure>
+
+<ol>
+  <li>Edit the <code class="highlighter-rouge">lib/apps.list</code> file</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">vim up-app-get/lib/apps.list</code></pre></figure>
+
+<ol>
+  <li>This file has data separated by spaces per line. And each field has a certain information:</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>command</th>
+      <th>name</th>
+      <th>category</th>
+      <th>version</th>
+      <th>Architecture</th>
+      <th>AppImage link</th>
+      <th>website</th>
+      <th>icon/.desktop automatic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>application command</td>
+      <td>name (usually with capital letters)</td>
+      <td>Category based on .desktop</td>
+      <td>Program version</td>
+      <td>64 or 32</td>
+      <td>AppImage link, use only the official project link, preferably from a Git repository</td>
+      <td>Inform the official website of the program</td>
+      <td>If when you run AppImage for the first time and it opens a box asking if you want to create the .desktop and the icon automatically, check <code class="highlighter-rouge">true</code>, but after testing it on your machine, it does not generate and is not automatically available from Dash your system, check <code class="highlighter-rouge">false</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example for the <code class="highlighter-rouge">FooBar</code> program:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">foobar FooBar Utility<span class="p">;</span>Graphics 1.0 64 https://github.com/foobar/FooBar.AppImage https://foobar.net <span class="nb">false</span></code></pre></figure>
+
+<blockquote>
+  <p>Add only those that you have tested on your machine.</p>
+  <ol>
+    <li>Add a program icon in <strong>PNG</strong>, example: <code class="highlighter-rouge">foobar.png</code> format with <strong>256x256</strong> resolution to the directory: <code class="highlighter-rouge">data/icons/hicolor/256x256</code></li>
+    <li>Submit a <a href="https://bit.ly/prenlink">Pull Request</a></li>
+  </ol>
+</blockquote>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="report-bugs">Report bugs</h2>
+<p><a href="https://github.com/terroo/app-get/issues">https://github.com/terroo/app-get/issues</a></p>
+
+<h2 id="uninstalation">Uninstalation</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/terroo/app-get up-app-get
+<span class="nb">cd </span>up-app-get
+./INSTALL remove</code></pre></figure>
+
+<h1 id="video">Video</h1>
+<h3 id="the-video-does-not-have-an-english-translation-however-you-can-enable-and-try-to-read-the-one-created-automatically-by-youtube-artificial-intelligence">The video does not have an English translation, however, you can enable and try to read the one created automatically by Youtube Artificial Intelligence.</h3>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<iframe width="1234" height="694" src="https://www.youtube.com/embed/F0rsjX7xoOQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+:ET

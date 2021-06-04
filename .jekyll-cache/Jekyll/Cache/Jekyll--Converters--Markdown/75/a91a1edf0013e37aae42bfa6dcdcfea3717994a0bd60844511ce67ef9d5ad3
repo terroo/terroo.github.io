@@ -1,0 +1,109 @@
+I"	<p><img src="/assets/img/vim/terroo-colors-min.jpg" alt="Install colorscheme Terroo Colors on your Vim" /></p>
+
+<p>Terroo Colors is a Material Color Scheme Darker for Vim &amp; inspired by <a href="https://github.com/Mcmartelle/vim-monokai-bold">vim-monokai-bold</a> and <a href="https://github.com/dikiaap/minimalist">Minimalist</a>.</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>To install this color scheme, you can use one of the following ways:</p>
+
+<ul>
+  <li>Use <a href="https://github.com/VundleVim/Vundle.vim#quick-start">Vundle</a> by adding
+to your <code class="highlighter-rouge">.vimrc</code> Vundle plugin section:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-viml" data-lang="viml">Plugin <span class="s1">'terroo/terroo-colors'</span></code></pre></figure>
+
+<p>Then run <code class="highlighter-rouge">:PluginInstall</code>.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>OR</p>
+
+<ul>
+  <li>Use <a href="https://github.com/junegunn/vim-plug#installation">vim-plug</a> by adding
+to your <code class="highlighter-rouge">.vimrc</code> vim-plug section:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-viml" data-lang="viml">Plug <span class="s1">'terroo/terroo-colors'</span></code></pre></figure>
+
+<p>Then run <code class="highlighter-rouge">:PlugInstall</code>.</p>
+
+<p>OR</p>
+
+<ul>
+  <li>Use <a href="https://github.com/tpope/vim-pathogen#installation">Pathogen</a>:</li>
+</ul>
+
+<p>Run the following in a terminal:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ~/.vim/bundle
+git clone https://github.com/terroo/terroo-colors</code></pre></figure>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="usage">Usage</h2>
+
+<p>After finishing installation, put this code to your <code class="highlighter-rouge">.vimrc</code>:</p>
+
+<figure class="highlight"><pre><code class="language-viml" data-lang="viml"><span class="k">set</span> <span class="nb">t_Co</span><span class="p">=</span><span class="m">256</span>
+<span class="nb">syntax</span> <span class="k">on</span>
+<span class="k">colorscheme</span> terroo<span class="p">-</span>colors</code></pre></figure>
+
+<p>This color scheme also built-in with airline theme. If you wanna use:</p>
+
+<figure class="highlight"><pre><code class="language-viml" data-lang="viml"><span class="k">let</span> <span class="nv">g:airline_theme</span><span class="p">=</span><span class="s1">'terrooairline'</span>
+<span class="k">let</span> <span class="nv">g:airline_powerline_fonts</span> <span class="p">=</span> <span class="m">1</span>
+<span class="k">let</span> <span class="nv">g:airline</span>#extensions#<span class="nb">tabline</span>#enabled <span class="p">=</span> <span class="m">1</span></code></pre></figure>
+
+<h2 id="support">Support</h2>
+
+<p>As you know, color scheme in vim by default supports many programming languages.
+At this time <code class="highlighter-rouge">terroo-colors</code> is looks beautiful &amp; focused on:</p>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<ul>
+  <li>C++</li>
+  <li>CSS/CSS3</li>
+  <li>HTML/HTML5</li>
+  <li>JavaScript</li>
+  <li>Markdown</li>
+  <li>PHP</li>
+  <li>Python</li>
+  <li>Ruby</li>
+  <li>Sass</li>
+  <li>Shell</li>
+  <li>XML</li>
+</ul>
+
+<p>If you need more syntax highlighting, you can use
+<a href="https://github.com/sheerun/vim-polyglot">vim-polyglot</a>.</p>
+
+<h2 id="links">Links</h2>
+
+<p><a href="https://github.com/terroo/terroo-colors">GitHub</a> ·
+<a href="https://www.vim.org/">Vim.org</a> ·
+<a href="https://en.terminalroot.com.br/">Blog</a></p>
+
+<h2 id="license">License</h2>
+
+<p>GPLv3 © <a href="https://terminalroot.com.br/">Terminal Root</a></p>
+:ET

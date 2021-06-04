@@ -1,0 +1,24 @@
+I"!<p><a href="https://vivaldi.com/">Vivaldi</a> is a freeware, cross-platform web browser developed by Vivaldi Technologies, a company founded by Opera Software co-founder and former CEO Jon Stephenson von Tetzchner and Tatsuki Tomita. The browser was officially launched on April 12, 2016.The browser is aimed at staunch technologists, heavy Internet users, and previous Opera web browser users disgruntled by Opera’s transition from the Presto layout engine to the Blink layout engine, which removed many popular features.Vivaldi aims to revive the old, popular features of Opera 12.The browser has gained popularity since the launch of its first technical preview.The browser has 1 million users as of January 2017.</p>
+
+<p><a href="https://packages.gentoo.org/packages/www-client/vivaldi">Package on Gentoo</a></p>
+
+<h2 id="install">Install</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerge <span class="nt">-a</span> www-client/vivaldi</code></pre></figure>
+
+<p>After prompt <strong>Yes</strong> , <a href="https://wiki.gentoo.org/wiki/Portage">Portage</a> will prompt you to update <code class="highlighter-rouge">/etc</code> , then running this is command:</p>
+
+<p><img src="/assets/img/portage/vivaldi-gentoo.gif" alt="/assets/img/portage/vivaldi-gentoo.gif" title="/assets/img/portage/vivaldi-gentoo.gif" /></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">etc-update <span class="nt">--automode</span> <span class="nt">-5</span></code></pre></figure>
+
+<p>Then just run the command again</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerge <span class="nt">-a</span> www-client/vivaldi</code></pre></figure>
+
+<p><img src="/assets/img/portage/vivaldi-gentoo-2.gif" alt="/assets/img/portage/vivaldi-gentoo-2.gif" title="/assets/img/portage/vivaldi-gentoo-2.gif" /></p>
+
+<h2 id="wait-for-compilation">Wait for compilation!</h2>
+
+<p><img src="/assets/img/portage/vivaldi-800x450.gif" alt="/assets/img/portage/vivaldi.gif" title="/assets/img/portage/vivaldi.gif" /></p>
+:ET

@@ -1,0 +1,212 @@
+I"�4<p>An <a href="https://wiki.gentoo.org/wiki/Ebuild">ebuild</a> file  is a text file, used by Gentoo package managers, that identifies a specific software package, and how the Gentoo package manager should deal with it. It uses a bash syntax style and is standardized through the <a href="https://wiki.gentoo.org/wiki/EAPI">EAPI</a> version .</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Gentoo Linux uses ebuilds as the package management format for individual software titles. These ebuilds contain metadata about the software (the name and version of the software, which the software uses and the home page), dependency information (both at creation time and at run time) and instructions on how to deal with the software ( configure, build, install, test …).</p>
+
+<h2 id="development">Development</h2>
+
+<p>When you set up Gentoo, you probably remember that you had to download and decompress a <a href="http://distfiles.gentoo.org/snapshots/">snapshot</a> Gentoo repository. This snapshot (which you upgrade when you run <code class="highlighter-rouge">emerge --sync</code>) is full of ebuilds, it’s Gentoo’s <a href="https://wiki.gentoo.org/wiki/Ebuild_repository">repository</a> and once it’s uncompressed it’s usually located at <a href="https://wiki.gentoo.org/wiki//usr/portage">/usr/portage</a>.</p>
+
+<blockquote>
+  <p>If you decide to create an ebuild inside <code class="highlighter-rouge">/usr/portage</code>, eg <code class="highlighter-rouge">/usr/portage/hello-world.ebuild</code>, running <code class="highlighter-rouge">emerge --sync</code> will automatically delete it, there are rules for it is accepted in the <a href="https://wiki.gentoo.org/wiki/Portage">Portage</a> directory tree.</p>
+</blockquote>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h3 id="creating-a-basic-ebuild">Creating a Basic ebuild</h3>
+
+<blockquote>
+  <p>You must have <strong>sudo</strong> or <strong>root</strong> privileges.</p>
+</blockquote>
+
+<ol>
+  <li>Create the directory that will be ebuild (usually it has the same ebuild name):</li>
+</ol>
+
+<pre><code class="language-ebuild">mkdir -p /usr/local/portage/app-misc/hello-world
+</code></pre>
+
+<blockquote>
+  <p>Notice that we need to create in <strong>/usr/local/</strong> and not in ~/usr/portage/~</p>
+</blockquote>
+
+<p>Then use <code class="highlighter-rouge">cd $_</code> to enter the created directory, variable <strong>$_</strong> saves the last argument executed.</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<ol>
+  <li>In the previously created directory we will create opening a file with <a href="https://wiki.gentoo.org/wiki/Vim">Vim</a> if you have the plugin <a href="https://github.com/gentoo/gentoo-syntax">https://github.com/gentoo/gentoo-syntax</a> installed the file will have the ebuild syntax colorized.</li>
+</ol>
+
+<pre><code class="language-ebuild">vim ./hello-world-1.0.ebuild
+</code></pre>
+
+<blockquote>
+  <p>Note that the ebuild header and header has already been autocompleted. The same (header only) could also be created copying from the Portage directory with the following command: 
+<code class="highlighter-rouge">cp /usr/portage/header.txt ./hello-world-1.0.ebuild</code></p>
+</blockquote>
+
+<pre><code class="language-ebuild"># Copyright 2019 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+EAPI=7
+
+DESCRIPTION=""
+HOMEPAGE=""
+SRC_URI=""
+
+LICENSE=""
+SLOT="0"
+KEYWORDS="~amd64 ~x86"
+IUSE=""
+
+DEPEND=""
+RDEPEND="${DEPEND}"
+BDEPEND=""
+</code></pre>
+
+<h4 id="lets-understand-each-line-of-our-file">Let’s understand each line of Our file</h4>
+
+<ul>
+  <li><strong># Copyright … License v2</strong> - This is the mandatory header in ebuilds, which we talked about earlier, tells you about the authors and the license;</li>
+  <li><strong>EAPI = 7</strong> - Informs which syntax rule for ebuild to accept. It is actually the <a href="https://wiki.gentoo.org/wiki/Package_Manager_Specification">Package Manager Specification (PMS)</a> to which the file obeys. EAPI versions (and their meaning) are defined in the Package Manager Specification. Currently, EAPIs from [0 to 7] (https://devmanual.gentoo.org/ebuild-writing/eapi/) are defined and officially supported;</li>
+  <li><strong>DESCRIPTION</strong> - Briefly describes the contents of ebuild, namely: what is the package that will be installed / compiled;</li>
+  <li><strong>HOMEPAGE</strong> - Inform the official package page;</li>
+  <li><strong>SRC_URI</strong> - Informs The source code that we will download, hosted by the developer who wrote this documentation, the path of a compressed file;</li>
+  <li><strong>LICENSE</strong> - Informs the license of the package;</li>
+  <li><strong>SLOT</strong> - Informs how many versions can be installed from the same package. This variable can not be empty ( ~SLOT=””~ ) and can also be specified, if it is not used, it must be declared 0, eg <code class="highlighter-rouge">SLOT ="0"</code>;</li>
+  <li><strong>KEYWORDS</strong> - Informs which platforms the package can be installed, ex: arm, sparc, … In the above case, it is possible to install in AMD 64-bit or x86 (32-bit), it is used with the symbol (t) in the front, other examples: <code class="highlighter-rouge">~alpha ~arm ~hppa ~ia64 ~ppc64 ~s390 ~sh ~sparc</code>;</li>
+  <li><strong>IUSE</strong> - Informs the flags that can / should be used to compile the package. Usually the user can mention them using the <em>USE</em> variable, inhibiting or declaring on the command line or directly in the <code class="highlighter-rouge">make.conf</code> file;</li>
+  <li><strong>DEPEND</strong> - List of <a href="https://devmanual.gentoo.org/general-concepts/dependencies/">depts</a> essential for the package to be built (compile time);</li>
+  <li><strong>RDEPEND</strong> - List of dependencies for the package to execute (runtime), notice that the <em>DEPEND</em> variable is already included;</li>
+  <li><strong>BDEPEND</strong> - A list of the build dependencies <a href="https://wiki.gentoo.org/wiki/Embedded_Handbook/General/Full#Variables">CBUILD</a>.</li>
+</ul>
+
+<blockquote>
+  <p>Remember that this is a basic example, there are other variables that can be consulted at: <a href="https://devmanual.gentoo.org/ebuild-writing/variables/">https://devmanual.gentoo.org/ebuild-writing/variables/</a>. For more information about schema, see the file: 
+<code class="highlighter-rouge">/usr/portage/skel.ebuild</code>.</p>
+</blockquote>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Our ebuild got its final version as follows:</p>
+
+<pre><code class="language-ebuild"># Copyright 2019 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+EAPI=7
+
+DESCRIPTION="Print Hello world in Shell Script"
+HOMEPAGE="http://terminalroot.com.br/"
+SRC_URI="http://terminalroot.com.br/downs/hello-world.tar.gz"
+
+LICENSE="MIT"
+SLOT="0"
+KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
+</code></pre>
+
+<blockquote>
+  <p>Note that variables that have not been declared in our ebuild are not essential to its operation.</p>
+</blockquote>
+
+<p>Content of our <code class="highlighter-rouge">hello-world</code> (notice that it is without the <em>.sh</em> extension):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/usr/bin/env bash</span>
+<span class="c"># Simple examples for ebuild</span>
+<span class="c"># terminalroot.com.br</span>
+
+hello_world<span class="o">(){</span>
+	<span class="nb">printf</span> <span class="s2">"%s</span><span class="se">\n</span><span class="s2">"</span> <span class="s2">"Hello world!"</span>
+<span class="o">}</span>
+hello_world
+</code></pre></div></div>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Create a directory named: <code class="highlighter-rouge">hello-world-1.0</code>, and add the shell script inside it. Then just compress and upload to a web address:
+<code class="highlighter-rouge">tar zcvf hello-world-1.0.tar.gz hello-world-1.0 /</code></p>
+
+<p>Now run the following command: <code class="highlighter-rouge">ebuild hello-world-1.0.ebuild manifest clean merge</code>. Note that you first try to download your file from a mirror, but since it is not in the Gentoo mirrors, it will be downloaded from the specified * SRC_URI * value and saved in the <code class="highlighter-rouge">/usr/portage/distfiles/hello-world-1.0.tar.gz</code>. So when it has the file, it can create a manifest (a <code class="highlighter-rouge">Manifest</code> name file inside the directory where ebuild is), this contains a hash of our ebuild and that file downloaded to ensure integrity, so that the corruption produces errors.</p>
+
+<p>Then the process emerges, integrity is checked first. So we can see that the file we download is automatically decompressed, which is very useful since we do not need to implement it any more. We can change this behavior by replacing its <code class="highlighter-rouge">src_unpack</code> function by defining some variables using <a href="https://wiki.gentoo.org/wiki/Eclass">eclass</a> that define such behavior; but we do not have to do this in this case.</p>
+
+<p>But the installation does not occur, as we need to tell ebuild where to install our file.</p>
+
+<h4 id="final-version-of-ebuild">Final version of ebuild</h4>
+
+<p>For ebuild to install the final file, we need to assign an <a href="https://devmanual.gentoo.org/ebuild-writing/functions">Ebuild Function</a> that defines where it should be installed, for this we will use the <code class="highlighter-rouge">src_install</code> function together with another function <a href="https://devmanual.gentoo.org/function-reference/install-functions/">dobin</a> that installs a binary in <code class="highlighter-rouge">/usr/bin</code>, and sets the file mode to * 0755 * and sets the property to superuser or its equivalent in the system or installation at hand ie <code class="highlighter-rouge">src_install</code> is required for our shell script hello-world to be later placed in<code class="highlighter-rouge"> /usr/bin</code> and made executable:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>src_install <span class="o">()</span> <span class="o">{</span>
+    dobin hello-world
+<span class="o">}</span>
+</code></pre></div></div>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>The final content of our ebuild was:</p>
+
+<pre><code class="language-ebuild"># Copyright 2019 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+EAPI = 7
+
+DESCRIPTION = "Print Hello world in Shell Script"
+HOMEPAGE="http://terminalroot.com.br/"
+SRC_URI="http://terminalroot.com.br/downs/hello-world.tar.gz"
+
+LICENSE="MIT"
+SLOT="0"
+KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
+
+src_install(){
+	dobin hello-world
+}
+</code></pre>
+
+<p>After adding the above function to ebuild, let’s run the command again:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ebuild hello-world-1.0.ebuild manifest clean merge
+</code></pre></div></div>
+
+<p>If all goes well, just run the terminal: <code class="highlighter-rouge">hello-world</code> and you will see the output: <strong>Hello world!</strong>.</p>
+
+<p>If you want to uninstall, use emerge: <code class="highlighter-rouge">emerge -C hello-world</code> and if you also want to clean the distfiles: <code class="highlighter-rouge">rm /usr/portage/hello-world</code> .</p>
+
+<p>You do not need to remove the <code class="highlighter-rouge">Manifest</code> file unless you want to.</p>
+
+<p>Learn more: <a href="https://wiki.gentoo.org/wiki/Basic_guide_to_write_Gentoo_Ebuilds">https://wiki.gentoo.org/wiki/Basic_guide_to_write_Gentoo_Ebuilds</a></p>
+
+<p><a href="https://gitlab.com/terminalroot/gentoo/blob/master/tutoriais/como-criar-um-ebuild-no-gentoo.md">Portuguese version</a></p>
+:ET

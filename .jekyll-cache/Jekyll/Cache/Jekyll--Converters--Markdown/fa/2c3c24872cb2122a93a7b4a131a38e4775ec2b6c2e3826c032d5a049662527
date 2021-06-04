@@ -1,0 +1,79 @@
+I"�<p>This article will help you create a binary file of your Shell Scripting, so that no one can see the source code of your script and we can use it as a command. To create a binary file from a script, we use the SHC compiler .</p>
+
+<h1 id="introduction">Introduction</h1>
+
+<p><a href="https://neurobin.org/projects/softwares/unix/shc/">shc</a>, a Shell Script compiler, produces the source code in C. The generated source code is then compiled and linked to produce a separate binary executable.</p>
+
+<p>The compiled binary will continue to be dependent on the shell specified in the first line of the shell code (ie, shebang) (ie <code class="highlighter-rouge">#!/bin/sh)</code>, so shc does not create completely independent binaries.</p>
+
+<p>shc itself is not a compiler like <a href="https://gcc.gnu.org/">gcc</a>, it encodes and encrypts a shell script and generates the C source code with the added expiration feature. It then uses the system compiler to compile a separate binary that behaves exactly like the original script. After execution, the compiled binary will decrypt and execute the code with the <code class="highlighter-rouge">shell -c</code> option.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="installation">Installation</h1>
+
+<p>In Gentoo and similar, use the portage that shc is already available on the tree:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerge dev-util/shc</code></pre></figure>
+
+<p>For other distributions, for example derived from APT, first install the necessary dependencies:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt-get <span class="nb">install </span>libc6-dev <span class="c"># Debian, Ubuntu, Mint, ...</span>
+<span class="nb">sudo </span>yum <span class="nb">install </span>glibc-devel <span class="c"># RHEL, CentOS, Fedora, ...</span></code></pre></figure>
+
+<p>Then download the package, decompress and compile the code:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wget https://github.com/neurobin/shc/archive/release.zip
+<span class="nb">cd </span>shc-<span class="k">*</span>
+make
+<span class="nb">sudo </span>make <span class="nb">install</span></code></pre></figure>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="use">Use</h1>
+<p>Create a test file to see how it works: <code class="highlighter-rouge">vim script.sh</code>:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/bin/bash</span>
+
+<span class="nb">echo</span> <span class="nt">-e</span> <span class="s2">"The first 3 characters of each location file / directory are:</span><span class="se">\n</span><span class="s2">"</span>
+<span class="k">for </span>i <span class="k">in</span> <span class="k">*</span><span class="p">;</span> <span class="k">do
+	</span><span class="nb">echo</span> <span class="s2">"</span><span class="nv">$i</span><span class="s2">"</span> | <span class="nb">cut</span> <span class="nt">-c</span> 1-3 | <span class="nb">tr</span> <span class="s1">'\n'</span> <span class="s1">'\ '</span>
+<span class="k">done
+</span><span class="nb">echo</span></code></pre></figure>
+
+<p>Then use shc to transform it into binary:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">shc <span class="nt">-f</span> script.sh <span class="nt">-o</span> binary</code></pre></figure>
+
+<p>And just run the program: <code class="highlighter-rouge">./binary</code></p>
+
+<p>If you try to see the contents of the binary file, you will see everything encoded, example: <code class="highlighter-rouge">cat binary</code></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">...
+@x@�@�@�@�@�@�@�@�@�@�H�H��/H��t��H���5�/�%�/@�%�
+�@����%�/h
+          �0����%�/h
+�����%r/h�����%j/h������%b/h
+...</code></pre></figure>
+
+<p>Para mais informações e opções via linha de comando, utilize a ajuda e o manual:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">shc <span class="nt">--help</span>
+man shc</code></pre></figure>
+
+<p>Official page <a href="https://neurobin.org/projects/softwares/unix/shc/">shc</a>: <a href="https://neurobin.org/projects/softwares/unix/shc/">https://neurobin.org/projects/softwares/unix/shc/</a></p>
+
+<p>Thanks for reading!</p>
+:ET

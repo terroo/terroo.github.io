@@ -1,0 +1,84 @@
+I"�<p><img src="/assets/img/cpp/shellpp.jpg" alt="Shell++ - An Object Oriented Shell Script" /></p>
+
+<p><a href="https://github.com/alexst07/shell-plus-plus">Shell++</a> is a programming language that aims to bring functionalities from modern languages, such as ease of manipulation of data structures, object-oriented programming, functional programming and others including Shell Script.</p>
+
+<h1 id="installation">Installation</h1>
+<p>Clone the repository recursively:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone <span class="nt">--recurse-submodules</span> <span class="nt">-j8</span> https://github.com/alexst07/shell-plus-plus</code></pre></figure>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>After cloned, we realized that it uses <a href="https://en.terminalroot.com.br/how-to-compile-your-programs-with-cmake/">CMake</a>, if you export the <code class="highlighter-rouge">CXX</code> variable, you may be able to use another compiler, but you will need: CMake, <a href="https://en.terminalroot.com.br/gcc-vs-llvm-which-is-the-best-compiler/">GCC</a> and <a href="https://en.terminalroot.com.br/how-to-create-a-makefile/">GNU Make</a>.</p>
+
+<p>Some distros offer the package with essential tools for building binaries, if you use <a href="https://en.terminalroot.com.br/meet-devuan-gnu-linux-a-debian-without-systemd/">Debian</a>, <a href="https://en.terminalroot.com.br/customize-your-ubuntu-with-wayland-sway-ulauncher-waybar/">Ubuntu</a>, <a href="https://en.terminalroot.com.br/how-to-customize-your-linux-mint-with-i3-polybar-rofi/">Mint</a> and simlares, just install the package: build-essentials. If you use <a href="https://en.terminalroot.com.br/how-to-create-an-ebuild-on-gentoo/">Gentoo</a>, you don’t need to install anything.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># you can change the compiler with this command:</span>
+<span class="nb">export </span><span class="nv">CXX</span><span class="o">=</span><span class="si">$(</span>which clang++<span class="si">)</span>
+
+<span class="nb">mkdir </span>build <span class="o">&amp;&amp;</span> <span class="nb">cd </span>build
+cmake ..
+make</code></pre></figure>
+
+<p>After building the binary, it can be found at: <code class="highlighter-rouge">./shell/shpp</code>. You can run one:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>make <span class="nb">install</span></code></pre></figure>
+
+<blockquote>
+  <p>Remembering that you can also execute the binary directly.</p>
+</blockquote>
+
+<p>Basic usage example:</p>
+<h2 id="hello-world">Hello, World!</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cat</span> <span class="o">&lt;&lt;</span> <span class="no">EOF</span><span class="sh"> &gt; hello.sh
+print("Hello, Shell++")
+</span><span class="no">EOF
+</span>shpp hello.sh</code></pre></figure>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>And among several other forms of use that we can see <a href="https://github.com/alexst07/shell-plus-plus">here in the project’s repository</a> documentation.</p>
+
+<h3 id="alternatives-to-shell">Alternatives to Shell++:</h3>
+<ul>
+  <li><a href="https://github.com/niieani/bash-oo-framework">Bash Infinity Framework</a></li>
+  <li><a href="https://github.com/lenormf/bash-oop">Bash OOP</a></li>
+  <li><a href="https://github.com/tomas/skull">Skull</a></li>
+  <li><a href="https://github.com/kjkuan/bashoo">Bashoo</a></li>
+</ul>
+
+<p>Among other options:</p>
+
+<ul>
+  <li><a href="http://hipersayanx.blogspot.com/2012/12/object-oriented-programming-in-bash.html">http://hipersayanx.blogspot.com/2012/12/object-oriented-programming-in-bash.html</a></li>
+  <li><a href="https://developpaper.com/object-oriented-shell-script/">https://developpaper.com/object-oriented-shell-script/</a></li>
+  <li><a href="http://blog.fpmurphy.com/2010/05/ksh93-using-types-to-create-object-orientated-scripts.html">http://blog.fpmurphy.com/2010/05/ksh93-using-types-to-create-object-orientated-scripts.html</a></li>
+</ul>
+
+<h1 id="watch-the-video">Watch the video</h1>
+<p>The video is in Brazilian Portuguese, but you can use automatic translation from Youtube or even just watch the procedures, because the commands are universal</p>
+
+<iframe width="1100" height="490" src="https://www.youtube.com/embed/0Av5wG2Lkl8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+:ET

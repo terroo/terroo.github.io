@@ -1,0 +1,175 @@
+I"N=<p><img src="/assets/img/gentoo/larry-gentoo.jpg" alt="10 Fundamental Tips for Your Gentoo Linux" /></p>
+
+<p>People ask me for different content about <a href="https://www.gentoo.org/">Gentoo</a> and <a href="https://wiki.gentoo.org/wiki/Portage">Portage</a>, but these worlds are very biiiiiiigggg!!! 😀️.</p>
+
+<p>So I’m going to post a series of tips from both here on a list of topics like this, although there is no such information in the title of this post, this is the <strong>FIRST PART</strong> of this series. I believe that to start these initial tips are essential, let’s go to the list!</p>
+
+<hr />
+
+<h1 id="1-enable-ikconfig-in-kernel">1. Enable <strong>IKCONFIG</strong> in <a href="https://www.kernel.org/">Kernel</a></h1>
+<p>Support for <code class="highlighter-rouge">.config</code> in the Kernel, also known as <a href="https://wiki.gentoo.org/wiki/Kernel/IKCONFIG_Support">IKCONFIG</a>, allows users to build a copy of the configuration with which the kernel was built inside the kernel itself.</p>
+
+<p>This allows them to inspect the kernel configuration while it is running, without having to worry about whether they changed or cleared the source directory after compilation.</p>
+<blockquote>
+  <p>Enabling in the kernel:</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">su
+<span class="nb">cd</span> /usr/src/linux
+make menuconfig</code></pre></figure>
+
+<pre>
+General Setup ---&gt;
+    &lt;*/M&gt; Kernel .config support
+        [*] Enable access to .config through /proc/config.gz
+</pre>
+
+<p>And recompile:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">su
+make <span class="o">&amp;&amp;</span> make modules_install <span class="o">&amp;&amp;</span> make <span class="nb">install</span></code></pre></figure>
+
+<blockquote>
+  <p>If you have GRUB, also run: <code class="highlighter-rouge">grub-mkconfig -o /boot/grub/grub.cfg</code></p>
+</blockquote>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h1 id="2-define-a-accept_keywords-in-your-etcportagemakeconf">2. Define a <strong>ACCEPT_KEYWORDS</strong> in your <code class="highlighter-rouge">/etc/portage/make.conf</code></h1>
+<p>If your system is <strong>amd64</strong>, for example, some software requires you to explain this, because the package has code for other architectures, and you will not be able to install it if this variable is not defined, <a href="https://wiki.gentoo.org/wiki/ACCEPT_KEYWORDS/">learn more here</a>. Example: <code class="highlighter-rouge">ACCEPT_KEYWORDS="~amd64"</code>, or just run:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s1">'ACCEPT_KEYWORDS="~amd64"'</span> | <span class="nb">sudo tee</span> <span class="nt">-a</span> /etc/portage/make.conf</code></pre></figure>
+
+<hr />
+
+<h1 id="3-know-when-to-use-an-overlay">3. Know when to use an <a href="https://overlays.gentoo.org/">Overlay</a></h1>
+<p>If you need to compile software that is not in the <a href="https://wiki.gentoo.org/wiki/Portage">Portage</a> tree, and want more ease of installation, use an Overlay, see here how to install <a href="https://en.terminalroot.com.br/how-to-install-programs-via-layman-in-gentoo/">Layman</a>.</p>
+
+<hr />
+
+<h1 id="4-enable-commonly-used-parameters-by-default">4. Enable commonly used parameters by default</h1>
+<p>If you use any <code class="highlighter-rouge">emerge</code> parameters frequently, it is interesting to add them to the <strong>EMERGE_DEFAULT_OPTS</strong> variable in your <code class="highlighter-rouge">/etc/portage/make.conf</code>. For example, I use <code class="highlighter-rouge">-a</code> a lot and my processor only has 2 cores, so I always compile with <code class="highlighter-rouge">--jobs 2</code> so as not to overload my notebook.</p>
+<blockquote>
+  <p>The <code class="highlighter-rouge">--verbose</code> option is also very interesting!</p>
+</blockquote>
+
+<hr />
+
+<h1 id="5-gain-more-performance-in-the-builds">5. Gain more performance in the builds</h1>
+<p>Make frequent use of the <code class="highlighter-rouge">--quiet</code> option or just <code class="highlighter-rouge">-q</code>, the <em>compiler outputs</em> not only make the prompt look ugly, they make the compilation take longer, really! I did the test with small and large software and the times approached the gain of <strong>15%</strong> on average.</p>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>I just don’t recommend using this parameter in the previous tip variable, as the outputs of <code class="highlighter-rouge">--search</code> will be suppressed and with less details, <a href="https://wiki.gentoo.org/wiki/EMERGE_DEFAULT_OPTS">learn more</a>.</p>
+
+<hr />
+
+<h1 id="6-know-how-to-use-flags-correctly">6. Know how to use FLAGS correctly</h1>
+<p>Use the <code class="highlighter-rouge">/etc/portage/package.use/zz-autounmask</code> file. Do not set <strong>flags</strong> directly using the variable <a href="https://wiki.gentoo.org/wiki/USE_flag">USE</a> in the terminal, eg <del><code class="highlighter-rouge">sudo USE="network mpd" emerge polybar</code></del> , this creates a problem when you update the software, it will recompile without <strong>network</strong> and <strong>mpd</strong> support, without saying that in most cases it is not interesting to add <strong>flags</strong> universally to the <strong>USE</strong> variable in <code class="highlighter-rouge">/etc/portage/make.conf</code>, only when they are global cases, that is, when any software depends on it, for example: <code class="highlighter-rouge">USE="gnome -kde"</code>(if your system has GNOME installed and does not has KDE), but this example was very reasonable, because your ** profile ** (see <code class="highlighter-rouge">eselect profile list</code>) that you defined when installing your Gentoo and chose (<code class="highlighter-rouge">set</code>) for GNOME, therefore all <strong>flags</strong> for this are already defined for Portage, see with <code class="highlighter-rouge">emerge info | grep ^ USE</code>.</p>
+
+<p>So the most correct way is to insert the <strong>flag</strong> only for the software you want in the <code class="highlighter-rouge">/etc/portage/package.use/zz-autounmask</code> file, remember to add with the software version, example: <code class="highlighter-rouge">echo '&gt;=x11-misc/polybar-3.4.2-r1 network mpd' | sudo tee -a /etc/portage/package.use/zz-autounmask</code> the <code class="highlighter-rouge">&gt;=</code> option at the beginning of the line says that Portage should include this ** flag ** for any version equal to or greater than the one informed and separated by spaces inform the <strong>flags</strong>.</p>
+
+<hr />
+
+<h1 id="7-explore-gentoolkit">7. Explore <a href="https://wiki.gentoo.org/wiki/Gentoolkit">Gentoolkit</a></h1>
+<p>Before compiling/installing any package, use the command <code class="highlighter-rouge">equery uses [category/package-name]</code> (always inform with the category to avoid ambiguous package names), you must have <a href="https://wiki.gentoo.org/wiki/Gentoolkit">Gentoolkit</a> installed (<code class="highlighter-rouge">emerge gentoolkit</code>) eg: <code class="highlighter-rouge">equery uses x11-misc/polybar</code>, and see which flags are already enabled for installation and/or also updating and which ones you would like to include in your <code class="highlighter-rouge">package.use/zz-autounmask</code>.</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>There are several options for the <code class="highlighter-rouge">equery</code> command (which packages depend on a flag; which packages use a certain flag; …), run <code class="highlighter-rouge">equery --help</code> for more details and test each one to better understand each option.</p>
+
+<hr />
+
+<h1 id="8-pay-attention-to-licenses">8. Pay attention to licenses!</h1>
+<p>Also use the variable <strong>ACCEPT_LICENSE=”*“</strong> in your <code class="highlighter-rouge">make.conf</code>, in which case it accepts all types of licenses and avoids problems during application installation.</p>
+
+<hr />
+
+<h1 id="9-language-packs">9. Language packs</h1>
+<p>Also set the language of your system directly in your <code class="highlighter-rouge">make.conf</code> using the <strong>L10N</strong> variable, example: <strong>L10N=”pt-BR”</strong> in this case if you install software with the language in <strong>Brazilian portuguese</strong>.</p>
+
+<p>To find out which code/name to use for your country <a href="https://en.wikipedia.org/wiki/Language_localisation">see here</a>, if your system is <strong>English United States</strong> this information is not necessary and do not forget to update with the <code class="highlighter-rouge">--changed-use</code> option, eg <code class="highlighter-rouge">emerge --update --changed-use @world</code>. Do not use the <strong>LINGUAS</strong> variable it <a href="https://www.gentoo.org/support/news-items/2016-06-23-l10n-use_expand.html">has been discontinued</a>, <a href="https://wiki.gentoo.org/wiki/Localization/Guide">see</a> as well.</p>
+
+<hr />
+
+<h1 id="10-get-faster">10. Get faster!</h1>
+<p>Make package downloads faster by defining a <code class="highlighter-rouge">mirror</code> for it using the <strong>GENTOO_MIRRORS</strong> variable in your <code class="highlighter-rouge">make.conf</code>, example for the UFPR Brazil mirror: <code class="highlighter-rouge">GENTOO_MIRRORS="https://gentoo.c3sl.ufpr.br/ http://gentoo.c3sl.ufpr.br/ rsync://gentoo.c3sl.ufpr.br/gentoo/"</code>, see the list of mirros <a href="https://www. gentoo.org/downloads/mirrors/">here</a>.</p>
+
+<p>If you want more ease to insert, install/use the command <a href="https://wiki.gentoo.org/wiki/Mirrorselect">mirrorselect</a>.</p>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<p>I hope this first part of this series is useful, if you are interested in knowing how my <code class="highlighter-rouge">make.conf</code> is doing, here it is:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># These settings were set by the catalyst build script that automatically</span>
+<span class="c"># built this stage.</span>
+<span class="c"># Please consult /usr/share/portage/config/make.conf.example for a more</span>
+<span class="c"># detailed example.</span>
+<span class="nv">COMMON_FLAGS</span><span class="o">=</span><span class="s2">"-O2 -pipe"</span>
+<span class="nv">CFLAGS</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">COMMON_FLAGS</span><span class="k">}</span><span class="s2">"</span>
+<span class="nv">CXXFLAGS</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">COMMON_FLAGS</span><span class="k">}</span><span class="s2">"</span>
+<span class="nv">FCFLAGS</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">COMMON_FLAGS</span><span class="k">}</span><span class="s2">"</span>
+<span class="nv">FFLAGS</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">COMMON_FLAGS</span><span class="k">}</span><span class="s2">"</span>
+
+<span class="c"># NOTE: This stage was built with the bindist Use flag enabled</span>
+<span class="nv">PORTDIR</span><span class="o">=</span><span class="s2">"/var/db/repos/gentoo"</span>
+<span class="nv">DISTDIR</span><span class="o">=</span><span class="s2">"/var/cache/distfiles"</span>
+<span class="nv">PKGDIR</span><span class="o">=</span><span class="s2">"/var/cache/binpkgs"</span>
+
+<span class="c"># This sets the language of build output to English.</span>
+<span class="c"># Please keep this setting intact when reporting bugs.</span>
+<span class="nv">LC_MESSAGES</span><span class="o">=</span>C
+<span class="nv">USE</span><span class="o">=</span><span class="s2">"-systemd"</span>
+<span class="nv">VIDEO_CARDS</span><span class="o">=</span><span class="s2">"intel i965 virtualbox"</span>
+<span class="nv">GRUB_PLATFORMS</span><span class="o">=</span><span class="s2">"efi-64"</span>
+<span class="nv">L10N</span><span class="o">=</span><span class="s2">"pt-BR"</span>
+<span class="nv">ACCEPT_LICENSE</span><span class="o">=</span><span class="s2">"*"</span>
+<span class="nv">ACCEPT_KEYWORDS</span><span class="o">=</span><span class="s2">"~amd64"</span>
+<span class="nv">EMERGE_DEFAULT_OPTS</span><span class="o">=</span><span class="s2">"--ask --jobs 2"</span>
+<span class="nv">GENTOO_MIRRORS</span><span class="o">=</span><span class="s2">"https://gentoo.c3sl.ufpr.br/ http://gentoo.c3sl.ufpr.br/ rsync://gentoo.c3sl.ufpr.br/gentoo/"</span>
+<span class="nb">source</span> /var/lib/layman/make.conf</code></pre></figure>
+
+<h1 id="see-too">See too:</h1>
+<ul>
+  <li><a href="https://en.terminalroot.com.br/how-to-create-an-ebuild-on-gentoo/">How to Create an ebuild on Gentoo</a></li>
+  <li><a href="https://en.terminalroot.com.br/how-to-install-rofi-in-gentoo-and-create-shortcut-for-it-in-bspwm/">How to install rofi on Gentoo and create shortcut for it on bspwm</a></li>
+  <li><a href="https://en.terminalroot.com.br/installing-lightworks-on-gentoo/">Installing Lightworks on Gentoo</a></li>
+  <li><a href="https://en.terminalroot.com.br/how-to-install-bspwm-on-gentoo/">How to install bspwm on Gentoo</a></li>
+  <li><a href="https://en.terminalroot.com.br/how-to-enable-webcam-drive-and-install-cheese-on-gentoo/">How to Enable Webcam Drive and Install Cheese on Gentoo</a></li>
+  <li><a href="https://en.terminalroot.com.br/installing-and-configuring-sudo-on-gentoo/">Installing and Configuring sudo on Gentoo</a></li>
+  <li><a href="https://en.terminalroot.com.br/configuring-mirrors-in-gentoo/">Configuring Mirrors on Gentoo</a></li>
+  <li><a href="https://en.terminalroot.com.br/how-to-install-programs-via-layman-in-gentoo/">How to Install Programs via Layman on Gentoo</a></li>
+  <li><a href="https://en.terminalroot.com.br/how-to-install-vivaldi-browser-in-gentoo/">How to Install Vivaldi Browser on Gentoo</a></li>
+  <li><a href="https://en.terminalroot.com.br/gentoo-cant-connect-to-local-mysql-server-through-socket-solved/">Gentoo - Can’t connect to local MySQL server through socket</a></li>
+  <li><a href="https://en.terminalroot.com.br/how-to-troubleshoot-audio-or-sound-on-gentoo/">How to Troubleshoot Audio or Sound on Gentoo</a></li>
+</ul>
+:ET

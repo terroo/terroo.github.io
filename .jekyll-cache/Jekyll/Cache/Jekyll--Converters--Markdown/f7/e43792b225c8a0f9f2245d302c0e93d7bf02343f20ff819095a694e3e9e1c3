@@ -1,0 +1,156 @@
+I"<<p><img src="/assets/img/docker/docker-script.jpg" alt="Meet a Docker written with Shell Script" /></p>
+
+<p><strong>Bocker</strong> is a Docker implemented with only 100 lines of Bash, or around that.</p>
+
+<h1 id="prerequisites">Prerequisites</h1>
+
+<p>The necessary packages for you to be able to run Bocker (the dependencies) are:</p>
+
+<ul>
+  <li>btrfs-progs</li>
+  <li>curl</li>
+  <li>iproute2</li>
+  <li>iptables</li>
+  <li>libcgroup-tools</li>
+  <li>util-linux&gt; = 2.25.2</li>
+  <li>coreutils&gt; = 7.5</li>
+</ul>
+
+<p>Since most distributions do not provide a new enough version of util-linux, you will probably need to take the sources from <a href="https://www.kernel.org/pub/linux/utils/util-linux/v2.25/">here</a> and compile them yourself.</p>
+
+<p>In addition, your system will need to be configured with the following:</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>A btrfs file system mounted on <code class="highlighter-rouge">/var/bocker</code></p>
+<ul>
+  <li>A bridge mode network named <code class="highlighter-rouge">bridge0</code> and an IP of <code class="highlighter-rouge">10.0.0.1/24</code></li>
+  <li>IP forwarding enabled in <code class="highlighter-rouge">/proc/sys/net/ipv4/ip_forward</code></li>
+  <li>A firewall routing <code class="highlighter-rouge">bridge0</code> traffic to a physical interface.</li>
+</ul>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>For ease of use, a Vagrantfile is included, which will create the necessary environment.</p>
+
+<p>Even if you meet the above prerequisites, you can probably still run Bocker on a virtual machine. Bocker runs as <code class="highlighter-rouge">root</code> and, among other things, needs to make changes to its network interfaces, routing table and firewall rules. According to the developer, it is guaranteed that this will not destroy your system.</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="example-of-use">Example of use</h1>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>bocker pull centos 7
+<span class="c">######################################################################## 100.0%</span>
+<span class="c">######################################################################## 100.0%</span>
+<span class="c">######################################################################## 100.0%</span>
+Created: img_42150
+
+<span class="nv">$ </span>bocker images
+IMAGE_ID        SOURCE
+img_42150       centos:7
+
+<span class="nv">$ </span>bocker run img_42150 <span class="nb">cat</span> /etc/centos-release
+CentOS Linux release 7.1.1503 <span class="o">(</span>Core<span class="o">)</span>
+
+<span class="nv">$ </span>bocker ps
+CONTAINER_ID       COMMAND
+ps_42045           <span class="nb">cat</span> /etc/centos-release
+
+<span class="nv">$ </span>bocker logs ps_42045
+CentOS Linux release 7.1.1503 <span class="o">(</span>Core<span class="o">)</span>
+
+<span class="nv">$ </span>bocker <span class="nb">rm </span>ps_42045
+Removed: ps_42045
+
+<span class="nv">$ </span>bocker run img_42150 which wget
+which: no wget <span class="k">in</span> <span class="o">(</span>/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin<span class="o">)</span>
+
+<span class="nv">$ </span>bocker run img_42150 yum <span class="nb">install</span> <span class="nt">-y</span> wget
+Installing : wget-1.14-10.el7_0.1.x86_64                                  1/1
+Verifying  : wget-1.14-10.el7_0.1.x86_64                                  1/1
+Installed  : wget.x86_64 0:1.14-10.el7_0.1
+Complete!
+
+<span class="nv">$ </span>bocker ps
+CONTAINER_ID       COMMAND
+ps_42018           yum <span class="nb">install</span> <span class="nt">-y</span> wget
+ps_42182           which wget
+
+<span class="nv">$ </span>bocker commit ps_42018 img_42150
+Removed: img_42150
+Created: img_42150
+
+<span class="nv">$ </span>bocker run img_42150 which wget
+/usr/bin/wget
+
+<span class="nv">$ </span>bocker run img_42150 <span class="nb">cat</span> /proc/1/cgroup
+...
+4:memory:/ps_42152
+3:cpuacct,cpu:/ps_42152
+
+<span class="nv">$ </span><span class="nb">cat</span> /sys/fs/cgroup/cpu/ps_42152/cpu.shares
+512
+
+<span class="nv">$ </span><span class="nb">cat</span> /sys/fs/cgroup/memory/ps_42152/memory.limit_in_bytes
+512000000
+
+<span class="nv">$ BOCKER_CPU_SHARE</span><span class="o">=</span>1024 <span class="se">\</span>
+	<span class="nv">BOCKER_MEM_LIMIT</span><span class="o">=</span>1024 <span class="se">\</span>
+	bocker run img_42150 <span class="nb">cat</span> /proc/1/cgroup
+...
+4:memory:/ps_42188
+3:cpuacct,cpu:/ps_42188
+
+<span class="nv">$ </span><span class="nb">cat</span> /sys/fs/cgroup/cpu/ps_42188/cpu.shares
+1024
+
+<span class="nv">$ </span><span class="nb">cat</span> /sys/fs/cgroup/memory/ps_42188/memory.limit_in_bytes
+1024000000</code></pre></figure>
+
+<h1 id="functionalities">Functionalities</h1>
+<h2 id="currently-implemented">Currently implemented</h2>
+<ul>
+  <li>docker build †</li>
+  <li>docker pull</li>
+  <li>docker images</li>
+  <li>ps docker</li>
+  <li>docker run</li>
+  <li>docker exec</li>
+  <li>docker logs</li>
+  <li>docker commit</li>
+  <li>rm docker/rmi docker</li>
+  <li>Networking</li>
+  <li>Support/CGroups Quota</li>
+</ul>
+
+<h2 id="not-implemented">Not implemented</h2>
+<ul>
+  <li>Data Volume Containers</li>
+  <li>Date Volumes</li>
+  <li>Port Forwarding</li>
+</ul>
+
+<h1 id="license">License</h1>
+
+<p>The Bocker license is GPL-3.0 License and the official project page is on GitHub:
+<a href="https://github.com/p8952/bocker">https://github.com/p8952/bocker</a></p>
+
+:ET

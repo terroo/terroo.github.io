@@ -1,0 +1,139 @@
+I"�)<p><img src="/assets/img/vim/vim-tips.jpg" alt="8 Interesting Tips for Your Vim" /></p>
+
+<h1 id="1-create-a-new-file-or-directory-using-nerdtree">1. Create a new file or directory using <a href="https://github.com/preservim/nerdtree">NERDTree</a></h1>
+<p>A lot of people don’t know, but it is possible to create files and directories directly through <a href="https://github.com/preservim/nerdtree">NERDTree</a>.</p>
+
+<p>With NERDTree open, position the cursor on the directory you want to create and press <code class="highlighter-rouge">m</code>, then press a and type the name of the file/directory, if you put a slash <code class="highlighter-rouge">/</code> at the end it will create a directory, if a file will not be created!</p>
+
+<p><img src="/assets/img/vim/nerdtree-file-dir.jpg" alt="NERDTree" /></p>
+
+<p>To cancel press <strong>ESC</strong>, to update NERDTree after creation press <code class="highlighter-rouge">Shift + r</code> and for other procedures read the menu as in the image above! 😃, cool, right ?!</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h1 id="2-surround-closing-bracket">2. <a href="https://github.com/tpope/vim-surround">SURROUND</a> closing bracket</h1>
+<p>I use <a href="https://github.com/tpope/vim-surround">Vim.surround</a> a lot to generate links in MarkDown and usually the word is already typed and that brought me some more work.</p>
+
+<p>When you select a word, key <code class="highlighter-rouge">S</code> and then key <code class="highlighter-rouge">[</code> it produces this: <code class="highlighter-rouge">[ word ]</code>, that is, it creates a space between the brackets and the word, to avoid this, instead of using the opening bracket, use the closing bracket <code class="highlighter-rouge">]</code> and it will produce: [word] (without spaces), to go to the end of the word just type <code class="highlighter-rouge">W</code> in command mode 🍺.</p>
+
+<hr />
+
+<h1 id="3-list-autocomplete-with-bulletsvim">3. List autocomplete with <a href="https://github.com/dkarter/bullets.vim">Bullets.vim</a></h1>
+<p>Problems creating dynamic lists in Vim ?! No more, use Bullets.vim and let it autocomplete your lists for you:</p>
+
+<p><img src="/assets/img/vim/bullets.gif" alt="Bullets.vim" /></p>
+
+<hr />
+
+<h1 id="4-set-mouseanicvhr">4. Set mouse={a,n,i,c,v,h,r}</h1>
+<p>Do you like the ease of the <code class="highlighter-rouge">mouse=a</code> set, but also hate it 😡 when you select it in normal mode ??? Having to keep running the controller all the time is boring!</p>
+
+<p>Use this function in your <code class="highlighter-rouge">~/.vimrc</code> or in your <code class="highlighter-rouge">~/.config/nvim/init.vim</code> and change the mode only by pressing <code class="highlighter-rouge">F4</code></p>
+
+<figure class="highlight"><pre><code class="language-viml" data-lang="viml"><span class="k">function</span><span class="p">!</span> StatusMouse<span class="p">()</span>
+        <span class="k">if</span> &amp;<span class="nb">mouse</span> <span class="p">==</span> <span class="s1">'a'</span> 
+         <span class="k">set</span> <span class="nb">mouse</span><span class="p">=</span><span class="k">i</span>
+        <span class="k">else</span>
+         <span class="k">set</span> <span class="nb">mouse</span><span class="p">=</span><span class="k">a</span>
+        <span class="k">endif</span>
+<span class="k">endfunction</span>
+nnoremap <span class="p">&lt;</span><span class="k">silent</span><span class="p">&gt;</span> <span class="p">&lt;</span>F4<span class="p">&gt;</span> <span class="p">&lt;</span>ESC<span class="p">&gt;:</span><span class="k">call</span> StatusMouse<span class="p">()&lt;</span>CR<span class="p">&gt;</span></code></pre></figure>
+
+<p>Simple and practical! 😃</p>
+
+<hr />
+
+<h1 id="5-tab-buffer-no-nerdtree">5. TAB BUFFER no NERDTree</h1>
+<p>Let’s go again with another tip for NERDTree. Upset about the way NERDTree opens the file when you click directly on it? Force it to load the buffered file with this code:</p>
+
+<figure class="highlight"><pre><code class="language-viml" data-lang="viml">nnoremap <span class="p">&lt;</span>C<span class="p">-</span><span class="k">q</span><span class="p">&gt;</span> <span class="p">:</span><span class="k">bp</span><span class="p">&lt;</span><span class="k">cr</span><span class="p">&gt;:</span><span class="k">bd</span> #<span class="p">&lt;</span><span class="k">cr</span><span class="p">&gt;</span></code></pre></figure>
+
+<p>For more information see the NERDTree documentation: <code class="highlighter-rouge">:h NERDTree</code></p>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h1 id="6-simple-and-useful-emojis">6. Simple and useful emojis</h1>
+<p>There are several options for automatically inserting emoji into Vim, but many of them also stress the amount of emojis.</p>
+
+<p>So, to get around this problem I created <a href="https://github.com/terroo/vim-simple-emoji">Vim Simple Emoji</a>. To install it use your favorite plugin manager, example:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">Plugin <span class="s1">'terroo/vim-simple-emoji'</span></code></pre></figure>
+
+<p>And then run the command: <code class="highlighter-rouge">:PluginInstall</code>.</p>
+
+<p>And to use, insert the emoji name between two points and press the [space] button and the emoji will be displayed at the cursor position. Example:</p>
+
+<figure class="highlight"><pre><code class="language-viml" data-lang="viml"><span class="p">:</span><span class="k">smile</span><span class="p">:&lt;</span>space<span class="p">&gt;</span></code></pre></figure>
+
+<p>This will result in: 😃</p>
+
+<p>Want to know the name of all the available emojis? Run: <code class="highlighter-rouge">:ShowEmoji</code>. Some names have been modified to make them more peculiar, example: <code class="highlighter-rouge">:linux</code> : will display the penguin 🐧</p>
+
+<p><img src="/assets/img/vim/vim-simple-emoji.jpg" alt=":ShowEmoji" /></p>
+
+<hr />
+
+<h1 id="7-define-the-colors-of-your-vim-your-way">7. Define the colors of your Vim your way</h1>
+<p>Want some cool colors for the background and front for your Vim? Define yourself! For the back alter the hex of the <code class="highlighter-rouge">guibg</code> value and for the front <code class="highlighter-rouge">guifg</code>, example:</p>
+
+<figure class="highlight"><pre><code class="language-viml" data-lang="viml"><span class="nb">highlight</span> Normal guifg<span class="p">=</span><span class="mh">#e0e0e0</span> guibg<span class="p">=</span><span class="mh">#353945</span> <span class="k">gui</span><span class="p">=</span><span class="nb">NONE</span> ctermfg<span class="p">=</span><span class="m">250</span> ctermbg<span class="p">=</span><span class="m">235</span> cterm<span class="p">=</span><span class="nb">NONE</span></code></pre></figure>
+
+<p>If you want a dark or light background, use also: <code class="highlighter-rouge">set bg=dark</code> or <code class="highlighter-rouge">set bg=light</code></p>
+
+<p>Do you also want to highlight the current line? Easy, use: <code class="highlighter-rouge">set cursorline</code>. 😎</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="8-your-coolest-vim-airline">8. Your coolest vim-airline!</h1>
+<p>And to finish today’s tips, nothing like inserting a cool <a href="https://pt.wikipedia.org/wiki/Unicode">unicode</a> in your <a href="https://github.com/vim-airline/vim-airline">vim-airline</a>, add the symbol: ◉  the section bar:</p>
+
+<figure class="highlight"><pre><code class="language-viml" data-lang="viml"><span class="k">let</span> <span class="nv">g:airline_section_z</span> <span class="p">=</span> <span class="s1">'◉ ␤ % %l/%c'</span></code></pre></figure>
+
+<p><img src="/assets/img/vim/bar-vim-airline.png" alt="Vim airline" /></p>
+
+<hr />
+
+<p>These tips were created based on the questions that make me like: How did you do that in your Vim? . If you have a cool question, comment!</p>
+
+<p>There are some videos that I created about Vim. However, they are in Brazilian Portuguese. But if you are interested in watching, follow the videos:</p>
+
+<h1 id="implementing-and-using-vim-quick-ui"><a href="https://www.youtube.com/watch?v=LMKiTPMV4U4&amp;list=PLUJBQEDDLNcnl-1CebtDi6tlt9TtsrkgP&amp;index=7">Implementing and Using Vim Quick UI</a></h1>
+<h1 id="the-7-best-plugins-for-your-vim"><a href="https://www.youtube.com/watch?v=PmKJT6SlN-Q&amp;list=PLUJBQEDDLNcnl-1CebtDi6tlt9TtsrkgP&amp;index=5">The 7 Best Plugins for your Vim</a></h1>
+<h1 id="10-tips-for-you-to-use-vim-as-a-ninja"><a href="https://www.youtube.com/watch?v=nFWQJiLvjnk&amp;list=PLUJBQEDDLNcnl-1CebtDi6tlt9TtsrkgP&amp;index=3">10 TIPS for You to Use VIM as a NINJA</a></h1>
+<h1 id="10-interesting-lines-for-your-vimrc---vim"><a href="https://www.youtube.com/watch?v=XXGk3n1uzPg&amp;list=PLUJBQEDDLNcnl-1CebtDi6tlt9TtsrkgP&amp;index=4">10 Interesting Lines for your .vimrc - VIM</a></h1>
+<h1 id="how-to-make-your-vim-so-spacevim-installation-and-configuration"><a href="https://youtu.be/nfPubmjO5xw?list=PLUJBQEDDLNcnl-1CebtDi6tlt9TtsrkgP">How to Make Your VIM So! Spacevim: Installation and Configuration</a></h1>
+
+<iframe width="1100" height="490" src="https://www.youtube.com/embed/nfPubmjO5xw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+:ET

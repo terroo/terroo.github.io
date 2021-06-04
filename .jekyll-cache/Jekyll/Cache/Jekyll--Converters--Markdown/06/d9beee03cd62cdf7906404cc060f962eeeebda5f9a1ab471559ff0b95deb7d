@@ -1,0 +1,67 @@
+I"R<p><img src="/assets/img/apps/jami.jpg" alt="Discover Free Software that is the Best Alternative to ZOOM" /></p>
+
+<p>Everyone knows that <a href="https://is.gd/KdxXkD">ZOOM</a> has been reported a lot lately for having serious security flaws and several people have avoided it and companies like Google, for example, have banned the use of it.</p>
+
+<p>Some people have never heard of ZOOM, and others don’t even know what it’s for. But he was curious to know what alternatives to this software.</p>
+
+<p>And today we are going to know the best alternative to ZOOM, which is not only <a href="https://opensource.org/">Open Source</a>, but also <a href="https://www.gnu.org/philosophy/free-sw.pt-br.html">Free Software</a>, that is, it is licensed so that there is no type of data collection or malware in the code or in its binary.</p>
+
+<p>I’m referring to <a href="https://jami.net/">Jami</a>.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="concepts-about-jami">Concepts about Jami</h1>
+
+<p>Jami (formerly GNU Ring, SFLphone) is a free and FOSS alternative to ZOOM, Skype and more. Jami gives you complete control over your communications and an unparalleled level of privacy.</p>
+
+<p>SIP-compliant softphone and SIP-based instant messaging for Linux, Microsoft Windows, OS X and Android.
+Communicate in a variety of ways</p>
+
+<ul>
+  <li>A simple tool to connect, communicate and share.</li>
+  <li>Easily join calls to create multi-party conferences.</li>
+  <li>Supports a variety of video input options, including multiple cameras and image and video files, and the selection of audio inputs and outputs; all of this is supported by several high quality audio and video codecs.</li>
+  <li>Send text messages during or outside calls (as long as your partner is connected).</li>
+  <li>A basic component for your IoT project: reuse Jami’s universal communication technology with your portable library on the system of your choice.</li>
+</ul>
+
+<p>Jami is developed and maintained by the Canadian company <a href="https://savoirfairelinux.com/">Savoir-faire Linux</a>, and with the help of a global community of users and employees.</p>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="what-protocol-does-jami-use-for-end-to-end-encryption">What protocol does Jami use for end-to-end encryption?</h1>
+
+<p>Jami uses TLS 1.3 with a perfect forwarding secrecy requirement for negotiated ciphers for calls and file transfers. The messages are encrypted with an RSA key.</p>
+
+<h1 id="and-how-to-install-jami">And how to install Jami?</h1>
+
+<p>As already mentioned, the same is available for Linux, macOS and Windows, in addition to mobile device systems: iOS and Android, among other devices and platforms.</p>
+
+<p>On Linux, they made a point of making installation easier and making packages available for the most popular distributions. See the image below:</p>
+
+<p><img src="/assets/img/apps/jami-linux.png" alt="Jami Linux" /></p>
+
+<blockquote>
+  <p><a href="https://jami.net/download-jami-linux/">Download link</a></p>
+</blockquote>
+
+<p>If your distro isn’t on the list, don’t worry, find it on the <a href="https://jami.net/download-jami-linux/">list of contributions</a>: Arch Linux and more. Including Gentoo, the distro I use, there is a ready-made <a href="https://github.com/stefan-langenmaier/ring-overlay">overlay</a> that can be installed with Layman:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">layman <span class="nt">-f</span> <span class="nt">-a</span> ring-overlay</code></pre></figure>
+
+<p>Or adding directly to your <code class="highlighter-rouge">repos.conf</code>, see details on the <a href="https://github.com/stefan-langenmaier/ring-overlay">link</a>.</p>
+
+<h1 id="access-jami--httpsjaminet">Access Jami → <a href="https://jami.net/">https://jami.net/</a></h1>
+:ET

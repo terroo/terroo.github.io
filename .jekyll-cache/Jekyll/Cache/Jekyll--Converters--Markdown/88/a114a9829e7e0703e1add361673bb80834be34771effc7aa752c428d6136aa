@@ -1,0 +1,283 @@
+I"TH<h2 id="introduction">Introduction</h2>
+<p><strong><a href="https://gcc.gnu.org/">GCC</a></strong> is the most widely used and reliable compiler in the world. Several of the world’s most widely used software were (and are) compiled by him.</p>
+
+<p>However, developers are driven by novelty and somehow speculation. And many have heard of <strong><a href="https://llvm.org/">LLVM</a></strong> and most of the time have gotten good information. This way, many have been using it, but are still afraid about 3 essential requirements:</p>
+
+<ul>
+  <li><strong>Security</strong>;</li>
+  <li><strong>Speed ​​</strong>;</li>
+  <li>and <strong>Reliability</strong>.</li>
+</ul>
+
+<p>We’ll look at benchmarking information and testing in this article and come to a conclusion.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h2 id="compiling-with-gcc">Compiling with GCC:</h2>
+<h3 id="c-language">C language:</h3>
+<ul>
+  <li>Single file:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">gcc main.c <span class="nt">-o</span> binary</code></pre></figure>
+
+<ul>
+  <li>Multiple Files:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">gcc main.c other.c <span class="nt">-o</span> binary</code></pre></figure>
+
+<blockquote>
+  <p>You can exchange the <code class="highlighter-rouge">gcc</code> command for only<code class="highlighter-rouge"> cc</code> which is a symbolic link to it:</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">which cc
+<span class="c"># /usr/bin/cc</span>
+<span class="nb">ls</span> <span class="nt">-l</span> /usr/bin/cc
+<span class="c">## lrwxrwxrwx 1 root 42 Nov 23 19:41 /usr/bin/cc -&gt; /usr/x86_64-pc-linux-gnu/gcc-bin/9.2.0/gcc</span></code></pre></figure>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h3 id="c-language-1">C++ Language:</h3>
+<ul>
+  <li>Single file:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">g++ main.cpp <span class="nt">-o</span> binary</code></pre></figure>
+
+<ul>
+  <li>Multiple Files:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">g++ main.cpp other.cpp <span class="nt">-o</span> binary</code></pre></figure>
+
+<blockquote>
+  <p>You can exchange the <code class="highlighter-rouge">g++</code> command for only <code class="highlighter-rouge">c++</code> which is a symbolic link to it:</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">ls</span> <span class="nt">-l</span> <span class="si">$(</span>which c++<span class="si">)</span>
+lrwxrwxrwx 1 root 42 Nov 23 19:41/usr/bin/c++ -&gt; /usr/x86_64-pc-linux-gnu/gcc-bin/9.2.0/c++</code></pre></figure>
+
+<h2 id="compiling-with-llvm">Compiling with LLVM:</h2>
+<blockquote>
+  <p>Clang is a compiler front end for the C, C++, Objective-C, and Objective-C++ languages ​​that uses LLVM as the backend.</p>
+</blockquote>
+
+<h3 id="c-language-2">C language:</h3>
+<ul>
+  <li>Single file:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">clang main.c <span class="nt">-o</span> binary</code></pre></figure>
+
+<ul>
+  <li>Multiple Files:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">clang main.c other.c <span class="nt">-o</span> binary</code></pre></figure>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h3 id="c-language-3">C++ Language:</h3>
+<ul>
+  <li>Single file:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">clang++ main.cpp <span class="nt">-o</span> binary</code></pre></figure>
+
+<ul>
+  <li>Multiple Files:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">clang++ main.cpp other.cpp <span class="nt">-o</span> binary</code></pre></figure>
+
+<hr />
+
+<h2 id="gcc-concept">GCC Concept:</h2>
+<p>The GNU Compiler Collection (commonly called GCC) is a set of programming language compilers produced by the GNU project to build a free Unix-like operating system. It is part of the GNU and FSF operating system and is one of the essential tools for keeping software free as it allows you to compile source code into executable binaries for the most common computer platforms. It is distributed by the Free Software Foundation (FSF) under the terms of the GNU GPL, available for UNIX and Linux operating systems and certain derived operating systems such as Mac OS X.</p>
+
+<p>The GCC was written primarily in C.</p>
+
+<h2 id="llvm-concept">LLVM Concept:</h2>
+<p>LLVM (formerly Low Level Virtual Machine) is a compiler infrastructure designed to optimize the compilation, binding and execution times of programs written in various programming languages. Originally implemented for C and C++, its architecture allowed it to expand to other languages ​​later, including Objective-C, Fortran, Ada, Haskell, Java bytecode, Python, Ruby, ActionScript, GLSL, Julia, Kotlin, and more.</p>
+
+<p>LLVM was written in C++.</p>
+
+<hr />
+
+<h2 id="gcc-history">GCC History:</h2>
+<p>The GCC compiler was written by Richard Stallman in 1987 to serve as the compiler for the GNU Project. In 1997, a group of developers unhappy with the slow pace and closed nature of the official development of the GCC compiler, formed the EGCS project, which merged several experimental forks into a single GCC forked project. The development of EGCS, proving sufficiently more vital than the GCC, was finally “blessed” as the official version of the GCC in April 1999. The GCC project is now maintained by a diverse group of programmers from around the world and even to date it has been adapted to more types of processors and operating systems than any other compiler.</p>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="llvm-history">LLVM History:</h2>
+<p>The LLVM project began in 2000 at the University of Illinois at Urbana - Champaign under the direction of Vikram Adve and Chris Lattner. In 2005 Apple Inc. hired Lattner and formed a team to work on the LLVM system for various uses in development systems. from Apple.</p>
+
+<hr />
+
+<h2 id="languages-supported-by-gcc">Languages ​​Supported by GCC:</h2>
+<p>Ada (GCC for Ada or GNAT), C, C++ (GCC for C++ or G++), Fortran (GCC for Fortran or GFortran), Java (GCC for Java or GCJ), Objective-C, and Pascal.</p>
+
+<h2 id="languages-supported-by-llvm">Languages ​​Supported by LLVM:</h2>
+<p>Ada, C, C++, D, Delphi, Fortran, Haskell, Julia, Objective-C, Rust, and Swift using various front ends, some derived from GNU Compiler Collection (GCC) versions 4.0.1 and 4.2.</p>
+
+<hr />
+
+<h2 id="who-uses-gcc">Who uses GCC:</h2>
+<p><a href="https://www.nccs.nasa.gov/nccs-users/instructional/using-discover/compilation-software/compilers">NASA</a>, Intel, Massachusetts Institute of Technology (MIT), AMD, Linux, IBM, Dell , Red Hat, GNOME, KDE and <a href="https://gcc.gnu.org/wiki/CompileFarm#History_and_Sponsors">among others</a>. The number of Universities, Institutions, Companies they use is <a href="https://gcc.gnu.org/wiki/cauldron2016">very large</a> and there is no place that can bring them all together.</p>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="who-uses-llvm">Who uses LLVM:</h2>
+<p>Apple, Adobe, Ageia Technologies, Google, Intel, NVIDIA, Sony, University of California, Stanford, New York University, Ericsson, and <a href="https://llvm.org/Users.html">among many others</a>.</p>
+
+<h2 id="architectures-supported-by-gcc">Architectures Supported by GCC:</h2>
+<p>Alpha, ARM, AVR, Blackfin, Epiphany (GCC 4.8), H8 / 300, HC12, IA-32 (x86), IA-64 (Intel Itanium), MIPS, Motorola 68000, PA-RISC, PDP-11, PowerPC, R8C / M16C / M32C, SPARC, SPU, SuperH, System / 390 / zSeries, VAX, x86-64, 68HC11, A29K, CR16, C6x, D30V, DSP16xx, ETRAX CRIS, FR-30, FR-V, Intel i960, IP2000, M32R, MCORE, MIL-STD-1750A, MMIX, MN10200, MN10300, Motorola 88000, NS32K, IBM ROMP, RL78, Stormy16, V850, Xtensa, Cortus APS3, ARC, AVR32, C166, D10V, EISC, eSi -RISC, Hexagon, LatticeMico32, LatticeMico8, MeP, MicroBlaze, Motorola 6809, MSP430, NEC SX architecture, Nios II and Nios, OpenRISC, PDP-10, PIC24 / dsPIC, PIC32, Propeller, RISC-V, Saturn (HP48XGCC), System / 370, TIGCC (m68k variant), TriCore, Z8000 and ZPU.</p>
+
+<h2 id="architectures-supported-by-llvm">Architectures Supported by LLVM:</h2>
+<p>X86, X86-64, PowerPC, PowerPC-64, ARM, Thumb, SPARC, Alpha, CellSPU, MIPS, MSP430, SystemZ, WebAssembly, and XCore.</p>
+
+<hr />
+
+<h2 id="performance-tests-by-a-compiler-expert">Performance Tests by a Compiler Expert</h2>
+<p>These tests and analyzes were done by <a href="https://stackoverflow.com/users/1362568/mike-kinghan">Mike Kinghan</a> a Oxford Software Engineer.</p>
+
+<p>The tests were performed on different architectures and also on different amounts of processor cores. With versions <strong>GCC 4.7.2</strong> and <strong>Clang 3.2</strong>. It can be noted that Clang(LLVM) outperforms larger cores and GCC for smaller and/or hybrid amounts.</p>
+
+<blockquote>
+  <p>Numbers are represented in microseconds, eg <strong>0.000231 secs</strong>.</p>
+</blockquote>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Compiler</th>
+      <th>-O2</th>
+      <th>-O3</th>
+      <th>O2/O3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GCC-4.7.2</td>
+      <td>231</td>
+      <td>237</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>Clang-3.2</td>
+      <td>234</td>
+      <td>186</td>
+      <td>1.25</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Mike Kinghan’s Words</p>
+<blockquote>
+  <p>I compared test equipment performance between <strong>GCC 4.7.2</strong> and <strong>Clang 3.2</strong>, all the same except the preprocessors. In <strong>Clang 3.2</strong>, no preprocessor differentiation was needed anymore between the code ranges that GCC would compile and the Clang alternatives. I created in the same C++ library (GCC) in each case and performed all comparisons consecutively in the same terminal session.</p>
+
+  <p>The default optimization level for my version is <strong>-O2</strong>. I also successfully tested builds on <strong>- O3</strong>. I tested each setting three times in a row and averaged the three results with the following results. The number in a data cell is the average number of microseconds consumed by the <strong>coan</strong> executable to process each of the <strong>~70K</strong> input files (read, parse, and write diagnostics).</p>
+</blockquote>
+
+<hr />
+
+<h2 id="conclusion">Conclusion</h2>
+<p>I know you can’t get very far with this comparison. There are several things that are far from our understanding because it is too technical.</p>
+
+<p>But I tried to summarize everything I researched, documented to report here as simply as possible. I particularly use both (for my small programs) and find both excellent. I even compiled LLVM with GCC!</p>
+
+<p>I was thinking about changing the <code class="highlighter-rouge">make.conf</code> variables from my <a href="https://gentoo.org/">Gentoo</a> to [LLVM/Clang], but then I thought, why change something that is working? However, I think this initiative of a replacement for GCC is very cool, by the way, the more alternatives there are, the better for us.</p>
+
+<p>I hope you enjoyed this review. In short, the choices are up to you, which are most often made for reasons <em>extra software</em> 😂️ !!!</p>
+
+<p>Hugs!</p>
+
+<hr />
+
+<h2 id="references">References</h2>
+<ul>
+  <li><a href="http://gcc.gnu.org/wiki/CompileFarm">http://gcc.gnu.org/wiki/CompileFarm</a></li>
+  <li><a href="https://cfarm.tetaneutral.net/">https://cfarm.tetaneutral.net/</a></li>
+  <li><a href="https://en.m.wikipedia.org/wiki/GNU_Compiler_Collection">https://en.m.wikipedia.org/wiki/GNU_Compiler_Collection</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/LLVM">https://en.wikipedia.org/wiki/LLVM</a></li>
+  <li><a href="https://gcc.gnu.org/">https://gcc.gnu.org/</a></li>
+  <li><a href="https://gcc.gnu.org/cgi-bin/search.cgi?cmd=Search&amp;m=all&amp;np=7&amp;q=sponsors&amp;s=DRP">https://gcc.gnu.org/cgi-bin/search.cgi?cmd=Search&amp;m=all&amp;np=7&amp;q=sponsors&amp;s=DRP</a></li>
+  <li><a href="https://gcc.gnu.org/cgi-bin/search.cgi?cmd=Search&amp;m=all&amp;np=9&amp;q=who+uses&amp;s=DRP">https://gcc.gnu.org/cgi-bin/search.cgi?cmd=Search&amp;m=all&amp;np=9&amp;q=who+uses&amp;s=DRP</a></li>
+  <li><a href="https://gcc.gnu.org/cgi-bin/search.cgi?q=java&amp;cmd=Search&amp;m=all&amp;s=DRP">https://gcc.gnu.org/cgi-bin/search.cgi?q=java&amp;cmd=Search&amp;m=all&amp;s=DRP</a></li>
+  <li><a href="https://gcc.gnu.org/cgi-bin/search.cgi?q=sponsors&amp;cmd=Search&amp;m=all&amp;s=DRP">https://gcc.gnu.org/cgi-bin/search.cgi?q=sponsors&amp;cmd=Search&amp;m=all&amp;s=DRP</a></li>
+  <li><a href="https://gcc.gnu.org/cgi-bin/search.cgi?q=who+uses&amp;cmd=Search&amp;m=all&amp;s=DRP">https://gcc.gnu.org/cgi-bin/search.cgi?q=who+uses&amp;cmd=Search&amp;m=all&amp;s=DRP</a></li>
+  <li><a href="https://gcc.gnu.org/install/specific.html">https://gcc.gnu.org/install/specific.html</a></li>
+  <li><a href="https://gcc.gnu.org/ml/gcc/1998-01/msg01165.html">https://gcc.gnu.org/ml/gcc/1998-01/msg01165.html</a></li>
+  <li><a href="https://gcc.gnu.org/ml/gcc-bugs/1999-10n/msg00017.html">https://gcc.gnu.org/ml/gcc-bugs/1999-10n/msg00017.html</a></li>
+  <li><a href="https://gcc.gnu.org/wiki">https://gcc.gnu.org/wiki</a></li>
+  <li><a href="https://gcc.gnu.org/wiki/cauldron2016">https://gcc.gnu.org/wiki/cauldron2016</a></li>
+  <li><a href="https://gcc.gnu.org/wiki/CompileFarm">https://gcc.gnu.org/wiki/CompileFarm</a></li>
+  <li><a href="https://gcc.gnu.org/wiki/CompileFarm#History_and_Sponsors">https://gcc.gnu.org/wiki/CompileFarm#History_and_Sponsors</a></li>
+  <li><a href="https://gcc.gnu.org/wiki/People">https://gcc.gnu.org/wiki/People</a></li>
+  <li><a href="https://github.com/gcc-mirror/gcc">https://github.com/gcc-mirror/gcc</a></li>
+  <li><a href="https://llvm.org/Features.html">https://llvm.org/Features.html</a></li>
+  <li><a href="https://llvm.org/Users.html">https://llvm.org/Users.html</a></li>
+  <li><a href="https://pt.wikipedia.org/wiki/Clang">https://pt.wikipedia.org/wiki/Clang</a></li>
+  <li><a href="https://pt.wikipedia.org/wiki/GCJ">https://pt.wikipedia.org/wiki/GCJ</a></li>
+  <li><a href="https://pt.wikipedia.org/wiki/GNU_Compiler_Collection">https://pt.wikipedia.org/wiki/GNU_Compiler_Collection</a></li>
+  <li><a href="https://pt.wikipedia.org/wiki/Low_Level_Virtual_Machine">https://pt.wikipedia.org/wiki/Low_Level_Virtual_Machine</a></li>
+  <li><a href="https://stackoverflow.com/questions/3187414/clang-vs-gcc-which-produces-better-binaries">https://stackoverflow.com/questions/3187414/clang-vs-gcc-which-produces-better-binaries</a></li>
+  <li><a href="https://stackoverflow.com/users/1362568/mike-kinghan">https://stackoverflow.com/users/1362568/mike-kinghan</a></li>
+  <li><a href="https://wiki.gentoo.org/wiki/Talk:GCC_optimization">https://wiki.gentoo.org/wiki/Talk:GCC_optimization</a></li>
+  <li><a href="https://www.fsf.org/news/fsf-announces-new-fiscal-sponsorship-for-seagl-conference">https://www.fsf.org/news/fsf-announces-new-fiscal-sponsorship-for-seagl-conference</a></li>
+  <li><a href="https://www.fsf.org/patrons">https://www.fsf.org/patrons</a></li>
+  <li><a href="https://www.fsf.org/patrons/fy2017">https://www.fsf.org/patrons/fy2017</a></li>
+  <li><a href="https://www.fsf.org/patrons/fy2018">https://www.fsf.org/patrons/fy2018</a></li>
+  <li><a href="https://www.fsf.org/patrons/fy2019">https://www.fsf.org/patrons/fy2019</a></li>
+  <li><a href="https://www.gccforensics.com/sponsors">https://www.gccforensics.com/sponsors</a></li>
+  <li><a href="https://www.gnuhealthcon.org/2019-liege/sponsors.html">https://www.gnuhealthcon.org/2019-liege/sponsors.html</a></li>
+  <li><a href="https://www.gnu.org/thankgnus/">https://www.gnu.org/thankgnus/</a></li>
+  <li><a href="https://www.gnu.org/thankgnus/2019supporters.html">https://www.gnu.org/thankgnus/2019supporters.html</a></li>
+  <li><a href="https://www.gnu.org/thankgnus/2019supporters.html#TOCother">https://www.gnu.org/thankgnus/2019supporters.html#TOCother</a></li>
+  <li><a href="https://www.linuxfoundation.org/blog/2018/10/gcc-a-world-class-compiler-optimizing-linux-and-more/">https://www.linuxfoundation.org/blog/2018/10/gcc-a-world-class-compiler-optimizing-linux-and-more/</a></li>
+  <li><a href="https://www.nccs.nasa.gov/nccs-users/instructional/using-discover/compilation-software/compilers">https://www.nccs.nasa.gov/nccs-users/instructional/using-discover/compilation-software/compilers</a></li>
+</ul>
+:ET

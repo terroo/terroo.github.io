@@ -1,0 +1,831 @@
+I"0�<p><img src="/assets/img/dev/programming-languages.jpg" alt="Hello World in 25 Programming Languages: Proposal, Docs and Links." /></p>
+
+<p>I have selected the most used languages ​​in the market with data that can make you study or know better to make your choice, whether for the job market or for building personal or business projects:</p>
+
+<ul>
+  <li>A brief description and/or curiosity of each;</li>
+  <li>the extent to which each one uses;</li>
+  <li><strong>Hello World!</strong> ;</li>
+  <li>how to run, compile and/or interpret;</li>
+  <li>dependencies;</li>
+  <li>link with example;</li>
+</ul>
+
+<p>Follow:</p>
+
+<hr />
+
+<h2><img src="/assets/img/dev/langs/assembly.png" alt="Assembly" /></h2>
+
+<h3 id="01-assembly">01. Assembly</h3>
+
+<p><a href="https://curlie.org/Computers/Programming/Languages/Assembly/">https://curlie.org/Computers/Programming/Languages/Assembly/</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.asm</code></p>
+</blockquote>
+
+<p>Assembly or assembly language is a human readable notation for machine code that a specific computer architecture uses, used to program code understood by computational devices such as microprocessors and microcontrollers.</p>
+
+<figure class="highlight"><pre><code class="language-asm" data-lang="asm">section     .text
+global      _start
+
+_start:
+
+    mov     edx,len
+    mov     ecx,msg
+    mov     ebx,1
+    mov     eax,4
+    int     0x80
+
+    mov     eax,1
+    int     0x80
+
+section     .data
+
+msg     db  'Hello, World!',0xa 
+len     equ $ - msg</code></pre></figure>
+
+<blockquote>
+  <p><em>Must have compiler and linker: <a href="https://www.gnu.org/software/binutils/">ld</a> .</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">nasm -f elf64 -o hello-world.o hello-world.asm &amp;&amp; ld hello-world.o -o hello-world &amp;&amp; ./hello-world</code><br />
+Example: <a href="http://asm.sourceforge.net/intro/hello.html">http://asm.sourceforge.net/intro/hello.html</a></p>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h2 id="-1"><img src="/assets/img/dev/langs/c.png" alt="C" /></h2>
+
+<h3 id="02-c">02. C</h3>
+
+<p><a href="https://www.iso.org/standard/74528.html">https://www.iso.org/standard/74528.html</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.c</code></p>
+</blockquote>
+
+<p>C is a general purpose, structured, imperative, procedural compiled programming language, standardized by the International Organization for Standardization (ISO), created in 1972 by Dennis Ritchie at AT&amp;T Bell Labs for Unix operating system development (originally written in Assembly) .</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cp">#include &lt;stdio.h&gt;
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+ <span class="n">printf</span><span class="p">(</span><span class="s">"Hello, World!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+ <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<blockquote>
+  <p><em>You must have a compiler installed, eg <a href="https://gcc.gnu.org/">gcc</a> .</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">gcc hello-world.c -o hello-world.o &amp;&amp; ./hello-world.o</code></p>
+
+<blockquote>
+  <p>Example: <a href="https://terminalroot.com.br/2011/10/ola-mundo.html">https://terminalroot.com.br/2011/10/ola-mundo.html</a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="-2"><img src="/assets/img/dev/langs/cpp.png" alt="C++" /></h2>
+
+<h3 id="03-c">03. C++</h3>
+
+<p><a href="https://isocpp.org/">https://isocpp.org/</a></p>
+
+<blockquote>
+  <p>File: I <code class="highlighter-rouge">vim hello-world.cpp</code> , I <code class="highlighter-rouge">vim hello-world.c++</code> or I <code class="highlighter-rouge">vim hello-world.cc</code></p>
+</blockquote>
+
+<p>C++ (reads see plus plus) is a compiled multi-paradigm programming language (its support includes imperative, object oriented and generic language) and commonly used.</p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;iostream&gt;
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello, World!"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<blockquote>
+  <p><em>You must have a compiler installed, eg <a href="https://gcc.gnu.org/">gcc</a> .</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">g++ hello-world.cpp -o hello-world.o &amp;&amp; ./hello-world.o</code></p>
+
+<blockquote>
+  <p>Example: <a href="https://en.cppreference.com/book/intro/hello_world">https://en.cppreference.com/book/intro/hello_world</a></p>
+</blockquote>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h2 id="-3"><img src="/assets/img/dev/langs/go.png" alt="Go" /></h2>
+
+<h3 id="04-go">04. Go</h3>
+
+<p><a href="https://golang.org/">https://golang.org/</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.go</code></p>
+</blockquote>
+
+<p>Go is a programming language created by Google and released in open source in November 2009. It is a compiled language.</p>
+
+<figure class="highlight"><pre><code class="language-go" data-lang="go"><span class="k">package</span> <span class="n">main</span>
+
+<span class="k">import</span> <span class="s">"fmt"</span>
+
+<span class="k">func</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">fmt</span><span class="o">.</span><span class="n">Printf</span><span class="p">(</span><span class="s">"Hello, World!</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+<span class="p">}</span></code></pre></figure>
+
+<blockquote>
+  <p><em>You must have go installed.</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">go build hello-world.go &amp;&amp; ./hello-world</code></p>
+
+<blockquote>
+  <p>Example: <a href="https://tour.golang.org/welcome/1">https://tour.golang.org/welcome/1</a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="-4"><img src="/assets/img/dev/langs/bash.png" alt="Bash" /></h2>
+
+<h3 id="05-bash">05. Bash</h3>
+
+<p><a href="https://www.gnu.org/software/bash/">https://www.gnu.org/software/bash/</a> File: <code class="highlighter-rouge">vim hello-world.sh</code> or <code class="highlighter-rouge">vim hello-world.bash</code><br />
+Bash is a script language or command interpreter, one of several translators.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/bin/bash</span>
+<span class="nb">echo</span> <span class="s1">'Hello, World!'</span></code></pre></figure>
+
+<p>Run: <code class="highlighter-rouge">bash hello-world.sh</code> , <code class="highlighter-rouge">sh hello-world.sh</code> , <code class="highlighter-rouge">source hello-world.sh</code> , <code class="highlighter-rouge">chmod +x ./hello-world.sh &amp;&amp; ./hello-world.sh</code></p>
+
+<blockquote>
+  <p>Example: <a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-2.html">http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-2.html</a></p>
+</blockquote>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h2 id="-5"><img src="/assets/img/dev/langs/awk.png" alt="Awk" /></h2>
+
+<h3 id="06-awk">06. Awk</h3>
+
+<p><a href="https://www.gnu.org/software/gawk/">https://www.gnu.org/software/gawk/</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.awk</code></p>
+</blockquote>
+
+<p>The AWK programming language was created in 1977 by scientists Alfred Aho, Peter J. Weinberger and Brian Kernighan in the Bell Labs lab.</p>
+
+<figure class="highlight"><pre><code class="language-awk" data-lang="awk"><span class="c1">#!/usr/bin/env awk</span>
+<span class="kr">BEGIN</span> <span class="p">{</span><span class="k">print</span> <span class="s2">"Hello, World!"</span><span class="p">}</span></code></pre></figure>
+
+<blockquote>
+  <p><em>There are several variants of Awk: <a href="https://terminalroot.com.br/2014/12/tutorial-basico-de-awk.html">Learn more here</a> .</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">awk -f hello-world.awk</code></p>
+
+<blockquote>
+  <p>Example: <a href="https://www.gnu.org/software/gawk/manual/gawk.html">https://www.gnu.org/software/gawk/manual/gawk.html#BEGIN_002fEND</a></p>
+</blockquote>
+
+<hr />
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="-6"><img src="/assets/img/dev/langs/vim.png" alt="Vim" /></h2>
+
+<h3 id="07-vimscript">07. VimScript</h3>
+
+<p><a href="https://www.vim.org/">https://www.vim.org/</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.vim</code></p>
+</blockquote>
+
+<p>Vim’s scripting language, known as Vimscript, is a typical dynamic imperative language that offers most common language features.</p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span class="p">:</span>echo <span class="s2">"Hello, World!"</span></code></pre></figure>
+
+<blockquote>
+  <p><em>Must have <a href="https://www.vim.org/">vim</a> installed.</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">vim -u hello-world.vim +qall</code></p>
+
+<blockquote>
+  <p>Vim and VimScript Course: <a href="https://terminalroot.com.br/vim">https://terminalroot.com.br/vim</a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="-7"><img src="/assets/img/dev/langs/sql.png" alt="SQL" /></h2>
+
+<h3 id="08-sql">08. SQL</h3>
+
+<p><a href="https://sigmod.org/">https://sigmod.org/#standards</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.sql</code></p>
+</blockquote>
+
+<p>Structured Query Language, or Structured Query Language or SQL, is the standard declarative query language for relational database (relational database).</p>
+
+<figure class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="nv">"Hello, World!"</span></code></pre></figure>
+
+<blockquote>
+  <p><em>You must have MySQL for this example: <a href="https://www.mysql.com/">MySQL</a> .</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">mysql -u root -p &lt; hello-world.sql</code> or directly: <code class="highlighter-rouge">mysql -u root -p -e "SELECT 'Hello, World'"</code></p>
+
+<blockquote>
+  <p>Uses: <a href="https://terminalroot.com.br/2011/10/curso-certificacao-linux-lpi-102.html">https://terminalroot.com.br/2011/10/curso-certificacao-linux-lpi-102.html</a></p>
+</blockquote>
+
+<hr />
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="-8"><img src="/assets/img/dev/langs/lua.png" alt="Moon" /></h2>
+
+<h3 id="09-lua">09. Lua</h3>
+
+<p><a href="https://www.lua.org/">https://www.lua.org/</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.lua</code></p>
+</blockquote>
+
+<p>Lua is a small, reflective, lightweight multiparadigm scripting language designed to expand general applications by being an extensible language (which joins parts of a program made into more than one language), for prototyping, and for software embedding. complex, like games. It resembles Python, Ruby and others.</p>
+
+<figure class="highlight"><pre><code class="language-lua" data-lang="lua"><span class="cp">#!/usr/bin/env lua</span>
+<span class="nb">print</span> <span class="s2">"Hello, World!"</span></code></pre></figure>
+
+<blockquote>
+  <p><em>Must have Lua installed.</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">lua hello-world.lua</code> or <code class="highlighter-rouge">chmod +x hello-world.lua &amp;&amp; ./hello-world.lua</code></p>
+
+<blockquote>
+  <p>Example: <a href="https://terminalroot.com.br/2016/11/blog-linux-lua.html">https://terminalroot.com.br/2016/11/blog-linux-lua.html</a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="-9"><img src="/assets/img/dev/langs/perl.png" alt="Perl" /></h2>
+
+<h3 id="10-perl">10. Perl</h3>
+
+<p><a href="https://www.perl.org/">https://www.perl.org/</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.pl</code></p>
+</blockquote>
+
+<p>Perl is a family of two multiplatform programming languages, Perl 5 and Perl 6.</p>
+
+<figure class="highlight"><pre><code class="language-perl" data-lang="perl"><span class="c1">#!/usr/bin/env perl</span>
+<span class="k">print</span> <span class="p">"</span><span class="s2">Hello, World!</span><span class="se">\n</span><span class="p">";</span></code></pre></figure>
+
+<blockquote>
+  <p><em>Must have Perl installed.</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">perl hello-world.pl</code> or <code class="highlighter-rouge">chmod +x hello-world.pl &amp;&amp; ./hello-world.pl</code></p>
+
+<blockquote>
+  <p>Example: <a href="https://metacpan.org/pod/Perl::Tutorial::HelloWorld">https://metacpan.org/pod/Perl::Tutorial::HelloWorld</a></p>
+</blockquote>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h2 id="-10"><img src="/assets/img/dev/langs/php.png" alt="PHP" /></h2>
+
+<h3 id="11-php">11. PHP</h3>
+
+<p><a href="https://www.php.net/">https://www.php.net/</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.php</code></p>
+</blockquote>
+
+<p>PHP (a recursive acronym for “PHP: Hypertext Preprocessor”, originally Personal Home Page) is a free interpreted language, originally used only for the development of server-side applications that are capable of generating dynamic content on the World Wide Web.</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php">#!/usr/bin/env php
+<span class="cp">&lt;?=</span><span class="s2">"Hello, World!</span><span class="se">\n</span><span class="s2">"</span><span class="cp">?&gt;</span></code></pre></figure>
+
+<blockquote>
+  <p><em>You must have PHP installed.</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">php hello-world.php</code> or <code class="highlighter-rouge">chmod +x hello-world.php &amp;&amp; ./hello-world.php</code></p>
+
+<blockquote>
+  <p>Example: <a href="https://terminalroot.com.br/2011/12/como-criar-chat-com-sockets-em-php-no.html">https://terminalroot.com.br/2011/12/como-crea-chat-com-sockets-em-php-no.html</a></p>
+</blockquote>
+
+<hr />
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="-11"><img src="/assets/img/dev/langs/python.png" alt="Python" /></h2>
+
+<h3 id="12-python">12. Python</h3>
+
+<p><a href="https://www.python.org/">https://www.python.org/</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.py</code></p>
+</blockquote>
+
+<p>Python is a high-level, interpreted, scripted, imperative, object-oriented, functional, dynamic typing, and strong programming language.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1">#!/usr/bin/env python
+</span><span class="k">print</span><span class="p">(</span><span class="s">"Hello, World!"</span><span class="p">)</span></code></pre></figure>
+
+<blockquote>
+  <p><em>You can run Python directly at the prompt: <code class="highlighter-rouge">python</code> .</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">python hello-world.py</code> or <code class="highlighter-rouge">chmod +x hello-world.py &amp;&amp; ./hello-world.py</code></p>
+
+<blockquote>
+  <p>Example: <a href="https://terminalroot.com.br/2016/12/script-basico-de-python-para-aprendizado.html">https://terminalroot.com.br/2016/12/script-basico-de-python-para-learning.html</a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="-12"><img src="/assets/img/dev/langs/javascript.png" alt="JavaScript" /></h2>
+
+<h3 id="13-javascript">13. JavaScript</h3>
+
+<p><a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">http://www.ecma-international.org/publications/standards/Ecma-262.htm</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.js</code></p>
+</blockquote>
+
+<p>JavaScript, often abbreviated as JS, is a high-level interpreted programming language, also characterized as dynamic, poorly typed, prototype-based, and multi-paradigm.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Hello, World!</span><span class="dl">"</span><span class="p">);</span></code></pre></figure>
+
+<blockquote>
+  <p><em>You must have Nodejs installed.</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">node hello-world.js</code></p>
+
+<blockquote>
+  <p>Example: <a href="https://terminalroot.com.br/2011/11/alguns-codigos-simples-de-javascript.html">https://terminalroot.com.br/2011/11/some-codigos-simples-de-javascript.html</a></p>
+</blockquote>
+
+<hr />
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="-13"><img src="/assets/img/dev/langs/java.png" alt="Java" /></h2>
+
+<h3 id="14-java">14. Java</h3>
+
+<p><a href="https://www.java.com/">https://www.java.com/</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.java</code></p>
+</blockquote>
+
+<p>Java is a programming language developed by engineers at Sun Microsystems. It is an object-oriented language designed to run on multiple platforms without the need to recompile the code on each platform.</p>
+
+<ul>
+  <li><strong>JDK</strong> - Java <strong>D</strong> evelopment <strong>K</strong> it is required to develop java applications. JRE is smaller than JDK, so it needs less disk space.</li>
+</ul>
+
+<p>OpenJDK is a free and free implementation of the Java platform, Standard Edition.</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">OlaMundo</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span> <span class="n">args</span><span class="o">[])</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello, World!"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<blockquote>
+  <p><em>Must have compiler and linker: <a href="https://openjdk.java.net/">JDK</a> .</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">javac hello-world.java &amp;&amp; java OlaMundo</code> , <strong>javac</strong> creates a file with the <em>class</em> name (inside the same directory where you ran it), in this case <strong>HelloMundo</strong> with the extension <strong>.class</strong> ( <code class="highlighter-rouge">OlaMundo.class</code> ), but to run does not report the <em>.class</em> .</p>
+
+<blockquote>
+  <p>OpenJDK: <a href="https://openjdk.java.net/">https://openjdk.java.net/</a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="-14"><img src="/assets/img/dev/langs/rust.png" alt="Rust" /></h2>
+
+<h3 id="15-rust">15. Rust</h3>
+
+<p><a href="https://www.rust-lang.org/">https://www.rust-lang.org</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.rs</code></p>
+</blockquote>
+
+<p>Rust is a compiled multiparadigm programming language developed by Mozilla Research. It is designed to be “safe, concurrent and practical”, supporting the purely functional, procedural, and object-oriented styles. It has native WebAssembly support.</p>
+
+<figure class="highlight"><pre><code class="language-rust" data-lang="rust"><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nd">println!</span><span class="p">(</span><span class="s">"Hello, World!"</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<blockquote>
+  <p><em>Must have compiler: <a href="https://doc.rust-lang.org/rustc/index.html">rustc</a> .</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">rustc hello-world.rs &amp;&amp; ./hello-world</code></p>
+
+<blockquote>
+  <p>Example: <a href="https://doc.rust-lang.org/stable/rust-by-example/hello.html">https://doc.rust-lang.org/stable/rust-by-example/hello.html</a></p>
+</blockquote>
+
+<hr />
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="-15"><img src="/assets/img/dev/langs/swift.png" alt="Swift" /></h2>
+
+<h3 id="16-swift">16. Swift</h3>
+
+<p><a href="https://swift.org/">https://swift.org/</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.swift</code></p>
+</blockquote>
+
+<p>Swift is a programming language developed by Apple for development on iOS, macOS, watchOS, tvOS and Linux.</p>
+
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="nf">print</span><span class="p">(</span><span class="s">"Hello, World!"</span><span class="p">)</span></code></pre></figure>
+
+<blockquote>
+  <p><em>Must have <a href="https://github.com/apple/swift">swift</a> .</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">swift build &amp;&amp; .build/debug/hello-world</code> , this inside a directory with Sources</p>
+
+<blockquote>
+  <p>Example: <a href="https://swift.org/getting-started/">https://swift.org/getting-started/#installing-swift</a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="-16"><img src="/assets/img/dev/langs/dart.png" alt="Dart" /></h2>
+
+<h3 id="17-dart">17. Dart</h3>
+
+<p><a href="https://dart.dev/">https://dart.dev/</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.dart</code></p>
+</blockquote>
+
+<p>Dart (originally called Dash) is a web-based scripting language developed by Google.</p>
+
+<figure class="highlight"><pre><code class="language-dart" data-lang="dart"><span class="n">main</span><span class="o">()</span> <span class="o">{</span>
+  <span class="n">print</span><span class="o">(</span><span class="s">'Hello, World!'</span><span class="o">);</span>
+<span class="o">}</span></code></pre></figure>
+
+<blockquote>
+  <p><em>Need <a href="https://dart.dev/tutorials/server/get-started">dependencies</a> .</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">dart hello-world.dart</code></p>
+
+<blockquote>
+  <p>Example: <a href="https://dart.dev/">https://dart.dev/#try-dart</a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="-17"><img src="/assets/img/dev/langs/kotlin.png" alt="Kotlin" /></h2>
+
+<h3 id="18-kotlin">18. Kotlin</h3>
+
+<p><a href="https://kotlinlang.org/">https://kotlinlang.org/</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.kt</code></p>
+</blockquote>
+
+<p><a href="https://github.com/andrewoma/kotlin-script">Kotlin</a> is a multiplatform programming language that compiles for the Java Virtual Machine and can also be translated into JavaScript and compiled into native code.</p>
+
+<figure class="highlight"><pre><code class="language-kotlin" data-lang="kotlin"><span class="err">#</span><span class="p">!/</span><span class="n">usr</span><span class="p">/</span><span class="n">bin</span><span class="p">/</span><span class="n">env</span> <span class="n">kotlins</span>
+<span class="k">package</span> <span class="nn">hello</span>
+
+<span class="k">fun</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nf">println</span><span class="p">(</span><span class="s">"Hello, World!"</span><span class="p">)</span>
+<span class="p">}</span></code></pre></figure>
+
+<blockquote>
+  <p><em>Must have <a href="https://kotlinlang.org/docs/tutorials/command-line.html">dependencies</a> .</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">kotlinc hello-world.kt -include-runtime -d hello-world.jar &amp;&amp; java -jar hello-world.jar</code></p>
+
+<blockquote>
+  <p>Example: <a href="https://kotlinlang.org/docs/tutorials/kotlin-for-py/compiling-and-running.html">https://kotlinlang.org/docs/tutorials/kotlin-for-py/compiling-and-running.html</a></p>
+</blockquote>
+
+<hr />
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="-18"><img src="/assets/img/dev/langs/r.png" alt="R" /></h2>
+
+<h3 id="19-r">19. R</h3>
+
+<p><a href="https://www.r-project.org/">https://www.r-project.org/</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.r</code></p>
+</blockquote>
+
+<p>R is a computational environment and a programming language that has been progressively specializing in data manipulation, analysis and visualization.</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">#!/usr/bin/env Rscript</span><span class="w">
+</span><span class="n">OlaMundo</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(){</span><span class="w">
+   </span><span class="n">print</span><span class="p">(</span><span class="s1">'Hello, World!'</span><span class="p">)</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span><span class="n">OlaMundo</span><span class="p">()</span></code></pre></figure>
+
+<blockquote>
+  <p><em>Must have <a href="https://cran.r-project.org/mirrors.html">R</a> installed.</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">Rscript hello-world.r</code></p>
+
+<blockquote>
+  <p>Example: <a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html">https://cran.r-project.org/doc/manuals/r-release/R-intro.html</a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="-19"><img src="/assets/img/dev/langs/julia.png" alt="Julia" /></h2>
+
+<h3 id="20-julia">20. Julia</h3>
+
+<p><a href="https://julialang.org/">https://julialang.org/</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.jl</code></p>
+</blockquote>
+
+<p>Julia is a high-level dynamic programming language designed to meet the requirements of scientific and numerical high performance computing and is also effective for general purpose programming.</p>
+
+<figure class="highlight"><pre><code class="language-julia" data-lang="julia"><span class="c">#!/usr/bin/env julia</span>
+<span class="n">println</span><span class="x">(</span><span class="s">"Hello, World!"</span><span class="x">)</span></code></pre></figure>
+
+<blockquote>
+  <p><em>To use the compiled form you need the <a href="https://www.gnu.org/software/lightning/">JIT</a> compiler.</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">julia hello-world.jl</code></p>
+
+<blockquote>
+  <p>Example: <a href="https://docs.julialang.org/en/v1/manual/getting-started/">https://docs.julialang.org/en/v1/manual/getting-started/</a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="-20"><img src="/assets/img/dev/langs/ruby.png" alt="Ruby" /></h2>
+
+<h3 id="21-ruby">21. Ruby</h3>
+
+<p><a href="https://www.ruby-lang.org/">https://www.ruby-lang.org/</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.rb</code></p>
+</blockquote>
+
+<p>Ruby is a powerful, dynamic typing, self-managing multi-paradigm interpreted programming language originally designed and developed in Japan in 1995 by Yukihiro “Matz” Matsumoto for use as a scripting language.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1">#!/usr/bin/env ruby</span>
+<span class="nb">puts</span> <span class="s2">"Hello, World!"</span></code></pre></figure>
+
+<blockquote>
+  <p><em>You need to have Ruby installed.</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">ruby hello-world.rb</code></p>
+
+<blockquote>
+  <p>Example: <a href="https://www.ruby-lang.org/pt/documentation/">https://www.ruby-lang.org/en/documentation/</a></p>
+</blockquote>
+
+<hr />
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="-21"><img src="/assets/img/dev/langs/elixir.png" alt="Elixir" /></h2>
+
+<h3 id="22-elixir">22. Elixir</h3>
+
+<p><a href="https://elixir-lang.org/">https://elixir-lang.org/</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.exs</code></p>
+</blockquote>
+
+<p>Elixir is a concurrent, general purpose functional programming language that runs on the Erlang virtual machine (BEAM).</p>
+
+<figure class="highlight"><pre><code class="language-elixir" data-lang="elixir"><span class="no">IO</span><span class="o">.</span><span class="n">puts</span> <span class="s2">"Hello world from Elixir"</span></code></pre></figure>
+
+<blockquote>
+  <p><em>You must have Elixir installed.</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">elixir hello-world.exs</code></p>
+
+<blockquote>
+  <p>Example: <a href="https://elixir-lang.org/getting-started/introduction.html">https://elixir-lang.org/getting-started/introduction.html</a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="-22"><img src="/assets/img/dev/langs/vala.png" alt="Ditch" /></h2>
+
+<h3 id="23-vala">23. Vala</h3>
+
+<p><a href="https://wiki.gnome.org/Projects/Vala">https://wiki.gnome.org/Projects/Vala</a></p>
+
+<blockquote>
+  <p>Extension: <code class="highlighter-rouge">vim hello-world.vala</code></p>
+</blockquote>
+
+<p>Vala is an object-oriented programming language.</p>
+
+<figure class="highlight"><pre><code class="language-vala" data-lang="vala"><span class="k">class</span> <span class="nc">Sample</span> <span class="p">:</span> <span class="n">Object</span> <span class="p">{</span>
+    <span class="k">static</span> <span class="k">void</span> <span class="nf">main</span> <span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">stdout</span><span class="p">.</span><span class="nf">printf</span> <span class="p">(</span><span class="s">"Hello, World!\n"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<blockquote>
+  <p><em>You must have Vala installed.</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">valac hello-world.vala -o hello-world</code>](https://wiki.gnome.org/Projects/Vala/ValaForCSharpProgrammers)</p>
+
+<blockquote>
+  <p><a href="https://wiki.gnome.org/Projects/Vala/ValaForCSharpProgrammers">Example:</a> <a href="https://www.vala-project.org/doc/vala/Overview.html">https://www.vala-project.org/doc/vala/Overview.html#Getting_started</a></p>
+</blockquote>
+
+<hr />
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="-23"><img src="/assets/img/dev/langs/csharp.png" alt="C#" /></h2>
+
+<h3 id="24-c">24. C#</h3>
+
+<p><a href="http://msdn.microsoft.com/pt-br/vcsharp/default.aspx">http://msdn.microsoft.com/en-us/vcsharp/default.aspx</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.cs</code></p>
+</blockquote>
+
+<p>C# is a strongly typed, multi-paradigm programming language developed by Microsoft as part of the .NET platform.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">using</span> <span class="nn">System</span><span class="p">;</span> 
+<span class="k">namespace</span> <span class="nn">HelloWorldApp</span> <span class="p">{</span> 
+    <span class="k">class</span> <span class="nc">Geeks</span> <span class="p">{</span> 
+	    <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+           <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">"Hello, World!"</span><span class="p">);</span> 
+	       <span class="n">Console</span><span class="p">.</span><span class="nf">ReadKey</span><span class="p">();</span> 
+	    <span class="p">}</span> 
+    <span class="p">}</span> 
+<span class="p">}</span> </code></pre></figure>
+
+<blockquote>
+  <p><em>Must own <a href="/linguagem.html">Gentoo</a> : <code class="highlighter-rouge">layman dotnet &amp;&amp; emerge mono monodevelop</code> .</em></p>
+</blockquote>
+
+<ul>
+  <li><a href="https://github.com/gentoo/dotnet">https://github.com/gentoo/dotnet</a></li>
+  <li><a href="https://wiki.gentoo.org/wiki/Project:Dotnet">https://wiki.gentoo.org/wiki/Project:Dotnet</a></li>
+  <li><a href="http://en.terminalroot.com.br/how-to-install-programs-via-layman-in-gentoo/">http://en.terminalroot.com.br/how-to-install-programs-via-layman-in-gentoo/</a></li>
+</ul>
+
+<p>Example: <a href="https://docs.microsoft.com/pt-br/dotnet/csharp/">https://docs.microsoft.com/en-us/dotnet/csharp/</a></p>
+
+<hr />
+
+<h2 id="-24"><img src="/assets/img/dev/langs/gambas.png" alt="Gambas" /></h2>
+
+<h3 id="25-gambas-visual-basic-for-linux">25. Gambas (Visual Basic for Linux)</h3>
+
+<p><a href="http://gambas.sourceforge.net/">http://gambas.sourceforge.net/</a></p>
+
+<blockquote>
+  <p>File: <code class="highlighter-rouge">vim hello-world.gambas</code></p>
+</blockquote>
+
+<p>Gambas is an integrated development environment (IDE) for Linux an Open Source alternative to Microsoft Basic Visual Basic.</p>
+
+<figure class="highlight"><pre><code class="language-vb" data-lang="vb"><span class="n">Message</span><span class="p">.</span><span class="n">Info</span><span class="p">(</span><span class="s">"Hello, World!"</span><span class="p">)</span></code></pre></figure>
+
+<blockquote>
+  <p><em>Must have Gambas, eg <code class="highlighter-rouge">sudo apt install gambas3</code> <a href="https://www.youtube.com/watch%3Fv%3DxezNqM2zrbY">https://www.youtube.com/watch?v=xezNqM2zrbY</a> .</em></p>
+</blockquote>
+
+<p>Run: <code class="highlighter-rouge">gambas hello-world.gambas</code></p>
+
+<blockquote>
+  <p>Example: <a href="https://terminalroot.com.br/2016/10/gambas-o-visual-basic-open-source-para.html">https://terminalroot.com.br/2016/10/gambas-o-visual-basic-open-source-para.html</a></p>
+</blockquote>
+
+<hr />
+
+<p>Thanks for reading!</p>
+:ET

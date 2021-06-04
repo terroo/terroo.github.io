@@ -1,0 +1,51 @@
+I"˜<p>How to Enable Webcam Drive and Install Cheese on Gentoo</p>
+
+<p>Make sure the device is actually on your computer. If yes, enter root and open the <a href="https://wiki.gentoo.org/wiki/Kernel/Configuration">Kernel</a> menu</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">dmesg | <span class="nb">grep</span> <span class="nt">-i</span> camera
+su
+<span class="nb">cd</span> /usr/src/linux
+make menuconfig</code></pre></figure>
+
+<p><img src="/assets/img/webcam/1-min.jpg" alt="How to Enable Webcam Drive and Install Cheese on Gentoo" title="How to Enable Webcam Drive and Install Cheese on Gentoo" /></p>
+
+<p>Enable the USB adapter, even if your webcam is embedded in the notebook</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">Device Drivers
+    -&gt; Multimedia support <span class="o">(</span>MEDIA_SUPPORT <span class="o">[=</span>y]<span class="o">)</span>
+        -&gt; Media USB Adapters <span class="o">(</span>MEDIA_USB_SUPPORT <span class="o">[=</span>y]<span class="o">)</span></code></pre></figure>
+
+<p><img src="/assets/img/webcam/2-min.jpg" alt="How to Enable Webcam Drive and Install Cheese on Gentoo" title="How to Enable Webcam Drive and Install Cheese on Gentoo" /></p>
+
+<p>After exiting the kernel menu, make sure the <code class="highlighter-rouge">CONFIG_USB_VIDEO_CLASS</code> variable is set</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cat</span> .config | <span class="nb">grep</span> <span class="s1">'CONFIG_USB_VIDEO_CLASS'</span></code></pre></figure>
+
+<p>If it is not, open it with a text editor and replace <code class="highlighter-rouge">#CONFIG_USB_VIDEO_CLASS is not set</code> with <code class="highlighter-rouge">CONFIG_USB_VIDEO_CLASS=y</code></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">vim .config <span class="c"># /CONFIG_USB_VIDEO_CLASS , and change # and is not set by ^ and =y</span></code></pre></figure>
+
+<p><img src="/assets/img/webcam/3-min.jpg" alt="How to Enable Webcam Drive and Install Cheese on Gentoo" title="How to Enable Webcam Drive and Install Cheese on Gentoo" /></p>
+
+<p>Then compile the kernel and when you ask if you want to enable <code class="highlighter-rouge">USB and UVC</code>, type <code class="highlighter-rouge">yes [y]</code> and wait for compilation</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">make <span class="o">&amp;&amp;</span> make modules_install <span class="o">&amp;&amp;</span> make <span class="nb">install</span> <span class="c"># y and y</span></code></pre></figure>
+
+<p><img src="/assets/img/webcam/4-min.jpg" alt="How to Enable Webcam Drive and Install Cheese on Gentoo" title="How to Enable Webcam Drive and Install Cheese on Gentoo" /></p>
+
+<p><img src="/assets/img/webcam/5-min.jpg" alt="How to Enable Webcam Drive and Install Cheese on Gentoo" title="How to Enable Webcam Drive and Install Cheese on Gentoo" /></p>
+
+<p><img src="/assets/img/webcam/6-min.jpg" alt="How to Enable Webcam Drive and Install Cheese on Gentoo" title="How to Enable Webcam Drive and Install Cheese on Gentoo" /></p>
+
+<p>Reboot the system</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">reboot</code></pre></figure>
+
+<p>Then just install the <a href="https://alternativeto.net/software/cheese/">Cheese</a></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerge <span class="nt">-a</span> cheese</code></pre></figure>
+
+<p><img src="/assets/img/webcam/7-min.jpg" alt="How to Enable Webcam Drive and Install Cheese on Gentoo" title="How to Enable Webcam Drive and Install Cheese on Gentoo" /></p>
+
+<h1>ðŸ˜Ž</h1>
+:ET

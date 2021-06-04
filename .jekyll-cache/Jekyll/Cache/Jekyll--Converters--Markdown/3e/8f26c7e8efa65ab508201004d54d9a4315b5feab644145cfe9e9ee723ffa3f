@@ -1,0 +1,209 @@
+I"76<p><img src="/assets/img/dev/langs.jpg" alt="Tested the Performance of 10 Programming Languages" /></p>
+
+<p>🔊 In this video we test the speed of programming languages:</p>
+
+<ul>
+  <li><a href="https://en.terminalroot.com.br/the-30-best-python-libraries-and-packages-for-beginners/">Python</a></li>
+  <li><a href="https://en.terminalroot.com.br/os-31-melhores-frameworks-e-bibliotecas-javascript/">JavaScript</a></li>
+  <li><a href="https://en.terminalroot.com.br/redox-os-a-system-written-in-rust-installation-and-concepts/">Rust</a></li>
+  <li><a href="https://en.terminalroot.com.br/shell-an-object-oriented-shell-script/">Shell Script</a></li>
+  <li><a href="https://en.terminalroot.com.br/java-vs-kotlin-what-are-the-key-differences-between-them/">Java</a></li>
+  <li><a href="https://en.terminalroot.com.br/i-created-a-c-financial-management-program-for-linux-and-windows/">C++</a></li>
+  <li><a href="https://en.terminalroot.com.br/why-is-the-c-programming-language-still-on-the-rise/">C</a></li>
+  <li><a href="https://www.php.net/">PHP</a></li>
+  <li><a href="https://en.terminalroot.com.br/how-to-properly-install-ruby-bundler-and-jekyll-on-ubuntu-linux/">Ruby</a></li>
+  <li><a href="https://en.terminalroot.com.br/install-in-your-preferred-editor-an-auto-complete-with-artificial-intelligence/">Go</a></li>
+</ul>
+
+<p>And at the end we created a ranking with Awk.</p>
+
+<h1 id="watch-the-video">Watch the video</h1>
+<blockquote>
+  <p>The video is in Brazilian Portuguese, but you can use subtitles and translate into your language.</p>
+</blockquote>
+
+<iframe width="900" height="380" src="https://www.youtube.com/embed/spLIBqiv2Og" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="code-of-languages">Code of Languages</h1>
+<h3 id="01-shell-script-vim-shsh">01. SHELL SCRIPT <code class="highlighter-rouge">vim sh.sh</code></h3>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="k">for </span>i <span class="k">in</span> <span class="o">{</span>1..1000000<span class="o">}</span><span class="p">;</span>
+  <span class="k">do
+    </span><span class="nb">echo</span> <span class="nt">-en</span> <span class="s2">"</span><span class="k">${</span><span class="nv">i</span><span class="k">}</span><span class="s2">Ok</span><span class="se">\r</span><span class="s2">"</span>
+<span class="k">done</span></code></pre></figure>
+
+<ul>
+  <li>Run: <code class="highlighter-rouge">sh sh.sh</code></li>
+  <li>Test: <code class="highlighter-rouge">time sh sh.sh</code></li>
+</ul>
+
+<hr />
+
+<h3 id="02-php-vim-phpphp">02. PHP <code class="highlighter-rouge">vim php.php</code></h3>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+
+<span class="k">for</span><span class="p">(</span> <span class="nv">$i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;=</span> <span class="mi">1000000</span><span class="p">;</span> <span class="nv">$i</span><span class="o">++</span> <span class="p">){</span>
+  <span class="k">echo</span> <span class="s2">"</span><span class="si">{</span><span class="nv">$i</span><span class="si">}</span><span class="s2">Ok</span><span class="se">\r</span><span class="s2">"</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<ul>
+  <li>Run: <code class="highlighter-rouge">php php.php</code></li>
+  <li>Test: <code class="highlighter-rouge">time php php.php</code></li>
+</ul>
+
+<hr />
+
+<h3 id="03-javascript-vim-jsjs">03. JAVASCRIPT <code class="highlighter-rouge">vim js.js</code></h3>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="k">for</span><span class="p">(</span> <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="mi">1000000</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">){</span>
+  <span class="nx">process</span><span class="p">.</span><span class="nx">stdout</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span> <span class="nx">i</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">Ok</span><span class="se">\r</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<ul>
+  <li>Run: <code class="highlighter-rouge">node js.js</code></li>
+  <li>Test: <code class="highlighter-rouge">time node js.js</code></li>
+</ul>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h3 id="04-ruby-vim-rubyrb">04. RUBY <code class="highlighter-rouge">vim ruby.rb</code></h3>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">1</span><span class="o">..</span><span class="mi">1000000</span> <span class="k">do</span>
+ <span class="nb">print</span> <span class="s2">"</span><span class="si">#{</span><span class="n">i</span><span class="si">}</span><span class="s2">Ok</span><span class="se">\r</span><span class="s2">"</span>
+<span class="k">end</span></code></pre></figure>
+
+<ul>
+  <li>Run: <code class="highlighter-rouge">ruby ruby.rb</code></li>
+  <li>Test: <code class="highlighter-rouge">time ruby ruby.rb</code></li>
+</ul>
+
+<hr />
+
+<h3 id="05-python-vim-pythonpy">05. PYTHON <code class="highlighter-rouge">vim python.py</code></h3>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000001</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s">"Ok</span><span class="se">\r</span><span class="s">"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">''</span> <span class="p">)</span></code></pre></figure>
+
+<ul>
+  <li>Run: <code class="highlighter-rouge">python python.py</code></li>
+  <li>Test: <code class="highlighter-rouge">time python python.py</code></li>
+</ul>
+
+<hr />
+
+<h3 id="06-java-vim-javajava">06. JAVA <code class="highlighter-rouge">vim java.java</code></h3>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">java</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span> <span class="o">(</span> <span class="nc">String</span> <span class="n">args</span><span class="o">[]</span> <span class="o">)</span> <span class="o">{</span>
+    <span class="k">for</span> <span class="o">(</span> <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">1000000</span> <span class="o">;</span> <span class="n">i</span><span class="o">++</span> <span class="o">){</span>
+      <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span> <span class="n">i</span> <span class="o">+</span> <span class="s">"Ok\r"</span> <span class="o">);</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<ul>
+  <li>Run: <code class="highlighter-rouge">javac java.java &amp;&amp; java java</code></li>
+  <li>Test: <code class="highlighter-rouge">time java java</code></li>
+</ul>
+
+<hr />
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h3 id="07-go-vim-gogo">07. GO <code class="highlighter-rouge">vim go.go</code></h3>
+
+<figure class="highlight"><pre><code class="language-go" data-lang="go"><span class="k">package</span> <span class="n">main</span>
+<span class="k">import</span> <span class="p">(</span>
+  <span class="s">"fmt"</span>
+<span class="p">)</span>
+
+<span class="k">func</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="o">:=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="m">1000000</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">{</span>
+    <span class="n">fmt</span><span class="o">.</span><span class="n">Printf</span><span class="p">(</span><span class="s">"%vOK</span><span class="se">\r</span><span class="s">"</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+  <span class="p">}</span>
+
+<span class="p">}</span></code></pre></figure>
+
+<ul>
+  <li>Run: <code class="highlighter-rouge">go build go.go &amp;&amp; ./go</code></li>
+  <li>Test: <code class="highlighter-rouge">time ./go</code></li>
+</ul>
+
+<hr />
+
+<h3 id="08-c-vim-cppcpp">08. C++ <code class="highlighter-rouge">vim cpp.cpp</code></h3>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;iostream&gt;
+</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">1000000</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+   <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">"Ok</span><span class="se">\r</span><span class="s">"</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<ul>
+  <li>Run: <code class="highlighter-rouge">g++ cpp.cpp &amp;&amp; ./a.out</code></li>
+  <li>Test: <code class="highlighter-rouge">time ./a.out</code></li>
+</ul>
+
+<hr />
+
+<h3 id="09-rust-vim-rustrs">09. RUST <code class="highlighter-rouge">vim rust.rs</code></h3>
+
+<figure class="highlight"><pre><code class="language-rust" data-lang="rust"><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+ <span class="k">for</span> <span class="n">i</span> <span class="n">in</span> <span class="mi">0</span><span class="o">..</span><span class="mi">1000001</span> <span class="p">{</span>
+    <span class="nd">print!</span><span class="p">(</span><span class="s">"{}Ok</span><span class="se">\r</span><span class="s">"</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
+ <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<ul>
+  <li>Run: <code class="highlighter-rouge">rustc rust.rs &amp;&amp; ./rust</code></li>
+  <li>Test: <code class="highlighter-rouge">time ./rust</code></li>
+</ul>
+
+<hr />
+
+<h3 id="10-c-vim-cc">10. C <code class="highlighter-rouge">vim c.c</code></h3>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="n">i</span><span class="err">#</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">stdio</span><span class="p">.</span><span class="n">h</span><span class="o">&gt;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">1000000</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"%iOk</span><span class="se">\r</span><span class="s">"</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<ul>
+  <li>Run: <code class="highlighter-rouge">gcc c.c &amp;&amp; ./a.out</code></li>
+  <li>Test: <code class="highlighter-rouge">time ./a.out</code></li>
+</ul>
+
+<h1 id="peace">Peace!</h1>
+
+:ET

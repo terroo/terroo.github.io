@@ -1,0 +1,221 @@
+I"�G<p><a href="/assets/img/docker/docker-gentoo.jpg"><img src="/assets/img/docker/docker-gentoo.jpg" alt="How to install Docker on Gentoo" /></a></p>
+
+<p>We already have a tutorial for <a href="https://docker.com/">Docker</a> for beginners that can be consulted <a href="https://en.terminalroot.com.br/definitive-docker-tutorial-for-beginners-ubuntu/">here</a>. But in this article we’ll show you the steps on <a href="https://gentoo.org/">Gentoo</a>.</p>
+
+<h2 id="1-enable-modules-in-kernel">1. Enable modules in <a href="https://www.kernel.org/">Kernel</a></h2>
+<p>Open the <a href="https://github.com/torvalds/linux">Kernel</a> configuration menu</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">su
+<span class="nb">cd</span> /usr/src/linux
+make menuconfig</code></pre></figure>
+
+<p>And enable the modules</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">General setup  <span class="nt">---</span><span class="o">&gt;</span>
+    <span class="o">[</span><span class="k">*</span><span class="o">]</span> POSIX Message Queues
+    -<span class="k">*</span>- Control Group support  <span class="nt">---</span><span class="o">&gt;</span>
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span>   Memory controller 
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span>     Swap controller
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span>       Swap controller enabled by default
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span>   IO controller
+        <span class="o">[</span> <span class="o">]</span>     IO controller debugging
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span>   CPU controller  <span class="nt">---</span><span class="o">&gt;</span>
+              <span class="o">[</span><span class="k">*</span><span class="o">]</span>   Group scheduling <span class="k">for </span>SCHED_OTHER
+              <span class="o">[</span><span class="k">*</span><span class="o">]</span>     CPU bandwidth provisioning <span class="k">for </span>FAIR_GROUP_SCHED
+              <span class="o">[</span><span class="k">*</span><span class="o">]</span>   Group scheduling <span class="k">for </span>SCHED_RR/FIFO
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span>   PIDs controller
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span>   Freezer controller
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span>   HugeTLB controller
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span>   Cpuset controller
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span>     Include legacy /proc/&lt;pid&gt;/cpuset file
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span>   Device controller
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span>   Simple CPU accounting controller
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span>   Perf controller
+        <span class="o">[</span> <span class="o">]</span>   Example controller 
+    -<span class="k">*</span>- Namespaces support
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span>   UTS namespace
+        -<span class="k">*</span>-   IPC namespace
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span>   User namespace
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span>   PID Namespaces
+        -<span class="k">*</span>-   Network namespace
+-<span class="k">*</span>- Enable the block layer  <span class="nt">---</span><span class="o">&gt;</span>
+    <span class="o">[</span><span class="k">*</span><span class="o">]</span>   Block layer bio throttling support
+    -<span class="k">*</span>- IO Schedulers  <span class="nt">---</span><span class="o">&gt;</span>
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span>   CFQ IO scheduler
+            <span class="o">[</span><span class="k">*</span><span class="o">]</span>   CFQ Group Scheduling support   
+<span class="o">[</span><span class="k">*</span><span class="o">]</span> Networking support  <span class="nt">---</span><span class="o">&gt;</span>
+      Networking options  <span class="nt">---</span><span class="o">&gt;</span>
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span> Network packet filtering framework <span class="o">(</span>Netfilter<span class="o">)</span>  <span class="nt">---</span><span class="o">&gt;</span>
+            <span class="o">[</span><span class="k">*</span><span class="o">]</span> Advanced netfilter configuration
+            <span class="o">[</span><span class="k">*</span><span class="o">]</span>  Bridged IP/ARP packets filtering
+                Core Netfilter Configuration  <span class="nt">---</span><span class="o">&gt;</span>
+                  &lt;<span class="k">*</span><span class="o">&gt;</span> Netfilter connection tracking support 
+                  <span class="k">***</span> Xtables matches <span class="k">***</span>
+                  &lt;<span class="k">*</span><span class="o">&gt;</span>   <span class="s2">"addrtype"</span> address <span class="nb">type </span>match support
+                  &lt;<span class="k">*</span><span class="o">&gt;</span>   <span class="s2">"conntrack"</span> connection tracking match support
+                  &lt;M&gt;   <span class="s2">"ipvs"</span> match support
+            &lt;M&gt; IP virtual server support  <span class="nt">---</span><span class="o">&gt;</span>
+                  <span class="k">***</span> IPVS transport protocol load balancing support <span class="k">***</span>
+                  <span class="o">[</span><span class="k">*</span><span class="o">]</span>   TCP load balancing support
+                  <span class="o">[</span><span class="k">*</span><span class="o">]</span>   UDP load balancing support
+                  <span class="k">***</span> IPVS scheduler <span class="k">***</span>
+                  &lt;M&gt;   round-robin scheduling
+                  <span class="o">[</span><span class="k">*</span><span class="o">]</span>   Netfilter connection tracking
+                IP: Netfilter Configuration  <span class="nt">---</span><span class="o">&gt;</span>
+                  &lt;<span class="k">*</span><span class="o">&gt;</span> IPv4 connection tracking support <span class="o">(</span>required <span class="k">for </span>NAT<span class="o">)</span>
+                  &lt;<span class="k">*</span><span class="o">&gt;</span> IP tables support <span class="o">(</span>required <span class="k">for </span>filtering/masq/NAT<span class="o">)</span>
+                  &lt;<span class="k">*</span><span class="o">&gt;</span>   Packet filtering
+                  &lt;<span class="k">*</span><span class="o">&gt;</span>   IPv4 NAT
+                  &lt;<span class="k">*</span><span class="o">&gt;</span>     MASQUERADE target support
+                  &lt;<span class="k">*</span><span class="o">&gt;</span>   iptables NAT support  
+                  &lt;<span class="k">*</span><span class="o">&gt;</span>     MASQUERADE target support
+                  &lt;<span class="k">*</span><span class="o">&gt;</span>     NETMAP target support
+                  &lt;<span class="k">*</span><span class="o">&gt;</span>     REDIRECT target support
+        &lt;<span class="k">*</span><span class="o">&gt;</span> 802.1d Ethernet Bridging
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span> QoS and/or fair queueing  <span class="nt">---</span><span class="o">&gt;</span> 
+            &lt;<span class="k">*</span><span class="o">&gt;</span>   Control Group Classifier
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span> L3 Master device support
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span> Network priority cgroup
+        -<span class="k">*</span>- Network classid cgroup
+Device Drivers  <span class="nt">---</span><span class="o">&gt;</span>
+    <span class="o">[</span><span class="k">*</span><span class="o">]</span> Multiple devices driver support <span class="o">(</span>RAID and LVM<span class="o">)</span>  <span class="nt">---</span><span class="o">&gt;</span>
+        &lt;<span class="k">*</span><span class="o">&gt;</span>   Device mapper support
+        &lt;<span class="k">*</span><span class="o">&gt;</span>     Thin provisioning target
+    <span class="o">[</span><span class="k">*</span><span class="o">]</span> Network device support  <span class="nt">---</span><span class="o">&gt;</span>
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span>   Network core driver support
+        &lt;M&gt;     Dummy net driver support
+        &lt;M&gt;     MAC-VLAN support
+        &lt;M&gt;     IP-VLAN support
+        &lt;M&gt;     Virtual eXtensible Local Area Network <span class="o">(</span>VXLAN<span class="o">)</span>
+        &lt;<span class="k">*</span><span class="o">&gt;</span>     Virtual ethernet pair device
+    Character devices  <span class="nt">---</span><span class="o">&gt;</span>
+        -<span class="k">*</span>- Enable TTY
+        -<span class="k">*</span>-   Unix98 PTY support
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span>     Support multiple instances of devpts <span class="o">(</span>option appears <span class="k">if </span>you are using systemd<span class="o">)</span>
+File systems  <span class="nt">---</span><span class="o">&gt;</span>
+    &lt;<span class="k">*</span><span class="o">&gt;</span> Overlay filesystem support 
+    Pseudo filesystems  <span class="nt">---</span><span class="o">&gt;</span>
+        <span class="o">[</span><span class="k">*</span><span class="o">]</span> HugeTLB file system support
+Security options  <span class="nt">---</span><span class="o">&gt;</span>
+    <span class="o">[</span><span class="k">*</span><span class="o">]</span> Enable access key retention support
+    <span class="o">[</span><span class="k">*</span><span class="o">]</span>   Enable register of persistent per-UID keyrings
+    &lt;M&gt;   ENCRYPTED KEYS
+    <span class="o">[</span><span class="k">*</span><span class="o">]</span>   Diffie-Hellman operations on retained keys</code></pre></figure>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="2-make-sure-you-have-enabled-all-modules-correctly">2. Make sure you have enabled all modules correctly</h2>
+<p>For this you can use a <a href="https://en.terminalroot.com.br/bash">Bash script</a>: <code class="highlighter-rouge">check-config.sh</code></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wget https://git.io/check-config.sh
+<span class="nb">chmod</span> +x check-config.sh
+sh check-config.sh</code></pre></figure>
+
+<p>The output will look like this:
+<a href="/assets/img/docker/check-config-output.jpg"><img src="/assets/img/docker/check-config-output.jpg" alt="Chech config Docker Kernel modules" /></a></p>
+
+<p>If there are <em>not enabled</em> modules (<code class="highlighter-rouge">missing</code>), check first if your Kernel version has this module name, example for the module *<a href="https://cateee.net/lkddb/web-lkddb/EXT3_FS_XATTR.html">CONFIG_EXT3_FS_XATTR</a>:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">grep</span> <span class="s1">'CONFIG_EXT3_FS_XATTR'</span> /usr/src/linux/.config</code></pre></figure>
+
+<p>If you do not return the output it is because you do not have it, but if you return, copy the name of the module and search on any screen of the Kernel menu, pressing the bar (<code class="highlighter-rouge">/</code>) will open a box for you to enter the name you want to search, just paste the name you had copied and then press <strong>Enter</strong>, example:</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Researched the module: <strong>CONFIG_NETFILTER_XT_MATCH_IPVS</strong>
+<a href="/assets/img/docker/search-module-kernel.jpg"><img src="/assets/img/docker/search-module-kernel.jpg" alt="search module kerne" /></a></p>
+
+<p>Result with complete path and all data:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">Symbol: NETFILTER_XT_MATCH_IPVS <span class="o">[=</span>m]
+Type  : tristate
+Prompt: <span class="s2">"ipvs"</span> match support
+  Location: 
+    -&gt; Networking support <span class="o">(</span>NET <span class="o">[=</span>y]<span class="o">)</span>
+       -&gt; Networking options
+        -&gt; Network packet filtering framework <span class="o">(</span>Netfilter<span class="o">)</span> <span class="o">(</span>NETFILTER <span class="o">[=</span>y]<span class="o">)</span>
+          -&gt; Core Netfilter Configuration
+<span class="o">(</span>1<span class="o">)</span>         -&gt; Netfilter Xtables support <span class="o">(</span>required <span class="k">for </span>ip_tables<span class="o">)</span> <span class="o">(</span>NETFILTER_XTABLES <span class="o">[=</span>y]<span class="o">)</span>
+  Defined at net/netfilter/Kconfig:1322
+  Depends on: NET <span class="o">[=</span>y] <span class="o">&amp;&amp;</span> INET <span class="o">[=</span>y] <span class="o">&amp;&amp;</span> NETFILTER <span class="o">[=</span>y] <span class="o">&amp;&amp;</span> NETFILTER_XTABLES <span class="o">[=</span>y] <span class="o">&amp;&amp;</span> IP_VS <span class="o">[=</span>m] <span class="o">&amp;&amp;</span> NETFILTER_ADVANCED <span class="o">[=</span>y] <span class="o">&amp;&amp;</span> NF_CONNTRACK <span class="o">[=</span>y]</code></pre></figure>
+
+<p><a href="/assets/img/docker/result-module.jpg"><img src="/assets/img/docker/result-module.jpg" alt="result module" /></a></p>
+
+<p>The line <strong>Prompt</strong> indicates the name that it is in the menu and in <strong>Location</strong> the complete path to find it.</p>
+<blockquote>
+  <p>In this case, it is enabled as a module: <strong>[=m]</strong>, but if it is as <strong>is not set</strong> it will be necessary to enable it.</p>
+</blockquote>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="3-compile-the-kernel">3. Compile the Kernel</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">make <span class="o">&amp;&amp;</span> make modules_install <span class="o">&amp;&amp;</span> make <span class="nb">install</span></code></pre></figure>
+
+<h2 id="4-install-and-configure-docker">4. Install and configure Docker</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerge <span class="nt">--ask</span> <span class="nt">--verbose</span> app-emulation/docker</code></pre></figure>
+
+<p>Add your user to the <code class="highlighter-rouge">docker</code> group</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">usermod <span class="nt">-aG</span> docker &lt;username&gt;</code></pre></figure>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>If you want to add Docker to start with <a href="https://wiki.gentoo.org/wiki/OpenRC">OpenRC</a></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">rc-update add docker default</code></pre></figure>
+
+<blockquote>
+  <p>If you do not want it to start together with the system, to use Docker you will always have to start it manually: <code class="highlighter-rouge">rc-service docker start</code>. If you use <a href="https://freedesktop.org/wiki/Software/systemd/">systemd</a> run: <code class="highlighter-rouge">systemctl start docker.service</code>.</p>
+</blockquote>
+
+<p>Restart your system so that some modules are read at startup and your user’s group change takes effect: <code class="highlighter-rouge">sudo reboot</code>.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Testing if everything is right</span>
+docker info</code></pre></figure>
+
+<h1 id="useful-links">Useful links:</h1>
+<ul>
+  <li><a href="https://wiki.gentoo.org/wiki/Docker">https://wiki.gentoo.org/wiki/Docker</a></li>
+  <li><a href="https://cateee.net/lkddb/">https://cateee.net/lkddb/</a></li>
+  <li><a href="https://github.com/coreos/docker/blob/master/contrib/check-config.sh">https://github.com/coreos/docker/blob/master/contrib/check-config.sh</a></li>
+  <li><a href="https://en.terminalroot.com.br/best-alternatives-for-sharing-code-snippets/">https://en.terminalroot.com.br/best-alternatives-for-sharing-code-snippets/</a></li>
+</ul>
+
+<h1 id="watch-a-video-about-docker"><a href="https://youtu.be/bsGkIKP1OZ4">Watch a video about Docker</a></h1>
+
+:ET

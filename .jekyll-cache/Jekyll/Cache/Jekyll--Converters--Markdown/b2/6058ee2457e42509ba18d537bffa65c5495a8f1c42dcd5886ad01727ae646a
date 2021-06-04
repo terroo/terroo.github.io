@@ -1,0 +1,49 @@
+I"'<p>When you forgot the mysql root password and can not log in to change the password.</p>
+<blockquote>
+  <p>Use sudo or root</p>
+</blockquote>
+
+<ul>
+  <li>You must first stop the mysql server</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">systemctl stop mysqld.service <span class="c"># systemd</span>
+rc-service mysql stop <span class="c"># openrc</span></code></pre></figure>
+
+<ul>
+  <li>Then you need to start the server in safe mode
+    <blockquote>
+      <p>While running, DO NOT press control- {c, d, z}</p>
+    </blockquote>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">mysqld_safe <span class="nt">--skip-grant-tables</span></code></pre></figure>
+
+<ul>
+  <li>Now, open a new tab in the terminal, or a new terminal and enter MySQL</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">mysql <span class="nt">-u</span> root</code></pre></figure>
+
+<ul>
+  <li>And then change the MySQL root password</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">mysql&gt; UPDATE mysql.user SET <span class="nv">Password</span><span class="o">=</span>PASSWORD<span class="o">(</span><span class="s1">'password'</span><span class="o">)</span> WHERE <span class="nv">User</span><span class="o">=</span><span class="s1">'root'</span><span class="p">;</span></code></pre></figure>
+
+<ul>
+  <li>Okay, now just restart the MySQL server and login with the new password you used.
+    <blockquote>
+      <p>After giving Ctrl + Z on the previous tab and kill the process, or simple exit and close the corresponding terminal or tab.</p>
+    </blockquote>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">systemctl start mysqld.service <span class="c"># systemd</span>
+rc-update start mysqld.service <span class="c"># openrc</span>
+<span class="c"># Now login, normal user or root user</span>
+mysql <span class="nt">-u</span> root <span class="nt">-p</span></code></pre></figure>
+
+<h1 id="enjoy">Enjoy!</h1>
+:ET

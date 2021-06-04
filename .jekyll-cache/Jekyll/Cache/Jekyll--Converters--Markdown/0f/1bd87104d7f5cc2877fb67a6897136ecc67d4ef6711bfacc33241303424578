@@ -1,0 +1,162 @@
+I"�<p><img src="/assets/img/wm/5-tools-to-unixporn.jpg" alt="5 Tools for you to use on your WM" /></p>
+
+<p>In this post I will show you 5 useful(less) and attractive tools to use in your rice on #unixporn</p>
+
+<hr />
+
+<h2 id="1-pipes">1. Pipes</h2>
+
+<p>Pipes are animated screen savers</p>
+
+<p>To install:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/pipeseroni/pipes.sh.git
+<span class="nb">cd </span>pipes.sh
+<span class="nb">sudo </span>make <span class="nb">install</span></code></pre></figure>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Then run <code class="highlighter-rouge">pipes.sh</code> on the terminal, to exit press the <code class="highlighter-rouge">q</code> key. For more information and parameters see the manual section 6 page: <code class="highlighter-rouge">man 6 pipes.sh</code>.</p>
+
+<p><img src="/assets/img/wm/pipes.sh.png" alt="pipes" /></p>
+
+<p>Useful links for <code class="highlighter-rouge">pipes.sh</code></p>
+
+<ul>
+  <li><a href="https://github.com/pipeseroni/pipes.sh">https://github.com/pipeseroni/pipes.sh</a></li>
+  <li><a href="https://pipeseroni.github.io/pipes.sh/pipes.sh.6.html#HISTORY">https://pipeseroni.github.io/pipes.sh/pipes.sh.6.html#HISTORY</a></li>
+</ul>
+
+<hr />
+
+<h2 id="2-tty-clock">2. tty-clock</h2>
+
+<p>Displays a simple digital clock on the terminal.</p>
+
+<p>To install:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/xorg62/tty-clock.git
+<span class="nb">cd </span>tty-clock
+<span class="nb">sudo </span>make <span class="nb">install</span></code></pre></figure>
+
+<p>Then run <code class="highlighter-rouge">tty-clock</code> on the terminal if you want to leave in the center run with the parameter <code class="highlighter-rouge">-c</code> <code class="highlighter-rouge">tty-clock -c</code>, to exit press <code class="highlighter-rouge">q</code>. For more information and parameters refer to page 1 of the manual: <code class="highlighter-rouge">man 1 tty-clock</code>.</p>
+
+<p><img src="/assets/img/wm/tty-clock.png" alt="tty-clock" /></p>
+
+<p>Useful link for <code class="highlighter-rouge">tty-clock</code></p>
+<ul>
+  <li><a href="https://github.com/xorg62/tty-clock">https://github.com/xorg62/tty-clock</a></li>
+</ul>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h2 id="3-neofetch-with-images">3. Neofetch with images</h2>
+
+<p>Displays image in neofetch instead of ASCII characters.</p>
+
+<p>After installing Neofetch via your package manager, also install the w3m package, examples:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerge w3m <span class="c"># Gentoo, Funtoo, Sabayon, ...</span>
+apt <span class="nb">install </span>w3m <span class="c"># Debian, Ubuntu, Mint, ...</span>
+pacman <span class="nt">-S</span> w3m <span class="c"># Arch, Manjaro, Antergos, ...</span></code></pre></figure>
+
+<p>Then edit the neofetch configuration file: <code class="highlighter-rouge">vim ~/.config/neofetch/config.conf</code> then look for the line with the term: <code class="highlighter-rouge">image_backend</code>, if you can’t find it add it to w3m: <code class="highlighter-rouge">image_backend="w3m"</code>. Also change the line with the term <code class="highlighter-rouge">image_source</code> and assign your image path: <code class="highlighter-rouge">image_source="/path/to/image.png"</code>, if you want your Wallpaper to appear, give the word wallpaper: <code class="highlighter-rouge">image_source="wallpaper"</code></p>
+
+<p>Turn the neofetch.</p>
+
+<p><img src="/assets/img/wm/tty-clock.png" alt="tty-clock" /></p>
+
+<p>Useful link for <code class="highlighter-rouge">neofetch</code></p>
+<ul>
+  <li><a href="https://github.com/dylanaraps/neofetch">https://github.com/dylanaraps/neofetch</a></li>
+</ul>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h2 id="4-pacmansh">4. pacman.sh</h2>
+
+<p>Download the code: <code class="highlighter-rouge">wget http://bit.ly/pacmansh -O pacman.sh</code>, make it executable <code class="highlighter-rouge">chmod +x pacman.sh</code>, run it: ./pacman.sh. If you want it to appear every time you open the terminal, run the commands below:</p>
+
+<p>For BASH:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">mv </span>pacman.sh ~/.local/share/
+<span class="nb">echo</span> <span class="s1">'$HOME/.local/share/pacman.sh'</span> <span class="o">&gt;&gt;</span> ~/.bashrc</code></pre></figure>
+
+<p>For ZSH:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">mv </span>pacman.sh ~/.local/share/
+<span class="nb">echo</span> <span class="s1">'$HOME/.local/share/pacman.sh'</span> <span class="o">&gt;&gt;</span> ~/.zshrc</code></pre></figure>
+
+<p>For FISH:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">mv </span>pacman.sh ~/.local/share/
+<span class="nb">echo</span> <span class="s1">'$HOME/.local/share/pacman.sh'</span> <span class="o">&gt;&gt;</span> ~/.config/fish/config.fish</code></pre></figure>
+
+<p><img src="/assets/img/wm/pacman.sh.png" alt="pacman.sh" /></p>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h2 id="5-colorssh">5. colors.sh</h2>
+
+<p>Tests your terminal’s emulator color scheme.</p>
+
+<p>Download the code: <code class="highlighter-rouge">wget http://bit.ly/colorssh -O colors.sh</code>, make it executable <code class="highlighter-rouge">chmod +x colors.sh</code>, run it: <code class="highlighter-rouge">./colors.sh</code> . If you want to make a command for your user, run the commands below:</p>
+
+<p>For BASH:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">mv </span>colors.sh ~/.local/share/
+<span class="nb">echo</span> <span class="s1">'alias colors="$HOME/.local/share/colors.sh"'</span> <span class="o">&gt;&gt;</span> ~/.bashrc
+<span class="nb">source</span> ~/.bashrc
+colors</code></pre></figure>
+
+<p>For ZSH:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">mv </span>colors.sh ~/.local/share/
+<span class="nb">echo</span> <span class="s1">'alias colors="$HOME/.local/share/colors.sh"'</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+<span class="nb">source</span> ~/.zshrc
+colors</code></pre></figure>
+
+<p>For FISH:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">mv </span>colors.sh ~/.local/share/
+<span class="nb">echo</span> <span class="s1">'alias colors="$HOME/.local/share/colors.sh"'</span> <span class="o">&gt;&gt;</span> ~/.config/fish/config.fish
+<span class="nb">source</span> ~/.config/fish/config.fish
+colors</code></pre></figure>
+
+<p><img src="/assets/img/wm/colors.sh.png" alt="colors.sh" /></p>
+
+<hr />
+
+<p>Thanks!</p>
+:ET

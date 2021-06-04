@@ -1,0 +1,165 @@
+I"*<p><img src="/assets/img/jython/jython.jpg" alt="Jython - The language that mixes Java with Python" /></p>
+
+<blockquote>
+  <p>This language joins two good tools into one. 🐍</p>
+</blockquote>
+
+<h2 id="introduction">Introduction</h2>
+
+<p><a href="https://www.jython.org/">Jython</a> is an implementation of the <a href="https://terminalroot.com.br/2019/10/script-basico-de-python-para-aprendizado.html">Python</a> language (https://terminalroot.com.br/2019/10/script-basico-de-python-para-learned.html) that generates bytecode for Java machines (JVM). With it is possible to develop hybrid applications that unite code in Java and Python.</p>
+
+<p>This tool is also very useful for embedding a scripting language in applications that require this kind of functionality. It also includes a compiler that converts Python source code to Java bytecode, allowing Python programmers to write classes that can be used by a Java program.</p>
+
+<p>Among its advantages are:</p>
+
+<ul>
+  <li>🐍 - Development Speed: Python is a Rapid Application Development (RAD) language.</li>
+  <li>🐍 - Practicality: It is not necessary to compile Jython code to test it. This makes debugging much faster. After the process is finished, the Jythonc compiler is used to compile the program, to include the Jython libraries there is the freeze option.</li>
+  <li>🐍 - Learning Time: By having a simple, clean and coherent syntax your learning is very easy.</li>
+</ul>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="installation">Installation</h2>
+<blockquote>
+  <p>Procedure on <a href="https://terminalroot.com.br/linux">Linux</a></p>
+</blockquote>
+
+<ul>
+  <li><strong>1</strong>. - Install the dependencies
+First you will need to have it installed on your system:</li>
+  <li><a href="https://openjdk.java.net/">JDK</a> - Java development environment;</li>
+  <li>and <a href="https://icedtea.classpath.org">IcedTea</a> - An integration software.</li>
+</ul>
+
+<p>Use your distribution’s package manager to install them, for example, as I installed here on <a href="https://terminalroot.com.br/2017/05/how-install-o-gentoo.html">Gentoo</a>:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span><span class="nv">USE</span><span class="o">=</span><span class="s2">"-cups -alsa"</span> emerge <span class="nt">-a</span> dev-java/openjdk-bin dev-java/openjdk-jre-bin</code></pre></figure>
+
+<blockquote>
+  <p>In this case I rejected the modules: <em>cups</em> and <em>alsa</em> and icedtea was installed automatically as it is a dependency.</p>
+</blockquote>
+
+<ul>
+  <li><strong>2</strong>. - Installing <a href="https://www.jython.org/">Jython</a></li>
+</ul>
+
+<p>Now download Jython at: <a href="https://sourceforge.net/projects/jython/">https://sourceforge.net/projects/jython/</a>. After downloading extract the package:</p>
+<blockquote>
+  <p>Create and enter a directory first so that files are not scattered</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">mkdir </span>environment <span class="o">&amp;&amp;</span> <span class="nb">cd </span>environment/
+<span class="nb">mv</span> ../jython<span class="k">*</span> <span class="nb">.</span>
+jar xj jython.jar
+java <span class="nt">-jar</span> jython_installer-<span class="k">*</span>.jar</code></pre></figure>
+
+<p>After this last command, it will open a ** wizard ** for you to follow, follow the images below:</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p><img src="/assets/img/jython/jython01.png" alt="Jython Wizard" />
+<img src="/assets/img/jython/jython02.png" alt="Jython Wizard" />
+<img src="/assets/img/jython/jython03.png" alt="Jython Wizard" /></p>
+
+<blockquote>
+  <p>In this 4th image ↓ part you could still choose a custom directory, for example from <code class="highlighter-rouge">~/.config/jython</code>, it would be the most ideal not to pollute your home directory.
+<img src="/assets/img/jython/jython04.png" alt="Jython Wizard" /></p>
+</blockquote>
+
+<p><img src="/assets/img/jython/jython05.png" alt="Jython Wizard" />
+<img src="/assets/img/jython/jython06.png" alt="Jython Wizard" />
+<img src="/assets/img/jython/jython07.png" alt="Jython Wizard" />
+<img src="/assets/img/jython/jython08.png" alt="Jython Wizard" />
+<img src="/assets/img/jython/jython09.png" alt="Jython Wizard" />
+<img src="/assets/img/jython/jython10.png" alt="Jython Wizard" /></p>
+
+<p>After <strong>finish</strong> we will now edit your <code class="highlighter-rouge">vim ~/.bashrc</code> and add the following line:</p>
+<blockquote>
+  <p>In this case my version and directory name is <strong>2.5.2</strong>, check yours.</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">PATH</span><span class="k">}</span><span class="s2">:</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span><span class="s2">/jython2.5.2/bin/"</span></code></pre></figure>
+
+<p>Then run the <code class="highlighter-rouge">source ~/.bashrc</code> command or close and open the terminal so that the <code class="highlighter-rouge">jython</code> command can be found.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="creating-your-first-application">Creating Your First Application</h2>
+<blockquote>
+  <p>A mini application that adds two numbers.
+Create a file named <code class="highlighter-rouge">vim sum.py</code></p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">javax.swing</span> <span class="k">as</span> <span class="n">libswing</span>
+<span class="n">pnumero</span> <span class="o">=</span> <span class="n">libswing</span><span class="p">.</span><span class="n">JOptionPane</span><span class="p">.</span><span class="n">showInputDialog</span> <span class="p">(</span><span class="s">"Enter an Integer:"</span><span class="p">)</span>
+<span class="n">snumero</span> <span class="o">=</span> <span class="n">libswing</span><span class="p">.</span><span class="n">JOptionPane</span><span class="p">.</span><span class="n">showInputDialog</span> <span class="p">(</span><span class="s">"Enter an Integer:"</span><span class="p">)</span>
+<span class="nb">sum</span> <span class="o">=</span> <span class="nb">int</span> <span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="nb">int</span> <span class="p">(</span><span class="n">number</span><span class="p">)</span>
+<span class="n">libswing</span><span class="p">.</span><span class="n">JOptionPane</span><span class="p">.</span><span class="n">showMessageDialog</span> <span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="s">"The sum is% d"</span><span class="o">%</span> <span class="nb">sum</span><span class="p">)</span></code></pre></figure>
+
+<p>Save and run as follows:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">jython sum.py</code></pre></figure>
+
+<blockquote>
+  <p>No <a href="https://terminalroot.com.br/shell">Shell</a> will show the outputs of the program, but it does not mean that it is a <em>problem</em>, but it is sending the <em>outputs</em> correctly.</p>
+</blockquote>
+
+<p><img src="/assets/img/jython/jython11.png" alt="Jython Wizard" />
+<img src="/assets/img/jython/jython12.png" alt="Jython Wizard" /></p>
+
+<p>Note that in this case I added 8 + 8 and the result was as expected. 😁️</p>
+
+<h1 id="explaining-the-code">Explaining the code</h1>
+<ul>
+  <li><code class="highlighter-rouge">import javax.swing as libswing</code> - Imports the Java library.</li>
+  <li><code class="highlighter-rouge">pnumero = libswing.JOptionPane.showInputDialog ("Enter an Integer: ")</code> - Shows the first dialog box and stores the value in the pnumero variable.</li>
+  <li><code class="highlighter-rouge">snumero = libswing.JOptionPane.showInputDialog ("Enter an Integer: ")</code> - Displays the second dialog and stores the value in the snumero variable.</li>
+  <li><code class="highlighter-rouge">sum = int (number) + int (number)</code> - Converts the number and number values ​​to integers and adds both by storing the result in the sum variable.</li>
+  <li><code class="highlighter-rouge">libswing.JOptionPane.showMessageDialog (None," The sum is% d "% sum)</code> - Shows the result of the sum on the screen, isn’t it?</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>I particularly enjoyed Jython 🙌️ and I will dig deeper into it and there will probably be more tutorials here about it. Is that you ?! Liked ?! Tell us using the comment field.
+Hugs!</p>
+
+<h2 id="useful-links">Useful links</h2>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:50px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<ul>
+  <li><a href="https://www.jython.org/">https://www.jython.org/</a></li>
+  <li><a href="https://sourceforge.net/projects/jython/">https://sourceforge.net/projects/jython/</a></li>
+  <li><a href="https://wiki.python.org.br/IntroducaoJython">https://wiki.python.org.br/IntroducaoJython</a></li>
+  <li><a href="http://www.linhadecodigo.com.br/artigo/490/introducao-ao-jython.aspx">http://www.linhadecodigo.com.br/artigo/490/introducao-ao-jython.aspx</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Jython">https://en.wikipedia.org/wiki/Jython</a></li>
+</ul>
+
+:ET

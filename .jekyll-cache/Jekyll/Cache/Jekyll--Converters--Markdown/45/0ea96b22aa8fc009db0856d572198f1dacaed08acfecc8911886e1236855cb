@@ -1,0 +1,76 @@
+I"8<p><img src="/assets/img/vim/vieb.jpg" alt="Install Vieb - A minimalist Vim-style browser" /></p>
+
+<p>We made an video about the <a href="https://youtu.be/K4e6V8FC39Y">qutebrowser</a> a while ago and in this article we will get to know an even more minimalist option that is Vieb.</p>
+
+<p>Vieb is a browser created with <a href="https://en.terminalroot.com.br/install-veonim-a-text-editor-based-on-vim-and-neovim/">Electron</a> that can also be used as Vim with modes: normal, visual, insertion and commands. Its characteristics are:</p>
+
+<ul>
+  <li>Free, open source, fast and secure;</li>
+  <li>Local first adblocking, autocomplete, AMP protection, custom redirects;</li>
+  <li>Privacy with restricted permission system, overrides, firefox mode, personalized WebRTC policy;</li>
+  <li>Accessible with custom themes, full interface and font size scale, page zoom, spell check and mouse support</li>
+  <li>Security settings with permissions, cache usage, cookie management, download settings (automatic);</li>
+  <li>Split window for browsing multiple windows with:: split,: vsplit, ctrl + w,…</li>
+  <li>Command mappings for keyboard strings, keystrokes, fully customized commands and actions</li>
+  <li>Viebrc configuration file for all custom commands / Vieb / Vim to configure settings permanently</li>
+  <li>Set command for runtime configuration configuration exactly like Vim</li>
+  <li>Vim compatible options like showcmd, timeout, colorscheme, maxmapdepth, spelllang, splitright, ignorecase etc.</li>
+  <li>Container guides with colored grouping, automatic cleaning, individual cookies and restoration of container guides</li>
+  <li>Ad blocker with optional updater and custom list support, standard for: easylist and easyprivacy</li>
+  <li>Guides including audio indicator, toggle for multi-line guides, fixed guides, muted and suspended guides</li>
+  <li>Offline help documentation always available when pressing F1</li>
+  <li>And much, much more!</li>
+</ul>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="installation">Installation</h1>
+
+<p>Installing Vieb is very easy and it has several types of packages for <a href="https://en.terminalroot.com.br/take-multiple-free-red-hat-linux-courses/">Linux</a>, FreeBSD, <a href="https://en.terminalroot.com.br/top-5-best-git-clients-for-linux-mac-and-windows/">Windows</a> and <a href="https://en.terminalroot.com.br/how-to-install-macos-on-virtualbox-on-linux/">macOS</a> and for the x64 and ARM64 architectures. Are they:</p>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<ul>
+  <li><a href="https://github.com/Jelmerro/Vieb/releases/download/4.5.1/Vieb-4.5.1.AppImage">AppImage x64</a></li>
+  <li><a href="https://github.com/Jelmerro/Vieb/releases/download/4.5.1/vieb-4.5.1.x86_64.rpm">Fedora .rpm</a></li>
+  <li><a href="https://github.com/Jelmerro/Vieb/releases/download/4.5.1/vieb_4.5.1_amd64.deb">Debian/Ubuntu/Mint .deb</a></li>
+  <li><a href="https://github.com/Jelmerro/Vieb/releases/download/4.5.1/vieb-4.5.1.pacman">Arch Linux</a></li>
+  <li><a href="https://github.com/Jelmerro/Vieb/releases/download/4.5.1/vieb_4.5.1_amd64.snap">Snap</a></li>
+  <li><a href="https://github.com/Jelmerro/Vieb/releases/download/4.5.1/vieb-4.5.1.tar.gz">Linux .tar.gz</a></li>
+  <li><a href="https://github.com/Jelmerro/Vieb/releases/download/4.5.1/Vieb.4.5.1.exe">Windows portable x64</a></li>
+  <li><a href="https://github.com/Jelmerro/Vieb/releases/download/4.5.1/Vieb-4.5.1-mac.zip">Mac app x64</a></li>
+  <li><a href="https://github.com/Jelmerro/Vieb/releases/download/4.5.1/vieb-4.5.1.freebsd">FreeBSD x64</a></li>
+  <li>And many more options on <a href="https://vieb.dev/download">this link</a>.</li>
+</ul>
+
+<p>I did a quick test via <a href="https://github.com/terroo/app-get">AppImage</a> in the following simple way:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wget https://github.com/Jelmerro/Vieb/releases/download/4.5.1/Vieb-4.5.1.AppImage
+<span class="nb">chmod</span> +x ./Vieb-4.5.1.AppImage
+./Vieb-4.5.1.AppImage</code></pre></figure>
+
+<p>And I’m already using it! 😃</p>
+
+<p>See Vieb’s official website for more information: <a href="https://vieb.dev/">https://vieb.dev/</a></p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+:ET

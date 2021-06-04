@@ -1,0 +1,78 @@
+I"�<p>When you get the error:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ERROR 2002 <span class="o">(</span>HY000<span class="o">)</span>: Can<span class="s1">'t connect to local MySQL server through socket '</span>/var/run/mysqld/mysqld.sock<span class="s1">' (2)</span></code></pre></figure>
+
+<p>It can be for several reasons, one of them is also the post installation.</p>
+
+<p>To resolve follow these steps:</p>
+
+<ul>
+  <li>1st - Find out which version of MySQL you have</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">mysql <span class="nt">--version</span></code></pre></figure>
+
+<ul>
+  <li>2nd - Then run the command</li>
+</ul>
+
+<blockquote>
+  <p>Where <strong>X.X.XX</strong> is the version of your MySQL</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerge <span class="nt">--config</span> <span class="o">=</span>dev-db/mysql-X.X.XX</code></pre></figure>
+
+<p>The output will be something like:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">Configuring pkg...
+
+ <span class="k">*</span> Trying to get password <span class="k">for </span>mysql <span class="s1">'root'</span> user from <span class="s1">'mysql'</span> section ...
+ <span class="k">*</span> Trying to get password <span class="k">for </span>mysql <span class="s1">'root'</span> user from <span class="s1">'client'</span> section ...
+ <span class="k">*</span> Please provide a password <span class="k">for </span>the mysql <span class="s1">'root'</span> user now
+ <span class="k">*</span> or through the /root/.my.cnf file.
+ <span class="k">*</span> Avoid <span class="o">[</span><span class="s2">"'</span><span class="se">\_</span><span class="s2">%] characters in the password
+  ...
+  
+ * Done</span></code></pre></figure>
+
+<p>After that, you will need to restart your MySQL server (example for systemd, if you have OpenRC use the <code class="highlighter-rouge">rc-service</code> command)</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">systemctl restart mysqld.service</code></pre></figure>
+
+<ul>
+  <li>3rd - And then run the command below with root</li>
+</ul>
+
+<blockquote>
+  <p>The password you should enter (if you have not yet created a root password for MySQL) is your system root user’s password</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">mysql <span class="nt">-u</span> root <span class="nt">-p</span> <span class="nt">-h</span> localhost</code></pre></figure>
+
+<p>So you’ll probably be able to log in to MySQL.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">Enter password: 
+Welcome to the MySQL monitor.  Commands end with <span class="p">;</span> or <span class="se">\g</span><span class="nb">.</span>
+Your MySQL connection <span class="nb">id </span>is 2
+Server version: 5.6.40-log Source distribution
+
+Copyright <span class="o">(</span>c<span class="o">)</span> 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type <span class="s1">'help;'</span> or <span class="s1">'\h'</span> <span class="k">for </span>help. Type <span class="s1">'\c'</span> to clear the current input statement.
+
+mysql&gt;</code></pre></figure>
+
+<p>If you want the normal user to log in as <strong>root</strong>, run the command below:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">mysql_secure_installation</code></pre></figure>
+
+<h2 id="okay-solved-enjoy-mysql-">Okay, solved, enjoy MySQL !!!</h2>
+
+<p>via: <a href="https://wiki.gentoo.org/wiki/MySQL">https://wiki.gentoo.org/wiki/MySQL</a> and <a href="https://wiki.gentoo.org/wiki/MySQL/Startup_Guide">https://wiki.gentoo.org/wiki/MySQL/Startup_Guide</a></p>
+
+<p>recommended reading: <a href="https://wiki.gentoo.org/wiki/MySQL/Migrate_to_5.0">https://wiki.gentoo.org/wiki/MySQL/Migrate_to_5.0</a></p>
+:ET

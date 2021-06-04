@@ -1,0 +1,79 @@
+I"�<p><img src="/assets/img/python/termgraph.jpg" alt="Termgraph - draw graphics on the terminal" /></p>
+
+<p>Several <a href="https://en.terminalroot.com.br/hello-world-in-25-programming-languages-proposal-docs-and-links/">programming languages</a> are available for creating graphics and <a href="https://en.wikipedia.org/wiki/Data_visualization">visualizing data</a>. <a href="https://en.terminalroot.com.br/basic-python-script-for-learning/">Python</a> is one of the “<a href="https://en.terminalroot.com.br/the-30-best-python-libraries-and-packages-for-beginners/">richest</a>” libraries in this regard, <a href="https://en.terminalroot.com.br/the-30-best-python-libraries-and-packages-for-beginners/">matplotlib</a> is one of the most used. The <a href="https://www.r-project.org/">R programming language</a> is also one of the best in this regard and we can mention <strong>ggplot2</strong>.</p>
+
+<p>But what if you are looking for an even faster and easier way to view data stored in a plain text file. And maybe you don’t want to leave the comfort of the terminal? You may be interested in <strong>Termgraph</strong>.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="installing-termgraph">Installing Termgraph</h1>
+<p>You must use pip to install it, example:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">python <span class="nt">-m</span> pip <span class="nb">install </span>termgraph</code></pre></figure>
+
+<p>Alternatively you can use pipx:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">pipx <span class="nb">install </span>termgraph</code></pre></figure>
+
+<h1 id="supported-chart-types">Supported chart types</h1>
+
+<ul>
+  <li>Bar Graphs</li>
+  <li>Color charts</li>
+  <li>Multi-variable</li>
+  <li>Stacked charts</li>
+  <li>Histograms</li>
+  <li>Horizontal or Vertical</li>
+  <li>Emoji!</li>
+</ul>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="usage-examples">Usage examples</h1>
+
+<ul>
+  <li>Read data from <code class="highlighter-rouge">data/ex1.dat</code> file</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">termgraph data/ex1.dat
+
+2007: ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 183.32
+2008: ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 231.23
+2009: ▇ 16.43
+2010: ▇▇▇▇ 50.21
+2011: ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 508.97
+2012: ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 212.05
+2014: ▏ 1.00</code></pre></figure>
+
+<ul>
+  <li>Using custom colors
+<img src="/assets/img/python/termgraph-ex2.jpg" alt="Termgraph example 2" /></li>
+</ul>
+
+<p>For more forms of use, run:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">termgraph <span class="nt">-h</span></code></pre></figure>
+
+<p>And you can still contribute to the project, Termgraph’s GitHub: <a href="https://github.com/mkaz/termgraph">https://github.com/mkaz/termgraph</a>.</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+:ET

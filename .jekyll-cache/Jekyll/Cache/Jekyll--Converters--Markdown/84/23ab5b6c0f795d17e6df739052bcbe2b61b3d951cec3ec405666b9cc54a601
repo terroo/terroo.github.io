@@ -1,0 +1,475 @@
+I"�M<p><img src="/assets/img/apps/wallset-post-illustrate.jpg" alt="Add Videos as Wallpaper on your Linux" /></p>
+<blockquote>
+  <p>Merely illustrative image</p>
+</blockquote>
+
+<p><a href="https://github.com/terroo/wallset">wallset</a> is a command line utility written in Shell Script that manages your wallpapers and allows you to place videos as wallpaper.</p>
+
+<h1 id="installation">Installation</h1>
+<p>First you will need to have the following software installed on your system:</p>
+<ul>
+  <li><a href="https://ffmpeg.org/">ffmpeg &gt;=4.2.3</a></li>
+  <li><a href="https://feh.finalrewind.org/">feh &gt;=3.4.1</a></li>
+  <li><a href="https://www.imagemagick.org/">imagemagick &gt;=7.0.10.16</a></li>
+  <li><a href="https://gitlab.freedesktop.org/xorg/app/xrandr">xrandr &gt;=1.5.1</a></li>
+  <li><a href="https://www.freedesktop.org/wiki/Software/xdg-utils/">xdg-utils &gt;=1.1.3</a></li>
+</ul>
+
+<blockquote>
+  <p>Some software may work in versions lower than those reported.</p>
+</blockquote>
+
+<p>After that you will need <a href="https://git-scm.com/">Git</a> to clone the repository and then install. To do this, simply run the commands below:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/terroo/wallset down-wallset
+<span class="nb">cd </span>down-wallset
+./install.sh</code></pre></figure>
+
+<blockquote>
+  <p>Enter your <code class="highlighter-rouge">sudo</code> password to complete the installation.</p>
+</blockquote>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="usage">Usage</h1>
+<p>For quick help with the commands, run the <code class="highlighter-rouge">wallset</code> command with the<code class="highlighter-rouge"> --help</code> parameter or just <code class="highlighter-rouge">-h</code>, the output will be similar to this:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">usage: wallset <span class="o">[</span>options]
+  
+  Options:
+    <span class="nt">-u</span>,--use <span class="o">[</span>N]          Change the Wallpaper to the number entered. Use images with 3 digits, example: 014,003,099
+    <span class="nt">-a</span>,--add img.jpg ...  Add images
+    <span class="nt">-S</span>,--set              Use before the <span class="nt">-a</span>, <span class="nt">--add</span> parameter when you want to add already change       
+    <span class="nt">-q</span>,--quit             Ends the loop
+    <span class="nt">-t</span>,--time <span class="o">[</span>N]         Creates an image loop with the <span class="nb">time </span>reported <span class="k">in </span>seconds
+    <span class="nt">-d</span>,--display          Opens the last image added
+    <span class="nt">-c</span>,--count            Informs how many images there are
+    <span class="nt">-s</span>,--show             Shows the current image
+    <span class="nt">-V</span>,--video <span class="o">[</span>video]    Add a video as Wallpaper
+    <span class="nt">-L</span>,--list-videos      Lists the videos that have already been used
+    <span class="nt">-I</span>,--set-video <span class="o">[</span>N]    Use the video by the number listed <span class="k">in</span> <span class="nt">--list-videos</span>
+    <span class="nt">-r</span>,--remove           Remove the last image added
+    <span class="nt">-h</span>,--help             Display this <span class="nb">help</span>
+    <span class="nt">-v</span>,--version          Display the version of this program
+
+  Examples:  
+    Add an image → <span class="s1">'wallset -a img.jpg'</span>
+    Add and <span class="nb">set </span>it as Wallpaper → <span class="s1">'wallset --set --add img.jpg'</span>
+    Change to image with this number → <span class="s1">'wallset -u 001'</span>
+    Add the video → <span class="s1">'wallset -V video.mp4'</span>
+    Use the video already used and listed → <span class="s1">'wallset -I 3'</span>
+
+<span class="k">*</span> <span class="o">[</span>N] Means that you need to use a number
+<span class="k">**</span> Only videos <span class="k">in</span> .mp4 format
+<span class="k">***</span> Only the first 10 seconds of the video will be displayed
+<span class="k">****</span> Use 3-digit images, example: 011</code></pre></figure>
+
+<h3 id="01-the-first-necessary-command-is-to-add-images-example">01. The first necessary command is to add images, example:</h3>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wallset <span class="nt">--add</span> image.jpg</code></pre></figure>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>You add multiple images at once:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wallset <span class="nt">-a</span> image-1.jpg image-2.jpg image-3.jpg <span class="c"># ...</span></code></pre></figure>
+
+<p>If it is in a directory with several images you can also add it like this:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wallset <span class="nt">-a</span> <span class="si">$(</span><span class="nb">ls</span> <span class="k">*</span>.jpg <span class="k">*</span>.png<span class="si">)</span></code></pre></figure>
+
+<h3 id="02-setting-a-wallpaper">02. Setting a Wallpaper</h3>
+<p>Wallpapers are saved and numbered</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wallset <span class="nt">--use</span> 001</code></pre></figure>
+
+<blockquote>
+  <p><strong>TIP</strong>: If you want to change the wallpaper at the time of addition, just use it in conjunction with the <code class="highlighter-rouge">-S</code> parameter, example:</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wallset <span class="nt">-S</span> <span class="nt">-a</span> imagem.png</code></pre></figure>
+
+<h3 id="03-obtaining-information-on-the-number-of-wallpapers-that-have-been-added-to-wallset">03. Obtaining information on the number of wallpapers that have been added to <a href="https://github.com/terroo/wallset">wallset</a></h3>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wallset <span class="nt">--count</span></code></pre></figure>
+
+<h3 id="04-opening-the-current-image-being-able-to-browse-through-all-using-the-next--feature-of-your-image-manager">04. Opening the current image, being able to browse through all using the <em>[next →]</em> feature of your image manager:</h3>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wallset <span class="nt">--display</span></code></pre></figure>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h3 id="05-getting-the-current-image-number">05. Getting the current image number:</h3>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wallset <span class="nt">--show</span></code></pre></figure>
+
+<h3 id="06-removing-the-last-image-added-wallset---remove">06. Removing the last image added: <code class="highlighter-rouge">wallset --remove</code></h3>
+
+<p>It is also possible to make a * loop * of the added images so that the wallpaper is changed according to the pre-set time. To do this, use the <code class="highlighter-rouge">--time</code> PARAMETER and then enter the time in seconds.</p>
+<blockquote>
+  <p>Assuming you want the wallpapers to be changed every 1 hour, run:</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wallset <span class="nt">--time</span> 3600</code></pre></figure>
+
+<p>Before changing the wallpaper after using the <code class="highlighter-rouge">--time</code> feature, run the command with the <code class="highlighter-rouge">--quit</code> parameter, example:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wallset <span class="nt">--quit</span></code></pre></figure>
+
+<blockquote>
+  <p>This is a correct way of using the program. It avoids problems that can be incorrectly classified as ** bug **, but it is just a * misuse *.</p>
+</blockquote>
+
+<h1 id="adding-video-as-wallpaper">Adding video as wallpaper</h1>
+<p>One of the most interesting features of <a href="https://github.com/terroo/wallset">wallset</a> is that you can add videos as a wallpaper. To do this, simply run the command:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wallset <span class="nt">--video</span> your-video.mp4</code></pre></figure>
+
+<blockquote>
+  <p>Or the full video path: <code class="highlighter-rouge">wallset -V path/to/video.mp4</code></p>
+</blockquote>
+
+<p>To stop a video, the procedure is the same as the image loop, just use the <code class="highlighter-rouge">--quit</code> parameter or just<code class="highlighter-rouge"> -q</code>, example:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wallset <span class="nt">-q</span></code></pre></figure>
+
+<blockquote>
+  <p>The video image will be frozen, becoming the current wallpaper. To change, use the <code class="highlighter-rouge">--use [number]</code> parameter or just <code class="highlighter-rouge">-u [number]</code>, as we have seen.</p>
+</blockquote>
+
+<p>After using a video only once, it is automatically added to the ready-made videos directory, to list all videos, use the <code class="highlighter-rouge">--list-videos</code> parameter:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wallset <span class="nt">--list-videos</span>
+<span class="c"># Or only</span>
+wallset <span class="nt">-L</span></code></pre></figure>
+
+<p>If you want to use a video that is in the video directory, just use the <code class="highlighter-rouge">--set-video</code> parameter and then enter the number displayed when listing the videos, example:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wallset <span class="nt">--set-video</span> 1
+<span class="c"># or only</span>
+wallset <span class="nt">-I</span> 2</code></pre></figure>
+
+<h1 id="comments">Comments</h1>
+<p>I created this program recently, so it needs more testing. At the time of writing this article, I only tested it on a <a href="https://en.terminalroot.com.br/5-tools-for-you-to-use-on-your-wm/">window manager</a>, more precisely on <a href="https://en.terminalroot.com.br/how-to-install-bspwm-on-gentoo/">bspwm</a>. So feel free to report bugs if you can find it at: <a href="https://github.com/terroo/wallset/issues">https://github.com/terroo/wallset/issues</a>.</p>
+
+<p>If you want to uninstall the <code class="highlighter-rouge">wallset</code>, proceed as follows using the installer itself, however with the <code class="highlighter-rouge">uninstall</code> parameter:</p>
+<blockquote>
+  <p>Remembering that when performing the uninstallation all images and videos added will also be deleted, in case you intend to reinstall it in the future.</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/terroo/wallset down-wallset
+<span class="nb">cd </span>down-wallset
+./install.sh uninstall</code></pre></figure>
+
+<p>I also created a video showing the main features of the program and using the <a href="https://github.com/terroo/wallset/tree/master/examples">examples</a> that are part of the <a href="https://github.com/terroo/wallset/tree/master/examples">repository</a> directory itself.</p>
+
+<p>If you want to watch the video, just click <a href="https://youtu.be/Mb0SXMft2sw">on this link</a>.
+<strong>Note</strong>: THE VIDEO IS IN BRAZILIAN PORTUGUESE, BUT YOU CAN TRY TO ENABLE THE SUBTITLES THAT WERE AUTOMATICALLY CREATED BY YOUTUBE’S ARTIFICIAL INTELLIGENCE AND ARE SUBJECT TO FAILURES.</p>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="watch-the-video">Watch The Video</h2>
+<style>
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 2px;
+  text-align:center;
+  margin:auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin:auto;
+}
+
+.column {
+  float: left;
+  width: 20%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+
+<body>
+
+
+<blockquote>
+	<p>The video has English subtitles native to the video itself and with the correct translation. To enable, use the settings in the footer of the video itself, according to the images shown here below.</p>
+	<p>CLICK ON IMAGES TO VIEW INTO LARGER RESOLUTION.</p>
+	<footer>Swap images by clicking &raquo;</footer>
+</blockquote>
+
+<div class="text-center">
+<h2>Tutorial for subtitles in Youtube</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="/assets/img/youtube-legends-tutorial/1.jpg" style="width:70%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" />
+  </div>
+  <div class="column">
+    <img src="/assets/img/youtube-legends-tutorial/2.jpg" style="width:70%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" />
+  </div>
+  <div class="column">
+    <img src="/assets/img/youtube-legends-tutorial/3.jpg" style="width:70%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" />
+  </div>
+  <div class="column">
+    <img src="/assets/img/youtube-legends-tutorial/A.jpg" style="width:70%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" />
+  </div>
+  <div class="column">
+    <img src="/assets/img/youtube-legends-tutorial/B.jpg" style="width:70%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" />
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+      <img src="/assets/img/youtube-legends-tutorial/1.jpg" style="width:100%" />
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+      <img src="/assets/img/youtube-legends-tutorial/2.jpg" style="width:100%" />
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 5</div>
+      <img src="/assets/img/youtube-legends-tutorial/3.jpg" style="width:100%" />
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+      <img src="/assets/img/youtube-legends-tutorial/A.jpg" style="width:100%" />
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="/assets/img/youtube-legends-tutorial/B.jpg" style="width:100%" />
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="/assets/img/youtube-legends-tutorial/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Click in settings" title="Click in settings" />
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/img/youtube-legends-tutorial/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Click in Subtitles" title="Click in Subtitles" />
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/img/youtube-legends-tutorial/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Click in English" title="Click in English" />
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/img/youtube-legends-tutorial/A.jpg" style="width:100%" onclick="currentSlide(4)" alt="Click in Auto-translate" title="Click in Auto-translate" />
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/assets/img/youtube-legends-tutorial/B.jpg" style="width:100%" onclick="currentSlide(5)" alt="Choose your Language" title="Choose your Language" />
+    </div>
+  </div>
+</div>
+</div><!-- text-center -->
+
+<br /><hr />
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+<iframe width="920" height="400" src="https://www.youtube.com/embed/Mb0SXMft2sw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+
+
+</body>
+:ET

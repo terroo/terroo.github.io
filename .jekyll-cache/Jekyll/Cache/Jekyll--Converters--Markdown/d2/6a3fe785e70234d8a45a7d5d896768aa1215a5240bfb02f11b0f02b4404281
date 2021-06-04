@@ -1,0 +1,2 @@
+I"<p>Devuan is a fork of Debian that uses sysvinit or OpenRC instead of systemd, which is the default in newer Debian releases. The Devuan development team aim to maintain compatibility with other init systems in the future and not detach Linux from other Unix systems.</p>
+:ET

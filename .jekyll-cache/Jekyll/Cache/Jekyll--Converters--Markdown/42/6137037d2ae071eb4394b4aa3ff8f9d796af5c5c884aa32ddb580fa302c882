@@ -1,0 +1,96 @@
+I"^<p><img src="/assets/img/js/winbox.jpg" alt="Create Window for HTML5 with Javascript" /></p>
+
+<p>Creating “Windows” in the DOM is something sensational, especially if you want to create online systems, online terminal or even an operating system prototype! 😃</p>
+
+<p>And doing that now is even simpler with Winbox.js.</p>
+
+<p><img src="/assets/img/js/winbox.png" alt="Winbox.js" /></p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>WinBox is a modern HTML5 window manager for the web. Light and excellent performance, without dependencies, fully customizable, free and open source!</p>
+
+<p>There are numerous ways to use it, such as:</p>
+
+<p>Via npm:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">npm <span class="nb">install </span>winbox</code></pre></figure>
+
+<p>Importing the module via CDN:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">&lt;script <span class="nb">type</span><span class="o">=</span><span class="s2">"module"</span><span class="o">&gt;</span>
+  import WinBox from <span class="s2">"https://unpkg.com/winbox@0.1.8/src/js/winbox.js"</span><span class="p">;</span>
+&lt;/script&gt;</code></pre></figure>
+
+<p>Or by downloading from the <a href="https://nextapps-de.github.io/winbox/">website</a>.</p>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>talking about website, there you will find several examples of use and demo windows!</p>
+
+<h1 id="and-what-is-the-most-basic-way-to-implement-it">And what is the most basic way to implement it?</h1>
+
+<p>Simple! I made a very basic example of use and you just copy the code, open a [html] file!</p>
+
+<p>Open the file in your <a href="https://en.terminalroot.com.br/list-with-30-browsers-for-linux/">browser</a>!
+Code sample:</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Window with Javascript<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://rawcdn.githack.com/nextapps-de/winbox/0.1.8/dist/winbox.bundle.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;style&gt;</span> <span class="nf">#content</span> <span class="p">{</span> <span class="nl">display</span><span class="p">:</span><span class="nb">none</span><span class="p">;</span> <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span> <span class="p">}</span><span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+ <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Terminal Root<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>A little bit about C++, Operating Systems, Programming and Web Development.<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Consectetur nulla sequi distinctio enim accusantium? Architecto incidunt accusantium aut fugit commodi Autem et saepe aliquid alias hic. Atque in neque tempore animi earum? At maiores ullam quaerat aliquam mollitia<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Elit non vel non quisquam repellendus, consectetur Perspiciatis laboriosam nulla dolor optio vero? Odit placeat nisi pariatur incidunt est Architecto nisi libero sit fugit vitae iusto? Ut quas necessitatibus non<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>Acesse: <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://terminalroot.com.br/"</span><span class="nt">&gt;</span>https://terminalroot.com.br/<span class="nt">&lt;/a&gt;&lt;/h3&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">"OpenWindow()"</span><span class="nt">&gt;</span>Abrir janela<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+
+  <span class="kd">function</span> <span class="nx">OpenWindow</span><span class="p">(){</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">content</span><span class="dl">"</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">block</span><span class="dl">"</span><span class="p">;</span> 
+    <span class="kd">var</span> <span class="nx">node</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">content</span><span class="dl">"</span><span class="p">);</span>
+
+    <span class="k">new</span> <span class="nx">WinBox</span><span class="p">(</span><span class="dl">"</span><span class="s2">Mount DOM</span><span class="dl">"</span><span class="p">,</span> <span class="p">{</span>
+        <span class="na">mount</span><span class="p">:</span> <span class="nx">node</span><span class="p">.</span><span class="nx">cloneNode</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+    <span class="p">});</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">content</span><span class="dl">"</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">none</span><span class="dl">"</span><span class="p">;</span> 
+  <span class="p">}</span>
+
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<p>Winbox.js website: <a href="https://nextapps-de.github.io/winbox/">https://nextapps-de.github.io/winbox/</a></p>
+
+<p>GitHub: <a href="https://github.com/nextapps-de/winbox">https://github.com/nextapps-de/winbox</a></p>
+
+:ET

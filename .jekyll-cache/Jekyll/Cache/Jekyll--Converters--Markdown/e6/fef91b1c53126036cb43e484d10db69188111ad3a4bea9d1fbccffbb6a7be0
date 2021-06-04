@@ -1,0 +1,122 @@
+I""<p><img src="/assets/img/cpp/cmake.png" alt="How to Compile your programs with CMake" /></p>
+
+<p>We have already shown here a <a href="https://en.terminalroot.com.br/gnu-autotools-ultimate-tutorial-for-beginners/">Definitive Tutorial for GNU Autotools for Beginners</a> as well as another tutorial also on <a href="https://en.terminalroot.com.br/how-to-create-a-makefile/">How to Create a Makefile</a>.</p>
+
+<p>But CMake has been widely adopted by the community/companies due to the fact that it is multiplatform and because it is very easy to use.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="introduction">Introduction</h2>
+<p><a href="https://cmake.org/">CMake</a> is a multiplatform system for performing automated generation. It is comparable with the <a href="https://en.terminalroot.com.br/how-to-create-a-makefile/">Unix Make</a> program in which the generation process is, in the end, controlled by the configuration files , in the case of CMake called <strong>CMakeLists.txt</strong> files.</p>
+
+<p>Unlike Make, it does not directly generate the final software, but instead generates standard generation files (for example, Unix makefiles and Visual C++ projects/workspaces on Windows) which are used in common ways.</p>
+
+<p>This allows developers familiar with a particular development environment (such as the various IDEs) to use it in standard mode. It is this use of the native generation environment that distinguishes CMake from other better known systems like <a href="https://en.wikipedia.org/wiki/SCons">SCons</a>.</p>
+
+<p>The name “CMake” is an abbreviation for “cross platform make”.</p>
+
+<h2 id="installation">Installation</h2>
+<p>To install CMake use your distribution’s package manager, examples:</p>
+<blockquote>
+  <p>Remembering that you also need to have a compiler installed, example: <a href="https://gcc.gnu.org/">gcc/g++</a></p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt <span class="nb">install </span>cmake <span class="c"># Debian, Ubuntu, Linux Mint,...</span>
+<span class="nb">sudo </span>dnf <span class="nb">install </span>cmake <span class="c"># Fedora</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> cmake <span class="c"># Arch Linux, Manjaro,...</span></code></pre></figure>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>On <a href="https://www.gentoo.org/">Gentoo</a>, <a href="https://www.funtoo.org/">Funtoo</a> and the like, you don’t need to install it, since CMake is already native to these systems.</p>
+
+<h2 id="basic-example">Basic example</h2>
+<p>Assuming you have the following file:</p>
+<blockquote>
+  <p>Example of building a C++ code</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="c1">// main.cpp</span>
+<span class="cp">#include &lt;iostream&gt;
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">){</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Example for testing with CMake"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Of course you could compile with the <a href="https://gcc.gnu.org/">GCC, the GNU Compiler Collection</a> by running the command: <code class="highlighter-rouge">g++ main.cpp -o myexample</code>.</p>
+
+<p>However, to use CMake you first need to create a file named: ** CMakeLists.txt **: <code class="highlighter-rouge">vim CMakeLists.txt</code> (necessary to write in this way, respecting the lowercase and uppercase letters).</p>
+
+<p>Within this file (for this basic example, which even works for larger projects) you will need to include 3 lines:</p>
+<ul>
+  <li>The first line will tell you the version of your CMake: <code class="highlighter-rouge">cmake_minimum_required(VERSION 3.10)</code>, check the version you have to inform it or even a lower version: <code class="highlighter-rouge">cmake --version</code>.</li>
+  <li>In the second line you must enter the name of your project, example: <code class="highlighter-rouge">project(MyExample)</code></li>
+  <li>And in the third line enter the name of the final binary and the file: <code class="highlighter-rouge">add_executable(myexample main.cpp)</code>
+    <blockquote>
+      <p>(if there is more than one file, example if it were directly from g++: <code class="highlighter-rouge">g++ main.cpp other.cpp -o binary</code>), in CMakeLists it would be:<code class="highlighter-rouge"> add_executable (binary main.cpp other.cpp) </code>, as well as directly the compiler does not need to inform the libraries (<strong>.h</strong> e <strong>.hh</strong>), as they are already part of includes, unless it is not.</p>
+    </blockquote>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-cmake" data-lang="cmake">// CMakeLists.txt
+<span class="nb">cmake_minimum_required</span><span class="p">(</span>VERSION 3.10<span class="p">)</span>
+<span class="nb">project</span><span class="p">(</span>MyExample<span class="p">)</span>
+<span class="nb">add_executable</span> <span class="p">(</span>myexample main.cpp<span class="p">)</span></code></pre></figure>
+
+<p>After that, just create a directory and the CMake files will remain and execute the command <code class="highlighter-rouge">cmake</code>:</p>
+<blockquote>
+  <p>Create a separate directory to keep everything organized and then run cmake pointing to the directory immediately preceding “<strong>..</strong>”</p>
+</blockquote>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="n">mkdir</span> <span class="n">build</span> <span class="o">&amp;&amp;</span> <span class="n">cd</span> <span class="n">build</span>
+<span class="n">cmake</span> <span class="p">..</span></code></pre></figure>
+
+<p>This generated several CMake verification files and also the Makefile, now just compile and test the final binary:</p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="n">make</span>
+<span class="p">.</span><span class="o">/</span><span class="n">myexample</span></code></pre></figure>
+
+<p>The output will be similar to the image below:</p>
+
+<p><img src="/assets/img/cpp/example-cmake.png" alt="CMake example" /></p>
+
+<h2 id="more-information">More information</h2>
+
+<p>There are more things you can do within CMakeLists.txt, such as: project version control, binaries, conditions and more, but in summary it comes down to that demonstrated here.</p>
+
+<p>If you are interested in learning more, I recommend you to read CMake’s own tutorial <a href="https://cmake.org/cmake/help/latest/guide/tutorial/index.html">clicking here</a></p>
+
+<h2 id="useful-links">Useful links:</h2>
+<ul>
+  <li><a href="https://cmake.org/">https://cmake.org/</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/CMake">https://en.wikipedia.org/wiki/CMake</a></li>
+</ul>
+:ET

@@ -1,0 +1,128 @@
+I"� <p><img src="/assets/img/terminal/cheat-sh.png" alt="Learn to Program with a Terminal Utility" /></p>
+
+<p><a href="http://cheat.sh/">Cheat.sh</a> is a command line utility based on a concise documentation repository dedicated to learning programming languages ​​from scratch. You have access to Cheat Sheet for 58 programming languages, covering all popular languages ​​and more.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="installation">Installation</h1>
+<p>To use it is very simple, you will need to have [curl](https://en.terminalroot.com.br/12-tips-for-you-to-use-commando-curl-as-a-ninja/ installed and then just run the command below:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">curl cheat.sh</code></pre></figure>
+
+<p>On the “home page” you already get a quick guide to use. And to use quick help, just rotate:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">curl cht.sh/:help</code></pre></figure>
+
+<h1 id="using">Using</h1>
+<p>Well, the use is as intuitive as the home page, but let’s look at examples. Assuming you are studying the <a href="https://en.terminalroot.com.br/hello-world-in-25-programming-languages-proposal-docs-and-links/">Lua</a> programming languages ​​, just run the command:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">curl cht.sh/lua</code></pre></figure>
+
+<p>Before that you need to have the dependencies installed, they are: <a href="http://www.vergenet.net/~conrad/software/xsel">xsel</a> and <a href="http://utopia.knoware.nl/~hlubub/uck/rlwrap/">rlwrap</a>, use your distro’s package manager (<em>apt</em>, <em>dnf</em>, <em>pacman</em>, …). As I use <a href="https://en.terminalroot.com.br/how-to-create-an-ebuild-on-gentoo/">Gentoo</a>, <a href="https://en.terminalroot.com.br/configuring-mirrors-in-gentoo/">Portage</a> allows me to search both dependencies on one line and install them:</p>
+
+<p><img src="/assets/img/terminal/gentoo-portage-cheat-sh.png" alt="Gentoo Portage cheat.sh" /></p>
+
+<p>And then just install them:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>emerges xsel rlwrap</code></pre></figure>
+
+<blockquote>
+  <p><strong>GENTOO TIP</strong> If you also use <a href="https://en.terminalroot.com.br/10-fundamental-tips-for-your-gentoo-linux/">Gentoo</a> and are currently compiling some other software, don’t wait for it to finish, <a href="https://wiki.gentoo.org/wiki/Portage">Portage</a> doesn’t use <em>locks</em> <code class="highlighter-rouge">.lock</code> like <a href="https://github.com/terroo/apt">APT</a> that only allow a single instance, you can compile/install several parallel programs.</p>
+</blockquote>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Of course, this will only be a brief introduction. But to go further, I recommend you get the utility on your system, for this: download and install globally with the commands:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">mkdir</span> <span class="nt">-p</span> ~/.local/bin
+curl https://cht.sh/:cht.sh <span class="o">&gt;</span> ~/.local/bin/cht.sh
+<span class="nb">chmod</span> +x ~/.local/bin/cht.sh
+<span class="nb">echo</span> <span class="s1">'export PATH="${PATH}:${HOME}/.local/bin"'</span> | <span class="nb">tee</span> <span class="nt">-a</span> ~/.bashrc
+<span class="nb">source</span> ~/.bashrc</code></pre></figure>
+
+<blockquote>
+  <p>This procedure is for <a href="https://en.terminalroot.com.br/discover-and-install-oh-my-bash/">BASH</a> if you use <a href="https://en.terminalroot.com.br/the-13-best-shell-for-your-linux-or-unix/">ZSH</a>, <a href="https://fishshell.com/">FISH</a> or any other Shell change the configuration file <code class="highlighter-rouge">~/.bashrc</code> by the corresponding file of your <a href="https://en.terminalroot.com.br/shell">Shell</a>, example for ZSH: <code class="highlighter-rouge">~/.zshrc</code></p>
+</blockquote>
+
+<h1 id="command-line-use">Command Line Use</h1>
+<p>Continuing with our example of programming languages ​​<a href="http://www.lua.org/">Lua</a>. You can enter a <a href="https://www.tldp.org/LDP/abs/html/subshells.html">subshell</a> directly from the prompt, example, starting the shell inside the language directory:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">cht.sh <span class="nt">--shell</span>
+<span class="nb">cd </span>lua</code></pre></figure>
+
+<p>The output will be similar to this image:</p>
+
+<p><img src="/assets/img/terminal/cht-sh-cd-lua.png" alt="cht.sh shell cd lua" /></p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Within the <strong>subshell</strong> you can search for any content you want to get information, for example, search on <code class="highlighter-rouge">Lua</code> reverse lists:</p>
+<blockquote>
+  <p>Example:</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">cht.sh/lua&gt; reverse list
+- <span class="o">[[</span>
+   <span class="o">[</span>iterator - How to iterate Lua table from end?
+   <span class="o">[</span>
+   <span class="o">[</span>Thank you, @Piglet, <span class="k">for </span>useful link.
+   <span class="o">]]</span>
+
+<span class="nb">local </span><span class="k">function </span>reversedipairsiter <span class="o">(</span>t, i<span class="o">)</span>
+    i <span class="o">=</span> i - 1
+    <span class="k">if </span>i ~ <span class="o">=</span> 0 <span class="k">then
+        return </span>i, t <span class="o">[</span>i]
+    end
+end
+<span class="k">function </span>reversedipairs <span class="o">(</span>t<span class="o">)</span>
+    <span class="k">return </span>reversedipairsiter, t, <span class="c">#t + 1</span>
+end
+
+- Actually, I figured out an easier way may be to
+
+<span class="nb">local </span>mytable <span class="o">=</span> <span class="o">{</span><span class="s1">'a'</span>, <span class="s1">'b'</span>, <span class="s1">'c'</span><span class="o">}</span>
+<span class="k">for </span>i <span class="o">=</span> <span class="c">#mytable, 1, -1 do</span>
+    value <span class="o">=</span> mytable <span class="o">[</span>i]
+    print <span class="o">(</span>i .. <span class="s2">":"</span> .. value<span class="o">)</span>
+end
+cht.sh/lua&gt;</code></pre></figure>
+
+<p>To exit, just type: <code class="highlighter-rouge">exit</code>.</p>
+
+<p>Cool, right ?!</p>
+
+<h1 id="conclusion">Conclusion</h1>
+<p>I particularly use this utility a lot and I wanted to share it with you, because I believe that the readers of this blog are very similar to me and are studying several things today! :)</p>
+
+<p>Remembering that there are several subjects and languages ​​in <code class="highlighter-rouge">cht.sh</code> for more details visit the website: <a href="http://cheat.sh/">cheat.sh</a> and <a href="https://github.com/chubin /cheat.sh">GitHub</a> from them.</p>
+
+<p>Thanks and see you next time!</p>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+:ET

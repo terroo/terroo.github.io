@@ -1,0 +1,121 @@
+I"�%<p><img src="/assets/img/cppdaily/cpp-daily-episode4.jpg" alt="cpp::daily `std::endl`" /></p>
+
+<p>There is no single procedure to achieve more performance. Performance is a little bit of each of the details!</p>
+
+<p>Usually when you use an <a href="https://en.terminalroot.com.br/install-veonim-a-text-editor-based-on-vim-and-neovim/">IDE</a> they usually autocomplete your <code class="highlighter-rouge">std::cout</code> with <code class="highlighter-rouge">std::endl</code> and this is not a good idea!</p>
+
+<p>Using <code class="highlighter-rouge">std::endl</code> can be inefficient, as it actually does two tasks:</p>
+<ul>
+  <li><strong>1º</strong> moves the cursor to the next line: <code class="highlighter-rouge">'\n'</code>;</li>
+  <li><strong>2º</strong> and “empties” the output: std::flush.</li>
+</ul>
+
+<p>That is, using <code class="highlighter-rouge">std::endl</code> is equivalent to using: <code class="highlighter-rouge">'\n'</code> « <code class="highlighter-rouge">std::flush</code>.</p>
+
+<p>When writing text to the console using std::cout usually clears the output anyway (and if it doesn’t, it generally doesn’t matter), then having <code class="highlighter-rouge">std::endl</code> flush is rarely important.</p>
+
+<p>Because of this, the use of the <code class="highlighter-rouge">'\n'</code> character is usually preferable. The <code class="highlighter-rouge">'\n'</code> character moves the cursor to the next line, but does not make the download redundant, so it performs better. The <code class="highlighter-rouge">'\n'</code> character also tends to be easier to read, as it is shorter and can be incorporated into existing text.</p>
+
+<p>Std::endl is technically unnecessary, since the program ends immediately afterwards.</p>
+
+<blockquote>
+  <p>The <code class="highlighter-rouge">std::endl</code> can be useful only when: first, it helps to indicate that the output line is a “complete thought”. Second, if we want to add exit instructions later, we don’t have to modify the existing code. We can just add them. But in the “overwhelming” majority of cases you will not need to use it.</p>
+</blockquote>
+
+<p>Let’s analyze the runtime of the program below using <code class="highlighter-rouge">std::endl</code> and then only <code class="highlighter-rouge">'\n'</code>:</p>
+
+<blockquote>
+  <p>For this we will use the <code class="highlighter-rouge">time</code> command to inform us of the execution time</p>
+</blockquote>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>1º Using <code class="highlighter-rouge">std::endl</code></p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+</span>
+<span class="kt">void</span> <span class="nf">writeln</span><span class="p">(</span> <span class="n">std</span><span class="o">::</span><span class="n">ostream</span> <span class="o">&amp;</span> <span class="n">os</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="o">&amp;</span> <span class="n">str</span> <span class="p">){</span>
+  <span class="n">os</span> <span class="o">&lt;&lt;</span> <span class="n">str</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span> <span class="c1">// USING std::endl</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span> <span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span> <span class="n">argv</span> <span class="p">){</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">ofstream</span> <span class="n">outfile</span><span class="p">(</span> <span class="s">"output.txt"</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">ios_base</span><span class="o">::</span><span class="n">trunc</span> <span class="p">);</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">1000000</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span> <span class="p">)</span> <span class="p">{</span>
+   <span class="n">writeln</span><span class="p">(</span> <span class="n">outfile</span><span class="p">,</span> <span class="s">"Hello World!"</span> <span class="p">);</span> 
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<blockquote>
+  <p>Execution time according to the <code class="highlighter-rouge">time</code> command</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">real	0m3,512s
+user	0m0,752s
+sys	0m2,749s</code></pre></figure>
+
+<hr />
+
+<h1 id="2º-the-same-program-using-n">2º The same program using <code class="highlighter-rouge">'\n'</code></h1>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+</span>
+<span class="kt">void</span> <span class="nf">writeln</span><span class="p">(</span> <span class="n">std</span><span class="o">::</span><span class="n">ostream</span> <span class="o">&amp;</span> <span class="n">os</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="o">&amp;</span> <span class="n">str</span> <span class="p">){</span>
+  <span class="n">os</span> <span class="o">&lt;&lt;</span> <span class="n">str</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span> <span class="c1">// USING '\n'</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span> <span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span> <span class="n">argv</span> <span class="p">){</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">ofstream</span> <span class="n">outfile</span><span class="p">(</span> <span class="s">"output.txt"</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">ios_base</span><span class="o">::</span><span class="n">trunc</span> <span class="p">);</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">1000000</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span> <span class="p">)</span> <span class="p">{</span>
+   <span class="n">writeln</span><span class="p">(</span> <span class="n">outfile</span><span class="p">,</span> <span class="s">"Hello World!"</span> <span class="p">);</span> 
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<blockquote>
+  <p>Execution time according to the <code class="highlighter-rouge">time</code> command</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">real	0m0,141s
+user	0m0,115s
+sys	0m0,023s</code></pre></figure>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>That is, we had a gain of <strong>3 seconds</strong> for every 1 million cycles, usually when a program is open it does a lot more cycles than that!</p>
+
+<p>If you want to know more about the <code class="highlighter-rouge">time</code> use command: <code class="highlighter-rouge">man time</code>!</p>
+<blockquote>
+  <p><strong>VIDEO TIP</strong>: This video shows the performance of programming languages verified with the time command:</p>
+  <h1 id="tested-the-performance-of-10-ranking-programming-languages"><a href="https://www.youtube.com/watch?v=spLIBqiv2Og">Tested the Performance of 10 Ranking Programming Languages</a></h1>
+</blockquote>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="useful-links">Useful links</h2>
+<ul>
+  <li><a href="https://en.cppreference.com/w/cpp/io/manip/endl">https://en.cppreference.com/w/cpp/io/manip/endl</a></li>
+  <li><a href="https://www.youtube.com/watch?v=GMqQOEZYVJQ">https://www.youtube.com/watch?v=GMqQOEZYVJQ</a></li>
+</ul>
+
+:ET

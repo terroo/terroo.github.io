@@ -1,0 +1,468 @@
+I"�j<p><img src="/assets/img/network/network-bandwidth-linux.png" alt="Commands to Monitor Network Bandwidth on Linux" /></p>
+
+<p>Some Linux command line tools that can be used to monitor network usage.</p>
+
+<p>These tools monitor the traffic that flows through the network interfaces and measure the speed with which data is being transferred. Inbound and outbound traffic is shown separately.</p>
+
+<p>Some of the commands show the bandwidth used by individual processes. This makes it easier to detect a process that is using the network bandwidth too much.</p>
+
+<p>The tools have different mechanisms for generating the traffic report. Here is a list of the commands, classified by their resources.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h1 id="1-nload">1. <a href="https://github.com/rolandriegel/nload">Nload</a></h1>
+<p>Nload is a command line tool that allows users to monitor incoming and outgoing traffic separately.</p>
+
+<p>It also draws a graph to indicate the same, whose scale can be adjusted. Easy and simple to use and does not support many options.</p>
+
+<p>So, if you just need to take a quick look at the total bandwidth usage without details of individual processes, nload will be useful.</p>
+
+<p>Installation example on a Linux distro:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerge nload <span class="c"># Gentoo, Funtoo, ...</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>nload <span class="c"># Debian, Ubuntu, Mint, ...</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> nload <span class="c"># Arch, Manjaro, ...</span>
+<span class="nb">sudo </span>dnf <span class="nb">install </span>nload <span class="c"># Red Hat, CentOS, Fedora, ...</span></code></pre></figure>
+
+<p><img src="/assets/img/network/nload.png" alt="nload" /></p>
+
+<p>Example of use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">nload</code></pre></figure>
+
+<hr />
+
+<h1 id="2-iftop">2. <a href="https://github.com/soarpenguin/iftop">iftop</a></h1>
+<p>Iftop measures the data that flows through individual socket connections and works differently than Nload.</p>
+
+<p>Iftop uses the pcap library to capture the incoming and outgoing packets from the network adapter and then adds the size and count to find the total bandwidth in use.</p>
+
+<p>Although iftop reports the bandwidth used by individual connections, it cannot report the name/id of the process involved in the specific socket connection.</p>
+
+<p>But, being based on the pcap library, iftop is able to filter traffic and report bandwidth usage on selected host connections, as specified by the filter.</p>
+
+<p>Installation example on a Linux distro:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerges iftop <span class="c"># Gentoo, Funtoo, ...</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>iftop <span class="c"># Debian, Ubuntu, Mint, ...</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> iftop <span class="c"># Arch, Manjaro, ...</span>
+<span class="nb">sudo </span>dnf <span class="nb">install </span>iftop <span class="c"># Red Hat, CentOS, Fedora, ...</span></code></pre></figure>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p><img src="/assets/img/network/iftop.png" alt="iftop" /></p>
+
+<p>Example of use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">iftop <span class="nt">-n</span></code></pre></figure>
+
+<hr />
+
+<h1 id="3-iptraf">3. <a href="https://github.com/josarlo84/iptraf">iptraf</a></h1>
+<p>Iptraf is an interactive and colorful IP Lan monitor. It shows the individual connections and the amount of data flowing between the hosts.</p>
+
+<p>Installation example on a Linux distro:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerges iptraf <span class="c"># Gentoo, Funtoo, ...</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>iptraf <span class="c"># Debian, Ubuntu, Mint, ...</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> iptraf <span class="c"># Arch, Manjaro, ...</span>
+<span class="nb">sudo </span>dnf <span class="nb">install </span>iptraf <span class="c"># Red Hat, CentOS, Fedora, ...</span></code></pre></figure>
+
+<p><img src="/assets/img/network/iptraf.png" alt="iptraf" /></p>
+
+<p>Example of use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">iptraf</code></pre></figure>
+
+<hr />
+
+<h1 id="4-nethogs">4. <a href="https://github.com/raboof/nethogs">nethogs</a></h1>
+<p>Nethogs is a small ‘net top’ tool that shows the bandwidth used by individual processes and ranks the list by placing the most intense processes at the top.</p>
+
+<p>In the event of a sudden increase in bandwidth, quickly open the nethogs and find out who is responsible for the process. Nethogs informs the PID, the user and the program path.</p>
+
+<p>Installation example on a Linux distro:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">nethogs emerge <span class="c"># Gentoo, Funtoo, ...</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>nethogs <span class="c"># Debian, Ubuntu, Mint, ...</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> nethogs <span class="c"># Arch, Manjaro, ...</span>
+<span class="nb">sudo </span>dnf <span class="nb">install </span>nethogs <span class="c"># Red Hat, CentOS, Fedora, ...</span></code></pre></figure>
+
+<p><img src="/assets/img/network/nethogs.png" alt="nethogs" /></p>
+
+<p>Example of use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">nethogs</code></pre></figure>
+
+<hr />
+
+<h1 id="5-bmon">5. <a href="https://github.com/tgraf/bmon">bmon</a></h1>
+<p>Bmon (Bandwidth Monitor) is a tool similar to nload that shows the traffic load on all network interfaces in the system. The output also consists of a graph and a section with details at the package level.</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Installation example on a Linux distro:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bmon emerges <span class="c"># Gentoo, Funtoo, ...</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>bmon <span class="c"># Debian, Ubuntu, Mint, ...</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> bmon <span class="c"># Arch, Manjaro, ...</span>
+<span class="nb">sudo </span>dnf <span class="nb">install </span>bmon <span class="c"># Red Hat, CentOS, Fedora, ...</span></code></pre></figure>
+
+<p><img src="/assets/img/network/bmon.png" alt="bmon" /></p>
+
+<p>Example of use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bmon</code></pre></figure>
+
+<hr />
+
+<h1 id="6-slurm">6. <a href="https://github.com/mattthias/slurm">slurm</a></h1>
+<p>Slurm is “more” another network load monitor that shows device statistics along with an ASCII graph. It supports 3 different styles of graphs, each of which can be activated using the keys c, s and l. Simple in resources, slurm no longer displays details about the network load.</p>
+
+<p>Installation example on a Linux distro:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerge slurm <span class="c"># Gentoo, Funtoo, ...</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>slurm <span class="c"># Debian, Ubuntu, Mint, ...</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> slurm <span class="c"># Arch, Manjaro, ...</span>
+<span class="nb">sudo </span>dnf <span class="nb">install </span>slurm <span class="c"># Red Hat, CentOS, Fedora, ...</span></code></pre></figure>
+
+<p><img src="/assets/img/network/slurm.png" alt="slurm" /></p>
+
+<p>Example of use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">slurm <span class="nt">-s</span> <span class="nt">-i</span> eth0</code></pre></figure>
+
+<hr />
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="7-tcptrack">7. <a href="https://github.com/bchretien/tcptrack">tcptrack</a></h1>
+<p>Tcptrack is similar to iftop and uses the pcap library to capture packets and calculate various statistics, such as the bandwidth used for each connection.</p>
+
+<p>It also supports standard pcap filters that can be used to monitor specific connections.</p>
+
+<p>Installation example on a Linux distro:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerges tcptrack <span class="c"># Gentoo, Funtoo, ...</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>tcptrack <span class="c"># Debian, Ubuntu, Mint, ...</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> tcptrack <span class="c"># Arch, Manjaro, ...</span>
+<span class="nb">sudo </span>dnf <span class="nb">install </span>tcptrack <span class="c"># Red Hat, CentOS, Fedora, ...</span></code></pre></figure>
+
+<p><img src="/assets/img/network/tcptrack.png" alt="tcptrack" /></p>
+
+<p>Example of use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">tcptrack</code></pre></figure>
+
+<hr />
+
+<h1 id="8-vnstat">8. <a href="https://github.com/vergoh/vnstat">Vnstat</a></h1>
+<p>Vnstat is slightly different from most other tools. In fact, it runs a service/daemon in the background and keeps recording the size of the data transfer all the time.</p>
+
+<p>It can then be used to generate a network usage history report.</p>
+
+<p>Installation example on a Linux distro:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerge vnstat <span class="c"># Gentoo, Funtoo, ...</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>vnstat <span class="c"># Debian, Ubuntu, Mint, ...</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> vnstat <span class="c"># Arch, Manjaro, ...</span>
+<span class="nb">sudo </span>dnf <span class="nb">install </span>vnstat <span class="c"># Red Hat, CentOS, Fedora, ...</span></code></pre></figure>
+
+<p>Running vnstat without any options would simply show the total amount of data transfer that has occurred since the date the daemon is running.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>vnstat
+Database updated: Mon Mar 17 15:26:59 2020
+   eth0 since 06/12/13
+          rx:  135.14 GiB      tx:  35.76 GiB      total:  170.90 GiB
+   monthly
+                     rx      |     tx      |    total    |   avg. rate
+     <span class="nt">------------------------</span>+-------------+-------------+---------------
+       Feb <span class="s1">'14      8.19 GiB |    2.08 GiB |   10.27 GiB |   35.60 kbit/s
+       Mar '</span>14      4.98 GiB |    1.52 GiB |    6.50 GiB |   37.93 kbit/s
+     <span class="nt">------------------------</span>+-------------+-------------+---------------
+     estimated      9.28 GiB |    2.83 GiB |   12.11 GiB |
+   daily
+                     rx      |     tx      |    total    |   avg. rate
+     <span class="nt">------------------------</span>+-------------+-------------+---------------
+     yesterday    236.11 MiB |   98.61 MiB |  334.72 MiB |   31.74 kbit/s
+         today    128.55 MiB |   41.00 MiB |  169.56 MiB |   24.97 kbit/s
+     <span class="nt">------------------------</span>+-------------+-------------+---------------
+     estimated       199 MiB |      63 MiB |     262 MiB |</code></pre></figure>
+
+<p>To monitor bandwidth usage in real time, use the ‘-l’ option (live mode). It would then show the total bandwidth used by the input and output data, but in a very precise way, without any internal details about host connections or processes.</p>
+
+<p>Example of use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>vnstat <span class="nt">-l</span> <span class="nt">-i</span> eth0
+Monitoring eth0...    <span class="o">(</span>press CTRL-C to stop<span class="o">)</span>
+   rx:       12 kbit/s    10 p/s          tx:       12 kbit/s    11 p/s</code></pre></figure>
+
+<hr />
+
+<h1 id="9-bwm-ng">9. <a href="https://github.com/Jerga99/bwm-ng">bwm-ng</a></h1>
+<p>Bwm-ng (Bandwidth Monitor Next Generation) is another very simple real-time network load monitor that reports a summary of the speed at which data is being transferred into and out of all available network interfaces in the system.</p>
+
+<p>Installation example on a Linux distro:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerges bwm-ng <span class="c"># Gentoo, Funtoo, ...</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>bwm-ng <span class="c"># Debian, Ubuntu, Mint, ...</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> bwm-ng <span class="c"># Arch, Manjaro, ...</span>
+<span class="nb">sudo </span>dnf <span class="nb">install </span>bwm-ng <span class="c"># Red Hat, CentOS, Fedora, ...</span></code></pre></figure>
+
+<p>If the size of the console is large enough, bwm-ng can also draw bar charts for traffic using the curses2 output mode.</p>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Example of use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bwm-ng <span class="nt">-o</span> curses2</code></pre></figure>
+
+<hr />
+
+<h1 id="10-cbm---color-bandwidth-meter">10. <a href="https://github.com/resurrecting-open-source-projects/cbm">cbm - Color bandwidth meter</a></h1>
+<p>A small, simple bandwidth monitor that displays the volume of traffic through network interfaces. There are no more options, only traffic statistics are displayed and updated in real time.</p>
+
+<p>Installation example on a Linux distro:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerge cbm <span class="c"># Gentoo, Funtoo, ...</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>cbm <span class="c"># Debian, Ubuntu, Mint, ...</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> cbm <span class="c"># Arch, Manjaro, ...</span>
+<span class="nb">sudo </span>dnf <span class="nb">install </span>cbm <span class="c"># Red Hat, CentOS, Fedora, ...</span></code></pre></figure>
+
+<p><img src="/assets/img/network/cbm.png" alt="cbm" /></p>
+
+<p>Example of use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">cbm</code></pre></figure>
+
+<hr />
+
+<h1 id="11-speedometer">11. <a href="https://github.com/sanderjo/speedometer">speedometer</a></h1>
+<p>Another small and simple tool that only draws beautiful graphics of incoming and outgoing traffic through a given interface.</p>
+
+<p>Installation example on a Linux distro:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">speedometer emerges <span class="c"># Gentoo, Funtoo, ...</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>speedometer <span class="c"># Debian, Ubuntu, Mint, ...</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> speedometer <span class="c"># Arch, Manjaro, ...</span>
+<span class="nb">sudo </span>dnf <span class="nb">install </span>speedometer <span class="c"># Red Hat, CentOS, Fedora, ...</span></code></pre></figure>
+
+<p><img src="/assets/img/network/speedometer.png" alt="speedometer" /></p>
+
+<p>Example of use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">speedometer</code></pre></figure>
+
+<hr />
+
+<h1 id="12-pktstat">12. <a href="https://github.com/dleonard0/pktstat">Pktstat</a></h1>
+<p>Pktstat displays all active connections in real time and the speed with which data is being transferred through them.</p>
+
+<p>It also displays the connection type, that is, tcp or udp and also details about HTTP requests, if involved.</p>
+
+<p>Installation example on a Linux distro:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerges pkstat <span class="c"># Gentoo, Funtoo, ...</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>pkstat <span class="c"># Debian, Ubuntu, Mint, ...</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> pkstat <span class="c"># Arch, Manjaro, ...</span>
+<span class="nb">sudo </span>dnf <span class="nb">install </span>pkstat <span class="c"># Red Hat, CentOS, Fedora, ...</span></code></pre></figure>
+
+<p><img src="/assets/img/network/pkstat.png" alt="pkstat" /></p>
+
+<p>Example of use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">pktstat <span class="nt">-i</span> eth0 <span class="nt">-nt</span></code></pre></figure>
+
+<hr />
+
+<h1 id="13-netwatch">13. <a href="https://github.com/johnscillieri/netwatch">Netwatch</a></h1>
+<p>Netwatch is part of the netdiag tool collection and also displays the connections between the local host and other remote hosts and the speed with which data is transferred over each connection.</p>
+
+<p>Installation example on a Linux distro:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">netwatch emerges <span class="c"># Gentoo, Funtoo, ...</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>netwatch <span class="c"># Debian, Ubuntu, Mint, ...</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> netwatch <span class="c"># Arch, Manjaro, ...</span>
+<span class="nb">sudo </span>dnf <span class="nb">install </span>netwatch <span class="c"># Red Hat, CentOS, Fedora, ...</span></code></pre></figure>
+
+<p><img src="/assets/img/network/netwatch.png" alt="netwatch" /></p>
+
+<p>Example of use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">netwatch <span class="nt">-e</span> eth0 <span class="nt">-nt</span></code></pre></figure>
+
+<hr />
+
+<h1 id="14-trafshow">14. <a href="https://github.com/mattetambu/Trafshow">Trafshow</a></h1>
+<p>Like netwatch and pktstat, trafshow reports the current active connections, their protocol and the data transfer speed for each connection. It can filter connections using pcap filters. Monitor only tcp connections.</p>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Installation example on a Linux distro:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerges trafshow <span class="c"># Gentoo, Funtoo, ...</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>trafshow <span class="c"># Debian, Ubuntu, Mint, ...</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> trafshow <span class="c"># Arch, Manjaro, ...</span>
+<span class="nb">sudo </span>dnf <span class="nb">install </span>trafshow <span class="c"># Red Hat, CentOS, Fedora, ...</span></code></pre></figure>
+
+<p><img src="/assets/img/network/trafshow.png" alt="trafshow" /></p>
+
+<p>Example of use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">trafshow <span class="nt">-i</span> eth0 tcp</code></pre></figure>
+
+<hr />
+
+<h1 id="15-netload">15. <a href="https://github.com/anothernode/netload">Netload</a></h1>
+<p>netload is a very simple network traffic viewer for the terminal. It shows a moving bar graph representing incoming network traffic and a small box with RX and TX traffic in kilobytes.</p>
+
+<p>Installation example on a Linux distro:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">netload emerges <span class="c"># Gentoo, Funtoo, ...</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>netload <span class="c"># Debian, Ubuntu, Mint, ...</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> netload <span class="c"># Arch, Manjaro, ...</span>
+<span class="nb">sudo </span>dnf <span class="nb">install </span>netload <span class="c"># Red Hat, CentOS, Fedora, ...</span></code></pre></figure>
+
+<p><img src="/assets/img/network/netload.png" alt="netload" /></p>
+
+<p>Example of use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">netload eth0</code></pre></figure>
+
+<hr />
+
+<h1 id="16-ifstat">16. <a href="https://github.com/Yamagi/ifstat">ifstat</a></h1>
+<p>Ifstat reports the network bandwidth in a batch style mode. The output is in an easy format to record and analyze using other programs or utilities.</p>
+
+<p>Installation example on a Linux distro:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerges ifstat <span class="c"># Gentoo, Funtoo, ...</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>ifstat <span class="c"># Debian, Ubuntu, Mint, ...</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> ifstat <span class="c"># Arch, Manjaro, ...</span>
+<span class="nb">sudo </span>dnf <span class="nb">install </span>ifstat <span class="c"># Red Hat, CentOS, Fedora, ...</span></code></pre></figure>
+
+<p>Example of use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ifstat <span class="nt">-t</span> <span class="nt">-i</span> eth0 0.5
+  Time           eth0
+HH:MM:SS   KB/s <span class="k">in  </span>KB/s out
+09:59:21      2.62      2.80
+09:59:22      2.10      1.78
+09:59:22      2.67      1.84
+09:59:23      2.06      1.98
+09:59:23      1.73      1.79</code></pre></figure>
+
+<hr />
+
+<h1 id="17-dstat">17. <a href="http://dag.wiee.rs/home-made/dstat/">dstat</a></h1>
+<p>Dstat is a versatile tool (written in python) that can monitor different system statistics and report them in a batch mode or record the data in a csv or similar file. This example shows how to use dstat to report network bandwidth.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Installation example on a Linux distro:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerge dstat <span class="c"># Gentoo, Funtoo, ...</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>dstat <span class="c"># Debian, Ubuntu, Mint, ...</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> dstat <span class="c"># Arch, Manjaro, ...</span>
+<span class="nb">sudo </span>dnf <span class="nb">install </span>dstat <span class="c"># Red Hat, CentOS, Fedora, ...</span></code></pre></figure>
+
+<p>Example of use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">dstat <span class="nt">-nt</span>
+<span class="nt">-net</span>/total- <span class="nt">----</span> system <span class="nt">----</span>
+ recv send | team
+   0 0 | 23-03 10:27:13
+1738B 1810B | 23-03 10:27:14
+2937B 2610B | 3/23 10:27:15 AM
+2319B 2232B | 23-03 10:27:16
+2738B 2508B | 03/23 10:27:17</code></pre></figure>
+
+<hr />
+
+<h1 id="18-collectl">18. <a href="http://collectl.sourceforge.net/">collectl</a></h1>
+<p>Collectl reports system statistics in a style similar to dstat and, like dstat, gathers statistics about several different system resources, such as CPU, memory, network, etc.</p>
+
+<p>Here is a simple example of how to use it to report network usage/bandwidth.</p>
+
+<p>Installation example on a Linux distro:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerges collectl <span class="c"># Gentoo, Funtoo, ...</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>collectl <span class="c"># Debian, Ubuntu, Mint, ...</span>
+<span class="nb">sudo </span>pacman <span class="nt">-S</span> collectl <span class="c"># Arch, Manjaro, ...</span>
+<span class="nb">sudo </span>dnf <span class="nb">install </span>collectl <span class="c"># Red Hat, CentOS, Fedora, ...</span></code></pre></figure>
+
+<p>Example of use:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">collectl <span class="nt">-sn</span> <span class="nt">-oT</span> <span class="nt">-i0</span>.5
+waiting <span class="k">for </span>0.5 second sample...
+<span class="c">#         &lt;----------Network----------&gt;</span>
+<span class="c">#Time       KBIn  PktIn  KBOut  PktOut</span>
+10:32:01      40     58     43      66
+10:32:01      27     58      3      32
+10:32:02       3     28      9      44
+10:32:02       5     42     96      96
+10:32:03       5     48      3      28</code></pre></figure>
+
+<hr />
+
+<h1 id="summary">Summary</h1>
+<p>These were some useful commands to quickly check the network bandwidth on your Linux server. However, they do require the user to log in to the remote server using ssh.</p>
+
+<p>Alternatively, web-based monitoring tools can also be used for the same task.</p>
+
+<p>In addition, there are enterprise-grade monitoring tools, such as Nagios, that provide a number of features to monitor not just one server, but the entire infrastructure.</p>
+
+<p>If you want to create your own solution it is very simple, for more details <a href="https://www.youtube.com/watch?v=QtMMFH1j8xA">watch this video</a>(Portuguese Brazilian)</p>
+
+<h1 id="references">References</h1>
+<ul>
+  <li><a href="https://en.wikipedia.org/wiki/Bandwidth_(computing)">Bandwidth</a></li>
+  <li><a href="https://www.binarytides.com/linux-commands-monitor-network/">binarytides</a></li>
+</ul>
+
+:ET

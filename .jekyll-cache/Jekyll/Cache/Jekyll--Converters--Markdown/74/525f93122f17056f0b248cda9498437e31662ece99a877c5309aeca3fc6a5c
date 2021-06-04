@@ -1,0 +1,29 @@
+I"ù<p><a href="https://github.com/DaveDavenport/rofi/">Rofi</a>, like <em>dmenu</em>, will provide the user with a textual list of options where one or more can be selected. This can either be, running an application, selecting a window or options provided by an external script.</p>
+
+<p>On Gentoo just use the command below with root or add the sudo in the normal user</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">emerge rofi</code></pre></figure>
+
+<p>To test to see if it is working normally, run the command:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">rofi <span class="nt">-show</span> run</code></pre></figure>
+
+<p><img src="/assets/img/tips/rofi1.png" alt="Rofi" title="Rofi" /></p>
+
+<p>To create a shortcut for the <code class="highlighter-rouge">super + d</code> key combination to open Rofi, simply edit the <code class="highlighter-rouge">vim .config/sxhkd/sxhkdrc</code> configuration file and insert the following line:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">super + d
+	rofi <span class="nt">-show</span> run</code></pre></figure>
+
+<p>For you to customize rofi theme, run the commands below in order</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">mkdir</span> ~/.config/rofi
+rofi <span class="nt">-dump-config</span> <span class="o">&gt;</span> ~/.config/rofi/config.rasi
+wget https://raw.githubusercontent.com/ricwtk/rofi-themes/master/input-emph-topbar.rasi <span class="nt">-O</span> 
+~/.config/rofi/input-emph-topbar.rasi
+<span class="nb">sed</span> <span class="nt">-i</span> <span class="s1">'/configuration {/a theme:  "input-emph-topbar";'</span> ~/.config/rofi/config.rasi</code></pre></figure>
+
+<p>Okay, now whenever you type <code class="highlighter-rouge">super + d</code> open Rofi.</p>
+
+<p><img src="/assets/img/tips/rofi2.png" alt="Rofi" title="Rofi" /></p>
+:ET

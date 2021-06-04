@@ -1,0 +1,667 @@
+I"^h<p><img src="/assets/img/bash/bashlogo.jpg" alt="45 Examples of Variables and Arrays in Shell Script" /></p>
+
+<p>1 - Create a variable, <strong>${var}</strong> is the same as <strong>$var</strong>, but not ambiguous.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">var</span><span class="o">=</span><span class="s2">"http://www.terminalroot.com.br/"</span>
+<span class="nb">echo</span> <span class="nv">$var</span>
+http://www.terminalroot.com.br/</code></pre></figure>
+
+<p>2 - Return string length</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="k">${#</span><span class="nv">var</span><span class="k">}</span>
+31</code></pre></figure>
+
+<p>3 - Execute the contents of $var (same as ‘eval $$var’)</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="k">${</span><span class="p">!var</span><span class="k">}</span></code></pre></figure>
+
+<p>4 - Returns variable names beginning with ‘U’</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="k">${</span><span class="p">!U*</span><span class="k">}</span>
+UID USER USERNAME</code></pre></figure>
+
+<p>5 - Returns the text from position 7</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="k">${</span><span class="nv">var</span>:7<span class="k">}</span>
+www.terminalroot.com.br/</code></pre></figure>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>6 - Returns 8 characters from position 11</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="k">${</span><span class="nv">var</span>:11:8<span class="k">}</span>
+terminal</code></pre></figure>
+
+<p>7 - Cut ‘http://’ from beginning of string</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="k">${</span><span class="nv">var</span><span class="p">#http</span>://<span class="k">}</span>
+www.terminalroot.com.br/</code></pre></figure>
+
+<p>8 - Cut ‘.com.br/’ from end of string</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="k">${</span><span class="nv">var</span><span class="p">%.com.br/</span><span class="k">}</span>
+http://www.terminalroot</code></pre></figure>
+
+<p>9 - Replaces ‘terminalroot’ with ‘aurelio’ once</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="k">${</span><span class="nv">var</span><span class="p">/terminalroot/aurelio</span><span class="k">}</span> 
+http://www.aurelio.com.br/</code></pre></figure>
+
+<p>10 - Replaces ‘o’ with ‘O’, always</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="k">${</span><span class="nv">var</span><span class="p">//o/O</span><span class="k">}</span>
+http://www.terminalrOOt.cOm.br/</code></pre></figure>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>11 - If string starts with ‘http’, replace ‘http’ with ‘Site’</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="k">${</span><span class="nv">var</span><span class="p">/#http/Site</span><span class="k">}</span>
+Site://www.terminalroot.com.br/</code></pre></figure>
+
+<p>12 - If string ends with ‘st’, replace ‘st’ with ‘STING’</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">var2</span><span class="o">=</span><span class="s2">"test"</span>
+<span class="nb">echo</span> <span class="k">${</span><span class="nv">var2</span><span class="p">/%st/STING</span><span class="k">}</span>
+teSTING</code></pre></figure>
+
+<p>13 - <strong>”“</strong> (double quotation marks) protect a string, but recognize <strong>$</strong>, <strong>\</strong> and <strong>`</strong> as specials</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s2">"</span><span class="nv">$var</span><span class="s2">"</span>
+http://www.terminalroot.com.br/</code></pre></figure>
+
+<p>14 - <strong>’‘</strong> (single quotes) protects a string, but recognizes <strong>$</strong>, <strong>\</strong> and <strong>`</strong> as specials</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s1">'$var'</span>
+<span class="nv">$var</span></code></pre></figure>
+
+<p>15 - <strong>$’…‘</strong> (dollar sign before single quotes) protects a string completely, but interprets <strong>\n</strong>, <strong>\t</strong>, <strong>\a</strong>, etc.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s1">$'$var</span><span class="se">\n</span><span class="s1">'</span>
+<span class="nv">$var</span></code></pre></figure>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>16 - <code class="highlighter-rouge">...</code> (between crases) Execute commands in a subshell, returning the result</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="sb">`</span><span class="nb">ls</span><span class="sb">`</span>
+Desktop Documents Downloads Images Templates Music Public Videos</code></pre></figure>
+
+<p>17 - Execute commands on a subshell</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">(</span><span class="nb">ls</span><span class="o">)</span>
+Desktop Documents Downloads Images Templates Music Public Videos</code></pre></figure>
+
+<p>18 - Execute commands on a subshell, returning the result</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="si">$(</span><span class="nb">ls</span><span class="si">)</span>
+Desktop Documents Downloads Images Templates Music Public Videos</code></pre></figure>
+
+<p>19 - Tests an arithmetic operation, returning 0 or 1</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">((</span>11&gt;9<span class="o">))</span></code></pre></figure>
+
+<p>20 - Returns the result of an arithmetic operation.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="k">$((</span><span class="m">11</span><span class="o">-</span><span class="m">9</span><span class="k">))</span>
+2</code></pre></figure>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>21 - Tests an expression, returning 0 or 1 (alias of command ‘test’)</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">[[</span> <span class="nv">$var</span> <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s1">'Its bigger'</span>
+Its bigger</code></pre></figure>
+
+<table>
+  <tbody>
+    <tr>
+      <td>22 - Tests an expression, returning 0 or 1 (can use <strong>&amp;&amp;</strong> and **</td>
+      <td> </td>
+      <td>** )</td>
+    </tr>
+  </tbody>
+</table>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">[[</span> <span class="nv">$var</span> <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s1">'Is there this variable'</span>
+Is there this variable</code></pre></figure>
+
+<p>23 - Special Variables</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Positional Parameters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">$0</code></td>
+      <td>Parameter Number 0 (Name of Command or Function)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">$1</code></td>
+      <td>Parameter Number 1 (from command line or function)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">...</code></td>
+      <td>Parameter number N …</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">$9</code></td>
+      <td>Parameter Number 9 (from command line or function)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">${10}</code></td>
+      <td>Parameter Number 10 (from command line or function)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">...</code></td>
+      <td>Parameter number NN …</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">$#</code></td>
+      <td>Total number of command line or function parameters</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">$*</code></td>
+      <td>All parameters as a single string</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">$@</code></td>
+      <td>All parameters, such as multiple protected strings</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Miscellania</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">$$</code></td>
+      <td>PID number of current process (from script itself)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">$!</code></td>
+      <td>PID number of last background job</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">$_</code></td>
+      <td>Last argument of last command executed</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">$?</code></td>
+      <td>Return code from last command executed</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>25 - Special escapes to use at prompt (PS1)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Escape</th>
+      <th>Reminder</th>
+      <th>Expands to …</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">\a</code></td>
+      <td>Alert</td>
+      <td>Alert (beep)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\d</code></td>
+      <td>Date</td>
+      <td>Date in “Weekday Month Day” format (Sat Jan 15)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\e</code></td>
+      <td>Escape</td>
+      <td>Esc Character</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\h</code></td>
+      <td>Hostname</td>
+      <td>Machine Name Without Domain (dhcp11)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\H</code></td>
+      <td>Hostname</td>
+      <td>Full Machine Name (dhcp11.company)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\j</code></td>
+      <td>Jobs</td>
+      <td>Number of Active Jobs</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\l</code></td>
+      <td>Tty</td>
+      <td>Current Terminal Name (ttyp1)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\n</code></td>
+      <td>Newline</td>
+      <td>Newline</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\r</code></td>
+      <td>Return</td>
+      <td>Return by car</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\s</code></td>
+      <td>Shell</td>
+      <td>Name of the shell (basename $ 0)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\t</code></td>
+      <td>Time</td>
+      <td>Time in 24-hour format HH: MM: SS</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\T</code></td>
+      <td>Time</td>
+      <td>12-hour format HH: MM: SS</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\@</code></td>
+      <td>At</td>
+      <td>Time in 12-hour format HH: MM am/pm</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\A</code></td>
+      <td>At</td>
+      <td>Time in 24-hour format HH:MM</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\u</code></td>
+      <td>User</td>
+      <td>Current user login</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\v</code></td>
+      <td>Version</td>
+      <td>Bash Version (2.00)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\V</code></td>
+      <td>Version</td>
+      <td>Bash Version  Subversion (2.00.0)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\w</code></td>
+      <td>Working Dir</td>
+      <td>Current directory, full path ($PWD)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\W</code></td>
+      <td>Working Dir</td>
+      <td>Current directory, only the last one (basename $PWD)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\!</code></td>
+      <td>History ico</td>
+      <td>Current command number in history</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\#</code></td>
+      <td>Number</td>
+      <td>Current command number</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\$</code></td>
+      <td>ID &gt;</td>
+      <td>Show “#” if root, “$” if normal user</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\nnn</code></td>
+      <td>Octal</td>
+      <td>Character whose octal is nnn</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\\</code></td>
+      <td>Backslash</td>
+      <td>Backslash \ literal</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\[</code></td>
+      <td>Escapes</td>
+      <td>Starts a sequence of escapes (color coded type)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">\]</code></td>
+      <td>Escapes</td>
+      <td>Ends an escape sequence</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>27 - Formatters of the date Command</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Format</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">%a</code></td>
+      <td>Abbreviated Weekday Name (Sun..Sab)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%A</code></td>
+      <td>Name of the day of the week (Sunday..Saturday)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%b</code></td>
+      <td>Abbreviated Month Name (Jan. Dec)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%B</code></td>
+      <td>Name of the month (January.December)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%c</code></td>
+      <td>Complete date (Sat Nov 04 12:02:33 EST 1989)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%y</code></td>
+      <td>Year (two digits)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%Y</code></td>
+      <td>Year (four digits)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%m</code></td>
+      <td>Month (01..12)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%d</code></td>
+      <td>Day (01..31)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%j</code></td>
+      <td>Day of the year (001..366)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%H</code></td>
+      <td>Hours (00..23)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%M</code></td>
+      <td>Minutes (00..59)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%S</code></td>
+      <td>Seconds (00..60)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%s</code></td>
+      <td>Seconds since January 1, 1970</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%%</code></td>
+      <td>A % literal</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%t</code></td>
+      <td>One TAB</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%n</code></td>
+      <td>A line break</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>28 - Printf Command Formatters</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Format</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">%d</code></td>
+      <td>Decimal number</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%o</code></td>
+      <td>Octal Number</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%x</code></td>
+      <td>Hexadecimal Number (a-f)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%X</code></td>
+      <td>Hexadecimal Number (A-F)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%f</code></td>
+      <td>Floating-point number</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%e</code></td>
+      <td>Number in scientific notation (e + 1)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%E</code></td>
+      <td>Number in scientific notation (E + 1)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">%s</code></td>
+      <td>String</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>29 - To know all local variables, execute</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">set</span></code></pre></figure>
+
+<p>or, and open txt to see later</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">set</span> <span class="o">&gt;</span> VariablesLocations.txt</code></pre></figure>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>30 - Global Variables, to know all global variables, execute</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">env</span></code></pre></figure>
+
+<p>or</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">printenv</span></code></pre></figure>
+
+<p>31 - To assign a value to a local variable</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">LINUX</span><span class="o">=</span>free
+<span class="nb">echo</span> <span class="nv">$LINUX</span>
+free</code></pre></figure>
+
+<p>32 - check if the variable created in the previous item appears in the list of local variables</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">set</span> | <span class="nb">grep </span>LINUX
+<span class="nv">LINUX</span><span class="o">=</span>free</code></pre></figure>
+
+<p>33 - Now let’s make this local variable a global variable.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">export </span>LINUX
+<span class="nb">env</span> | <span class="nb">grep </span>LINUX
+<span class="nv">LINUX</span><span class="o">=</span>free</code></pre></figure>
+
+<p>34 - Delete a ‘local environment variable’ from memory using unset command</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">unset </span>LINUX
+<span class="nb">echo</span> <span class="nv">$LINUX</span></code></pre></figure>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>35 - Create an alias (nickname for a command or program), you can still include it in your ~/.bashrc</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">alias </span><span class="nv">list</span><span class="o">=</span><span class="s1">'ls -la color=auto'</span></code></pre></figure>
+
+<p>36 - Destroying an aliase</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">unalias </span>list</code></pre></figure>
+
+<p>37 - Verify all commands entered</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">history</span></code></pre></figure>
+
+<p>run command by his number in history</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">!</span>468</code></pre></figure>
+
+<p>execute last command typed</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">!!</span></code></pre></figure>
+
+<p>they stay in bash_history</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cat</span> ~/.bash_history</code></pre></figure>
+
+<p>clear history</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">history</span> <span class="nt">-c</span></code></pre></figure>
+
+<p>38 - Command Line Interpreters</p>
+<blockquote>
+  <p><strong>$</strong> - Shell of an normal user;</p>
+
+  <p><strong>#</strong> - Superuser shell root (administrator)</p>
+</blockquote>
+
+<p>Check of Available Shells</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cat</span> /etc/shells</code></pre></figure>
+
+<p>Variable that shows the SHELL you use</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="nv">$SHELL</span></code></pre></figure>
+
+<!-- MINI ANÚNCIO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Games Root -->
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:50px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>39 - Creating an Array (Array) “Variable Set”</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">DISTROS</span><span class="o">=(</span><span class="s2">"Debian"</span> <span class="s2">"Trisquel"</span> <span class="s2">"Ubuntu"</span> <span class="s2">"RedHat"</span><span class="o">)</span></code></pre></figure>
+
+<p>If you print the DISTROS Array as a variable, it prints variable 0, the array displays the variables contained in it starting at 0 (zero), so it would be the same as printing at 
+<code class="highlighter-rouge">${DISTROS[0]}</code></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="nv">$DISTROS</span></code></pre></figure>
+
+<p>40 - Print element 1 of array DISTROSS</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="k">${</span><span class="nv">DISTROS</span><span class="p">[1]</span><span class="k">}</span>
+Trisquel</code></pre></figure>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>41 - You can also create an array by inserting element one at a time.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">DISTROS[0]<span class="o">=</span><span class="s2">"Debian"</span>
+DISTROS[1]<span class="o">=</span><span class="s2">"Trisquel"</span>
+DISTROS[2]<span class="o">=</span><span class="s2">"Ubuntu"</span>
+DISTROS[3]<span class="o">=</span><span class="s2">"RedHat"</span></code></pre></figure>
+
+<p>42 - Change element 2 of array DISTROSS</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">DISTROS[2]<span class="o">=</span><span class="s2">"Linux Mint"</span>
+<span class="nb">echo</span> <span class="k">${</span><span class="nv">DISTROS</span><span class="p">[2]</span><span class="k">}</span>
+Linux Mint</code></pre></figure>
+
+<p>43 - Display Element 2 Distro to End</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="k">${</span><span class="nv">DISTROS</span><span class="p">[@]</span>:2<span class="k">}</span> 
+Ubuntu RedHat</code></pre></figure>
+
+<p>44 - This displays the elements starting at position 1 followed by two more elements consecutive to position 1</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="k">${</span><span class="nv">DISTROS</span><span class="p">[@]</span>:1:2<span class="k">}</span> 
+Trisquel Ubuntu</code></pre></figure>
+
+<p>45 - Know how many elements the array has DISTROSS</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="k">${#</span><span class="nv">DISTROS</span><span class="p">[@]</span><span class="k">}</span> 
+4</code></pre></figure>
+
+<h1 id="thanks">Thanks!</h1>
+
+:ET

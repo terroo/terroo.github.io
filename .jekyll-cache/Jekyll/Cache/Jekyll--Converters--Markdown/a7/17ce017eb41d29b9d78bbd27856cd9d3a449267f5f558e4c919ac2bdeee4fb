@@ -1,0 +1,222 @@
+I"�F<p><img src="/assets/img/cpp/drogon-cpp.jpe" alt="Drogon C ++, The Fastest Web Framework in the World" /></p>
+
+<p><strong>Drogon</strong> is a Web Framework written with <a href="https://en.terminalroot.com.br/i-created-a-c-financial-management-program-for-linux-and-windows/">C++</a> that works on both <a href="https://en.terminalroot.com.br/i-created-a-c-financial-management-program-for-linux-and-windows/">C++14</a> and <a href="https://en.terminalroot.com.br/i-created-a-c-financial-management-program-for-linux-and-windows/">C++17</a> versions.</p>
+
+<p>The <a href="https://www.techempower.com/benchmarks/#section=data-r19&amp;hw=ph&amp;test=composite">TechEmpower</a> website (<a href="https://www.techempower.com/benchmarks/#section=data-r19&amp;hw=ph&amp;test=composite">ranking link</a>) has some benchmark services that test the performance of some technologies and among these tests, it analyzed the performance of Web Frameworks for Back-end and Drogon was the first placed in tests with 105 frameworks, among them: Rails, Django, NestJS, Laravel and others.</p>
+
+<ul>
+  <li>The name Drogon comes from the dragon called Drogon from the <a href="https://en.wikipedia.org/wiki/Game_of_Thrones">Game of Thrones</a> series.</li>
+  <li>It is available for <a href="https://en.terminalroot.com.br/the-6-best-network-scanners-for-linux/">Linux</a>, <a href="https://en.terminalroot.com.br/how-to-install-macos-on-virtualbox-on-linux/">macOS</a>, FreeBSD, <a href="https://en.terminalroot.com.br/openbsd-dual-boot-with-linux-single-partition/">OpenBSD</a> and Windows.</li>
+  <li>Uses an epoll-based non-blocking I/O network library (and in the case for macOS and FreeBSD uses kqueue).</li>
+  <li>It supports the HTTP 1.0 and 1.1 protocol (for both server-side and client-side);</li>
+  <li>It has support for cookies and embedded sessions.</li>
+  <li>It also has support for: HTTPS (with OpenSSL), WebSocket, request and response for JSON format, widely used for Restful API</li>
+  <li>In addition to AOP with joinpoints and among several other features.</li>
+</ul>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="dependencies">Dependencies</h1>
+<p>To install, you will first need some dependencies at compile time and at run time. They are:</p>
+<ul>
+  <li><a href="https://en.terminalroot.com.br/how-to-clone-only-a-subdirectory-with-git-or-svn/">Git</a></li>
+  <li><a href="https://en.terminalroot.com.br/gcc-vs-llvm-which-is-the-best-compiler/">GCC</a></li>
+  <li><a href="https://en.terminalroot.com.br/i-created-a-c-financial-management-program-for-linux-and-windows/">G++</a></li>
+  <li><a href="https://en.terminalroot.com.br/how-to-compile-your-programs-with-cmake/">CMAKE</a></li>
+  <li><a href="https://github.com/open-source-parsers/jsoncpp">JSONCPP</a></li>
+  <li><a href="http://www.ossp.org/pkg/lib/uuid/">OSSP-UUID</a></li>
+  <li><a href="https://en.terminalroot.com.br/18-ways-to-generate-and-store-strong-passwords/">OPENSSL</a></li>
+  <li><a href="https://zlib.net/">ZLIB</a></li>
+</ul>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>For systems that use APT: <a href="https://en.terminalroot.com.br/why-i-gave-up-on-debian/">Debian</a>, <a href="https://en.terminalroot.com.br/customize-your-ubuntu-with-wayland-sway-ulauncher-waybar/">Ubuntu</a>, <a href="https://en.terminalroot.com.br/transform-your-mint-ubuntu-or-debian-with-bspwm-polybar-rofi/">Mint</a> and derivatives, just run this command below:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt <span class="nb">install </span>git gcc g++ cmake libjsoncpp-dev uuid-dev openssl libssl-dev zlib1g-dev</code></pre></figure>
+
+<p>For systems using Portage: <a href="https://en.terminalroot.com.br/10-fundamental-tips-for-your-gentoo-linux/">Gentoo</a>, Funtoo and derivatives:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>emerge dev-vcs/git jsoncpp ossp-uuid openssl</code></pre></figure>
+
+<p>For systems that use RPM: <a href="https://en.terminalroot.com.br/take-multiple-free-red-hat-linux-courses/">Fedora</a>, <a href="https://en.terminalroot.com.br/take-multiple-free-red-hat-linux-courses/">Red Hat</a> and derivatives</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>dnf <span class="nb">install </span>git gcc gcc-c++ cmake libuuid-devel openssl-devel zlib-devel </code></pre></figure>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="database">Database</h1>
+<p>If in the future you will develop applications that use databases (which I believe so), it is extremely important that you install them before installing Drogon. It can be one of those listed below:</p>
+<ul>
+  <li><a href="https://terminalroot.com.br/2019/08/conheca-o-servico-online-para-executar-seus-comandos-sql.html">Postgres</a></li>
+  <li><a href="https://en.terminalroot.com.br/how-to-reset-the-mysql-root-user-password-when-it-can-not-log-in/">MySQL</a> / <a href="https://en.terminalroot.com.br/gentoo-cant-connect-to-local-mysql-server-through-socket-solved/">MariaDB</a></li>
+  <li><a href="https://terminalroot.com.br/2021/02/como-utilizar-o-sqlite.html">SQLite</a></li>
+</ul>
+
+<h1 id="drogon-installation">Drogon Installation</h1>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/an-tao/drogon
+<span class="nb">cd </span>drogon
+git submodule update <span class="nt">--init</span>
+<span class="nb">mkdir </span>build
+<span class="nb">cd </span>build
+cmake ..
+make <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>make <span class="nb">install</span></code></pre></figure>
+
+<h1 id="use">Use</h1>
+<p>For this basic example we are going to create a static page without querying the database</p>
+<h2 id="1-example-1-the-basics-of-the-basics">1. Example 1 (The basics of the basics)</h2>
+<h3 id="11---creating-the-project">1.1 - Creating the project</h3>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> <span class="nv">$HOME</span>
+drogon_ctl create project my-project</code></pre></figure>
+
+<p>Now my my-project has the following files:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">my-project/
+├── build
+├── CMakeLists.txt
+├── config.json
+├── controllers
+├── filters
+├── main.cc
+├── models
+│   └── model.json
+├── plugins
+└── views
+
+6 directories, 4 files</code></pre></figure>
+
+<h3 id="12---changing-the-maincc-file-port">1.2 - Changing the main.cc file port</h3>
+<p>The original <code class="highlighter-rouge">main.cc</code> file is on port <code class="highlighter-rouge">80</code>, but this could be a conflict on your system. Then change, for example, to port <code class="highlighter-rouge">8080</code>.</p>
+<blockquote>
+  <p>If you also have a problem with port <code class="highlighter-rouge">8080</code>, use port <code class="highlighter-rouge">1024</code> or try a port bigger than it that is not being used, to find out if it is being used use <a href="https://en.terminalroot.com.br/the-6-best-network-scanners-for-linux/">nmap</a>, for example, to find out. Do not use ports less than 1024 as they should only be used for privileged users (<code class="highlighter-rouge">root</code>, for example).</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>my-project
+vim main.cc</code></pre></figure>
+
+<p>With the following content:</p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;drogon/HttpAppFramework.h&gt;
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">drogon</span><span class="o">::</span><span class="n">app</span><span class="p">().</span><span class="n">addListener</span><span class="p">(</span><span class="s">"0.0.0.0"</span><span class="p">,</span><span class="mi">8080</span><span class="p">);</span>
+    <span class="n">drogon</span><span class="o">::</span><span class="n">app</span><span class="p">().</span><span class="n">run</span><span class="p">();</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>And compile:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>build
+cmake ..
+make</code></pre></figure>
+
+<p>Now run the binary file that was created inside the directory you are in (<code class="highlighter-rouge">build</code>). In my case, as I called the project <code class="highlighter-rouge">my-project</code>, there is a binary with that name, so just run it:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">./my-project</code></pre></figure>
+
+<p>Access the address: <a href="http://0.0.0.0:8080/">http://0.0.0.0:8080/</a> . And accessing it you will already find a beautiful <code class="highlighter-rouge">404</code>:</p>
+
+<p><img src="/assets/img/cpp/404.png" alt="Drogon 404" /></p>
+
+<p>To “take down” the server’s execution, press: <code class="highlighter-rouge">Ctrl + C</code>. But that means it’s already working. Then just add an HTML page (still inside the <code class="highlighter-rouge">build</code> directory) and access it again:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s1">'&lt;h1&gt;Server with Drogon C++, running cool!&lt;/h1&gt;'</span> <span class="o">&gt;</span> index.html
+./my-project</code></pre></figure>
+
+<blockquote>
+  <p>And go to: <a href="http://0.0.0.0:8080/">http://0.0.0.0:8080/</a></p>
+</blockquote>
+
+<!-- RETANGULO LARGO -->
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Informat -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2838251107855362" data-ad-slot="2327980059" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="2-creating-a-controller">2. Creating a Controller</h2>
+<p>We are going to create a test controller named <code class="highlighter-rouge">ListController</code> just to display the phrase: “My controller list”. At the root of your project, enter the directory: <code class="highlighter-rouge">controller</code> and run the following command to create the controller.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>controller/
+drogon_ctl create controller ListController</code></pre></figure>
+
+<blockquote>
+  <p>The output should be: <code class="highlighter-rouge">create a http simple controller: ListController.</code></p>
+</blockquote>
+
+<p>Two files were created: <code class="highlighter-rouge">ListController.cc</code> and <code class="highlighter-rouge">ListController.h</code></p>
+
+<h3 id="21---editing-the-files">2.1 - Editing the files</h3>
+<p>First, let’s edit the file: <code class="highlighter-rouge">ListController.h</code> and add these two lines:</p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="n">PATH_ADD</span><span class="p">(</span><span class="s">"/"</span><span class="p">,</span><span class="n">Get</span><span class="p">,</span><span class="n">Post</span><span class="p">);</span>
+<span class="n">PATH_ADD</span><span class="p">(</span><span class="s">"/list"</span><span class="p">,</span><span class="n">Get</span><span class="p">);</span></code></pre></figure>
+
+<p>The final file looks like this:</p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#pragma once
+#include &lt;drogon/HttpSimpleController.h&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">drogon</span><span class="p">;</span>
+<span class="k">class</span> <span class="nc">ListController</span><span class="o">:</span><span class="k">public</span> <span class="n">drogon</span><span class="o">::</span><span class="n">HttpSimpleController</span><span class="o">&lt;</span><span class="n">ListController</span><span class="o">&gt;</span><span class="p">{</span>
+  <span class="nl">public:</span>
+    <span class="k">virtual</span> <span class="kt">void</span> <span class="n">asyncHandleHttpRequest</span><span class="p">(</span><span class="k">const</span> <span class="n">HttpRequestPtr</span><span class="o">&amp;</span> <span class="n">req</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span> <span class="p">(</span><span class="k">const</span> <span class="n">HttpResponsePtr</span> <span class="o">&amp;</span><span class="p">)</span><span class="o">&gt;</span> <span class="o">&amp;&amp;</span><span class="n">callback</span><span class="p">)</span> <span class="k">override</span><span class="p">;</span>
+    <span class="n">PATH_LIST_BEGIN</span>
+    <span class="n">PATH_ADD</span><span class="p">(</span><span class="s">"/"</span><span class="p">,</span><span class="n">Get</span><span class="p">,</span><span class="n">Post</span><span class="p">);</span>
+    <span class="n">PATH_ADD</span><span class="p">(</span><span class="s">"/list"</span><span class="p">,</span><span class="n">Get</span><span class="p">);</span>
+    <span class="n">PATH_LIST_END</span>
+<span class="p">};</span></code></pre></figure>
+
+<p>And the <code class="highlighter-rouge">ListController.cc</code> file should look like this:</p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include "ListController.h"
+</span><span class="kt">void</span> <span class="n">ListController</span><span class="o">::</span><span class="n">asyncHandleHttpRequest</span><span class="p">(</span><span class="k">const</span> <span class="n">HttpRequestPtr</span><span class="o">&amp;</span> <span class="n">req</span><span class="p">,</span> 
+                                            <span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span> <span class="p">(</span><span class="k">const</span> <span class="n">HttpResponsePtr</span> <span class="o">&amp;</span><span class="p">)</span><span class="o">&gt;</span> <span class="o">&amp;&amp;</span><span class="n">callback</span><span class="p">){</span>
+    <span class="k">auto</span> <span class="n">resp</span><span class="o">=</span><span class="n">HttpResponse</span><span class="o">::</span><span class="n">newHttpResponse</span><span class="p">();</span>
+    <span class="n">resp</span><span class="o">-&gt;</span><span class="n">setStatusCode</span><span class="p">(</span><span class="n">k200OK</span><span class="p">);</span>
+    <span class="n">resp</span><span class="o">-&gt;</span><span class="n">setContentTypeCode</span><span class="p">(</span><span class="n">CT_TEXT_HTML</span><span class="p">);</span>
+    <span class="n">resp</span><span class="o">-&gt;</span><span class="n">setBody</span><span class="p">(</span><span class="s">"My controller list"</span><span class="p">);</span>
+    <span class="n">callback</span><span class="p">(</span><span class="n">resp</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Recompile the project and access:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ../build
+cmake ..
+make
+./my-project</code></pre></figure>
+
+<p>Now both at the root (<a href="http://localhost:8080/">http://localhost:8080/</a> via get or post) and at <a href="http://localhost:8080/list">http://localhost:8080/list</a> we will get content.</p>
+
+<p>If you are using <a href="https://terminalroot.com.br/2021/02/como-instalar-o-postman-no-ubuntu-e-em-qualquer-distro-linux.html">Postman</a> you will notice that the root will return the information for both GET and POST, but the <code class="highlighter-rouge">/list</code> will only return for GET.</p>
+
+<p>The address of the official <a href="https://github.com/an-tao/drogon">Drogon</a> on GitHub is: <a href="https://github.com/an-tao/drogon">https://github.com/an-tao/drogon</a>, there you can get information of all documentation to install and develop your web applications.</p>
+
+<h3 id="if-you-want-to-watch-a-video-featuring-all-the-resources-provided-in-this-article-watch-the-video-below">If you want to watch a video featuring all the resources provided in this article, watch the <a href="https://youtu.be/5CYX_ZJVASk">video</a> below:</h3>
+<blockquote>
+  <p>The video is in Brazilian Portuguese, but you can use subtitles and translate into your language.</p>
+</blockquote>
+
+<iframe width="910" height="390" src="https://www.youtube.com/embed/5CYX_ZJVASk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+:ET

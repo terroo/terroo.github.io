@@ -1,0 +1,125 @@
+I"�/<p><img src="/assets/img/linux/linux-user-root.jpg" alt="6 Signs that reveal you are a root Linux user" /></p>
+
+<blockquote>
+  <p>If you are a true Linux user, you will probably recognize these common trends.</p>
+</blockquote>
+
+<p><a href="https://en.wikipedia.org/wiki/Linux">Linux</a> users are a diverse group, but many of us share some habits. You may not have any of the telltale signs listed in this article and, if you are a new Linux user, you may not recognize many of them … yet.</p>
+
+<p>Go to those 6 signs!</p>
+
+<hr />
+
+<h1 id="1-as-far-as-you-know-the-world-started-on-january-1-1970">1. As far as you know, the world started on January 1, 1970</h1>
+<p>There are many rumors about why a computer clock Unix always goes back to 01-01 1970 when it is reset. But the mundane truth is that the Unix “era” serves as a common and simple point of reference for synchronization.</p>
+
+<p>A computer requires firm and clearly defined values; therefore, the value 1970-01-01T00: 00: 00Z was chosen as the beginning of the Unix era. Whenever a POSIX computer loses track of time, a service like the Network Time Protocol (NTP) can provide the number of seconds since 1970-01-01T00: 00: 00Z, which the computer can convert to a human-friendly date .</p>
+
+<p>Date and time are famously complex things to track down in computing, largely because there are almost standard exceptions. A month does not always have 30 days, a year does not always have 365 days and even seconds tend to vary slightly each year. If you’re looking for a fun and frustrating scheduling exercise, try scheduling a reliable calendar app!</p>
+
+<hr />
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="2-do-you-think-it-is-a-difficult-task-to-type-something-with-many-letters-to-do-something">2. Do you think it is a difficult task to type something with many letters to do something</h1>
+<p>The most common Unix commands are notoriously short. In addition to commands like <code class="highlighter-rouge">cd</code> and <code class="highlighter-rouge">ls</code> and <code class="highlighter-rouge">mv</code>, there is a command that literally cannot be shorter: <code class="highlighter-rouge">w</code> (which shows who is currently connected according to the <code class="highlighter-rouge">/var/run/utmp</code> file).</p>
+
+<p>On the one hand, extremely short commands seem unintuitive. A new user is unlikely to guess that typing <code class="highlighter-rouge">ls</code> would list directories. Once you learn the commands, however, the shorter the better. If you spend all day in a terminal, fewer keystrokes mean you can spend more time doing your work.</p>
+
+<p>Fortunately, one letter commands are far apart, which means that you can use most letters for <em>aliases</em>. For example, I create friendly URLs from <a href="https://git.io">git.io</a> frequently and the command is too long to type, so I created an <strong>alias/function</strong> and added this line to my <code class="highlighter-rouge">~/.bashrc</code> file:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">gist<span class="o">(){</span>
+	<span class="o">[[</span> <span class="nt">-z</span> <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span> <span class="o">||</span> <span class="nt">-z</span> <span class="s2">"</span><span class="nv">$2</span><span class="s2">"</span> <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="o">{</span>
+		<span class="nb">printf</span> <span class="s2">"%s</span><span class="se">\n</span><span class="s2">"</span> <span class="s2">"Use: gist [URL] [SHORT-URL]"</span>
+		<span class="k">return</span>
+	<span class="o">}</span>
+	curl https://git.io/ <span class="nt">-i</span> <span class="nt">-F</span> <span class="s2">"url=</span><span class="nv">$1</span><span class="s2">"</span> <span class="nt">-F</span> <span class="s2">"code=</span><span class="nv">$2</span><span class="s2">"</span>
+	<span class="nb">echo</span>
+<span class="o">}</span></code></pre></figure>
+
+<p>So to create the friendly URL, just use this command, and if you forget the order just type the command without parameters and the <code class="highlighter-rouge">help</code> bro will help me! 😄.</p>
+
+<p>You can also temporarily switch commands by creating aliases directly at your prompt for specific situations, I do this a lot, if you do too, consider being part of the title group 😃.</p>
+
+<h1 id="3-you-like-the-graphical-interface-but-prefer-a-wm">3. You like the Graphical Interface, but prefer a WM</h1>
+<p>Every time I post a tip from a window manager side by side (Tiling Window Manager), I see someone comment somewhere: “I can’t use WM. “,” It will be difficult to use this section. “, … I already think completely unlike the guy! 🐥.</p>
+
+<p>This facility with a single command to open an application and see the data available on separate <em>desktops</em>, in addition to having side-by-side windows that make debugging and working easier, made me unable to use: GNOME, MATE, …</p>
+
+<p>I have GNOME installed here, I think <a href="https://wiki.gentoo.org/wiki/Portage">Portage</a> has already updated it about 3 times, and even today, I don’t even want to go there to see what has changed! 😄. And most importantly, everything works slightly like drinking coconut water on an island! 😸.</p>
+
+<hr />
+
+<h1 id="4-you-never-took-any-action-on-a-computer-more-than-three-times-because-you-already-automated-it-for-the-third-time">4. You never took any action on a computer more than three times because you already automated it for the third time</h1>
+<p>Forgive hyperbole, but many Linux users expect their computer to work harder than they do. Although it takes some time to learn how to automate common tasks, it tends to be easier on Linux than on other platforms, because the Linux terminal and the Linux operating system are very well integrated.</p>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>The things that are easy to automate are the actions you already perform in a terminal, because the commands are just strings you type in an interpreter and that interpreter (the shell running on terminal) doesn’t care if you typed the strings manually or if you’re just pointing to a script.</p>
+
+<p>For example, commonly clean the: history, thumbnails, trash, bookmarks backups of Firefox and among others with a single command, <code class="highlighter-rouge">bye</code> , I added this function to my <code class="highlighter-rouge">~/.bashrc</code> and every time I want to clean everything , I just have to say goodbye to them! ✋</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bye<span class="o">(){</span>
+    <span class="o">[[</span> <span class="nt">-d</span> <span class="s2">"</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span><span class="s2">/.cache/thumbnails"</span> <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="nb">rm</span> <span class="nt">-rf</span> <span class="k">${</span><span class="nv">HOME</span><span class="k">}</span>/.cache/thumbnails/    
+    <span class="o">[[</span> <span class="nt">-d</span> <span class="s2">"</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span><span class="s2">/.cache/mozilla"</span> <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="nb">rm</span> <span class="nt">-rf</span> <span class="k">${</span><span class="nv">HOME</span><span class="k">}</span>/.cache/mozilla/    
+    <span class="nb">rm</span> <span class="k">${</span><span class="nv">HOME</span><span class="k">}</span>/.local/share/recently-used.xbel
+    <span class="nb">touch</span> <span class="k">${</span><span class="nv">HOME</span><span class="k">}</span>/.local/share/recently-used.xbel
+    <span class="nv">_DIRB</span><span class="o">=</span><span class="s2">"</span><span class="si">$(</span>find <span class="k">${</span><span class="nv">HOME</span><span class="k">}</span>/.mozilla/firefox <span class="nt">-type</span> d <span class="nt">-name</span> <span class="s2">"*bookmarkbackups*"</span><span class="si">)</span><span class="s2">"</span>
+    <span class="nb">rm</span> <span class="nv">$_DIRB</span>/<span class="k">*</span> 2&gt;/dev/null
+    <span class="nb">rm</span> <span class="nt">-rf</span> <span class="s2">"</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span><span class="s2">/.local/share/Trash/files/</span><span class="se">\*</span><span class="s2">"</span>
+<span class="o">}</span></code></pre></figure>
+
+<blockquote>
+  <p>The <code class="highlighter-rouge">_DIRB</code> variable I created on purpose because all of my commands are portable, I use them on any system or when I’m going to format or something like that, the encrypted name of the Firefox directory is changed by Firefox itself, in a new environment.</p>
+</blockquote>
+
+<hr />
+
+<h1 id="5-your-distro-is-not-common">5. Your distro is not common</h1>
+<p>I’m a passionate user of Gentoo, that’s right, the fact that it takes a while to compile some things (WebKitGTK and QtWebEngine, the second one, so take a while), I take the opportunity to do a lot of things and when I finish, I read the Gentoo documentation and even help with some things, yes I participate in the <a href="https://wiki.gentoo.org/wiki/User: Marcos.oliveira">Gentoo documentation</a>.</p>
+
+<p>It doesn’t matter how big a distribution is; part of the pleasure of being a Linux user is the freedom to be undecided about which distro you run. At first glance, everyone is basically the same, in final lines. But you want the one you identify with. In an article topic I cannot describe the differences of the distro I chose, but surely one of the main reasons is directly linked to my other passion: <a href="https://terminalroot.com.br/cpp">C++</a>.</p>
+
+<p>I have a partition here on my HD that is only for other distros, generally I only install things that are better to examine and use without being in a <a href="https://en.terminalroot.com.br/definitive-docker-tutorial-for-beginners-ubuntu/">Docker</a> or Machine Virtual.</p>
+
+<p>If I ever left Gentoo I would definitely switch to OpenBSD.</p>
+<blockquote>
+  <p>OpenBSD, not a Linux distribution</p>
+</blockquote>
+
+<p>The point is that Linux distributions are passionate projects, and it’s fun to interact in this world with other people.</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<hr />
+
+<h1 id="6-you-are-passionate-about-open-source-and-free-software">6. You are passionate about Open Source and Free Software</h1>
+<p>Although you don’t change even a single line of code, and often don’t even know how to program, that doesn’t stop you from being passionate about these technologies, because you know you’re not being deceived.</p>
+
+<p>That no one is watching your life, it gives me a relief, that’s why I prefer Free Software and Open source, and compile them straight from the source!</p>
+
+<hr />
+
+<p>I hope you enjoyed the article. Recalling that although it looks and is based on several excerpts from the <a href="https://opensource.com/article/19/10/signs-linux-user">OpenSource.com</a> article , it has been modified in large part to adapt to my realities!</p>
+
+<p>Thanks for reading!</p>
+
+:ET

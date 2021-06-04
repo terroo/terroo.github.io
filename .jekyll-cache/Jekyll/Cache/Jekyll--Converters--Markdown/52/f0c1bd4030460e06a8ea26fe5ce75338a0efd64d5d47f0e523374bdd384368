@@ -1,0 +1,81 @@
+I"Ü<p><img src="/assets/img/terminal/gotop.jpg" alt="Install gotop - A graphical terminal system monitor" /></p>
+
+<p><a href="https://github.com/cjbassi/gotop/">gotop</a> is a system monitor that runs through the terminal for Linux and macOS. The software is inspired by gtop and <a href="https://github.com/MrRio/vtop">vtop</a>, but while these two utilities use Node.js, gotop is written in <a href="https://golang.org/">Go</a>.</p>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h2 id="installation">Installation</h2>
+
+<p>There are several ways, see below, the options</p>
+
+<ul>
+  <li>Debian, Ubuntu and Linux Mint</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wget https://github.com/cjbassi/gotop/releases/download/3.0.0/gotop_3.0.0_linux_amd64.deb
+<span class="nb">sudo </span>dpkg <span class="nt">-i</span> gotop_3.0.0_linux_amd64.deb</code></pre></figure>
+
+<ul>
+  <li>RedHat, CentOS e Fedora</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wget https://github.com/cjbassi/gotop/releases/download/3.0.0/gotop_3.0.0_linux_amd64.rpm
+<span class="nb">sudo </span>rpm <span class="nt">-ivh</span> gotop_3.0.0_linux_amd64.rpm</code></pre></figure>
+
+<ul>
+  <li>Arch Linux via AUR (gotop, gotop-bin, ou gotop-git)</li>
+  <li>FreeBSD</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">pkg <span class="nb">install </span>gotop</code></pre></figure>
+
+<p>Or for any distro, download with wget</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wget https://github.com/cjbassi/gotop/releases/download/3.0.0/gotop_3.0.0_linux_amd64.tgz</code></pre></figure>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>or with Go itself if you have installed</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">go get github.com/cjbassi/gotop</code></pre></figure>
+
+<p>Unzip the TGZ</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">tar </span>zxvf gotop_3.0.0_linux_amd64.tgz</code></pre></figure>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>You can already run with the command: <code class="highlighter-rouge">./gotop</code> and if you want it to be executed via command, use your personal dir without sudo, thatâ€™s how I did it!</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">mkdir</span> <span class="nt">-p</span> ~/.local/bin
+<span class="nb">mv </span>gotop ~/.local/bin/
+<span class="c"># If this directory is not your PATH, include</span>
+<span class="nb">echo</span> <span class="s1">'PATH="${PATH}:$HOME/.local/bin/"'</span> <span class="o">&gt;&gt;</span> ~/.bashrc
+<span class="nb">source</span> ~/.bashrc
+gotop</code></pre></figure>
+
+<p>See help for key shortcuts: <code class="highlighter-rouge">gotop --help</code></p>
+
+<p>Official page gotop: <a href="https://github.com/cjbassi/gotop">https://github.com/cjbassi/gotop</a>
+<img src="/assets/img/terminal/gotop.gif" alt="Install gotop - A graphical terminal system monitor" /></p>
+
+<p>Enjoy!</p>
+:ET

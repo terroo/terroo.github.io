@@ -1,0 +1,256 @@
+I"3/<p><img src="/assets/img/cppdaily/alternative-cpp-syntax.jpg" alt="Learn about an alternative C/C++ syntax" /></p>
+
+<p>C++ (and C) source code may be written in any non-ASCII 7-bit character set that includes the <a href="https://en.wikipedia.org/wiki/ISO_646">ISO 646:1983</a> invariant character set. However, several C++ operators and punctuators require characters that are outside of the ISO 646 codeset: <code class="highlighter-rouge">{, }, [, ], #, \, ^, |, ~</code>.</p>
+
+<p>To be able to use character encodings where some or all of these symbols do not exist (such as the German <a href="http://de.wikipedia.org/wiki/DIN_66003">DIN 66003</a>), C++ defines the following alternatives composed of ISO 646 compatible characters.</p>
+
+<!-- QUADRADO -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="alternative-tokens">Alternative tokens</h1>
+<p>There are alternative spellings for several operators and other tokens that use non-ISO646 characters. In all respects of the language, each alternative token behaves exactly the same as its primary token, except for its spelling (the stringification operator can make the spelling visible). The two-letter alternative tokens are sometimes called “digraphs”.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Primary</th>
+      <th>Alternative</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&amp;&amp;</td>
+      <td>and</td>
+    </tr>
+    <tr>
+      <td>&amp;=</td>
+      <td>and_eq</td>
+    </tr>
+    <tr>
+      <td>&amp;</td>
+      <td>bitand</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td>bitor</td>
+    </tr>
+    <tr>
+      <td>~</td>
+      <td>compl</td>
+    </tr>
+    <tr>
+      <td>!</td>
+      <td>not</td>
+    </tr>
+    <tr>
+      <td>!=</td>
+      <td>not_eq</td>
+    </tr>
+    <tr>
+      <td>||</td>
+      <td>or</td>
+    </tr>
+    <tr>
+      <td>|=</td>
+      <td>or_eq</td>
+    </tr>
+    <tr>
+      <td>^</td>
+      <td>xor</td>
+    </tr>
+    <tr>
+      <td>^=</td>
+      <td>xor_eq</td>
+    </tr>
+    <tr>
+      <td>{</td>
+      <td>&lt;%</td>
+    </tr>
+    <tr>
+      <td>}</td>
+      <td>%&gt;</td>
+    </tr>
+    <tr>
+      <td>[</td>
+      <td>&lt;:</td>
+    </tr>
+    <tr>
+      <td>]</td>
+      <td>:&gt;</td>
+    </tr>
+    <tr>
+      <td>#</td>
+      <td>%:</td>
+    </tr>
+    <tr>
+      <td>##</td>
+      <td>%:%:</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- LISTA MIN -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:inline-block;width:730px;height:95px" data-ad-client="ca-pub-2838251107855362" data-ad-slot="5351066970"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Knowing this, you can create code in this style: <code class="highlighter-rouge">vim main.cpp</code></p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="o">%:</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">iostream</span><span class="o">&gt;</span>
+ 
+<span class="k">struct</span> <span class="nc">X</span>
+<span class="o">&lt;%</span>
+    <span class="n">compl</span> <span class="n">X</span><span class="p">()</span> <span class="o">&lt;%%&gt;</span> <span class="c1">// destructor</span>
+    <span class="n">X</span><span class="p">()</span> <span class="o">&lt;%%&gt;</span>
+    <span class="n">X</span><span class="p">(</span><span class="k">const</span> <span class="n">X</span> <span class="n">bitand</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span> <span class="c1">// copy constructor</span>
+ 
+    <span class="kt">bool</span> <span class="k">operator</span> <span class="n">not_eq</span><span class="p">(</span><span class="k">const</span> <span class="n">X</span> <span class="n">bitand</span> <span class="n">other</span><span class="p">)</span>
+    <span class="o">&lt;%</span>
+       <span class="k">return</span> <span class="k">this</span> <span class="n">not_eq</span> <span class="n">bitand</span> <span class="n">other</span><span class="p">;</span>
+    <span class="o">%&gt;</span>
+<span class="o">%&gt;</span><span class="p">;</span>
+ 
+<span class="kt">int</span> <span class="n">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="o">&lt;::&gt;</span><span class="p">)</span> 
+<span class="o">&lt;%</span>
+    <span class="k">auto</span> <span class="n">greet</span> <span class="o">=</span> <span class="o">&lt;:</span><span class="n">bitand</span><span class="o">:&gt;</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">name</span><span class="p">)</span>
+    <span class="o">&lt;%</span>
+        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello "</span> <span class="o">&lt;&lt;</span> <span class="n">name</span>
+                  <span class="o">&lt;&lt;</span> <span class="s">"! You are running the file: "</span> <span class="o">&lt;&lt;</span> <span class="n">argv</span><span class="o">&lt;:</span><span class="mi">0</span><span class="o">:&gt;</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
+    <span class="o">%&gt;</span><span class="p">;</span>
+ 
+    <span class="k">if</span> <span class="p">(</span><span class="n">argc</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="n">and</span> <span class="n">argv</span><span class="o">&lt;:</span><span class="mi">1</span><span class="o">:&gt;</span> <span class="n">not_eq</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="o">&lt;%</span>
+        <span class="n">greet</span><span class="p">(</span><span class="n">argv</span><span class="o">&lt;:</span><span class="mi">1</span><span class="o">:&gt;</span><span class="p">);</span>
+    <span class="o">%&gt;</span> <span class="k">else</span> <span class="o">&lt;%</span>
+        <span class="n">greet</span><span class="p">(</span><span class="s">"Anonymous"</span><span class="p">);</span>
+    <span class="o">%&gt;</span>
+<span class="o">%&gt;</span></code></pre></figure>
+
+<p>If you compile and run, the output will be:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">g++ main.cpp <span class="nt">-o</span> alternative
+./alternative Marcos
+Hello Marcos! You are running the file: ./alternative</code></pre></figure>
+
+<h1 id="compatibility-with-c">Compatibility with C</h1>
+<p>The same words are defined in the C programming language in the <code class="highlighter-rouge">&lt;iso646.h&gt;</code> include file as macros. Because in C++ they are built into the language.</p>
+
+<p>Example in C language: <code class="highlighter-rouge">vim main.c</code></p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="o">%:</span><span class="n">include</span> <span class="o">&lt;</span><span class="n">stdio</span><span class="p">.</span><span class="n">h</span><span class="o">&gt;</span>
+
+<span class="kt">int</span> <span class="n">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="o">&lt;::&gt;</span><span class="p">)</span>
+<span class="o">&lt;%</span>
+  
+  <span class="kt">char</span> <span class="o">*</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Anonymous"</span><span class="p">;</span>
+  
+  <span class="k">if</span><span class="p">(</span> <span class="n">argc</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="p">){</span>
+   <span class="n">name</span> <span class="o">=</span> <span class="n">argv</span><span class="o">&lt;:</span><span class="mi">1</span><span class="o">:&gt;</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="n">printf</span><span class="p">(</span><span class="s">"Hello, %s! You are running the file: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">argv</span><span class="o">&lt;:</span><span class="mi">0</span><span class="o">:&gt;</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="o">%&gt;</span></code></pre></figure>
+
+<p>There are still the <strong>Trigraphs</strong> too, but they were taken from <strong>C++17</strong>, they are:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Primary</th>
+      <th>Trigraphs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{</td>
+      <td>??&lt;</td>
+    </tr>
+    <tr>
+      <td>}</td>
+      <td>??&gt;</td>
+    </tr>
+    <tr>
+      <td>[</td>
+      <td>??(</td>
+    </tr>
+    <tr>
+      <td>]</td>
+      <td>??)</td>
+    </tr>
+    <tr>
+      <td>#</td>
+      <td>??=</td>
+    </tr>
+    <tr>
+      <td>\</td>
+      <td>??/</td>
+    </tr>
+    <tr>
+      <td>^</td>
+      <td>??’</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td>??!</td>
+    </tr>
+    <tr>
+      <td>~</td>
+      <td>??-</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- RETANGULO LARGO 2 -->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2838251107855362" data-ad-slot="8549252987"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h1 id="troll-style-curiosity">Troll-style curiosity</h1>
+<p>Macros are a really scary thing, if you create a header like this: <code class="highlighter-rouge">vim troll.hpp</code></p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;iostream&gt;
+#define troll int
+#define fart main
+#define haha argc
+#define snorts char
+#define wtf argv
+#define bye std
+#define nothing cout
+#define i_will_make ::
+#define trash "This is the troll syntax!"
+#define nonsense endl
+#define screw_it return
+#define crazy 0</span></code></pre></figure>
+
+<p>And include it in your source: <code class="highlighter-rouge">vim main.cpp</code>:</p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include "troll.hpp"
+</span>
+<span class="n">troll</span> <span class="nf">fart</span> <span class="p">(</span><span class="n">troll</span> <span class="n">haha</span><span class="p">,</span> <span class="n">snorts</span> <span class="o">**</span> <span class="n">wtf</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">bye</span> <span class="n">i_will_make</span> <span class="n">nothing</span> <span class="o">&lt;&lt;</span> <span class="n">trash</span> <span class="o">&lt;&lt;</span> <span class="n">bye</span> <span class="n">i_will_make</span> <span class="n">nonsense</span><span class="p">;</span>
+  <span class="n">screw_it</span> <span class="n">crazy</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>And compile, it will run your code:</p>
+
+<p><img src="/assets/img/cppdaily/troll.png" alt="Troll Language" /></p>
+
+<p>That’s crazy, right?! You can also do it using a single letter, example: <code class="highlighter-rouge">#define e int</code>, <code class="highlighter-rouge">define ee main</code>, … and so on!</p>
+
+<h1 id="useful-links">Useful links</h1>
+<ul>
+  <li><a href="https://en.cppreference.com/w/cpp/language/operator_alternative">https://en.cppreference.com/w/cpp/language/operator_alternative</a></li>
+</ul>
+
+:ET
