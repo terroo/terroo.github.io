@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Use the Zlib Library with C++a
+title: "How to Use the Zlib Library with C++"
 date: 2021-06-16 14:52:17
 image: '/assets/img/cppdaily/zlib.png'
 description: 'A library with portability for any operating system.'
