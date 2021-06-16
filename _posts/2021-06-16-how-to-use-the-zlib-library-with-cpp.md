@@ -196,7 +196,7 @@ void Zpipe::zerr(int ret) {
     switch (ret) {
     case Z_ERRNO:
         if (ferror(stdin)){
-            std::cerr << "Erro ao ler stdin . " << '\n';
+            std::cerr << "Error to read stdin . " << '\n';
         }else if (ferror(stdout)){
             std::cerr << "Error to writing stdout." << '\n';
         }
