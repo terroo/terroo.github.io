@@ -12,7 +12,7 @@ tags:
 
 ![10 examples of using Lambda Functions in C++](/assets/img/cpp/lambda.png)
 
-Lambdas resolvem um problema de legibilidade, expressividade e praticidade. In this article we'll show you 10 ways you can use it in your code.
+Lambdas solve a problem of readability, expressiveness and practicality. In this article we'll show you 10 ways you can use it in your code.
 
 ## Syntax
 {% highlight bash %}
