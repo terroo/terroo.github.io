@@ -132,7 +132,7 @@ A modern and very beautiful interface!
 
 ---
 
-#11. [Code Chef](https://www.codechef.com/ide)
+# 11. [Code Chef](https://www.codechef.com/ide)
 ![Code Chef](/assets/img/cpp/online-compilers/code-chef.png)
 
 Very basic, but useful too!
@@ -140,7 +140,7 @@ Very basic, but useful too!
 
 ---
 
-#12. [Wand Box](https://wandbox.org/)
+# 12. [Wand Box](https://wandbox.org/)
 ![Wand Box](/assets/img/cpp/online-compilers/wand-box.png)
 
 It is possible to make some customizations to it.
@@ -148,7 +148,7 @@ It is possible to make some customizations to it.
 
 ---
 
-#13. [My Compiler](https://www.mycompiler.io/new/cpp)
+# 13. [My Compiler](https://www.mycompiler.io/new/cpp)
 ![My Compiler](/assets/img/cpp/online-compilers/my-compiler.png)
 
 One more for the account!
