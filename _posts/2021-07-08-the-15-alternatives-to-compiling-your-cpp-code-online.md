@@ -31,7 +31,7 @@ data-ad-slot="5351066970"></ins>
 ---
 
 # 01. [Compiler Explorer](https://godbolt.org/)
-![Compiler Explorer](/assets/img/cpp/online-compilers/compiler-explorer.jpg)
+![Compiler Explorer](/assets/img/cpp/online-compilers/compiler-explorer.png)
 
 This one is first on the list because it involves more functionality than just an online compiler.
 > Available at the addresses: <https://compiler-explorer.com/> and <https://godbolt.org/>
