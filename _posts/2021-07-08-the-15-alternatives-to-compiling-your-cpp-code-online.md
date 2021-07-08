@@ -3,7 +3,7 @@ layout: post
 title: "The 15 Alternatives to Compiling Your C++ Code Online"
 date: 2021-07-08 00:03:55
 image: '/assets/img/cpp/online-compilers/rextester.png'
-description: 'When you need to compile on a machine that doesn't have a C++ compiler.'
+description: 'When you need to compile on a machine that doesnt have a C++ compiler.'
 featured-img: ../cpp/online-compilers/rextester.png
 tags:
 - cpp
