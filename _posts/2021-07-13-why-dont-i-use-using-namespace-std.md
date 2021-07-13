@@ -3,7 +3,7 @@ layout: post
 title: "Why don't I use: 'using namespace std'?"
 date: 2021-07-13 12:11:58
 image: '/assets/img/cppdaily/using-namespace-std.png'
-description: 'I don't use and don't recommend using.'
+description: 'I dont use and dont recommend using.'
 featured-img: ../cppdaily/using-namespace-std.png
 tags:
 - cpp
