@@ -220,6 +220,13 @@ curl -F'file=@mycode.sh 'http://0x0.st
 
 ---
 
+# Bonus - [Carbon](https://carbon.now.sh/)
+![Carbon](/assets/img/code/carbon.png)
+
+And as a bonus tip, perhaps the most dearest alternative for the guys is [Carbon](https://carbon.now.sh/). You can choose color scheme, background color and even save generated image in 3 different resolutions including 4k.
+
+---
+
 There is no shortage of options, feel free to choose in this alternative world! 😀️ One that I would definitely not recommend would be ~~PasteBin.com~~, this one generates ['bad interpreter'](https://terminalroot.com.br/2014/09/resolvendo-bad-interpreter-no-bash. html) in your code, if you download and use it on Linux.
 
 # Thanks for reading!
