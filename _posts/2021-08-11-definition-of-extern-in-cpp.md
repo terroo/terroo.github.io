@@ -10,7 +10,7 @@ tags:
 - cppdaily
 ---
 
-![Definition of extern in C++](/assets/img/)
+![Definition of extern in C++](/assets/img/cpp/extern.jpg)
 
 The `extern` specifier is used in variable and function declarations (except class members or function parameters). It specifies external binding and does not technically affect storage duration, but it cannot be used in a definition of an automatic storage duration object, so all `extern` objects have static or threaded durations.
 
