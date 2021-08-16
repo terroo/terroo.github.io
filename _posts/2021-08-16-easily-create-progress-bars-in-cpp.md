@@ -14,7 +14,7 @@ tags:
 
 **Indicators** is a project that has code ready for you to implement when creating progress bars in the [terminal](https://en.terminalroot.com.br/the-10-best-terminal-emulators-for-your-linux/).
 
-##Characteristics
+## Characteristics
 + Thread-safe progress bars and spinners
 + Header-only library. Take a copy to include.
 + Single header version in `single_include`.
