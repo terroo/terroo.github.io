@@ -179,17 +179,6 @@ vim filecopy.cpp
 g++ -pthread -std=c++17 filecopy.cpp
 {% endhighlight %}
 
-<!-- RETANGULO LARGO 2 -->
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-style="display:block; text-align:center;"
-data-ad-layout="in-article"
-data-ad-format="fluid"
-data-ad-client="ca-pub-2838251107855362"
-data-ad-slot="8549252987"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 For more examples and with the code ready visit the official Indicators repository:
 ### <https://github.com/p-ranav/indicators/>
