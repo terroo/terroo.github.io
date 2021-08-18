@@ -81,6 +81,7 @@ sudo make install
 {% endhighlight %}
 
 > **Note**: If there is an "error" when compiling, see the additional step, otherwise ignore it!
+
 # Additional step if there is an error
 Anyone who understands `termcap` and `ncurses` knows that there will be an error if we don't pass the correct parameters to compile.
 
