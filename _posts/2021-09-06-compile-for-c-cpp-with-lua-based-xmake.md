@@ -263,7 +263,7 @@ cat .xmake/linux/x86_64/cache/history
 
 #3. Compiling multiple files
 Just create `xmake.lua` and add the files:
-{% highlight moon %}
+{% highlight lua %}
 target("multiple")
   set_kind("binary")
   add_files("main.cpp")
@@ -276,7 +276,7 @@ target("multiple")
 # 4.1 Compiling for Ncurses
 > `mkdir windows && cd windows`
 Let's use the example of this link: <https://terminalroot.com.br/ncurses/#8-janelas> . The `xmake.lua` will look like this:
-{% highlight moon %}
+{% highlight lua %}
 add_rules("mode.debug", "mode.release")
 add_requires("ncurses")
 
@@ -300,7 +300,7 @@ If you need to install files like
 + Images
 
 Use, examples:
-{% highlight moon %}
+{% highlight lua %}
 add_installfiles("src/*.h")
 add_installfiles("doc/*.md")
 {% endhighlight %}
@@ -356,7 +356,7 @@ Running in a subshell:
 {% highlight bash %}
 xmake lua
 {% endhighlight %}
-{% highlight moon %}
+{% highlight lua %}
 print(89 + 11)
 os.exit()
 {% endhighlight %}
