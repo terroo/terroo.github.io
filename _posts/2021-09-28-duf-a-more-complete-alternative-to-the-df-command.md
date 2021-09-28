@@ -4,7 +4,7 @@ title: "duf - A more complete alternative to the df command"
 date: 2021-09-28 12:09:18
 image: '/assets/img/commands/duf.jpg'
 description: 'A modern utility with TUI output.'
-featured-img: ../dir/img
+featured-img: ../commands/duf.jpg
 tags:
 - commands
 - terminal
