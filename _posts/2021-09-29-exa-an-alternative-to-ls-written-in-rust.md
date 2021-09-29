@@ -29,46 +29,17 @@ data-ad-slot="5351066970"></ins>
 </script>
 
 # Installation
-Exa is available for many distributions and operating systems.
+Exa is available for many distributions and operating systems:
 
-Check the installation method by clicking on your system/distro below:
-
-<script>
-  function change_code(num){
-    const com = ["emerge sys-apps/exa", "apt install exa", "dnf install exa", "pacman -S exa",
-                "xbps-install -S exa", "zypper install exa", "cargo install exa"]
-    const btn = ["primary", "secondary", "danger", "info", "dark", "warning", "link"]
-    //document.getElementsByClassName("language-bash").innerHTML = com[num]
-    document.getElementById("code").innerHTML = "sudo " + com[num]
-    //alert( com[num] )
-    for( var i = 0; i <= 6; i++ ){
-      if( i == num ){
-        //document.getElementById("cc-" + i).style.color = "#000"
-        var element = document.getElementById("cc-" + i);
-        element.classList.remove("btn-" + btn[i]);
-        element.classList.add("btn-outline-" + btn[i]);
-      }else{
-        //document.getElementById("cc-" + i).style.color = "#fff"
-        var element = document.getElementById("cc-" + i);
-        element.classList.remove("btn-outline-" + btn[i]);
-        element.classList.add("btn-" + btn[i]);
-      }
-    }
-  }
-</script>
-
-
-<p>
-  <button class="btn btn-outline-primary btn-sm" id="cc-0" onclick="change_code(0)">Gentoo</button>
-  <button class="btn btn-secondary btn-sm" id="cc-1" onclick="change_code(1)">Debian/Ubuntu/Mint</button>
-  <button class="btn btn-danger btn-sm" id="cc-2" onclick="change_code(2)">Fedora/Red Hat</button>
-  <button class="btn btn-info btn-sm" id="cc-3" onclick="change_code(3)">Arch/Manjaro</button>
-  <button class="btn btn-dark btn-sm" id="cc-4" onclick="change_code(4)">Void Linux</button>
-  <button class="btn btn-warning btn-sm" id="cc-5" onclick="change_code(5)">OpenSUSE</button>
-  <button class="btn btn-link btn-sm" id="cc-6" onclick="change_code(6)">Outro Sistema/Distro</button>
-</p>
-
-<pre><code id="code">emerge sys-apps/exa</code></pre>
+{% highlight sh %}
+emerge sys-apps/exa # Gentoo, Funtoo, ...
+sudo apt install exa # Debian, Ubuntu, Mint, ...
+sudo dnf install exa # Red Hat, CentOS, Fedora, ...
+sudo pacman -S exa # Arch, Manjaro, ...
+sudo xbps-install -S exa # Void Linux
+sudo zypper install exa # OpenSUSE
+sudo cargo install exa # Other distro or system
+{% endhighlight %}
 
 
 <!-- LISTA MIN -->
