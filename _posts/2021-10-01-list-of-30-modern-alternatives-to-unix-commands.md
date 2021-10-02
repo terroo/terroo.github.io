@@ -194,21 +194,21 @@ Another cross-platform graphical system/process monitor.
 
 ---
 
-#21. [`glances`](https://github.com/nicolargo/glances)
+# 21. [`glances`](https://github.com/nicolargo/glances)
 Monitor your system. An alternative `top` /` htop` for operating systems [GNU](https://en.terminalroot.com.br/command-cp-with-progress-bar/)/[Linux](ihttps://en.terminalroot.com.br/the-6-best-network-scanners-for-linux/), [ BSD](https://en.terminalroot.com.br/openbsd-dual-boot-with-linux-single-partition/), [Mac OS](ihttps://en.terminalroot.com.br/how-to-install-macos-on-virtualbox-on-linux/) and [Windows](https://en.terminalroot.com.br/top-5-best-git-clients-for-linux-mac-and-windows/).
 
 ![glances](https://raw.githubusercontent.com/nicolargo/glances/develop/docs/_static/glances-summary.png)
 
 ---
 
-#22. [`gtop`](https://github.com/aksakalli/gtop)
+# 22. [`gtop`](https://github.com/aksakalli/gtop)
 Another system monitor similar to [gotop](https://en.terminalroot.com.br/install-gotop-a-graphical-terminal-system-monitor/), but written in [JavaScript](https://en.terminalroot.com.br/create-window-for-html5-with-javascript/)
 
 ![gtop](https://raw.githubusercontent.com/aksakalli/gtop/master/img/demo.gif)
 
 ---
 
-#23. [`hyperfine`](https://github.com/sharkdp/hyperfine)
+# 23. [`hyperfine`](https://github.com/sharkdp/hyperfine)
 A tool for benchmarking via the command line.
 
 ![hyperfine](https://camo.githubusercontent.com/88a0cb35f42e02e28b0433d4b5e0029e52e723d8feb8df753e1ed06a5161db56/68747470733a2f2f692e696d677572e52e723d9f2f
@@ -236,7 +236,7 @@ A modern and friendly [command line](https://en.terminalroot.com.br/18-commands-
 
 ---
 
-#27. [`curlie`](https://github.com/rs/curlie)
+# 27. [`curlie`](https://github.com/rs/curlie)
 The power of [curl](https://youtu.be/HxezVt5IEHQ), the ease of use of `httpie`.
 
 ![curlie](https://raw.githubusercontent.com/rs/curlie/master/doc/get.png)
@@ -250,7 +250,7 @@ A friendly and fast tool for sending HTTP requests. It re-implements HTTPie's ex
 
 ---
 
-#29. [`zoxide`](https://github.com/ajeetdsouza/zoxide)
+# 29. [`zoxide`](https://github.com/ajeetdsouza/zoxide)
 A smarter `cd` command inspired by `z`.
 
 ![zoxide](https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/contrib/tutorial.webp)
