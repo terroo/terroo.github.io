@@ -232,7 +232,7 @@ A modern replacement for `ps` written in [Rust](https://en.terminalroot.com.br/t
 # 26. [`httpie`](https://github.com/httpie/httpie)
 A modern and friendly [command line](https://en.terminalroot.com.br/18-commands-to-monitor-network-bandwidth-on-linux/) HTTP client  for the API i.
 
-![httpie](https://raw.githubusercontent.com/httpie/httpie/master/httpie.gif)
+![httpie](https://raw.githubusercontent.com/httpie/httpie/master/docs/httpie-animation.gif)
 
 ---
 
