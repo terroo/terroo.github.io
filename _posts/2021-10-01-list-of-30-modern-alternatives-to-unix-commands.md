@@ -123,7 +123,7 @@ data-ad-slot="8549252987"></ins>
 
 ---
 
-#11. [`fzf`](https://github.com/junegunn/fzf)
+# 11. [`fzf`](https://github.com/junegunn/fzf)
 Forget the <kbd>Ctrl + r</kbd> in the terminal to do searches, use `fzf`.
 ![fzf](https://raw.githubusercontent.com/junegunn/i/master/fzf-preview.png)
 
