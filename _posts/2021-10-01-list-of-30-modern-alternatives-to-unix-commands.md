@@ -136,7 +136,7 @@ Fly through your shell [history](https://en.terminalroot.com.br/45-examples-of-v
 
 ---
 
-#13. [`choose`](https://github.com/theryangeary/choose)
+# 13. [`choose`](https://github.com/theryangeary/choose)
 A friendly and fast alternative to the command [cut](https://en.terminalroot.com.br/useful-commands-for-your-linux-part-1/) and in some cases even to the [awk](https ://terminalroot.com.br/2021/08/guia-definitivo-de-awk-para-iniciantes.html).
 
 ![choose](https://asciinema.org/a/315932.png)
