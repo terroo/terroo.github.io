@@ -32,7 +32,7 @@ data-ad-slot="5351066970"></ins>
 # 01. [`bat`](https://github.com/sharkdp/bat)
 A clone of the `cat` command with syntax highlighting and [Git](https://en.terminalroot.com.br/onefetch-generate-a-fetch-from-your-git-repository/) integration.
 
-![bat](https://camo.githubusercontent.com/c436c206f2c86605ab2f9fb632dd485afc05fccbf14af472770b0c59d876c9cc/68747470733a2f2f692e696d6775722e636f6d34572f672c)
+![bat](/assets/img/commands/bat.png)
 
 ---
 
