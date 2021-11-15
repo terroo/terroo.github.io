@@ -451,14 +451,14 @@ end
 
 {% highlight lua %}
 -- increasing value
-for i = 1.4 of the
+for i = 1,4 of the
  print("Printing "..i.."th time!")
 end
 {% endhighlight %}
 
 {% highlight lua %}
 -- decreasing value
-for i = 4.1.-1 of the
+for i = 4,1,-1 of the
  print("Printing "..i.."th time!")
 end
 {% endhighlight %}
