@@ -569,7 +569,7 @@ print(str)
 str = "Lua is really cool!"
 yellow = "\027[33m"
 off = "\027[m"
-print(yellow..str..hangs up)
+print(yellow..str..off)
 {% endhighlight %}
 
 + Printing all colors:
