@@ -149,7 +149,7 @@ Examples:
 
 | Parameter | Usage |
 |---|---|
-| `-e` | `lua -e 'print("Hello, Moon!")'` |
+| `-e` | `lua -e 'print("Hello, Lua!")'` |
 | `-i` | `lua -i script.lua` |
 | `-v` | `lua -v` |
 
@@ -165,21 +165,21 @@ The most basic program.
 
 > `nvim hello-world.lua`
 {% highlight lua %}
-print("Hello Moon!")
+print("Hello Lua!")
 {% endhighlight %}
 
 And run: `lua hello-world.lua` or:
 
 {% highlight lua %}
 #!/usr/bin/env lua
-print("Hello Moon!")
+print("Hello Lua!")
 {% endhighlight %}
 > `chmod +x hello-world.lua` and run: `./hello-world.lua` . You could still replace the header with `which lua` and add, for example: `#!/usr/bin/lua`
 
 Other ways to print:
 > No parentheses
 {% highlight lua %}
-print "Hello, no parentheses, Moon!"
+print "Hello, no parentheses, Lua!"
 {% endhighlight %}
 
 > Multiple lines
@@ -245,7 +245,7 @@ print( my_table.y )
 Creating an empty table and adding later:
 {% highlight lua %}
 table = {}
-table[1] = "Moon"
+table[1] = "Lua"
 print(table[1])
 {% endhighlight %}
 
@@ -308,7 +308,7 @@ In Lua, arrays are implemented using index tables with integers. The size of an 
 A one-dimensional array can be represented using a simple table structure and can be initialized as shown below.
 
 {% highlight lua %}
-my_array = {"Moon", "C++", "JavaScript", "C", "Bash", "Rust", "PHP"}
+my_array = {"Lua", "C++", "JavaScript", "C", "Bash", "Rust", "PHP"}
 print( my_array[1]) -- Lua
 {% endhighlight %}
 
@@ -560,13 +560,13 @@ list_params("Mark", "Olive", "Terminal", "Root")
 # Working with strings
 + Another way of printing:
 {% highlight lua %}
-str = [[Moon is really cool!]]
+str = [[Lua is really cool!]]
 print(str)
 {% endhighlight %}
 
 + Printing colors:
 {% highlight lua %}
-str = "Moon is really cool!"
+str = "Lua is really cool!"
 yellow = "\027[33m"
 off = "\027[m"
 print(yellow..str..hangs up)
@@ -575,7 +575,7 @@ print(yellow..str..hangs up)
 + Printing all colors:
 
 {% highlight lua %}
-str = "Moon is really cool!"
+str = "Lua is really cool!"
 
 -- from 30 to 37 (8 colors)
 -- but there's more: try 0 to 106
@@ -593,7 +593,7 @@ end
 + Converting to UPPER or lower case
 > For UPPERCASE
 {% highlight lua %}
-str = "Moon is really cool!"
+str = "Lua is really cool!"
 print( string.upper( str ) )
 {% endhighlight %}
 
@@ -601,14 +601,14 @@ Note that accented words do not change. We'll see how to change this when we tal
 
 > To lowercase
 {% highlight lua %}
-str = "Moon is really cool!"
+str = "Lua is really cool!"
 print( string.lower( str ) )
 {% endhighlight %}
 
 + Replacing parts of a string
 {% highlight lua %}
 str = "Perl is really cool!"
-str = string.gsub(str,"Perl","Moon")
+str = string.gsub(str,"Perl","Lua")
 print(str)
 {% endhighlight %}
 
@@ -650,48 +650,48 @@ end
 
 + Reversing a string:
 {% highlight lua %}
-str = "Wow! The Moon!"
+str = "Wow! The Lua!"
 print(string.reverse(str))
 {% endhighlight %}
 
 + Getting the length of a string:
 {% highlight lua %}
-str = "Moon"
+str = "Lua"
 print(string.len(str))
 {% endhighlight %}
 
 + Subdividing a string
 > `string.sub(STRING, POS_INI, POS_FINAL)`
-  - Prints only: **Moon**
+  - Prints only: **Lua**
 {% highlight lua %}
-str = "Moon Programming Language"
+str = "Lua Programming Language"
 print( string.sub(str,0,3) )
 {% endhighlight %}
   - Prints only: **Programming**
 {% highlight lua %}
-str = "Moon Programming Language"
+str = "Lua Programming Language"
 print( string.sub(str, string.len(str) - 12, string.len(str) ) )
 {% endhighlight %}
 Or
 {% highlight lua %}
-str = "Moon Programming Language"
+str = "Lua Programming Language"
 print( string.sub(str, 18, 30 ) )
 {% endhighlight %}
 
 + Repeat string *n* times
 > For this example: 4 times
 {% highlight lua %}
-str = "Moon"
+str = "Lua"
 print(string.rep(str,4))
 {% endhighlight %}
 
 + Printing a letter in byte format (ASCII table number):
   - Getting number by letter
 {% highlight lua %}
-print( string.byte("Moon")) -- first character
-print( string.byte("Moon",2)) -- second character
-print( string.byte("Moon",-1)) -- last character
-print( string.byte("Moon",-2)) -- penultimate character
+print( string.byte("Lua")) -- first character
+print( string.byte("Lua",2)) -- second character
+print( string.byte("Lua",-1)) -- last character
+print( string.byte("Lua",-2)) -- penultimate character
 {% endhighlight %}
   - Getting the letter by number
 {% highlight lua %}
@@ -724,7 +724,7 @@ Tables are called objects and are not values or variables. Lua uses a constructo
 > Read the comments in the code for greater understanding:
 
 {% highlight lua %}
-table = {"Moon", "C++", "JavaScript", "C"}
+table = {"Lua", "C++", "JavaScript", "C"}
 
 -- prints everything together
 print("Printed the table: " .. table.concat(table))
@@ -794,7 +794,7 @@ return mp
 > `lua program`
 {% highlight lua %}
 mf = require ("my_module")
-mf.minha_funcao("Moon is awesome!")
+mf.minha_funcao("Lua is awesome!")
 {% endhighlight %}
 
 ---
