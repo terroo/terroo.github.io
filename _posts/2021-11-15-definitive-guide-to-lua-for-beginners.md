@@ -855,7 +855,7 @@ print([[Number of arguments
 via the command line: ]] .. #arg)
 
 if( #arg > 0 ) then
-  for i = 1.#arg do
+  for i = 1,#arg do
     print("Argument "..i.." is "..arg[i])
   end
 end
