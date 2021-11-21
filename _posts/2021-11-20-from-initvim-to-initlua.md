@@ -3,7 +3,7 @@ layout: post
 title: "From init.vim to init.lua"
 date: 2021-11-20 23:21:43
 image: '/assets/img/neovim/init-lua.jpg'
-description: 'This is the second article in our series, let's find out how things work in migration!'
+description: 'This is the second article in our series, lets find out how things work in migration!'
 featured-img: ../neovim/init-lua.jpg
 tags:
 - neovim

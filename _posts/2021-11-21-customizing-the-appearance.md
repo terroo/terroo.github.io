@@ -3,7 +3,7 @@ layout: post
 title: "Customizing the Appearance"
 date: 2021-11-21 00:01:12
 image: '/assets/img/neovim/appearance.jpg'
-description: 'We've added Status Bar, Indent Lines, Color Display plus some extra plugins and configured it from scratch.'
+description: 'Weve added Status Bar, Indent Lines, Color Display plus some extra plugins and configured it from scratch.'
 featured-img: ../neovim/appearance.jpg
 tags:
 - neovim
