@@ -169,7 +169,7 @@ I've separated them all into a single repository to make it easier, so you can d
 {% highlight sh %}
 mkdir -p ~/.themes
 git clone https://github.com/terroo/openbox-themes
-openbox-themes cd
+cd openbox-themes
 mv * ~/.themes
 {% endhighlight %}
 
