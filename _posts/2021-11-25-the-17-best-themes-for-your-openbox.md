@@ -59,7 +59,7 @@ This is the extreme of minimalism.
 
 ---
 
-#05. Clair-Crimson
+# 05. Clair-Crimson
 Another modern and with different window controls.
 
 ![Clair](/assets/img/openbox/clair-min.jpg)
@@ -80,21 +80,21 @@ One of the most loved!
 
 ---
 
-#08. Dracula-withoutBorder
+# 08. Dracula-withoutBorder
 Same as above, but without borders.
 
 ![Dracula withoutBorder](/assets/img/openbox/Dracula-withoutBorder-min.jpg)
 
 ---
 
-#09. Joy
+# 09. Joy
 It can design controls differently on your system, it's cool!
 
 ![Joy](/assets/img/openbox/joy-min.jpg)
 
 ---
 
-#10. Lovely
+# 10. Lovely
 Blend of Light + Modern + Adorable!
 
 
@@ -114,48 +114,48 @@ data-ad-slot="8549252987"></ins>
 
 ---
 
-#11. Nord-Openbox-theme
+# 11. Nord-Openbox-theme
 The version of the famous Nord for Openbox.
 
 ![Nord](/assets/img/openbox/nord-openbox-min.jpg)
 
 ---
 
-#12. orwT
+# 12. orwT
 This one we installed in the Arch Linux with Openbox video, in case you want to watch the video: [click here](https://youtu.be/rxN9jNXiy-c)
 
 ![orwT](https://terminalroot.com.br/assets/img/distros/archlinux-openbox.jpg)
 
 ---
 
-#13. Pelangi
+# 13. Pelangi
 A colored gradient and no window controls.
 
 ![Pelangi](/assets/img/openbox/pelangi-min.jpg)
 
 ---
 
-#14. Prismatic-Night
+# 14. Prismatic-Night
 This one is for those who like *extravagance* .
 ![Prismatic](/assets/img/openbox/prismatic-night-min.jpg)
 
 ---
 
-#15. Raven-Crimson
+# 15. Raven-Crimson
 Similar to [Clair](#Clair-Crimson) , but in dark style!
 
 ![Raven](/assets/img/openbox/raven-min.jpg)
 
 ---
 
-#16. Surreal_Gentoo
+# 16. Surreal_Gentoo
 This is from [Gentoo](https://terminalroot.com.br/tags#gentoo), oddly enough, among so many cool ones, this is what I use the most =) .
 
 ![Surreal_Gentoo](/assets/img/openbox/surreal-gentoo-min.jpg)
 
 ---
 
-#17. Yaru
+# 17. Yaru
 Yaru version, default from [GNOME](https://terminalroot.com.br/tags#gnome) on [Ubuntu](https://terminalroot.com.br/tags#ubuntu)
 
 ![Yaru](/assets/img/openbox/yaru-min.jpg)
