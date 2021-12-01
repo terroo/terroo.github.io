@@ -64,28 +64,28 @@ Livia is simple and has icons that can also be modified to your liking.
 
 ---
 
-#06. Neon
+# 06. Neon
 This one is also minimalist and *comfortable*
 
 ![neon](/assets/img/openbox/tint2/neon.jpg)
 
 ---
 
-#07. Popside
+# 07. Popside
 Similar to Neon, but with stronger tones.
 
 ![popside](/assets/img/openbox/tint2/popside.jpg)
 
 ---
 
-#08. Repentance
+# 08. Repentance
 Another simplistic dark style.
 
 ![repentance](/assets/img/openbox/tint2/repentance.jpg)
 
 ---
 
-#09. Starty
+# 09. Starty
 This is a light style and a little *extravagant*.
 
 ![starty](/assets/img/openbox/tint2/starty.jpg)
@@ -105,21 +105,21 @@ data-ad-slot="8549252987"></ins>
 
 ---
 
-#10. Uncreative
+# 10. Uncreative
 This is ideal for anyone who likes Magenta.
 
 ![uncreative](/assets/img/openbox/tint2/uncreative.jpg)
 
 ---
 
-#11. Zug
+# 11. Zug
 Zug already has a player to be used with [MPD](https://www.youtube.com/watch?v=tholV10zDi0) .
 
 ![zug](/assets/img/openbox/tint2/zug.jpg)
 
 ---
 
-#12. Red
+# 12. Red
 The name of this one I made up, as I took it from [Gentoo documentation](https://wiki.gentoo.org/wiki/Tint2).
 
 ![Tintoo](/assets/img/openbox/tint2/tintoo.jpg)
