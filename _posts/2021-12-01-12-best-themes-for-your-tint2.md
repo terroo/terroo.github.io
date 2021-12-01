@@ -142,7 +142,7 @@ mkdir -p ~/.config/tint2
 Then just clone the repository, which I separated all previously, and move to `~/.config/tint2/`:
 {% highlight sh %}
 git clone https://github.com/terroo/tint2-themes
-tint2-themes cd
+cd tint2-themes
 mv * ~/.config/tint2/
 {% endhighlight %}
 
