@@ -119,7 +119,7 @@ Zug already has a player to be used with [MPD](https://www.youtube.com/watch?v=t
 
 ---
 
-# 12. Red
+# 12. Tintoo
 The name of this one I made up, as I took it from [Gentoo documentation](https://wiki.gentoo.org/wiki/Tint2).
 
 ![Tintoo](/assets/img/openbox/tint2/tintoo.jpg)
