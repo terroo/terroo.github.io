@@ -242,7 +242,7 @@ CodeLite is a free, open-source, cross-platform IDE for the programming language
 
 ---
 
-#15. GNAT Studio
+# 15. GNAT Studio
 ![GNAT Studio](/assets/img/cpp/editors/gnatstudio.jpg)
 
 [GNAT Studio](https://github.com/AdaCore/gps) is a free multi-language integrated development environment (IDE). GNAT Studio uses compilers from the [GNU Compiler Collection](https://en.terminalroot.com.br/gcc-vs-llvm-which-is-the-best-compiler/) , whose name comes from GNAT , the GNU compiler for the Ada programming language, but also for other languages ​​like **C/C++** .
