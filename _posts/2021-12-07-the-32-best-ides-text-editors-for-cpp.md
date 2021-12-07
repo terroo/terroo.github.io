@@ -59,7 +59,7 @@ It supports [GNU Compiler Collection (GCC)](https://en.terminalroot.com.br/gcc-v
 
 ---
 
-# 03. I came
+# 03. Vim
 ![Vim](/assets/img/cpp/editors/vim.jpg)
 
 [Vim](https://en.terminalroot.com.br/how-to-customize-your-vim-from-zero-to-c-cpp-ubuntu-cinnamon/) (a contraction of **V**i **IM**proved, in Portuguese **Vi Improved**) is a clone of the text editor program [vi](https://pt.wikipedia.org/wiki/Vi) to [Unix](https://en.terminalroot.com.br/the-13-best-shell-for-your-linux-or-unix/) by Bill Joy.
