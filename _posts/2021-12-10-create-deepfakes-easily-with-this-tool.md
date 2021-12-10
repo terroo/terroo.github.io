@@ -17,13 +17,13 @@ If you want to create some cool **deepfakes** and spread it across the internet,
 Faceswap is the software that create Deepfakes from videos and images, it is cross platform and open source.
 
 # Installation
-You can install it on [Linux](https://terminalroot.com.br/tags#linux), [Windows](https://terminalroot.com.br/tags#windows) and [macOS](https: //terminalroot.com.br/tags#macos).
+You can install it on [Linux](https://en.terminalroot.com.br/list-of-30-modern-alternatives-to-unix-commands/), [Windows](https://en.terminalroot.com.br/top-5-best-git-clients-for-linux-mac-and-windows/) and [macOS](https://en.terminalroot.com.br/how-to-install-macos-on-virtualbox-on-linux/).
 
 But first you will need some prerequisites, like:
 
 + Your machine needs to have a good CPU and amount of memory, the basic would be an **Intel i5** with **8GB** of RAM memory.
 + You will need to install [Anaconda](https://www.anaconda.com/download/);
-+ And also [Git](https://terminalroot.com.br/tags#git)
++ And also [Git](https://en.terminalroot.com.br/onefetch-generate-a-fetch-from-your-git-repository/)
 
 If you are on Windows, restart your computer before opening Anaconda.
 
