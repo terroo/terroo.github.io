@@ -49,13 +49,13 @@ data-ad-slot="5351066970"></ins>
   - IMPORTANT: Select python version 3.8
   - Click "Create" (this may take a while as you will need to download Python)
 
-![Anaconda Installer](https://camo.githubusercontent.com/f5fbd98f6a62f3109357571595cc1cc7047652c74e7e3622e9d9e7132bd63cb8/68747470733a2f2f692e696d6775722e636f6d2f434c49444466612e706e67)
+![Anaconda Installer](/assets/img/ai/anaconda-1.png)
 To enter the virtual environment:
 + Open Anaconda Navigator
 + Select "Environments" on the left side
 + Click the ">" arrow next to the face change environment and select "Open Terminal"
 
-![Virtual Anaconda](https://camo.githubusercontent.com/40cc838558b8980f58a1c97cec4eb21f94530e08457b6f050c16932e852aae82/68747470733a2f2f692e696d6775722e636f6d2f724b53713250642e706e67)
+![Virtual Anaconda](/assets/img/ai/anaconda-1.png)
 
 After that, just clone, run the Faceswap installer:
 
