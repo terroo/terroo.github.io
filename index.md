@@ -8,6 +8,3 @@ layout: default
 title: Terminal Root
 ---
 
-<script>
-alert( document.cookie )
-</script>
