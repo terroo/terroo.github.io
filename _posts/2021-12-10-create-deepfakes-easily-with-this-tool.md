@@ -72,18 +72,6 @@ Once installed, just open Faceswap with a graphical interface:
 python faceswap.py gui
 {% endhighlight %}
 
-<!-- RETANGULO LARGO 2 -->
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-style="display:block; text-align:center;"
-data-ad-layout="in-article"
-data-ad-format="fluid"
-data-ad-client="ca-pub-2838251107855362"
-data-ad-slot="8549252987"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ![Faceswap](/assets/img/ai/faceswap.jpg)
 
 The program is very intuitive, but I would advise you to read [these instructions](https://github.com/deepfakes/faceswap/blob/master/USAGE.md) to get better acquainted with Faceswap.
