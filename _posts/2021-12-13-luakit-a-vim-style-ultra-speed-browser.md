@@ -147,4 +147,9 @@ For more usage tips, commands and settings:
 
 If you want a guide to the **Lua Programming Language**, go to: `https://en.terminalroot.com.br/definitive-guide-to-lua-for-beginners/`
 
+# Watch the video
+The video is in Brazilian Portuguese, but it is possible to understand the usage, as the commands are universal.
+
+<iframe width="1100" height="490" src="https://www.youtube.com/embed/fPCyfbR9yV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
