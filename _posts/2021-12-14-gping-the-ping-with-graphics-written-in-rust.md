@@ -3,7 +3,7 @@ layout: post
 title: "gping, the ping with graphics, written in Rust"
 date: 2021-12-14 10:41:15
 image: '/assets/img/commands/gping.jpg'
-description: 'Another modern and stylish command!'
+description: 'Another modern and stylish command.'
 featured-img: ../commands/gping.jpg
 tags:
 - commands
