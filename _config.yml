@@ -12,7 +12,7 @@ url: "https://terminalroot.com"
 # http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html
 disqus:
   shortname: terroo
-theme: minima
+#theme: minima
 markdown: kramdown
 highlighter: rouge
 kramdown:
