@@ -1,73 +1,8 @@
----
-layout: compress
----
-<html lang="{{ page.lang | default: site.lang | default: "en_US" }}">
+{% include head.html %}
+  <body>
+     <div id="app">
+{% include header.html %}
+{% include main.html %}
+{% include footer.html %} 
 
-  {% include head.html %}
 
-  <body class="site">
-
-    <amp-auto-ads type="adsense"
-            data-ad-client="ca-pub-2838251107855362">
-    </amp-auto-ads>
-
-    {% if site.google_tag_manager %}
-
-      <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
-
-    {% endif %}
-
-    {% include header.html %}
-
-    <div class="hero lazyload" data-bg="{{site.url}}/assets/img/posts/fundo.jpg">
-      <div class="hero__wrap">
-        <h1 class="hero__title">Terminal Root</h1>
-        <p class="hero__meta">GNU/Linux site, Software Development, Gentoo, BSD, Open Source and Free Software.</p>
-      </div>
-    </div>
-
-    <main class="site__content">
-      <section class="blog">
-        <div class="container">
-          <div class="post-list" itemscope="" itemtype="http://schema.org/Blog">
-
-	  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	  <ins class="adsbygoogle"
-	       style="display:block; text-align:center;"
-	       data-ad-layout="in-article"
-	       data-ad-format="fluid"
-	       data-ad-client="ca-pub-2838251107855362"
-	       data-ad-slot="7504231210"></ins>
-	  <script>
-		  (adsbygoogle = window.adsbygoogle || []).push({});
-	  </script>
-	  
-            {% for post in site.posts %}
-              {% include card.html %}
-            {% endfor %}
-
-	  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	  <ins class="adsbygoogle"
-	       style="display:block; text-align:center;"
-	       data-ad-layout="in-article"
-	       data-ad-format="fluid"
-	       data-ad-client="ca-pub-2838251107855362"
-	       data-ad-slot="7504231210"></ins>
-	  <script>
-		  (adsbygoogle = window.adsbygoogle || []).push({});
-	  </script>
-	  
-            <!-- {% include pagination.html %} -->
-          </div>
-        </div>
-      </section>
-    </main>
-
-    {% include footer.html %}
-
-  </body>
-
-</html>
