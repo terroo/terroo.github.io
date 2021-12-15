@@ -10,6 +10,8 @@ github_username:  terroo
 url: "https://terminalroot.com"
 # gem install kramdown rouge
 # http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html
+disqus:
+  shortname: terroo
 theme: minima
 markdown: kramdown
 highlighter: rouge
