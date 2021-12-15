@@ -30,12 +30,6 @@
   <meta name="msapplication-config" content="{{ '/assets/img/icons/browserconfig.xml?v=qA3OXqyw77' | relative_url }}">
   <meta name="theme-color" content="#ffffff">
 
-  {% if site.google_tag_manager %}
-
-    {% include gtm.html %}
-
-  {% endif %}
-
   <style class="inlineCSS">
 
     {% include critical.css %}
@@ -51,30 +45,7 @@
   <script type="text/javascript">
    {% include loadCss.js %}
   </script>
-  
-    <!-- Google Adsense -->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-	    (adsbygoogle = window.adsbygoogle || []).push({
-		    google_ad_client: "ca-pub-2838251107855362",
-		    enable_page_level_ads: true
-	    });
-    </script>
-  
-    <!-- GOOGLE ADSENSE to automatic ads -->
-    <script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-    </script>
     
-    <!-- GOOGLE ANALYTICS -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75725905-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-75725905-2');
-    </script>
 
   </head>
