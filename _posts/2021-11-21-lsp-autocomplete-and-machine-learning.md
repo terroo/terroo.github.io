@@ -385,7 +385,7 @@ data-ad-slot="5351066970"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-![lsp_signature](/assets/img/neovim/signature.gif)
+![lsp_signature](/assets/img/neovim/signature.png)
 ---
 
 ## Autocomplete
