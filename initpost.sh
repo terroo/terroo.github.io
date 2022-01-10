@@ -30,11 +30,10 @@ _skell(){
     echo "date: ${_DATE} ${_TIME}"
     echo "image: '/assets/img/'"
     echo "description:"
-    echo "featured-img: ../dir/img"
     echo "tags:"
     echo "---"
     echo
-    echo "![${1}](/assets/img/)"
+    echo "![{{ page.title }}]({{ page.image }} '{{ page.description }}')"
     echo
     echo 
 }
@@ -44,7 +43,8 @@ _initpost(){
     _PADRAO=$(date +%Y-%m-%d)
     _URL=$(echo $1 | sed 's/++/pp/g;s/\//-/g' | sed 's/+/-/g' | tr A-Z a-z | tr -d '!@#$%&*()_<>}{~?^/:“”\"' | tr ' ' '-' | sed 's/--//g' |
           sed 'y/áÁàÀãÃâÂéÉêÊíÍóÓõÕôÔúÚüÜçÇ/aAaAaAaAeEeEiIoOoOoOuUuUcC/' | tr -d ',.;:' | sed 's/-$//g')
-    if [[ ! -f "_posts/${_PADRAO}-${_URL}.md" ]] ; then
+    #if [[ ! $(ls "_posts/" | egrep "\\${_URL}") ]] ; then # slashs if start with -
+    if [[ ! $(ls "_posts/" | egrep "${_URL}") ]] ; then
       _skell "$1" > "_posts/$_PADRAO-$_URL.md"    
       echo -e "\e[36;1m➜ File created successfully!\n\e[37;1m_posts/$_PADRAO-$_URL.md\e[m"
     else
