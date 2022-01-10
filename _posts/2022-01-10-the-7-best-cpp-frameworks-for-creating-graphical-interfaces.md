@@ -14,9 +14,9 @@ tags:
 
 ![{{ page.title }}]({{ page.image }} '{{ page.description }}')
 
-The most recommended [programming language](https://terminalroot.com/hello-world-in-25-programming-languages-proposal-docs-and-links/) for creating Graphical Interfaces , better known as [GUI](https://terminalroot.com/tags#gui), is [C++](https://terminalroot.com/tags#cpp), in addition to [Games] Development( https://terminalroot.com/tags#games), embedded systems and among several other forms of use that can be consulted [here](https://terminalroot.com/2021/03/lista-de- some-famous-software-written-in-cpp.html).
+The most recommended [programming language](https://terminalroot.com/hello-world-in-25-programming-languages-proposal-docs-and-links/) for creating Graphical Interfaces , better known as [GUI](https://terminalroot.com/tags#gui), is [C++](https://terminalroot.com/tags#cpp), in addition to [Games Development](https://terminalroot.com/tags#games), embedded systems and among several other forms of use that can be consulted [here](https://terminalroot.com/list-of-some-famous-software-written-in-cpp/).
 
-In this article, we are going to get to know the 7 most used and recommended C++ libraries for creating graphical interfaces. Each one with its specification and recommendation.
+In this article, we are going to get to know the **7 most used and recommended C++ libraries for creating graphical interfaces**. Each one with its specification and recommendation.
 
 
 <!-- SQUARE - GAMES ROOT -->
@@ -49,9 +49,9 @@ We have a series about gtkmm that can be seen in the video below:
 # 02. [Qt](https://qt.io/)
 ![Qt](/assets/img/cpp/gui/qt.jpg)
 
-[Qt](https://terminalroot.com/tags#cpp) (pronounced "*cute*" ) is a widget toolkit for creating graphical user interfaces as well as cross-platform applications that run on various software and hardware platforms, such as [Linux](https://terminalroot.com/tags#linux) , [Windows](https://terminalroot.com/tags#windows) , [macOS](https://terminalroot.com/tags#macos) , [Android](https://terminalroot.com/2020/09/hackerpro-ferramenta-all-in-one-pentesing-para-linux-e-android.html) or embedded systems with little or no change to the underlying code base, yet it is still a native app with native features and speed.
+[Qt](https://terminalroot.com/tags#cpp) (pronounced "cute" ) is a widget toolkit for creating graphical user interfaces as well as cross-platform applications that run on various software and hardware platforms, such as [Linux](https://terminalroot.com/tags#linux) , [Windows](https://terminalroot.com/tags#windows) , [macOS](https://terminalroot.com/tags#macos) , Android or embedded systems with little or no change to the underlying code base, yet it is still a native app with native features and speed.
 
-The [Qt](https://qt.io/) is currently being developed by **The Qt Company** , a publicly traded company, and the **Qt Project** under [Open Source](https) governance ://terminalroot.com/tags#opensource) , involving individual developers and organizations working to advance **Qt**. [Qt](https://www.youtube.com/watch?v=BF809OoXfjM) is available under commercial and open source licenses [GPL 2.0](http://www.gnu.org/licenses/lgpl-2.1. html), [GPL 3.0](http://www.gnu.org/licenses/gpl-3.0.html) and [LGPL 3.0](http://www.gnu.org/licenses/lgpl-3.0.html) licenses ) .
+The [Qt](https://qt.io/) is currently being developed by **The Qt Company** , a publicly traded company, and the **Qt Project** under [Open Source](https://terminalroot.com/tags#opensource) , involving individual developers and organizations working to advance **Qt**. [Qt](https://www.youtube.com/watch?v=BF809OoXfjM) is available under commercial and open source licenses [GPL 2.0](http://www.gnu.org/licenses/lgpl-2.1.html), [GPL 3.0](http://www.gnu.org/licenses/gpl-3.0.html) and [LGPL 3.0](http://www.gnu.org/licenses/lgpl-3.0.html) licenses ) .
 
 ### Terminal Finances made with Qt
 <iframe width="1246" height="701" src="https://www.youtube.com/embed/BF809OoXfjM?list=PLUJBQEDDLNckaY4RySilHxOd_SlODnNz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -93,7 +93,7 @@ data-ad-slot="8549252987"></ins>
 # 04. [Ultimate++](https://terminalroot.com/2021/08/crie-interfaces-graficas-com-ultimatepp.html)
 ![Ultimate++](/assets/img/cpp/gui/ultimatepp.jpg)
 
-[Ultimate++](http://ultimatepp.org/) , also known as **U++** or **Upp** - is a rapid application development framework [C++](https://terminalroot.com/tags#cpp) which aims to reduce the code complexity of typical desktop applications by extensively exploiting the features of C ++ .
+[Ultimate++](http://ultimatepp.org/) , also known as **U++** or **Upp** - is a rapid application development framework [C++](https://terminalroot.com/tags#cpp) which aims to reduce the code complexity of typical desktop applications by extensively exploiting the features of C++ .
 
 ---
 
