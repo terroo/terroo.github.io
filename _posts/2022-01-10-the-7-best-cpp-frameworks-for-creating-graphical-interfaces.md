@@ -7,7 +7,6 @@ description: 'The most used and the most recommended!'
 tags:
 - cpp
 - gtkmm
-- what
 - gui
 - cppdaily
 ---
@@ -34,7 +33,7 @@ data-ad-slot="5351066970"></ins>
 # 01. [Gtkmm](https://cutt.ly/gtkmm)
 ![Gtkmm](/assets/img/cpp/gui/gtkmm.jpg)
 
-[gtkmm](https://www.gtkmm.org/) (formerly known as **gtk--** or **gtk minus minus** ) is the official [C++](https://terminalroot.com) interface .br/cpp) for the popular GUI library [GTK](https://gtk.org/) . **gtkmm** is [free software](https://terminalroot.com/tags#freesoftware) distributed under the [GNU](https://terminalroot.com/tags#gnu) Lesser [General Public License](https://www.gnu.org/licenses/licenses.en.html) (LGPL).
+[gtkmm](https://www.gtkmm.org/) (formerly known as **gtk--** or **gtk minus minus** ) is the official [C++](https://terminalroot.com) interface for the popular GUI library [GTK](https://gtk.org/) . **gtkmm** is [free software](https://terminalroot.com/tags#freesoftware) distributed under the [GNU](https://terminalroot.com/tags#gnu) Lesser [General Public License](https://www.gnu.org/licenses/licenses.en.html) (LGPL).
 
 **gtkmm** allows the creation of user interfaces in code or with the [Glade Interface Designer](https://glade.gnome.org/) , using the [Gtk::Builder](https://developer-old.gnome.org/gtkmm/stable/classGtk_1_1Builder.html) class. Other features include type-safe callbacks, a comprehensive set of control graphics, and widget extensibility through inheritance.
 
