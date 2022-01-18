@@ -66,7 +66,7 @@ v version
 Let's test a [Hello, World!](https://terminalroot.com/hello-world-in-25-programming-languages-proposal-docs-and-links/) . Create a `.v` file, eg `nvim hello.v` and insert this code:
 {% highlight vlang %}
 fn main() {
-println('Hello Vlang!')
+  println('Hello Vlang!')
 }
 {% endhighlight %}
 
