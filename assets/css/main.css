@@ -191,3 +191,5 @@ button.close {color: #0b0b18; font-size: 60px;}
 #results-container li a {color: #2764ab; font-weight: bold; margin-bottom: 1px; font-family: 'Dosis', sans-serif; font-size: 18px;}
 #results-container li a:hover {color: #729fcf;}
 .modal-content {background-color: transparent; border:none;}
+
+table, tr, td { border: 1px solid silver;}
