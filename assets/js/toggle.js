@@ -59,16 +59,6 @@ function set_light_theme(){
   changeBg( 'slider', '#ccc', '#333');
 }
 
-function tableBS( e ){
-  var ts = document.getElementsByTagName( e );
-  for (var i = 0; i < ts.length; i++) {
-    var t = ts[i];
-    t.classList.add("table table-bordered");
-  }
-}
-
-tableBS("table");
-
 function toggleTheme(){
   //if( document.cookie.match(/ter_theme=light/) ){
   if( dark == false ){
