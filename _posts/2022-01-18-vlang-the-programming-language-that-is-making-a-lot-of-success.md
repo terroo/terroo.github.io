@@ -116,7 +116,7 @@ If you are used to [C++](https://terminalroot.com/tags#cpp) this mini table show
 
 You may notice that Vlang is very similar to [Go/Golang](https://terminalroot.com/tags#go) . See [this table](https://github.com/vlang/v/wiki/V-for-Go-developers) for comparison.
 
-ok
+ok2
 
 ---
 
