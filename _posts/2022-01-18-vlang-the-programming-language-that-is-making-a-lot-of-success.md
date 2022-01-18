@@ -48,7 +48,7 @@ git clone --depth=1 https://github.com/vlang/v
 cd v
 make
 rm -rf .git*
-CD ..
+cd ..
 mv v/ /opt
 cd /opt/v/
 sudo ./v symlink
