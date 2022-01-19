@@ -23,7 +23,7 @@ You can learn everything about the language just by reading the documentation in
 
 This results in simple, readable and maintainable code.
 
-Although simple, V gives a lot of power to the developer and can be used in practically all fields, including systems programming: [Web Development](https://terminalroot.com/tags#desenvolvimentoweb), [Game Development] (https://terminalroot.com/tags#games), [Graphic Interfaces](https://terminalroot.com/tags/#gui), Mobile, [Science](https://terminalroot.com .br/tags/#ciencia), Embedded Systems, Tools, etc.
+Although simple, V gives a lot of power to the developer and can be used in practically all fields, including systems programming: [Web Development](https://terminalroot.com/tags#desenvolvimentoweb), [Game Development](https://terminalroot.com/tags#games), [Graphic Interfaces](https://terminalroot.com/tags/#gui), Mobile, [Science](https://terminalroot.com .br/tags/#ciencia), Embedded Systems, Tools, etc.
 
 
 <!-- SQUARE - GAMES ROOT -->
