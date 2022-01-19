@@ -70,7 +70,7 @@ fn main() {
 }
 {% endhighlight %}
 
-Now to run, run:
+Now to run:
 {% highlight sh %}
 v run hello.v
 {% endhighlight %}
