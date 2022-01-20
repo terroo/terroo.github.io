@@ -2,7 +2,7 @@
 layout: post
 title: "Customize your prompt with Starship written in Rust"
 date: 2022-01-20 06:49:47
-image: '/assets/img/'
+image: '/assets/img/rust/starship.jpg'
 description: 'Minimalism and speed!'
 tags:
 - rust
