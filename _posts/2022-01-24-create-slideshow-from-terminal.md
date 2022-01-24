@@ -12,7 +12,7 @@ tags:
 
 ![{{ page.title }}]({{ page.image }} '{{ page.description }}')
 
---
+---
 
 Sometimes having a different presentation makes all the difference . **mdp** is a [markdown](https://terminalroot.com/tags#markdown) presentation tool via [command line](https://terminalroot.com/tags#terminal ).
 
@@ -56,7 +56,7 @@ I didn't send a [PR](https://terminalroot.com/top-5-best-git-clients-for-linux-m
 {% highlight sh %}
 sed -i 's/\-l\$(CURSES)/-l$(CURSES) -ltinfow/g' Makefile
 {% endhighlight %}
-> This command will replace the line that compiles only Ncurses of type *long strings* and also add to [terminfo](https://terminalroot.com/tags#shellscript), remembering that the **w** of the ` -ltinfo` is extremely important, if you remove it even compiles, but there will be [segmentation failure](https://en.wikipedia.org/wiki/Segmentation_fault) .
+> This command will replace the line that compiles only Ncurses of type unicode and also add to [terminfo](https://terminalroot.com/tags#shellscript), remembering that the **w** of the ` -ltinfo` is extremely important, if you remove it even compiles, but there will be [segmentation failure](https://en.wikipedia.org/wiki/Segmentation_fault) .
 
 And now just compile:
 {% highlight sh %}
