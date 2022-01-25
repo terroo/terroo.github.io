@@ -11,13 +11,7 @@ tags:
 
 ![{{ page.title }}]({{ page.image }} '{{ page.description }}')
 
-title: "Get to know Ubuntu's CSS Framework"
-description: ''
-tags:
-
 ---
-
-![Get to know the Ubuntu CSS Framework](/assets/img/css/ubuntu-css.jpg)
 
 There are numerous [CSS](https://terminalroot.com/solar-system-made-with-html-css-and-pure-javascript/) frameworks throughout the world wide web ecosystem.
 
