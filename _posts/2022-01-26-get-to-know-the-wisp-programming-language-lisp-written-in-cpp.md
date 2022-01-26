@@ -133,7 +133,7 @@ wisp -c '(print "Hello World!")'
 {% endhighlight %}
 
 ### 2nd. Running via file
-Create a file with `.list` extension, example: `nvim hello.lisp` and insert the content below:
+Create a file with `.lisp` extension, example: `nvim hello.lisp` and insert the content below:
 {% highlight clojure %}
 (print "Hello World!")
 {% endhighlight %}
