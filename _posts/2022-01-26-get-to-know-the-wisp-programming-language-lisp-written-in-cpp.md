@@ -146,7 +146,7 @@ wisp -f hello.lisp
 ### 3rd. Running in a subshell via prompt
 If you just run the command `wisp` you enter the subshell that runs commands [Lisp](https://en.wikipedia.org/wiki/Lisp_(programming_language)), example:
 {% highlight sh %}
-user@host ~ $wisp
+user@host ~ $ wisp
 >>> (print "Hello World!")
 Hello World!
  => "Hello, World!"
