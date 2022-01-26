@@ -154,5 +154,5 @@ Hello World!
 {% endhighlight %}
 > Note that to exit is `(exit)`(in parentheses) and avoid using directional arrows(**→ ↓ ←**), it will interpret it literally, that is, it will appear: `^[[A^[ [D^[[C` .
 
-For more information, access the [official repository](https://github.com/adam-mcdaniel/wisp) and the [examples] directory(https://github.com/adam-mcdaniel/wisp/tree/main/ examples), learning by examples is cool!
+For more information, access the [official repository](https://github.com/adam-mcdaniel/wisp) and the [examples](https://github.com/adam-mcdaniel/wisp/tree/main/examples) directory, learning by examples is cool!
 
