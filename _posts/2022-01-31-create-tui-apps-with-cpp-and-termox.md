@@ -51,9 +51,9 @@ data-ad-slot="5351066970"></ins>
 
 > Before installing also build the **demos**.
 
-If your system is in **Brazilian Portuguese**, run this command first:
+If your system is in a language other than US English, run this command first:
 {% highlight sh %}
-sed -i 's/en_US/pt_BR/g' ../external/Escape/src/terminal.cpp
+sed -i "s/en_US\.UTF-8/$LANG/g" ../external/Escape/src/terminal.cpp
 {% endhighlight %}
 
 Now build the demos:
