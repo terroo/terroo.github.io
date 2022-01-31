@@ -70,7 +70,7 @@ A menu with the examples will open, navigate using the up and down arrow keys an
 
 And finally install on your system:
 {% highlight sh %}
-CD ../..
+cd ../..
 sudo mv TermOx /opt/
 {% endhighlight %}
 
