@@ -18,7 +18,7 @@ How can IntelliSense from your [IDE/Editor](https://terminalroot.com/the-32-best
 
 **Cling** is an interactive [C++](https://terminalroot.com/tags#cpp) interpreter, built on the [LLVM](https://terminalroot.com.com/tags#llvm) and [Clang](https://terminalroot.com.com/tags#clang). Its advantages over standard interpreters are that it has command line prompt and uses just-in-time (JIT) compiler for compilation. Many of the developers of these types of software applications call them interactive compilers.
 
-One of Cling's main goals was to provide a contemporary, high-performance alternative to the first [C++] interpreter(https://terminalroot.com.com/tags#cpp) in the *ROOT - CINT* project. Backward compatibility with **CINT** was a top priority during development.
+One of Cling's main goals was to provide a contemporary, high-performance alternative to the first [C++](https://terminalroot.com.com/tags#cpp) interpreter in the *ROOT - CINT* project. Backward compatibility with **CINT** was a top priority during development.
 
 ---
 
