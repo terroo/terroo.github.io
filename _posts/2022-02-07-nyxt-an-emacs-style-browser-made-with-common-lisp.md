@@ -127,7 +127,7 @@ data-ad-slot="8549252987"></ins>
 As soon as you open Nyxt for the first time, the home page already offers you links to: **Keyboard shortcuts**, **Tutorials** and others, but the basic procedures for navigating are:
 > Remember that in [Emacs](https://terminalroot.com/top-10-best-code-editors-for-linux/) almost everything is combinations with the keys **Ctrl** and **Alt**, where **C** is *Ctrl* and **M** is *Alt* .
 
-+ `Cl`(Ctrl + L): Open a URL , if you do not enter the protocol, eg `https://terminalroot.com/` it will search by default in [DuckDuckGo](https://duckduckgo.com/?q=https%3A%2F%2Fterminalroot.com%2F&t=h_&ia=web) the name/URL entered.
++ `C-l` (Ctrl + L): Open a URL , if you do not enter the protocol, eg `https://terminalroot.com/` it will search by default in [DuckDuckGo](https://duckduckgo.com/?q=https%3A%2F%2Fterminalroot.com%2F&t=h_&ia=web) the name/URL entered.
 + `C-r`: Refresh the page (Reload the buffer)
 + `M-l`(Alt + L): Open the URL in a new buffer
 + `C-[, C-]`: Toggle buffer
