@@ -141,7 +141,7 @@ As soon as you open Nyxt for the first time, the home page already offers you li
 
 In the lower bar of the browser, there is the possibility to change tabs, open menu, reload the page and among others using only the mouse click:
 
-[![Nyxt Bottom Bar](/assets/img/web/nyxt-bottom-bar.png)]((/assets/img/web/nyxt-bottom-bar.png)
+[![Nyxt Bottom Bar](/assets/img/web/nyxt-bottom-bar.png)](/assets/img/web/nyxt-bottom-bar.png)
 > Click on the image to open in a new tab for a larger view.
 
 ---
