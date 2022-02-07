@@ -16,7 +16,7 @@ tags:
 
 [Nyxt Browser](https://nyxt.atlas.engineer/) is a fully hackable web browser - all its source code can be introspected, modified and tweaked to your exact specification.
 
-It was written in [Lisp](https://nyxt.atlas.engineer/) and based on [Emacs] style commands(https://terminalroot.com.br/2018/07/spacemacs-um-editor-para-development -professional.html) .
+It was written in [Lisp](https://nyxt.atlas.engineer/) and based on [Emacs](https://www.gnu.org/software/emacs/) style commands .
 
 # Installation
 There are several ways to install Nyxt on your system. Despite being officially available for [Linux](https://terminalroot.com/tags#linux), it can also be installed on [macOS](https://terminalroot.com/tags#macos) and [ FreeBSD](https://terminalroot.com/tags#freebsd) .
@@ -28,11 +28,15 @@ For Linux, the way of installation may depend on your distribution, however, reg
 mkdir nyxt && cd nyxt
 {% endhighlight %}
 
+---
+
 + Download the compressed file:
 > This is the latest version according to this article.
 {% highlight sh %}
 wget https://github.com/atlas-engineer/nyxt/releases/download/2.2.4/nyxt-2.2.4.tar.xz
 {% endhighlight %}
+
+---
 
 + Unzip the file:
 {% highlight sh %}
@@ -40,11 +44,14 @@ tar Jxvf nyxt-2.2.4.tar.xz
 {% endhighlight %}
 > From now on you can test Nyxt by running the command: `./usr/local/bin/nyxt`
 
+---
+
 + After unzipping, remove the `tar.xz` file:
 {% highlight sh %}
 rm nyxt-2.2.4.tar.xz
 {% endhighlight %}
 
+---
 
 <!-- SQUARE - GAMES ROOT -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -64,32 +71,43 @@ CD ..
 sudo mv nyxt/ /opt/
 {% endhighlight %}
 
+---
+
 + Now create a symbolic link to `/usr/local/bin`:
 {% highlight sh %}
 sudo ln -s /opt/nyxt/usr/local/bin/nyxt /usr/local/bin/nyxt
 {% endhighlight %}
 > From that moment on, you can test Nyxt just by running the command: `nyxt`
 
+---
+
 + Make it possible to access it via [Launcher](https://terminalroot.com/12-best-launchers-for-linux/) or your system's Dashboard and copy the `.desktop ` for Launcher:
 {% highlight sh %}
 find /opt/nyxt/ -name "nyxt.desktop" -exec sudo cp {} /usr/share/applications/ \;
 {% endhighlight %}
+
+---
 
 + Change the executable path of the `nyxt.desktop` file:
 {% highlight sh %}
 sudo sed -i 's/Exec.*/Exec=nyxt %u/g' /usr/share/applications/nyxt.desktop
 {% endhighlight %}
 
+---
+
 + Set the default path for the Nyxt icon to be displayed correctly:
 {% highlight sh %}
 sudo cp $(find /opt/nyxt/ -name "nyxt.png" | grep 256x256) /usr/share/pixmaps/
 {% endhighlight %}
+
+---
 
 Now test by trying to find it and opening it from your Launcher/Dashboard.
 > In my case I use [Rofi](https://terminalroot.com/how-to-install-rofi-in-gentoo-and-create-shortcut-for-it-in-bspwm/):
 [![Nyxt Launcher Rofi](/assets/img/web/nyxt-rofi.jpg)](/assets/img/web/nyxt-rofi.jpg)
 > Click on the image to open in a new tab for a larger view.
 
+---
 
 <!-- RECTANGLE 2 - OnParagragraph -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
