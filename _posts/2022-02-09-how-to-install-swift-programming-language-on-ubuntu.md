@@ -14,7 +14,7 @@ tags:
 
 ---
 
-[Swift](https://www.swift.org/) is a multi-paradigm, general-purpose compiled programming language developed by **Apple Inc.** and the open source community (*only as of version 2.2 *) .
+[Swift](https://www.swift.org/) is a multi-paradigm, general-purpose compiled programming language developed by **Apple Inc.** and the open source community (*only as of version 2.2*) .
 
 First released in 2014, Swift was developed as a replacement for Apple's previous programming language Objective-C, as Objective-C has remained largely unchanged since the early 1980s and lacked modern language features.
 
