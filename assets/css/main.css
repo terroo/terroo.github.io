@@ -202,4 +202,15 @@ table, td, tr { border: 1px solid silver;padding: 3px;}
 
 code {font-family: JetBrains;}
 
-ul li {padding-top: 15px;}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  padding-top: 15px;
+  padding-bottom: 3px;
+  font-size: 20px;
+  
+}
