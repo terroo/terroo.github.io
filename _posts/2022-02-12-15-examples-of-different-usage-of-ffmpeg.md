@@ -3,7 +3,7 @@ layout: post
 title: "15 examples of different usage of ffmpeg"
 date: 2022-02-12 09:29:28
 image: '/assets/img/media/ffmpeg.jpg'
-description: 'ffmpeg is an excellent tool. It's a complete video editor via the command line.'
+description: "ffmpeg is an excellent tool. It's a complete video editor via the command line."
 tags:
 - multimedia
 - commands
