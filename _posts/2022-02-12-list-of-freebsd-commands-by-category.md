@@ -12,11 +12,7 @@ tags:
 
 ![{{ page.title }}]({{ page.image }} '{{ page.description }}')
 
-title: "List of FreeBSD Commands by Category"
-description: 'That quick reference guide for whenever you need to remember something.'
-tags: freebsd
-
-![List of FreeBSD Commands by Category](/assets/img/freebsd/freebsd-commands.jpg)
+---
 
 Hail, guys! Below is a FreeBSD **Cheat Sheet** separated by category.
 
