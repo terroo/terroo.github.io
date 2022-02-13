@@ -3,7 +3,7 @@ layout: post
 title: "Know the details of Indentation Styles"
 date: 2022-02-13 12:38:04
 image: '/assets/img/programming/indentation.jpg'
-description: 'The indentation style is not mandatory in most programming languages, but it says a lot about the programmer's origin.'
+description: 'The indentation style is not mandatory in most programming languages, but it says a lot about the programmer origin.'
 tags:
 - programming
 - clanguage
