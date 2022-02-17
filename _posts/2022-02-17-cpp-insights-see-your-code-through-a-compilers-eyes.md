@@ -13,7 +13,7 @@ tags:
 
 ---
 
-**C++ Insights** is a tool based on [clang](https://terminalroot.com.br/tags#clang) that transforms your source code into the source code seen by the compiler.
+**C++ Insights** is a tool based on [clang](https://terminalroot.com/tags#clang) that transforms your source code into the source code seen by the compiler.
 
 The aim is to make things visible, which normally and intentionally happen behind the scenes. It's about the magic the compiler does to make things work. Or looking through a compiler's classes.
 
@@ -57,12 +57,12 @@ data-ad-slot="5351066970"></ins>
 
 # Installation and Use
 **C++ Insights** is available online, but if you want to build and install it on your system, there are some details. You will need the following construction tools:
-+ [CMake](https://terminalroot.com.br/tags#cmake)
-+ [LLVM](https://terminalroot.com.br/tags#llvm)/[clang++](https://terminalroot.com.br/tags#clang), it only compiles with it.
-+ [Ninja](https://terminalroot.com.br/tags#ninja)
++ [CMake](https://terminalroot.com/tags#cmake)
++ [LLVM](https://terminalroot.com/tags#llvm)/[clang++](https://terminalroot.com/tags#clang), it only compiles with it.
++ [Ninja](https://terminalroot.com/tags#ninja)
 + [lld](https://lld.llvm.org/) , this is the most important of all, C++ Insights reports parameters to the linker that [GNU ld]() is not supported. 😞
 
-Example in [Ubuntu](https://terminalroot.com.br/tags#ubuntu):
+Example in [Ubuntu](https://terminalroot.com/tags#ubuntu):
 {% highlight sh %}
 sudo apt install clang++ lld ninja-build cmake
 {% endhighlight %}
