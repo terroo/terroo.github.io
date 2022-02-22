@@ -203,7 +203,6 @@ table, td, tr { border: 1px solid silver;padding: 3px;}
 code {font-family: JetBrains;}
 
 ul {
-  list-style: none;
   margin: 0;
   padding: 0;
 }
