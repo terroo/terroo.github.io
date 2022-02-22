@@ -84,7 +84,7 @@ int main(int argc, char ** argv){
 Example:
 > Hide input, show password.
 
-<img src="/assets/img/webp/1-empty-show-en-us.webp" loading="lazy" alt="Hide input, show password">
+<img src="/assets/img/cppdaily/webp/1-empty-show-en-us.webp" loading="lazy" alt="Hide input, show password">
 
 ---
 
@@ -101,7 +101,7 @@ std::cout << "\rYour password is: " << n << '\n'; // now display 'n' instead of 
 Example:
 > Hide input, show asterisks.
 
-<img src="/assets/img/webp/2-empty-aster-en-us.webp" loading="lazy" alt="Hides input, shows asterisks">
+<img src="/assets/img/cppdaily/webp/2-empty-aster-en-us.webp" loading="lazy" alt="Hides input, shows asterisks">
 
 
 <!-- MINI ADS -->
@@ -159,7 +159,7 @@ int main(int argc, char ** argv){
 Example:
 > Input asterisks, show password.
 
-<img src="/assets/img/webp/3-asterisks-en-us.webp" loading="lazy" alt="Input, show password">
+<img src="/assets/img/cppdaily/webp/3-asterisks-en-us.webp" loading="lazy" alt="Input, show password">
 
 ---
 
