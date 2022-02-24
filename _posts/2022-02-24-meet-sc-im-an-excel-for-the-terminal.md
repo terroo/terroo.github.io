@@ -16,7 +16,7 @@ tags:
 
 **sc-im** is a spreadsheet program made with [ncurses](https://terminalroot.com/tags#ncurses) for [terminal](https://terminalroot.com/tags#terminal) .
 
-**sc-im** is based on [sc](https://en.wikipedia.org/wiki/Sc_(spreadsheet_calculator)) a similar application developed by **James Gosling**, the creator of [Java] (https://terminalroot.com/tags#java).
+**sc-im** is based on [sc](https://en.wikipedia.org/wiki/Sc_(spreadsheet_calculator)) a similar application developed by **James Gosling**, the creator of [Java](https://terminalroot.com/tags#java).
 
 Some of the features of sc-im are:
 + [Vim](https://terminalroot.com/tags#vim) style moves  to move between cells;
