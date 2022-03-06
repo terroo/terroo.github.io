@@ -77,7 +77,8 @@ int main(){
 
 > Compile: `g++ first.cpp tinyxml2/tinyxml2.cpp` and run: `./a.out`
 
-Possible and probable exit:
+
+Possible and probable output:
 {% highlight cpp %}
 How to parser XML with TinyXML2 C++
 {% endhighlight %}
@@ -116,7 +117,8 @@ int main(){
 }
 {% endhighlight %}
 
-Possible and probable exit:
+
+Possible and probable output:
 {% highlight cpp %}
 How to parser XML with TinyXML2 C++
 {% endhighlight %}
@@ -183,7 +185,8 @@ int main(){
 }
 {% endhighlight %}
 
-Possible and probable exit:
+
+Possible and probable output:
 {% highlight cpp %}
 How to parser XML with TinyXML2 C++
 A simple and functional tool to read the tilemaps of your games.
@@ -265,7 +268,8 @@ int main(){
 
 > Note that the `*p_article` pointer gets the first element from root and the `*ptr` gets it. To jump to the next article, we use: `p_article = p_article->NextSiblingElement("article");` inside and at the end of the `while` loop. The ternary condition was just to separate the articles.
 
-Possible and probable exit:
+
+Possible and probable output:
 {% highlight cpp %}
 title: How to parser XML with TinyXML2 C++
 description: A simple and functional tool to read the tilemaps of your games.
@@ -362,7 +366,8 @@ int main(){
 }
 {% endhighlight %}
 
-Possible and probable exit:
+
+Possible and probable output:
 {% highlight cpp %}
 title: How to parser XML with TinyXML2 C++
 description: A simple and functional tool to read the tilemaps of your games.
