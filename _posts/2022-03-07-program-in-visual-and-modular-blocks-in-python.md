@@ -10,11 +10,6 @@ tags:
 
 ![{{ page.title }}]({{ page.image }} '{{ page.description }}')
 
-# Program in Visual and Modular Blocks in Python
-> 
-
-![PyFlow](/assets/img)
-
 ---
 
 **PyFlow** is an interactive [Python](https://terminalroot.com/tags#python) development tool structured in [open source](https://terminalroot.com/tags#opensource) graphs.
