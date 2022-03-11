@@ -294,7 +294,7 @@ sudo poudriere jail -d -j 12amd64 -C all
 
 + List `jail`(s)
 {% highlight bash %}
-sudo podriere jail -l
+sudo poudriere jail -l
 sudo poudriere jail -l [-n] [-q]
 {% endhighlight %}
 
@@ -307,12 +307,12 @@ sudo poudriere jail -u -j <jail> -t 12.1
 + Create `ports`
 {% highlight bash %}
 sudo poudriere ports -c -m null -M ${PWD}/svn/ports -p portsdir -v
-sudo podriere ports -l
+sudo poudriere ports -l
 {% endhighlight %}
 
 + Tree list of `ports`
 {% highlight bash %}
-sudo podriere ports -l
+sudo poudriere ports -l
 sudo poudriere ports -l [-n] [-q]
 {% endhighlight %}
 
