@@ -140,7 +140,7 @@ data-ad-slot="5351066970"></ins>
 ---
 
 # 4. [GNU Make](https://www.gnu.org/software/make/manual/make.html)
-![GNU Make](/assets/img/gnu/makefile.jpg)
+![GNU Make](/assets/img/gnu/makefile2.jpg)
 
 ---
 
