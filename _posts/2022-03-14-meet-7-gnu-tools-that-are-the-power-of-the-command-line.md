@@ -106,7 +106,7 @@ There are a few versions of Sed, and GNU Sed is one of them. When using GNU Sed 
 > Replacing and modifying all occurrences of the word **That** with the word **This** in a text file: `example.txt`
 
 {% highlight sh %}
-sed -i 's/That/That/' example.txt
+sed -i 's/That/This/' example.txt
 {% endhighlight %}
 
 For more information visit the [Official GNU Sed Page](https://www.gnu.org/software/sed/) .
