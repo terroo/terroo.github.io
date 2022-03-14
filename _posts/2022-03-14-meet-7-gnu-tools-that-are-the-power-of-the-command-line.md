@@ -148,7 +148,7 @@ data-ad-slot="5351066970"></ins>
 
 Although integrated development environments and language-specific compiler features can also be used to manage a build process, GNU Make remains widely used.
 
-There are some versions of the `make` command which is the command used by **GNU Make**, however, on many systems `make` is just an alias for **GNU Make** where the original command is ` gmake`, this symlink can be discovered by combining two other GNU tools which is [GNU Coreutils](https://www.gnu.org/software/coreutils/) with the following command: `ls -l $ (which make)` .
+There are some versions of the `make` command which is the command used by **GNU Make**, however, on many systems `make` is just an alias for **GNU Make** where the original command is `gmake`, this symlink can be discovered by combining two other GNU tools which is [GNU Coreutils](https://www.gnu.org/software/coreutils/) with the following command: `ls -l $ (which make)` .
 
 When you have a correctly created Makefile, to compile it just run the command:
 {% highlight sh %}
