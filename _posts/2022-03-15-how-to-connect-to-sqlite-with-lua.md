@@ -9,7 +9,7 @@ tags:
 - sqlite
 ---
 
-![How to Connect to SQLite with Lua](/assets/img/)
+![How to Connect to SQLite with Lua](/assets/img/lua/lua-sqlite.jpg)
 
 ---
 
