@@ -3,7 +3,7 @@ layout: post
 title: "Meet RustPython, a Python written in Rust"
 date: 2022-03-16 17:32:19
 image: '/assets/img/python/rustpython.jpg'
-description: 'It's Rust reinventing all possible wheels!'
+description: "It's Rust reinventing all possible wheels!"
 tags:
 - rust
 - python
