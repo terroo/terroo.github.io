@@ -21,11 +21,9 @@ Make sure you already have [Git](https://terminalroot.com/tags#git), [GCC](https
 <script>
  var url = window.location.href;
  if(url.match(/terminalroot/)){
-  document.getElementById("limit").innerHTML = "Read feed ..."
-    alert(url)
+   document.getElementById("limit").innerHTML = "I have changed!";
  }else{
-  document.getElementById("limit").innerHTML = "Read more ..."
-    alert("No")
+   document.getElementById("limit").innerHTML = " Some ...";
  }
 </script>
 
