@@ -18,6 +18,15 @@ tags:
 # Installation
 Make sure you already have [Git](https://terminalroot.com/tags#git), [GCC](https://terminalroot.com/tags#gcc) or [Clang](https://terminalroot.com/tags#clang), [CMake](https://terminalroot.com/tags#cmake), [GNU Make](https://terminalroot.com/tags#make) installed on your system.
 
+<script>
+ const url = window.location.href;
+ if(str.match(/terminalroot/)){
+  document.write('Read feed ...');
+ }else{
+   document.write('Read more ...');
+ }
+</script>
+
 Then clone, build and install with the following commands:
 {% highlight sh %}
 git clone https://github.com/nlohmann/json
