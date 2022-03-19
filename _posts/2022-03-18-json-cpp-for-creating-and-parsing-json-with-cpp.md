@@ -19,12 +19,14 @@ tags:
 Make sure you already have [Git](https://terminalroot.com/tags#git), [GCC](https://terminalroot.com/tags#gcc) or [Clang](https://terminalroot.com/tags#clang), [CMake](https://terminalroot.com/tags#cmake), [GNU Make](https://terminalroot.com/tags#make) installed on your system.
 
 <script>
- var url = window.location.href;
- if(url.match(/terminalroot/)){
-   document.getElementById("limit").innerHTML = "I have changed!";
- }else{
-   document.getElementById("limit").innerHTML = " Some ...";
- }
+let url = "" + window.location;
+url = url.replace("https://", "");
+url = url.slice(0, 6);
+if(url.match(/termi/)){
+ document.getElementById("demo").innerHTML = "Read more ..."
+}else{
+ document.getElementById("demo").innerHTML = "No feed."
+}
 </script>
 
 <p id="limit"></p>
