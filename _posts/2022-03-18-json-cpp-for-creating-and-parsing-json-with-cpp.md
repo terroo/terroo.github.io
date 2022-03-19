@@ -18,19 +18,6 @@ tags:
 # Installation
 Make sure you already have [Git](https://terminalroot.com/tags#git), [GCC](https://terminalroot.com/tags#gcc) or [Clang](https://terminalroot.com/tags#clang), [CMake](https://terminalroot.com/tags#cmake), [GNU Make](https://terminalroot.com/tags#make) installed on your system.
 
-<p id="limit"></p>
-
-<script>
-let url = "" + window.location;
-url = url.replace("https://", "");
-url = url.slice(0, 6);
-if(url.match(/termi/)){
- document.getElementById("limit").innerHTML = "Read more ..."
-}else{
- document.getElementById("limit").innerHTML = "No feed."
-}
-</script>
-
 Then clone, build and install with the following commands:
 {% highlight sh %}
 git clone https://github.com/nlohmann/json
