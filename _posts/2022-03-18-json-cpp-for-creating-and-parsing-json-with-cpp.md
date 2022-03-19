@@ -21,11 +21,13 @@ Make sure you already have [Git](https://terminalroot.com/tags#git), [GCC](https
 <script>
  const url = window.location.href;
  if(str.match(/terminalroot/)){
-  //document.write('Read feed ...');
+  document.getElementById("limit").innerHTML = "Read feed ..."
  }else{
-   //document.write('Read more ...');
+  document.getElementById("limit").innerHTML = "Read more ..."
  }
 </script>
+
+<p id="limit"></p>
 
 Then clone, build and install with the following commands:
 {% highlight sh %}
