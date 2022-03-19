@@ -19,7 +19,8 @@ tags:
 Make sure you already have [Git](https://terminalroot.com/tags#git), [GCC](https://terminalroot.com/tags#gcc) or [Clang](https://terminalroot.com/tags#clang), [CMake](https://terminalroot.com/tags#cmake), [GNU Make](https://terminalroot.com/tags#make) installed on your system.
 
 <script>
- const url = window.location.href;
+ var url = window.location.href;
+ alert(url)
  if(url.match(/terminalroot/)){
   document.getElementById("limit").innerHTML = "Read feed ..."
  }else{
