@@ -21,9 +21,9 @@ Make sure you already have [Git](https://terminalroot.com/tags#git), [GCC](https
 <script>
  const url = window.location.href;
  if(str.match(/terminalroot/)){
-  document.write('Read feed ...');
+  //document.write('Read feed ...');
  }else{
-   document.write('Read more ...');
+   //document.write('Read more ...');
  }
 </script>
 
