@@ -20,7 +20,7 @@ Make sure you already have [Git](https://terminalroot.com/tags#git), [GCC](https
 
 <script>
  const url = window.location.href;
- if(str.match(/terminalroot/)){
+ if(url.match(/terminalroot/)){
   document.getElementById("limit").innerHTML = "Read feed ..."
  }else{
   document.getElementById("limit").innerHTML = "Read more ..."
