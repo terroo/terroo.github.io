@@ -141,10 +141,10 @@ If it weren't for the `case` it would be easier, for example on a UNIX-like syst
 ruby -e 'system "xdg-open " + "https://terminalroot.com/"'
 {% endhighlight %}
 
-Almost a [BASH](https://terminalroot.com/shell)! More easy than that just running directly at the prompt! 😛
+Almost a [BASH](https://terminalroot.com/tags#shell)! More easy than that just running directly at the prompt! 😛
 
 Some people might ask:
-> **— And in [C](https://terminalroot.com/linguagemc)/[C++](https://terminalroot.com/tags#cpp) ?**
+> **— And in [C](https://terminalroot.com/tags#clanguage)/[C++](https://terminalroot.com/tags#cpp) ?**
 
 Haha, just use `system()`! 🍺
 
