@@ -29,7 +29,7 @@ Wordle has a single daily solution, with all players trying to guess the same wo
 # Clidle
 Clidle is the version of Wordle in the terminal with TUI (Terminal User Interface) written with the programming language [Golang](https://terminalroot.com/tags#go) .
 
-To run it on your system you don't need to install anything. Just use [command](https://terminalroot.com/tags#comandos) [SSH](https://terminalroot.com/tags#ssh) as follows:
+To run it on your system you don't need to install anything. Just use [command](https://terminalroot.com/tags#commands) [SSH](https://terminalroot.com/tags#ssh) as follows:
 
 {% highlight sh %}
 ssh clidle.ddns.net -p 3000
