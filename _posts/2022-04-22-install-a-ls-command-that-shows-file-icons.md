@@ -55,7 +55,7 @@ data-ad-slot="5351066970"></ins>
 ---
 
 Possible output:
-![Logo ls](./logo-ls-test.png)
+![Logo ls](/assets/img/go/logo-ls-test.png)
 
 If you want it to be your default `ls`, just create an `alias` for it, example in [BASH](https://terminalroot.com/tags#bash):
 {% highlight sh %}
