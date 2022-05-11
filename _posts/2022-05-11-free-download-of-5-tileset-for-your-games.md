@@ -10,7 +10,7 @@ tags:
 - cppdaily
 ---
 
-![{{ page.title }}]({ page.image }} '{{ page.description }}')
+![{{ page.title }}]({{ page.image }} '{{ page.description }}')
 
 ---
 
