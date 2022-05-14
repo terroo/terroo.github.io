@@ -37,6 +37,8 @@ data-ad-slot="5351066970"></ins>
 + [GNU Make](https://terminalroot.com/tags#make)
 + [SFML](https://sfml-dev.org/)
 
+---
+
 # Building
 Now just clone the repository, enter it and run:
 
