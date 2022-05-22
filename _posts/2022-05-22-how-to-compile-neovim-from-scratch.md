@@ -3,7 +3,7 @@ layout: post
 title: "How to Compile NEOVIM from Scratch"
 date: 2022-05-22 13:09:31
 image: '/assets/img/neovim/building-neovim.jpg'
-description: 'When some plugin wants the latest version and your operating system repository doesn't have it yet.'
+description: 'When some plugin wants the latest version and your operating system repository doesnt have it yet.'
 tags:
 - neovim
 ---
