@@ -38,7 +38,7 @@ data-ad-slot="5351066970"></ins>
 Deepin I think was one of the icon themes that I used most to date, does not harm the view and even customizes some directories facilitating the quick view. It has an app icon theme that recognizes most and doesn't distort which doesn't make it hard to identify. Worth trying:
 
 <div class="text-center">
-  <p><a style="cursor:pointer;" href="http://bit.ly/DeepinIconTR">
+  <p><a style="cursor:pointer;" href="https://terminalroot.com.br/downs/Deepin.tar.gz ">
    <button style="cursor:pointer;" class="btn-lg btn-primary">
    <i class="fas fa-download"></i> Download Deepin icons
    </button>
@@ -73,7 +73,7 @@ I am currently using this icon theme, I like the minimalist icons that are displ
 To install unzip after download and move to the icon directory, to work, just activate in the configuration menu of your desktop.
 
 <div class="text-center">
-  <p><a style="cursor:pointer;" href="http://bit.ly/BreezeIconTR">
+  <p><a style="cursor:pointer;" href="https://terminalroot.com.br/downs/Breeze.tar.gz">
    <button style="cursor:pointer;" class="btn-lg btn-info">
    <i class="fas fa-download"></i> Download Breeze icons
    </button>
@@ -96,7 +96,7 @@ Vibrancy is actually a collection of icons, where only the colors change. It has
 The installation is a bit different in that it has subdirectory themes, so either move all icons, or choose to move by color. Unzip after download and move all icon directories to work, just activate in your desktop setup menu.
 
 <div class="text-center">
-  <p><a style="cursor:pointer;" href="http://bit.ly/VibrancyIconTR">
+  <p><a style="cursor:pointer;" href="https://terminalroot.com.br/downs/Vibrancy.tar.gz">
    <button style="cursor:pointer;" class="btn-lg btn-dark">
    <i class="fas fa-download"></i> Download Vibrancy icons
    </button>
@@ -119,7 +119,7 @@ Papirus is very similar to Deepin Icons, the only thing that changes is the styl
 To install unzip after download and move to the icon directory, to work, just activate in the configuration menu of your desktop.
 
 <div class="text-center">
-  <p><a style="cursor:pointer;" href="http://bit.ly/PapirusIconTR">
+  <p><a style="cursor:pointer;" href="https://terminalroot.com.br/downs/Papirus.tar.gz">
    <button style="cursor:pointer;" class="btn-lg btn-secondary">
    <i class="fas fa-download"></i> Download Papirus icons
    </button>
@@ -142,7 +142,7 @@ Luv, let's say, is the most original on this list, it's the new version of the f
 To install unzip after download and move to the icon directory, to work, just activate in the configuration menu of your desktop.
 
 <div class="text-center">
-  <p><a style="cursor:pointer;" href="http://bit.ly/LuvIconTR">
+  <p><a style="cursor:pointer;" href="https://terminalroot.com.br/downs/Luv.tar.gz">
    <button style="cursor:pointer;" class="btn-lg btn-dark">
    <i class="fas fa-download"></i> Download Luv icons
    </button>
@@ -165,7 +165,7 @@ This one is from the same Luv family (let's say it's a Luv in the form of circle
 To install unzip after download and move to the icon directory, to work, just activate in the configuration menu of your desktop.
 
 <div class="text-center">
-  <p><a style="cursor:pointer;" href="http://bit.ly/NumixCircleIconTR">
+  <p><a style="cursor:pointer;" href="https://terminalroot.com.br/downs/NumixCircle.tar.gz">
    <button style="cursor:pointer;" class="btn-lg btn-danger">
    <i class="fas fa-download"></i> Download Numix Circle icons
    </button>
@@ -199,7 +199,7 @@ The name says it all! It is based on the macOS icons. For those who like a more 
 To install unzip after download and move to the icon directory, to work, just activate in the configuration menu of your desktop.
 
 <div class="text-center">
-  <p><a style="cursor:pointer;" href="http://bit.ly/MojaveIconTR">
+  <p><a style="cursor:pointer;" href="https://terminalroot.com.br/downs/Mojave.tar.gz">
    <button style="cursor:pointer;" class="btn-lg btn-warning">
    <i class="fas fa-download"></i> Download Mojave icons
    </button>
@@ -234,7 +234,7 @@ And finally, the Cupertino, he is very similar to Mojave, but has some modified 
 To install unzip after download and move to the icon directory. To work simply activate in the configuration menu of your desktop.
 
 <div class="text-center">
-  <p><a style="cursor:pointer;" href="http://bit.ly/CupertinoIconTR1">
+  <p><a style="cursor:pointer;" href="https://drive.google.com/file/d/1nsdbs_XlnzHF7zjhwZWikPWEr3mF7ONd/view">
    <button style="cursor:pointer;" class="btn-lg btn-success">
    <i class="fas fa-download"></i> Download Cupertino icons
    </button>
