@@ -22,8 +22,8 @@ div a.logo {
 .col-lg-2 {border: 1px solid silver; margin-top: .75rem;}
 
 .card {margin-top: .75rem;}
-.card-title > .a-card { color: #2764ab !important; text-decoration: none;}
-.card-text > .a-card { font-style: oblique; }
+.card-title .a-card { color: #2764ab !important; text-decoration: none;}
+.card-text .a-card { font-style: oblique; }
 .description { font-style: oblique; color: #7391ab; }
 .card a { color: #333; text-decoration: none;}
 .card a:hover {text-decoration: underline;}
@@ -129,7 +129,7 @@ a span.badge:hover { background-color: #bfd0df;}
   margin-top: 10px;
 }
 
-.article > .row > .col-lg-12 > p > code {
+.article .row .col-lg-12 p code {
   background-color: #212529;
   color: #fff;
   padding: 0.3rem;
