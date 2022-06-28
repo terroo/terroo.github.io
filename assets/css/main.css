@@ -130,7 +130,6 @@ a span.badge:hover { background-color: #bfd0df;}
 }
 
 .article .row pre code {
-  background-color: #212529;
   color: #fff;
   padding: 0.3rem;
   border-radius: 5px;
