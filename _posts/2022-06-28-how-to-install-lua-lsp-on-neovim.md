@@ -35,9 +35,9 @@ First of all, make sure you have the following packages/software installed on yo
 
 Example:
 
-```bash
+{% highlight bash %}
 sudo apt install gcc g++ clang ninja-build
-```
+{% endhighlight %}
 
 ---
 
@@ -48,24 +48,24 @@ sudo apt install gcc g++ clang ninja-build
 
 Create the directory and enter it
 
-```bash
+{% highlight bash %}
 mkdir -p ~/.config/lsp
 cd ~/.config/lsp
-```
+{% endhighlight %}
 
 ### 2nd - Now clone and compile the `lua-language-server` binary
 With the following commands in order:
 
-```bash
+{% highlight bash %}
 git clone --depth=1 https://hub.fastgit.xyz/sumneko/lua-language-server
 lua-language-server cd
 git submodule update --init --recursive
 3rd cd/luamake
 compile/install.sh
-CD ../..
+cd ../..
 ./3rd/luamake/luamake rebuild
 
-```
+{% endhighlight %}
 
 ### 3rd - Add the binary to your `$PATH`
 [Neovim](https://terminalroot.com/tags#neovim) already has several LSPs built in, what is missing is for it to find the path to the binary in its `$PATH`.
@@ -73,11 +73,11 @@ CD ../..
 To do this, run the commands below:
 > If you used a path other than `~/.config/lsp` , change it accordingly.
 
-```bash
+{% highlight bash %}
 echo 'export PATH="${HOME}/.config/lsp/lua-language-server/bin:${PATH}"' >> ~/.bashrc
 source ~/.bashrc
 execute $SHELL
-```
+{% endhighlight %}
 
 ---
 
@@ -87,9 +87,9 @@ Add LSP support for Lua as per the configuration style you chose. In this case, 
 > `vim ~/.config/nvim/init.lua`
 
 And add the code below
-```moon
+{% highlight moon %}
 require'lspconfig'.sumneko_lua.setup {}
-```
+{% endhighlight %}
 
 If everything is ok, you will have: function details, error and warning information, autocomplete according to tables and so on. Examples:
 
