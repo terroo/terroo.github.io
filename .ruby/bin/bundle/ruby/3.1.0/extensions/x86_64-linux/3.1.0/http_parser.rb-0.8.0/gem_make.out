@@ -1,0 +1,16 @@
+current directory: /home/marcos/TerminalRoot/com.terroo/.ruby/bin/bundle/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+/usr/bin/ruby31 -I /usr/lib64/ruby/site_ruby/3.1.0 -r ./siteconf20220624-2411-8b3sdg.rb extconf.rb
+creating Makefile
+
+current directory: /home/marcos/TerminalRoot/com.terroo/.ruby/bin/bundle/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= clean
+
+current directory: /home/marcos/TerminalRoot/com.terroo/.ruby/bin/bundle/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\=
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.so
+
+current directory: /home/marcos/TerminalRoot/com.terroo/.ruby/bin/bundle/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20220624-2411-92ypur
