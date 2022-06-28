@@ -209,7 +209,7 @@ ul {
 }
 
 ul li {
-  /*list-style-type: none;*/
+  list-style-type: none;
   padding-top: 15px;
   padding-bottom: 3px;
   font-size: 20px;
