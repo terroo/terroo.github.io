@@ -14,7 +14,7 @@ tags:
 
 ---
 
-In [previous post](https://terminalroot.com/how-to-install-lua-lsp-on-neovim/) we showed how easy it is to configure LSP for the programming language [Lua ](https://terminalroot.com/tags#lua) and in this article we will see how to configure LSP for one of the most used languages by web developers which is the famous one: [Typescript](https://www.typescriptlang .org/) .
+In [previous post](https://terminalroot.com/how-to-install-lua-lsp-on-neovim/) we showed how easy it is to configure LSP for the programming language [Lua ](https://terminalroot.com/tags#lua) and in this article we will see how to configure LSP for one of the most used languages by web developers which is the famous one: [Typescript](https://www.typescriptlang.org/) .
 
 If you read the previous article you will see that there is no secret, however, having the [Neovim](https://terminalroot.com/tags#neovim) settings as [this other one](https://terminalroot.com/all-about-neovim-with-lua-how-to-customize-from-zero/) series, it's critical!
 
