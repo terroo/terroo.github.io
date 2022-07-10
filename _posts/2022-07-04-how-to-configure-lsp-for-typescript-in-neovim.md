@@ -37,7 +37,7 @@ sudo npm install -g typescript typescript-language-server
 ---
 
 # Configure Neovim
-After installing the LSP for TypeScript, you now have to "call" it in your Neovim settings. In my case I use the settings I showed in the series mentioned above, which is the `~/.config/nvim/lua/plugins/lsp.lua` file, but if you want to test it, you can try `~/.config/nvim/init .lua` , however, the first case is ideal.
+After installing the LSP for TypeScript, you now have to "call" it in your Neovim settings. In my case I use the settings I showed in the series mentioned above, which is the `~/.config/nvim/lua/plugins/lsp.lua` file, but if you want to test it, you can try `~/.config/nvim/init.lua` , however, the first case is ideal.
 
 Enter the line below:
 
