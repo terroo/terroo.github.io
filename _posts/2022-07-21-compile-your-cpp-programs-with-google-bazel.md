@@ -12,11 +12,6 @@ tags:
 
 ![{{ page.title }}]({{ page.image }} '{{ page.description }}')
 
-# Compile your C++ programs with Google's Bazel
-> Including programs written in Java and other programming languages.
-
-![Bazel](./bazel.jpg)
-
 ---
 
 **Bazel** is an open source tool for building automation and testing software developed by [Google](https://google.com) .
