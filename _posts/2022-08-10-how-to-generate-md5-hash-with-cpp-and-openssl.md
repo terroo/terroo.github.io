@@ -2,7 +2,7 @@
 layout: post
 title: "How to Generate MD5 Hash with C++ and OpenSSL"
 date: 2022-08-10 08:46:07
-image: '/assets/img/cpp/crypto-cpp.jpg'
+image: '/assets/img/cpp/md5.jpg'
 description: 'Indicates only for compatibility with existing applications. In new applications, SHA-1 or RIPEMD-160 should be preferred.'
 tags:
 - cpp
