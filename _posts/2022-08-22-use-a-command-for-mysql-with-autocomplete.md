@@ -23,25 +23,25 @@ Who never forgot reserved names from [MySQL/MariaDB](https://terminalroot.com/ta
 # Installation
 The fastest and most practical way to install MyCLI is using [pip](https://pypi.org/project/pip/), remember to have it installed on your system first. To do this, just install it as follows:
 
-```bash
+{% highlight bash %}
 pip3 install --user mycli
-```
+{% endhighlight %}
 > This will install only for your user, and you will need to have the path `${HOME}/.local/bin` in your `${PATH}` .
 
 Other ways and for other operating systems it would be:
 
-```bash
+{% highlight bash %}
 brew update && brew install mycli # macOS
 sudo apt install mycli # Debian, Ubuntu, Mint and derivatives
-```
+{% endhighlight %}
 
 ---
 
 # Usage
 After properly installed, you can now log into your MySQL server, with the following command similar to `mysql`:
-```bash
+{% highlight bash %}
 mycli -u YOUR_USER -p "YOUR_PASSWORD"
-```
+{% endhighlight %}
 
 If you type the SQL commands in uppercase or lowercase it will autocomplete anyway. It also doesn't need a semicolon (`;`) to end commands
 
