@@ -348,7 +348,7 @@ for (std::size_t i {}; i < pipes.size(); ++i) {
 ...
 {% endhighlight %}
 
-5. Chane the `game()`:
+5. Change the `game()`:
 {% highlight cpp %}
 void FlappyBird::game(){
   if(!gameover){
