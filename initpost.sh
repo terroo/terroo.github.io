@@ -44,7 +44,7 @@ _initpost(){
     _URL=$(echo $1 | sed 's/++/pp/g;s/\//-/g' | sed 's/+/-/g' | tr A-Z a-z | tr -d '!@#$%&*()_<>}{~?^/:“”\"' | tr ' ' '-' | sed 's/--//g' |
           sed 'y/áÁàÀãÃâÂéÉêÊíÍóÓõÕôÔúÚüÜçÇ/aAaAaAaAeEeEiIoOoOoOuUuUcC/' | tr -d ',.;:' | sed 's/-$//g')
     #if [[ ! $(ls "_posts/" | egrep "\\${_URL}") ]] ; then # slashs if start with -
-    if [[ ! $(ls "_posts/" | egrep "${_URL}") ]] ; then
+    if [[ ! $(ls "_posts/" | grep -E "${_URL}") ]] ; then
       _skell "$1" > "_posts/$_PADRAO-$_URL.md"    
       echo -e "\e[36;1m➜ File created successfully!\n\e[37;1m_posts/$_PADRAO-$_URL.md\e[m"
     else
