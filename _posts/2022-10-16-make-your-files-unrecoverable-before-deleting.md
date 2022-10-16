@@ -3,7 +3,7 @@ layout: post
 title: "Make your files unrecoverable before deleting"
 date: 2022-10-16 12:17:58
 image: '/assets/img/gnu/gnu-shred.jpg'
-description: 'You don't even have to destroy the HD like Elliot Alderson did 😃 .'
+description: 'You dont even have to destroy the HD like Elliot Alderson did 😃 .'
 tags:
 - gnu
 - commands
