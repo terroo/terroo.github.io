@@ -6,7 +6,7 @@ image: '/assets/img/programming/current-dir.jpg'
 description: 'In: C++, C, Lua, Java, Bash, JavaScript, Python, PHP, Golang and Ruby.'
 tags:
 - cpp
-- linguagemc
+- clanguage
 - lua
 - bash
 - javascript
@@ -24,7 +24,7 @@ Algumas tarefas básicas muitas vezes servem para memorizarmos conceitos fundame
 
 Some basic tasks often serve to memorize fundamental concepts.
 
-So, in this article today we will see how to get the current directory in 10 different programming languages. Among them: [C++](https://terminalroot.com/tags#cpp), [C](https://terminalroot.com/tags#linguagemc), [Lua](https://terminalroot.com/tags#lua), [Java](https://terminalroot.com/tags#java), [Bash](https://terminalroot.com/tags#bash), [JavaScript](https://terminalroot.com/tags#javascript), [Python](https://terminalroot.com/tags#python), [PHP](https://terminalroot.com/tags#php), [Golang](https://terminalroot.com/tags#go) e [Ruby](https://terminalroot.com/tags#ruby).
+So, in this article today we will see how to get the current directory in 10 different programming languages. Among them: [C++](https://terminalroot.com/tags#cpp), [C](https://terminalroot.com/tags#clanguage), [Lua](https://terminalroot.com/tags#lua), [Java](https://terminalroot.com/tags#java), [Bash](https://terminalroot.com/tags#bash), [JavaScript](https://terminalroot.com/tags#javascript), [Python](https://terminalroot.com/tags#python), [PHP](https://terminalroot.com/tags#php), [Golang](https://terminalroot.com/tags#go) e [Ruby](https://terminalroot.com/tags#ruby).
 
 All were used as simply as possible and in a modern way. It will also serve to review how to concatenate and basic syntax.
 
