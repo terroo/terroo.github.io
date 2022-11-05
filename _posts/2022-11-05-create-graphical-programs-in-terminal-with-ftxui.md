@@ -225,3 +225,12 @@ And among several other resources such as: *Button, Input, Checkbox* and among m
 + Documentation: <https://arthursonzogni.github.io/FTXUI/index.html#introduction>
 + Examples: <https://arthursonzogni.github.io/FTXUI/examples_2component_2button_8cpp-example.html>
 
+---
+
+# Watch the video
+The video below is in Portuguese, but you can see how all the concepts mentioned in this article work.
+
+<iframe width="1253" height="705" src="https://www.youtube.com/embed/OWJhDj-qgDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
