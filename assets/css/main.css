@@ -120,7 +120,7 @@ a span.badge:hover { background-color: #bfd0df;}
 }
 
 .article pre {
-  padding: 1rem 1rem 0 1rem;
+  /*padding: 1rem 1rem 0 1rem;*/
 }
 
 .article p {
@@ -131,7 +131,7 @@ a span.badge:hover { background-color: #bfd0df;}
 
 .article .row pre code {
   color: #fff;
-  padding: 0.3rem;
+  /*padding: 0.3rem;*/
   border-radius: 5px;
 }
 
