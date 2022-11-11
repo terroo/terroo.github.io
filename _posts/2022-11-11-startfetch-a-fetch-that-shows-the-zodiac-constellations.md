@@ -53,22 +53,6 @@ To get the *fetch* of a specific zodiac constellation use the `-n` parameter and
 starfetch -n aries
 {% endhighlight %}
 
-Likely output:
-{% highlight txt %}
-┌───── A R I E S  ─────┐
-│                      │
-│                      │      Aries
-│    ✦                 │      
-│                      │      Quadrant: NQ1
-│              ✦       │      Right ascension: 01h 46m 37.3761s to –03h 29m 42.4003s
-│                      │      Declination: +31.2213154° to –10.3632069°
-│                ✦     │      Area: 441 sq.deg. (39th)
-│               ✦      │      Main stars: 4, 9
-│                      │
-│                      │
-└──────────────────────┘
-{% endhighlight %}
-
 For more information use `starfetch --help` and access the [repository](https://github.com/Haruno19/starfetch).
 
 ---
