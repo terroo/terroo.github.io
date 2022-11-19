@@ -12,17 +12,17 @@ tags:
 
 I would like to make a very detailed text, but this tool in [Python](https://terminalroot.com/tags#python) is very simple and straight to the point!
 
-Just install [pip](https://pypi.org/project/pip/) and with `pip` install the `remove` package:
+Just install [pip](https://pypi.org/project/pip/) and with `pip` install the `rembg` package:
 
 {% highlight bash %}
-pip install remove --user
+pip install rembg --user
 {% endhighlight %}
 > The `--user` parameter will make this package/module/library available only to your user: `${HOME}` you must have the directory `~/.local/bin` included in your environment variable `${PATH }`, if not, run the command:
 
 {% highlight bash %}
 echo 'export PATH="${PATH}:${HOME}/.local/bin"' >> ~/.bashrc
 {% endhighlight %}
-> If you want it for all system users, run: `sudo pip install remove`.
+> If you want it for all system users, run: `sudo pip install rembg`.
 
 
 Now just create some basic code, example:
