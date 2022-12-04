@@ -39,7 +39,7 @@ Move the unzipped folder to the `C:\` drive and copy the address of the `bin` su
 # 3. Create Environment Variables
 Search the **Startbar** for the word **Environment Variables** , click on the first option and then on the button: **Environment Variables**, a new window will open:
 
-In the bottom box (System Variables), select **Path** and click on the **Edit** button, in the window that opened click on the **New** button and paste the path address: `C:\mingw64 \bin`:
+In the bottom box (System Variables), select **Path** and click on the **Edit** button, in the window that opened click on the **New** button and paste the path address: `C:\mingw64\bin`:
 ![gcc/g++ MinGW Windows 6](/assets/img/windows/mingw/6.png)
 
 # 4. Testing in [PowerShell](https://terminalroot.com/how-to-install-powershell-on-ubuntu-and-getting-started/) and `cmd`
