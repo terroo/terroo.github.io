@@ -3,7 +3,7 @@ layout: post
 title: "How to Embed C/C++ Functions in Lua"
 date: 2022-12-06 17:30:16
 image: '/assets/img/cpp/cpp-bind-lua.jpg'
-description: 'We'll see how easy it is to implement the Lua API for C and create our functions in C and C++ to use in the Lua programming language.'
+description: "We'll see how easy it is to implement the Lua API for C and create our functions in C and C++ to use in the Lua programming language."
 tags:
 - cpp
 - lua
