@@ -45,6 +45,17 @@ codon --version
 
 # Usage
 Suppose you have this code [Python](https://terminalroot.com/tags#python) which is a *Fibonacci* function, you can interpret the code with Codon itself:
+{% highlight python %}
+def fib(n):
+    a, b = 0, 1
+    while a < n:
+        print(a, end=' ')
+        a, b = b, a+b
+    print()
+fib(1000)
+{% endhighlight %}
+
+To run without compiling:
 {% highlight bash %}
 codon run fib.py
 {% endhighlight %}
