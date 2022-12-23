@@ -3,7 +3,7 @@ layout: post
 title: "3 Ways to Create Your Christmas Tree with C++ 🎄🎁🎅"
 date: 2022-12-23 16:18:06
 image: '/assets/img/pixelart/christmas-tree-cpp.png'
-description: 'Including shapes in the terminal and also with SFML and OpenGL.'
+description: 'Including ways in the terminal and also with SFML and OpenGL.'
 tags:
 - cpp
 - pixelart
