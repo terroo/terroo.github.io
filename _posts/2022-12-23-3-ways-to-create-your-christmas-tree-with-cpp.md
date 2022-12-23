@@ -106,7 +106,7 @@ Now it's cool! We can still customize the size via `argc` and `argv`, but that's
 
 ---
 
-# 2nd Shape - A more stylish and animated Christmas Tree!
+# 2nd Way - A more stylish and animated Christmas Tree!
 In this other form, we're going to increment a few more **ASCII** characters to make it cooler, we're also going to use the [unistd.h](https://en.wikipedia.org/wiki/Unistd.h) library to get a *lag*(`sleep`) of 1 second when changing the animation .
 
 In addition to adding COLORS! For this we will use a *library* that we created right here on the blog, for more details see the article: [Create your own color library for C++](https://terminalroot.com/2021/05/crie-sua -own-color-library-for-cpp.html) . The cool thing about this library is that it is simple and works well in LSP, see the gif below it informing each `string`, note that it informs: **underscore**, **italics**, **normal**, * *background** and among others:
