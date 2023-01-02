@@ -130,7 +130,7 @@ It's an app that you click on the `+` button and it adds/adds to the count:
 ![Flutter App Count Hello World](/assets/img/dart/fluuter-app.png)
 
 
-The file to edit is: `./my_app/vim lib/main.dart`
+The file to edit is: `vim ./my_app/lib/main.dart`
 
 If you choose option 1 (you need to have `clang` and `gtk` installed), it will open in a new window, as in the example below:
 
