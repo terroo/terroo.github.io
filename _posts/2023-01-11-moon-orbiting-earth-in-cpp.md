@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Moon Orbiting Earth in C++"
+title: "Moon Orbiting Earth in C++ 🌘 🌎 🎶"
 date: 2023-01-11 19:48:44
 image: '/assets/img/sfml/moon-orbiting-earth-cpp.jpg'
 description: '🔊 We made an animation of the Moon orbiting the Earth with C++ and SFML, we also made a "merge" in the particle system.'
