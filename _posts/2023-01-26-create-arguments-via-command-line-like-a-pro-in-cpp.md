@@ -146,6 +146,7 @@ g++ mycat.cpp -o mycat
 Before running let's use this file as an example
 
 > `file.txt`
+
 ```txt
 Of course life is good
 And joy, the only unspeakable emotion
@@ -158,6 +159,7 @@ But I happen to be sad...
 ```
 
 If we just run the program/command without informing any files, it already shows the type of error in the first line and then the help already with the customized data for our command:
+
 ```bash
 $ ./mycat
 
@@ -293,8 +295,8 @@ app.add_argument("files")
 
 And use:
 ```bash
-/mycat file1.txt file2.txt file3.txt
-/mycat -n file1.txt file2.txt file3.txt
+/.mycat file1.txt file2.txt file3.txt
+/.mycat -n file1.txt file2.txt file3.txt
 ```
 
 And among several possibilities that can be found in the documentation.
