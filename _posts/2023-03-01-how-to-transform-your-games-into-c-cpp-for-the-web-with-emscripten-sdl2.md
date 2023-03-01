@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Transform Your Games into C/C++ for the Web with EmScripten (SDL2)"
+title: "How to Transform Your Games C/C++ for the Web with EmScripten (SDL2)"
 date: 2023-03-01 19:56:11
 image: '/assets/img/gamedev/emscripten.jpg'
 description: 'This article shows how to install EmScripten and how to transform it into JavaScript and WebAssembly, we will transform an SDL2 example with C++.'
