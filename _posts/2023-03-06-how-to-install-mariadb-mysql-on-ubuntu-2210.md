@@ -2,7 +2,7 @@
 layout: post
 title: "How to Install MariaDB/MySQL on Ubuntu 22.10"
 date: 2023-03-06 10:39:01
-image: /assets/img/mariadb/mariadb-mysql.jpg'
+image: '/assets/img/mariadb/mariadb-mysql.jpg'
 description: 'Several software constantly update their ways of configuring due to security reasons and among others.'
 tags:
 - mariadb
