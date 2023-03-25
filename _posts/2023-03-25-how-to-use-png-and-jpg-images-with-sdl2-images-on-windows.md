@@ -81,7 +81,7 @@ int main(int argc, char** argv) {
   SDL_Init(SDL_INIT_EVERYTHING);
 
   SDL_Window* window = SDL_CreateWindow(
-      "SDL2 Image no Windows",
+      "SDL2 Image on Windows",
       50, 30,
       1280, 720,
       SDL_WINDOW_SHOWN
