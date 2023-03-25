@@ -175,7 +175,7 @@ After saving, still inside your project folder, such as [PowerShell](https://ter
 > Also remember to have previously renamed the `mingw32-make` file to just `make` in the path: `C:\mingw64\bin\`
 
 {% highlight bash %}
-make up
+make
 {% endhighlight %}
 
 ---
@@ -195,7 +195,7 @@ function file_exists(name)
 end
 
 if(file_exists("SDL2.dll")) then
-  print("Compilando..")
+  print("Compiling..")
   os.execute("g++ main.cpp -I SDL2\\x86_64-w64-mingw32\\include -L SDL2\\x86_64-w64-mingw32\\lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_image")
 else
   print("It needs the SDL2.dll file to compile.")
