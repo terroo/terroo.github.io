@@ -63,7 +63,7 @@ Or you can also install directly from the source code available on [GitHub](http
 {% highlight bash %}
 git clone git://github.com/danmar/cppcheck
 cd cppcheck
-make up
+make
 sudo make install
 {% endhighlight %}
 
