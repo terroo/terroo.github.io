@@ -28,6 +28,9 @@ data-ad-slot="5351066970"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
+> See too:
+### [Meet 15 alternatives to create Graphical Interfaces with C++](https://terminalroot.com/meet-15-alternatives-to-create-graphical-interfaces-with-cpp/)
+
 ---
 
 # 01. [Gtkmm](https://cutt.ly/gtkmm)
@@ -104,7 +107,10 @@ data-ad-slot="8549252987"></ins>
 + projects for additional language bindings ( C#/.NET, D, Go, Haskell, Java , ...)
 + ports to other languages (like Java, for example)
 
-In the future we will have content about **Dear ImGUI** .
+See a video below about Dear ImGUI and [SFML](https://terminalroot.com/tags#sfml)
+
+<iframe width="1253" height="705" src="https://www.youtube.com/embed/XmiEkoqodcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ---
 
@@ -149,5 +155,8 @@ Using its own widget, drawing systems and events abstracted from the underlying 
 [FLTK](https://www.fltk.org/) is free and open source software, licensed under the GNU Lesser General Public License (LGPL) with an additional clause that allows static links from applications with incompatible licenses.
 
 ---
+
+# See too:
+## [Meet 15 alternatives to create Graphical Interfaces with C++](https://terminalroot.com/meet-15-alternatives-to-create-graphical-interfaces-with-cpp/)
 
 
