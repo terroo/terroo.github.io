@@ -3,7 +3,7 @@ layout: post
 title: "How to Easily Create Tokens with C++ and C"
 date: 2023-06-13 11:22:37
 image: '/assets/img/cpp/strtok.jpg'
-description: 'Using strok, strok_r and strsep.'
+description: 'Using strtok, strtok_r and strsep.'
 tags:
 - cpp
 - clanguage
