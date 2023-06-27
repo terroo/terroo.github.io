@@ -140,7 +140,7 @@ You can also create abbreviations, for example create a `code` for MarkDown
      "vim.insertModeKeyBindings": [
          {
              "before": ["c", "o", "d", "e"],
-             "after": ["`", "`", "`", "\n", "`", "`"]
+             "after": ["`", "`", "`", "\n", "`", "`", "`"]
          }
      ],
 
