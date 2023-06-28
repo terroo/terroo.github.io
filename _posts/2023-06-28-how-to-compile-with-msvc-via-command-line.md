@@ -28,7 +28,7 @@ First of all make sure you have [Visual Studio](https://visualstudio.microsoft.c
 
 After creating your project, which does not necessarily need to have been created in Visual Studio, it can be in [VS Code](https://terminalroot.com/tags#vscode), [Vim](https://terminalroot.com/tags #vim), Code::Blocks and others.
 
-To compile, just search for the word *Developer PowerShell* in the [Windows] Start Bar(https://terminalroot.com/tags#windows) and choose the option: **Developer PowerShell for VS 2019**, remembering that in this case refers to the 2019 version of Visual Studio, but if you have the other version, the year/version number will appear. And click *Open*.
+To compile, just search for the word *Developer PowerShell* in the [Windows](https://terminalroot.com/tags#windows) Start Bar and choose the option: **Developer PowerShell for VS 2019**, remembering that in this case refers to the 2019 version of Visual Studio, but if you have the other version, the year/version number will appear. And click **Open**.
 
 ![MSVC](/assets/img/windows/msvc/MSVC-01-01.jpg)
 
