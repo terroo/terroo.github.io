@@ -77,4 +77,4 @@ function toggleTheme(){
   }
 }
 
-
+set_dark_theme();
