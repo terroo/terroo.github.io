@@ -256,7 +256,20 @@ In addition to a compiler and optimizer, C++ Builder is also a rapid application
 Originally developed by Borland, as of 2009 it is owned by Embarcadero Technologies, a subsidiary of Idera. C++ Builder can build apps for Windows (both IA-32 and x64 ), iOS, macOS and Android (32-bit only).
 
 Its internet address and how to install: <https://www.embarcadero.com/products/cbuilder>
-> C++ Builder does not have tools via command line to use directly in [Terminal](https://terminalroot.com/tags#terminal).
+
+To use C++ Builder through CMD/PowerShell/Windows Terminal you can add the address: `C:\Program Files(x86)\Embarcadero\Studio\[VERSION]\bin` to the **Windows Environment Variable**(`PATH`).
+
+And run via command line according to [this article](https://learncplusplus.org/how-to-start-a-c-program/).
+
+Example:
+```bash
+bcc32 main.cpp
+main.exe
+```
+
+As the image below:
+![PATH to C++ Builder](/assets/img/cpp/compilers/path-cpp-builder.jpg) 
+> Credits by [Yılmaz Yörü](https://www.facebook.com/groups/cppdev/posts/1494419177964674?comment_id=1494555401284385).
 
 ---
 
