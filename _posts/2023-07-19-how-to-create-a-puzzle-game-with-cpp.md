@@ -43,7 +43,6 @@ File: `puzzle.hpp`
 #include <SFML/Graphics.hpp>
 #include <memory>
 #include <array>
-#include <iostream>
 
 class Puzzle {
   std::shared_ptr<sf::RenderWindow> window;
@@ -53,7 +52,6 @@ class Puzzle {
   int w, n,x, y, dx, dy;
   std::array<std::array<int, 6>, 6> grid;
   sf::Sprite sprite;
-  //std::array<sf::Sprite, 17> sprite;
 
   protected:
    void events();
