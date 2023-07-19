@@ -23,12 +23,12 @@ We are going to use [SFML](https://terminalroot.com/tags#sfml) to create this ga
 # 01. START THE PROJECT
 For this game we will use [this image](/assets/img/gamedev/puzzle.png) and also a **Makefile** to compile our project.
 
-```bash
+{% highlight bash %}
 mkdir -p puzzle/assets
 cd puzzle
 mv ../puzzle.png ../Makefile . # Example
 vim puzzle.{hpp,cpp} main.cpp Makefile
-```
+{% endhighlight %}
 
 ![Puzzle Numbers](/assets/img/gamedev/puzzle.png) 
 
@@ -38,7 +38,7 @@ vim puzzle.{hpp,cpp} main.cpp Makefile
 Rendering the image as a single sprite just to start the project.
 
 File: `puzzle.hpp`
-```cpp
+{% highlight cpp %}
 #pragma once
 #include <SFML/Graphics.hpp>
 #include <memory>
@@ -61,10 +61,10 @@ class Puzzle {
    Puzzle();
    void run();
 };
-```
+{% endhighlight %}
 
 File: `puzzle.cpp`
-```cpp
+{% highlight cpp %}
 #include "puzzle.hpp"
 
 Puzzle::Puzzle(){
@@ -105,11 +105,11 @@ void Puzzle::run(){
     draw();
   }
 }
-```
+{% endhighlight %}
 
 
 File: `main.cpp`
-```cpp
+{% highlight cpp %}
 #include "puzzle.hpp"
 
 int main(){
@@ -117,10 +117,10 @@ int main(){
   p->run();
   return 0;
 }
-```
+{% endhighlight %}
 
 File: `Makefile`
-```makefile
+{% highlight makefile %}
 TARGET=a.out
 CXX=g++
 DEBUG=-g
@@ -140,24 +140,24 @@ main.o: main.cpp
 
 puzzle.o: puzzle.cpp
 	$(CXX) -c $(CXXFLAGS) puzzle.cpp -o puzzle.o
-```
+{% endhighlight %}
 
 Building and run for first test:
-```bash
+{% highlight bash %}
 make
-```
+{% endhighlight %}
 
 ---
 
 # 03. SPLIT THE IMAGE INTO 16 SPRITES
 Replace the `sf::Sprite` member in the Puzzle class with the `array` of sprites in `puzzle.hpp`:
-```cpp
+{% highlight cpp %}
 //sf::Sprite sprite;
 std::array<sf::Sprite, 17> sprite;
-```
+{% endhighlight %}
 
 And now in the `puzzle.cpp` file instead of just defining the texture we will create multiple sprites according to the region:
-```cpp
+{% highlight cpp %}
 // CONSTRUCTOR: Puzzle::Puzzle
 // sprite.setTexture(texture); // Replace
 for (size_t i {}; i < 4; ++i){
@@ -168,10 +168,10 @@ for (size_t i {}; i < 4; ++i){
     grid[i + 1][j + 1] = n;
   }
 }
-```
+{% endhighlight %}
 
 And in the member function `void Puzzle::draw()` let's also replace the line that draws the sprite with the corresponding **nested loop** below:
-```cpp
+{% highlight cpp %}
 // DRAW
 // window->draw(sprite);
 for (size_t i {}; i < 4; ++i) {
@@ -181,12 +181,12 @@ for (size_t i {}; i < 4; ++i) {
     window->draw(sprite[n]);
   } 
 }
-```
+{% endhighlight %}
 
 Build and run a **second time** to see if everything is ok:
-```bash
+{% highlight bash %}
 make
-```
+{% endhighlight %}
 
 ---
 
@@ -195,12 +195,12 @@ make
 
 
 In `puzzle.hpp` add this member function as protected
-```cpp
+{% highlight cpp %}
 void logic();
-```
+{% endhighlight %}
 
 And in `puzzle.cpp` add the execution, 
-```cpp
+{% highlight cpp %}
 void Puzzle::logic(){
   // Map mouse click position
   sf::Vector2i pos = sf::Mouse::getPosition(*window);
@@ -227,20 +227,20 @@ void Puzzle::logic(){
   grid[x + dx][y + dy] = n;
   dx = 0; dy = 0;
 }
-```
+{% endhighlight %}
 
 Call `this->logic();` in `events()`
-```cpp
+{% highlight cpp %}
 // void Puzzle::events()
 if(sf::Mouse::isButtonPressed(sf::Mouse::Left)){
   this->logic();
 }
-```
+{% endhighlight %}
 
 Build and run a **third time** to see if everything is ok:
-```bash
+{% highlight bash %}
 make
-```
+{% endhighlight %}
 
 ---
 
@@ -248,25 +248,25 @@ make
 For this we will use [std::experimental::randint](https://en.cppreference.com/w/cpp/experimental/randint), if on Windows use `<random>` or any other corresponding.
 
 Change the constructor signature in `puzzle.hpp`:
-```cpp
+{% highlight cpp %}
 // Puzzle();
 Puzzle(const std::vector<int>&);
-```
+{% endhighlight %}
 
 Add argument to constructor execution in `puzzle.cpp`:
-```cpp
+{% highlight cpp %}
 Puzzle(const std::vector<int>& nums);
-```
+{% endhighlight %}
 
 Still in the constructor, change the `grid` line to the content below:
-```cpp
+{% highlight cpp %}
 //grid[i + 1][j + 1] = n;
 grid[i + 1][j + 1] = nums[n - 1];
-```
+{% endhighlight %}
 
 In the `main.cpp` file, add the header for the randint and add the code below to generate 16 non-repeating random numbers and pass the parameter to the object class:
 
-```cpp
+{% highlight cpp %}
 #include "puzzle.hpp"
 #include <experimental/random>
 
@@ -289,12 +289,12 @@ int main(int argc, char **argv){
   p->run();
   return 0;
 }
-```
+{% endhighlight %}
 
 Compile, run and enjoy!
-```bash
+{% highlight bash %}
 make
-```
+{% endhighlight %}
 
 ---
 
