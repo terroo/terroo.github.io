@@ -134,6 +134,7 @@ a span.badge:hover { background-color: #bfd0df;}
   color: #fff;
   /*padding: 0.3rem;*/
   border-radius: 5px;
+  font-size: 1.5rem;
 }
 
 .article blockquote {
