@@ -2,7 +2,7 @@
 layout: post
 title: "Use MS Paint directly in Terminal"
 date: 2023-08-25 19:18:51
-image: '/assets/img/textual-paint.jpg'
+image: '/assets/img/python/textual-paint.jpg'
 description: 'The famous TUI-shaped image editor!'
 tags:
 - python
