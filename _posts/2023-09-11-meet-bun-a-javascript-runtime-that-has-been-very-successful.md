@@ -13,20 +13,6 @@ tags:
 ![{{ page.title }}]({{ page.image }} '{{ page.description }}')
 
 ---
-layout: post
-title: "Meet Bun, a JavaScript runtime that has been very successful!"
-date: 2023-08-31 20:37:36
-image: '/assets/img/'
-description: ''
-icon: 'ion:terminal-sharp'
-iconname: 'JavaScript'
-tags:
-
----
-
-![{{ page.title }}]({{ page.image }} '{{ page.description }}')
-
----
 
 **Bun** is a [JavaScript](https://terminalroot.com/tags#javascript) runtime, another alternative between: [Nodejs](https://terminalroot.com/tags#nodejs), QuickJS, Deno and among others.
 
