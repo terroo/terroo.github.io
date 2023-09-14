@@ -136,8 +136,6 @@ g++ main.cpp -o index.html
 
 Now just access the understanding: <http://localhost/cgi-bin/> or <http://localhost/cgi-bin/index.cpp> (if you enabled it and saved it as `index.cpp`)
 
-![C++ running on Apache Web Server](/assets/img/web/cpp-apache-web.png)
-
 If you want Apache to interpret `index.cpp` without having to indicate the file in the URL, edit the file: `/etc/apache2/modules.d/00_default_settings.conf`:
 {% highlight bash %}
 sudo vim /etc/apache2/modules.d/00_default_settings.conf
