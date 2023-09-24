@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Play MP3 with C++"
+title: "🎼 How to Play MP3 with C++ 🎻"
 date: 2023-09-24 11:07:04
 image: '/assets/img/cpp/playmp3.jpg'
 description: 'Using libmpg123 and libao!'
