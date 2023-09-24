@@ -151,19 +151,6 @@ int main(int argc, char **argv){
 {% endhighlight %}
 
 
-### Compilando e tocando um MP3
-> Use a música que quiser como exemplo, faça o download da música.
-
-<a class="btn btn-lg btn-danger" href="/downs/music.mp3" download>music.mp3</a>
-> Música: **SAINt JHN - "Trap" ft. Lil Baby** (*Música disponível em <https://en.mygomp3.com/>*): 
-> 
-> `wget -q https://cutt.ly/musicmp3 -O music.mp3`.
-
-{% highlight bash %}
-g++ main.cpp playmp3.cpp -o playmp3 -lmpg123 -lao
-./playmp3 music.mp3
-{% endhighlight %}
-
 ### Compiling and playing an MP3
 > Use the song you want as an example, download the song.
 
