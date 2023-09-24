@@ -166,7 +166,7 @@ g++ main.cpp playmp3.cpp -o playmp3 -lmpg123 -lao
 
 ---
 
-# Links úteis
+# Useful links
 + <https://en.wikipedia.org/wiki/Audio_codec>
 + <https://xiph.org/ao/>
 + <https://en.wikipedia.org/wiki/Mpg123>
