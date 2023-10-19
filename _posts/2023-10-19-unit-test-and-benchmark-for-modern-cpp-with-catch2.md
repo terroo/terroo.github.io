@@ -25,20 +25,20 @@ It's [another option to](https://github.com/catchorg/Catch2/blob/devel/docs/why-
 
 # Installation
 To compile and install it on your system, run the commands below:
-```bash
+{% highlight bash %}
 git clone https://github.com/catchorg/Catch2
 cd Catch2
 cmake -B build .
 cd build
 make
-```
+{% endhighlight %}
 
 ---
 
 # Example of use
 Create an example file: vim example.cpp:
 
-```cpp
+{% highlight cpp %}
 #include <catch2/catch_test_macros.hpp>
 
 int example(const int& z){
@@ -51,17 +51,17 @@ TEST_CASE( "Division by: 1, 2, ZERO and 10", "[example]" ) {
      REQUIRE(example(0));
      REQUIRE(example(10));
 }
-```
+{% endhighlight %}
 
 To compile via command line:
-```bash
+{% highlight bash %}
 
 g++ example.cpp -lCatch2Main -lCatch2
-```
+{% endhighlight %}
 
 
 Possible output after running the binary:
-```txt
+{% highlight txt %}
 $./a.out
 Randomness seeded to: 2691063100
 
@@ -85,7 +85,7 @@ test cases: 1 | 1 failed
 assertions: 3 | 2 passed | 1 failed
 
 Floating point exception
-```
+{% endhighlight %}
 
 ---
 
@@ -93,12 +93,12 @@ Floating point exception
 In the binary you included the test, you can use a list of parameters.
 
 Run:
-```bash
+{% highlight bash %}
 ./a.out -?
-```
+{% endhighlight %}
 
 A summary output of the parameters:
-```txt
+{% highlight txt %}
 Catch2 v3.4.0
 usage:
   a.out [<test name|pattern|tags> ... ] options
@@ -125,7 +125,7 @@ where options are:
                                             file
 
 ...
-```
+{% endhighlight %}
 
 ---
 
