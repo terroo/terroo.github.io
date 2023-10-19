@@ -2,7 +2,7 @@
 layout: post
 title: "Unit Test and Benchmark for Modern C++ with Catch2"
 date: 2023-10-19 14:45:40
-image: '/assets/img/assets/cpp/catch2.jpg'
+image: '/assets/img/cpp/catch2.jpg'
 description: "The ease of use and the fact that it doesn't need external dependencies sets it apart from the rest!"
 tags:
 - cpp
