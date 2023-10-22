@@ -5,6 +5,8 @@ date: 2023-10-22 13:02:38
 image: '/assets/img/lua/lua-cpp.png'
 description: 'This concept is widely used in Game Development.'
 tags:
+- lua
+- cpp
 ---
 
 ![{{ page.title }}]({{ page.image }} '{{ page.description }}')
