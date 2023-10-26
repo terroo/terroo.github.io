@@ -43,7 +43,7 @@ git clone https://github.com/raysan5/raylib
 cd raylib
 cmake -DBUILD_SHARED_LIBS=ON . -B build
 cd build
-makeup
+make
 sudo make install
 {% endhighlight %}
 
@@ -111,7 +111,7 @@ git checkout 2968648
 {% endhighlight %}
 > This *commit* refers to the line: `Initial Support for RayLib 4.0 Fonts need testing`, if you want to see it run: `git log --oneline`.
 
-Prepare the extension, run [CMake](https://terminalroot.com/tags#cmake), enter `build`, build and install:
+Prepare the extension, run [Make](https://terminalroot.com/tags#make), enter `build`, build and install:
 {% highlight bash %}
 phpize # Prepare the extension
 ./configure
