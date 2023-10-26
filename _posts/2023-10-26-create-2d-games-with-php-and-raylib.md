@@ -14,9 +14,9 @@ tags:
 
 ---
 
-For those who enjoy [Game Development](https://terminalroot.com/tags#gamedev) and already know [PHP](https://terminalroot.com/php) and also want to combine these two passions in one.
+For those who enjoy [Game Development](https://terminalroot.com/tags#gamedev) and already know [PHP](https://terminalroot.com/tags#php) and also want to combine these two passions in one.
 
-[RayLib](https://terminalroot.com/2022/11/crie-jogos-para-windows-linux-e-web-com-raylib-c-cpp.html) is very useful to guarantee your *employment *.
+[RayLib](https://terminalroot.com/create-games-for-windows-linux-and-web-with-raylib-c-cpp) is very useful to guarantee your *employment*.
 
 Let's see the step by step process to achieve this goal!
 
@@ -31,7 +31,7 @@ sudo apt install libasound2-dev mesa-common-dev libx11-dev build-essential \
                   libxrandr-dev libxi-dev xorg-dev libgl1-mesa-dev pkg-config \
                   libglu1-mesa-dev php-cli php-dev git make gcc g++ cmake
 {% endhighlight %}
-> For other systems: [Windows](https://terminalroot.com/tags#windows), [macOS](https://terminalroot.com/tags#macos) and other [distros](https: //terminalroot.com/tags#distros) see [this link](https://github.com/raysan5/raylib#build-and-installation) the procedure.
+> For other systems: [Windows](https://terminalroot.com/tags#windows), [macOS](https://terminalroot.com/tags#macos) and other [distros](https://terminalroot.com/tags#distros) see [this link](https://github.com/raysan5/raylib#build-and-installation) the procedure.
 
 ---
 
@@ -68,7 +68,7 @@ Install the project...
 
 Clean the files:
 {% highlight bash %}
-CD ../..
+cd ../..
 rm -rf raylib
 {% endhighlight %}
 
@@ -96,7 +96,7 @@ Cflags: -I"${includedir}" -I/usr/local/include
 
 ---
 
-#03. Install Raylib-PHP
+# 03. Install Raylib-PHP
 
 {% highlight bash %}
 git clone https://github.com/joseph-montanez/raylib-php
@@ -121,13 +121,13 @@ sudo make install
 
 Clean up used files:
 {% highlight bash %}
-CD ..
+cd ..
 rm -rf raylib-php
 {% endhighlight %}
 
 ---
 
-#04. Testing RayLib with PHP
+# 04. Testing RayLib with PHP
 Create a test file, example: `vim main.php`.
 
 Add the code below that only prints a sentence in the window that will open:
@@ -161,8 +161,12 @@ Window::close();
 
 To run use the command:
 {% highlight bash %}
-php -dextension=raylib.so main.php
+php -dextension=raylib main.php
 {% endhighlight %}
+
+![Running PHP and Raylib](/assets/img/php/run-raylib-php.png) 
+
+---
 
 To learn **Raylib** and **PHP** see the links:
 + <https://www.raylib.com/>
