@@ -63,7 +63,7 @@ zend_module_entry terminalroot_php_module_entry = {
 
 ZEND_GET_MODULE(terminalroot)
 
-PHP_FUNCTION(terminalroot_php){
+PHP_FUNCTION(terminalroot){
      printf("My First PHP Extension with C++\n");
 }
 {% endhighlight %}
