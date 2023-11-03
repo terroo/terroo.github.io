@@ -61,7 +61,7 @@ zend_module_entry terminalroot_php_module_entry = {
      STANDARD_MODULE_PROPERTIES
 };
 
-ZEND_GET_MODULE(terminalroot_php)
+ZEND_GET_MODULE(terminalroot)
 
 PHP_FUNCTION(terminalroot_php){
      printf("My First PHP Extension with C++\n");
