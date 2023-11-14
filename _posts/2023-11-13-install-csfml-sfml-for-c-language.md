@@ -97,7 +97,7 @@ To compile:
 gcc main.c -lcsfml-window -lcsfml-system -lcsfml-graphics
 {% endhighlight %}
 
-**NOTE**: If you compiled from scratch and encountered an error when running the binary that is looking for the static library `.so`, then you will need to add the path that was installed to your `$LD_LIBRARY_PATH` variable:
+**NOTE**: If you compiled from scratch and encountered an error when running the binary that is looking for file: `.so`, then you will need to add the path that was installed to your `$LD_LIBRARY_PATH` variable:
 
 {% highlight bash %}
 export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/usr/local/lib"
