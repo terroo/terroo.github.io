@@ -42,7 +42,7 @@ git submodule add https://github.com/cieslarmichal/faker-cxx.git
 
 ### 03. Now create a `CMakeLists.txt`
 And add the content below:
-{% highlight cmake %}
+{% highlight make %}
 cmake_minimum_required(VERSION 3.10)
 
 project(TestFaker
