@@ -3,7 +3,7 @@ layout: post
 title: "Generate Fake Data easily for C++ with faker-cxx"
 date: 2023-11-18 20:45:03
 image: '/assets/img/cpp/faker-cxx.jpg'
-description: 'Similar to Laravel's Factory and Faker.js, useful for development environments.'
+description: "Similar to Laravel's Factory and Faker.js, useful for development environments."
 tags:
 - cpp
 - cppdaily
@@ -42,7 +42,7 @@ git submodule add https://github.com/cieslarmichal/faker-cxx.git
 
 ### 03. Now create a `CMakeLists.txt`
 And add the content below:
-{% highlight make %}
+{% highlight cmake %}
 cmake_minimum_required(VERSION 3.10)
 
 project(TestFaker
