@@ -96,7 +96,7 @@ sudo make install
 
 After installation, you can now remove the cloned repository:
 {% highlight bash %}
-CD ../..
+cd ../..
 rm -rf ImHex/
 {% endhighlight %}
 
