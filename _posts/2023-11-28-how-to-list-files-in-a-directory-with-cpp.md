@@ -80,6 +80,97 @@ int main(){
 {% endhighlight %}
 > The *pause* is commented!
 
+---
+
+# Displaying in order
+Suppose you have several files like this: `file1.jpg, file2.jpg,...file.10.jpg, ... file31.jpg`, when you list them they will not appear in alphabetical order.
+
+To resolve this, in addition to respecting the order of tens, add the headers:
+{% highlight cpp %}
+#include <vector>
+#include <algorithm>
+#include <cctype> // isdigit
+#include <sstream> // std::stringstream
+{% endhighlight %}
+
+Create a function with an inner [lambda](https://terminalroot.com/10-examples-of-using-lambda-functions-in-cpp/):
+{% highlight cpp %}
+bool num_str_cmp(const fs::path& x, const fs::path& y) {
+   auto get_number = [](const fs::path& path) {
+     auto str_num = path.stem().string();
+
+     std::string num_part {};
+     for (char c : str_num) {
+       if (std::isdigit(c)) {
+         num_part += c;
+       }
+     }
+
+     return !num_part.empty() ? std::stoi(num_part) : 0;
+   };
+
+   return get_number(x) < get_number(y);
+}
+{% endhighlight %}
+
+And now sort the [vector](https://terminalroot.com/two-dimensional-vectors-in-cpp/) with [sort](https://terminalroot.com/swapping-values-and-sorting-array-values/):
+{% highlight cpp %}
+std::vector<fs::path> files_in_dir;
+std::copy(fs::directory_iterator(path), fs::directory_iterator(), std::back_inserter(files_in_dir));
+
+std::sort(files_in_dir.begin(), files_in_dir.end(), num_str_cmp);
+
+for (const auto &entry : files_in_dir){
+   std::cout << entry << '\n';
+}
+{% endhighlight %}
+
+This way we will solve both problems: alphabetical order and respect for tens!
+
+Full code:
+{% highlight cpp %}
+#include <iostream>
+#include <filesystem>
+#include <vector>
+#include <algorithm>
+#include <cctype> // isdigit
+#include <sstream> // std::stringstream
+
+namespace fs = std::filesystem;
+
+bool num_str_cmp(const fs::path& x, const fs::path& y) {
+   auto get_number = [](const fs::path& path) {
+     auto str_num = path.stem().string();
+
+     std::string num_part {};
+     for (char c : str_num) {
+       if (std::isdigit(c)) {
+         num_part += c;
+       }
+     }
+
+     return !num_part.empty() ? std::stoi(num_part) : 0;
+   };
+
+   return get_number(x) < get_number(y);
+}
+
+int main(){
+   std::string path = "./imgs";
+
+   std::vector<fs::path> files_in_dir;
+   std::copy(fs::directory_iterator(path), fs::directory_iterator(), std::back_inserter(files_in_dir));
+
+   std::sort(files_in_dir.begin(), files_in_dir.end(), num_str_cmp);
+
+   for (const auto &entry : files_in_dir){
+     std::cout << entry << '\n';
+   }
+
+   return 0;
+}
+{% endhighlight %}
+
 For more information visit: <https://en.cppreference.com/w/cpp/filesystem>.
 <!-- https://stackoverflow.com/questions/612097/how-can-i-get-the-list-of-files-in-a-directory-using-c-or-c -->
 
