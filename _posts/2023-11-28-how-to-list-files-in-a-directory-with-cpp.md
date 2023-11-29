@@ -23,7 +23,7 @@ In this quick tip we will see how to do this in a modern way with [C++](https://
 # Using `filesystem`
 The `filesystem` library provides facilities for performing operations on file systems and their components, such as paths, regular files, and directories.
 
-It was originally developed by [Boost](https://www.boost.org/) and in the `C++` version it was finally adopted by the committee to be part of the standard library (STL).
+It was originally developed by [Boost](https://www.boost.org/) and in the `C++ 17` version it was finally adopted by the committee to be part of the standard library (STL).
 
 To use it we will include:
 {% highlight cpp %}
