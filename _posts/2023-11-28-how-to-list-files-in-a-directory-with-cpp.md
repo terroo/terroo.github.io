@@ -3,7 +3,7 @@ layout: post
 title: "How to list files in a directory with C++"
 date: 2023-11-28 22:30:42
 image: '/assets/img/cpp/en-list-dir-cpp.jpg'
-description:
+description: 'When we are developing our applications, we often need common tasks to achieve the final objective of our project.'
 tags:
 - cpp
 ---
