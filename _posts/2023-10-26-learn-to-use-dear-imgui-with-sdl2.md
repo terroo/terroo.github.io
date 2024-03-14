@@ -6,7 +6,7 @@ image: '/assets/img/sdl2/sdlimgui.png'
 description: 'Simple and fast!'
 tags:
 - sdl2
-- dearimgui
+- imgui
 - cpp
 ---
 

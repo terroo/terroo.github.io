@@ -9,7 +9,7 @@ tags:
 - cppdaily
 - gamedev
 - sfml
-- dearimgui
+- imgui
 ---
 
 ![{{ page.title }}]({{ page.image }} '{{ page.description }}')
