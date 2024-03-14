@@ -2,7 +2,7 @@
 layout: post
 title: "The Best Game Libraries and Engines for Java"
 date: 2024-03-14 14:38:37
-image: '/assets/img/java/java/java-gamedev.jpg'
+image: '/assets/img/java/java-gamedev.jpg'
 description: 'Developing games in Java is a good way for you to port your games to different operating systems.'
 tags:
 - java
