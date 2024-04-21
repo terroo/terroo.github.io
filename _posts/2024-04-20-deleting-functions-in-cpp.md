@@ -2,17 +2,13 @@
 layout: post
 title: "Deleting functions in C++"
 date: 2024-04-20 21:15:32
-image: '/assets/img/'
-description:
+image: '/assets/img/cpp/delete-cpp.jpg'
+description: 'Avoiding unnecessary overloads'
 tags:
+- cpp
 ---
 
 ![{{ page.title }}]({{ page.image }} '{{ page.description }}')
-
-# How to 'delete' functions in C++
-> Avoiding unnecessary overloads
-
-![](./delete-cpp.jpg)
 
 ---
 
