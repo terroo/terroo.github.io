@@ -79,7 +79,7 @@ This works for me, as this `x35` is precisely to return to my cursor *blinking v
 Once this is done, just recompile:
 > Remembering that recompilation takes much less time, as we only modify one file!
 {% highlight bash %}
-makeup
+make
 {% endhighlight %}
 
 And to install, for example, in: `/usr/local/bin`, more recommended, I also suggest installing with a more **Unix style** name (only with lowercase letters and separated by dashes instead of capitalizations), example: `ftx-file-reader`:
