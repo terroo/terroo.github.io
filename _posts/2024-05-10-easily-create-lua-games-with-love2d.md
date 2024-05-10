@@ -2,7 +2,7 @@
 layout: post
 title: "Easily create Lua Games with LÖVE"
 date: 2024-05-10 11:56:56
-image: '/assets/img/lua/love.jpg'
+image: '/assets/img/lua/love.png'
 description: "❤️  Written in C++ and uses Lua as a scripting language. It is available for Windows, macOS, Android, GNU+Linux and iOS."
 tags:
 - gamedev
