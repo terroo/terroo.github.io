@@ -31,14 +31,14 @@ The software listed below are powerful tools for creating Pixel Art, suitable fo
 
 ![Aseprite](/assets/img/pixelart/pixelart-editores/01-aseprite.jpg)
 
-Developed in [C++](https://terminalroot.com.br/cpp), **Aseprite** is one of the most popular software for creating [pixel art](https://terminalroot.com.br/tags #pixelart), available for [macOS](https://terminalroot.com.br/tags#macos), [Windows](https://terminalroot.com.br/tags#windows) and [GNU+Linux]( https://terminalroot.com.br/tags#gnulinux).
+Developed in [C++](https://terminalroot.com/cpp), **Aseprite** is one of the most popular software for creating [pixel art](https://terminalroot.com/tags #pixelart), available for [macOS](https://terminalroot.com/tags#macos), [Windows](https://terminalroot.com/tags#windows) and [GNU+Linux]( https://terminalroot.com/tags#gnulinux).
 
 <a href="https://www.aseprite.org/" class="btn btn-custom btn-lg">Access the official Aseprite address</a>
 
 ---
 
 ## 02. [LibreSprite](https://terminalroot.com.br/2021/12/instale-o-libresprite-uma-alternativa-ao-aseprite.html)
-An open source alternative to Aseprite, also developed in [C++](https://terminalroot.com.br/tags#cpp). Works on [macOS](https://terminalroot.com.br/tags#macos), [Windows](https://terminalroot.com.br/tags#windows), [GNU+Linux](https:// terminalroot.com.br/tags#gnulinux), [Android](https://terminalroot.com.br/tags#android) and [iOS](https://terminalroot.com.br/tags#swift).
+An open source alternative to Aseprite, also developed in [C++](https://terminalroot.com/tags#cpp). Works on [macOS](https://terminalroot.com/tags#macos), [Windows](https://terminalroot.com/tags#windows), [GNU+Linux](https:// terminalroot.com/tags#gnulinux), [Android](https://terminalroot.com/tags#android) and [iOS](https://terminalroot.com/tags#swift).
 
 ![LibreSprite](/assets/img/pixelart/pixelart-editores/02-libresprite.png)
 
@@ -47,7 +47,7 @@ An open source alternative to Aseprite, also developed in [C++](https://terminal
 ---
 
 ## 03. [Pixelorama](https://orama-interactive.itch.io/pixelorama)
-Created in [GDScript](https://terminalroot.com.br/tags#godot), Pixelorama is a great option for those looking for a simple and efficient tool. Available for [macOS](https://terminalroot.com.br/tags#macos), [Windows](https://terminalroot.com.br/tags#windows), [GNU+Linux](https:// terminalroot.com.br/tags#gnulinux), [Android](https://terminalroot.com.br/tags#android) and [iOS](https://terminalroot.com.br/tags#swift).
+Created in [GDScript](https://terminalroot.com/tags#godot), Pixelorama is a great option for those looking for a simple and efficient tool. Available for [macOS](https://terminalroot.com/tags#macos), [Windows](https://terminalroot.com/tags#windows), [GNU+Linux](https:// terminalroot.com/tags#gnulinux), [Android](https://terminalroot.com/tags#android) and [iOS](https://terminalroot.com/tags#swift).
 
 ![03 Pixelorama](/assets/img/pixelart/pixelart-editores/03-pixelorama.png)
 
@@ -56,7 +56,7 @@ Created in [GDScript](https://terminalroot.com.br/tags#godot), Pixelorama is a g
 ---
 
 ## 04. [Piskel](https://www.piskelapp.com/)
-An online tool for creating pixel art, developed in [JavaScript](https://terminalroot.com.br/tags#javascript). It works on any [operating system](https://terminalroot.com.br/tags#sistemasoperacionais) with a compatible [browser](https://terminalroot.com.br/tags#navegadores).
+An online tool for creating pixel art, developed in [JavaScript](https://terminalroot.com/tags#javascript). It works on any [operating system](https://terminalroot.com/tags#sistemasoperacionais) with a compatible [browser](https://terminalroot.com/tags#navegadores).
 
 ![Piskel](/assets/img/pixelart/pixelart-editores/04-piskel.jpg)
 
@@ -65,7 +65,7 @@ An online tool for creating pixel art, developed in [JavaScript](https://termina
 ---
 
 ## 05. [Grafx2](https://grafx2.gitlab.io/grafX2/)
-Developed in [C](https://terminalroot.com.br/tags#linguagemc), Grafx2 is a pixel art editor specific to Windows.
+Developed in [C](https://terminalroot.com/tags#linguagemc), Grafx2 is a pixel art editor specific to Windows.
 
 ![Grafx2](/assets/img/pixelart/pixelart-editores/05-grafx2.jpg)
 
@@ -74,7 +74,7 @@ Developed in [C](https://terminalroot.com.br/tags#linguagemc), Grafx2 is a pixel
 ---
 
 ## 06. [GraphicsGale](https://graphicsgale.com/us/)
-Another pixel art editor exclusive to [Windows](https://terminalroot.com.br/tags#windows), developed in [C](https://terminalroot.com.br/c) and [C++](https ://terminalroot.com.br/tags#cpp).
+Another pixel art editor exclusive to [Windows](https://terminalroot.com/tags#windows), developed in [C](https://terminalroot.com/c) and [C++](https ://terminalroot.com/tags#cpp).
 
 ![GraphicsGale](/assets/img/pixelart/pixelart-editores/06-GraphicsGale.jpg)
 
@@ -83,7 +83,7 @@ Another pixel art editor exclusive to [Windows](https://terminalroot.com.br/tags
 ---
 
 ## 07. [PixaPencil](https://pixapencil.com/)
-Developed in [Kotlin](https://terminalroot.com.br/tags#kotlin), PixaPencil is an option for creating pixel art on [Android](https://terminalroot.com.br/tags#android) devices .
+Developed in [Kotlin](https://terminalroot.com/tags#kotlin), PixaPencil is an option for creating pixel art on [Android](https://terminalroot.com/tags#android) devices .
 
 ![PixaPencil](/assets/img/pixelart/pixelart-editores/07-pixapencil.jpg)
 
@@ -101,7 +101,7 @@ A simple pixel art editor for Android, developed in an unspecified language.
 ---
 
 ## 09. [PikoPixel](https://twilightedge.com/mac/pikopixel/)
-Developed in [C++](https://terminalroot.com.br/cpp), PikoPixel is a pixel art editor available for [macOS](https://terminalroot.com.br/tags#macos) and [GNU +Linux](https://terminalroot.com.br/tags#gnulinux).
+Developed in [C++](https://terminalroot.com/cpp), PikoPixel is a pixel art editor available for [macOS](https://terminalroot.com/tags#macos) and [GNU +Linux](https://terminalroot.com/tags#gnulinux).
 
 ![PikoPixel](/assets/img/pixelart/pixelart-editores/09-PikoPixel.jpg)
 
@@ -110,7 +110,7 @@ Developed in [C++](https://terminalroot.com.br/cpp), PikoPixel is a pixel art ed
 ---
 
 ## 10. [Pixel Art to CSS](https://pixelartcss.com/)
-An online tool to convert pixel art images to CSS, developed in [TypeScript](https://terminalroot.com.br/tags#typescript).
+An online tool to convert pixel art images to CSS, developed in [TypeScript](https://terminalroot.com/tags#typescript).
 
 ![Pixel Art to CSS](/assets/img/pixelart/pixelart-editores/10-pixel-art-to-css.jpg)
 
@@ -119,7 +119,7 @@ An online tool to convert pixel art images to CSS, developed in [TypeScript](htt
 ---
 
 ## 11. [PixelOver](https://pixelover.io/)
-An online tool for editing pixel art, developed in [C++](https://terminalroot.com.br/tags#cpp). It is available for [Windows](https://terminalroot.com.br/tags#windows), [macOS](https://terminalroot.com.br/tags#macos) and [GNU+Linux](https:/ /terminalroot.com.br/tags#gnulinux).
+An online tool for editing pixel art, developed in [C++](https://terminalroot.com/tags#cpp). It is available for [Windows](https://terminalroot.com/tags#windows), [macOS](https://terminalroot.com/tags#macos) and [GNU+Linux](https:/ /terminalroot.com/tags#gnulinux).
 
 ![PixelOver](/assets/img/pixelart/pixelart-editores/11-pixelover.jpg)
 
@@ -128,7 +128,7 @@ An online tool for editing pixel art, developed in [C++](https://terminalroot.co
 ---
 
 ## 12. [PixiEditor](https://github.com/PixiEditor/PixiEditor)
-Developed in [CSharp](https://terminalroot.com.br/tags#csharp), PixiEditor is an option for editing pixel art on [Windows](https://terminalroot.com.br/tags#windows) .
+Developed in [CSharp](https://terminalroot.com/tags#csharp), PixiEditor is an option for editing pixel art on [Windows](https://terminalroot.com/tags#windows) .
 
 ![PixiEditor](/assets/img/pixelart/pixelart-editores/12-pixi-editor.jpg)
 
@@ -137,7 +137,7 @@ Developed in [CSharp](https://terminalroot.com.br/tags#csharp), PixiEditor is an
 ---
 
 ## 13. [PixelCraft](https://github.com/rgab1508/PixelCraft)
-An online pixel art editor developed in [JavaScript](https://terminalroot.com.br/tags#javascript).
+An online pixel art editor developed in [JavaScript](https://terminalroot.com/tags#javascript).
 
 ![PixelCraft](/assets/img/pixelart/pixelart-editores/13-pixelcraft.jpg)
 
@@ -145,8 +145,8 @@ An online pixel art editor developed in [JavaScript](https://terminalroot.com.br
 
 ---
 
-## 14. [Textual Paint](https://terminalroot.com.br/2023/08/use-o-ms-paint-diretamente-no-terminal.html)
-Although not specifically for pixel art, **Textual Paint** is capable of creating pixel art and is developed in [Python](https://terminalroot.com.br/tags#python).
+## 14. [Textual Paint](https://terminalroot.com/use-ms-paint-directly-in-terminal/)
+Although not specifically for pixel art, **Textual Paint** is capable of creating pixel art and is developed in [Python](https://terminalroot.com/tags#python).
 
 ![Textual Paint](/assets/img/pixelart/pixelart-editores/14-textual-paint.jpg)
 
@@ -155,7 +155,7 @@ Although not specifically for pixel art, **Textual Paint** is capable of creatin
 ---
 
 ## 15. [pixel-editor](https://github.com/lospec/pixel-editor)
-Another online tool for editing pixel art, developed in [JavaScript](https://terminalroot.com.br/tags#javascript).
+Another online tool for editing pixel art, developed in [JavaScript](https://terminalroot.com/tags#javascript).
 
 ![pixel-editor](/assets/img/pixelart/pixelart-editores/15-pixel-editor-screenshot.jpg)
 
@@ -164,7 +164,7 @@ Another online tool for editing pixel art, developed in [JavaScript](https://ter
 ---
 
 ## 16. [Klecks](https://github.com/bitbof/klecks)
-Developed in [TypeScript](https://terminalroot.com.br/tags#typescript), Klecks is a simple and efficient pixel art editor.
+Developed in [TypeScript](https://terminalroot.com/tags#typescript), Klecks is a simple and efficient pixel art editor.
 
 ![Klecks](/assets/img/pixelart/pixelart-editores/16-klecks.jpg)
 
@@ -173,7 +173,7 @@ Developed in [TypeScript](https://terminalroot.com.br/tags#typescript), Klecks i
 ---
 
 ## 17. [MiniPixel](https://github.com/fabioarnold/MiniPixel)
-Developed in [Zig](https://terminalroot.com.br/tags#zig), **MiniPixel** is a lightweight and fast option for creating pixel art.
+Developed in [Zig](https://terminalroot.com/tags#zig), **MiniPixel** is a lightweight and fast option for creating pixel art.
 
 ![MiniPixel](/assets/img/pixelart/pixelart-editores/17-MiniPixel.jpg)
 
@@ -182,7 +182,7 @@ Developed in [Zig](https://terminalroot.com.br/tags#zig), **MiniPixel** is a lig
 ---
 
 ## 18. [Stipple Effect](https://github.com/jbunke/stipple-effect)
-Developed in [Java](https://terminalroot.com.br/tags#java), Stipple Effect is a pixel art editor with a special focus on pointillism effects.
+Developed in [Java](https://terminalroot.com/tags#java), Stipple Effect is a pixel art editor with a special focus on pointillism effects.
 
 ![Stipple Effect](/assets/img/pixelart/pixelart-editores/18-stiple.jpg)
 
@@ -191,7 +191,7 @@ Developed in [Java](https://terminalroot.com.br/tags#java), Stipple Effect is a 
 ---
 
 ## 19. [pixart](https://github.com/rendchevi/pixart)
-Developed in [C](https://terminalroot.com.br/tags#linguagemc), pixart is a simple and straightforward pixel art editor.
+Developed in [C](https://terminalroot.com/tags#linguagemc), pixart is a simple and straightforward pixel art editor.
 
 ![pixart](/assets/img/pixelart/pixelart-editores/19-pixart.jpg)
 
