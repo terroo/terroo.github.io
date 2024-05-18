@@ -21,7 +21,7 @@ kramdown:
 #    css_class   : 'syntax'
 
 
-permalink: /:year/:month/:title/
+permalink: /:title/
 #
 # html minify
 compress_html:
