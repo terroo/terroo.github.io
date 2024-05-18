@@ -1,187 +1,74 @@
-/* MAIN.css */
 @font-face {
   font-family: Dosis;
   src: url(../fonts/dosis.otf);
 }
 
 @font-face {
-  font-family: JetBrains;
-  src: url(../fonts/jet.ttf);
+  font-family: Whitney;
+  src: url(../fonts/whitneybook.otf);
 }
 
-* {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
+html {
+    scroll-behavior: smooth;
 }
 
-div a.logo {
-  text-transform: uppercase;
-  font-weight: bold;
- }
+.midias-sociais a {
+  color: #abb2bf;
+}
 
-.col-lg-2 {border: 1px solid silver; margin-top: .75rem;}
-
-.card {margin-top: .75rem;}
-.card-title .a-card { color: #2764ab !important; text-decoration: none;}
-.card-text .a-card { font-style: oblique; }
-.description { font-style: oblique; color: #7391ab; }
-.card a { color: #333; text-decoration: none;}
-.card a:hover {text-decoration: underline;}
-
-figure {
-  padding: .2rem .4rem;
-  font-size: 1.3em;
+.midias-sociais a:hover {
   color: #fff;
-  background-color: #212529;
-  border-radius: .2rem;
 }
 
-figure a {
-  color: #f1f1f1;
-  text-decoration: none;
-  cursor: text;
-  pointer-events:none;
-}
-figure a:hover {color: #f1f1f1; text-decoration: none;}
-
-.img-post-page {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  margin-bottom: 2rem;
+.flinkz a {
+  font-size: 12px;
 }
 
-footer a.social {
-  margin: .540rem;
-  color: #333;
+.flinkz a:hover {
+  font-size: 12px;
 }
 
-footer .social:hover svg {
-  color: #7391ab;
+.footer > .container > p > a {color: #fff;}
+
+
+.footer{
+  background-color: #111014;
+  color: #abb2bf;
 }
 
-a.btn-custom {
-  background-color: transparent;
-  border: 1px solid #bfd0df !important;
+#js-scroll-vanilla {
+    position: fixed;
+    display: none;
+    background: #1D2025;
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 99;
 }
 
-a.btn-custom:hover {
-  color: #333;
-  background-color: #7391ab;
-  font-weight: bold;
+#js-scroll-vanilla i {
+    padding-top: 12px;
+    color: #fff;
 }
 
-.card-header {
-  background-color: transparent;
-}
-
-a span.bg-light { border: 1px solid #333; }
-
-.sidebar {
-  max-height: 600px;
-  border:none;
-}
-
-div.card {
-  border-radius: 0;
-  /*border-bottom: 1px solid #0b0b18;
-  -webkit-box-shadow: 0px 1px 15px -4px rgba(11,11,24,0.78); 
-  box-shadow: 0px 3px 3px -4px rgba(11,11,24,0.78);*/
-  /*background: linear-gradient(90deg, rgb(255, 129, 0), rgb(255, 248, 36), rgb(138, 255, 138), rgb(10, 187, 255), rgb(204, 61, 230));*/
-}
-
-div.footer-card {
-  padding: 2px;
-  background: linear-gradient(90deg, rgb(255, 129, 0), rgb(255, 248, 36), rgb(138, 255, 138), rgb(10, 187, 255), rgb(204, 61, 230));
-}
-
-a span.badge {
-  border: 1px solid #161625;
-  background-color: #e5edf4;
-}
-a span.badge:hover { background-color: #bfd0df;}
 
 
-.article .col h3 {
- color:#54626b;
-}
-
-.article .col time {
- font-style:oblique; 
-}
-
-.article .row .col-lg-12 img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 60%;
-  height: auto;
-}
-
-.article pre {
-  /*padding: 1rem 1rem 0 1rem;*/
-  padding: 3px;
-}
-
-.article p {
-  font-size: 1.4rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  margin-top: 10px;
-}
-
-.article .row pre code {
-  color: #fff;
-  /*padding: 0.3rem;*/
-  border-radius: 5px;
-  font-size: 1.5rem;
-}
-
-.article blockquote {
-  padding: 0 1em;
-  border-left: 0.25em solid #ccc;
-  display: block;
-  color: #677178;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
-}
-
-.logo {
-  font-family: Dosis;
-  font-weight: bold;
- }
-
-.col-ads {
-  max-height: 700px;
-}
-
-.a-tag {
-  font-size: 24px;
-  text-decoration: none;
-  margin: 5px 0;
-}
-
-.a-tag:hover {
-  text-decoration: underline;
-}
-
-.main-tag {
-  padding-left: 5px;
-  border-left: 4px solid #333;
-}
-
-.main-tag h3 { border-bottom: 1px solid; }
-
-.mySearch {cursor: url(/assets/img/terroo/search.svg), auto;}
+.mySearch {cursor: url(/assets/img/site/search.svg), auto;}
 #mySearch {background: #333; opacity: 0.8;}
-#search-input {width: 80%; border: none;border-bottom: 2px solid #0b0b18;}
-#search-input[type=text] {background: transparent;color: #2764ab; font-weight: bold;}
+#search-input {width: 80%; border: none;border-bottom: 2px solid #fff;}
+#search-input[type=text] {background: transparent;color: #fff; font-weight: bold;}
 #search-input[type=text]:hover {background:transparent;}
 #search-input[type=text]:focus {background:transparent;}
 .modal-header {border:none;}
-button.close {color: #0b0b18; font-size: 60px;}
+button.close {color: #fff; font-size: 60px;}
 #search-input::placeholder {
     color: #fff;
     opacity: 1; /* Firefox */
@@ -195,23 +82,200 @@ button.close {color: #0b0b18; font-size: 60px;}
    color: #fff;
 }
 #results-container {width: 80%; margin: auto; margin-top: 10px; text-align: left;}
-#results-container li a {color: #2764ab; font-weight: bold; margin-bottom: 1px; font-family: 'Dosis', sans-serif; font-size: 18px;}
+#results-container li a {color: #fff; font-weight: bold; margin-bottom: 1px; font-family: 'Dosis', sans-serif; font-size: 18px;}
 #results-container li a:hover {color: #729fcf;}
 .modal-content {background-color: transparent; border:none;}
 
-table { overflow-x: hidden;}
-table, td, tr { border: 1px solid silver;padding: 3px;}
 
-code {font-family: JetBrains;}
+.artigo img  {
+  max-width:100%;
+  height:auto;
+  padding:.25rem;
+  background-color: transparent;
+  border:1px solid #dee2e6;
+  border-radius:.25rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
-ul {
-  margin: 0;
-  padding: 0;
 }
 
-ul li {
-  list-style-type: none;
-  padding-top: 15px;
-  padding-bottom: 3px;
-  font-size: 20px;
+@media screen and (min-width:350px){
+.modal {
+           width:450px;
+          }
 }
+
+@media screen and (min-width:600px){
+      .modal {
+                 width:600px;
+      }
+}
+
+@media screen and (min-width:750px){
+.modal {
+           width:750px;
+          }
+
+.artigo img { max-width: 70%; }
+
+}
+
+@media screen and (min-width:1100px){
+  .modal {
+           width:1100px;
+  }
+
+  /*.sidebar {
+    position: fixed;
+    max-width: 255px;
+    top: 440px;
+    right: 400px;
+    z-index: 9999 !important;
+  }*/
+
+}
+
+@media screen and (min-width:1350px){
+.modal {
+           width:1350px;
+          }
+}
+
+/* se a tela for maior que 750 pixels - tamanho para TVs e PCs */
+@media screen and (min-width:1600px){
+.modal {
+           width:600px;
+          }
+}
+
+.bg-card {
+  background-color: #7289da;
+  color: #fff;
+}
+
+.bg-card:hover {
+  background-color: #637acf;
+}
+
+.bg-branco {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.author img {width:120px;}
+.author h5 a {color:#abb2bf;}
+.author h5 a:hover {color:#fff;text-decoration: underline;}
+.oblique {font-style: oblique;}
+.youtube i:hover, .twitter i:hover, .github i:hover, .reddit i:hover, .facebook i:hover {color:#7289da;}
+#x {color: #abb2bf; fill: #abb2bf; }
+#x:hover {color: #fff; fill: #fff; }
+
+.page .img-main {width: 60%; height: 60%;}
+.page .h1 {margin-top: 5px; margin-bottom: 3px; text-align: center;}
+.important-info {
+  background-image: url('/assets/img/cpp/banner.jpg');
+  background-attachment: fixed;
+}
+.important-info h1, .important-info h4 {color:#fff; font-family: Whitney,sans-serif; text-shadow: 3px 3px #000000; font-weight: bold;}
+.important-info button {font-weight: bold; text-shadow: 1px 1px #000000;}
+
+.main-tag {border: 2px solid transparent; border-radius: 5px;}
+
+.main-tag:hover {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 6px 0px #000;
+  -moz-box-shadow: 0px 0px 6px 0px #000;
+  box-shadow: 0px 0px 6px 0px #000;
+}
+
+.main-tag h3 {
+  background-color: #7289da;
+}
+
+.main-tag h3:hover{
+  background-color: #7289da;
+}
+
+.main-tag a {font-size: 24px;}
+.main-tag a:hover {text-decoration: underline;}
+
+
+.artigo iframe {
+  max-width:100%;
+  padding:.25rem;
+  background-color:#fff;
+  border:1px solid #dee2e6;
+  border-radius:.10rem;
+  max-height: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.artigo p {font-size: 24px;}
+.artigo ul li {font-size: 24px;}
+.artigo ol li {font-size: 24px;}
+.artigo blockquote {font-size: 20px; border-left: 4px solid #abb2bf; padding-left: 10px; margin: 30px 0 30px 15px;}
+.artigo a {font-weight: bold;}
+.artigo h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.artigo a.btn {color: #fff; margin-top:15px;}
+
+pre {background: #282a36; padding: 15px; color: #fff; font-size: 18px; border: 1px solid #383a59; border-radius: 5px;}
+
+.pagina img  {
+  max-width:80%;
+  height:80%;
+  padding:.25rem;
+  background-color: transparent;
+  border:1px solid #dee2e6;
+  border-radius:.25rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.pagina iframe {
+  max-width:100%;
+  padding:.25rem;
+  background-color:#fff;
+  border:1px solid #dee2e6;
+  border-radius:.10rem;
+  max-height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pagina p {font-size: 24px;}
+.pagina ul li {font-size: 24px; color: #fff; padding: 10px; list-style: none;}
+.pagina ol li {font-size: 24px;}
+.pagina blockquote p {font-size: 24px; border-left: 4px solid #abb2bf; padding-left: 20px; margin: 30px 0 30px 30px; text-align: left!important; font-style: oblique;}
+.pagina a {font-weight: bold;}
+.pagina .under-line {border-bottom: 1px solid #abb2bf; padding: 20px 0;}
+/*.pagina p {text-align: center;}*/
+.pagina a.btn {font-weight: bold; color: #fff; font-size: 24px;}
+.pagina ul li a {color: #fff;}
+
+
+.pcursos .card h4 {font-size: 24px;}
+.pcursos .card .tool { font-size: 13px; font-style: oblique; padding: 10px;}
+
+.author {
+  background-color: transparent;
+}
+
+.author img {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.artigo table {margin: auto;}
+

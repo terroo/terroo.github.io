@@ -2,55 +2,34 @@
 layout: page
 title: "#Tags"
 permalink: /tags/
-description: "All #Tags."
+description: "Assuntos separados por #Tags."
 ---
 
-<div class="col-lg-10 tags">
+<div class="container my-5 py-5 tags-page">
 
   {% for tag in site.tags  %}
-  <div class="my-5 main-tag">
+  <div class="list-group bg-dark text-white my-5 main-tag">
 
-    <h3 id="{{ tag[0] | slugify }}" class="text-uppercase">
-      #{{ tag[0] }}
-    </h3>
+      <h3 id="{{ tag[0] | slugify }}" class="list-group-item list-group-item-action text-white text-center text-uppercase">
+        {{ tag[0] }}
+      </h3>
 
-    {% assign pages_list = tag[1] %}
-    {% for post in pages_list reversed %}
-    {% if post.title != null %}
-    {% if group == null or group == post.group %}
-    <a href="{{ site.url }}{{ post.url }}" class="d-flex a-tag justify-content-between">
-      ■ {{ post.title }}
-      <!--<span id="{{ tag[0] | slugify }}">
-        <button class="btn btn-dark" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</button>
-      </span>-->
-    </a>
+          {% assign pages_list = tag[1] %}
+          {% for post in pages_list reversed %}
+              {% if post.title != null %}
+              {% if group == null or group == post.group %}
+              <a href="{{ site.url }}{{ post.url }}" class="list-group-item list-group-item-action bg-dark text-white d-flex justify-content-between">
+                {{ post.title }}
+                <span class="badge badge-light badge-pill" id="{{ tag[0] | slugify }}">
+                  <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
+                </span>
+              </a>
 
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-    {% assign pages_list = nil %}
-    {% assign group = nil %}
+              {% endif %}
+              {% endif %}
+          {% endfor %}
+          {% assign pages_list = nil %}
+          {% assign group = nil %}
   </div>
   {% endfor %}
-
-
-</div><!--col-lg-10-->
-
-<div class="col-lg-2 mb-4 col-ads sticky-top" style="border:none;">
-
-
-<!-- MINI ADS -->
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Games Root -->
-<ins class="adsbygoogle"
-style="display:inline-block;width:190px;height:600px"
-data-ad-client="ca-pub-2838251107855362"
-data-ad-slot="5351066970"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 </div>
-
-
-

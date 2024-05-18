@@ -1,67 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75725905-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<head>
 
-      gtag('config', 'UA-75725905-2');
-    </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75725905-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-
-    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <link rel="icon" href="/assets/img/logo.png" sizes="16x16" type="image/png">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="gnu, linux, cplusplus, cpp, programmer">
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="generator" content="NVIM v0.6.0 (2021 Dec 14, compiled Dec 7 2021 00:06:09)">
-
-    <link href="/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="/assets/css/toggle.css" rel="stylesheet">
-    <link href="/assets/css/dracula.css" rel="stylesheet">
-    <link href="/assets/css/main.css" rel="stylesheet">
-
-    <!-- ADD OLDER -->
-
-  {% seo %}
-
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/icons/favicon.png?v=qA3OXqyw77' | relative_url }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{'/assets/img/icons/favicon.png?v=qA3OXqyw77' | relative_url }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{'/assets/img/icons/favicon.png?v=qA3OXqyw77' | relative_url }}">
-  <link rel="manifest" href="{{ '/assets/img/icons/manifest.json?v=qA3OXqyw77' | relative_url }}">
-  <link rel="mask-icon" href="{{ '/assets/img/icons/favicon.png?v=qA3OXqyw77' | relative_url }}" color="#5bbad5">
-  <!--[if IE]><link rel="shortcut icon" href="/assets/img/icons/favicon.png?v=qA3OXqyw77"><![endif]-->
-  <link rel="shortcut icon" href="{{ '/assets/img/icons/favicon.png?v=qA3OXqyw77' | relative_url }}">
-  <meta name="apple-mobile-web-app-title" content="Terminal Root">
-  <meta name="application-name" content="Terminal Root">
-  <meta name="msapplication-config" content="{{ '/assets/img/icons/browserconfig.xml?v=qA3OXqyw77' | relative_url }}">
-  <meta name="theme-color" content="#ffffff">
-
-  <style class="inlineCSS">
-
-    {% include critical.css %}
-    
-    iframe {
-	    width: 100%;
-	    height: 400px;
-    }
-
-  </style>
-  <link rel="preload" href="{{ '/assets/css/main.css' | relative_url }}" as="style" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}"></noscript>
-  <script type="text/javascript">
-   {% include loadCss.js %}
+    gtag('config', 'UA-75725905-2');
   </script>
-    
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2838251107855362"
-     crossorigin="anonymous"></script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9Y7M3E57WX"></script>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="/assets/img/icon.png" sizes="32x32" type="image/png">
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 
-  </head>
+  <!-- METADADOS:  -->
+  <meta name="keywords" content="c++, cpp, cplusplus, programming, gamedev">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="reply-to" content="{{ site.email }}">
+  <meta name="generator" content="VIM - Vi IMproved 8.1 (2020 Mar 18, compiled Dec  7 2019 00:09:36)">
 
+  <!-- Favicons -->
+  <link href="/assets/img/site/favicon.png" rel="icon">
+  <link href="/assets/img/site/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- BOOTSTRAP:  -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+  <link rel='stylesheet' href='https://unpkg.com/izitoast/dist/css/iziToast.min.css'>
+
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+
+  <script src='https://unpkg.com/izitoast/dist/js/iziToast.min.js'></script>
+
+  <!-- VUEJS -->
+  <script src="/assets/js/vue.js"></script>
+
+  <!-- ICONS:  -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Devicons in your header -->
+  <!--<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">-->
+  <!-- ICONIFY DESIGN  -->
+  <!--<script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>-->
+
+  <!-- FONTS:  ERRO AQUI -->
+  <!--<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Terminal+Dosis" />-->
+
+  <!-- MY FILES:  -->
+  <link rel="stylesheet" href="/assets/css/main-dark.css">
+  <script src="/assets/js/toogle-theme.js"></script>
+
+
+  <!-- Social: Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@terminalroottv">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  {% if page.image %}
+  <meta property="twitter:image:src" content="{{ site.url }}{{page.image }}">
+  {% else %}
+  <meta property="twitter:image:src" content="{{ "/assets/img/terminalroot-icon.png" | prepend: site.baseurl | prepend: site.url }}">
+  <meta property="twitter:image:src" content="https://raw.githubusercontent.com/TerminalRootTV/terminalroottv.github.io/master/assets/img/terminalroot-icon.png">
+  {% endif %}
+
+  <!-- My Main Stylesheet File -->
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+
+  <link rel="stylesheet" href="/assets/css/dracula.css">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css" />
+  <style>
+:root {
+  --plyr-color-main: #554477;
+}
+    .plyr {
+      border-radius: 3px;
+      /*border: 6px solid #554477;*/
+      width: 800px;
+      height: 468px;
+    }
+  </style>
+
+  <!-- Google ADS e Analytics -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2838251107855362"
+                crossorigin="anonymous"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9Y7M3E57WX"></script>
+
+</head>

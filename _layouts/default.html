@@ -1,8 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
 {% include head.html %}
-  <body>
-     <div id="app">
-{% include header.html %}
-{% include main.html %}
-{% include footer.html %} 
 
+<body>
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "url": "https://terminalroot.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://terminalroot.com/tags#{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
 
+  {% include header.html %}
+
+  {% include intro.html %}
+
+  {% include posts.html %}
+
+  {% include tags.html %}
+
+  {% include footer.html %}
+
+</body>
+</html>

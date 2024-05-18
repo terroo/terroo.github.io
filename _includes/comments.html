@@ -1,36 +1,15 @@
-<div class="comments">
-  <div class="text-center ads">
-    <!-- RECTANGLE LARGE -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- Informat -->
-    <ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-2838251107855362"
-    data-ad-slot="2327980059"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
-  <h2 class="text-center">Comments</h2>
-  {% if page.comments != false %}
-  <div id="disqus_thread"></div>
-  <script>
+<!--
+<h1>Comentários</h1>
+<hr>
 
-    var disqus_config = function () {
-          this.page.url = '{{ page.url | absolute_url }}';
-          this.page.identifier = '{{ page.url | absolute_url }}';
-        };
+<script src="https://utteranc.es/client.js"
+          repo="TerminalRootTV/TerminalRootTV.github.io"
+          issue-term="pathname"
+          theme="github-dark"
+          crossorigin="anonymous"
+          async>
+</script>
 
-    (function() {
-          var d = document, s = d.createElement('script');
-          s.src = 'https://{{ site.disqus.shortname }}.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-        })();
-  </script>
-  <noscript>Please enable JavaScript to view the comments.</noscript>
-  {% endif %}
-
-</div>
+<br>
+<hr>
+-->

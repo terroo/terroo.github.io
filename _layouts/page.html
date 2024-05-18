@@ -1,19 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
 {% include head.html %}
+
 <body>
-  <div id="app">
-    {% include header.html %}
 
-    <div id="main" class="container">
+  {% include header.html %}
 
-      <br>
+  <div class="container">
+    <div class="row mt-5 intro">
+      <div class="col-sm-12 text-center px-5">
+        <h1 class="pt-5 pb-1">
+          <span class="intro-title">{{ page.title }}</span>
+        </h1>
 
-      <div class="row">
+        <!-- MINI ANÚNCIO -->
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Games Root -->
+        <ins class="adsbygoogle"
+        style="display:inline-block;width:730px;height:95px"
+        data-ad-client="ca-pub-2838251107855362"
+        data-ad-slot="5351066970"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
 
-          {{ content }}
 
-      </div><!-- ROW -->
+        <h2 class="py-3">{{ page.description }}</h2>
+      </div>
+    </div>
+    <hr>
+  </div> <!-- CONTAINER INTRO -->
 
-    </div> <!-- #MAIN CONTAINER -->
+  <div class="container pagina">
+    {{ content }}
+  </div>
 
 
-    {% include footer.html %} 
+  {% include tags.html %}
+
+  {% include footer.html %}
+
+</body>
+</html>

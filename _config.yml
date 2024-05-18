@@ -1,55 +1,45 @@
-title: Terminal Root
-email: contact@terminalroot.com
+# Site settings
+title: 'Terminal Root'
+subtitle: 'A little much about C++, Operating Systems, Programming and Web Development.'
+email: fake@terminalroot.com
 author: 'Marcos Oliveira'
-description: >- # this means to ignore newlines until "baseurl:"
-  A little much about C++, Operating Systems, Programming and Web Development
-baseurl: "/" 
-twitter_username: marcoscplusplus
-github_username:  terroo
+description: > # this means to ignore newlines until "baseurl:"
+  A little much about C++, Operating Systems, Programming and Web Development.
 
-url: "https://terminalroot.com"
-# gem install kramdown rouge
-# http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html
-disqus:
-  shortname: terroo
-#theme: minima
+twitter_username: TerminalRootTV
+github_username:  terroo
+gitlab_username:  TerminalRoot
+youtube_username:  TerminalRootTV
+#
+# Build settings
 markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter_opts:
     default_lang: html
+#    css_class   : 'syntax'
 
-plugins:
-  - jekyll-feed
-exclude:
-  - README.md
-  - node_modules
-  - package.json
-  - Gemfile
-  - Gemfile.lock
-  - vendor
-  - npm-debug.log
-  - gulpfile.js
-  - sleek.png
-include: ['_pages']
-permalink: /:title/
+
+permalink: /:year/:month/:title.html
+#
+# html minify
 compress_html:
   clippings: all
   comments: all
   endings: []
   profile: false
 
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-
+# Links to include in menu navigation
+# For external links add external: true
 links:
   - title: Home
     url: /
-  - title: Tags
-    url: /tags
   - title: About
     url: /about
   - title: Newsletter
     url: /newsletter
+  - title: Tags
+    url: /tags
+  - title: Blog
+    url: /blog

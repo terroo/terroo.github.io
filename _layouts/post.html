@@ -1,55 +1,67 @@
-{% include head.html %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  {% include head.html %}
+
   <body>
-     <div id="app">
-{% include header.html %}
 
-<div id="main" class="container article">
+    {% include header.html %}
 
-  <br>
-
-  <div class="row jumbtron text-center">
-
-    <div class="col">
-      <h1>{{ page.title }}</h1> 
-      <h3>{{ page.description }}</h3>
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-      <hr>
-      <div class="top-ads">
-
-<!-- RECTANGLE 2 - OnParagragraph -->
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-style="display:block; text-align:center;"
-data-ad-layout="in-article"
-data-ad-format="fluid"
-data-ad-client="ca-pub-2838251107855362"
-data-ad-slot="8549252987"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
+    <div class="container mb-1 pb-1">
+      <div class="row mt-5 intro">
+        <div class="col-sm-12 text-center px-5">
+          <h2 class="pt-5 pb-1">
+            <span class="intro-title">{{ page.title }}</span>
+          </h2>
+          <h4 class="py-3">{{ page.description }}</h4>
+          <p class="oblique">
+          <i class="fas fa-calendar oblique"></i>
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+          </p>
+          <p>
+          <!-- MINI ANÚNCIO -->
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- Games Root -->
+          <ins class="adsbygoogle"
+               style="display:inline-block;width:730px;height:95px"
+               data-ad-client="ca-pub-2838251107855362"
+               data-ad-slot="5351066970"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+          </p>
+        </div>
       </div>
-
-    </div> 
-  </div>
-
-
-  <div class="row">
-    <div class="col-lg-12">
-
-      {{ content }}
-
-      {% include tags-footer.html %}
-      {% include ads.html %}
       <hr>
-      {% include comments.html %}
+    </div> <!-- CONTAINER INTRO -->
 
-    </div><!--col-lg-12-->
-  </div><!-- ROW -->
+    <div class="container mt-1 pt-1 artigo">
+      <div class="row">
+        <div class="col-md-12">
 
-  <hr>
+          {{ content }}
 
-</div> <!-- #MAIN CONTAINER -->
+          {% include tags-footer.html %}
+
+          {% include share-channel.html %}
+
+          {% include author.html %}
+
+          {% include relacionados.html %}
+
+          <hr>
+
+        </div>
 
 
-{% include footer.html %} 
+        <!-- sidebar.html -->
+
+      </div><!-- ROW ARTIGO -->
+
+    </div>
+    </div><!-- CONTAINER ARTIGO  -->
+
+    {% include footer.html %}
+
+  </body>
+</html>

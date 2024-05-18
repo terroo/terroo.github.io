@@ -1,0 +1,56 @@
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+
+    $('#btn-newsletter').click(function(){
+      var mail = $("#email").val();
+      var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+      // CORS b64: aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMTgzODI3NDAvY29ycy1ub3Qtd29ya2luZy1waHAK
+
+      if( mail == ""){
+           iziToast.warning({position: "topRight", title: 'Aviso', message: 'Informe seu e-mail.'});
+       }else if( ! re.test(mail) ){
+           iziToast.error({position: "topRight", title: 'Erro', message: 'Informe e-mail válido.'});
+       }else{
+           $("#form").hide("slow");
+           $("#gif").show("slow");
+           $.get("https://gnu.terminalroot.com.br/newsletter/add.php", {mail: mail}, function(mostrar){
+          	    //$("#return").show("slow").html(mostrar);
+                //var mostrar = '<h3 class="text-center bg-dark jumbotron"><i class="fas fa-check-circle"></i> Veja sua caixa de mensagem e confirme o seu cadastro!</h3>';
+                $("#return").show("slow").html(mostrar);
+                $("#gif").hide();
+                //iziToast.success({position: "topRight", title: 'Sucesso!', message: 'Veja sua caixa de mensagem e confirme o seu cadastro!'});
+           });
+       }
+    });
+  });
+</script>
+
+
+<div class="container newsletter pt-5 ">
+
+  <div class="jumbotron bg-dark text-white text-center" id="form">
+    <h1 class="text-center">Receba as novidades no seu e-mail!</h1>
+    <p class="lead">Após cadastro e confirmação do e-mail, enviaremos semanalmente resumos e também sempre que houver novidades por aqui para que você mantenha-se atualizado!</p>
+    <hr class="my-4">
+
+    <div class="input-group mb-0 mx-auto" style="max-width: 50rem;">
+      <input type="text" class="form-control rounded-0" placeholder="Digite seu e-mail" id="email">
+      <div class="input-group-prepend">
+        <button class="btn btn-primary" type="button" id="btn-newsletter">Quero receber novidades</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="return" class="text-center my-5 py-5" style="font-size: 30px;"></div>
+  <div id="gif" style="display:none;" class="text-center">
+    <div class="spinner-border text-center" style="width: 8rem; height: 8rem;" role="status">
+      <span class="sr-only text-center">Enviando a solicitação ...</span>
+    </div>
+  </div>
+
+</div>
+
+<br>
+

@@ -30,6 +30,8 @@ _skell(){
     echo "date: ${_DATE} ${_TIME}"
     echo "image: '/assets/img/'"
     echo "description:"
+    echo "icon: 'ion:terminal-sharp'"
+    echo "iconname: 'Terminal Root'"
     echo "tags:"
     echo "---"
     echo
@@ -38,13 +40,23 @@ _skell(){
     echo 
 }
 
+#<a class="btn btn-primary btn-lg btn-block" id="btn-read-more" onclick="showPost()"><i class="fa-solid fa-chevron-down"></i> LER POSTAGEM COMPLETA</a>
+#<div id="read-more" style="display: none;">
+#<script>
+#function showPost(){
+#  document.getElementById("read-more").style.display = "block";
+#  document.getElementById("btn-read-more").style.display = "none";
+#}
+#</script>
+
+
 _initpost(){
 
     _PADRAO=$(date +%Y-%m-%d)
     _URL=$(echo $1 | sed 's/++/pp/g;s/\//-/g' | sed 's/+/-/g' | tr A-Z a-z | tr -d '!@#$%&*()_<>}{~?^/:“”\"' | tr ' ' '-' | sed 's/--//g' |
           sed 'y/áÁàÀãÃâÂéÉêÊíÍóÓõÕôÔúÚüÜçÇ/aAaAaAaAeEeEiIoOoOoOuUuUcC/' | tr -d ',.;:' | sed 's/-$//g')
-    #if [[ ! $(ls "_posts/" | egrep "\\${_URL}") ]] ; then # slashs if start with -
-    if [[ ! $(ls "_posts/" | grep -E "${_URL}") ]] ; then
+    #if [[ ! $(ls "_posts/" | /bin/grep -E "\\${_URL}") ]] ; then # slashs if start with -
+    if [[ ! $(ls "_posts/" | /bin/grep -E "${_URL}") ]] ; then
       _skell "$1" > "_posts/$_PADRAO-$_URL.md"    
       echo -e "\e[36;1m➜ File created successfully!\n\e[37;1m_posts/$_PADRAO-$_URL.md\e[m"
     else

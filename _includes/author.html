@@ -1,0 +1,23 @@
+  <div class="media author container text-center mt-5">
+    <div class="media-body">
+      {% if page.image_author %}
+      <img src="{{ page.image_author | escape }}" alt="{{ page.author | escape }}" class="img-fluid rounded-circle">
+      <h3>{{ page.author | escape }}</h3>
+      <address>
+        <h6 class="oblique">{{ page.jobauthor | escape }}</h6>
+      </address>
+      <h5>
+        <a href="{{ page.url_author | escape }}"><i class="fab fa-github"></i> {{ page.url_author | escape }}</a>
+      </h5>
+      {% else %}
+      <img src="/assets/img/about/author.jpg" alt="Marcos Oliveira" class="img-fluid rounded-circle">
+      <h3>Marcos Oliveira</h3>
+      <address>
+        <h6 class="oblique">Software developer</h6>
+      </address>
+      <h5>
+        <a href="https://github.com/terroo"><i class="fab fa-github"></i> https://github.com/terroo</a>
+      </h5>
+      {% endif %}
+    </div>
+  </div><!-- AUTHOR -->

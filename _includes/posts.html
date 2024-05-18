@@ -1,0 +1,33 @@
+<div class="container my-5 py-5 posts">
+  <h1 class="text-center">Tutorials, articles and tips in general</h1>
+
+  <div class="card-deck blog">
+
+    {% for post in site.posts limit:12 %}
+    <div class="card bg-dark mb-3" style="min-width: 18rem;">
+      {% if post.icon %}
+      <!--<div class="card-header"><span class="iconify" data-icon="{{ post.icon | escape }}" data-inline="false" {{ post.color }}></span> {{ post.iconname }}</div>-->
+        <div class="card-header">◉ {{ post.iconname }}</div>
+      {% else %}
+      <!--<div class="card-header"><span class="iconify" data-icon="flat-color-icons:linux" data-inline="false"></span> linux</div>-->
+      <div class="card-header">◉ <span style="font-size: 11px">{{ post.title }}</span> </div>
+      {% endif %}
+      <div class="card-body">
+        <h5 class="card-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
+        <hr>
+        <p class="card-text"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.description }}</a></p>
+      </div>
+      <div class="card-footer">
+        <!--<small class="text-muted"><span class="iconify" data-icon="flat-color-icons:calendar" data-inline="false"></span> {{ post.date | date_to_string }}</small>-->
+        <small class="text-muted">📅 {{ post.date | date_to_string }}</small>
+      </div>
+    </div>
+    {% endfor %}
+
+
+    <hr>
+    <a href="{{site.baseurl}}/blog" class="btn btn-lg btn-block mt-4 btn-custom shadow">See all publications</a>
+
+  </div>
+
+</div><!-- CONTAINER POSTS  <i class="far fa-calendar-alt"></i> -->

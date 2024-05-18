@@ -1,0 +1,76 @@
+@import url("main.css");
+
+body {
+  background-color: #f8f9fa;
+  font-family:Whitney,sans-serif;
+  color: #222428;  
+  background-image: url("/assets/img/bg/bg_dotted_ubuntu.png");
+  /*background-color: #fcfdff;
+  background-image: url("/assets/img/bg/egg-shell.png");
+   This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+}
+
+.navbar-brand{
+  font-family: Dosis;
+  font-weight: bold;
+  color: #000;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.navbar-brand:hover {color: #000;}
+
+a.nav-link, .menu-bar, .fa-adjust {
+  color: #222428;
+}
+a.nav-link:hover {
+  color: #abb2ff;
+}
+
+
+.card-title a {color: #222428; font-size: 30px;}
+.card-text a {color: #222428;}
+
+.intro-title {font-weight: bold; color:#222428;}
+
+.btn-custom {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-custom:hover {
+  background-color: #1b8e36;
+}
+
+.mySearch {cursor: url(/assets/img/search-b.svg), auto;}
+
+.artigo {padding-top: 20px !important; margin-bottom: 20px; padding-bottom: 20px;}
+.artigo p {color: #222428;}
+.artigo a {color: #394cc3;}
+.artigo .social a:hover {border: none; text-decoration: none;}
+.artigo div.relateds:hover img {border-color: : #f1f1f1; padding: 0;}
+.artigo a.relateds {color: #222428; font-size: 18px;}
+.artigo img {background: #fff;}
+
+.pagina ul li {font-size: 24px; background-color: #fff; color: #222428;}
+.pagina ol li {font-size: 24px; background-color: #fff; color: #222428;}
+.pagina p {color: #222428;}
+.pagina a {color: #222428;}
+
+.blog-page .card  {background: #fff;}
+
+.pcursos .card h4 a {color: #fff; }
+.pcursos .card a.btn {color: #fff; }
+.pcursos .card a.btn:hover {background: transparent;}
+.pcursos .card p {color: #fff; }
+
+.author h5 a {color: #222428;}
+.newsletter p {color: #fff;}
+.newsletter a.crossover {color: #394cc3;}
+.newsletter #return {color: #000;}
+
+.artigo table, .artigo td, .artigo tr {color: #222428;}
+.pagina h2 {color: #000;}
+.pagina ul li span {color: #000;}
+.color-gray-atom { color: #2D3037; }

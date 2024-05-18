@@ -1,21 +1,17 @@
-<!--<button class="btn btn-dark">#cpp</button>
-<button class="btn btn-dark">#lua</button>-->
-
 <hr style="border-bottom: 1px solid #abb2bf;">
 
 <p class="mb-0">
-{% assign tags_list = page.tags %}
-{% if tags_list.first[0] == null %}
-{% for tag in tags_list %}
-<a href="{{ base.url }}/tags/#{{ tag | slugify }}" class="btn btn-dark text-white rounded-0 mb-1">{{ tag }}</a>
-{% endfor %}
-{% else %}
-{% for tag in tags_list %}
-<a href="{{ base.url }}/tags/#{{ tag | slugify }}" class="btn btn-dark text-white rounded-0 mb-1">{{ tag[0] }}</a>
-{% endfor %}
-{% endif %}
-{% assign tags_list = nil %}
+  {% assign tags_list = page.tags %}
+    {% if tags_list.first[0] == null %}
+      {% for tag in tags_list %}
+        <a href="{{ base.url }}/tags/#{{ tag | slugify }}" class="btn btn-dark text-white rounded-0 mb-1">{{ tag }}</a>
+      {% endfor %}
+    {% else %}
+          {% for tag in tags_list %}
+            <a href="{{ base.url }}/tags/#{{ tag | slugify }}" class="btn btn-dark text-white rounded-0 mb-1">{{ tag[0] }}</a>
+          {% endfor %}
+    {% endif %}
+  {% assign tags_list = nil %}
 </p>
 
 <hr style="border-bottom: 1px solid #abb2bf;">
-

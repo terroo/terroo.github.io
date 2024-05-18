@@ -1,0 +1,73 @@
+@import url("main.css");
+
+body {
+  color: #abb2bf;
+  background-image: url('/assets/img/site/bg.png');
+  background-attachment: fixed;
+  background-color: #222428;
+  font-family:Whitney,sans-serif;
+}
+
+.navbar-brand{
+  font-family: Dosis;
+  font-weight: bold;
+  color: #abb2bf;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.navbar-brand:hover {color: #fff;}
+
+a.nav-link, .menu-bar, .fa-adjust {
+  color: #abb2bf;
+}
+a.nav-link:hover {
+  color: #abb2ff;
+}
+
+.intro-title {font-weight: bold; color:#fff;}
+
+.btn-custom {
+  background-color: #7289da;
+  color: #fff;
+}
+
+.btn-custom:hover {
+  background-color: #637acf;
+}
+
+
+.card-title a {color: #abb2bf; font-size: 30px;}
+.card-text a {color: #abb2bf;}
+.footer > .container > p > a {color: #fff;}
+
+.artigo p {color: #fff;}
+.artigo a {color: #1a9fd7;}
+.artigo .social a:hover {border: none; text-decoration: none;}
+.artigo div.relateds:hover img {border-color: : #abb2bf; padding: 0;}
+.artigo a.relateds {color: #fff; font-size: 18px;}
+.artigo img {background: transparent;}
+
+.pagina ul li {font-size: 24px; background-color: #222428; color: #abb2bf;}
+.pagina ol li {font-size: 24px; background-color: #222428; color: #abb2bf;}
+.pagina p {color: #fff;}
+.pagina a {color: #1a9fd7;}
+.pagina table tr td, .pagina th {color: #fff;}
+
+.blog-page .card {border: 2px solid #fff; }
+.blog-page h3 a { color: #fff; }
+.blog-page p a { color: #abb2bf;}
+.blog-page a.btn-custom {color: #fff;}
+
+a.btn-outline-light:hover {color: #fff; text-shadow: 1px 1px 1px #000;}
+
+.pcursos .card h4 a {color: #fff; }
+.pcursos .card a.btn {color: #fff; }
+.pcursos .card a.btn:hover {background: transparent;}
+
+.posts .card-title a {color: #fff;}
+.newsletter #return {color: #fff;}
+
+.artigo table, .artigo td, .artigo tr {color: #fff;}
+.pagina h2 {color: #fff;}
+.color-gray-atom { color: #A9B1BD; }

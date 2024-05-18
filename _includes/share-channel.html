@@ -1,0 +1,35 @@
+  <div class="media author container text-center mt-5">
+    <div class="media-body">
+
+      <h3>Share</h3>
+      <h1>
+        <a aria-label="Share on twitter" href="https://twitter.com/intent/tweet?text={{ page.title }} %20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.twitter_username }}&hashtags={% for tag in page.tags %}{{tag}},{% endfor %}" class="twitter" style="color:#53A7E7;" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Compartilhe no Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a aria-label="Share on Reddit" href="https://www.reddit.com/submit?url={{ site.url }}{{ page.url }}&feature=share&title={{ page.title }}" class="reddit" style="color:#D09966;" onclick="window.open(this.href, 'reddit-share','width=580,height=296');return false;" title="Compartilhe no Reddit">
+              <i class="fab fa-reddit"></i>
+            </a>
+
+            <a aria-label="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}"
+onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Compartilhe no Facebook" class="facebook" style="color:#4267B2;">
+              <i class="fab fa-facebook"></i>
+            </a>
+            
+            <a aria-label="Share on LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&source=LinkedIn" class="linkedin" style="color:#729fcf;" onclick="window.open(this.href, 'linkedin-share','width=580,height=296');return false;" title="Compartilhe no LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+      </h1>
+
+      <hr class="dotted">
+
+      <h3>YouTube channel</h3>
+      <p class="text-center py-2">
+        <a href="https://www.youtube.com/TerminalRootTV?sub_confirmation=1" class="btn btn-danger btn-lg btn-outline-light py-3 px-5" name="button">Subscribe</a>
+      </p>
+     
+      <hr>
+      
+      
+    </div>
+  </div><!-- AUTHOR -->
