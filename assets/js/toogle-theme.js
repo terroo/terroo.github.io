@@ -3,8 +3,8 @@ $(document).ready(function(){
   $(".artigo table").addClass("table table-bordered");
   $(".pagina table").addClass("table table-bordered");
 
-  $("a[href^='http']:not([href^='https://terminalroot.com.br'])").attr("target","_blank");
-	$("a[href^='http']:not([href^='https://terminalroot.com.br'])").attr("rel","noopener noreferrer");
+  $("a[href^='http']:not([href^='https://terminalroot.com'])").attr("target","_blank");
+	$("a[href^='http']:not([href^='https://terminalroot.com'])").attr("rel","noopener noreferrer");
 
   $("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
