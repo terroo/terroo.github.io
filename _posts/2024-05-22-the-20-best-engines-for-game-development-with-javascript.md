@@ -255,9 +255,9 @@ I've already made some games with JavaScript, one of them was [Gentoo Jump Game]
 Play it now:
 > Use **Mouse Click** to: **Start** and **Jump**(Once or several times)!
 
-### If your browser didn't scale correctly, [PLAY HERE](https://gnu.terminalroot.com/play/index.html).
+### If your browser didn't scale correctly, [PLAY HERE](https://gnu.terminalroot.com/play/).
 
-<iframe src="https://gnu.terminalroot.com/play/" title="Gentoo Jump Game" style="border:none;height:600px;width:600px;"></iframe>
+<iframe src="https://gnu.terminalroot.com/play/index.html" title="Gentoo Jump Game" style="border:none;height:630px;width:600px;"></iframe>
 
 
 <!-- RECTANGLE LARGE -->
