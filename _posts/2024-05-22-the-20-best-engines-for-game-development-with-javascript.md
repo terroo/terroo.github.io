@@ -257,7 +257,7 @@ Play it now:
 
 ### If your browser didn't scale correctly, [PLAY HERE](https://gnu.terminalroot.com/play/index.html).
 
-<iframe src="https://gnu.terminalroot.com/play/" title="Gentoo Jump Game" style="border:none;height:650px;width:650px;"></iframe>
+<iframe src="https://gnu.terminalroot.com/play/" title="Gentoo Jump Game" style="border:none;height:600px;width:600px;"></iframe>
 
 
 <!-- RECTANGLE LARGE -->
