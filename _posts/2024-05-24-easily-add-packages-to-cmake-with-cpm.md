@@ -84,7 +84,7 @@ cmake_minimum_required(VERSION 3.10)
 project(MyExample)
 add_executable(myexample main.cc)
 
-filet(
+file(
    DOWNLOAD
    https://github.com/cpm-cmake/CPM.cmake/releases/download/v0.38.3/CPM.cmake
    ${CMAKE_CURRENT_BINARY_DIR}/cmake/CPM.cmake
