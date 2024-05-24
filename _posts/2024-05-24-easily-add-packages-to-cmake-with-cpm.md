@@ -63,7 +63,7 @@ make: *** [Makefile:91: all] Error 2
 
 Now let's add the CPM to our `CMakeLists.txt`, just these two statements:
 {% highlight make %}
-filet(
+file(
    DOWNLOAD
    https://github.com/cpm-cmake/CPM.cmake/releases/download/v0.38.3/CPM.cmake
    ${CMAKE_CURRENT_BINARY_DIR}/cmake/CPM.cmake
