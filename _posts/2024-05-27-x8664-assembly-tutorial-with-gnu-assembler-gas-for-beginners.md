@@ -13,17 +13,17 @@ tags:
 
 ---
 
-**GNU Assembler**, commonly known as **gas** or **as**, is the assembler developed by the [GNU Project](https://terminalroot.com.br/tags#gnu). 
+**GNU Assembler**, commonly known as **gas** or **as**, is the assembler developed by the [GNU Project](https://terminalroot.com/tags#gnu). 
 
-It is the standard *back-end* of [GCC](https://terminalroot.com.br/tags#gcc). 
+It is the standard *back-end* of [GCC](https://terminalroot.com/tags#gcc). 
 
-It is used to assemble the [GNU operating system](https://en.wikipedia.org/wiki/GNU) and the [Linux] kernel(https://terminalroot.com.br/tags#gnulinux), and various other software. 
+It is used to assemble the [GNU operating system](https://en.wikipedia.org/wiki/GNU) and the [Linux](https://terminalroot.com/tags#gnulinux) kernel, and various other software. 
 
 It is part of the [GNU Binutils](https://www.gnu.org/software/binutils/) package.
 
 GAS is cross-platform and can be run and mounted on many different computer architectures.
 
-It is [free software](https://terminalroot.com.br/tags#freesoftware) released under the [GNU General Public License v3](https://www.gnu.org/licenses/gpl-3.0.html) .
+It is [free software](https://terminalroot.com/tags#freesoftware) released under the [GNU General Public License v3](https://www.gnu.org/licenses/gpl-3.0.html) .
 
 The default extension is `.s` (ideally for identification), but you can use any extension as long as there is only GAS code within the file, examples: `.gas`, `.as` and `.S`.
 
@@ -113,14 +113,14 @@ Registers have the same concept and basic functionality in both NASM and GNU Ass
 ---
 
 ## Installation
-To install the GNU Assembler (GAS) you must install the [binutils] package (https://www.gnu.org/software/binutils/), which includes the as assembler (part of the GNU Binutils toolset). 
+To install the GNU Assembler (GAS) you must install the [binutils](https://www.gnu.org/software/binutils/) package , which includes the as assembler (part of the GNU Binutils toolset). 
 
-You can download it directly from the page: <https://www.gnu.org/software/binutils/> or use your package manager, for example in [Ubuntu](https://terminalroot.com.br/tags #ubuntu):
+You can download it directly from the page: <https://www.gnu.org/software/binutils/> or use your package manager, for example in [Ubuntu](https://terminalroot.com/tags#ubuntu):
 ```bash
 sudo apt install binutils
 ```
 
-On Windows you must use [MinGW](https://terminalroot.com.br/2022/12/como-instalar-gcc-gpp-mingw-no-windows.html) and do [download here](https:/ /sourceforge.net/projects/mingw/files/MinGW/Base/binutils/binutils-2.28/) from binutils.
+On Windows you must use [MinGW](https://terminalroot.com/how-to-install-gcc-gpp-mingw-on-windows/) and do [download here](https://sourceforge.net/projects/mingw/files/MinGW/Base/binutils/binutils-2.28/) from binutils.
 
 ---
 
@@ -218,7 +218,7 @@ ld -s -o hello hello.o
 ./hello
 ```
 
-**Note**: In addition to the symbol `%`(from GAS) *in front* of the registers and the comments being `#`(GAS) and `;`(NASM), GAS can also comment style [C]( https://terminalroot.com.br/c): `/* Comment for multiple lines */`, in addition to other forms depending on the architecture, examples: 
+**Note**: In addition to the symbol `%`(from GAS) *in front* of the registers and the comments being `#`(GAS) and `;`(NASM), GAS can also comment style [C](https://terminalroot.com/tags#clanguage): `/* Comment for multiple lines */`, in addition to other forms depending on the architecture, examples: 
 + `;` — AMD 29k family, ARC, H8/300 family, HPPA, PDP-11, picoJava, Motorola and M32C
 + `@` — ARM 32-bit
 + `//` — AArch64
