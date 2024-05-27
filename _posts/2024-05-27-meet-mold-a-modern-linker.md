@@ -16,7 +16,7 @@ tags:
 
 **mold** is a faster replacement for existing Unix linkers. 
 
-It is several times faster than the [LLVM lld](https://terminalroot.com.br/tags#llvm) and [GNU ld](https://terminalroot.com.br/tags#gnu) linker.  
+It is several times faster than the [LLVM lld](https://terminalroot.com/tags#llvm) and [GNU ld](https://terminalroot.com/tags#gnu) linker.  
 
 `mold` aims to increase developer productivity by minimizing build time, especially in fast debug, edit and rebuild cycles.
 
@@ -37,7 +37,7 @@ Here is a side-by-side comparison of CPU usage per core for lld (left) and mold 
 ![Htop mold](/assets/img/cpp/htop.gif) 
 
 ## Why is link speed important?
-If you are using a compiled language like [C](https://terminalroot.com.br/tags#linguagemc), [C++](https://terminalroot.com.br/tags#cpp) or [Rust]( https://terminalroot.com.br/tags#rust), a compilation consists of two phases. 
+If you are using a compiled language like [C](https://terminalroot.com/tags#linguagemc), [C++](https://terminalroot.com/tags#cpp) or [Rust]( https://terminalroot.com/tags#rust), a compilation consists of two phases. 
 
 In the first phase, a compiler compiles the source files into object files (`.o` files). 
 
@@ -73,7 +73,7 @@ clang++ -fuse-ld=mold main.cpp
 g++ -fuse-ld=mold main.cpp
 {% endhighlight %}
 
-If you are going to compile [Assembly](https://terminalroot.com.br/tags#assembly) files, example `hello.s` (GNU Assembler - GAS):
+If you are going to compile [Assembly](https://terminalroot.com/tags#assembly) files, example `hello.s` (GNU Assembler - GAS):
 
 {% highlight nasm %}
 .section.data
