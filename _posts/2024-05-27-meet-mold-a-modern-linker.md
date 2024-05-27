@@ -2,7 +2,7 @@
 layout: post
 title: "Meet Mold: A Modern Linker"
 date: 2024-05-27 12:56:35
-image: '/assets/img/mold.jpg'
+image: '/assets/img/cpp/mold.jpg'
 description: "🦠 A faster replacement for linkers like: ld and lld."
 tags:
 - cpp
@@ -22,7 +22,7 @@ It is several times faster than the [LLVM lld](https://terminalroot.com.br/tags#
 
 Here is a performance comparison of *GNU ld*, *GNU gold*, *LLVM lld*, and **mold** when linking final *debuginfo*-enabled executables for large programs on a simulated 16-core, 32-thread machine.
 
-![Chart](/assets/img/chart.svg) 
+![Chart](/assets/img/cpp/chart.svg) 
 
 | Program (linker output size) | GNU ld | GNU gold | LLVM lld | mold
 |--------------------------------------------|---- ----|----------|----------|------
@@ -34,7 +34,7 @@ Here is a performance comparison of *GNU ld*, *GNU gold*, *LLVM lld*, and **mold
 
 Here is a side-by-side comparison of CPU usage per core for lld (left) and mold (right), linking the same program, a Chromium executable.
 
-![Htop mold](/assets/img/htop.gif) 
+![Htop mold](/assets/img/cpp/htop.gif) 
 
 ## Why is link speed important?
 If you are using a compiled language like [C](https://terminalroot.com.br/tags#linguagemc), [C++](https://terminalroot.com.br/tags#cpp) or [Rust]( https://terminalroot.com.br/tags#rust), a compilation consists of two phases. 
