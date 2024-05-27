@@ -69,5 +69,6 @@ a.btn-outline-light:hover {color: #fff; text-shadow: 1px 1px 1px #000;}
 .newsletter #return {color: #fff;}
 
 .artigo table, .artigo td, .artigo tr {color: #fff;}
-.pagina h2 {color: #fff;}
+h2, h3, h4 {color: #fff;}
+
 .color-gray-atom { color: #A9B1BD; }
