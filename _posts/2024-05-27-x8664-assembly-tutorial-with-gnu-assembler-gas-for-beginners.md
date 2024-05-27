@@ -194,6 +194,7 @@ Recompile and run!
 
 ## Comparison of GAS with NASM
 > Same code, but with NASM:
+
 ```nasm
 section.data
      msg db 'Hello, World!', 0
@@ -211,6 +212,7 @@ _start:
      syscall; make the syscall
 ```
 > To compile and run NASM:
+
 ```bash
 # First install NASM, e.g.: sudo apt install nasm
 nasm -f elf64 hello.asm
@@ -257,7 +259,7 @@ In addition to **GNU Assembler (GAS)** and **NASM (Netwide Assembler)**, there a
 + Developed by Randall Hyde, known for his book "The Art of Assembly Language".
 + Provides a high-level syntax that makes the assembly easier to learn and use.
 
-####SPIM:
+#### SPIM:
 + An assembler and simulator for the MIPS architecture.
 + Often used in university courses to teach MIPS assembly.
 
