@@ -74,7 +74,8 @@ Registers in assembly `x86_64` are used to store temporary data and perform arit
 + **RAX**: Save result of a multiplication operation.
 + **RSI and RDI**: Used in memory copy operations (movsb, movsw, movsd, movsq).
 + **RCX**: Used as a loop counter.
-+ **These are the main registers in NASM for x86_64. They are essential for manipulating data, controlling flow, and executing operations in assembly programs.
+
+These are the main registers in GAS/NASM for `x86_64`. They are essential for manipulating data, controlling flow, and executing operations in assembly programs.
 
 ---
 
@@ -87,7 +88,7 @@ Registers have the same concept and basic functionality in both NASM and GNU Ass
 
 ### General Purpose Registers (32 bits)
 + **NASM**: `eax`, `ebx`, `ecx`, `edx`, `esi`, `edi`, `ebp`, `esp`, `r8d-r15d`
-+ **GAS**: `%eax`, `%ebx`, `%ecx`, `%edx`, `%esi`, `%edi`, `%ebp`, `%esp`, %r8d- %r15d
++ **GAS**: `%eax`, `%ebx`, `%ecx`, `%edx`, `%esi`, `%edi`, `%ebp`, `%esp`, `%r8d- %r15d`
 
 ### General Purpose Registers (16 bits)
 + **NASM**: `ax`, `bx`, `cx`, `dx`, `si`, `di`, `bp`, `sp`, `r8w-r15w`
