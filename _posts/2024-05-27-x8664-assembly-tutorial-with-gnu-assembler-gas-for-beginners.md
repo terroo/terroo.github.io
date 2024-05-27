@@ -104,7 +104,7 @@ Registers have the same concept and basic functionality in both NASM and GNU Ass
 
 ### Special Purpose Recorders
 + **NASM**: `rip`, `rflags`
-+ **GAS**: `%rip`, %rflags
++ **GAS**: `%rip`, `%rflags`
 
 ### Vector/SIMD Registers
 + **NASM**: `xmm0-xmm15`, `ymm0-ymm15`, `zmm0-zmm31`
