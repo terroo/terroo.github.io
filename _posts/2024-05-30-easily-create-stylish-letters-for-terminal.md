@@ -14,7 +14,7 @@ tags:
 
 ---
 
-**tdfgo**, initials for "**T**he**D**raw **F**ont renderer in **Go**", that is, it is a: Stylish font renderer in [terminal] (https://terminalroot.com/tags#terminal) made with the programming language: [Go](https://terminalroot.com/tags#go)
+**tdfgo**, initials for "**T**he**D**raw **F**ont renderer in **Go**", that is, it is a: Stylish font renderer in [terminal](https://terminalroot.com/tags#terminal) made with the programming language: [Go](https://terminalroot.com/tags#go)
 
 This utility was inspired by the CLI utility [tdfiglet](https://github.com/tat3r/tdfiglet).
 
@@ -58,7 +58,7 @@ sudo install -v tdfgo /usr/local/bin/
 You can now remove the cloned repository and also remove the `go/` folder that was automatically created in your home directory (with `sudo` or `root`):
 
 {% highlight bash %}
-CD ..
+cd ..
 rm -rf tdfgo/
 sudo rm -rf go/
 {% endhighlight %}
