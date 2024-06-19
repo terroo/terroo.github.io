@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Create Windows immediately in C Language with MicroUI"
+title: "Create window immediate-mode in C Language with MicroUI"
 date: 2024-06-19 12:43:49
 image: '/assets/img/c/microui.jpg'
 description: "🪟 A tiny immediate-mode UI library"
