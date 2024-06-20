@@ -48,7 +48,7 @@ But, the chance of this giving `s%1t` is great! At the end of using these variab
 
 And it is to replace `void*` that `std::any` was created in Modern C++ which, of course, is totally **Safe**!
 
-In other words, it is a *wrapper* that encapsulates your variable to a `shared_ptr`([pointers intelligent](https://terminalroot.com.br/2022/08/entenda-ponteiros-inteligentes-em-cpp-smart -pointers.html)) of life! Yes, and there is even a `std::make_any`!!!
+In other words, it is a *wrapper* that encapsulates your variable to a `shared_ptr`([smart pointers](https://en.cppreference.com/book/intro/smart_pointers)) of life! Yes, and there is even a `std::make_any`!!!
 
 
 <!-- SQUARE - GAMES ROOT -->
