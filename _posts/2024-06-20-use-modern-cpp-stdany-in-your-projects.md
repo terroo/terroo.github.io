@@ -283,7 +283,7 @@ std::string add_info(Message msg, const std::string& out, std::any object, int n
 }
 {% endhighlight %}
 
-What a function!!! :O , but this way your code will be safe! Compile: `g++ -Wall -Wextra -pedantic -g -fsanitize=address main.cpp` and after running `./a.out`, the output will be:
+Compile: `g++ -Wall -Wextra -pedantic -g -fsanitize=address main.cpp` and after running `./a.out`, the output will be:
 
 {% highlight bash %}
 SUCCESS of type string: 'Start' 3
