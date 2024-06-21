@@ -110,7 +110,7 @@ Just use the `reset` union structure or even the initialization operator:
 
 {% highlight cpp %}
 some_data.reset();
-#
+// Or
 some_data = {};
 {% endhighlight %}
 
@@ -146,10 +146,159 @@ To check whether everything really complies, never forget to use the flags for y
 
 ---
 
+## Real life example
+Imagine you have code that needs to concatenate several types and return a string. However, one of the types can be: int, double or std::string.
+
+If you use `std::any_cast<T>` in the return like this:
+> Example:
+
+{% highlight cpp %}
+#include <iostream>
+#include <any>
+#include <sstream>
+
+enum class Message {
+    SUCCESS,
+    WARNING,
+    ERROR,
+    UNKNOW
+};
+
+std::string add_info(Message, const std::string&, std::any, int);
+
+int main(){
+    std::any obj;
+
+    obj = std::string("Start");
+    std::cout << add_info(Message::SUCCESS, " of type string: ", obj, 3) << '\n';
+
+    obj = 6;
+    std::cout << add_info(Message::WARNING, " of type int: ", obj, 9) << '\n';
+
+    obj = 3.14;
+    std::cout << add_info(Message::ERROR, " of type double: ", obj, 0) << '\n';
+
+    obj.reset();
+    std::cout << add_info(Message::UNKNOW, " no type: ", obj, 9) << '\n';
+
+    obj = "CONST_CHAR";
+    std::cout << add_info(Message::SUCCESS, " no type: ", nullptr, 9) << '\n';
+
+    return 0;
+}
+
+std::string add_info(Message msg, const std::string& out, std::any object, int num){
+    return std::any_cast<std::string>(msg) + out + "'" + std::any_cast<std::string>(object) + "' " + std::to_string(num);
+}
+{% endhighlight %}
+> Compile: `g++ -Wall -Wextra -pedantic -g -fsanitize=address main.cpp`.
+
+There will be a `std::bad_any_cast` in the output:
+{% highlight bash %}
+terminate called after throwing an instance of 'std::bad_any_cast'
+ what(): bad any_cast
+Aborted
+{% endhighlight %}
+
+Both conversions (from `msg` and `object`) are incorrect:
+{% highlight cpp %}
+std::any_cast<std::string>(msg) + ...
+// How much
+std::any_cast<std::string>(object)
+{% endhighlight %}
+
+You need to make a `switch case` for the enumerator and in the case of the `object` parameter: You will need to use `has_value()`, store the `type()` in `std::type_info&` and use a `std:: stringstream` to assign return types with union to: `str()`, like this:
+
+{% highlight cpp %}
+#include <iostream>
+#include <any>
+#include <sstream>
+
+enum class Message {
+    SUCCESS,
+    WARNING,
+    ERROR,
+    UNKNOW
+};
+
+std::string add_info(Message, const std::string&, std::any, int);
+
+int main(){
+    std::any obj;
+
+    obj = std::string("Start");
+    std::cout << add_info(Message::SUCCESS, " of type string: ", obj, 3) << '\n';
+
+    obj = 6;
+    std::cout << add_info(Message::WARNING, " of type int: ", obj, 9) << '\n';
+
+    obj = 3.14;
+    std::cout << add_info(Message::ERROR, " of type double: ", obj, 0) << '\n';
+
+    obj.reset();
+    std::cout << add_info(Message::UNKNOW, " no type: ", obj, 9) << '\n';
+
+    obj = "CONST_CHAR";
+    std::cout << add_info(Message::SUCCESS, " no type: ", nullptr, 9) << '\n';
+
+    return 0;
+}
+
+std::string add_info(Message msg, const std::string& out, std::any object, int num){
+    std::string local_msg {"NOTHING"};
+    std::stringstream ss;
+
+    switch (msg){
+        case Message::SUCCESS:
+            local_msg = "SUCCESS";
+            break;
+        case Message::WARNING:
+            local_msg = "WARNING";
+            break;
+        case Message::ERROR:
+            local_msg = "ERROR";
+            break;
+        case Message::UNKNOW:
+            local_msg = "UNKNOW";
+            break;
+    }
+
+
+    if (object.has_value()) {
+        const std::type_info& type = object.type();
+        if (type == typeid(std::string)) {
+            ss << std::any_cast<std::string>(object);
+        } else if (type == typeid(int)) {
+            ss << std::any_cast<int>(object);
+        } else if (type == typeid(double)) {
+            ss << std::any_cast<double>(object);
+        } else {
+            ss << "null";
+        }
+    } else {
+        ss << "[no object]";
+    }
+
+    return local_msg + out + "'" + ss.str() + "' " + std::to_string(num);
+}
+{% endhighlight %}
+
+What a function!!! :O , but this way your code will be safe! Compile: `g++ -Wall -Wextra -pedantic -g -fsanitize=address main.cpp` and after running `./a.out`, the output will be:
+
+{% highlight bash %}
+SUCCESS of type string: 'Start' 3
+WARNING of type int: '6' 9
+ERROR of type double: '3.14' 0
+UNKNOW without type: '[no object]' 9
+SUCCESS without type: 'null' 9
+{% endhighlight %}
+
+It seems laborious, but this is the correct way to end the lifespan of any type!
+
+---
+
 In addition to being completely **SAFE**, `std::any` is very practical and a great help!
 
-There was a company project that I was developing, which passed a function argument and could be any type, but the function's return was `std::string` concatenated to the name of the object received.
-
-And someone had created a great `switch case` to convert to `std::string`(*bizarre!*), I substituted it to receive the parameter for `std::any` and converted it with `std::any_cast< std::string>` and I solved it in a way: Modern, Safe and Like a Boss! Exactly what `std::any` is!!! 😃
-
 For more information visit: <https://en.cppreference.com/w/cpp/utility/any>
+
+
