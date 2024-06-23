@@ -101,4 +101,13 @@
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9Y7M3E57WX"></script>
 
+  <!-- REMOVE fbclid -->
+  <script>
+    const url = window.location.href
+    if(url.match(/fbclid/)){
+      const nova_url = url.replace( new RegExp("\\\?fbclid.*","gm"),"")
+      history.pushState({}, null, nova_url);
+    }
+  </script>
+
 </head>
