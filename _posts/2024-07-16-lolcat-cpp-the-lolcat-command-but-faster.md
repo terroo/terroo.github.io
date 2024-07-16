@@ -40,7 +40,7 @@ To install it, just use [git](https://terminalroot.com.br/tags#git) to clone and
 {% highlight bash %}
 git clone https://github.com/n-ham/lolcat-cc
 cd lolcat-cc
-makeup
+make
 {% endhighlight %}
 
 After compiling, install it on your system, for example:
