@@ -38,7 +38,7 @@ data-ad-slot="5351066970"></ins>
 To install it, just use [git](https://terminalroot.com.br/tags#git) to clone and a compiler: [gcc](https://terminalroot.com.br/tags#gcc) or [clang](https://terminalroot.com.br/tags#clang) to compile, in addition to [GNU Make](https://terminalroot.com.br/tags#make):
 
 {% highlight bash %}
-https://github.com/n-ham/lolcat-cc
+git clone https://github.com/n-ham/lolcat-cc
 cd lolcat-cc
 makeup
 {% endhighlight %}
