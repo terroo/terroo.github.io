@@ -38,7 +38,7 @@ After all dependencies are satisfied, now let's clone, compile and install the P
 Open [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?hl=en-US&gl=US) or [PowerShell](https://terminalroot.com/tags#powershell) or even `CMD` and follow the steps.
 > Tip: The ideal thing to do after opening one of these applications is to enter the *Desktop*, as we will be sure there will be no permission problems:
 {% highlight bash %}
-cdDesktop
+cd Desktop
 {% endhighlight %}
 
 #### First clone the official repository on GitHub:
