@@ -55,12 +55,12 @@ enum Color {
 };
 {% endhighlight %}
 
-1. **Enum to String Conversion**: Allows you to convert enum values to their corresponding string representations.
+### 1. **Enum to String Conversion**: Allows you to convert enum values to their corresponding string representations.
 {% highlight cpp %}
 std::string str = magic_enum::enum_name(Color::GREEN).data();
 {% endhighlight %}
 
-2. **String to Enum Conversion**: Allows you to convert strings to enum values, if the string matches an enum value name.
+### 2. **String to Enum Conversion**: Allows you to convert strings to enum values, if the string matches an enum value name.
 {% highlight cpp %}
 auto color = magic_enum::enum_cast<Color>("GREEN");
 if(color.has_value()){
@@ -82,20 +82,20 @@ data-ad-slot="5351066970"></ins>
 
 ---
 
-3. **Iteration over Enum Values**: Allows you to iterate over all values of an enum.
+### 3. **Iteration over Enum Values**: Allows you to iterate over all values of an enum.
 {% highlight cpp %}
 for(auto color : magic_enum::enum_values<Color>()){
  std::cout << magic_enum::enum_name(color) << '\n';
 }
 {% endhighlight %}
 
-4. **Get Enum Information**: Provides functionality to get the number of values of an enum, check if a value is within the valid range, etc.
+### 4. **Get Enum Information**: Provides functionality to get the number of values of an enum, check if a value is within the valid range, etc.
 {% highlight cpp %}
 constexpr std::size_t color_count = magic_enum::enum_count<Color>(); // 3
 bool is_valid = magic_enum::enum_contains<Color>(2); // true
 {% endhighlight %}
 
-5. **Enum Indexing**: Allows you to obtain the index of an enum value and vice versa.
+### 5. **Enum Indexing**: Allows you to obtain the index of an enum value and vice versa.
 {% highlight cpp %}
 auto index = magic_enum::enum_index(Color::BLUE); // two
 auto color = magic_enum::enum_value<Color>(index.value()); // Color::BLUE
