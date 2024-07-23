@@ -11,13 +11,6 @@ tags:
 
 ---
 
-# How to Install Clang on Windows with a single command
-> 
-
-![](/assets/img/)
-
----
-
 We have already [shown](https://terminalroot.com/how-to-install-binary-clang-on-any-gnu-linux-distro/) that you can install [Clang](https://terminalroot.com/tags#clang) in [GNU/Linux](https://terminalroot.com/tags#gnulinux) distros without needing your package manager, as new versions often appears with features enabled that you wouldn't want.
 
 I've seen people report, for example, that their LSP that uses `clangd` issues *warnings* for *not using headers*. Of course this can be disabled, but people like to have everything ready.
