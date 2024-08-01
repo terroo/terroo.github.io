@@ -100,7 +100,6 @@ int main() {
 ### Example 2: Using Command History
 `readline` also allows you to store and reuse previous commands. See a simple example: 
 
-
 **[C Language](https://terminalroot.com/tags#clanguage)** 
 
 {% highlight c %}
