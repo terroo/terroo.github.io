@@ -189,7 +189,7 @@ int main(){
 
 </details>
 
-<a href="https://terminalroot.com.br/downs/font.ttf.zip" class="btn btn-danger btn-lg">Click here to download the source used</a>
+<a href="/downloads/font.ttf.zip" class="btn btn-danger btn-lg" download>Click here to download the source used</a>
 
 
 <!-- RECTANGLE 2 - OnParagragraph -->
