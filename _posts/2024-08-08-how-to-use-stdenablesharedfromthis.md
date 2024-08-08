@@ -69,11 +69,19 @@ class Vector2 {
         Vector2(T xin, T yin) : x(xin), y(yin){}
 
         Vector2 operator + (const Vector2& rhs){
-            return Vector2(x + rhs.x, y + rhs.y); } Vector2 & increment(int number){ x += number;
-                y += number;
-                return *this;
-            } void print(){ std::cout << x << " and " << y << '\n';
-            } };
+            return Vector2(x + rhs.x, y + rhs.y); 
+        } 
+
+        Vector2 & increment(int number){ 
+            x += number;
+            y += number;
+            return *this;
+        } 
+
+        void print(){ 
+            std::cout << x << " and " << y << '\n';
+        }
+};
 
 int main (){ Vector2 v1(1, 2), v2(3, 4);
     Vector2 v3 = v1 + v2;
@@ -85,6 +93,7 @@ int main (){ Vector2 v1(1, 2), v2(3, 4);
     v3.print(); // 9 and 11 return 0;
 }
 {% endhighlight %}
+
 Note that the `Vector2` class has a member function: `increment` which is a reference to itself and returns a `*this`!
 
 Translating this code to use `std::enable_shared_from_this`, it would look like this:
@@ -105,9 +114,14 @@ class Vector2 : public std::enable_shared_from_this<Vector2<T>> {
 
         std::shared_ptr<Vector2> increment(int number) {
             x += number;
-            y += number; return this->shared_from_this();
-        } void print() { std::cout << x << " and " << y << '\n';
-        } };
+            y += number; 
+            return this->shared_from_this();
+        } 
+
+        void print() { 
+            std::cout << x << " and " << y << '\n';
+        } 
+};
 
 int main() { auto v1 = std::make_shared<Vector2<int>>(1, 2);
     auto v2 = std::make_shared<Vector2<int>>(3, 4);
