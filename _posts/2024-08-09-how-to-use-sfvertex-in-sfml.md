@@ -190,25 +190,25 @@ int main() {
   sf::Vertex cPlusPlus[15];
 
   // "C"
-  cPlusPlus[0] = sf::Vertex(sf::Vector2f(100.f, 200.f), sf::Color::Blue);     // Superior esquerdo
-  cPlusPlus[1] = sf::Vertex(sf::Vector2f(200.f, 200.f), sf::Color::White);    // Superior direito
-  cPlusPlus[2] = sf::Vertex(sf::Vector2f(200.f, 250.f), sf::Color::Blue);     // Inferior direito
-  cPlusPlus[3] = sf::Vertex(sf::Vector2f(150.f, 250.f), sf::Color::White);    // Meio
-  cPlusPlus[4] = sf::Vertex(sf::Vector2f(150.f, 300.f), sf::Color::Blue);     // Inferior direito
-  cPlusPlus[5] = sf::Vertex(sf::Vector2f(100.f, 300.f), sf::Color::White);    // Inferior esquerdo
-  cPlusPlus[6] = sf::Vertex(sf::Vector2f(100.f, 200.f), sf::Color::Blue);     // Fechando o C
+  cPlusPlus[0] = sf::Vertex(sf::Vector2f(100.f, 200.f), sf::Color::Blue);
+  cPlusPlus[1] = sf::Vertex(sf::Vector2f(200.f, 200.f), sf::Color::White);
+  cPlusPlus[2] = sf::Vertex(sf::Vector2f(200.f, 250.f), sf::Color::Blue);
+  cPlusPlus[3] = sf::Vertex(sf::Vector2f(150.f, 250.f), sf::Color::White);
+  cPlusPlus[4] = sf::Vertex(sf::Vector2f(150.f, 300.f), sf::Color::Blue);
+  cPlusPlus[5] = sf::Vertex(sf::Vector2f(100.f, 300.f), sf::Color::White);
+  cPlusPlus[6] = sf::Vertex(sf::Vector2f(100.f, 200.f), sf::Color::Blue);
 
   // 1º "+"
-  cPlusPlus[7] = sf::Vertex(sf::Vector2f(250.f, 225.f), sf::Color::Blue);     // Meio esquerdo
-  cPlusPlus[8] = sf::Vertex(sf::Vector2f(350.f, 225.f), sf::Color::White);    // Meio direito
-  cPlusPlus[9] = sf::Vertex(sf::Vector2f(300.f, 175.f), sf::Color::Blue);     // Superior
-  cPlusPlus[10] = sf::Vertex(sf::Vector2f(300.f, 275.f), sf::Color::White);   // Inferior
+  cPlusPlus[7] = sf::Vertex(sf::Vector2f(250.f, 225.f), sf::Color::Blue);
+  cPlusPlus[8] = sf::Vertex(sf::Vector2f(350.f, 225.f), sf::Color::White);
+  cPlusPlus[9] = sf::Vertex(sf::Vector2f(300.f, 175.f), sf::Color::Blue);
+  cPlusPlus[10] = sf::Vertex(sf::Vector2f(300.f, 275.f), sf::Color::White);
 
   // 2º "+"
-  cPlusPlus[11] = sf::Vertex(sf::Vector2f(400.f, 225.f), sf::Color::Blue);    // Meio esquerdo
-  cPlusPlus[12] = sf::Vertex(sf::Vector2f(500.f, 225.f), sf::Color::White);   // Meio direito
-  cPlusPlus[13] = sf::Vertex(sf::Vector2f(450.f, 175.f), sf::Color::Blue);    // Superior
-  cPlusPlus[14] = sf::Vertex(sf::Vector2f(450.f, 275.f), sf::Color::White);   // Inferior
+  cPlusPlus[11] = sf::Vertex(sf::Vector2f(400.f, 225.f), sf::Color::Blue);
+  cPlusPlus[12] = sf::Vertex(sf::Vector2f(500.f, 225.f), sf::Color::White);
+  cPlusPlus[13] = sf::Vertex(sf::Vector2f(450.f, 175.f), sf::Color::Blue);
+  cPlusPlus[14] = sf::Vertex(sf::Vector2f(450.f, 275.f), sf::Color::White);
 
   while (window.isOpen()) {
     sf::Event event;
