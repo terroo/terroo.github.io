@@ -28,7 +28,7 @@ _skell(){
   echo "title: \"${1}\""
   echo "date: ${_DATE} ${_TIME}"
   echo "image: '/assets/img/'"
-  echo 'description: "⚪ "'
+  echo 'description: "🚀 "'
   echo "tags:"
   echo "---"
   echo
