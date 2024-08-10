@@ -230,7 +230,21 @@ int main() {
 
 ---
 
-There is another type that is also widely used, which is `sf::VertexArray`. We will see more about it in the next article.
+There is another type that is also widely used, which is `sf::VertexArray`, it makes it easier to use and implement, not to mention that it is drawable, for example:
+
+{% highlight cpp %}
+...
+sf::VertexArray lines(sf::LinesStrip, 5);
+lines[0].position = sf::Vector2f(100.f, 100.f);
+lines[1].position = sf::Vector2f(200.f, 100.f);
+lines[2].position = sf::Vector2f(200.f, 200.f);
+lines[3].position = sf::Vector2f(100.f, 200.f);
+lines[4].position = sf::Vector2f(100.f, 100.f);
+...
+window.draw(lines);
+...
+{% endhighlight %}
+> This renders a square of lines with no fill. In [this video](https://youtu.be/8RHAsIP51R8) we create a gradient background with `sf::VertexArray`.
 
 For more information, visit: <https://www.sfml-dev.org/tutorials/2.5/graphics-vertex-array.php>.
 
