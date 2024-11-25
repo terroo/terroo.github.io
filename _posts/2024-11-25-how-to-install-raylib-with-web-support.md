@@ -44,7 +44,7 @@ cd emsdk
 git pull
 ./emsdk install latest
 ./emsdk activate latest
-echo 'source "$HOME/.emsdk/emsdk_env.sh" 2>/dev/null >> ~/.bashrc
+echo 'source "$HOME/.emsdk/emsdk_env.sh" 2>/dev/null' >> ~/.bashrc
 exec $SHELL
 {% endhighlight %}
 
