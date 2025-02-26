@@ -123,7 +123,8 @@ g++ main.cpp
 
 If you want to use it with arguments, replace the line: `bp::child` with the one below:
 {% highlight cpp %}
-//bp::child c("ls", bp::std_out > pipe_stream); bp::child c("ls", "-l", "*.md", bp::std_out > pipe_stream);
+//bp::child c("ls", bp::std_out > pipe_stream); 
+bp::child c("ls", "-l", "*.md", bp::std_out > pipe_stream);
 {% endhighlight %}
 
 In [Shells](https://terminalroot.com/tags#shell) that use [glob](https://en.wikipedia.org/wiki/Glob_(programming)) you may have a problem when using [wildcards](https://en.wikipedia.org/wiki/Wildcard_character), so use `bp::child` like this:
