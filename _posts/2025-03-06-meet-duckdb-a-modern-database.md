@@ -2,7 +2,7 @@
 layout: post
 title: "Meet DuckDB, a modern database"
 date: 2025-03-06 12:09:02
-image: '/assets/img/duckdb.jpg'
+image: '/assets/img/sql/duckdb.jpg'
 description: "🚀 And usability comparison with GNU/UNIX commands."
 tags:
 - sql
