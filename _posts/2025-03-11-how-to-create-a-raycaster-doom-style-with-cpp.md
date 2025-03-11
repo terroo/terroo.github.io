@@ -2,7 +2,7 @@
 layout: post
 title: "How to Create a Raycaster (DOOM style) with C++"
 date: 2025-03-11 19:56:51
-image: '/assets/img/gamedev/raycaster.png'
+image: '/assets/img/gamedev/raycaster-github.png'
 description: "🚀 Ray casting is an algorithm used in image processing, and its objective is to synthesize 3D images"
 tags:
 - gamedev
