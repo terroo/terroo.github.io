@@ -132,7 +132,7 @@ for (const auto& file : gpg_files) {
 }
 {% endhighlight %}
 
-I would still automatically unpack them by adding them to the `loop`, but I gave up, in this case using the [extract]() command because the types could vary: `zip`, `rar`, `tar.gz`,...
+I would still automatically unpack them by adding them to the `loop`, but I gave up, in this case using the [extract](https://github.com/terroo/extract) command because the types could vary: `zip`, `rar`, `tar.gz`,...
 {% highlight cpp %}
 // filename equals file to separate the logic
 std::string filename = file;
