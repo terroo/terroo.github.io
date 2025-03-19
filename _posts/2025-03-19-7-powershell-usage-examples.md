@@ -83,7 +83,7 @@ Write-Host "The url is: " + $url + " and the file: " $file
 {% endhighlight %}
 > The concatenation operator: `+` (plus) is optional, it could also be:
 {% highlight powershell %}
-Write-Host "The url is: " + $url + " and the file: " $file
+Write-Host "The url is: " $url " and the file: " $file
 {% endhighlight %}
 
 ---
