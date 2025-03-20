@@ -46,7 +46,7 @@ In these episodes of the series we will try to cover 3 to 4 topics. In today's *
 
 + 01. [Introduction](#01-introduction)
 + 02. [Preparing the Environment](#02-preparing-the-environment)
-+ 03. [Hello, World!](03-hello-world)
++ 03. [Hello, World!](#03-hello-world)
 + and 04. [Comments](#04-comments)
 
 
@@ -160,7 +160,7 @@ data-ad-slot="8549252987"></ins>
 
 ---
 
-# Comments
+## 04. Comments
 Go uses [C](https://terminalroot.com/tags#linguagemc)/[C++](https://terminalroot.com/tags#cpp) style to write comments (part of the code that will not influence the result, only for informational purposes for whoever comes to read the code) `// comment` or `/* comment */` (multiple lines), examples:
 
 {% highlight go %}
