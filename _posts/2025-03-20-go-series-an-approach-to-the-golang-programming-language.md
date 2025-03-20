@@ -36,7 +36,7 @@ This TypeScript port for Go has been the talk of the town in recent days, as Typ
 
 In addition to several other lesser-known ones.
 
-One of the differences in the Go programming language is that, unlike languages ​​such as: [Swift](https://terminalroot.com/tags#swift), [Rust](https://terminalroot.com/tags#rust), [Zig](https://terminalroot.com/tags#zig), and others, **Go** DOES NOT DEPEND ON [LLVM](https://terminalroot.com/tags#llvm) to compile and create its binary files; the entire structure of the language is original and proprietary.
+One of the differences in the Go programming language is that, unlike languages ​​such as: [Swift](https://terminalroot.com/tags#swift), [Rust](https://terminalroot.com/tags#rust), [Zig](https://terminalroot.com/tags#zig), and others, **Go** DOES NOT DEPEND ON [LLVM](https://terminalroot.com/tags#llvm)/[C++](https://terminalroot.com.br/tags#cpp) to compile and create its binary files; the entire structure of the language is original and proprietary.
 
 In addition to not having resorted to the [C++](https://terminalroot.com/tags#cpp) invention of deleting pointers and instead using [Garbage Collector](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)), which has a small impact on performance, but does not run the severe risk of *memory leaks*. For those who still do not understand how this works, know that Rust, which is seen as *memory safety*, has a [page in its documentation](https://doc.rust-lang.org/book/ch15-06-reference-cycles.html) warning that it is possible to have *memory leaks*.
 
