@@ -44,10 +44,10 @@ The only difference is that the original compiler, like Swift, [Carbon](https://
 
 In these episodes of the series we will try to cover 3 to 4 topics. In today's **Episode 01** we will see:
 
-+ 01. [Introduction](#01-introduction)
-+ 02. [Preparing the Environment](#02-preparing-the-environment)
-+ 03. [Hello, World!](#03-hello-world)
-+ and 04. [Comments](#04-comments)
++ **01**. [Introduction](#01-introduction)
++ **02**. [Preparing the Environment](#02-preparing-the-environment)
++ **03**. [Hello, World!](#03-hello-world)
++ and **04**. [Comments](#04-comments)
 
 
 <!-- SQUARE - GAMES ROOT -->
