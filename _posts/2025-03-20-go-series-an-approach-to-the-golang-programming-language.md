@@ -133,13 +133,6 @@ go build hello.go
 ./hello
 {% endhighlight %}
 
-Another way to create code with Go is to **create** a project to Go:
-{% highlight sh %}
-go mod init example/hello
-cp ../hello.go .
-go run .
-{% endhighlight %}
-
 Explaining the code:
 + `package main` → Each Go program is composed of packages. Programs start running from the `main` package.
 + `import "fmt"` → This program is using the package with import path "fmt", alternatively you could use the syntax: `import ("fmt")` used for more than one import.
