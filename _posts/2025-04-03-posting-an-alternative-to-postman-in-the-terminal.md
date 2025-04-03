@@ -26,7 +26,7 @@ data-ad-slot="5351066970"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
---
+---
 
 ## Installation
 Installing Posting is simple and can be done on different operating systems:
