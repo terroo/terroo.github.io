@@ -59,7 +59,7 @@ And run the script:
 
 The output will be similar to the image below:
 
-![QuarkPhysics run.png](QuarkPhysics-tr-run.png)
+![QuarkPhysics run.png](/assets/img/gamedev/QuarkPhysics-tr-run.png)
 
 If you are unable to compile, try installing [nlohmann's json](https://terminalroot.com/json-cpp-for-creating-and-parsing-json-with-cpp/).
 
