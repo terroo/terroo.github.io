@@ -40,7 +40,7 @@ data-ad-slot="5351066970"></ins>
 
 Download, unzip, enter `pro++/`, compile and install:
 {% highlight bash %}
-wget https://terminalroot.com/downs/pro++.zip
+wget https://terminalroot.com.br/downs/pro++.zip
 unzip pro++.zip
 cd pro++
 ter build.ter
