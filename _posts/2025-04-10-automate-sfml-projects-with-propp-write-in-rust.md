@@ -258,7 +258,7 @@ data-ad-slot="8549252987"></ins>
 If you don't want to create the files manually, just download the .zip, compile and install it:
 
 {% highlight bash %}
-wget https://terminalroot.com/downs/propp.zip
+wget https://terminalroot.com/downloads/propp.zip
 unzip propp
 cd propp
 cargo build --release
