@@ -18,7 +18,7 @@ I had created an [application](https://terminalroot.com/automate-sfml-projects-w
 
 For more information about this command, which is called `pro++`, [see this article](https://terminalroot.com/automate-sfml-projects-with-propp/).
 
-This article contains the same code, but written in [Rust](https://terminalroot.com/tags#rust). We will see the files and, **at the end**, how to *download*, *compile* and *install* them on your system.
+This article contains the same code, but written in [Rust](https://terminalroot.com/tags#rust). We will see how to *download*, *compile* and *install* them on your system.
 
 ---
 
