@@ -18,7 +18,7 @@ I had created an [application](https://terminalroot.com/automate-sfml-projects-w
 
 For more information about this command, which is called `pro++`, [see this article](https://terminalroot.com/automate-sfml-projects-with-propp/).
 
-This article contains the same code, but written in [Rust](https://terminalroot.com/tags#rust). We will see the files and, <u>at the end</u>, how to *download*, *compile* and *install* them on your system.
+This article contains the same code, but written in [Rust](https://terminalroot.com/tags#rust). We will see the files and, **at the end**, how to *download*, *compile* and *install* them on your system.
 
 ---
 
@@ -69,6 +69,7 @@ data-ad-slot="5351066970"></ins>
 ---
 
 > `vim src/propp.rs`
+
 {% highlight bash %}
 use std::fs;
 use std::path::PathBuf;
@@ -217,11 +218,13 @@ impl ProPP {
 {% endhighlight %}
 
 > `vim src/lib.rs`
+
 {% highlight bash %}
 pub mod propp;
 {% endhighlight %}
 
 > `vim Cargo.toml`
+
 {% highlight bash %}
 [package]
 name = "propp"
@@ -233,6 +236,7 @@ anyhow = "1.0"
 {% endhighlight %}
 
 And now compile and install:
+
 {% highlight bash %}
 cargo build --release
 cargo install --path .
@@ -266,6 +270,7 @@ cargo install --path .
 {% endhighlight %}
 
 If there is an error installing it is because you do not have the ~/.cargo/bin directory and/or it is not in your PATH, so do this and then try installing again:
+
 {% highlight bash %}
 mkdir -p ~/.cargo/bin
 echo 'export PATH="${PATH}:${HOME}/.cargo/bin"' >> ~/.bashrc
@@ -288,6 +293,7 @@ ter build.ter
 > The ter command can be installed [here](https://github.com/terroo/terlang).
 
 If you want to uninstall:
+
 {% highlight bash %}
 cd propp/
 cargo uninstall --bin propp
@@ -296,3 +302,5 @@ rm -rf propp/
 {% endhighlight %}
 
 > Another [app](https://github.com/terroo/lotto/blob/rust-version/loterust/README.md) I made in Rust.
+
+
