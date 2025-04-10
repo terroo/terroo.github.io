@@ -34,7 +34,7 @@ cargo build --release
 cargo install --path .
 ```
 
-If there is an error installing it is because you do not have the ~/.cargo/bin directory and/or it is not in your PATH, so do this and then try installing again:
+If there is an error installing it is because you do not have the `~/.cargo/bin` directory and/or it is not in your `PATH`, so do this and then try installing again:
 
 ```bash
 mkdir -p ~/.cargo/bin
