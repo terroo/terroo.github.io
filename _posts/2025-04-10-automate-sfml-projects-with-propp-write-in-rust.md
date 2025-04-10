@@ -222,7 +222,7 @@ pub mod propp;
 {% endhighlight %}
 
 > `vim Cargo.toml`
-{% highlight toml %}
+{% highlight ini %}
 [package]
 name = "propp"
 version = "0.1.0"
