@@ -32,7 +32,7 @@ cd propp
 Crie os arquivos:
 
 > `vim src/main.`
-{% highlight rs %}
+{% highlight bash %}
 mod propp;
 
 use anyhow::Result;
@@ -69,7 +69,7 @@ data-ad-slot="5351066970"></ins>
 ---
 
 > `vim src/propp.rs`
-{% highlight rs %}
+{% highlight bash %}
 use std::fs;
 use std::path::PathBuf;
 use anyhow::{Context, Result};
@@ -217,12 +217,12 @@ impl ProPP {
 {% endhighlight %}
 
 > `vim src/lib.rs`
-{% highlight rs %}
+{% highlight bash %}
 pub mod propp;
 {% endhighlight %}
 
 > `vim Cargo.toml`
-{% highlight ini %}
+{% highlight bash %}
 [package]
 name = "propp"
 version = "0.1.0"
