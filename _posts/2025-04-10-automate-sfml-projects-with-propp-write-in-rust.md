@@ -14,7 +14,7 @@ tags:
 
 ---
 
-I had created an [application](https://terminalroot.com/automate-sfml-projects-with-propp/) that automatically generates [C++](https://terminalroot.com/tags#cpp) projects with [SFML](https://terminalroot.com/tags#sfml) and compiles them with the programming language i created: [Terlang](https://github.com/terroo/terlang).
+I had created an [application](https://terminalroot.com/automate-sfml-projects-with-propp/) that automatically generates [C++](https://terminalroot.com/tags#cpp) projects with [SFML](https://terminalroot.com/tags#sfml) and compiles them with the programming language I created: [Terlang](https://github.com/terroo/terlang).
 
 For more information about this command, which is called `pro++`, [see this article](https://terminalroot.com/automate-sfml-projects-with-propp/).
 
@@ -295,4 +295,4 @@ cd ..
 rm -rf propp/
 {% endhighlight %}
 
-
+> Another [app](https://github.com/terroo/lotto/blob/rust-version/loterust/README.md) I made in Rust.
