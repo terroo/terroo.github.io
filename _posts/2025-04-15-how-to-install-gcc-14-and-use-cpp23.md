@@ -166,4 +166,5 @@ For more information, visit the links below:
 + <https://gcc.gnu.org/gcc-14/changes.html>
 + <https://en.cppreference.com/w/cpp/io/println>
 + <https://developers.redhat.com/articles/2025/04/10/6-usability-improvements-gcc-15#>
++ <https://en.cppreference.com/w/cpp/compiler_support>
 
