@@ -541,7 +541,7 @@ In addition, it is used in SDKs and emerging technologies, such as Dolby Vision,
 ## 25. [SFML](https://terminalroot.com.br/sfml)
 ![SFML](https://terminalroot.com.br/assets/img/gamedev/raycaster.jpg)
 
-**[SFMLhttps://terminalroot.com/tags#sfml]()** (Simple and Fast Multimedia Library) is a multimedia library written in **C++** that offers a simple interface for creating games and multimedia applications. Although it is not a full game engine, it offers support for 2D graphics, audio, user input, and networking, making it an excellent option for those who want full control over the game.
+**[SFML](https://terminalroot.com/tags#sfml)** (Simple and Fast Multimedia Library) is a multimedia library written in **C++** that offers a simple interface for creating games and multimedia applications. Although it is not a full game engine, it offers support for 2D graphics, audio, user input, and networking, making it an excellent option for those who want full control over the game.
 
 - **Written in:** **C++**
 - **Game development languages:** **C++**, with bindings for other languages ​​such as **Python**, **Ruby**, **C#**, and **Java**.
