@@ -11,7 +11,7 @@ tags:
 
 ---
 
-☕ **`ls++`** is an alternative to the `ls` command with display of file and folder icons and colors. Made with [C++](https://terminalroot.com.br/tags#cpp).
+☕ **`ls++`** is an alternative to the `ls` command with display of file and folder icons and colors. Made with [C++](https://terminalroot.com/tags#cpp).
 
 ### Dependencies
 + [Terminal Root Fonts](https://github.com/terroo/fonts)
