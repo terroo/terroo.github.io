@@ -2,7 +2,7 @@
 layout: post
 title: "How to Connect to DuckDB with C++"
 date: 2025-05-26 08:52:14
-image: '/assets/img/sql/duckdb-cpp.jpg'
+image: '/assets/img/sql/duckdb-cpp-en.jpg'
 description: "🚀 A fast and futuristic database for your projects."
 tags:
 - duckdb
