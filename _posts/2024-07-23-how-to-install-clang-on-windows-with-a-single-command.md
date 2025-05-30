@@ -14,8 +14,8 @@ tags:
 <blockquote class="bg-danger text-white p-3 rounded">
 <h2>THIS ARTICLE IS DEPRECATED/OBSOLETE</h2>
     <p>Access this article below for the updated procedure:</p>
-    <h2><a href="https://terminalroot.com.br/2025/05/como-instalar-a-nova-versao-do-clang-llvm-no-windows.html">How to Install the New Version of Clang/LLVM on Windows</a></h2>
-    <h3><a href="https://terminalroot.com/2025/05/how-to-install-the-new-clang-llvm-version-on-windows.html">https://terminalroot.com/2025/05/how-to-install-the-new-clang-llvm-version-on-windows.html</a></h3>
+    <h2><a href="https://terminalroot.com/how-to-install-the-new-version-of-clang-llvm-on-windows/">How to Install the New Version of Clang/LLVM on Windows</a></h2>
+    <h3><a href="https://terminalroot.com/how-to-install-the-new-version-of-clang-llvm-on-windows/">https://terminalroot.com/how-to-install-the-new-version-of-clang-llvm-on-windows/</a></h3>
     <footer class="blockquote-footer text-white-50">Terminal Root</footer>
 </blockquote>
 
