@@ -38,7 +38,7 @@ data-ad-slot="5351066970"></ins>
 
 First, remove (or rename) the folder:
 
-> Open [PowerShell](https://terminalroot.com.br/tags#powershell) with administrator privileges.
+> Open [PowerShell](https://terminalroot.com/tags#powershell) with administrator privileges.
 
 To rename:
 
