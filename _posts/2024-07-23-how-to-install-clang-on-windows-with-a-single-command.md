@@ -11,6 +11,16 @@ tags:
 
 ---
 
+<blockquote class="bg-danger text-white p-3 rounded">
+<h2>THIS ARTICLE IS DEPRECATED/OBSOLETE</h2>
+    <p>Access this article below for the updated procedure:</p>
+    <h2><a href="https://terminalroot.com.br/2025/05/como-instalar-a-nova-versao-do-clang-llvm-no-windows.html">How to Install the New Version of Clang/LLVM on Windows</a></h2>
+    <h3><a href="https://terminalroot.com/2025/05/how-to-install-the-new-clang-llvm-version-on-windows.html">https://terminalroot.com/2025/05/how-to-install-the-new-clang-llvm-version-on-windows.html</a></h3>
+    <footer class="blockquote-footer text-white-50">Terminal Root</footer>
+</blockquote>
+
+---
+
 We have already [shown](https://terminalroot.com/how-to-install-binary-clang-on-any-gnu-linux-distro/) that you can install [Clang](https://terminalroot.com/tags#clang) in [GNU/Linux](https://terminalroot.com/tags#gnulinux) distros without needing your package manager, as new versions often appears with features enabled that you wouldn't want.
 
 I've seen people report, for example, that their LSP that uses `clangd` issues *warnings* for *not using headers*. Of course this can be disabled, but people like to have everything ready.

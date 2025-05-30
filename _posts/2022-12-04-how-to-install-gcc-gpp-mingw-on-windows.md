@@ -15,6 +15,14 @@ tags:
 
 ---
 
+<blockquote class="bg-danger text-white p-3 rounded">
+    <h2>THIS ARTICLE IS DEPRECATED/OBSOLETE</h2>
+    <p>Access this article below for the updated procedure:</p>
+    <h2><a href="https://terminalroot.com.br/2025/05/como-instalar-a-nova-versao-do-gcc-mingw-no-windows.html">How to Install the New Version of GCC MinGW on Windows</a></h2>
+    <h3><a href="https://terminalroot.com/2025/05/how-to-install-the-new-version-of-gcc-mingw-on-windows.html">https://terminalroot.com/2025/05/how-to-install-the-new-version-of-clang-llvm-on-windows.html</a></h3>
+    <footer class="blockquote-footer text-white-50">Terminal Root</footer>
+</blockquote>
+
 The default compiler for [Microsoft Windows](https://terminalroot.com/tags#windows) is [MSVC](https://learn.microsoft.com/en-us/cpp/build/reference/compiler-options ?view=msvc-170) and it is installed when we install [Visual Studio](). Despite being a very powerful [IDE](https://terminalroot.com/the-32-best-ides-text-editors-for-cpp/#23-visual-studio), I recommend it for almost all situations, some libraries are more practical to work with in a more minimalist environment and this can be achieved using [GCC/G++](https://terminalroot.com/tags#gcc) on Windows.
 
 The package developed by [GNU](https://terminalroot.com/tags#gnu) to get you to use [gcc/g++](https://terminalroot.com/tags#gcc) on Windows is [MinGW ](https://en.wikipedia.org/wiki/MinGW).
