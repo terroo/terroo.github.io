@@ -230,7 +230,7 @@ This `map.tmx` was created with [Tiled Map Editor](https://terminalroot.com/how-
 {% highlight cpp %}
 tmx::Map map;
 if(!map.load("./assets/map.tmx")){
-  std::cerr << "Falha ao carregar o mapa TMX.\n";
+  std::cerr << "Failed to load TMX map.\n";
   return -1;
 }
 {% endhighlight %}
@@ -259,7 +259,7 @@ const auto& layers = map.getLayers();
 {% highlight cpp %}
 sf::Texture floor_tex, box_tex;
 if(!floor_tex.loadFromFile("./assets/floor.jpg") || !box_tex.loadFromFile("./assets/box.jpg")){
-  std::cerr << "Falha ao carregar imagens dos tiles.\n";
+  std::cerr << "Failed to load images for tiles.\n";
   return -1;
 }
 
@@ -322,7 +322,7 @@ int main(){
 
   tmx::Map map;
   if(!map.load("./assets/map.tmx")){
-    std::cerr << "Falha ao carregar o mapa TMX.\n";
+    std::cerr << "Failed to load TMX map.\n";
     return -1;
   }
 
@@ -333,7 +333,7 @@ int main(){
 
   sf::Texture floor_tex, box_tex;
   if(!floor_tex.loadFromFile("./assets/floor.jpg") || !box_tex.loadFromFile("./assets/box.jpg")){
-    std::cerr << "Falha ao carregar imagens dos tiles.\n";
+    std::cerr << "Failed to load images for tiles.\n";
     return -1;
   }
 
