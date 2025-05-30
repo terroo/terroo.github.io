@@ -115,7 +115,7 @@ Rename-Item -Path "C:\mingw64\bin\mingw32-make" -NewName "make"
 
 ## See also:
 
-* [How to Install the New Version of Clang/LLVM on Windows]()
+* [How to Install the New Version of Clang/LLVM on Windows](https://terminalroot.com/how-to-install-the-new-version-of-clang-llvm-on-windows/)
 * [How to Use Tmxlite for Game Maps (Windows and Linux)](https://terminalroot.com/how-to-use-tmxlite-for-game-maps-windows-and-linux/)
 
 
