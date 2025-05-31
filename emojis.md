@@ -1,19 +1,19 @@
 rocket 🚀
 package 📦
-hook anchor ⚓
+anchor ⚓ hook
 document 📄
 party 🎉
-next finger 👉
- tick task completed ok check ✔
-magic assembling project ✨
- cog configuring plugins ⚙
+finger 👉 next
+check ✔  tick task completed ok
+project ✨ magic assembling
+plugins ⚙  cog configuring
 shocked 🤯
 smart 🤓
 mile 😄
 laughing 😆
 blush 😊
 smiley 😃
-relaxed ☺️
+relaxed ☺️ 
 smirk 😏
 heart_eyes 😍
 kissing_heart 😘
@@ -72,7 +72,7 @@ alien 👽
 yellow_heart 💛
 blue_heart 💙
 purple_heart 💜
-heart ❤️
+heart ❤️ 
 green_heart 💚
 broken_heart 💔
 heartbeat 💓
@@ -134,11 +134,13 @@ two_men_holding_hands 👬
 two_women_holding_hands 👭
 dancer 💃
 dancers 👯
-ok_woman 🙆‍♀️
+santa 🙆
+ok_woman ♀️ 
 no_good 🙅
 information_desk_person 💁
 raising_hand 🙋
-bride_with_veil 👰‍♀️
+santa_wo 👰
+bride_with_veil ♀️ 
 bow 🙇
 couplekiss 💏
 couple_with_heart 💑
@@ -153,7 +155,8 @@ baby 👶
 older_woman 👵
 older_man 👴
 man_with_gua_pi_mao 👲
-man_with_turban 👳‍♂️
+man_with_turban  👳
+masculine ♂️ 
 construction_worker 👷
 cop 👮
 angel 👼
@@ -172,7 +175,7 @@ japanese_goblin 👺
 see_no_evil 🙈
 hear_no_evil 🙉
 speak_no_evil 🙊
-guardsman 💂‍♂️
+guardsman 💂
 skull 💀
 feet 🐾
 lips 👄
@@ -189,8 +192,8 @@ speech_balloon 💬
 thought_balloon 💭
 sunny ☀️
 umbrella ☔
-cloud ☁️
-snowflake ❄️
+cloud ☁️ 
+snowflake ❄️ 
 snowman ⛄
 zap ⚡
 cyclone 🌀
@@ -331,8 +334,8 @@ movie_camera 🎥
 computer 💻
 tv 📺
 iphone 📱
-phone ☎️
-telephone ☎️
+phone ☎️ 
+telephone ☎️ 
 telephone_receiver 📞
 pager 📟
 fax 📠
@@ -411,11 +414,11 @@ date 📅
 card_index 📇
 file_folder 📁
 open_file_folder 📂
-scissors ✂️
+scissors ✂️ 
 pushpin 📌
 paperclip 📎
-black_nib ✒️
-pencil2 ✏️
+black_nib ✒️ 
+pencil2 ✏️ 
 straight_ruler 📏
 triangular_ruler 📐
 closed_book 📕
@@ -447,10 +450,10 @@ snowboarder 🏂
 swimmer 🏊
 surfer 🏄
 ski 🎿
-spades ♠️
-hearts ♥️
-clubs ♣️
-diamonds ♦️
+spades ♠️ 
+hearts ♥️ 
+clubs ♣️ 
+diamonds ♦️ 
 gem 💎
 ring 💍
 trophy 🏆
@@ -599,7 +602,7 @@ sailboat ⛵
 rowboat 🚣
 anchor ⚓
 rocket 🚀
-airplane ✈️
+airplane ✈️ 
 helicopter 🚁
 steam_locomotive 🚂
 tram 🚊
@@ -638,7 +641,7 @@ ticket 🎫
 fuelpump ⛽
 vertical_traffic_light 🚦
 traffic_light 🚥
-warning ⚠️
+warning ⚠️ 
 construction 🚧
 beginner 🔰
 atm 🏧
@@ -654,59 +657,59 @@ circus_tent 🎪
 performing_arts 🎭
 round_pushpin 📍
 triangular_flag_on_post 🚩
- jp 🇯🇵
- kr 🇰🇷
- cn 🇨🇳
- us 🇺🇸
- fr 🇫🇷
- es 🇪🇸
- it 🇮🇹
- ru 🇷🇺
- gb 🇬🇧
- uk 🇬🇧
- de 🇩🇪
- one 1️⃣
- two 2️⃣
- three 3️⃣
- four 4️⃣
- five 5️⃣
- six 6️⃣
- seven 7️⃣
- eight 8️⃣
- nine 9️⃣
+jp 🇯🇵
+kr 🇰🇷
+cn 🇨🇳
+us 🇺🇸
+fr 🇫🇷
+es 🇪🇸
+it 🇮🇹
+ru 🇷🇺
+gb 🇬🇧
+uk 🇬🇧
+de 🇩🇪
+one 1️⃣ 
+two 2️⃣ 
+three 3️⃣ 
+four 4️⃣ 
+five 5️⃣ 
+six 6️⃣ 
+seven 7️⃣ 
+eight 8️⃣ 
+nine 9️⃣ 
 keycap_ten 🔟
-1234  🔢
- zero 0️⃣
- hash #️⃣
+1234 🔢
+zero 0️⃣ 
+hash #️⃣ 
 symbols 🔣
-arrow_backward ◀️
-arrow_down ⬇️
-arrow_forward ▶️
-arrow_left ⬅️
+arrow_backward ◀️ 
+arrow_down ⬇️ 
+arrow_forward ▶️ 
+arrow_left ⬅️ 
 capital_abcd 🔠
 abcd 🔡
 abc 🔤
-arrow_lower_left ↙️
-arrow_lower_right ↘️
-arrow_right ➡️
-arrow_up ⬆️
-arrow_upper_left ↖️
-arrow_upper_right ↗️
+arrow_lower_left ↙️ 
+arrow_lower_right ↘️ 
+arrow_right ➡️ 
+arrow_up ⬆️ 
+arrow_upper_left ↖️ 
+arrow_upper_right ↗️ 
 arrow_double_down ⏬
 arrow_double_up ⏫
 arrow_down_small 🔽
 arrow_heading_down ⤵️
 arrow_heading_up ⤴️
-leftwards_arrow_with_hook ↩️
-arrow_right_hook ↪️
-left_right_arrow ↔️
-arrow_up_down ↕️
+leftwards_arrow_with_hook ↩️ 
+arrow_right_hook ↪️ 
+left_right_arrow ↔️ 
+arrow_up_down ↕️ 
 arrow_up_small 🔼
 arrows_clockwise 🔃
 arrows_counterclockwise 🔄
 rewind ⏪
 fast_forward ⏩
-information_source ℹ️
+information_source ℹ️ 
 ok 🆗
 twisted_rightwards_arrows 🔀
 repeat 🔁
@@ -747,7 +750,7 @@ potable_water 🚰
 put_litter_in_its_place 🚮
 secret ㊙️
 congratulations ㊗️
- m ⓜ️
+m ⓜ️ 
 passport_control 🛂
 left_luggage 🛅
 customs 🛃
@@ -764,8 +767,8 @@ no_bicycles 🚳
 no_pedestrians 🚷
 children_crossing 🚸
 no_entry ⛔
-eight_spoked_asterisk ✳️
-eight_pointed_black_star ✴️
+eight_spoked_asterisk ✳️ 
+eight_pointed_black_star ✴️ 
 heart_decoration 💟
 vs 🆚
 vibration_mode 📳
@@ -792,7 +795,7 @@ b 🅱️
 ab 🆎
 o2 🅾️
 diamond_shape_with_a_dot_inside 💠
-recycle ♻️
+recycle ♻️ 
 end 🔚
 on 🔛
 soon 🔜
@@ -821,22 +824,22 @@ clock830 🕣
 clock9 🕘
 clock930 🕤
 heavy_dollar_sign 💲
-copyright ©️
-registered ®️
-tm ™️
+copyright ©️ 
+registered ®️ 
+tm ™️ 
 x ❌
 heavy_exclamation_mark ❗
-bangbang ‼️
-interrobang ⁉️
+bangbang ‼️ 
+interrobang ⁉️ 
 o ⭕
-heavy_multiplication_x ✖️
+heavy_multiplication_x ✖️ 
 heavy_plus_sign ➕
 heavy_minus_sign ➖
 heavy_division_sign ➗
 white_flower 💮
 100 💯
-heavy_check_mark ✔️
-ballot_box_with_check ☑️
+heavy_check_mark ✔️ 
+ballot_box_with_check ☑️ 
 radio_button 🔘
 link 🔗
 curly_loop ➰
