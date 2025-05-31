@@ -1,12 +1,12 @@
 rocket 🚀
 package 📦
-anchor ⚓ hook
+anchor hook ⚓
 document 📄
 party 🎉
-finger 👉 next
-check ✔  tick task completed ok
-project ✨ magic assembling
-plugins ⚙  cog configuring
+finger 👉
+check ✔
+project ✨
+plugins ⚙
 shocked 🤯
 smart 🤓
 mile 😄
