@@ -43,7 +43,7 @@ Then just follow these steps:
 Using `wget`:
 {% highlight bash %}
 wget -q bit.ly/emoji-txt -O ~/.emojis.txt
-`{% endhighlight %}
+{% endhighlight %}
 
 Or using [cURL](https://terminalroot.com.br/tags#curl):
 
