@@ -51,6 +51,8 @@ Or using [cURL](https://terminalroot.com.br/tags#curl):
 curl -sL bit.ly/emoji-txt -o ~/.emojis.txt
 {% endhighlight %}
 
+---
+
 ### 📄 02. Create a [C++](https://terminalroot.com.br/tags#cpp) file:
 > Example: `vim emoji.cpp`
 
@@ -88,12 +90,16 @@ int main(int argc, char** argv){
 }
 {% endhighlight %}
 
+---
+
 ### 🚧 03. Compile and install:
 
 {% highlight bash %}
 g++ -O3 -ffast-math emoji.cpp -o emoji
 sudo mv emoji /usr/local/bin
 {% endhighlight %}
+
+---
 
 ### 📺 04. Add autocomplete to your terminal:
 
