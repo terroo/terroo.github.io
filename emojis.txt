@@ -863,3 +863,5 @@ matriz 🔢
 abaco 🧮
 graph 📊
 math 📐
+beef 🥩
+beef_food 🍖
