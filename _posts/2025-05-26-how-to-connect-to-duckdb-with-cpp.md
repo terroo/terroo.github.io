@@ -47,7 +47,7 @@ That's why they recommend that you use the [C](https://duckdb.org/docs/stable/cl
 Then just click on the `.zip` that will be made available and download it, or download it with [wget](https://www.gnu.org/software/wget/):
 
 {% highlight bash %}
-wget -q https://github.com/duckdb/duckdb/releases/download/v1.3.0/libduckdb-linux-amd64.zip
+wget -q https://github.com/duckdb/duckdb/releases/download/v1.3.1/libduckdb-linux-amd64.zip
 {% endhighlight %}
 
 Unzip:
