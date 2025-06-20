@@ -25,9 +25,9 @@ data-ad-slot="5351066970"></ins>
 
 ---  
 
-The quickest and easiest way to install [Python](https://terminalroot.com.br/tags#python) on [Windows](https://terminalroot.com.br/tags#windows) is by using [WinGet](https://winstall.app/apps/Python.Python.3.13).  
+The quickest and easiest way to install [Python](https://terminalroot.com/tags#python) on [Windows](https://terminalroot.com/tags#windows) is by using [WinGet](https://winstall.app/apps/Python.Python.3.13).  
 
-Open [PowerShell](https://terminalroot.com.br/2025/05/personalize-seu-powershell-like-a-pro.html) and run:  
+Open [PowerShell](https://terminalroot.com/2025/05/personalize-seu-powershell-like-a-pro.html) and run:  
 
 {% highlight powershell %}  
 winget install -e --id Python.Python.3.11 --scope machine  
