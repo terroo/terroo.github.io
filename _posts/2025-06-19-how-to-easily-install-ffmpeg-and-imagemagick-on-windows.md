@@ -40,7 +40,7 @@ winget install --id=ImageMagick.ImageMagick -e
 {% endhighlight %}
 
 After installation, close and reopen the [terminal](https://terminalroot.com/2023/04/melhore-seu-desempenho-utilizando-o-windows-terminal.html) and test it by converting, for example, a `.png` image to `.jpg`:  
-{% highlight powershell %}  
+{% highlight powershell %}
 magick image.png output.jpg  
 {% endhighlight %}  
 > On [Unix](https://terminalroot.com/tags#unix)-like systems, the command `convert` is used, but this command already exists on Windows. Previously, `magick convert` was used, but after changes, only the `magick` command is used on Windows. Any tutorial you see using `convert` on Windows should be replaced with just `magick`, which is equivalent to `& 'C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe'`.  
