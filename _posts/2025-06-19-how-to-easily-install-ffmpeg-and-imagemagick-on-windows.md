@@ -25,19 +25,19 @@ To install them, simply use `WinGet` (if you don’t have it installed, get it f
 
 + To install [FFmpeg](https://winstall.app/apps/Gyan.FFmpeg):  
 
-{% highlight powershell %}  
+{% highlight powershell %}
 winget install --id=Gyan.FFmpeg -e  
 {% endhighlight %}  
 
 After installation, close and reopen the [terminal](https://terminalroot.com/2023/04/melhore-seu-desempenho-utilizando-o-windows-terminal.html) and test it by converting, for example, a `.mp4` video to `.wmv`:  
-{% highlight powershell %}  
+{% highlight powershell %}
 ffmpeg -i video.mp4 output.wmv  
 {% endhighlight %}  
 
 + To install [ImageMagick](https://winstall.app/apps/ImageMagick.ImageMagick):  
-{% highlight powershell %}  
+{% highlight powershell %}
 winget install --id=ImageMagick.ImageMagick -e  
-{% endhighlight %}  
+{% endhighlight %}
 
 After installation, close and reopen the [terminal](https://terminalroot.com/2023/04/melhore-seu-desempenho-utilizando-o-windows-terminal.html) and test it by converting, for example, a `.png` image to `.jpg`:  
 {% highlight powershell %}  
@@ -61,18 +61,18 @@ data-ad-slot="5351066970"></ins>
 Almost everything is available on `WinGet`. For example, to install the following applications:  
 
 + [NetBeans](https://winstall.app/apps/Apache.NetBeans):  
-{% highlight powershell %}  
+{% highlight powershell %}
 winget install --id=Apache.NetBeans -e  
 {% endhighlight %}  
 
 + [MySQL](https://winstall.app/apps/Oracle.MySQL):  
-{% highlight powershell %}  
+{% highlight powershell %}
 winget install --id=Oracle.MySQL -e  
 {% endhighlight %}  
 > **NOTE**: MySQL requires some configuration, which you can find [here](https://terminalroot.com/2023/05/como-instalar-o-apache-php-8-e-mysql-no-windows.html#mysql). The method described [here](https://terminalroot.com/2023/05/como-instalar-o-apache-php-8-e-mysql-no-windows.html#mysql) is more interesting.  
 
 + [PHP 8.2](https://winstall.app/apps/PHP.PHP.8.2):  
-{% highlight powershell %}  
+{% highlight powershell %}
 winget install --id=PHP.PHP.8.2 -e  
 {% endhighlight %}  
 > **NOTE**: PHP requires some configuration to work with [Apache](https://terminalroot.com/2023/05/como-instalar-o-apache-php-8-e-mysql-no-windows.html#1º---instale-o-apache), which you can find [here](https://terminalroot.com/2023/05/como-instalar-o-apache-php-8-e-mysql-no-windows.html#php-8). The method described [here](https://terminalroot.com/2023/05/como-instalar-o-apache-php-8-e-mysql-no-windows.html#php-8) is more interesting.  
@@ -80,7 +80,7 @@ winget install --id=PHP.PHP.8.2 -e
 + [DuckDB](https://winstall.app/apps/DuckDB.cli) (just run this command):  
 > Learn more about DuckDB [here](https://terminalroot.com/2025/03/conheca-um-duckdb-um-banco-de-dados-moderno.html).  
 
-{% highlight powershell %}  
+{% highlight powershell %}
 winget install --id=DuckDB.cli -e  
 {% endhighlight %}  
 
@@ -88,7 +88,7 @@ winget install --id=DuckDB.cli -e
 
 Take advantage of `WinGet` and forget the traditional installation process of downloading executables and clicking through multiple *nexts*. To find an app for WinGet, you can use `search`, for example:  
 
-{% highlight powershell %}  
+{% highlight powershell %}
 winget search <name>  
 {% endhighlight %}  
 

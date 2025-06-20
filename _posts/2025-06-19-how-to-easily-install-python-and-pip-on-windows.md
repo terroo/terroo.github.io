@@ -29,13 +29,13 @@ The quickest and easiest way to install [Python](https://terminalroot.com/tags#p
 
 Open [PowerShell](https://terminalroot.com/2025/05/personalize-seu-powershell-like-a-pro.html) and run:  
 
-{% highlight powershell %}  
+{% highlight powershell %}
 winget install -e --id Python.Python.3.11 --scope machine  
 {% endhighlight %}  
 > If there are newer versions after the recording date of this video: <https://winstall.app/apps?q=tags:%20python3>  
 
 Close PowerShell, reopen it, and run the command:  
-{% highlight bash %}  
+{% highlight bash %}
 python --version  
 {% endhighlight %}  
 > If the version appears, everything is working correctly!  
@@ -44,12 +44,12 @@ While you're at it, also install [PIP](https://winstall.app/apps/LionelJouin.PiP
 
 **PIP** is a package manager for Python—with it, we can install everything we need for Python:  
 
-{% highlight powershell %}  
+{% highlight powershell %}
 winget install --id=LionelJouin.PiP-Tool -e  
-{% endhighlight %}  
+{% endhighlight %}
 
 Close PowerShell, reopen it, and run the command:  
-{% highlight bash %}  
+{% highlight bash %}
 pip --version  
-{% endhighlight %}  
+{% endhighlight %}
 > If the version appears, everything is working correctly!
