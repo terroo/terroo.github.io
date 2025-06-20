@@ -75,7 +75,7 @@
     }
   </style>
 
-  <!-- Google ADS e Analytics -->
+  <!-- Google ADS -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2838251107855362"
                 crossorigin="anonymous"></script>
 
@@ -86,6 +86,17 @@
       const nova_url = url.replace( new RegExp("\\\?fbclid.*","gm"),"")
       history.pushState({}, null, nova_url);
     }
+  </script>
+
+  <!-- Google Analytics -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KTTD1NH29D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KTTD1NH29D');
   </script>
 
 </head>
