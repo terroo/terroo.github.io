@@ -2,7 +2,7 @@
 layout: post
 title: "Get Bible Verses with This TUI App"
 date: 2025-06-25 20:37:27
-image: '/assets/img/tui/bible-tui-thumb.png'
+image: '/assets/img/tui/bible-tui.jpg'
 description: "🙏 `bible-tui` is a command-line utility built with C++"
 tags:
 - cpp
@@ -84,7 +84,4 @@ Options:
 
 Visit the repository and leave a star ⭐: <https://github.com/terroo/bible-tui>  
 
-![Bible TUI](/assets/img/tui/bible-tui.jpg)  
-
----  
 
