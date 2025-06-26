@@ -38,11 +38,13 @@ data-ad-slot="5351066970"></ins>
 + C++ Compiler: [GCC](https://gcc.gnu.org/) or [Clang](https://clang.llvm.org/)  
 + [CMake](https://cmake.org/)  
 + [cURL++](https://www.curlpp.org/)  
++ [JSON++](https://github.com/nlohmann/json)
 
-Example on Ubuntu:  
-{% highlight sh %}
-sudo apt install build-essential cmake libcurlpp-dev  
-{% endhighlight %}
+Example on Ubuntu:
+```sh
+sudo apt install build-essential cmake libcurlpp-dev nlohmann-json3-dev
+```
+
 
 🚧 Build and Install  
 {% highlight bash %}
