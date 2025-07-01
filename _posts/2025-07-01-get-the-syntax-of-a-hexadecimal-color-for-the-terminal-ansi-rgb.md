@@ -82,10 +82,10 @@ for i in $(cat theme.txt); do hexter "$i"; done
 
 Output:  
 
-![All hexter colors](./hexter-theme.jpg)  
+![All hexter colors](/assets/img/terminal/hexter-theme.jpg)  
 
 > This is the [theme](https://sobrio.elvessousa.com/)  
-![sobrio](./sobrio-theme.jpg)  
+![sobrio](/assets/img/terminal/sobrio-theme.jpg)  
 
 ---  
 
