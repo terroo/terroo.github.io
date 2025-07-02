@@ -154,7 +154,7 @@ go build main.go
 
 The output will be similar to the GIF below. Try typing something—pressing *[enter]* creates a new line.  
 
-![Textarea Charmbracelet Bubbles](./bubbles-go.gif)  
+![Textarea Charmbracelet Bubbles](/assets/img/go/bubbles-go.gif)  
 
 Amazing, right?  
 
