@@ -5,6 +5,11 @@ date: 2025-07-20 21:30:25
 image: '/assets/img/commands/his-thumb.jpg'
 description: "▶️ his is a command history utility with icons and colors that works on Windows and GNU/Linux."
 tags:
+- terminal
+- commands
+- windows
+- gnulinux
+- cpp
 ---
 
 ![{{ page.title }}]({{ page.image }} '{{ page.description }}')
@@ -107,6 +112,7 @@ Options:
 
 ### 🪟 On Windows
 ![his command Windows](https://github.com/terroo/terroo.github.io/blob/main/assets/img/commands/his-win.gif?raw=true) 
+
 ---
 
 ### 📹 Video tutorial showing step by step how the `his` command was made.
