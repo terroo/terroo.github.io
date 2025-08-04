@@ -5,4 +5,4 @@ User-agent: Googlebot-image
 Disallow:
 
 User-agent: Mediapartners-Google
-Disallow: /
+Disallow:
