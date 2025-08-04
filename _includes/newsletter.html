@@ -15,7 +15,7 @@
        }else{
            $("#form").hide("slow");
            $("#gif").show("slow");
-           $.get("https://gnu.terminalroot.com.br/newsletter/add.php", {mail: mail}, function(mostrar){
+           $.get("https://gnu.terminalroot.com/newsletter/add.php", {mail: mail}, function(mostrar){
           	    //$("#return").show("slow").html(mostrar);
                 //var mostrar = '<h3 class="text-center bg-dark jumbotron"><i class="fas fa-check-circle"></i> Veja sua caixa de mensagem e confirme o seu cadastro!</h3>';
                 $("#return").show("slow").html(mostrar);

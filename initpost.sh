@@ -1,5 +1,5 @@
 #!/bin/bash
-# author: Marcos Oliveira <terminalroot.com.br>
+# author: Marcos Oliveira <terminalroot.com>
 # describe: Script to create an initial structure for posts in Jekyll
 # version: 1.0
 # license: MIT License

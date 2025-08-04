@@ -1,8 +1,9 @@
 # Site settings
 title: 'Terminal Root'
 subtitle: 'A little much about C++, Game Development, Programming and Web.'
-email: iam@terminalroot.com.br
+email: iam@terminalroot.com
 author: 'Marcos Oliveira'
+url: "https://terminalroot.com"
 description: > # this means to ignore newlines until "baseurl:"
   A little much about C++, Game Development, Programming and Web
 twitter_username: TerminalRootTV
