@@ -384,6 +384,10 @@ dollar 💵
 pound 💷
 euro 💶
 credit_card 💳
+edit ✏️
+edit_paper 📝
+edit_uni ✎
+edit_movie 🎬
 money_with_wings 💸
 e-mail 📧
 inbox_tray 📥
@@ -441,6 +445,8 @@ baseball ⚾
 tennis 🎾
 8ball 🎱
 rugby_football 🏉
+remove ❌
+delete ⛔
 bowling 🎳
 golf ⛳
 mountain_bicyclist 🚵
