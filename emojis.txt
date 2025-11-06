@@ -300,6 +300,10 @@ moon 🌔
 earth_africa 🌍
 earth_americas 🌎
 earth_asia 🌏
+browser 🌎
+gnu 🦬
+gnu2 🐂
+gnu3 🐃
 volcano 🌋
 milky_way 🌌
 partly_sunny ⛅
@@ -471,7 +475,10 @@ game 🎮
 black_joker 🃏
 flower_playing_cards 🎴
 game_die 🎲
+dado 🎲
 dart 🎯
+database 🗄️
+build 🏗️
 mahjong 🀄
 clapper 🎬
 memo 📝
@@ -747,6 +754,7 @@ womens 🚺
 baby_symbol 🚼
 no_smoking 🚭
 parking 🅿️
+play ▶️
 wheelchair ♿
 metro 🚇
 baggage_claim 🛄
@@ -853,6 +861,7 @@ wavy_dash 〰️
 part_alternation_mark 〽️
 trident 🔱
 white_check_mark ✅
+window 🪟
 black_square_button 🔲
 white_square_button 🔳
 black_circle ⚫
