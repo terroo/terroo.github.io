@@ -78,7 +78,6 @@ int main(int argc, char **argv){
   }
 
   if(!found){
-    // No images to convert.
     std::cout << "There are no images to convert.\n";
   }
 }
