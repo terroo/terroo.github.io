@@ -304,6 +304,13 @@ browser 🌎
 gnu 🦬
 gnu2 🐂
 gnu3 🐃
+video 🎞️
+film 🎞️
+video 🎬
+film 🎬
+camera 🎥
+video 🎥
+filme 🎥
 volcano 🌋
 milky_way 🌌
 partly_sunny ⛅
