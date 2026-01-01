@@ -96,12 +96,14 @@ zzz 💤
 dash 💨
 sweat_drops 💦
 notes 🎶
+notes 📝
 musical_note 🎵
 fire 🔥
 hankey 💩
 poop 💩
 shit 💩
 +1 👍
+task 📝
 thumbsup 👍
 -1 👎
 thumbsdown 👎
