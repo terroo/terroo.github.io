@@ -2,7 +2,7 @@
 layout: post
 title: "Copy Files via Command Line with C++"
 date: 2026-01-02 23:05:48
-image: '/assets/img/cpp/xclip/jpg'
+image: '/assets/img/cpp/xclip.jpg'
 description: "🕸️ Your custom command, simple and fast!"
 tags:
 - cpp
