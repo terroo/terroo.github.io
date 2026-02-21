@@ -54,7 +54,7 @@ cd() {
 }
 {% endhighlight %}
 
-Then reload your `~/.bashrc` with the command: `exec $BASH` or `source ~/.bashrc` and then just test it:
+Then reload your `~/.bashrc` with the command: `exec $SHELL` or `source ~/.bashrc` and then just test it:
 
 {% highlight bash %}
 cd -6
