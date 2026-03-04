@@ -55,9 +55,6 @@ And run them interactively:
 pam run list_users
 {% endhighlight %}
 
-Example:
-
-![alt text](https://private-user-images.com/45571086/535609147-b62bec1d-2255-4d02-9b7f-1c99afbeb664.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzI0NjAwMDIsIm5iZiI6MTc3MjQ1OTcwMiwicGF0aCI6Ii80NTU3MTA4Ni81MzU2MDkxNDctYjYyYmVjMWQtMjI1NS00ZDAyLTliN2YtMWM5OWFmYmViNjY0LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjAzMDIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwMzAyVDEzNTUwMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXpTaWduYXR1cmU9ZDBmY2RiMTg4Y2VhYjllOTUwYWYzZDdjN2FhYmE0ZDk3ZWM1NmFhOTQ2MjIwNjY4ODhlZjFiNDcxM2E0OTg3YyZYLUFtei1TaWduZWRIZWFkZXJzPWhostIn0.oihmYpe5xuETxb5WPDYGJl4qRt0qqNCmGTZoP_o3Dd8)
 
 The TUI interface supports Vim-like shortcuts (`j`, `k`, `h`, `l`), copy cell (`y`), export data (`x`), edit cell (`u`), delete row (`D`), and more quick commands.
 
