@@ -117,6 +117,114 @@ xclip++ file1.txt file2.md file3.cpp # ...
 
 ---
 
+## Update and Fix
+
+If you notice, when trying to use the *pipe* (`|`) it doesn’t work, for example:
+
+```bash
+cat file.txt | xclip++
+echo 'Lorem Ipsum' | xclip++
+```
+
+To fix this, I added:
+
+* `<unistd.h>`
+* Overloaded the constructor: `Xclip(const std::string& content)` to `clip::set_text(content);`
+* And finally added `setvbuf(stdout, NULL, _IONBF, 0);`
+
+Code ready to use with pipe:
+
+```cpp
+#include <clip.h>
+#include <fstream>
+#include <iostream>
+#include <sstream>
+#include <memory>
+#include <unistd.h>
+
+const auto use = [](){
+  std::cerr << "Use: xclip++ <file> [file...]\n";
+};
+
+class Xclip {
+  public:
+    Xclip(int argc, char** argv){
+      std::ostringstream buffer;
+
+      for(int i = 1; i < argc; ++i){
+        std::ifstream file(argv[i], std::ios::binary);
+        if(!file){
+          std::cerr << "Error opening: " << argv[i] << "\n";
+          std::exit(1);
+        }
+
+        buffer << file.rdbuf();
+
+        if(i + 1 < argc){
+          buffer << '\n';
+        }
+      }
+
+      clip::set_text(buffer.str());
+    }
+
+    Xclip(const std::string& content){
+      clip::set_text(content);
+    }
+};
+
+int main(int argc, char** argv){
+  setvbuf(stdout, NULL, _IONBF, 0);
+
+  bool has_pipe = !isatty(STDIN_FILENO);
+
+  if(has_pipe){
+    std::ostringstream ss;
+    ss << std::cin.rdbuf();
+    std::string input = ss.str();
+
+    Xclip xclip(input);
+  }else if (argc > 1){
+    Xclip xclip(argc, argv);
+  }else{
+    use();
+    return 1;
+  }
+
+  return 0;
+}
+```
+
+Compile and install:
+
+```bash
+g++ main.cpp -o xclip++ -lclip -lxcb -lX11 -lpng -pthread
+sudo install -v xclip++ /usr/local/bin/
+```
+
+If you want a shorter command name, also run:
+
+```bash
+mv xclip++ xclip
+sudo install -v xclip /usr/local/bin/
+```
+
+Now just use the `xclip` command, examples:
+
+```bash
+# Single file:
+xclip++ file.txt
+
+# Multiple files:
+xclip++ file1.txt file2.md file3.cpp # ...
+
+# Via pipe:
+echo 'My test' | xclip
+cat file.txt | xclip
+```
+
+---
+
 See also: [Copy and Paste via Linux Command Line with xclip](https://terminalroot.com.br/2020/10/copie-e-cole-via-linha-de-comando-do-linux-com-xclip.html)
 
 
