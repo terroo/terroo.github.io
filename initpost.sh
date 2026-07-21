@@ -47,6 +47,7 @@ _initpost(){
       if [[ ! $(ls "_posts/" | /bin/grep -E "${_URL}") ]] ; then
         _skell "$1" > "_posts/$_PADRAO-$_URL.md"    
         echo -e "\e[36;1m➜ File created successfully!\n\e[37;1m_posts/$_PADRAO-$_URL.md\e[m"
+        nvim "_posts/$_PADRAO-$_URL.md"
       else
         echo -e "\e[31;1m✖ Error: File Name Already Exists.\e[m"
       fi
